@@ -1,0 +1,182 @@
+{
+  "title": "Schéma des structures de l'insertion",
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://raw.githubusercontent.com/betagouv/data-inclusion-schema/main/structures.json",
+  "description": "",
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/structure"
+  },
+  "definitions": {
+    "typologie": {
+      "title": "Typologie",
+      "description": "An enumeration.",
+      "enum": [
+        "ACI",
+        "ACIPHC",
+        "AFPA",
+        "AI",
+        "ASE",
+        "ASSO",
+        "CADA",
+        "CAF",
+        "CAP_EMPLOI",
+        "CAVA",
+        "CC",
+        "CCAS",
+        "CD",
+        "CHRS",
+        "CHU",
+        "CIAS",
+        "CIDFF",
+        "CPH",
+        "CS",
+        "CT",
+        "DEETS",
+        "DIPLP",
+        "EA",
+        "EATT",
+        "EI",
+        "EITI",
+        "EPCI",
+        "ETTI",
+        "FAIS",
+        "GEIQ",
+        "ML",
+        "MQ",
+        "MSA",
+        "MSAP",
+        "MUNI",
+        "OACAS",
+        "OF",
+        "PE",
+        "PIJ_BIJ",
+        "PIMMS",
+        "PJJ",
+        "PLIE",
+        "SCP",
+        "SPIP",
+        "UDAF",
+        "ASSO_CHOMEUR",
+        "Autre",
+        "PREF",
+        "REG",
+        "DEPT",
+        "TIERS_LIEUX",
+        "CAARUD",
+        "CSAPA",
+        "E2C",
+        "EPIDE",
+        "HUDA",
+        "ODC",
+        "OIL",
+        "OPCS",
+        "PENSION",
+        "PREVENTION",
+        "RS_FJT"
+      ],
+      "type": "string"
+    },
+    "structure": {
+      "title": "Structure",
+      "type": "object",
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string",
+          "format": "uuid"
+        },
+        "id_antenne": {
+          "title": "Id Antenne",
+          "type": "string"
+        },
+        "siret": {
+          "title": "Siret",
+          "minLength": 14,
+          "maxLength": 14,
+          "pattern": "^\\d{14}$",
+          "type": "string"
+        },
+        "nom": {
+          "title": "Nom",
+          "type": "string"
+        },
+        "adresse": {
+          "title": "Adresse",
+          "type": "string"
+        },
+        "complement_adresse": {
+          "title": "Complement Adresse",
+          "type": "string"
+        },
+        "code_postal": {
+          "title": "Code Postal",
+          "minLength": 5,
+          "maxLength": 5,
+          "pattern": "^\\d{5}$",
+          "type": "string"
+        },
+        "commune": {
+          "title": "Commune",
+          "type": "string"
+        },
+        "code_insee": {
+          "title": "Code Insee",
+          "minLength": 5,
+          "maxLength": 5,
+          "type": "string"
+        },
+        "longitude": {
+          "title": "Longitude",
+          "type": "number"
+        },
+        "latitude": {
+          "title": "Latitude",
+          "type": "number"
+        },
+        "typologie": {
+          "$ref": "#/definitions/typologie"
+        },
+        "telephone": {
+          "title": "Telephone",
+          "type": "string"
+        },
+        "courriel": {
+          "title": "Courriel",
+          "type": "string",
+          "format": "email"
+        },
+        "site_web": {
+          "title": "Site Web",
+          "minLength": 1,
+          "maxLength": 2083,
+          "format": "uri",
+          "type": "string"
+        },
+        "presentation_resume": {
+          "title": "Presentation Resume",
+          "maxLength": 280,
+          "type": "string"
+        },
+        "presentation_detail": {
+          "title": "Presentation Detail",
+          "type": "string"
+        },
+        "source": {
+          "title": "Source",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "siret",
+        "nom",
+        "adresse",
+        "code_postal",
+        "commune",
+        "code_insee"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

@@ -1,0 +1,19 @@
+# Python
+*.py[cod]
+__pycache__/
+
+# VSCode
+.vscode/
+!.vscode/settings.json
+
+# Idea
+.idea/
+
+# Virtualenv
+.venv/
+venv/
+
+# Misc
+*.env
+!.template.env
+.tmp/

@@ -1,0 +1,21 @@
+[
+    {
+        "id": "c3d15659-8de9-4fd6-b283-04d50f6ace57",
+        "siret": "10000001700010",
+        "nom": "état français",
+        "commune": "Paris",
+        "code_postal": "75800",
+        "code_insee": "75108",
+        "adresse": "55 RUE DU FAUBOURG SAINT HONORE",
+        "complement_adresse": "",
+        "longitude": 2.316934,
+        "latitude": 48.87063,
+        "typologie": "Autre",
+        "telephone": "0142928100",
+        "courriel": "contact@en-marche.fr",
+        "site_web": "https://comment-contacter.fr/",
+        "presentation_resume": "La présidence",
+        "presentation_detail": "La présidence de la République",
+        "source": "bob"
+    }
+]

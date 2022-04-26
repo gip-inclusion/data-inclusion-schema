@@ -1,0 +1,9 @@
+repos:
+  - repo: https://github.com/python-jsonschema/check-jsonschema
+    rev: 0.14.3
+    hooks:
+      - id: check-metaschema
+        files: ^structures.json$
+      - id: check-jsonschema
+        files: ^examples/valid/.*.json$
+        args: ["--schemafile", "structures.json"]
