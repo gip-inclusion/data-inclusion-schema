@@ -175,7 +175,6 @@
       },
       "required": [
         "id",
-        "siret",
         "nom",
         "commune",
         "code_postal",
