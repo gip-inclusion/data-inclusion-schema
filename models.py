@@ -1,6 +1,5 @@
 from enum import Enum
 from typing import Optional
-from uuid import UUID
 
 from pydantic import BaseModel, constr, Extra, schema_json_of, EmailStr, HttpUrl
 
@@ -71,7 +70,7 @@ class Typologie(str, Enum):
 
 
 class Structure(BaseModel):
-    id: UUID
+    id: str
     siret: constr(min_length=14, max_length=14, regex=r"^\d{14}$")
     rna: Optional[constr(min_length=10, max_length=10, regex=r"^W\d{9}$")]
     nom: str
