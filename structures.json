@@ -86,10 +86,6 @@
           "type": "string",
           "format": "uuid"
         },
-        "id_antenne": {
-          "title": "Id Antenne",
-          "type": "string"
-        },
         "siret": {
           "title": "Siret",
           "minLength": 14,
@@ -97,16 +93,19 @@
           "pattern": "^\\d{14}$",
           "type": "string"
         },
+        "rna": {
+          "title": "Rna",
+          "minLength": 10,
+          "maxLength": 10,
+          "pattern": "^W\\d{9}$",
+          "type": "string"
+        },
         "nom": {
           "title": "Nom",
           "type": "string"
         },
-        "adresse": {
-          "title": "Adresse",
-          "type": "string"
-        },
-        "complement_adresse": {
-          "title": "Complement Adresse",
+        "commune": {
+          "title": "Commune",
           "type": "string"
         },
         "code_postal": {
@@ -116,14 +115,18 @@
           "pattern": "^\\d{5}$",
           "type": "string"
         },
-        "commune": {
-          "title": "Commune",
-          "type": "string"
-        },
         "code_insee": {
           "title": "Code Insee",
           "minLength": 5,
           "maxLength": 5,
+          "type": "string"
+        },
+        "adresse": {
+          "title": "Adresse",
+          "type": "string"
+        },
+        "complement_adresse": {
+          "title": "Complement Adresse",
           "type": "string"
         },
         "longitude": {
@@ -165,16 +168,20 @@
         "source": {
           "title": "Source",
           "type": "string"
+        },
+        "id_antenne": {
+          "title": "Id Antenne",
+          "type": "string"
         }
       },
       "required": [
         "id",
         "siret",
         "nom",
-        "adresse",
-        "code_postal",
         "commune",
-        "code_insee"
+        "code_postal",
+        "code_insee",
+        "adresse"
       ],
       "additionalProperties": false
     }

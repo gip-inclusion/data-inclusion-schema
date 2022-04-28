@@ -73,6 +73,7 @@ class Typologie(str, Enum):
 class Structure(BaseModel):
     id: UUID
     siret: constr(min_length=14, max_length=14, regex=r"^\d{14}$")
+    rna: Optional[constr(min_length=10, max_length=10, regex=r"^W\d{9}$")]
     nom: str
     commune: str
     code_postal: constr(min_length=5, max_length=5, regex=r"^\d{5}$")
