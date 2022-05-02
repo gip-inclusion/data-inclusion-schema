@@ -4,7 +4,7 @@ Ce dépôt contient le schéma de l'offre d'insertion. Il est issu de la collabo
 
 ## Le schéma
 
-Le format actuellement supporté est le JSON schema.
+Le format actuellement supporté est le JSON schema. Le format Table schema sera supporté prochainement.
 
 Le schéma comprend actuellement les structures de l'insertion et devraient à terme inclure les services proposés par ces structures.
 

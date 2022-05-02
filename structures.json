@@ -171,6 +171,11 @@
         "id_antenne": {
           "title": "Id Antenne",
           "type": "string"
+        },
+        "date_maj": {
+          "title": "Date Maj",
+          "type": "string",
+          "format": "date-time"
         }
       },
       "required": [
@@ -179,7 +184,8 @@
         "commune",
         "code_postal",
         "code_insee",
-        "adresse"
+        "adresse",
+        "date_maj"
       ],
       "additionalProperties": false
     }

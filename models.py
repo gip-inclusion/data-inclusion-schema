@@ -1,3 +1,4 @@
+from datetime import datetime
 from enum import Enum
 from typing import Optional
 
@@ -89,6 +90,7 @@ class Structure(BaseModel):
     presentation_detail: Optional[str]
     source: Optional[str]
     id_antenne: Optional[str]
+    date_maj: datetime
 
     class Config:
         extra = Extra.forbid
