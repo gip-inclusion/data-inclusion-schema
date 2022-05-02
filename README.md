@@ -21,7 +21,8 @@ Données minimales
         "commune": "Robinboeuf CEDEX",
         "code_postal": "09891",
         "code_insee": "09890",
-        "adresse": "RUE DE LECLERCQ"
+        "adresse": "RUE DE LECLERCQ",
+        "date_maj": "2022-04-28T16:53:11Z"
     }
 ]
 ```
@@ -39,6 +40,7 @@ Données étendues
         "code_postal": "09891",
         "code_insee": "09890",
         "adresse": "RUE DE LECLERCQ",
+        "date_maj": "2022-04-28T16:53:11Z",
         "complement_adresse": "HOTEL DE VILLE",
         "longitude": 7.848133,
         "latitude": 48.7703,
