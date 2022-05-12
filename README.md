@@ -8,6 +8,8 @@ Le format actuellement supporté est le JSON schema. Le format Table schema sera
 
 Le schéma comprend actuellement les structures de l'insertion et devraient à terme inclure les services proposés par ces structures.
 
+La documentation du schéma est disponible [ici](https://app.gitbook.com/o/-LumF4j8whrJ3iKwLJ6f/s/8F5IpX18jjDR1Iawzsnj/schemas-de-donnees-de-loffre/schema-des-structures-dinsertion).
+
 ### Exemple de données au format du schéma de l'offre d'insertion.
 
 Données minimales
