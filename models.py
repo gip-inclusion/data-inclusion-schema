@@ -97,8 +97,8 @@ class Structure(BaseModel):
     presentation_resume: Optional[constr(max_length=280)]
     presentation_detail: Optional[str]
     source: Optional[str]
-    id_antenne: Optional[str]
     date_maj: datetime
+    structure_parente: Optional[str]
 
     class Config:
         extra = Extra.forbid

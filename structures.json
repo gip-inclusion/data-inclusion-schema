@@ -176,14 +176,14 @@
           "title": "Source",
           "type": "string"
         },
-        "id_antenne": {
-          "title": "Id Antenne",
-          "type": "string"
-        },
         "date_maj": {
           "title": "Date Maj",
           "type": "string",
           "format": "date-time"
+        },
+        "structure_parente": {
+          "title": "Structure Parente",
+          "type": "string"
         }
       },
       "required": [
