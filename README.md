@@ -49,6 +49,6 @@ Participer aux [ateliers](https://app.gitbook.com/o/-LumF4j8whrJ3iKwLJ6f/s/8F5Ip
 
 ## Changements
 
-### Version 0.1.0 - 2022-04-26
+### Version 0.1.0 - 2022-06-06
 
-Publication initiale.
+Version initiale.
