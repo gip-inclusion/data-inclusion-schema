@@ -199,6 +199,10 @@
           "maxLength": 2083,
           "format": "uri",
           "type": "string"
+        },
+        "horaires_ouverture": {
+          "title": "Horaires Ouverture",
+          "type": "string"
         }
       },
       "required": [

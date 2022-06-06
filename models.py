@@ -100,6 +100,7 @@ class Structure(BaseModel):
     date_maj: date | datetime
     structure_parente: Optional[str]
     lien_source: Optional[HttpUrl]
+    horaires_ouverture: Optional[str]
 
     class Config:
         extra = Extra.forbid
