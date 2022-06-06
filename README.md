@@ -12,25 +12,6 @@ La documentation du schéma est disponible [ici](https://app.gitbook.com/o/-LumF
 
 ### Exemple de données au format du schéma de l'offre d'insertion.
 
-Données minimales
-
-```json
-[
-    {
-        "id": "c3d15659-8de9-4fd6-b283-04d50f6ace57",
-        "siret": "60487647500499",
-        "nom": "MOBILETTE",
-        "commune": "Robinboeuf CEDEX",
-        "code_postal": "09891",
-        "code_insee": "09890",
-        "adresse": "RUE DE LECLERCQ",
-        "date_maj": "2022-04-28T16:53:11Z"
-    }
-]
-```
-
-Données étendues
-
 ```json
 [
     {
@@ -53,7 +34,8 @@ Données étendues
         "presentation_resume": "L’association Mobilette propose des solutions de déplacement aux personnes pour qui la non mobilité est un frein à l’insertion professionnelle : - connaissance de l'offre de transport du territoire - accès à un véhicule 2 ou 4 roues - transport solidaire - accès au permis",
         "presentation_detail": "",
         "source": "solidagregateur",
-        "structure_parente": "7713e292-abd1-42fc-b1f0-071b7e7a2f61"
+        "structure_parente": "7713e292-abd1-42fc-b1f0-071b7e7a2f61",
+        "lien_source": "https://solidagregateur.fr/structures/c3d15659-8de9-4fd6-b283-04d50f6ace57"
     }
 ]
 ```

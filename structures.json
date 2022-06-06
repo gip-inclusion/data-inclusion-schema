@@ -192,6 +192,13 @@
         "structure_parente": {
           "title": "Structure Parente",
           "type": "string"
+        },
+        "lien_source": {
+          "title": "Lien Source",
+          "minLength": 1,
+          "maxLength": 2083,
+          "format": "uri",
+          "type": "string"
         }
       },
       "required": [
