@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import date, datetime
 from enum import Enum
 from typing import Optional
 
@@ -97,7 +97,7 @@ class Structure(BaseModel):
     presentation_resume: Optional[constr(max_length=280)]
     presentation_detail: Optional[str]
     source: Optional[str]
-    date_maj: datetime
+    date_maj: date | datetime
     structure_parente: Optional[str]
 
     class Config:
