@@ -1,5 +1,5 @@
 {
-  "title": "Schéma des structures de l'insertion",
+  "title": "Structures de l'insertion",
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "https://raw.githubusercontent.com/betagouv/data-inclusion-schema/main/structures.json",
   "description": "",
