@@ -6,4 +6,4 @@ version: 0.1.0
 schemas:
   -
     path: "schema.json"
-    title: "Zone à Faibles Emissions"
+    title: "Structures de l'insertion"
