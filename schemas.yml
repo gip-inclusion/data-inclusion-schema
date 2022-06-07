@@ -2,3 +2,8 @@ title: Schéma des structures de l'insertion
 description: Schéma des structures de l'insertion
 homepage: https://github.com/betagouv/data-inclusion-schema
 version: 0.1.0
+
+schemas:
+  -
+    path: "schema.json"
+    title: "Structures de l'insertion"
