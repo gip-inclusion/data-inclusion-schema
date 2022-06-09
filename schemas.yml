@@ -5,5 +5,5 @@ version: 0.1.0
 
 schemas:
   -
-    path: "schema.json"
+    path: "structures.json"
     title: "Structures de l'insertion"
