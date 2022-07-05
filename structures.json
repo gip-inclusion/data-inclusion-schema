@@ -210,7 +210,6 @@
         "nom",
         "commune",
         "code_postal",
-        "code_insee",
         "adresse",
         "date_maj"
       ],
