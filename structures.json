@@ -5,10 +5,10 @@
   "description": "",
   "type": "array",
   "items": {
-    "$ref": "#/definitions/structure"
+    "$ref": "#/definitions/Structure"
   },
   "definitions": {
-    "typologie": {
+    "Typologie": {
       "title": "Typologie",
       "description": "An enumeration.",
       "enum": [
@@ -85,7 +85,7 @@
       ],
       "type": "string"
     },
-    "structure": {
+    "Structure": {
       "title": "Structure",
       "type": "object",
       "properties": {
@@ -145,7 +145,7 @@
           "type": "number"
         },
         "typologie": {
-          "$ref": "#/definitions/typologie"
+          "$ref": "#/definitions/Typologie"
         },
         "telephone": {
           "title": "Telephone",

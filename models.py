@@ -1,8 +1,10 @@
+import json
 from datetime import date, datetime
 from enum import Enum
 from typing import Optional
 
-from pydantic import BaseModel, constr, Extra, schema_json_of, EmailStr, HttpUrl
+import pydantic
+from pydantic import BaseModel, EmailStr, Extra, HttpUrl, constr
 
 
 class Typologie(str, Enum):
@@ -85,7 +87,7 @@ class Structure(BaseModel):
     nom: str
     commune: str
     code_postal: constr(min_length=5, max_length=5, regex=r"^\d{5}$")
-    code_insee: constr(min_length=5, max_length=5)
+    code_insee: Optional[constr(min_length=5, max_length=5)]
     adresse: str
     complement_adresse: Optional[str]
     longitude: Optional[float]
@@ -106,11 +108,35 @@ class Structure(BaseModel):
         extra = Extra.forbid
 
 
+def generate_structures_json_schema():
+    """Generate the structures file json schema from the `Structure` model."""
+
+    # json schema for a file containing a **list** of structures
+    return {
+        "title": "Structures de l'insertion",
+        "$schema": "http://json-schema.org/draft-07/schema",
+        "$id": (
+            "https://raw.githubusercontent.com/betagouv/data-inclusion-schema"
+            "/main/structures.json"
+        ),
+        "description": "",
+        "type": "array",
+        "items": {
+            "$ref": "#/definitions/Structure",
+        },
+        # Pydantic generates the json schema of a **single** structure from the
+        # `Structure` model. Only the definitions are extracted.
+        "definitions": pydantic.schema_of(Structure)["definitions"],
+    }
+
+
 if __name__ == "__main__":
+    # Typical usage:
+    # $ python models.py > structures.json
+
     print(
-        schema_json_of(
-            Structure,
-            title="",
+        json.dumps(
+            generate_structures_json_schema(),
             indent=2,
         )
     )
