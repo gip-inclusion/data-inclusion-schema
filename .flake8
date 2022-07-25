@@ -1,0 +1,6 @@
+[flake8]
+max-line-length = 88
+max-doc-length = 88
+extend-exclude = .venv/ .github/ .vscode/
+per-file-ignores =
+    models.py:F722
