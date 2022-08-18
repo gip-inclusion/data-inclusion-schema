@@ -1,4 +1,3 @@
-import json
 from datetime import date, datetime
 from enum import Enum
 from typing import Optional
@@ -224,15 +223,3 @@ def generate_structures_json_schema():
         # `Structure` model. Only the definitions are extracted.
         "definitions": pydantic.schema_of(Structure)["definitions"],
     }
-
-
-if __name__ == "__main__":
-    # Typical usage:
-    # $ python models.py > structures.json
-
-    print(
-        json.dumps(
-            generate_structures_json_schema(),
-            indent=2,
-        )
-    )

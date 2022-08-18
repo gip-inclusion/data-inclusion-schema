@@ -17,10 +17,12 @@ git clone git@github.com:betagouv/data-inclusion-schema.git
 # Create a new virtualenv in the project's root directory
 python3.10 -m venv .venv --prompt di-schema
 
-# Activate the environment and install the dependencies
+# Activate the environment
 source .venv/bin/activate
 pip install -U pip setuptools wheel
-pip install -r requirements.txt
+
+# Install package in editable mode and dependencies
+pip install -e .[dev]
 
 # Setup code quality tools
 pre-commit install
@@ -29,5 +31,7 @@ pre-commit install
 ## Generating the json schema
 
 ```bash
-python models.py > structures.json
+python -m data_inclusion.schema > structures.json
+# or
+data-inclusion-schema > structures.json
 ```

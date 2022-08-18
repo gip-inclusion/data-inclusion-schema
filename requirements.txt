@@ -1,3 +1,0 @@
-black==22.3.0
-pre-commit==2.18.1
-pydantic[email]==1.9.0
