@@ -172,6 +172,19 @@
       ],
       "type": "string"
     },
+    "Thematique": {
+      "title": "Thematique",
+      "description": "An enumeration.",
+      "enum": [
+        "choisir-un-metier",
+        "creation-activite",
+        "mobilite",
+        "numerique",
+        "preparer-sa-candidature",
+        "trouver-un-emploi"
+      ],
+      "type": "string"
+    },
     "Structure": {
       "title": "Structure",
       "type": "object",
@@ -309,6 +322,12 @@
           "type": "array",
           "items": {
             "type": "string"
+          }
+        },
+        "thematiques": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Thematique"
           }
         }
       },
