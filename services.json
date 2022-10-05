@@ -1,0 +1,153 @@
+{
+  "title": "Services de l'insertion",
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://raw.githubusercontent.com/betagouv/data-inclusion-schema/main/services.json",
+  "description": "",
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/Service"
+  },
+  "definitions": {
+    "TypologieService": {
+      "title": "TypologieService",
+      "description": "An enumeration.",
+      "enum": [
+        "accompagnement",
+        "accueil",
+        "aide-financiere",
+        "aide-materielle",
+        "atelier",
+        "formation",
+        "information",
+        "numerique",
+        "autonomie",
+        "delegation",
+        "financement"
+      ],
+      "type": "string"
+    },
+    "Thematique": {
+      "title": "Thematique",
+      "description": "An enumeration.",
+      "enum": [
+        "choisir-un-metier",
+        "choisir-un-metier-identifier-ses-points-forts-et-ses-competences",
+        "choisir-un-metier-connaitre-les-opportunites-demploi",
+        "choisir-un-metier-decouvrir-un-metier-ou-un-secteur-dactivite",
+        "choisir-un-metier-confirmer-son-choix-de-metier",
+        "creation-activite",
+        "creation-activite-de-l-idee-au-projet",
+        "creation-activite-demarrer-son-activite",
+        "creation-activite-elaborer-son-projet",
+        "creation-activite-reseautage-pour-createurs-dentreprise",
+        "creation-activite-financer-son-projet",
+        "mobilite",
+        "mobilite-etre-accompagne-dans-son-parcours-mobilite",
+        "mobilite-entretenir-reparer-son-vehicule",
+        "mobilite-louer-un-vehicule",
+        "mobilite-acheter-un-vehicule-motorise",
+        "mobilite-preparer-son-permis-de-conduire-se-reentrainer-a-la-conduite",
+        "mobilite-aides-a-la-reprise-demploi-ou-a-la-formation",
+        "mobilite-comprendre-et-utiliser-les-transports-en-commun",
+        "mobilite-apprendre-a-utiliser-un-deux-roues",
+        "mobilite-financer-mon-projet-mobilite",
+        "mobilite-acheter-un-velo",
+        "numerique",
+        "numerique-devenir-autonome-dans-les-demarches-administratives",
+        "numerique-realiser-des-demarches-administratives-avec-un-accompagnement",
+        "numerique-prendre-en-main-un-smartphone-ou-une-tablette",
+        "numerique-prendre-en-main-un-ordinateur",
+        "numerique-utiliser-le-numerique-au-quotidien",
+        "numerique-approfondir-ma-culture-numerique",
+        "numerique-favoriser-mon-insertion-professionnelle",
+        "numerique-acceder-a-une-connexion-internet",
+        "numerique-acceder-a-du-materiel",
+        "numerique-s-equiper-en-materiel-informatique",
+        "numerique-creer-et-developper-mon-entrepries",
+        "numerique-creer-avec-le-numerique",
+        "numerique-accompagner-les-demarches-de-sante",
+        "numerique-promouvoir-la-citoyennete-numerique",
+        "numerique-soutenir-la-parentalite-et-l-education-avec-le-numerique",
+        "preparer-sa-candidature",
+        "preparer-sa-candidature-valoriser-ses-competences",
+        "preparer-sa-candidature-realiser-un-cv-et-ou-une-lettre-de-motivation",
+        "preparer-sa-candidature-developper-son-reseau",
+        "preparer-sa-candidature-organiser-ses-demarches-de-recherche-demploi",
+        "trouver-un-emploi",
+        "trouver-un-emploi-repondre-a-des-offres-demploi",
+        "trouver-un-emploi-faire-des-candidatures-spontanees",
+        "trouver-un-emploi-suivre-ses-candidatures-et-relancer-les-employeurs",
+        "trouver-un-emploi-convaincre-un-recruteur-en-entretien"
+      ],
+      "type": "string"
+    },
+    "Frais": {
+      "title": "Frais",
+      "description": "An enumeration.",
+      "enum": [
+        "gratuit",
+        "gratuit-sous-conditions",
+        "payant",
+        "adhesion"
+      ],
+      "type": "string"
+    },
+    "Service": {
+      "title": "Service",
+      "type": "object",
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "structure": {
+          "title": "Structure",
+          "type": "string"
+        },
+        "nom": {
+          "title": "Nom",
+          "type": "string"
+        },
+        "presentation_resume": {
+          "title": "Presentation Resume",
+          "maxLength": 280,
+          "type": "string"
+        },
+        "types": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/TypologieService"
+          }
+        },
+        "thematiques": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Thematique"
+          }
+        },
+        "prise_rdv": {
+          "title": "Prise Rdv",
+          "minLength": 1,
+          "maxLength": 2083,
+          "format": "uri",
+          "type": "string"
+        },
+        "frais": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Frais"
+          }
+        },
+        "frais_autres": {
+          "title": "Frais Autres",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "nom"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

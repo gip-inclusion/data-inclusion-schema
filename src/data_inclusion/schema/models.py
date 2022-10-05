@@ -302,6 +302,8 @@ class Frais(str, Enum):
 
 
 class Service(BaseModel):
+    id: str
+    structure: Optional[str]
     nom: str
     presentation_resume: Optional[constr(max_length=280)]
     types: Optional[list[TypologieService]]
@@ -309,6 +311,9 @@ class Service(BaseModel):
     prise_rdv: Optional[HttpUrl]
     frais: Optional[list[Frais]]
     frais_autres: Optional[str]
+
+    class Config:
+        extra = Extra.forbid
 
 
 class Structure(BaseModel):
@@ -338,7 +343,6 @@ class Structure(BaseModel):
     labels_nationaux: Optional[list[LabelNational]]
     labels_autres: Optional[list[str]]
     thematiques: Optional[list[Thematique]]
-    services: Optional[list[Service]]
 
     class Config:
         extra = Extra.forbid
@@ -372,4 +376,26 @@ def generate_structures_json_schema():
         # Pydantic generates the json schema of a **single** structure from the
         # `Structure` model. Only the definitions are extracted.
         "definitions": pydantic.schema_of(Structure)["definitions"],
+    }
+
+
+def generate_services_json_schema():
+    """Generate the services file json schema from the `Service` model."""
+
+    # json schema for a file containing a **list** of services
+    return {
+        "title": "Services de l'insertion",
+        "$schema": "http://json-schema.org/draft-07/schema",
+        "$id": (
+            "https://raw.githubusercontent.com/betagouv/data-inclusion-schema"
+            "/main/services.json"
+        ),
+        "description": "",
+        "type": "array",
+        "items": {
+            "$ref": "#/definitions/Service",
+        },
+        # Pydantic generates the json schema of a **single** service from the
+        # `Service` model. Only the definitions are extracted.
+        "definitions": pydantic.schema_of(Service)["definitions"],
     }

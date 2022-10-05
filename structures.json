@@ -227,82 +227,6 @@
       ],
       "type": "string"
     },
-    "TypologieService": {
-      "title": "TypologieService",
-      "description": "An enumeration.",
-      "enum": [
-        "accompagnement",
-        "accueil",
-        "aide-financiere",
-        "aide-materielle",
-        "atelier",
-        "formation",
-        "information",
-        "numerique",
-        "autonomie",
-        "delegation",
-        "financement"
-      ],
-      "type": "string"
-    },
-    "Frais": {
-      "title": "Frais",
-      "description": "An enumeration.",
-      "enum": [
-        "gratuit",
-        "gratuit-sous-conditions",
-        "payant",
-        "adhesion"
-      ],
-      "type": "string"
-    },
-    "Service": {
-      "title": "Service",
-      "type": "object",
-      "properties": {
-        "nom": {
-          "title": "Nom",
-          "type": "string"
-        },
-        "presentation_resume": {
-          "title": "Presentation Resume",
-          "maxLength": 280,
-          "type": "string"
-        },
-        "types": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/TypologieService"
-          }
-        },
-        "thematiques": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/Thematique"
-          }
-        },
-        "prise_rdv": {
-          "title": "Prise Rdv",
-          "minLength": 1,
-          "maxLength": 2083,
-          "format": "uri",
-          "type": "string"
-        },
-        "frais": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/Frais"
-          }
-        },
-        "frais_autres": {
-          "title": "Frais Autres",
-          "type": "string"
-        }
-      },
-      "required": [
-        "nom"
-      ]
-    },
     "Structure": {
       "title": "Structure",
       "type": "object",
@@ -446,13 +370,6 @@
           "type": "array",
           "items": {
             "$ref": "#/definitions/Thematique"
-          }
-        },
-        "services": {
-          "title": "Services",
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/Service"
           }
         }
       },

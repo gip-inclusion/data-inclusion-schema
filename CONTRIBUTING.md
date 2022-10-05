@@ -28,10 +28,9 @@ pip install -e .[dev]
 pre-commit install
 ```
 
-## Generating the json schema
+## Generating the json schemas
 
 ```bash
-python -m data_inclusion.schema > structures.json
-# or
-data-inclusion-schema > structures.json
+data-inclusion-schema structure > structures.json
+data-inclusion-schema service > services.json
 ```
