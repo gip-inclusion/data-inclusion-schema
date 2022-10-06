@@ -100,8 +100,12 @@
           "title": "Id",
           "type": "string"
         },
-        "structure": {
-          "title": "Structure",
+        "structure_id": {
+          "title": "Structure Id",
+          "type": "string"
+        },
+        "source": {
+          "title": "Source",
           "type": "string"
         },
         "nom": {
@@ -145,6 +149,7 @@
       },
       "required": [
         "id",
+        "source",
         "nom"
       ],
       "additionalProperties": false

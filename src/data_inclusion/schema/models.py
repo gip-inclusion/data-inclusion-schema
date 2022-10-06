@@ -303,7 +303,8 @@ class Frais(str, Enum):
 
 class Service(BaseModel):
     id: str
-    structure: Optional[str]
+    structure_id: Optional[str]
+    source: str
     nom: str
     presentation_resume: Optional[constr(max_length=280)]
     types: Optional[list[TypologieService]]
