@@ -43,6 +43,7 @@ class Typologie(str, Enum):
     EITI = "EITI"
     EPCI = "EPCI"
     EPIDE = "EPIDE"
+    ESS = "ESS"
     ETTI = "ETTI"
     FAIS = "FAIS"
     GEIQ = "GEIQ"
