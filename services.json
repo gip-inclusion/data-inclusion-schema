@@ -88,7 +88,8 @@
         "gratuit",
         "gratuit-sous-conditions",
         "payant",
-        "adhesion"
+        "adhesion",
+        "pass-numerique"
       ],
       "type": "string"
     },
