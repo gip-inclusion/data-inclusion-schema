@@ -93,6 +93,24 @@
       ],
       "type": "string"
     },
+    "Profil": {
+      "title": "Profil",
+      "description": "An enumeration.",
+      "enum": [
+        "seniors-65",
+        "familles-enfants",
+        "adultes",
+        "jeunes-16-26",
+        "public-langues-etrangeres",
+        "deficience-visuelle",
+        "surdite",
+        "handicaps-psychiques",
+        "handicaps-mentaux",
+        "femmes",
+        "personnes-en-situation-illettrisme"
+      ],
+      "type": "string"
+    },
     "Service": {
       "title": "Service",
       "type": "object",
@@ -146,6 +164,12 @@
         "frais_autres": {
           "title": "Frais Autres",
           "type": "string"
+        },
+        "profils": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Profil"
+          }
         }
       },
       "required": [

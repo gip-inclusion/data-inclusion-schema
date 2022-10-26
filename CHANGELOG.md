@@ -8,6 +8,9 @@
   * suppression du champ `services` du schéma structures
 * ajout valeur `pass-numerique` aux frais de services
 * ajout valeur `ESS` aux typologies de structures
+* ajout des profils aux services
+  * ajout du champs `profils`
+  * ajout du vocabulaire des profils
 
 ## Version 0.2.0 - 2022-06-18
 
