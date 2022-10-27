@@ -1,6 +1,6 @@
 # Changements
 
-## Version 0.3.0 - 2022-
+## Version 0.3.0 - 2022-10-27
 
 * ajout des sous-thématiques de services
 * séparation schéma service et structure
