@@ -11,6 +11,7 @@
 * ajout des profils aux services
   * ajout du champs `profils`
   * ajout du vocabulaire des profils
+* formatage des labels nationaux
 
 ## Version 0.2.0 - 2022-06-18
 
