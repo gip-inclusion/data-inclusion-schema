@@ -90,6 +90,7 @@
       "title": "LabelNational",
       "description": "An enumeration.",
       "enum": [
+        "60000-rebonds",
         "action-logement",
         "adie",
         "afpa",
@@ -161,7 +162,6 @@
         "simplon",
         "sinca",
         "snc",
-        "60000-rebonds",
         "sport-dans-la-ville",
         "tous-tes-possible",
         "tzcld",
