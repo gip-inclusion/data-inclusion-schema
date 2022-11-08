@@ -1,5 +1,9 @@
 # Changements
 
+## Version 0.4.0 - 2022-11-07
+
+* formatage des sous-thématiques: `<thematique>--<sous-thematique>`
+
 ## Version 0.3.0 - 2022-10-27
 
 * ajout des sous-thématiques de services

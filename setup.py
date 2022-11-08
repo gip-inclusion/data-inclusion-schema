@@ -4,7 +4,7 @@ setup(
     author="vmttn",
     name="data-inclusion-schema",
     url="https://github.com/betagouv/data-inclusion-schema",
-    version="0.3.0",
+    version="0.4.0",
     packages=find_namespace_packages(where="src"),
     package_dir={"": "src"},
     install_requires=[
