@@ -8,12 +8,12 @@ setup(
     packages=find_namespace_packages(where="src"),
     package_dir={"": "src"},
     install_requires=[
-        "pydantic[email]==1.9.0",
+        "pydantic[email]>=1.9.1",
     ],
     extras_require={
         "dev": [
-            "black==22.3.0",
-            "pre-commit==2.18.1",
+            "black==22.10.0",
+            "pre-commit==2.20.0",
         ],
     },
     entry_points={
