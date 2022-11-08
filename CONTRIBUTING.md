@@ -31,6 +31,6 @@ pre-commit install
 ## Generating the json schemas
 
 ```bash
-data-inclusion-schema structure > structures.json
-data-inclusion-schema service > services.json
+# this will output the schemas in a `schemas` directory in the working directory
+data-inclusion-schema
 ```

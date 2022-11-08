@@ -21,3 +21,17 @@ class EnhancedEnum(str, enum.Enum):
             raise ValueError(f"{cls.__name__}({value})'s {err}")
 
         return obj
+
+    @classmethod
+    def as_dict_list(cls) -> list[dict]:
+        return sorted(
+            [
+                {
+                    "value": instance.value,
+                    "label": instance.label,
+                    "description": instance.description,
+                }
+                for instance in cls
+            ],
+            key=lambda d: d["value"],
+        )

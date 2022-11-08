@@ -1,0 +1,242 @@
+[
+  {
+    "value": "choisir-un-metier",
+    "label": "Choisir un métier",
+    "description": null
+  },
+  {
+    "value": "choisir-un-metier--confirmer-son-choix-de-metier",
+    "label": "Confirmer son choix de métier",
+    "description": null
+  },
+  {
+    "value": "choisir-un-metier--connaitre-les-opportunites-demploi",
+    "label": "Connaître les opportunités d'emploi",
+    "description": null
+  },
+  {
+    "value": "choisir-un-metier--decouvrir-un-metier-ou-un-secteur-dactivite",
+    "label": "Découvrir un métier ou un secteur d'activité",
+    "description": null
+  },
+  {
+    "value": "choisir-un-metier--identifier-ses-points-forts-et-ses-competences",
+    "label": "Identifier ses points forts et ses compétences",
+    "description": null
+  },
+  {
+    "value": "creation-activite",
+    "label": "Création d'activité",
+    "description": null
+  },
+  {
+    "value": "creation-activite--de-l-idee-au-projet",
+    "label": "De l'idée au projet",
+    "description": null
+  },
+  {
+    "value": "creation-activite--demarrer-son-activite",
+    "label": "Démarrer son activité",
+    "description": null
+  },
+  {
+    "value": "creation-activite--elaborer-son-projet",
+    "label": "Elaborer son projet",
+    "description": null
+  },
+  {
+    "value": "creation-activite--financer-son-projet",
+    "label": "Financer son projet",
+    "description": null
+  },
+  {
+    "value": "creation-activite--reseautage-pour-createurs-dentreprise",
+    "label": "Réseautage pour créateurs d'entreprise",
+    "description": null
+  },
+  {
+    "value": "mobilite",
+    "label": "Mobilité",
+    "description": null
+  },
+  {
+    "value": "mobilite--acheter-un-vehicule-motorise",
+    "label": "Acheter un véhicule motorisé",
+    "description": null
+  },
+  {
+    "value": "mobilite--acheter-un-velo",
+    "label": "Acheter un vélo",
+    "description": null
+  },
+  {
+    "value": "mobilite--aides-a-la-reprise-demploi-ou-a-la-formation",
+    "label": "Aides à la reprise d'emploi ou à la formation",
+    "description": null
+  },
+  {
+    "value": "mobilite--apprendre-a-utiliser-un-deux-roues",
+    "label": "Apprendre à utiliser un deux roues",
+    "description": null
+  },
+  {
+    "value": "mobilite--comprendre-et-utiliser-les-transports-en-commun",
+    "label": "Comprendre et utiliser les transports en commun",
+    "description": null
+  },
+  {
+    "value": "mobilite--entretenir-reparer-son-vehicule",
+    "label": "Entretenir ou réparer son véhicule",
+    "description": null
+  },
+  {
+    "value": "mobilite--etre-accompagne-dans-son-parcours-mobilite",
+    "label": "Etre accompagné(e) dans son parcours mobilité",
+    "description": null
+  },
+  {
+    "value": "mobilite--financer-mon-projet-mobilite",
+    "label": "Financer mon projet mobilité",
+    "description": null
+  },
+  {
+    "value": "mobilite--louer-un-vehicule",
+    "label": "Louer un véhicule (voiture, vélo, scooter..)",
+    "description": null
+  },
+  {
+    "value": "mobilite--preparer-son-permis-de-conduire-se-reentrainer-a-la-conduite",
+    "label": "Préparer son permis de conduire, se réentrainer à la conduite",
+    "description": null
+  },
+  {
+    "value": "numerique",
+    "label": "Numérique",
+    "description": null
+  },
+  {
+    "value": "numerique--acceder-a-du-materiel",
+    "label": "Accéder à du matériel",
+    "description": null
+  },
+  {
+    "value": "numerique--acceder-a-une-connexion-internet",
+    "label": "Accéder à une connexion internet",
+    "description": null
+  },
+  {
+    "value": "numerique--accompagner-les-demarches-de-sante",
+    "label": "Accompagner les démarches de santé",
+    "description": null
+  },
+  {
+    "value": "numerique--approfondir-ma-culture-numerique",
+    "label": "Approfondir ma culture numérique",
+    "description": null
+  },
+  {
+    "value": "numerique--creer-avec-le-numerique",
+    "label": "Créer avec le numérique",
+    "description": null
+  },
+  {
+    "value": "numerique--creer-et-developper-mon-entreprise",
+    "label": "Créer et développer mon entreprise",
+    "description": null
+  },
+  {
+    "value": "numerique--devenir-autonome-dans-les-demarches-administratives",
+    "label": "Devenir autonome dans les démarches administratives",
+    "description": null
+  },
+  {
+    "value": "numerique--favoriser-mon-insertion-professionnelle",
+    "label": "Favoriser mon insertion professionnelle",
+    "description": null
+  },
+  {
+    "value": "numerique--prendre-en-main-un-ordinateur",
+    "label": "Prendre en main un ordinateur",
+    "description": null
+  },
+  {
+    "value": "numerique--prendre-en-main-un-smartphone-ou-une-tablette",
+    "label": "Prendre en main un smartphone ou une tablette",
+    "description": null
+  },
+  {
+    "value": "numerique--promouvoir-la-citoyennete-numerique",
+    "label": "Promouvoir la citoyenneté numérique",
+    "description": null
+  },
+  {
+    "value": "numerique--realiser-des-demarches-administratives-avec-un-accompagnement",
+    "label": "Réaliser des démarches administratives avec un accompagnement",
+    "description": null
+  },
+  {
+    "value": "numerique--s-equiper-en-materiel-informatique",
+    "label": "S'équiper en matériel informatique",
+    "description": null
+  },
+  {
+    "value": "numerique--soutenir-la-parentalite-et-l-education-avec-le-numerique",
+    "label": "Soutenir la parentalité et l'éducation avec le numérique",
+    "description": null
+  },
+  {
+    "value": "numerique--utiliser-le-numerique-au-quotidien",
+    "label": "Utiliser le numérique au quotidien",
+    "description": null
+  },
+  {
+    "value": "preparer-sa-candidature",
+    "label": "Préparer sa candidature",
+    "description": null
+  },
+  {
+    "value": "preparer-sa-candidature--developper-son-reseau",
+    "label": "Développer son réseau",
+    "description": null
+  },
+  {
+    "value": "preparer-sa-candidature--organiser-ses-demarches-de-recherche-demploi",
+    "label": "Organiser ses démarches de recherche d'emploi",
+    "description": null
+  },
+  {
+    "value": "preparer-sa-candidature--realiser-un-cv-et-ou-une-lettre-de-motivation",
+    "label": "Réaliser un CV et/ou une lettre de motivation",
+    "description": null
+  },
+  {
+    "value": "preparer-sa-candidature--valoriser-ses-competences",
+    "label": "Valoriser ses compétences",
+    "description": null
+  },
+  {
+    "value": "trouver-un-emploi",
+    "label": "Trouver un emploi",
+    "description": null
+  },
+  {
+    "value": "trouver-un-emploi--convaincre-un-recruteur-en-entretien",
+    "label": "Convaincre un recruteur en entretien",
+    "description": null
+  },
+  {
+    "value": "trouver-un-emploi--faire-des-candidatures-spontanees",
+    "label": "Faire des candidatures spontanées",
+    "description": null
+  },
+  {
+    "value": "trouver-un-emploi--repondre-a-des-offres-demploi",
+    "label": "Répondre à des offres d'emploi",
+    "description": null
+  },
+  {
+    "value": "trouver-un-emploi--suivre-ses-candidatures-et-relancer-les-employeurs",
+    "label": "Suivre ses candidatures et relancer les employeurs",
+    "description": null
+  }
+]
