@@ -1,5 +1,9 @@
 # Changements
 
+## Version 0.4.1 - 2022-11-15
+
+* documentation des typologies de structures
+
 ## Version 0.4.0 - 2022-11-07
 
 * formatage des sous-thématiques: `<thematique>--<sous-thematique>`
