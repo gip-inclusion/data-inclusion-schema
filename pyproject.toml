@@ -1,3 +1,32 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "data-inclusion-schema"
+version = "0.4.0"
+description = "Schéma de l'offre d'insertion"
+authors = [{ name = "Valentin Matton", email = "valentin.matton@beta.gouv.fr" }]
+readme = "README.md"
+dynamic = []
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+dependencies = ["pydantic[email]>=1.9.1,<2.0.0"]
+
+
+[project.urls]
+Home = "https://www.data.inclusion.beta.gouv.fr"
+Documentation = "https://www.data.inclusion.beta.gouv.fr/schemas-de-donnees-de-loffre/schema-des-structures-et-services-dinsertion"
+Source = "https://github.com/betagouv/data-inclusion-schema"
+
+[project.optional-dependencies]
+dev = ["black==22.10.0", "pre-commit==2.20.0"]
+
+[project.scripts]
+data-inclusion-schema = "data_inclusion.schema.__main__:main"
+
 [tool.isort]
 atomic = true
 combine_star = true
@@ -14,3 +43,6 @@ use_parentheses = true
 
 [tool.black]
 target-version = ["py310"]
+
+[tool.flit.module]
+name = "data_inclusion.schema"
