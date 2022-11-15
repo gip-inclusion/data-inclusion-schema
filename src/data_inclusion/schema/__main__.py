@@ -21,6 +21,7 @@ def main():
     (output_dir / "extra").mkdir(exist_ok=True)
 
     enum_x_file_tuples_list = [
+        ("typologies-de-structures.json", models.Typologie),
         ("labels-nationaux.json", models.LabelNational),
         ("thematiques.json", models.Thematique),
         ("typologies-de-services.json", models.TypologieService),
