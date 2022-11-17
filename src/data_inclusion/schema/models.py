@@ -480,6 +480,11 @@ class LabelNational(EnhancedEnum):
         "CNAM",
         None,
     )
+    CONSEILLER_NUMERIQUE = (
+        "conseiller-numerique",
+        "Conseiller numérique",
+        None,
+    )
     COORACE = (
         "coorace",
         "Coorace",
