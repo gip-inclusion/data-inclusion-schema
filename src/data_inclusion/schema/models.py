@@ -1219,7 +1219,7 @@ class Structure(BaseModel):
     presentation_detail: Optional[str]
     source: Optional[str]
     date_maj: date | datetime
-    structure_parente: Optional[str]
+    antenne: bool = False
     lien_source: Optional[HttpUrl]
     horaires_ouverture: Optional[str]
     accessibilite: Optional[HttpUrl]
@@ -1231,12 +1231,11 @@ class Structure(BaseModel):
         extra = Extra.forbid
 
     @pydantic.root_validator
-    def has_pivot_or_reference_to_parent(cls, values: dict) -> dict:
+    def has_pivot(cls, values: dict) -> dict:
         has_rna = values.get("rna", None) is not None
         has_siret = values.get("siret", None) is not None
-        has_reference = values.get("structure_parente", None) is not None
-        if not (has_rna or has_siret or has_reference):
-            raise ValueError("absence de pivot ou de référence à une structure parente")
+        if not (has_rna or has_siret):
+            raise ValueError("absence de pivot")
         return values
 
 

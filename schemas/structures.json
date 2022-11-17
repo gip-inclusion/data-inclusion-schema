@@ -332,9 +332,10 @@
             }
           ]
         },
-        "structure_parente": {
-          "title": "Structure Parente",
-          "type": "string"
+        "antenne": {
+          "title": "Antenne",
+          "default": false,
+          "type": "boolean"
         },
         "lien_source": {
           "title": "Lien Source",
