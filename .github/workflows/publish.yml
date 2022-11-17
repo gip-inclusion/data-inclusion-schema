@@ -6,7 +6,7 @@ on:
       - created
 
 jobs:
-  tests:
+  publish:
     runs-on: ubuntu-latest
 
     steps:
