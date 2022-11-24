@@ -450,6 +450,51 @@
     "description": null
   },
   {
+    "value": "remobilisation",
+    "label": "Remobilisation",
+    "description": null
+  },
+  {
+    "value": "remobilisation--bien-etre",
+    "label": "Bien être",
+    "description": null
+  },
+  {
+    "value": "remobilisation--decouvrir-son-potentiel-via-le-sport-et-la-culture",
+    "label": "Découvrir son potentiel via le sport et la culture",
+    "description": null
+  },
+  {
+    "value": "remobilisation--discrimination",
+    "label": "Discrimination",
+    "description": null
+  },
+  {
+    "value": "remobilisation--identifier-ses-competences-et-aptitudes",
+    "label": "Identifier ses compétences et aptitudes",
+    "description": null
+  },
+  {
+    "value": "remobilisation--lien-social",
+    "label": "Lien social",
+    "description": null
+  },
+  {
+    "value": "remobilisation--participer-a-des-actions-solidaires-ou-de-bénévolat",
+    "label": "Participer à des actions solidaires ou de bénévolat",
+    "description": null
+  },
+  {
+    "value": "remobilisation--pression-sociale",
+    "label": "Pression sociale",
+    "description": null
+  },
+  {
+    "value": "remobilisation--restaurer-sa-confiance-son-image-de-soi",
+    "label": "Restaurer sa confiance, son image de soi",
+    "description": null
+  },
+  {
     "value": "trouver-un-emploi",
     "label": "Trouver un emploi",
     "description": null

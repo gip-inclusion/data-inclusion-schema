@@ -1250,6 +1250,52 @@ class Thematique(EnhancedEnum):
         None,
     )
 
+    REMOBILISATION = (
+        "remobilisation",
+        "Remobilisation",
+        None,
+    )
+    REMOBILISATION__BIEN_ETRE = (
+        "remobilisation--bien-etre",
+        "Bien être",
+        None,
+    )
+    REMOBILISATION__IDENTIFIER_SES_COMPETENCES_ET_APTITUDES = (
+        "remobilisation--identifier-ses-competences-et-aptitudes",
+        "Identifier ses compétences et aptitudes",
+        None,
+    )
+    REMOBILISATION__LIEN_SOCIAL = (
+        "remobilisation--lien-social",
+        "Lien social",
+        None,
+    )
+    REMOBILISATION__RESTAURER_SA_CONFIANCE_SON_IMAGE_DE_SOI = (
+        "remobilisation--restaurer-sa-confiance-son-image-de-soi",
+        "Restaurer sa confiance, son image de soi",
+        None,
+    )
+    REMOBILISATION__PRESSION_SOCIALE = (
+        "remobilisation--pression-sociale",
+        "Pression sociale",
+        None,
+    )
+    REMOBILISATION__DISCRIMINATION = (
+        "remobilisation--discrimination",
+        "Discrimination",
+        None,
+    )
+    REMOBILISATION__DECOUVRIR_SON_POTENTIEL_VIA_LE_SPORT_ET_LA_CULTURE = (
+        "remobilisation--decouvrir-son-potentiel-via-le-sport-et-la-culture",
+        "Découvrir son potentiel via le sport et la culture",
+        None,
+    )
+    REMOBILISATION__PARTICIPER_A_DES_ACTIONS_SOLIDAIRES_OU_DE_BÉNÉVOLAT = (
+        "remobilisation--participer-a-des-actions-solidaires-ou-de-bénévolat",
+        "Participer à des actions solidaires ou de bénévolat",
+        None,
+    )
+
     TROUVER_UN_EMPLOI = (
         "trouver-un-emploi",
         "Trouver un emploi",
