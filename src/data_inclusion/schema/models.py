@@ -1296,6 +1296,65 @@ class Thematique(EnhancedEnum):
         None,
     )
 
+    SANTE = (
+        "sante",
+        "Santé",
+        None,
+    )
+    SANTE__FAIRE_FACE_A_UNE_SITUATION_DADDICTION = (
+        "sante--faire-face-a-une-situation-daddiction",
+        "Faire face à une situation d'addiction",
+        None,
+    )
+    SANTE__BIEN_ETRE_PSYCHOLOGIQUE = (
+        "sante--bien-etre-psychologique",
+        "Bien être psychologique",
+        None,
+    )
+    SANTE__OBTENIR_LA_PRISE_EN_CHARGE_DE_FRAIS_MEDICAUX = (
+        "sante--obtenir-la-prise-en-charge-de-frais-medicaux",
+        "Obtenir la prise en charge de frais médicaux",
+        None,
+    )
+    SANTE__SE_SOIGNER_ET_PRÉVENIR_LA_MALADIE = (
+        "sante--se-soigner-et-prévenir-la-maladie",
+        "Se soigner et prévenir la maladie",
+        None,
+    )
+    SANTE__ACCOMPAGNEMENT_DE_LA_FEMME_ENCEINTE_DU_BEBE_ET_DU_JEUNE_ENFANT = (
+        "sante--accompagnement-de-la-femme-enceinte-du-bebe-et-du-jeune-enfant",
+        "Accompagnement de la femme enceinte, du bébé et du jeune enfant",
+        None,
+    )
+    SANTE__PREVENTION_ET_ACCES_AUX_SOINS = (
+        "sante--prevention-et-acces-aux-soins",
+        (
+            "Prévention et accès aux soins "
+            "(vaccination, éducation à la santé, lutte contre la tuberculose…)."
+        ),
+        None,
+    )
+    SANTE__VIE_RELATIONNELLE_ET_AFFECTIVE = (
+        "sante--vie-relationnelle-et-affective",
+        "Vie relationnelle et affective, dépistage et prévention des IST/VIH…",
+        None,
+    )
+    SANTE__ACCOMPAGNER_LES_TRAUMATISMES = (
+        "sante--accompagner-les-traumatismes",
+        "Accompagner les traumatismes",
+        None,
+    )
+    SANTE__ACCES_AUX_SOINS = (
+        "sante--acces-aux-soins",
+        "Accès aux soins",
+        None,
+    )
+    SANTE__DIAGNOSTIC_ET_ACCOMPAGNEMENT_A_LEMPLOYABILITE = (
+        "sante--diagnostic-et-accompagnement-a-lemployabilite",
+        "Diagnostic et accompagnement à l'employabailité",
+        None,
+    )
+
     TROUVER_UN_EMPLOI = (
         "trouver-un-emploi",
         "Trouver un emploi",
