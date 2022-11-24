@@ -1403,6 +1403,27 @@ class Thematique(EnhancedEnum):
         None,
     )
 
+    SOUVRIR_A_L_INTERNATIONAL = (
+        "souvrir-a-linternational",
+        "S'ouvrir à l'international",
+        None,
+    )
+    SOUVRIR_A_L_INTERNATIONAL__CONNAITRE_LES_OPPORTUNITES_DEMPLOI_A_LETRANGER = (
+        "souvrir-a-linternational--connaitre-les-opportunites-demploi-a-letranger",
+        "Connaître les opportunités d’emploi à l’étranger",
+        None,
+    )
+    SOUVRIR_A_L_INTERNATIONAL__SINFORMER_SUR_LES_AIDES_POUR_TRAVAILLER_A_LETRANGER = (
+        "souvrir-a-linternational--sinformer-sur-les-aides-pour-travailler-a-letranger",
+        "S’informer sur les aides pour travailler à l’étranger",
+        None,
+    )
+    SOUVRIR_A_L_INTERNATIONAL__SORGANISER_SUITE_A_SON_RETOUR_EN_FRANCE = (
+        "souvrir-a-linternational--sorganiser-suite-a-son-retour-en-france",
+        "S’organiser suite à son retour en France",
+        None,
+    )
+
     TROUVER_UN_EMPLOI = (
         "trouver-un-emploi",
         "Trouver un emploi",
