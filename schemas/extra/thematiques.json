@@ -200,6 +200,51 @@
     "description": null
   },
   {
+    "value": "handicap",
+    "label": "Handicap",
+    "description": null
+  },
+  {
+    "value": "handicap--accompagnement-par-une-structure-specialisee",
+    "label": "Accompagnement par une structure spécialisée",
+    "description": null
+  },
+  {
+    "value": "handicap--adaptation-au-poste-de-travail",
+    "label": "Adaptation au poste de travail",
+    "description": null
+  },
+  {
+    "value": "handicap--adapter-son-logement",
+    "label": "Adapter son logement",
+    "description": null
+  },
+  {
+    "value": "handicap--connaissance-des-droits-des-travailleurs",
+    "label": "Connaissance des droits des travailleurs",
+    "description": null
+  },
+  {
+    "value": "handicap--faire-reconnaitre-un-handicap",
+    "label": "Faire reconnaitre un handicap",
+    "description": null
+  },
+  {
+    "value": "handicap--favoriser-le-retour-et-le-maintien-dans-lemploi",
+    "label": "Favoriser le retour et le maintien dans l'emploi",
+    "description": null
+  },
+  {
+    "value": "handicap--gerer-le-depart-a-la-retraite-des-personnes-en-situation-de-handicap",
+    "label": "Gérer le départ à la retraite des personnes en situation de handicap",
+    "description": null
+  },
+  {
+    "value": "handicap--mobilite-des-personnes-en-situation-de-handicap",
+    "label": "Mobilité des personnes en situation de handicap",
+    "description": null
+  },
+  {
     "value": "mobilite",
     "label": "Mobilité",
     "description": null

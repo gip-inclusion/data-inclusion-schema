@@ -992,6 +992,55 @@ class Thematique(EnhancedEnum):
         None,
     )
 
+    HANDICAP = (
+        "handicap",
+        "Handicap",
+        None,
+    )
+    HANDICAP__ACCOMPAGNEMENT_PAR_UNE_STRUCTURE_SPECIALISEE = (
+        "handicap--accompagnement-par-une-structure-specialisee",
+        "Accompagnement par une structure spécialisée",
+        None,
+    )
+    HANDICAP__ADAPTATION_AU_POSTE_DE_TRAVAIL = (
+        "handicap--adaptation-au-poste-de-travail",
+        "Adaptation au poste de travail",
+        None,
+    )
+    HANDICAP__ADAPTER_SON_LOGEMENT = (
+        "handicap--adapter-son-logement",
+        "Adapter son logement",
+        None,
+    )
+    HANDICAP__CONNAISSANCE_DES_DROITS_DES_TRAVAILLEURS = (
+        "handicap--connaissance-des-droits-des-travailleurs",
+        "Connaissance des droits des travailleurs",
+        None,
+    )
+    HANDICAP__FAIRE_RECONNAITRE_UN_HANDICAP = (
+        "handicap--faire-reconnaitre-un-handicap",
+        "Faire reconnaitre un handicap",
+        None,
+    )
+    HANDICAP__FAVORISER_LE_RETOUR_ET_LE_MAINTIEN_DANS_LEMPLOI = (
+        "handicap--favoriser-le-retour-et-le-maintien-dans-lemploi",
+        "Favoriser le retour et le maintien dans l'emploi",
+        None,
+    )
+    HANDICAP__MOBILITE_DES_PERSONNES_EN_SITUATION_DE_HANDICAP = (
+        "handicap--mobilite-des-personnes-en-situation-de-handicap",
+        "Mobilité des personnes en situation de handicap",
+        None,
+    )
+    HANDICAP__GERER_LE_DEPART_A_LA_RETRAITE_DES_PERSONNES_EN_SITUATION_DE_HANDICAP = (
+        (
+            "handicap--"
+            "gerer-le-depart-a-la-retraite-des-personnes-en-situation-de-handicap"
+        ),
+        "Gérer le départ à la retraite des personnes en situation de handicap",
+        None,
+    )
+
     MOBILITE = (
         "mobilite",
         "Mobilité",
