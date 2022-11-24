@@ -822,6 +822,33 @@ class Thematique(EnhancedEnum):
         None,
     )
 
+    ACCOMPAGNEMENT_SOCIO_PRO_PERSONNALISE = (
+        "accompagnement-social-et-professionnel-personnalise",
+        "Accompagnement social et professionnel personnalisé",
+        None,
+    )
+    ACCOMPAGNEMENT_SOCIO_PRO_PERSONNALISE__DECROCHAGE_SCOLAIRE = (
+        "accompagnement-social-et-professionnel-personnalise--decrochage-scolaire",
+        "Décrochage scolaire",
+        None,
+    )
+    ACCOMPAGNEMENT_SOCIO_PRO_PERSONNALISE__DEFINITION_DU_PROJET_PROFESSIONNEL = (
+        (
+            "accompagnement-social-et-professionnel-personnalise--"
+            "definition-du-projet-professionnel"
+        ),
+        "Définition du projet professionnel",
+        None,
+    )
+    ACCOMPAGNEMENT_SOCIO_PRO_PERSONNALISE__PARCOURS_D_INSERTION_SOCIOPROFESSIONNEL = (
+        (
+            "accompagnement-social-et-professionnel-personnalise--"
+            "parcours-d-insertion-socioprofessionnel"
+        ),
+        "Parcours d’insertion socio-professionnel",
+        None,
+    )
+
     CHOISIR_UN_METIER = (
         "choisir-un-metier",
         "Choisir un métier",

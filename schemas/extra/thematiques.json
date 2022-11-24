@@ -35,6 +35,26 @@
     "description": null
   },
   {
+    "value": "accompagnement-social-et-professionnel-personnalise",
+    "label": "Accompagnement social et professionnel personnalisé",
+    "description": null
+  },
+  {
+    "value": "accompagnement-social-et-professionnel-personnalise--decrochage-scolaire",
+    "label": "Décrochage scolaire",
+    "description": null
+  },
+  {
+    "value": "accompagnement-social-et-professionnel-personnalise--definition-du-projet-professionnel",
+    "label": "Définition du projet professionnel",
+    "description": null
+  },
+  {
+    "value": "accompagnement-social-et-professionnel-personnalise--parcours-d-insertion-socioprofessionnel",
+    "label": "Parcours d’insertion socio-professionnel",
+    "description": null
+  },
+  {
     "value": "choisir-un-metier",
     "label": "Choisir un métier",
     "description": null
