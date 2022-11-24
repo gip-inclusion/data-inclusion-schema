@@ -2,7 +2,7 @@
   {
     "value": "adhesion",
     "label": "Adhésion",
-    "description": "L'accès au lieu et/ou à ses services nécessite d'y adhérer"
+    "description": "L’accès au lieu et/ou à ses services nécessite d’y adhérer"
   },
   {
     "value": "gratuit",
@@ -17,11 +17,11 @@
   {
     "value": "pass-numerique",
     "label": "Accepte le pass numérique",
-    "description": "Il est possible d'utiliser un Pass numérique pour accéder au lieu"
+    "description": "Il est possible d’utiliser un Pass numérique pour accéder au lieu"
   },
   {
     "value": "payant",
     "label": "Payant",
-    "description": "L'accès au lieu et/ou à ses services est payant"
+    "description": "L’accès au lieu et/ou à ses services est payant"
   }
 ]

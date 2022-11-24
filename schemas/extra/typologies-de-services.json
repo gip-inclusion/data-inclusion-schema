@@ -2,12 +2,12 @@
   {
     "value": "accompagnement",
     "label": "Accompagnement",
-    "description": "Etre accompagné·e dans ses démarches ou son retour à l'emploi durable"
+    "description": "Etre accompagné·e dans ses démarches ou son retour à l’emploi durable"
   },
   {
     "value": "accueil",
     "label": "Accueil",
-    "description": "Lieux d'écoute et d'évaluation des besoins de la personne qui se présente afin de la guider vers le ou les organismes les plus susceptibles de répondre à ses besoins"
+    "description": "Lieux d’écoute et d’évaluation des besoins de la personne qui se présente afin de la guider vers le ou les organismes les plus susceptibles de répondre à ses besoins"
   },
   {
     "value": "aide-financiere",
@@ -37,7 +37,7 @@
   {
     "value": "financement",
     "label": "Financement ",
-    "description": "Crédit solidaire, prêts à taux zéro pour le financement d'un projet"
+    "description": "Crédit solidaire, prêts à taux zéro pour le financement d’un projet"
   },
   {
     "value": "formation",
@@ -47,7 +47,7 @@
   {
     "value": "information",
     "label": "Information",
-    "description": "Premier niveau d'information apporté par des professionnels du secteur"
+    "description": "Premier niveau d’information apporté par des professionnels du secteur"
   },
   {
     "value": "numerique",

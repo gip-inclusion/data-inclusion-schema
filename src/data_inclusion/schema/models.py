@@ -10,12 +10,12 @@ from data_inclusion.schema.base import EnhancedEnum
 class Typologie(EnhancedEnum):
     ACI = (
         "ACI",
-        "Structures porteuses d'ateliers et chantiers d'insertion (ACI)",
+        "Structures porteuses d’ateliers et chantiers d’insertion (ACI)",
         None,
     )
     ACIPHC = (
         "ACIPHC",
-        "SIAE — Atelier chantier d'insertion premières heures en chantier",
+        "SIAE — Atelier chantier d’insertion premières heures en chantier",
         None,
     )
     AFPA = (
@@ -30,7 +30,7 @@ class Typologie(EnhancedEnum):
     )
     ASE = (
         "ASE",
-        "Aide sociale à l'enfance (ASE)",
+        "Aide sociale à l’enfance (ASE)",
         None,
     )
     ASSO = (
@@ -56,19 +56,19 @@ class Typologie(EnhancedEnum):
     CAARUD = (
         "CAARUD",
         (
-            "CAARUD - Centre d'accueil et d'accompagnement à la réduction de risques "
+            "CAARUD - Centre d’accueil et d’accompagnement à la réduction de risques "
             "pour usagers de drogues"
         ),
         None,
     )
     CADA = (
         "CADA",
-        "Centres d'accueil de demandeurs d'asile (CADA)",
+        "Centres d’accueil de demandeurs d’asile (CADA)",
         None,
     )
     CAF = (
         "CAF",
-        "Caisses d'allocation familiale (CAF)",
+        "Caisses d’allocation familiale (CAF)",
         None,
     )
     CAP_EMPLOI = (
@@ -78,7 +78,7 @@ class Typologie(EnhancedEnum):
     )
     CAVA = (
         "CAVA",
-        "Centres d'adaptation à la vie active (CAVA)",
+        "Centres d’adaptation à la vie active (CAVA)",
         None,
     )
     CC = (
@@ -88,7 +88,7 @@ class Typologie(EnhancedEnum):
     )
     CCAS = (
         "CCAS",
-        "Centres communaux d'action sociale (CCAS)",
+        "Centres communaux d’action sociale (CCAS)",
         None,
     )
     CCONS = (
@@ -103,22 +103,22 @@ class Typologie(EnhancedEnum):
     )
     CHRS = (
         "CHRS",
-        "Centres d'hébergement et de réinsertion sociale (CHRS)",
+        "Centres d’hébergement et de réinsertion sociale (CHRS)",
         None,
     )
     CHU = (
         "CHU",
-        "Centres d'hébergement d'urgence (CHU)",
+        "Centres d’hébergement d’urgence (CHU)",
         None,
     )
     CIAS = (
         "CIAS",
-        "Centres intercommunaux d'action sociale (CIAS)",
+        "Centres intercommunaux d’action sociale (CIAS)",
         None,
     )
     CIDFF = (
         "CIDFF",
-        "Centres d'information sur les droits des femmes et des familles (CIDFF)",
+        "Centres d’information sur les droits des femmes et des familles (CIDFF)",
         None,
     )
     CITMET = (
@@ -128,7 +128,7 @@ class Typologie(EnhancedEnum):
     )
     CPH = (
         "CPH",
-        "Centres provisoires d'hébergement (CPH)",
+        "Centres provisoires d’hébergement (CPH)",
         None,
     )
     CS = (
@@ -138,12 +138,12 @@ class Typologie(EnhancedEnum):
     )
     CSAPA = (
         "CSAPA",
-        "CSAPA - Centre de soins, d'accompagnement et de prévention en addictologie",
+        "CSAPA - Centre de soins, d’accompagnement et de prévention en addictologie",
         None,
     )
     DEETS = (
         "DEETS",
-        "Directions de l'Economie, de l'Emploi, du Travail et des Solidarités (DEETS)",
+        "Directions de l’Economie, de l’Emploi, du Travail et des Solidarités (DEETS)",
         None,
     )
     DEPT = (
@@ -176,12 +176,12 @@ class Typologie(EnhancedEnum):
     )
     EI = (
         "EI",
-        "Entreprises d'insertion (EI)",
+        "Entreprises d’insertion (EI)",
         None,
     )
     EITI = (
         "EITI",
-        "Entreprises d'insertion par le travail indépendant (EITI)",
+        "Entreprises d’insertion par le travail indépendant (EITI)",
         None,
     )
     EPCI = (
@@ -191,42 +191,42 @@ class Typologie(EnhancedEnum):
     )
     EPIDE = (
         "EPIDE",
-        "EPIDE - Établissement pour l'insertion dans l'emploi",
+        "EPIDE - Établissement pour l’insertion dans l’emploi",
         None,
     )
     ESS = (
         "ESS",
-        "Entreprise de l'Économie Sociale et Solidaire",
+        "Entreprise de l’Économie Sociale et Solidaire",
         None,
     )
     ETTI = (
         "ETTI",
-        "Entreprises de travail temporaire d'insertion (ETTI)",
+        "Entreprises de travail temporaire d’insertion (ETTI)",
         None,
     )
     FAIS = (
         "FAIS",
-        "Fédérations d'acteurs de l'insertion et de la solidarité",
+        "Fédérations d’acteurs de l’insertion et de la solidarité",
         None,
     )
     GEIQ = (
         "GEIQ",
-        "Groupements d'employeurs pour l'insertion et la qualification (GEIQ)",
+        "Groupements d’employeurs pour l’insertion et la qualification (GEIQ)",
         None,
     )
     HUDA = (
         "HUDA",
-        "HUDA - Hébergement d'urgence pour demandeurs d'asile",
+        "HUDA - Hébergement d’urgence pour demandeurs d’asile",
         None,
     )
     MDE = (
         "MDE",
-        "Maison de l'emploi",
+        "Maison de l’emploi",
         None,
     )
     MDEF = (
         "MDEF",
-        "Maison de l'emploi et de la formation",
+        "Maison de l’emploi et de la formation",
         None,
     )
     MDPH = (
@@ -267,14 +267,14 @@ class Typologie(EnhancedEnum):
     OACAS = (
         "OACAS",
         (
-            "Structures agréées Organisme d'accueil communautaire et d'activité "
+            "Structures agréées Organisme d’accueil communautaire et d’activité "
             "solidaire (OACAS)"
         ),
         None,
     )
     ODC = (
         "ODC",
-        "Organisation délégataire d'un CD",
+        "Organisation délégataire d’un CD",
         None,
     )
     OF = (
@@ -284,7 +284,7 @@ class Typologie(EnhancedEnum):
     )
     OIL = (
         "OIL",
-        "Opérateur d'intermédiation locative",
+        "Opérateur d’intermédiation locative",
         None,
     )
     OPCS = (
@@ -294,7 +294,7 @@ class Typologie(EnhancedEnum):
     )
     PAD = (
         "PAD",
-        "Point d'Accès au Droit",
+        "Point d’Accès au Droit",
         None,
     )
     PE = (
@@ -324,7 +324,7 @@ class Typologie(EnhancedEnum):
     )
     PLIE = (
         "PLIE",
-        "Plans locaux pour l'insertion et l'emploi (PLIE)",
+        "Plans locaux pour l’insertion et l’emploi (PLIE)",
         None,
     )
     PREF = (
@@ -359,7 +359,7 @@ class Typologie(EnhancedEnum):
     )
     SPIP = (
         "SPIP",
-        "Services pénitentiaires d'insertion et de probation (SPIP)",
+        "Services pénitentiaires d’insertion et de probation (SPIP)",
         None,
     )
     TIERS_LIEUX = (
@@ -369,7 +369,7 @@ class Typologie(EnhancedEnum):
     )
     UDAF = (
         "UDAF",
-        "Union Départementale d'Aide aux Familles (UDAF)",
+        "Union Départementale d’Aide aux Familles (UDAF)",
         None,
     )
 
@@ -422,12 +422,12 @@ class LabelNational(EnhancedEnum):
     )
     APELS = (
         "apels",
-        "APELS Agence Pour l'Education par Le Sport",
+        "APELS Agence Pour l’Education par Le Sport",
         None,
     )
     APPRENTIS_DAUTEUIL = (
         "apprentis-dauteuil",
-        "Apprentis d'Auteuil",
+        "Apprentis d’Auteuil",
         None,
     )
     APTIC = (
@@ -567,7 +567,7 @@ class LabelNational(EnhancedEnum):
     )
     FEDERATION_DES_ENTREPRISES_DINSERTION = (
         "federation-des-entreprises-dinsertion",
-        "Fédération des entreprises d'insertion",
+        "Fédération des entreprises d’insertion",
         None,
     )
     FORCE_FEMMES = (
@@ -597,7 +597,7 @@ class LabelNational(EnhancedEnum):
     )
     GRANDES_ECOLES_DU_NUMERIQUE = (
         "grandes-ecoles-du-numerique",
-        "Grand Test Couveuse d'entreprise",
+        "Grand Test Couveuse d’entreprise",
         None,
     )
     GRAND_TEST_COUVEUSE_DENTREPRISE = (
@@ -607,7 +607,7 @@ class LabelNational(EnhancedEnum):
     )
     HUP = (
         "hup",
-        "H'UP",
+        "H’UP",
         None,
     )
     INAE = (
@@ -647,7 +647,7 @@ class LabelNational(EnhancedEnum):
     )
     MAISONS_DE_LEMPLOI = (
         "maisons-de-lemploi",
-        "Maisons de l'Emploi",
+        "Maisons de l’Emploi",
         None,
     )
     MDPH = (
@@ -757,7 +757,7 @@ class LabelNational(EnhancedEnum):
     )
     UNAF = (
         "unaf",
-        "Union nationale de l'aide aux familles",
+        "Union nationale de l’aide aux familles",
         None,
     )
     UNAI = (
@@ -767,7 +767,7 @@ class LabelNational(EnhancedEnum):
     )
     UNCCAS = (
         "unccas",
-        "Union nationale des centres communaux d'action sociale",
+        "Union nationale des centres communaux d’action sociale",
         None,
     )
     UNEA = (
@@ -808,12 +808,12 @@ class Thematique(EnhancedEnum):
     )
     ACCES_AUX_DROITS_ET_CITOYENNETE__DEMANDEURS_DASILE_ET_NATURALISATION = (
         "acces-aux-droits-et-citoyennete--demandeurs-dasile-et-naturalisation",
-        "Demandeurs d'asile et naturalisation",
+        "Demandeurs d’asile et naturalisation",
         None,
     )
     ACCES_AUX_DROITS_ET_CITOYENNETE__FACILITER_LACTION_CITOYENNE = (
         "acces-aux-droits-et-citoyennete--faciliter-laction-citoyenne",
-        "Faciliter l'action citoyenne",
+        "Faciliter l’action citoyenne",
         None,
     )
     ACCES_AUX_DROITS_ET_CITOYENNETE__DEVELOPPEMENT_DURABLE = (
@@ -845,7 +845,7 @@ class Thematique(EnhancedEnum):
             "accompagnement-social-et-professionnel-personnalise--"
             "parcours-d-insertion-socioprofessionnel"
         ),
-        "Parcours d'insertion socio-professionnel",
+        "Parcours d’insertion socio-professionnel",
         None,
     )
 
@@ -861,12 +861,12 @@ class Thematique(EnhancedEnum):
     )
     CHOISIR_UN_METIER__CONNAITRE_LES_OPPORTUNITES_DEMPLOI = (
         "choisir-un-metier--connaitre-les-opportunites-demploi",
-        "Connaître les opportunités d'emploi",
+        "Connaître les opportunités d’emploi",
         None,
     )
     CHOISIR_UN_METIER__DECOUVRIR_UN_METIER_OU_UN_SECTEUR_DACTIVITE = (
         "choisir-un-metier--decouvrir-un-metier-ou-un-secteur-dactivite",
-        "Découvrir un métier ou un secteur d'activité",
+        "Découvrir un métier ou un secteur d’activité",
         None,
     )
     CHOISIR_UN_METIER__CONFIRMER_SON_CHOIX_DE_METIER = (
@@ -877,12 +877,12 @@ class Thematique(EnhancedEnum):
 
     CREATION_ACTIVITE = (
         "creation-activite",
-        "Création d'activité",
+        "Création d’activité",
         None,
     )
     CREATION_ACTIVITE__DEFINIR_SON_PROJET_DE_CREATION_DENTREPRISE = (
         "creation-activite--definir-son-projet-de-creation-dentreprise",
-        "Définir son projet de création d'entreprise",
+        "Définir son projet de création d’entreprise",
         None,
     )
     CREATION_ACTIVITE__DEVELOPPER_SON_ENTREPRISE = (
@@ -892,12 +892,12 @@ class Thematique(EnhancedEnum):
     )
     CREATION_ACTIVITE__STRUCTURER_SON_PROJET_DE_CREATION_DENTREPRISE = (
         "creation-activite--structurer-son-projet-de-creation-dentreprise",
-        "Structurer son projet de création d'entreprise",
+        "Structurer son projet de création d’entreprise",
         None,
     )
     CREATION_ACTIVITE__RESEAUTAGE_POUR_CREATEURS_DENTREPRISE = (
         "creation-activite--reseautage-pour-createurs-dentreprise",
-        "Réseautage pour créateurs d'entreprise",
+        "Réseautage pour créateurs d’entreprise",
         None,
     )
     CREATION_ACTIVITE__FINANCER_SON_PROJET = (
@@ -949,7 +949,7 @@ class Thematique(EnhancedEnum):
     )
     FAMILLE__GARDE_DENFANTS = (
         "famille--garde-denfants",
-        "Garde d'enfants",
+        "Garde d’enfants",
         None,
     )
     FAMILLE__JEUNES_SANS_SOUTIEN_FAMILIAL = (
@@ -1000,7 +1000,7 @@ class Thematique(EnhancedEnum):
     )
     GESTION_FINANCIERE__CREATION_ET_UTILISATION_DUN_COMPTE_BANCAIRE = (
         "gestion-financiere--creation-et-utilisation-dun-compte-bancaire",
-        "Création et utilisation d'un compte bancaire",
+        "Création et utilisation d’un compte bancaire",
         None,
     )
     GESTION_FINANCIERE__ACCES_AU_MICRO_CREDIT = (
@@ -1015,7 +1015,7 @@ class Thematique(EnhancedEnum):
     )
     GESTION_FINANCIERE__BENEFICIER_DAIDES_FINANCIERES = (
         "gestion-financiere--beneficier-daides-financieres",
-        "Bénéficier d'aides financières",
+        "Bénéficier d’aides financières",
         None,
     )
 
@@ -1051,7 +1051,7 @@ class Thematique(EnhancedEnum):
     )
     HANDICAP__FAVORISER_LE_RETOUR_ET_LE_MAINTIEN_DANS_LEMPLOI = (
         "handicap--favoriser-le-retour-et-le-maintien-dans-lemploi",
-        "Favoriser le retour et le maintien dans l'emploi",
+        "Favoriser le retour et le maintien dans l’emploi",
         None,
     )
     HANDICAP__MOBILITE_DES_PERSONNES_EN_SITUATION_DE_HANDICAP = (
@@ -1080,7 +1080,7 @@ class Thematique(EnhancedEnum):
     )
     LOGEMENT_HEBERGEMENT__BESOIN_DADAPTER_MON_LOGEMENT = (
         "logement-hebergement--besoin-dadapter-mon-logement",
-        "Besoin d'adapter mon logement",
+        "Besoin d’adapter mon logement",
         None,
     )
     LOGEMENT_HEBERGEMENT__DEMENAGEMENT = (
@@ -1146,7 +1146,7 @@ class Thematique(EnhancedEnum):
     )
     MOBILITE__AIDES_A_LA_REPRISE_DEMPLOI_OU_A_LA_FORMATION = (
         "mobilite--aides-a-la-reprise-demploi-ou-a-la-formation",
-        "Aides à la reprise d'emploi ou à la formation",
+        "Aides à la reprise d’emploi ou à la formation",
         None,
     )
     MOBILITE__COMPRENDRE_ET_UTILISER_LES_TRANSPORTS_EN_COMMUN = (
@@ -1222,7 +1222,7 @@ class Thematique(EnhancedEnum):
     )
     NUMERIQUE__S_EQUIPER_EN_MATERIEL_INFORMATIQUE = (
         "numerique--s-equiper-en-materiel-informatique",
-        "S'équiper en matériel informatique",
+        "S’équiper en matériel informatique",
         None,
     )
     NUMERIQUE__CREER_ET_DEVELOPPER_MON_ENTREPRISE = (
@@ -1247,7 +1247,7 @@ class Thematique(EnhancedEnum):
     )
     NUMERIQUE__SOUTENIR_LA_PARENTALITE_ET_L_EDUCATION_AVEC_LE_NUMERIQUE = (
         "numerique--soutenir-la-parentalite-et-l-education-avec-le-numerique",
-        "Soutenir la parentalité et l'éducation avec le numérique",
+        "Soutenir la parentalité et l’éducation avec le numérique",
         None,
     )
 
@@ -1273,7 +1273,7 @@ class Thematique(EnhancedEnum):
     )
     PREPARER_SA_CANDIDATURE__ORGANISER_SES_DEMARCHES_DE_RECHERCHE_DEMPLOI = (
         "preparer-sa-candidature--organiser-ses-demarches-de-recherche-demploi",
-        "Organiser ses démarches de recherche d'emploi",
+        "Organiser ses démarches de recherche d’emploi",
         None,
     )
 
@@ -1330,7 +1330,7 @@ class Thematique(EnhancedEnum):
     )
     SANTE__FAIRE_FACE_A_UNE_SITUATION_DADDICTION = (
         "sante--faire-face-a-une-situation-daddiction",
-        "Faire face à une situation d'addiction",
+        "Faire face à une situation d’addiction",
         None,
     )
     SANTE__BIEN_ETRE_PSYCHOLOGIQUE = (
@@ -1378,7 +1378,7 @@ class Thematique(EnhancedEnum):
     )
     SANTE__DIAGNOSTIC_ET_ACCOMPAGNEMENT_A_LEMPLOYABILITE = (
         "sante--diagnostic-et-accompagnement-a-lemployabilite",
-        "Diagnostic et accompagnement à l'employabailité",
+        "Diagnostic et accompagnement à l’employabailité",
         None,
     )
 
@@ -1405,22 +1405,22 @@ class Thematique(EnhancedEnum):
 
     SOUVRIR_A_L_INTERNATIONAL = (
         "souvrir-a-linternational",
-        "S'ouvrir à l'international",
+        "S’ouvrir à l’international",
         None,
     )
     SOUVRIR_A_L_INTERNATIONAL__CONNAITRE_LES_OPPORTUNITES_DEMPLOI_A_LETRANGER = (
         "souvrir-a-linternational--connaitre-les-opportunites-demploi-a-letranger",
-        "Connaître les opportunités d'emploi à l'étranger",
+        "Connaître les opportunités d’emploi à l’étranger",
         None,
     )
     SOUVRIR_A_L_INTERNATIONAL__SINFORMER_SUR_LES_AIDES_POUR_TRAVAILLER_A_LETRANGER = (
         "souvrir-a-linternational--sinformer-sur-les-aides-pour-travailler-a-letranger",
-        "S'informer sur les aides pour travailler à l'étranger",
+        "S’informer sur les aides pour travailler à l’étranger",
         None,
     )
     SOUVRIR_A_L_INTERNATIONAL__SORGANISER_SUITE_A_SON_RETOUR_EN_FRANCE = (
         "souvrir-a-linternational--sorganiser-suite-a-son-retour-en-france",
-        "S'organiser suite à son retour en France",
+        "S’organiser suite à son retour en France",
         None,
     )
 
@@ -1431,7 +1431,7 @@ class Thematique(EnhancedEnum):
     )
     TROUVER_UN_EMPLOI__REPONDRE_A_DES_OFFRES_DEMPLOI = (
         "trouver-un-emploi--repondre-a-des-offres-demploi",
-        "Répondre à des offres d'emploi",
+        "Répondre à des offres d’emploi",
         None,
     )
     TROUVER_UN_EMPLOI__FAIRE_DES_CANDIDATURES_SPONTANEES = (
@@ -1455,13 +1455,13 @@ class TypologieService(EnhancedEnum):
     ACCOMPAGNEMENT = (
         "accompagnement",
         "Accompagnement",
-        "Etre accompagné·e dans ses démarches ou son retour à l'emploi durable",
+        "Etre accompagné·e dans ses démarches ou son retour à l’emploi durable",
     )
     ACCUEIL = (
         "accueil",
         "Accueil",
         """
-            Lieux d'écoute et d'évaluation des besoins de la personne qui se présente
+            Lieux d’écoute et d’évaluation des besoins de la personne qui se présente
             afin de la guider vers le ou les organismes les plus susceptibles de
             répondre à ses besoins
         """,
@@ -1492,7 +1492,7 @@ class TypologieService(EnhancedEnum):
     INFORMATION = (
         "information",
         "Information",
-        "Premier niveau d'information apporté par des professionnels du secteur",
+        "Premier niveau d’information apporté par des professionnels du secteur",
     )
     NUMÉRIQUE = (
         "numerique",
@@ -1512,7 +1512,7 @@ class TypologieService(EnhancedEnum):
     FINANCEMENT = (
         "financement",
         "Financement ",
-        "Crédit solidaire, prêts à taux zéro pour le financement d'un projet",
+        "Crédit solidaire, prêts à taux zéro pour le financement d’un projet",
     )
 
 
@@ -1533,17 +1533,17 @@ class Frais(EnhancedEnum):
     PAYANT = (
         "payant",
         "Payant",
-        "L'accès au lieu et/ou à ses services est payant",
+        "L’accès au lieu et/ou à ses services est payant",
     )
     ADHESION = (
         "adhesion",
         "Adhésion",
-        "L'accès au lieu et/ou à ses services nécessite d'y adhérer",
+        "L’accès au lieu et/ou à ses services nécessite d’y adhérer",
     )
     PASS_NUMERIQUE = (
         "pass-numerique",
         "Accepte le pass numérique",
-        "Il est possible d'utiliser un Pass numérique pour accéder au lieu",
+        "Il est possible d’utiliser un Pass numérique pour accéder au lieu",
     )
 
 
@@ -1593,7 +1593,7 @@ class Profil(EnhancedEnum):
     )
     HANDICAPS_MENTAUX = (
         "handicaps-mentaux",
-        "Handicaps mentaux : déficiences limitant les activités d'une personne",
+        "Handicaps mentaux : déficiences limitant les activités d’une personne",
         None,
     )
     FEMMES = (
@@ -1603,7 +1603,7 @@ class Profil(EnhancedEnum):
     )
     PERSONNES_EN_SITUATION_ILLETTRISME = (
         "personnes-en-situation-illettrisme",
-        "Personnes en situation d'illettrisme",
+        "Personnes en situation d’illettrisme",
         None,
     )
 

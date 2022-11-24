@@ -21,7 +21,7 @@
   },
   {
     "value": "acces-aux-droits-et-citoyennete--demandeurs-dasile-et-naturalisation",
-    "label": "Demandeurs d'asile et naturalisation",
+    "label": "Demandeurs d’asile et naturalisation",
     "description": null
   },
   {
@@ -31,7 +31,7 @@
   },
   {
     "value": "acces-aux-droits-et-citoyennete--faciliter-laction-citoyenne",
-    "label": "Faciliter l'action citoyenne",
+    "label": "Faciliter l’action citoyenne",
     "description": null
   },
   {
@@ -51,7 +51,7 @@
   },
   {
     "value": "accompagnement-social-et-professionnel-personnalise--parcours-d-insertion-socioprofessionnel",
-    "label": "Parcours d'insertion socio-professionnel",
+    "label": "Parcours d’insertion socio-professionnel",
     "description": null
   },
   {
@@ -66,12 +66,12 @@
   },
   {
     "value": "choisir-un-metier--connaitre-les-opportunites-demploi",
-    "label": "Connaître les opportunités d'emploi",
+    "label": "Connaître les opportunités d’emploi",
     "description": null
   },
   {
     "value": "choisir-un-metier--decouvrir-un-metier-ou-un-secteur-dactivite",
-    "label": "Découvrir un métier ou un secteur d'activité",
+    "label": "Découvrir un métier ou un secteur d’activité",
     "description": null
   },
   {
@@ -81,12 +81,12 @@
   },
   {
     "value": "creation-activite",
-    "label": "Création d'activité",
+    "label": "Création d’activité",
     "description": null
   },
   {
     "value": "creation-activite--definir-son-projet-de-creation-dentreprise",
-    "label": "Définir son projet de création d'entreprise",
+    "label": "Définir son projet de création d’entreprise",
     "description": null
   },
   {
@@ -101,12 +101,12 @@
   },
   {
     "value": "creation-activite--reseautage-pour-createurs-dentreprise",
-    "label": "Réseautage pour créateurs d'entreprise",
+    "label": "Réseautage pour créateurs d’entreprise",
     "description": null
   },
   {
     "value": "creation-activite--structurer-son-projet-de-creation-dentreprise",
-    "label": "Structurer son projet de création d'entreprise",
+    "label": "Structurer son projet de création d’entreprise",
     "description": null
   },
   {
@@ -151,7 +151,7 @@
   },
   {
     "value": "famille--garde-denfants",
-    "label": "Garde d'enfants",
+    "label": "Garde d’enfants",
     "description": null
   },
   {
@@ -201,12 +201,12 @@
   },
   {
     "value": "gestion-financiere--beneficier-daides-financieres",
-    "label": "Bénéficier d'aides financières",
+    "label": "Bénéficier d’aides financières",
     "description": null
   },
   {
     "value": "gestion-financiere--creation-et-utilisation-dun-compte-bancaire",
-    "label": "Création et utilisation d'un compte bancaire",
+    "label": "Création et utilisation d’un compte bancaire",
     "description": null
   },
   {
@@ -251,7 +251,7 @@
   },
   {
     "value": "handicap--favoriser-le-retour-et-le-maintien-dans-lemploi",
-    "label": "Favoriser le retour et le maintien dans l'emploi",
+    "label": "Favoriser le retour et le maintien dans l’emploi",
     "description": null
   },
   {
@@ -271,7 +271,7 @@
   },
   {
     "value": "logement-hebergement--besoin-dadapter-mon-logement",
-    "label": "Besoin d'adapter mon logement",
+    "label": "Besoin d’adapter mon logement",
     "description": null
   },
   {
@@ -326,7 +326,7 @@
   },
   {
     "value": "mobilite--aides-a-la-reprise-demploi-ou-a-la-formation",
-    "label": "Aides à la reprise d'emploi ou à la formation",
+    "label": "Aides à la reprise d’emploi ou à la formation",
     "description": null
   },
   {
@@ -431,12 +431,12 @@
   },
   {
     "value": "numerique--s-equiper-en-materiel-informatique",
-    "label": "S'équiper en matériel informatique",
+    "label": "S’équiper en matériel informatique",
     "description": null
   },
   {
     "value": "numerique--soutenir-la-parentalite-et-l-education-avec-le-numerique",
-    "label": "Soutenir la parentalité et l'éducation avec le numérique",
+    "label": "Soutenir la parentalité et l’éducation avec le numérique",
     "description": null
   },
   {
@@ -456,7 +456,7 @@
   },
   {
     "value": "preparer-sa-candidature--organiser-ses-demarches-de-recherche-demploi",
-    "label": "Organiser ses démarches de recherche d'emploi",
+    "label": "Organiser ses démarches de recherche d’emploi",
     "description": null
   },
   {
@@ -541,12 +541,12 @@
   },
   {
     "value": "sante--diagnostic-et-accompagnement-a-lemployabilite",
-    "label": "Diagnostic et accompagnement à l'employabailité",
+    "label": "Diagnostic et accompagnement à l’employabailité",
     "description": null
   },
   {
     "value": "sante--faire-face-a-une-situation-daddiction",
-    "label": "Faire face à une situation d'addiction",
+    "label": "Faire face à une situation d’addiction",
     "description": null
   },
   {
@@ -591,22 +591,22 @@
   },
   {
     "value": "souvrir-a-linternational",
-    "label": "S'ouvrir à l'international",
+    "label": "S’ouvrir à l’international",
     "description": null
   },
   {
     "value": "souvrir-a-linternational--connaitre-les-opportunites-demploi-a-letranger",
-    "label": "Connaître les opportunités d'emploi à l'étranger",
+    "label": "Connaître les opportunités d’emploi à l’étranger",
     "description": null
   },
   {
     "value": "souvrir-a-linternational--sinformer-sur-les-aides-pour-travailler-a-letranger",
-    "label": "S'informer sur les aides pour travailler à l'étranger",
+    "label": "S’informer sur les aides pour travailler à l’étranger",
     "description": null
   },
   {
     "value": "souvrir-a-linternational--sorganiser-suite-a-son-retour-en-france",
-    "label": "S'organiser suite à son retour en France",
+    "label": "S’organiser suite à son retour en France",
     "description": null
   },
   {
@@ -626,7 +626,7 @@
   },
   {
     "value": "trouver-un-emploi--repondre-a-des-offres-demploi",
-    "label": "Répondre à des offres d'emploi",
+    "label": "Répondre à des offres d’emploi",
     "description": null
   },
   {

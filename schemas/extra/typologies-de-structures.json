@@ -1,12 +1,12 @@
 [
   {
     "value": "ACI",
-    "label": "Structures porteuses d'ateliers et chantiers d'insertion (ACI)",
+    "label": "Structures porteuses d’ateliers et chantiers d’insertion (ACI)",
     "description": null
   },
   {
     "value": "ACIPHC",
-    "label": "SIAE — Atelier chantier d'insertion premières heures en chantier",
+    "label": "SIAE — Atelier chantier d’insertion premières heures en chantier",
     "description": null
   },
   {
@@ -21,7 +21,7 @@
   },
   {
     "value": "ASE",
-    "label": "Aide sociale à l'enfance (ASE)",
+    "label": "Aide sociale à l’enfance (ASE)",
     "description": null
   },
   {
@@ -46,17 +46,17 @@
   },
   {
     "value": "CAARUD",
-    "label": "CAARUD - Centre d'accueil et d'accompagnement à la réduction de risques pour usagers de drogues",
+    "label": "CAARUD - Centre d’accueil et d’accompagnement à la réduction de risques pour usagers de drogues",
     "description": null
   },
   {
     "value": "CADA",
-    "label": "Centres d'accueil de demandeurs d'asile (CADA)",
+    "label": "Centres d’accueil de demandeurs d’asile (CADA)",
     "description": null
   },
   {
     "value": "CAF",
-    "label": "Caisses d'allocation familiale (CAF)",
+    "label": "Caisses d’allocation familiale (CAF)",
     "description": null
   },
   {
@@ -66,7 +66,7 @@
   },
   {
     "value": "CAVA",
-    "label": "Centres d'adaptation à la vie active (CAVA)",
+    "label": "Centres d’adaptation à la vie active (CAVA)",
     "description": null
   },
   {
@@ -76,7 +76,7 @@
   },
   {
     "value": "CCAS",
-    "label": "Centres communaux d'action sociale (CCAS)",
+    "label": "Centres communaux d’action sociale (CCAS)",
     "description": null
   },
   {
@@ -91,22 +91,22 @@
   },
   {
     "value": "CHRS",
-    "label": "Centres d'hébergement et de réinsertion sociale (CHRS)",
+    "label": "Centres d’hébergement et de réinsertion sociale (CHRS)",
     "description": null
   },
   {
     "value": "CHU",
-    "label": "Centres d'hébergement d'urgence (CHU)",
+    "label": "Centres d’hébergement d’urgence (CHU)",
     "description": null
   },
   {
     "value": "CIAS",
-    "label": "Centres intercommunaux d'action sociale (CIAS)",
+    "label": "Centres intercommunaux d’action sociale (CIAS)",
     "description": null
   },
   {
     "value": "CIDFF",
-    "label": "Centres d'information sur les droits des femmes et des familles (CIDFF)",
+    "label": "Centres d’information sur les droits des femmes et des familles (CIDFF)",
     "description": null
   },
   {
@@ -116,7 +116,7 @@
   },
   {
     "value": "CPH",
-    "label": "Centres provisoires d'hébergement (CPH)",
+    "label": "Centres provisoires d’hébergement (CPH)",
     "description": null
   },
   {
@@ -126,12 +126,12 @@
   },
   {
     "value": "CSAPA",
-    "label": "CSAPA - Centre de soins, d'accompagnement et de prévention en addictologie",
+    "label": "CSAPA - Centre de soins, d’accompagnement et de prévention en addictologie",
     "description": null
   },
   {
     "value": "DEETS",
-    "label": "Directions de l'Economie, de l'Emploi, du Travail et des Solidarités (DEETS)",
+    "label": "Directions de l’Economie, de l’Emploi, du Travail et des Solidarités (DEETS)",
     "description": null
   },
   {
@@ -161,12 +161,12 @@
   },
   {
     "value": "EI",
-    "label": "Entreprises d'insertion (EI)",
+    "label": "Entreprises d’insertion (EI)",
     "description": null
   },
   {
     "value": "EITI",
-    "label": "Entreprises d'insertion par le travail indépendant (EITI)",
+    "label": "Entreprises d’insertion par le travail indépendant (EITI)",
     "description": null
   },
   {
@@ -176,42 +176,42 @@
   },
   {
     "value": "EPIDE",
-    "label": "EPIDE - Établissement pour l'insertion dans l'emploi",
+    "label": "EPIDE - Établissement pour l’insertion dans l’emploi",
     "description": null
   },
   {
     "value": "ESS",
-    "label": "Entreprise de l'Économie Sociale et Solidaire",
+    "label": "Entreprise de l’Économie Sociale et Solidaire",
     "description": null
   },
   {
     "value": "ETTI",
-    "label": "Entreprises de travail temporaire d'insertion (ETTI)",
+    "label": "Entreprises de travail temporaire d’insertion (ETTI)",
     "description": null
   },
   {
     "value": "FAIS",
-    "label": "Fédérations d'acteurs de l'insertion et de la solidarité",
+    "label": "Fédérations d’acteurs de l’insertion et de la solidarité",
     "description": null
   },
   {
     "value": "GEIQ",
-    "label": "Groupements d'employeurs pour l'insertion et la qualification (GEIQ)",
+    "label": "Groupements d’employeurs pour l’insertion et la qualification (GEIQ)",
     "description": null
   },
   {
     "value": "HUDA",
-    "label": "HUDA - Hébergement d'urgence pour demandeurs d'asile",
+    "label": "HUDA - Hébergement d’urgence pour demandeurs d’asile",
     "description": null
   },
   {
     "value": "MDE",
-    "label": "Maison de l'emploi",
+    "label": "Maison de l’emploi",
     "description": null
   },
   {
     "value": "MDEF",
-    "label": "Maison de l'emploi et de la formation",
+    "label": "Maison de l’emploi et de la formation",
     "description": null
   },
   {
@@ -251,12 +251,12 @@
   },
   {
     "value": "OACAS",
-    "label": "Structures agréées Organisme d'accueil communautaire et d'activité solidaire (OACAS)",
+    "label": "Structures agréées Organisme d’accueil communautaire et d’activité solidaire (OACAS)",
     "description": null
   },
   {
     "value": "ODC",
-    "label": "Organisation délégataire d'un CD",
+    "label": "Organisation délégataire d’un CD",
     "description": null
   },
   {
@@ -266,7 +266,7 @@
   },
   {
     "value": "OIL",
-    "label": "Opérateur d'intermédiation locative",
+    "label": "Opérateur d’intermédiation locative",
     "description": null
   },
   {
@@ -276,7 +276,7 @@
   },
   {
     "value": "PAD",
-    "label": "Point d'Accès au Droit",
+    "label": "Point d’Accès au Droit",
     "description": null
   },
   {
@@ -306,7 +306,7 @@
   },
   {
     "value": "PLIE",
-    "label": "Plans locaux pour l'insertion et l'emploi (PLIE)",
+    "label": "Plans locaux pour l’insertion et l’emploi (PLIE)",
     "description": null
   },
   {
@@ -341,7 +341,7 @@
   },
   {
     "value": "SPIP",
-    "label": "Services pénitentiaires d'insertion et de probation (SPIP)",
+    "label": "Services pénitentiaires d’insertion et de probation (SPIP)",
     "description": null
   },
   {
@@ -351,7 +351,7 @@
   },
   {
     "value": "UDAF",
-    "label": "Union Départementale d'Aide aux Familles (UDAF)",
+    "label": "Union Départementale d’Aide aux Familles (UDAF)",
     "description": null
   }
 ]
