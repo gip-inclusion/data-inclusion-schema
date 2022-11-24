@@ -90,6 +90,36 @@
     "description": null
   },
   {
+    "value": "equipement-et-alimentation",
+    "label": "Equipement et alimentation",
+    "description": null
+  },
+  {
+    "value": "equipement-et-alimentation--acces-a-du-materiel-informatique",
+    "label": "Accès à du matériel informatique",
+    "description": null
+  },
+  {
+    "value": "equipement-et-alimentation--acces-a-un-telephone-et-un-abonnement",
+    "label": "Accès à un téléphone et un abonnement",
+    "description": null
+  },
+  {
+    "value": "equipement-et-alimentation--alimentation",
+    "label": "Alimentation",
+    "description": null
+  },
+  {
+    "value": "equipement-et-alimentation--electromenager",
+    "label": "Electroménager",
+    "description": null
+  },
+  {
+    "value": "equipement-et-alimentation--habillement",
+    "label": "Habillement",
+    "description": null
+  },
+  {
     "value": "gestion-financiere",
     "label": "Gestion financière",
     "description": null

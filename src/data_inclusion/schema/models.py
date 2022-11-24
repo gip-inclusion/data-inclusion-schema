@@ -879,6 +879,37 @@ class Thematique(EnhancedEnum):
         None,
     )
 
+    EQUIPEMENT_ET_ALIMENTATION = (
+        "equipement-et-alimentation",
+        "Equipement et alimentation",
+        None,
+    )
+    EQUIPEMENT_ET_ALIMENTATION__ACCES_A_DU_MATERIEL_INFORMATIQUE = (
+        "equipement-et-alimentation--acces-a-du-materiel-informatique",
+        "Accès à du matériel informatique",
+        None,
+    )
+    EQUIPEMENT_ET_ALIMENTATION__ACCES_A_UN_TELEPHONE_ET_UN_ABONNEMENT = (
+        "equipement-et-alimentation--acces-a-un-telephone-et-un-abonnement",
+        "Accès à un téléphone et un abonnement",
+        None,
+    )
+    EQUIPEMENT_ET_ALIMENTATION__ALIMENTATION = (
+        "equipement-et-alimentation--alimentation",
+        "Alimentation",
+        None,
+    )
+    EQUIPEMENT_ET_ALIMENTATION__ELECTROMENAGER = (
+        "equipement-et-alimentation--electromenager",
+        "Electroménager",
+        None,
+    )
+    EQUIPEMENT_ET_ALIMENTATION__HABILLEMENT = (
+        "equipement-et-alimentation--habillement",
+        "Habillement",
+        None,
+    )
+
     GESTION_FINANCIERE = (
         "gestion-financiere",
         "Gestion financière",
