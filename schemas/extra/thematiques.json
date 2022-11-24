@@ -30,18 +30,13 @@
     "description": null
   },
   {
-    "value": "creation-activite--de-l-idee-au-projet",
-    "label": "De l'idée au projet",
+    "value": "creation-activite--definir-son-projet-de-creation-dentreprise",
+    "label": "Définir son projet de création d'entreprise",
     "description": null
   },
   {
-    "value": "creation-activite--demarrer-son-activite",
-    "label": "Démarrer son activité",
-    "description": null
-  },
-  {
-    "value": "creation-activite--elaborer-son-projet",
-    "label": "Elaborer son projet",
+    "value": "creation-activite--developper-son-entreprise",
+    "label": "Développer son entreprise",
     "description": null
   },
   {
@@ -52,6 +47,11 @@
   {
     "value": "creation-activite--reseautage-pour-createurs-dentreprise",
     "label": "Réseautage pour créateurs d'entreprise",
+    "description": null
+  },
+  {
+    "value": "creation-activite--structurer-son-projet-de-creation-dentreprise",
+    "label": "Structurer son projet de création d’entreprise",
     "description": null
   },
   {

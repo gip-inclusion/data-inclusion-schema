@@ -814,19 +814,19 @@ class Thematique(EnhancedEnum):
         "Création d'activité",
         None,
     )
-    CREATION_ACTIVITE__DE_L_IDEE_AU_PROJET = (
-        "creation-activite--de-l-idee-au-projet",
-        "De l'idée au projet",
+    CREATION_ACTIVITE__DEFINIR_SON_PROJET_DE_CREATION_DENTREPRISE = (
+        "creation-activite--definir-son-projet-de-creation-dentreprise",
+        "Définir son projet de création d'entreprise",
         None,
     )
-    CREATION_ACTIVITE__DEMARRER_SON_ACTIVITE = (
-        "creation-activite--demarrer-son-activite",
-        "Démarrer son activité",
+    CREATION_ACTIVITE__DEVELOPPER_SON_ENTREPRISE = (
+        "creation-activite--developper-son-entreprise",
+        "Développer son entreprise",
         None,
     )
-    CREATION_ACTIVITE__ELABORER_SON_PROJET = (
-        "creation-activite--elaborer-son-projet",
-        "Elaborer son projet",
+    CREATION_ACTIVITE__STRUCTURER_SON_PROJET_DE_CREATION_DENTREPRISE = (
+        "creation-activite--structurer-son-projet-de-creation-dentreprise",
+        "Structurer son projet de création d’entreprise",
         None,
     )
     CREATION_ACTIVITE__RESEAUTAGE_POUR_CREATEURS_DENTREPRISE = (
