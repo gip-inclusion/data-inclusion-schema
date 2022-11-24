@@ -1382,6 +1382,27 @@ class Thematique(EnhancedEnum):
         None,
     )
 
+    SE_FORMER = (
+        "se-former",
+        "Se former",
+        None,
+    )
+    SE_FORMER__TROUVER_SA_FORMATION = (
+        "se-former--trouver-sa-formation",
+        "Trouver sa formation",
+        None,
+    )
+    SE_FORMER__MONTER_SON_DOSSIER_DE_FORMATION = (
+        "se-former--monter-son-dossier-de-formation",
+        "Monter son dossier de formation",
+        None,
+    )
+    SE_FORMER__UTILISER_LE_NUMÉRIQUE = (
+        "se-former--utiliser-le-numérique",
+        "Utiliser le numérique",
+        None,
+    )
+
     TROUVER_UN_EMPLOI = (
         "trouver-un-emploi",
         "Trouver un emploi",

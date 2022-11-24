@@ -570,6 +570,26 @@
     "description": null
   },
   {
+    "value": "se-former",
+    "label": "Se former",
+    "description": null
+  },
+  {
+    "value": "se-former--monter-son-dossier-de-formation",
+    "label": "Monter son dossier de formation",
+    "description": null
+  },
+  {
+    "value": "se-former--trouver-sa-formation",
+    "label": "Trouver sa formation",
+    "description": null
+  },
+  {
+    "value": "se-former--utiliser-le-numérique",
+    "label": "Utiliser le numérique",
+    "description": null
+  },
+  {
     "value": "trouver-un-emploi",
     "label": "Trouver un emploi",
     "description": null
