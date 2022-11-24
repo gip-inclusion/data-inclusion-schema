@@ -178,6 +178,13 @@
       "title": "Thematique",
       "description": "An enumeration.",
       "enum": [
+        "acces-aux-droits-et-citoyennete",
+        "acces-aux-droits-et-citoyennete--accompagnement-dans-les-demarches-administratives",
+        "acces-aux-droits-et-citoyennete--accompagnement-juridique",
+        "acces-aux-droits-et-citoyennete--connaitre-ses-droits",
+        "acces-aux-droits-et-citoyennete--demandeurs-dasile-et-naturalisation",
+        "acces-aux-droits-et-citoyennete--faciliter-laction-citoyenne",
+        "acces-aux-droits-et-citoyennete--developpement-durable",
         "choisir-un-metier",
         "choisir-un-metier--identifier-ses-points-forts-et-ses-competences",
         "choisir-un-metier--connaitre-les-opportunites-demploi",

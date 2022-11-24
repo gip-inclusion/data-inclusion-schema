@@ -1,5 +1,40 @@
 [
   {
+    "value": "acces-aux-droits-et-citoyennete",
+    "label": "Accès aux droits & citoyenneté",
+    "description": null
+  },
+  {
+    "value": "acces-aux-droits-et-citoyennete--accompagnement-dans-les-demarches-administratives",
+    "label": "Accompagnement dans les démarches administratives",
+    "description": null
+  },
+  {
+    "value": "acces-aux-droits-et-citoyennete--accompagnement-juridique",
+    "label": "Accompagnement juridique",
+    "description": null
+  },
+  {
+    "value": "acces-aux-droits-et-citoyennete--connaitre-ses-droits",
+    "label": "Connaitre ses droits",
+    "description": null
+  },
+  {
+    "value": "acces-aux-droits-et-citoyennete--demandeurs-dasile-et-naturalisation",
+    "label": "Demandeurs d'asile et naturalisation",
+    "description": null
+  },
+  {
+    "value": "acces-aux-droits-et-citoyennete--developpement-durable",
+    "label": "Développement durable",
+    "description": null
+  },
+  {
+    "value": "acces-aux-droits-et-citoyennete--faciliter-laction-citoyenne",
+    "label": "Faciliter l'action citoyenne",
+    "description": null
+  },
+  {
     "value": "choisir-un-metier",
     "label": "Choisir un métier",
     "description": null

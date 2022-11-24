@@ -783,6 +783,45 @@ class LabelNational(EnhancedEnum):
 
 
 class Thematique(EnhancedEnum):
+    ACCES_AUX_DROITS_ET_CITOYENNETE = (
+        "acces-aux-droits-et-citoyennete",
+        "Accès aux droits & citoyenneté",
+        None,
+    )
+    ACCES_AUX_DROITS_ET_CITOYENNETE__ACCOMPAGNEMENT_DEMARCHES_ADMINISTRATIVES = (
+        (
+            "acces-aux-droits-et-citoyennete"
+            "--accompagnement-dans-les-demarches-administratives"
+        ),
+        "Accompagnement dans les démarches administratives",
+        None,
+    )
+    ACCES_AUX_DROITS_ET_CITOYENNETE__ACCOMPAGNEMENT_JURIDIQUE = (
+        "acces-aux-droits-et-citoyennete--accompagnement-juridique",
+        "Accompagnement juridique",
+        None,
+    )
+    ACCES_AUX_DROITS_ET_CITOYENNETE__CONNAITRE_SES_DROITS = (
+        "acces-aux-droits-et-citoyennete--connaitre-ses-droits",
+        "Connaitre ses droits",
+        None,
+    )
+    ACCES_AUX_DROITS_ET_CITOYENNETE__DEMANDEURS_DASILE_ET_NATURALISATION = (
+        "acces-aux-droits-et-citoyennete--demandeurs-dasile-et-naturalisation",
+        "Demandeurs d'asile et naturalisation",
+        None,
+    )
+    ACCES_AUX_DROITS_ET_CITOYENNETE__FACILITER_LACTION_CITOYENNE = (
+        "acces-aux-droits-et-citoyennete--faciliter-laction-citoyenne",
+        "Faciliter l'action citoyenne",
+        None,
+    )
+    ACCES_AUX_DROITS_ET_CITOYENNETE__DEVELOPPEMENT_DURABLE = (
+        "acces-aux-droits-et-citoyennete--developpement-durable",
+        "Développement durable",
+        None,
+    )
+
     CHOISIR_UN_METIER = (
         "choisir-un-metier",
         "Choisir un métier",
