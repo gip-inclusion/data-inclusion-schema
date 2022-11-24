@@ -910,6 +910,47 @@ class Thematique(EnhancedEnum):
         None,
     )
 
+    FAMILLE = (
+        "famille",
+        "Famille",
+        None,
+    )
+    FAMILLE__INFORMATION_ET_ACCOMPAGNEMENT_DES_PARENTS = (
+        "famille--information-et-accompagnement-des-parents",
+        "Information et accompagnement des parents",
+        None,
+    )
+    FAMILLE__GARDE_DENFANTS = (
+        "famille--garde-denfants",
+        "Garde d'enfants",
+        None,
+    )
+    FAMILLE__JEUNES_SANS_SOUTIEN_FAMILIAL = (
+        "famille--jeunes-sans-soutien-familial",
+        "Jeunes sans soutien familial",
+        None,
+    )
+    FAMILLE__SOUTIEN_AUX_FAMILLES = (
+        "famille--soutien-aux-familles",
+        "Soutien aux familles",
+        None,
+    )
+    FAMILLE__VIOLENCES_INTRAFAMILIALES = (
+        "famille--violences-intrafamiliales",
+        "Violences intrafamiliales",
+        None,
+    )
+    FAMILLE__ACCOMPAGNEMENT_FEMME_ENCEINTE_BEBE_JEUNE_ENFANT = (
+        "famille--accompagnement-femme-enceinte-bebe-jeune-enfant",
+        "Accompagnement femme enceinte, bébé, jeune enfant",
+        None,
+    )
+    FAMILLE__SOUTIEN_A_LA_PARENTALITE = (
+        "famille--soutien-a-la-parentalite",
+        "Soutien à la parentalité",
+        None,
+    )
+
     GESTION_FINANCIERE = (
         "gestion-financiere",
         "Gestion financière",

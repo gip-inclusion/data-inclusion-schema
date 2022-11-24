@@ -120,6 +120,46 @@
     "description": null
   },
   {
+    "value": "famille",
+    "label": "Famille",
+    "description": null
+  },
+  {
+    "value": "famille--accompagnement-femme-enceinte-bebe-jeune-enfant",
+    "label": "Accompagnement femme enceinte, bébé, jeune enfant",
+    "description": null
+  },
+  {
+    "value": "famille--garde-denfants",
+    "label": "Garde d'enfants",
+    "description": null
+  },
+  {
+    "value": "famille--information-et-accompagnement-des-parents",
+    "label": "Information et accompagnement des parents",
+    "description": null
+  },
+  {
+    "value": "famille--jeunes-sans-soutien-familial",
+    "label": "Jeunes sans soutien familial",
+    "description": null
+  },
+  {
+    "value": "famille--soutien-a-la-parentalite",
+    "label": "Soutien à la parentalité",
+    "description": null
+  },
+  {
+    "value": "famille--soutien-aux-familles",
+    "label": "Soutien aux familles",
+    "description": null
+  },
+  {
+    "value": "famille--violences-intrafamiliales",
+    "label": "Violences intrafamiliales",
+    "description": null
+  },
+  {
     "value": "gestion-financiere",
     "label": "Gestion financière",
     "description": null
