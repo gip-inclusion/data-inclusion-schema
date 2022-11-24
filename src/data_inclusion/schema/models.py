@@ -1318,7 +1318,7 @@ class Thematique(EnhancedEnum):
         None,
     )
     REMOBILISATION__PARTICIPER_A_DES_ACTIONS_SOLIDAIRES_OU_DE_BÉNÉVOLAT = (
-        "remobilisation--participer-a-des-actions-solidaires-ou-de-bénévolat",
+        "remobilisation--participer-a-des-actions-solidaires-ou-de-benevolat",
         "Participer à des actions solidaires ou de bénévolat",
         None,
     )
@@ -1344,7 +1344,7 @@ class Thematique(EnhancedEnum):
         None,
     )
     SANTE__SE_SOIGNER_ET_PRÉVENIR_LA_MALADIE = (
-        "sante--se-soigner-et-prévenir-la-maladie",
+        "sante--se-soigner-et-prevenir-la-maladie",
         "Se soigner et prévenir la maladie",
         None,
     )
@@ -1398,7 +1398,7 @@ class Thematique(EnhancedEnum):
         None,
     )
     SE_FORMER__UTILISER_LE_NUMÉRIQUE = (
-        "se-former--utiliser-le-numérique",
+        "se-former--utiliser-le-numerique",
         "Utiliser le numérique",
         None,
     )
