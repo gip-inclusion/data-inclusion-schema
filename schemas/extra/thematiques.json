@@ -90,6 +90,46 @@
     "description": null
   },
   {
+    "value": "gestion-financiere",
+    "label": "Gestion financière",
+    "description": null
+  },
+  {
+    "value": "gestion-financiere--acces-au-micro-credit",
+    "label": "Accès au micro-crédit",
+    "description": null
+  },
+  {
+    "value": "gestion-financiere--accompagnement-aux-personnes-en-difficultes-financieres",
+    "label": "Accompagnement aux personnes en difficultés financières",
+    "description": null
+  },
+  {
+    "value": "gestion-financiere--apprendre-a-gerer-son-budget",
+    "label": "Apprendre à gérer son budget",
+    "description": null
+  },
+  {
+    "value": "gestion-financiere--beneficier-daides-financieres",
+    "label": "Bénéficier d'aides financières",
+    "description": null
+  },
+  {
+    "value": "gestion-financiere--creation-et-utilisation-dun-compte-bancaire",
+    "label": "Création et utilisation d'un compte bancaire",
+    "description": null
+  },
+  {
+    "value": "gestion-financiere--obtenir-une-aide-alimentaire",
+    "label": "Obtenir une aide alimentaire",
+    "description": null
+  },
+  {
+    "value": "gestion-financiere--prevention-et-gestion-du-surendettement",
+    "label": "Prévention et gestion du surendettement",
+    "description": null
+  },
+  {
     "value": "mobilite",
     "label": "Mobilité",
     "description": null

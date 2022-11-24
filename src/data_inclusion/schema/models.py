@@ -879,6 +879,47 @@ class Thematique(EnhancedEnum):
         None,
     )
 
+    GESTION_FINANCIERE = (
+        "gestion-financiere",
+        "Gestion financière",
+        None,
+    )
+    GESTION_FINANCIERE__ACCOMPAGNEMENT_AUX_PERSONNES_EN_DIFFICULTES_FINANCIERES = (
+        "gestion-financiere--accompagnement-aux-personnes-en-difficultes-financieres",
+        "Accompagnement aux personnes en difficultés financières",
+        None,
+    )
+    GESTION_FINANCIERE__APPRENDRE_A_GERER_SON_BUDGET = (
+        "gestion-financiere--apprendre-a-gerer-son-budget",
+        "Apprendre à gérer son budget",
+        None,
+    )
+    GESTION_FINANCIERE__PREVENTION_ET_GESTION_DU_SURENDETTEMENT = (
+        "gestion-financiere--prevention-et-gestion-du-surendettement",
+        "Prévention et gestion du surendettement",
+        None,
+    )
+    GESTION_FINANCIERE__CREATION_ET_UTILISATION_DUN_COMPTE_BANCAIRE = (
+        "gestion-financiere--creation-et-utilisation-dun-compte-bancaire",
+        "Création et utilisation d'un compte bancaire",
+        None,
+    )
+    GESTION_FINANCIERE__ACCES_AU_MICRO_CREDIT = (
+        "gestion-financiere--acces-au-micro-credit",
+        "Accès au micro-crédit",
+        None,
+    )
+    GESTION_FINANCIERE__OBTENIR_UNE_AIDE_ALIMENTAIRE = (
+        "gestion-financiere--obtenir-une-aide-alimentaire",
+        "Obtenir une aide alimentaire",
+        None,
+    )
+    GESTION_FINANCIERE__BENEFICIER_DAIDES_FINANCIERES = (
+        "gestion-financiere--beneficier-daides-financieres",
+        "Bénéficier d'aides financières",
+        None,
+    )
+
     MOBILITE = (
         "mobilite",
         "Mobilité",
