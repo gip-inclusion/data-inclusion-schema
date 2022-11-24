@@ -1041,6 +1041,52 @@ class Thematique(EnhancedEnum):
         None,
     )
 
+    LOGEMENT_HEBERGEMENT = (
+        "logement-hebergement",
+        "Logement et hébergement",
+        None,
+    )
+    LOGEMENT_HEBERGEMENT__ETRE_ACCOMPAGNE_POUR_SE_LOGER = (
+        "logement-hebergement--etre-accompagne-pour-se-loger",
+        "Etre accompagné(e) pour se loger",
+        None,
+    )
+    LOGEMENT_HEBERGEMENT__BESOIN_DADAPTER_MON_LOGEMENT = (
+        "logement-hebergement--besoin-dadapter-mon-logement",
+        "Besoin d'adapter mon logement",
+        None,
+    )
+    LOGEMENT_HEBERGEMENT__DEMENAGEMENT = (
+        "logement-hebergement--demenagement",
+        "Déménagement",
+        None,
+    )
+    LOGEMENT_HEBERGEMENT__MAL_LOGES_SANS_LOGIS = (
+        "logement-hebergement--mal-loges-sans-logis",
+        "Mal logé/sans logis",
+        None,
+    )
+    LOGEMENT_HEBERGEMENT__PROBLEME_AVEC_SON_LOGEMENT = (
+        "logement-hebergement--probleme-avec-son-logement",
+        "Problème avec son logement",
+        None,
+    )
+    LOGEMENT_HEBERGEMENT__REPRENDRE_UN_EMPLOI_OU_UNE_FORMATION = (
+        "logement-hebergement--reprendre-un-emploi-ou-une-formation",
+        "Reprendre un emploi ou une formation",
+        None,
+    )
+    LOGEMENT_HEBERGEMENT__CONNAISSANCE_DE_SES_DROITS_ET_INTERLOCUTEURS = (
+        "logement-hebergement--connaissance-de-ses-droits-et-interlocuteurs",
+        "Connaissance de ses droits et interlocuteurs",
+        None,
+    )
+    LOGEMENT_HEBERGEMENT__GERER_SON_BUDGET = (
+        "logement-hebergement--gerer-son-budget",
+        "Gérer son budget",
+        None,
+    )
+
     MOBILITE = (
         "mobilite",
         "Mobilité",

@@ -245,6 +245,51 @@
     "description": null
   },
   {
+    "value": "logement-hebergement",
+    "label": "Logement et hébergement",
+    "description": null
+  },
+  {
+    "value": "logement-hebergement--besoin-dadapter-mon-logement",
+    "label": "Besoin d'adapter mon logement",
+    "description": null
+  },
+  {
+    "value": "logement-hebergement--connaissance-de-ses-droits-et-interlocuteurs",
+    "label": "Connaissance de ses droits et interlocuteurs",
+    "description": null
+  },
+  {
+    "value": "logement-hebergement--demenagement",
+    "label": "Déménagement",
+    "description": null
+  },
+  {
+    "value": "logement-hebergement--etre-accompagne-pour-se-loger",
+    "label": "Etre accompagné(e) pour se loger",
+    "description": null
+  },
+  {
+    "value": "logement-hebergement--gerer-son-budget",
+    "label": "Gérer son budget",
+    "description": null
+  },
+  {
+    "value": "logement-hebergement--mal-loges-sans-logis",
+    "label": "Mal logé/sans logis",
+    "description": null
+  },
+  {
+    "value": "logement-hebergement--probleme-avec-son-logement",
+    "label": "Problème avec son logement",
+    "description": null
+  },
+  {
+    "value": "logement-hebergement--reprendre-un-emploi-ou-une-formation",
+    "label": "Reprendre un emploi ou une formation",
+    "description": null
+  },
+  {
     "value": "mobilite",
     "label": "Mobilité",
     "description": null
