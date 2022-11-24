@@ -10,12 +10,12 @@ from data_inclusion.schema.base import EnhancedEnum
 class Typologie(EnhancedEnum):
     ACI = (
         "ACI",
-        "Structures porteuses d’ateliers et chantiers d’insertion (ACI)",
+        "Structures porteuses d'ateliers et chantiers d'insertion (ACI)",
         None,
     )
     ACIPHC = (
         "ACIPHC",
-        "SIAE — Atelier chantier d’insertion premières heures en chantier",
+        "SIAE — Atelier chantier d'insertion premières heures en chantier",
         None,
     )
     AFPA = (
@@ -30,7 +30,7 @@ class Typologie(EnhancedEnum):
     )
     ASE = (
         "ASE",
-        "Aide sociale à l’enfance (ASE)",
+        "Aide sociale à l'enfance (ASE)",
         None,
     )
     ASSO = (
@@ -63,12 +63,12 @@ class Typologie(EnhancedEnum):
     )
     CADA = (
         "CADA",
-        "Centres d’accueil de demandeurs d’asile (CADA)",
+        "Centres d'accueil de demandeurs d'asile (CADA)",
         None,
     )
     CAF = (
         "CAF",
-        "Caisses d’allocation familiale (CAF)",
+        "Caisses d'allocation familiale (CAF)",
         None,
     )
     CAP_EMPLOI = (
@@ -78,7 +78,7 @@ class Typologie(EnhancedEnum):
     )
     CAVA = (
         "CAVA",
-        "Centres d’adaptation à la vie active (CAVA)",
+        "Centres d'adaptation à la vie active (CAVA)",
         None,
     )
     CC = (
@@ -88,7 +88,7 @@ class Typologie(EnhancedEnum):
     )
     CCAS = (
         "CCAS",
-        "Centres communaux d’action sociale (CCAS)",
+        "Centres communaux d'action sociale (CCAS)",
         None,
     )
     CCONS = (
@@ -103,22 +103,22 @@ class Typologie(EnhancedEnum):
     )
     CHRS = (
         "CHRS",
-        "Centres d’hébergement et de réinsertion sociale (CHRS)",
+        "Centres d'hébergement et de réinsertion sociale (CHRS)",
         None,
     )
     CHU = (
         "CHU",
-        "Centres d’hébergement d’urgence (CHU)",
+        "Centres d'hébergement d'urgence (CHU)",
         None,
     )
     CIAS = (
         "CIAS",
-        "Centres intercommunaux d’action sociale (CIAS)",
+        "Centres intercommunaux d'action sociale (CIAS)",
         None,
     )
     CIDFF = (
         "CIDFF",
-        "Centres d’information sur les droits des femmes et des familles (CIDFF)",
+        "Centres d'information sur les droits des femmes et des familles (CIDFF)",
         None,
     )
     CITMET = (
@@ -128,7 +128,7 @@ class Typologie(EnhancedEnum):
     )
     CPH = (
         "CPH",
-        "Centres provisoires d’hébergement (CPH)",
+        "Centres provisoires d'hébergement (CPH)",
         None,
     )
     CS = (
@@ -143,7 +143,7 @@ class Typologie(EnhancedEnum):
     )
     DEETS = (
         "DEETS",
-        "Directions de l’Economie, de l’Emploi, du Travail et des Solidarités (DEETS)",
+        "Directions de l'Economie, de l'Emploi, du Travail et des Solidarités (DEETS)",
         None,
     )
     DEPT = (
@@ -176,12 +176,12 @@ class Typologie(EnhancedEnum):
     )
     EI = (
         "EI",
-        "Entreprises d’insertion (EI)",
+        "Entreprises d'insertion (EI)",
         None,
     )
     EITI = (
         "EITI",
-        "Entreprises d’insertion par le travail indépendant (EITI)",
+        "Entreprises d'insertion par le travail indépendant (EITI)",
         None,
     )
     EPCI = (
@@ -201,17 +201,17 @@ class Typologie(EnhancedEnum):
     )
     ETTI = (
         "ETTI",
-        "Entreprises de travail temporaire d’insertion (ETTI)",
+        "Entreprises de travail temporaire d'insertion (ETTI)",
         None,
     )
     FAIS = (
         "FAIS",
-        "Fédérations d’acteurs de l’insertion et de la solidarité",
+        "Fédérations d'acteurs de l'insertion et de la solidarité",
         None,
     )
     GEIQ = (
         "GEIQ",
-        "Groupements d’employeurs pour l’insertion et la qualification (GEIQ)",
+        "Groupements d'employeurs pour l'insertion et la qualification (GEIQ)",
         None,
     )
     HUDA = (
@@ -267,7 +267,7 @@ class Typologie(EnhancedEnum):
     OACAS = (
         "OACAS",
         (
-            "Structures agréées Organisme d’accueil communautaire et d’activité "
+            "Structures agréées Organisme d'accueil communautaire et d'activité "
             "solidaire (OACAS)"
         ),
         None,
@@ -324,7 +324,7 @@ class Typologie(EnhancedEnum):
     )
     PLIE = (
         "PLIE",
-        "Plans locaux pour l’insertion et l’emploi (PLIE)",
+        "Plans locaux pour l'insertion et l'emploi (PLIE)",
         None,
     )
     PREF = (
@@ -359,7 +359,7 @@ class Typologie(EnhancedEnum):
     )
     SPIP = (
         "SPIP",
-        "Services pénitentiaires d’insertion et de probation (SPIP)",
+        "Services pénitentiaires d'insertion et de probation (SPIP)",
         None,
     )
     TIERS_LIEUX = (
@@ -369,7 +369,7 @@ class Typologie(EnhancedEnum):
     )
     UDAF = (
         "UDAF",
-        "Union Départementale d’Aide aux Familles (UDAF)",
+        "Union Départementale d'Aide aux Familles (UDAF)",
         None,
     )
 
@@ -845,7 +845,7 @@ class Thematique(EnhancedEnum):
             "accompagnement-social-et-professionnel-personnalise--"
             "parcours-d-insertion-socioprofessionnel"
         ),
-        "Parcours d’insertion socio-professionnel",
+        "Parcours d'insertion socio-professionnel",
         None,
     )
 
@@ -892,7 +892,7 @@ class Thematique(EnhancedEnum):
     )
     CREATION_ACTIVITE__STRUCTURER_SON_PROJET_DE_CREATION_DENTREPRISE = (
         "creation-activite--structurer-son-projet-de-creation-dentreprise",
-        "Structurer son projet de création d’entreprise",
+        "Structurer son projet de création d'entreprise",
         None,
     )
     CREATION_ACTIVITE__RESEAUTAGE_POUR_CREATEURS_DENTREPRISE = (
@@ -1410,17 +1410,17 @@ class Thematique(EnhancedEnum):
     )
     SOUVRIR_A_L_INTERNATIONAL__CONNAITRE_LES_OPPORTUNITES_DEMPLOI_A_LETRANGER = (
         "souvrir-a-linternational--connaitre-les-opportunites-demploi-a-letranger",
-        "Connaître les opportunités d’emploi à l’étranger",
+        "Connaître les opportunités d'emploi à l'étranger",
         None,
     )
     SOUVRIR_A_L_INTERNATIONAL__SINFORMER_SUR_LES_AIDES_POUR_TRAVAILLER_A_LETRANGER = (
         "souvrir-a-linternational--sinformer-sur-les-aides-pour-travailler-a-letranger",
-        "S’informer sur les aides pour travailler à l’étranger",
+        "S'informer sur les aides pour travailler à l'étranger",
         None,
     )
     SOUVRIR_A_L_INTERNATIONAL__SORGANISER_SUITE_A_SON_RETOUR_EN_FRANCE = (
         "souvrir-a-linternational--sorganiser-suite-a-son-retour-en-france",
-        "S’organiser suite à son retour en France",
+        "S'organiser suite à son retour en France",
         None,
     )
 
