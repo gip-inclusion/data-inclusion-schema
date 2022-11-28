@@ -1,5 +1,26 @@
 # Changements
 
+## Version 0.6.0
+
+* ajouts thématiques (et sous-thématiques associées):
+  * `acces-aux-droits-et-citoyennete`
+  * `accompagnement-social-et-professionnel-personnalise`
+  * `equipement-et-alimentation`
+  * `famille`
+  * `gestion-financiere`
+  * `handicap`
+  * `logement-hebergement`
+  * `remobilisation`
+  * `sante`
+  * `se-former`
+  * `souvrir-a-linternational`
+* remplacements de sous-thématiques:
+  * `creation-activite--de-l-idee-au-projet` -> `creation-activite--definir-son-projet-de-creation-dentreprise`
+  * `creation-activite--demarrer-son-activite` -> `creation-activite--developper-son-entreprise`
+  * `creation-activite--elaborer-son-projet` -> `creation-activite--structurer-son-projet-de-creation-dentreprise`
+* normalisation des apostrophes dans les labels à afficher
+* suppression des accents dans les valeurs
+
 ## Version 0.5.0
 
 * nouvelle gestion des antennes
