@@ -1656,14 +1656,6 @@ class Structure(BaseModel):
     class Config:
         extra = Extra.forbid
 
-    @pydantic.root_validator
-    def has_pivot(cls, values: dict) -> dict:
-        has_rna = values.get("rna", None) is not None
-        has_siret = values.get("siret", None) is not None
-        if not (has_rna or has_siret):
-            raise ValueError("absence de pivot")
-        return values
-
 
 def generate_structures_json_schema():
     """Generate the structures file json schema from the `Structure` model."""
