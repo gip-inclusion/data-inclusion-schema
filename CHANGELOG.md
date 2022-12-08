@@ -1,6 +1,10 @@
 # Changements
 
-## Version 0.6.0
+## Version 0.7.0 - 2022-12-08
+
+* la présence d'au moins une donnée pivot est désormais optionnelle
+
+## Version 0.6.0 - 2022-11-28
 
 * ajouts thématiques (et sous-thématiques associées):
   * `acces-aux-droits-et-citoyennete`
@@ -21,7 +25,7 @@
 * normalisation des apostrophes dans les labels à afficher
 * suppression des accents dans les valeurs
 
-## Version 0.5.0
+## Version 0.5.0 - 2022-11-17
 
 * nouvelle gestion des antennes
   * suppression du champ `structure_parente`
