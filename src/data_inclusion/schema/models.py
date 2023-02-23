@@ -32,6 +32,7 @@ class Service(BaseModel):
     commune: Optional[str]
     code_postal: Optional[constr(min_length=5, max_length=5, regex=r"^\d{5}$")]
     code_insee: Optional[constr(min_length=5, max_length=5)]
+    adresse: Optional[str]
 
     class Config:
         extra = Extra.forbid

@@ -15,6 +15,7 @@
     * `commune`
     * `code_postal`
     * `code_insee`
+    * `adresse`
 
 ## Version 0.7.0 - 2022-12-08
 
