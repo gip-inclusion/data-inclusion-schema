@@ -6,8 +6,9 @@
   * ajout du label `collectif-emploi`
   * label `cheops` remplacé par `cap-emploi-reseau-cheops`
 * schéma service:
-  * ajouts:
+  * champs ajoutés:
     * `presentation_detail`
+    * `pre_requis`
 
 ## Version 0.7.0 - 2022-12-08
 
