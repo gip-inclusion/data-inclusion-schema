@@ -2,6 +2,9 @@
 
 ## Version 0.8.0 - 2023-02-24
 
+* labels et réseaux:
+  * label `cheops` remplacé par `cap-emploi-reseau-cheops`
+
 ## Version 0.7.0 - 2022-12-08
 
 * la présence d'au moins une donnée pivot est désormais optionnelle

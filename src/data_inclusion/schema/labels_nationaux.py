@@ -92,9 +92,9 @@ class LabelNational(EnhancedEnum):
         "Chantier école",
         None,
     )
-    CHEOPS = (
-        "cheops",
-        "Cheops",
+    CAP_EMPLOI_RESEAU_CHEOPS = (
+        "cap-emploi-reseau-cheops",
+        "CAP Emploi - Réseau CHEOPS",
         None,
     )
     CIDFF = (
