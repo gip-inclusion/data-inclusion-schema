@@ -37,6 +37,7 @@ class Service(BaseModel):
     longitude: Optional[float]
     latitude: Optional[float]
     recurrence: Optional[str]
+    date_creation: Optional[date]
 
     class Config:
         extra = Extra.forbid
