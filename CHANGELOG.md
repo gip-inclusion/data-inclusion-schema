@@ -3,6 +3,7 @@
 ## Version 0.8.0 - 2023-02-24
 
 * labels et réseaux:
+  * ajout du label `collectif-emploi`
   * label `cheops` remplacé par `cap-emploi-reseau-cheops`
 
 ## Version 0.7.0 - 2022-12-08

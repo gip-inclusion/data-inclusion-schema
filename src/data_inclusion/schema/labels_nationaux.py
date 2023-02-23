@@ -107,6 +107,11 @@ class LabelNational(EnhancedEnum):
         "CNAM",
         None,
     )
+    COLLECTIF_EMPLOI = (
+        "collectif-emploi",
+        "Collectif emploi",
+        None,
+    )
     CONSEILLER_NUMERIQUE = (
         "conseiller-numerique",
         "Conseiller numérique",
