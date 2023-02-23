@@ -42,6 +42,7 @@ class Service(BaseModel):
     lien_source: Optional[HttpUrl]
     telephone: Optional[str]
     courriel: Optional[EmailStr]
+    contact_public: Optional[bool]
 
     class Config:
         extra = Extra.forbid
