@@ -28,6 +28,7 @@ class Service(BaseModel):
     pre_requis: Optional[str]
     cumulable: Optional[bool]
     justificatifs: Optional[str]
+    formulaire_en_ligne: Optional[HttpUrl]
 
     class Config:
         extra = Extra.forbid

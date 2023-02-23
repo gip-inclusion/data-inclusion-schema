@@ -11,6 +11,7 @@
     * `pre_requis`
     * `cumulable`
     * `justificatifs`
+    * `formulaire_en_ligne`
 
 ## Version 0.7.0 - 2022-12-08
 
