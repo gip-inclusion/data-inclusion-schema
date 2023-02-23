@@ -9,6 +9,7 @@
   * champs ajoutés:
     * `presentation_detail`
     * `pre_requis`
+    * `cumulable`
 
 ## Version 0.7.0 - 2022-12-08
 

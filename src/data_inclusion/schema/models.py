@@ -26,6 +26,7 @@ class Service(BaseModel):
     frais_autres: Optional[str]
     profils: Optional[list[Profil]]
     pre_requis: Optional[str]
+    cumulable: Optional[bool]
 
     class Config:
         extra = Extra.forbid
