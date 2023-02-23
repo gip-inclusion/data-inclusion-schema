@@ -34,6 +34,8 @@ class Service(BaseModel):
     code_insee: Optional[constr(min_length=5, max_length=5)]
     adresse: Optional[str]
     complement_adresse: Optional[str]
+    longitude: Optional[float]
+    latitude: Optional[float]
 
     class Config:
         extra = Extra.forbid

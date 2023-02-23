@@ -17,6 +17,8 @@
     * `code_insee`
     * `adresse`
     * `complement_adresse`
+    * `longitude`
+    * `latitude`
 
 ## Version 0.7.0 - 2022-12-08
 
