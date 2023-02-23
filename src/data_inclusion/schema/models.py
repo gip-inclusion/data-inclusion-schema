@@ -43,6 +43,7 @@ class Service(BaseModel):
     telephone: Optional[str]
     courriel: Optional[EmailStr]
     contact_public: Optional[bool]
+    date_maj: Optional[date | datetime]
 
     class Config:
         extra = Extra.forbid
