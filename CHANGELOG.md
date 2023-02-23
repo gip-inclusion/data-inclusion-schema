@@ -5,6 +5,9 @@
 * labels et réseaux:
   * ajout du label `collectif-emploi`
   * label `cheops` remplacé par `cap-emploi-reseau-cheops`
+* schéma service:
+  * ajouts:
+    * `presentation_detail`
 
 ## Version 0.7.0 - 2022-12-08
 

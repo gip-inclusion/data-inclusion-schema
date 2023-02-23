@@ -18,6 +18,7 @@ class Service(BaseModel):
     source: str
     nom: str
     presentation_resume: Optional[constr(max_length=280)]
+    presentation_detail: Optional[str]
     types: Optional[list[TypologieService]]
     thematiques: Optional[list[Thematique]]
     prise_rdv: Optional[HttpUrl]
