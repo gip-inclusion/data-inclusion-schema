@@ -19,6 +19,7 @@
     * `complement_adresse`
     * `longitude`
     * `latitude`
+    * `recurrence`
 
 ## Version 0.7.0 - 2022-12-08
 

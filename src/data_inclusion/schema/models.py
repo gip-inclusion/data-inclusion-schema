@@ -36,6 +36,7 @@ class Service(BaseModel):
     complement_adresse: Optional[str]
     longitude: Optional[float]
     latitude: Optional[float]
+    recurrence: Optional[str]
 
     class Config:
         extra = Extra.forbid
