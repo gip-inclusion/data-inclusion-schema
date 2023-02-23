@@ -40,6 +40,7 @@ class Service(BaseModel):
     date_creation: Optional[date]
     date_suspension: Optional[date]
     lien_source: Optional[HttpUrl]
+    telephone: Optional[str]
 
     class Config:
         extra = Extra.forbid
