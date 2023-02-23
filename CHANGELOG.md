@@ -24,6 +24,7 @@
     * `date_suspension`
     * `lien_source`
     * `telephone`
+    * `courriel`
 
 ## Version 0.7.0 - 2022-12-08
 

@@ -41,6 +41,7 @@ class Service(BaseModel):
     date_suspension: Optional[date]
     lien_source: Optional[HttpUrl]
     telephone: Optional[str]
+    courriel: Optional[EmailStr]
 
     class Config:
         extra = Extra.forbid
