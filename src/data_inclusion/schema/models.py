@@ -39,6 +39,7 @@ class Service(BaseModel):
     recurrence: Optional[str]
     date_creation: Optional[date]
     date_suspension: Optional[date]
+    lien_source: Optional[HttpUrl]
 
     class Config:
         extra = Extra.forbid
