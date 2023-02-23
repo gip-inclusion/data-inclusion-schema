@@ -12,6 +12,7 @@
     * `cumulable`
     * `justificatifs`
     * `formulaire_en_ligne`
+    * `commune`
 
 ## Version 0.7.0 - 2022-12-08
 
