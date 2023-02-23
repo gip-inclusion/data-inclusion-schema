@@ -13,6 +13,7 @@
     * `justificatifs`
     * `formulaire_en_ligne`
     * `commune`
+    * `code_postal`
 
 ## Version 0.7.0 - 2022-12-08
 

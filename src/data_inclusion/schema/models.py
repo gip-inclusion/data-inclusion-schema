@@ -30,6 +30,7 @@ class Service(BaseModel):
     justificatifs: Optional[str]
     formulaire_en_ligne: Optional[HttpUrl]
     commune: Optional[str]
+    code_postal: Optional[constr(min_length=5, max_length=5, regex=r"^\d{5}$")]
 
     class Config:
         extra = Extra.forbid
