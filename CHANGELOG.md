@@ -28,6 +28,9 @@
     * `contact_public`
     * `date_maj`
     * `modes_accueil`
+    * `zone_diffusion_type`
+    * `zone_diffusion_code`
+    * `zone_diffusion_nom`
 
 ## Version 0.7.0 - 2022-12-08
 

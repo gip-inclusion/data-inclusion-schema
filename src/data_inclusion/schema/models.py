@@ -4,6 +4,7 @@ from typing import Optional
 import pydantic
 from pydantic import BaseModel, EmailStr, Extra, HttpUrl, constr
 
+from data_inclusion.schema.code_officiel_geographique import TypeCOG
 from data_inclusion.schema.frais import Frais
 from data_inclusion.schema.labels_nationaux import LabelNational
 from data_inclusion.schema.modes_accueil import ModeAccueil
@@ -46,6 +47,13 @@ class Service(BaseModel):
     contact_public: Optional[bool]
     date_maj: Optional[date | datetime]
     modes_accueil: Optional[list[ModeAccueil]]
+    zone_diffusion_type: Optional[TypeCOG]
+    zone_diffusion_code: Optional[
+        constr(regex=r"^\w{5}$")  # code commune
+        | constr(regex=r"^\w{2,3}$")  # code departement
+        | constr(regex=r"^\d{2}$")  # code region
+    ]
+    zone_diffusion_nom: Optional[str]
 
     class Config:
         extra = Extra.forbid
