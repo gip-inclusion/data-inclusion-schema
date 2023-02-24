@@ -6,7 +6,7 @@ build-backend = "flit_core.buildapi"
 name = "data-inclusion-schema"
 version = "0.7.0"
 description = "Schéma de l'offre d'insertion"
-authors = [{ name = "Valentin Matton", email = "valentin.matton@beta.gouv.fr" }]
+authors = [{ name = "data.inclusion", email = "data.inclusion@beta.gouv.fr" }]
 readme = "README.md"
 dynamic = []
 classifiers = [
