@@ -7,7 +7,10 @@ from pydantic import BaseModel, EmailStr, Extra, HttpUrl, constr
 from data_inclusion.schema.code_officiel_geographique import TypeCOG
 from data_inclusion.schema.frais import Frais
 from data_inclusion.schema.labels_nationaux import LabelNational
-from data_inclusion.schema.modalites_orientation import ModaliteOrientationBeneficiaire
+from data_inclusion.schema.modalites_orientation import (
+    ModaliteOrientationAccompagnateur,
+    ModaliteOrientationBeneficiaire,
+)
 from data_inclusion.schema.modes_accueil import ModeAccueil
 from data_inclusion.schema.profils import Profil
 from data_inclusion.schema.thematiques import Thematique
@@ -58,6 +61,9 @@ class Service(BaseModel):
     zone_diffusion_nom: Optional[str]
     contact_nom: Optional[str]
     modalites_orientation_beneficiaire: Optional[list[ModaliteOrientationBeneficiaire]]
+    modalites_orientation_accompagnateur: Optional[
+        list[ModaliteOrientationAccompagnateur]
+    ]
 
     class Config:
         extra = Extra.forbid

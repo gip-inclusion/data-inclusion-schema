@@ -6,6 +6,7 @@
   * champs ajoutés:
     * `contact_nom`
     * `modalites_orientation_beneficiaire`
+    * `modalites_orientation_accompagnateur`
 * typologies de structures:
   * ajout crèches AVIP (`AVIP`)
 * thématiques:

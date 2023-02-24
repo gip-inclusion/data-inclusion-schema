@@ -32,6 +32,10 @@ def main():
             "modalites-orientation-beneficiaire.json",
             models.ModaliteOrientationBeneficiaire,
         ),
+        (
+            "modalites-orientation-accompagnateur.json",
+            models.ModaliteOrientationAccompagnateur,
+        ),
     ]
 
     for filename, enum in enum_x_file_tuples_list:
