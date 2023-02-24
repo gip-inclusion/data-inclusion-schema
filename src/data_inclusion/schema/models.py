@@ -6,6 +6,7 @@ from pydantic import BaseModel, EmailStr, Extra, HttpUrl, constr
 
 from data_inclusion.schema.frais import Frais
 from data_inclusion.schema.labels_nationaux import LabelNational
+from data_inclusion.schema.modes_accueil import ModeAccueil
 from data_inclusion.schema.profils import Profil
 from data_inclusion.schema.thematiques import Thematique
 from data_inclusion.schema.typologies_de_services import TypologieService
@@ -44,6 +45,7 @@ class Service(BaseModel):
     courriel: Optional[EmailStr]
     contact_public: Optional[bool]
     date_maj: Optional[date | datetime]
+    modes_accueil: Optional[list[ModeAccueil]]
 
     class Config:
         extra = Extra.forbid

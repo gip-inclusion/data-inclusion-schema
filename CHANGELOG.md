@@ -27,6 +27,7 @@
     * `courriel`
     * `contact_public`
     * `date_maj`
+    * `modes_accueil`
 
 ## Version 0.7.0 - 2022-12-08
 
