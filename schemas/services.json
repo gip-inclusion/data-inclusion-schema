@@ -190,6 +190,25 @@
       ],
       "type": "string"
     },
+    "ModeAccueil": {
+      "title": "ModeAccueil",
+      "description": "An enumeration.",
+      "enum": [
+        "a-distance",
+        "en-presentiel"
+      ],
+      "type": "string"
+    },
+    "TypeCOG": {
+      "title": "TypeCOG",
+      "description": "An enumeration.",
+      "enum": [
+        "commune",
+        "region",
+        "departement"
+      ],
+      "type": "string"
+    },
     "Service": {
       "title": "Service",
       "type": "object",
@@ -213,6 +232,10 @@
         "presentation_resume": {
           "title": "Presentation Resume",
           "maxLength": 280,
+          "type": "string"
+        },
+        "presentation_detail": {
+          "title": "Presentation Detail",
           "type": "string"
         },
         "types": {
@@ -249,6 +272,135 @@
           "items": {
             "$ref": "#/definitions/Profil"
           }
+        },
+        "pre_requis": {
+          "title": "Pre Requis",
+          "type": "string"
+        },
+        "cumulable": {
+          "title": "Cumulable",
+          "type": "boolean"
+        },
+        "justificatifs": {
+          "title": "Justificatifs",
+          "type": "string"
+        },
+        "formulaire_en_ligne": {
+          "title": "Formulaire En Ligne",
+          "minLength": 1,
+          "maxLength": 2083,
+          "format": "uri",
+          "type": "string"
+        },
+        "commune": {
+          "title": "Commune",
+          "type": "string"
+        },
+        "code_postal": {
+          "title": "Code Postal",
+          "minLength": 5,
+          "maxLength": 5,
+          "pattern": "^\\d{5}$",
+          "type": "string"
+        },
+        "code_insee": {
+          "title": "Code Insee",
+          "minLength": 5,
+          "maxLength": 5,
+          "type": "string"
+        },
+        "adresse": {
+          "title": "Adresse",
+          "type": "string"
+        },
+        "complement_adresse": {
+          "title": "Complement Adresse",
+          "type": "string"
+        },
+        "longitude": {
+          "title": "Longitude",
+          "type": "number"
+        },
+        "latitude": {
+          "title": "Latitude",
+          "type": "number"
+        },
+        "recurrence": {
+          "title": "Recurrence",
+          "type": "string"
+        },
+        "date_creation": {
+          "title": "Date Creation",
+          "type": "string",
+          "format": "date"
+        },
+        "date_suspension": {
+          "title": "Date Suspension",
+          "type": "string",
+          "format": "date"
+        },
+        "lien_source": {
+          "title": "Lien Source",
+          "minLength": 1,
+          "maxLength": 2083,
+          "format": "uri",
+          "type": "string"
+        },
+        "telephone": {
+          "title": "Telephone",
+          "type": "string"
+        },
+        "courriel": {
+          "title": "Courriel",
+          "type": "string",
+          "format": "email"
+        },
+        "contact_public": {
+          "title": "Contact Public",
+          "type": "boolean"
+        },
+        "date_maj": {
+          "title": "Date Maj",
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "string",
+              "format": "date-time"
+            }
+          ]
+        },
+        "modes_accueil": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ModeAccueil"
+          }
+        },
+        "zone_diffusion_type": {
+          "$ref": "#/definitions/TypeCOG"
+        },
+        "zone_diffusion_code": {
+          "title": "Zone Diffusion Code",
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^\\w{5}$"
+            },
+            {
+              "type": "string",
+              "pattern": "^\\w{2,3}$"
+            },
+            {
+              "type": "string",
+              "pattern": "^\\d{2}$"
+            }
+          ]
+        },
+        "zone_diffusion_nom": {
+          "title": "Zone Diffusion Nom",
+          "type": "string"
         }
       },
       "required": [

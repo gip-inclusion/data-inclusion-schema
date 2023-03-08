@@ -80,6 +80,11 @@
     "description": null
   },
   {
+    "value": "cap-emploi-reseau-cheops",
+    "label": "CAP Emploi - Réseau CHEOPS",
+    "description": null
+  },
+  {
     "value": "cci",
     "label": "CCI",
     "description": null
@@ -90,11 +95,6 @@
     "description": null
   },
   {
-    "value": "cheops",
-    "label": "Cheops",
-    "description": null
-  },
-  {
     "value": "cidff",
     "label": "CIDFF",
     "description": null
@@ -102,6 +102,11 @@
   {
     "value": "cnam",
     "label": "CNAM",
+    "description": null
+  },
+  {
+    "value": "collectif-emploi",
+    "label": "Collectif emploi",
     "description": null
   },
   {
