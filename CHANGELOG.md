@@ -5,6 +5,7 @@
 * schéma service:
   * champs ajoutés:
     * `contact_nom`
+    * `modalites_orientation_beneficiaire`
 * typologies de structures:
   * ajout crèches AVIP (`AVIP`)
 * thématiques:
