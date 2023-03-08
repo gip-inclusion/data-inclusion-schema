@@ -1,6 +1,6 @@
 # Changements
 
-## Version 0.8.0 - 2023-02-24
+## Version 0.8.0 - 2023-03-08
 
 * labels et réseaux:
   * ajout du label `collectif-emploi`
