@@ -20,6 +20,11 @@ class Thematique(EnhancedEnum):
         "Accompagnement juridique",
         None,
     )
+    ACCES_AUX_DROITS_ET_CITOYENNETE__AIDE_AUX_VICTIMES = (
+        "acces-aux-droits-et-citoyennete--aide-aux-victimes",
+        "Aide aux victimes",
+        None,
+    )
     ACCES_AUX_DROITS_ET_CITOYENNETE__CONNAITRE_SES_DROITS = (
         "acces-aux-droits-et-citoyennete--connaitre-ses-droits",
         "Connaitre ses droits",

@@ -5,7 +5,9 @@
 * schéma service:
   * champs ajoutés:
 * typologies de structures:
-  * crèches AVIP (`AVIP`)
+  * ajout crèches AVIP (`AVIP`)
+* thématiques:
+  * ajout `acces-aux-droits-et-citoyennete--aide-aux-victimes`
 
 ## Version 0.8.0 - 2023-03-08
 
