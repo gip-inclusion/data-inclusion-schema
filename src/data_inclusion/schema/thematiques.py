@@ -73,6 +73,27 @@ class Thematique(EnhancedEnum):
         None,
     )
 
+    APPRENDRE_FRANCAIS = (
+        "apprendre-francais",
+        "Apprendre le Français",
+        None,
+    )
+    APPRENDRE_FRANCAIS__ACCOMPAGNEMENT_INSERTION_PRO = (
+        "apprendre-francais--accompagnement-insertion-pro",
+        "Accompagnement vers l’insertion professionnelle",
+        None,
+    )
+    APPRENDRE_FRANCAIS__COMMUNIQUER_VIE_TOUS_LES_JOURS = (
+        "apprendre-francais--communiquer-vie-tous-les-jours",
+        "Communiquer dans la vie de tous les jours",
+        None,
+    )
+    APPRENDRE_FRANCAIS__SUIVRE_FORMATION = (
+        "apprendre-francais--suivre-formation",
+        "Suivre une formation",
+        None,
+    )
+
     CHOISIR_UN_METIER = (
         "choisir-un-metier",
         "Choisir un métier",

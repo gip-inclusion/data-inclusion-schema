@@ -11,6 +11,7 @@
   * ajout crèches AVIP (`AVIP`)
 * thématiques:
   * ajout `acces-aux-droits-et-citoyennete--aide-aux-victimes`
+  * ajout des thématiques liées à l'apprentissage du Français (`apprendre-francais--*`)
   * ajout des thématiques liées à l'illettrisme (`illettrisme--*`)
 * ajouts des types de zone de diffusion `pays` et `epci`
 * profils:
