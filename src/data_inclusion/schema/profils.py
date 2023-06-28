@@ -60,3 +60,8 @@ class Profil(EnhancedEnum):
         "Personnes en situation d’illettrisme",
         None,
     )
+    BENEFICIAIRE_RSA = (
+        "beneficiaire-rsa",
+        "Bénéficiaire du Revenu de Solidarité Active (RSA)",
+        None,
+    )
