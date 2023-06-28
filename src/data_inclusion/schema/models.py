@@ -59,7 +59,7 @@ class Service(BaseModel):
         | constr(regex=r"^\d{2}$")  # code region
     ]
     zone_diffusion_nom: Optional[str]
-    contact_nom: Optional[str]
+    contact_nom_prenom: Optional[str]
     modes_orientation_beneficiaire: Optional[list[ModeOrientationBeneficiaire]]
     modes_orientation_accompagnateur: Optional[list[ModeOrientationAccompagnateur]]
 

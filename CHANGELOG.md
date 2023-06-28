@@ -4,7 +4,7 @@
 
 * schéma service:
   * champs ajoutés:
-    * `contact_nom`
+    * `contact_nom_prenom`
     * `modes_orientation_beneficiaire`
     * `modes_orientation_accompagnateur`
 * typologies de structures:
