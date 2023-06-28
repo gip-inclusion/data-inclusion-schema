@@ -8,6 +8,7 @@
   * ajout crèches AVIP (`AVIP`)
 * thématiques:
   * ajout `acces-aux-droits-et-citoyennete--aide-aux-victimes`
+  * ajout des thématiques liées à l'illettrisme (`illettrisme--*`)
 
 ## Version 0.8.0 - 2023-03-08
 

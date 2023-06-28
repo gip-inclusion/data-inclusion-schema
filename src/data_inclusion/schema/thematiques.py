@@ -292,6 +292,62 @@ class Thematique(EnhancedEnum):
         None,
     )
 
+    ILLETRISME = (
+        "illettrisme",
+        "Illettrisme",
+        None,
+    )
+    ILLETTRISME__ACCOMPAGNER_SCOLARITE = (
+        "illettrisme--accompagner-scolarite",
+        "Accompagner la scolarité d’un enfant",
+        None,
+    )
+    ILLETTRISME__AMELIORER_VOCABULAIRE = (
+        "illettrisme--ameliorer-vocabulaire",
+        "Améliorer un niveau de vocabulaire",
+        None,
+    )
+    ILLETTRISME__ETRE_AUTONOME = (
+        "illettrisme--etre-autonome",
+        "Être autonome dans la vie de tous les jours",
+        None,
+    )
+    ILLETTRISME__INFO_ACQUISITION_CONNAISSANCES = (
+        "illettrisme--info-acquisition-connaissances",
+        "Être informé(e) sur l’acquisition des compétences de base",
+        None,
+    )
+    ILLETTRISME__PERMIS_CONDUIRE = (
+        "illettrisme--permis-conduire",
+        "Passer le permis de conduire",
+        None,
+    )
+    ILLETTRISME__REPERER_SITUATION_ILLETTRISME = (
+        "illettrisme--reperer-situation-illettrisme",
+        "Repérer des situations d’illettrisme",
+        None,
+    )
+    ILLETTRISME__SURMONTER_TROUBLE_APPRENTISSAGE = (
+        "illettrisme--surmonter-trouble-apprentissage",
+        "Surmonter un trouble de l’apprentissage",
+        None,
+    )
+    ILLETTRISME__TROUVER_EMPLOI_FORMATION = (
+        "illettrisme--trouver-emploi-formation",
+        "Trouver un emploi ou une formation",
+        None,
+    )
+    ILLETTRISME__UTILISER_NUMERIQUE = (
+        "illettrisme--utiliser-numerique",
+        "Savoir utiliser les outils numériques",
+        None,
+    )
+    ILLETTRISME__VALIDER_CERTIFICATION_CLEA = (
+        "illettrisme--valider-certification-clea",
+        "Valider une certification Cléa",
+        None,
+    )
+
     LOGEMENT_HEBERGEMENT = (
         "logement-hebergement",
         "Logement et hébergement",
