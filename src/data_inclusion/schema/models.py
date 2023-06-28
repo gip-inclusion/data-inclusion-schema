@@ -50,6 +50,7 @@ class Service(BaseModel):
     zone_diffusion_type: Optional[TypeCOG]
     zone_diffusion_code: Optional[
         constr(regex=r"^\w{5}$")  # code commune
+        | constr(regex=r"^\d{9}$")  # code epci
         | constr(regex=r"^\w{2,3}$")  # code departement
         | constr(regex=r"^\d{2}$")  # code region
     ]

@@ -7,6 +7,11 @@ class TypeCOG(EnhancedEnum):
         "Commune",
         None,
     )
+    EPCI = (
+        "epci",
+        "Intercommunalité (EPCI)",
+        None,
+    )
     REGION = (
         "region",
         "Région",
@@ -15,5 +20,10 @@ class TypeCOG(EnhancedEnum):
     DEPARTEMENT = (
         "departement",
         "Département",
+        None,
+    )
+    PAYS = (
+        "pays",
+        "Pays",
         None,
     )

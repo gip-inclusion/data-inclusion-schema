@@ -9,6 +9,7 @@
 * thématiques:
   * ajout `acces-aux-droits-et-citoyennete--aide-aux-victimes`
   * ajout des thématiques liées à l'illettrisme (`illettrisme--*`)
+* ajouts des types de zone de diffusion `pays` et `epci`
 
 ## Version 0.8.0 - 2023-03-08
 
