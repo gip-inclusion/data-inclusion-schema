@@ -42,6 +42,11 @@ class Typologie(EnhancedEnum):
         "Autre",
         None,
     )
+    AVIP = (
+        "AVIP",
+        "Crèche A Vocation d'Insertion Professionnelle (AVIP)",
+        None,
+    )
     BIB = (
         "BIB",
         "Bibliothèque / Médiathèque",

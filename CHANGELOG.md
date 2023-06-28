@@ -1,5 +1,12 @@
 # Changements
 
+## Version 0.9.0 - 2023-MM-DD
+
+* schéma service:
+  * champs ajoutés:
+* typologies de structures:
+  * crèches AVIP (`AVIP`)
+
 ## Version 0.8.0 - 2023-03-08
 
 * labels et réseaux:
