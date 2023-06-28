@@ -15,6 +15,11 @@
     "description": null
   },
   {
+    "value": "acces-aux-droits-et-citoyennete--aide-aux-victimes",
+    "label": "Aide aux victimes",
+    "description": null
+  },
+  {
     "value": "acces-aux-droits-et-citoyennete--connaitre-ses-droits",
     "label": "Connaitre ses droits",
     "description": null
@@ -52,6 +57,26 @@
   {
     "value": "accompagnement-social-et-professionnel-personnalise--parcours-d-insertion-socioprofessionnel",
     "label": "Parcours d’insertion socio-professionnel",
+    "description": null
+  },
+  {
+    "value": "apprendre-francais",
+    "label": "Apprendre le Français",
+    "description": null
+  },
+  {
+    "value": "apprendre-francais--accompagnement-insertion-pro",
+    "label": "Accompagnement vers l’insertion professionnelle",
+    "description": null
+  },
+  {
+    "value": "apprendre-francais--communiquer-vie-tous-les-jours",
+    "label": "Communiquer dans la vie de tous les jours",
+    "description": null
+  },
+  {
+    "value": "apprendre-francais--suivre-formation",
+    "label": "Suivre une formation",
     "description": null
   },
   {
@@ -262,6 +287,61 @@
   {
     "value": "handicap--mobilite-des-personnes-en-situation-de-handicap",
     "label": "Mobilité des personnes en situation de handicap",
+    "description": null
+  },
+  {
+    "value": "illettrisme",
+    "label": "Illettrisme",
+    "description": null
+  },
+  {
+    "value": "illettrisme--accompagner-scolarite",
+    "label": "Accompagner la scolarité d’un enfant",
+    "description": null
+  },
+  {
+    "value": "illettrisme--ameliorer-vocabulaire",
+    "label": "Améliorer un niveau de vocabulaire",
+    "description": null
+  },
+  {
+    "value": "illettrisme--etre-autonome",
+    "label": "Être autonome dans la vie de tous les jours",
+    "description": null
+  },
+  {
+    "value": "illettrisme--info-acquisition-connaissances",
+    "label": "Être informé(e) sur l’acquisition des compétences de base",
+    "description": null
+  },
+  {
+    "value": "illettrisme--permis-conduire",
+    "label": "Passer le permis de conduire",
+    "description": null
+  },
+  {
+    "value": "illettrisme--reperer-situation-illettrisme",
+    "label": "Repérer des situations d’illettrisme",
+    "description": null
+  },
+  {
+    "value": "illettrisme--surmonter-trouble-apprentissage",
+    "label": "Surmonter un trouble de l’apprentissage",
+    "description": null
+  },
+  {
+    "value": "illettrisme--trouver-emploi-formation",
+    "label": "Trouver un emploi ou une formation",
+    "description": null
+  },
+  {
+    "value": "illettrisme--utiliser-numerique",
+    "label": "Savoir utiliser les outils numériques",
+    "description": null
+  },
+  {
+    "value": "illettrisme--valider-certification-clea",
+    "label": "Valider une certification Cléa",
     "description": null
   },
   {

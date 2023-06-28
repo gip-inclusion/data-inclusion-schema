@@ -33,6 +33,7 @@
         "acces-aux-droits-et-citoyennete",
         "acces-aux-droits-et-citoyennete--accompagnement-dans-les-demarches-administratives",
         "acces-aux-droits-et-citoyennete--accompagnement-juridique",
+        "acces-aux-droits-et-citoyennete--aide-aux-victimes",
         "acces-aux-droits-et-citoyennete--connaitre-ses-droits",
         "acces-aux-droits-et-citoyennete--demandeurs-dasile-et-naturalisation",
         "acces-aux-droits-et-citoyennete--faciliter-laction-citoyenne",
@@ -41,6 +42,10 @@
         "accompagnement-social-et-professionnel-personnalise--decrochage-scolaire",
         "accompagnement-social-et-professionnel-personnalise--definition-du-projet-professionnel",
         "accompagnement-social-et-professionnel-personnalise--parcours-d-insertion-socioprofessionnel",
+        "apprendre-francais",
+        "apprendre-francais--accompagnement-insertion-pro",
+        "apprendre-francais--communiquer-vie-tous-les-jours",
+        "apprendre-francais--suivre-formation",
         "choisir-un-metier",
         "choisir-un-metier--identifier-ses-points-forts-et-ses-competences",
         "choisir-un-metier--connaitre-les-opportunites-demploi",
@@ -83,6 +88,17 @@
         "handicap--favoriser-le-retour-et-le-maintien-dans-lemploi",
         "handicap--mobilite-des-personnes-en-situation-de-handicap",
         "handicap--gerer-le-depart-a-la-retraite-des-personnes-en-situation-de-handicap",
+        "illettrisme",
+        "illettrisme--accompagner-scolarite",
+        "illettrisme--ameliorer-vocabulaire",
+        "illettrisme--etre-autonome",
+        "illettrisme--info-acquisition-connaissances",
+        "illettrisme--permis-conduire",
+        "illettrisme--reperer-situation-illettrisme",
+        "illettrisme--surmonter-trouble-apprentissage",
+        "illettrisme--trouver-emploi-formation",
+        "illettrisme--utiliser-numerique",
+        "illettrisme--valider-certification-clea",
         "logement-hebergement",
         "logement-hebergement--etre-accompagne-pour-se-loger",
         "logement-hebergement--besoin-dadapter-mon-logement",
@@ -186,7 +202,8 @@
         "handicaps-psychiques",
         "handicaps-mentaux",
         "femmes",
-        "personnes-en-situation-illettrisme"
+        "personnes-en-situation-illettrisme",
+        "beneficiaire-rsa"
       ],
       "type": "string"
     },
@@ -204,8 +221,35 @@
       "description": "An enumeration.",
       "enum": [
         "commune",
+        "epci",
         "region",
-        "departement"
+        "departement",
+        "pays"
+      ],
+      "type": "string"
+    },
+    "ModeOrientationBeneficiaire": {
+      "title": "ModeOrientationBeneficiaire",
+      "description": "An enumeration.",
+      "enum": [
+        "completer-le-formulaire-dadhesion",
+        "envoyer-un-mail",
+        "se-presenter",
+        "telephoner",
+        "autre"
+      ],
+      "type": "string"
+    },
+    "ModeOrientationAccompagnateur": {
+      "title": "ModeOrientationAccompagnateur",
+      "description": "An enumeration.",
+      "enum": [
+        "completer-le-formulaire-dadhesion",
+        "envoyer-un-mail",
+        "envoyer-un-mail-avec-une-fiche-de-prescription",
+        "envoyer-un-mail-avec-des-documents-a-completer",
+        "telephoner",
+        "autre"
       ],
       "type": "string"
     },
@@ -390,6 +434,10 @@
             },
             {
               "type": "string",
+              "pattern": "^\\d{9}$"
+            },
+            {
+              "type": "string",
               "pattern": "^\\w{2,3}$"
             },
             {
@@ -401,6 +449,22 @@
         "zone_diffusion_nom": {
           "title": "Zone Diffusion Nom",
           "type": "string"
+        },
+        "contact_nom_prenom": {
+          "title": "Contact Nom Prenom",
+          "type": "string"
+        },
+        "modes_orientation_beneficiaire": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ModeOrientationBeneficiaire"
+          }
+        },
+        "modes_orientation_accompagnateur": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ModeOrientationAccompagnateur"
+          }
         }
       },
       "required": [

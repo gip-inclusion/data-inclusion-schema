@@ -1,0 +1,32 @@
+[
+  {
+    "value": "autre",
+    "label": "Autre",
+    "description": null
+  },
+  {
+    "value": "completer-le-formulaire-dadhesion",
+    "label": "Compléter le formulaire d’adhésion",
+    "description": null
+  },
+  {
+    "value": "envoyer-un-mail",
+    "label": "Envoyer un mail",
+    "description": null
+  },
+  {
+    "value": "envoyer-un-mail-avec-des-documents-a-completer",
+    "label": "Envoyer un mail avec des documents à compléter",
+    "description": null
+  },
+  {
+    "value": "envoyer-un-mail-avec-une-fiche-de-prescription",
+    "label": "Envoyer un mail avec une fiche de prescription",
+    "description": null
+  },
+  {
+    "value": "telephoner",
+    "label": "Téléphoner",
+    "description": null
+  }
+]

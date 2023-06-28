@@ -1,0 +1,27 @@
+[
+  {
+    "value": "autre",
+    "label": "Autre",
+    "description": null
+  },
+  {
+    "value": "completer-le-formulaire-dadhesion",
+    "label": "Compléter le formulaire d’adhésion",
+    "description": null
+  },
+  {
+    "value": "envoyer-un-mail",
+    "label": "Envoyer un mail",
+    "description": null
+  },
+  {
+    "value": "se-presenter",
+    "label": "Se présenter",
+    "description": null
+  },
+  {
+    "value": "telephoner",
+    "label": "Téléphoner",
+    "description": null
+  }
+]
