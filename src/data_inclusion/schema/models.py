@@ -55,6 +55,7 @@ class Service(BaseModel):
         | constr(regex=r"^\d{2}$")  # code region
     ]
     zone_diffusion_nom: Optional[str]
+    contact_nom: Optional[str]
 
     class Config:
         extra = Extra.forbid

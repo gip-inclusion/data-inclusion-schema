@@ -4,6 +4,7 @@
 
 * schéma service:
   * champs ajoutés:
+    * `contact_nom`
 * typologies de structures:
   * ajout crèches AVIP (`AVIP`)
 * thématiques:
