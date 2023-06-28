@@ -28,14 +28,8 @@ def main():
         ("frais.json", models.Frais),
         ("profils.json", models.Profil),
         ("modes-accueil.json", models.ModeAccueil),
-        (
-            "modalites-orientation-beneficiaire.json",
-            models.ModaliteOrientationBeneficiaire,
-        ),
-        (
-            "modalites-orientation-accompagnateur.json",
-            models.ModaliteOrientationAccompagnateur,
-        ),
+        ("modes-orientation-beneficiaire.json", models.ModeOrientationBeneficiaire),
+        ("modes-orientation-accompagnateur.json", models.ModeOrientationAccompagnateur),
     ]
 
     for filename, enum in enum_x_file_tuples_list:

@@ -1,7 +1,7 @@
 from data_inclusion.schema.base import EnhancedEnum
 
 
-class ModaliteOrientationAccompagnateur(EnhancedEnum):
+class ModeOrientationAccompagnateur(EnhancedEnum):
     COMPLETER_LE_FORMULAIRE_DADHESION = (
         "completer-le-formulaire-dadhesion",
         "Compléter le formulaire d’adhésion",
@@ -34,7 +34,7 @@ class ModaliteOrientationAccompagnateur(EnhancedEnum):
     )
 
 
-class ModaliteOrientationBeneficiaire(EnhancedEnum):
+class ModeOrientationBeneficiaire(EnhancedEnum):
     COMPLETER_LE_FORMULAIRE_DADHESION = (
         "completer-le-formulaire-dadhesion",
         "Compléter le formulaire d’adhésion",
