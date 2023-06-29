@@ -2,20 +2,20 @@
 
 ## Version 0.9.0 - 2023-06-29
 
-* schéma service:
-  * champs ajoutés:
+* [schéma service](https://www.data.inclusion.beta.gouv.fr/schemas-de-donnees-de-loffre/schema-des-structures-et-services-dinsertion#schema-service) :
+  * champs ajoutés :
     * `contact_nom_prenom`
     * `modes_orientation_beneficiaire`
     * `modes_orientation_accompagnateur`
-* typologies de structures:
-  * ajout crèches AVIP (`AVIP`)
-* thématiques:
-  * ajout `acces-aux-droits-et-citoyennete--aide-aux-victimes`
-  * ajout des thématiques liées à l'apprentissage du Français (`apprendre-francais--*`)
+* [typologies de structures](https://www.data.inclusion.beta.gouv.fr/schemas-de-donnees-de-loffre/schema-des-structures-et-services-dinsertion/typologie-de-structures) :
+  * ajout des [crèches à vocation d'insertion professionnelle (AVIP)](https://www.caf.fr/partenaires/caf-du-val-d-oise/partenaires-locaux/actualites/mieux-connaitre-le-dispositif-des-creches-avip) (`AVIP`)
+* [thématiques](https://www.data.inclusion.beta.gouv.fr/schemas-de-donnees-de-loffre/schema-des-structures-et-services-dinsertion/thematiques) :
+  * ajout de la thématique "Aide aux victimes" (`acces-aux-droits-et-citoyennete--aide-aux-victimes`)
+  * ajout des thématiques liées à l'apprentissage du français (`apprendre-francais--*`)
   * ajout des thématiques liées à l'illettrisme (`illettrisme--*`)
 * ajouts des types de zone de diffusion `pays` et `epci`
-* profils:
-  * ajout `beneficiaire-rsa`
+* [profils](https://www.data.inclusion.beta.gouv.fr/schemas-de-donnees-de-loffre/schema-des-structures-et-services-dinsertion/profils) :
+  * ajout de "Bénéficiaire RSA" (`beneficiaire-rsa`)
 
 ## Version 0.8.0 - 2023-03-08
 
