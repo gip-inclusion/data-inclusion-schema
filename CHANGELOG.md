@@ -15,6 +15,7 @@
   * ajout des thématiques liées à l'illettrisme (`illettrisme--*`)
 * ajouts des types de zone de diffusion `pays` et `epci`
 * [profils](https://www.data.inclusion.beta.gouv.fr/schemas-de-donnees-de-loffre/schema-des-structures-et-services-dinsertion/profils) :
+  * ajout de "Demandeur ou demandeuse d'emploi" (`demandeur-demploi`)
   * ajout de "Bénéficiaire RSA" (`beneficiaire-rsa`)
 
 ## Version 0.8.0 - 2023-03-08

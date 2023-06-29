@@ -15,6 +15,11 @@
     "description": null
   },
   {
+    "value": "demandeur-demploi",
+    "label": "Demandeur ou demandeuse d’emploi",
+    "description": null
+  },
+  {
     "value": "familles-enfants",
     "label": "Familles/enfants",
     "description": null

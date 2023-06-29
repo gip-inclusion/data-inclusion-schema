@@ -65,3 +65,8 @@ class Profil(EnhancedEnum):
         "Bénéficiaire du Revenu de Solidarité Active (RSA)",
         None,
     )
+    DEMANDEUR_EMPLOI = (
+        "demandeur-demploi",
+        "Demandeur ou demandeuse d’emploi",
+        None,
+    )

@@ -203,7 +203,8 @@
         "handicaps-mentaux",
         "femmes",
         "personnes-en-situation-illettrisme",
-        "beneficiaire-rsa"
+        "beneficiaire-rsa",
+        "demandeur-demploi"
       ],
       "type": "string"
     },
