@@ -1,6 +1,6 @@
 # Changements
 
-## Version 0.9.0 - 2023-06-29
+## Version 0.9.0 - 2023-06-30
 
 * [schéma service](https://www.data.inclusion.beta.gouv.fr/schemas-de-donnees-de-loffre/schema-des-structures-et-services-dinsertion#schema-service) :
   * champs ajoutés :
