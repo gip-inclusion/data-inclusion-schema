@@ -679,7 +679,7 @@ class Thematique(EnhancedEnum):
     )
     SANTE__DIAGNOSTIC_ET_ACCOMPAGNEMENT_A_LEMPLOYABILITE = (
         "sante--diagnostic-et-accompagnement-a-lemployabilite",
-        "Diagnostic et accompagnement à l’employabailité",
+        "Diagnostic et accompagnement à l’employabilité",
         None,
     )
 
