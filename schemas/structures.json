@@ -3,93 +3,8 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "https://raw.githubusercontent.com/betagouv/data-inclusion-schema/main/structures.json",
   "description": "",
-  "type": "array",
-  "items": {
-    "$ref": "#/definitions/Structure"
-  },
-  "definitions": {
-    "Typologie": {
-      "title": "Typologie",
-      "description": "An enumeration.",
-      "enum": [
-        "ACI",
-        "ACIPHC",
-        "AFPA",
-        "AI",
-        "ASE",
-        "ASSO",
-        "ASSO_CHOMEUR",
-        "Autre",
-        "AVIP",
-        "BIB",
-        "CAARUD",
-        "CADA",
-        "CAF",
-        "CAP_EMPLOI",
-        "CAVA",
-        "CC",
-        "CCAS",
-        "CCONS",
-        "CD",
-        "CHRS",
-        "CHU",
-        "CIAS",
-        "CIDFF",
-        "CITMET",
-        "CPH",
-        "CS",
-        "CSAPA",
-        "DEETS",
-        "DEPT",
-        "DIPLP",
-        "E2C",
-        "EA",
-        "EATT",
-        "EI",
-        "EITI",
-        "EPCI",
-        "EPIDE",
-        "ESS",
-        "ETTI",
-        "FAIS",
-        "GEIQ",
-        "HUDA",
-        "MDE",
-        "MDEF",
-        "MDPH",
-        "MDS",
-        "MJC",
-        "ML",
-        "MQ",
-        "MSA",
-        "MUNI",
-        "OACAS",
-        "ODC",
-        "OF",
-        "OIL",
-        "OPCS",
-        "PAD",
-        "PE",
-        "PENSION",
-        "PIJ_BIJ",
-        "PIMMS",
-        "PJJ",
-        "PLIE",
-        "PREF",
-        "PREVENTION",
-        "REG",
-        "RFS",
-        "RS_FJT",
-        "SCP",
-        "SPIP",
-        "TIERS_LIEUX",
-        "UDAF"
-      ],
-      "type": "string"
-    },
+  "$defs": {
     "LabelNational": {
-      "title": "LabelNational",
-      "description": "An enumeration.",
       "enum": [
         "60000-rebonds",
         "action-logement",
@@ -174,11 +89,321 @@
         "unea",
         "unis-cite"
       ],
+      "title": "LabelNational",
       "type": "string"
     },
+    "Structure": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "siret": {
+          "anyOf": [
+            {
+              "maxLength": 14,
+              "minLength": 14,
+              "pattern": "^\\d{14}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Siret"
+        },
+        "rna": {
+          "anyOf": [
+            {
+              "maxLength": 10,
+              "minLength": 10,
+              "pattern": "^W\\d{9}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Rna"
+        },
+        "nom": {
+          "title": "Nom",
+          "type": "string"
+        },
+        "commune": {
+          "title": "Commune",
+          "type": "string"
+        },
+        "code_postal": {
+          "maxLength": 5,
+          "minLength": 5,
+          "pattern": "^\\d{5}$",
+          "title": "Code Postal",
+          "type": "string"
+        },
+        "code_insee": {
+          "anyOf": [
+            {
+              "maxLength": 5,
+              "minLength": 5,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Code Insee"
+        },
+        "adresse": {
+          "title": "Adresse",
+          "type": "string"
+        },
+        "complement_adresse": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Complement Adresse"
+        },
+        "longitude": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Longitude"
+        },
+        "latitude": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Latitude"
+        },
+        "typologie": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Typologie"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "telephone": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Telephone"
+        },
+        "courriel": {
+          "anyOf": [
+            {
+              "format": "email",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Courriel"
+        },
+        "site_web": {
+          "anyOf": [
+            {
+              "format": "uri",
+              "maxLength": 2083,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Site Web"
+        },
+        "presentation_resume": {
+          "anyOf": [
+            {
+              "maxLength": 280,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Presentation Resume"
+        },
+        "presentation_detail": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Presentation Detail"
+        },
+        "source": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source"
+        },
+        "date_maj": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "format": "date-time",
+              "type": "string"
+            }
+          ],
+          "title": "Date Maj"
+        },
+        "antenne": {
+          "default": false,
+          "title": "Antenne",
+          "type": "boolean"
+        },
+        "lien_source": {
+          "anyOf": [
+            {
+              "format": "uri",
+              "maxLength": 2083,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Lien Source"
+        },
+        "horaires_ouverture": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Horaires Ouverture"
+        },
+        "accessibilite": {
+          "anyOf": [
+            {
+              "format": "uri",
+              "maxLength": 2083,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Accessibilite"
+        },
+        "labels_nationaux": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/LabelNational"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Labels Nationaux"
+        },
+        "labels_autres": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Labels Autres"
+        },
+        "thematiques": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/Thematique"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Thematiques"
+        }
+      },
+      "required": [
+        "id",
+        "nom",
+        "commune",
+        "code_postal",
+        "adresse",
+        "date_maj"
+      ],
+      "title": "Structure",
+      "type": "object"
+    },
     "Thematique": {
-      "title": "Thematique",
-      "description": "An enumeration.",
       "enum": [
         "acces-aux-droits-et-citoyennete",
         "acces-aux-droits-et-citoyennete--accompagnement-dans-les-demarches-administratives",
@@ -324,164 +549,90 @@
         "trouver-un-emploi--suivre-ses-candidatures-et-relancer-les-employeurs",
         "trouver-un-emploi--convaincre-un-recruteur-en-entretien"
       ],
+      "title": "Thematique",
       "type": "string"
     },
-    "Structure": {
-      "title": "Structure",
-      "type": "object",
-      "properties": {
-        "id": {
-          "title": "Id",
-          "type": "string"
-        },
-        "siret": {
-          "title": "Siret",
-          "minLength": 14,
-          "maxLength": 14,
-          "pattern": "^\\d{14}$",
-          "type": "string"
-        },
-        "rna": {
-          "title": "Rna",
-          "minLength": 10,
-          "maxLength": 10,
-          "pattern": "^W\\d{9}$",
-          "type": "string"
-        },
-        "nom": {
-          "title": "Nom",
-          "type": "string"
-        },
-        "commune": {
-          "title": "Commune",
-          "type": "string"
-        },
-        "code_postal": {
-          "title": "Code Postal",
-          "minLength": 5,
-          "maxLength": 5,
-          "pattern": "^\\d{5}$",
-          "type": "string"
-        },
-        "code_insee": {
-          "title": "Code Insee",
-          "minLength": 5,
-          "maxLength": 5,
-          "type": "string"
-        },
-        "adresse": {
-          "title": "Adresse",
-          "type": "string"
-        },
-        "complement_adresse": {
-          "title": "Complement Adresse",
-          "type": "string"
-        },
-        "longitude": {
-          "title": "Longitude",
-          "type": "number"
-        },
-        "latitude": {
-          "title": "Latitude",
-          "type": "number"
-        },
-        "typologie": {
-          "$ref": "#/definitions/Typologie"
-        },
-        "telephone": {
-          "title": "Telephone",
-          "type": "string"
-        },
-        "courriel": {
-          "title": "Courriel",
-          "type": "string",
-          "format": "email"
-        },
-        "site_web": {
-          "title": "Site Web",
-          "minLength": 1,
-          "maxLength": 2083,
-          "format": "uri",
-          "type": "string"
-        },
-        "presentation_resume": {
-          "title": "Presentation Resume",
-          "maxLength": 280,
-          "type": "string"
-        },
-        "presentation_detail": {
-          "title": "Presentation Detail",
-          "type": "string"
-        },
-        "source": {
-          "title": "Source",
-          "type": "string"
-        },
-        "date_maj": {
-          "title": "Date Maj",
-          "anyOf": [
-            {
-              "type": "string",
-              "format": "date"
-            },
-            {
-              "type": "string",
-              "format": "date-time"
-            }
-          ]
-        },
-        "antenne": {
-          "title": "Antenne",
-          "default": false,
-          "type": "boolean"
-        },
-        "lien_source": {
-          "title": "Lien Source",
-          "minLength": 1,
-          "maxLength": 2083,
-          "format": "uri",
-          "type": "string"
-        },
-        "horaires_ouverture": {
-          "title": "Horaires Ouverture",
-          "type": "string"
-        },
-        "accessibilite": {
-          "title": "Accessibilite",
-          "minLength": 1,
-          "maxLength": 2083,
-          "format": "uri",
-          "type": "string"
-        },
-        "labels_nationaux": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/LabelNational"
-          }
-        },
-        "labels_autres": {
-          "title": "Labels Autres",
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        "thematiques": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/Thematique"
-          }
-        }
-      },
-      "required": [
-        "id",
-        "nom",
-        "commune",
-        "code_postal",
-        "adresse",
-        "date_maj"
+    "Typologie": {
+      "enum": [
+        "ACI",
+        "ACIPHC",
+        "AFPA",
+        "AI",
+        "ASE",
+        "ASSO",
+        "ASSO_CHOMEUR",
+        "Autre",
+        "AVIP",
+        "BIB",
+        "CAARUD",
+        "CADA",
+        "CAF",
+        "CAP_EMPLOI",
+        "CAVA",
+        "CC",
+        "CCAS",
+        "CCONS",
+        "CD",
+        "CHRS",
+        "CHU",
+        "CIAS",
+        "CIDFF",
+        "CITMET",
+        "CPH",
+        "CS",
+        "CSAPA",
+        "DEETS",
+        "DEPT",
+        "DIPLP",
+        "E2C",
+        "EA",
+        "EATT",
+        "EI",
+        "EITI",
+        "EPCI",
+        "EPIDE",
+        "ESS",
+        "ETTI",
+        "FAIS",
+        "GEIQ",
+        "HUDA",
+        "MDE",
+        "MDEF",
+        "MDPH",
+        "MDS",
+        "MJC",
+        "ML",
+        "MQ",
+        "MSA",
+        "MUNI",
+        "OACAS",
+        "ODC",
+        "OF",
+        "OIL",
+        "OPCS",
+        "PAD",
+        "PE",
+        "PENSION",
+        "PIJ_BIJ",
+        "PIMMS",
+        "PJJ",
+        "PLIE",
+        "PREF",
+        "PREVENTION",
+        "REG",
+        "RFS",
+        "RS_FJT",
+        "SCP",
+        "SPIP",
+        "TIERS_LIEUX",
+        "UDAF"
       ],
-      "additionalProperties": false
+      "title": "Typologie",
+      "type": "string"
     }
-  }
+  },
+  "items": {
+    "$ref": "#/$defs/Structure"
+  },
+  "type": "array"
 }
