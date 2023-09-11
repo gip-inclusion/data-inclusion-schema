@@ -1,6 +1,28 @@
 import enum
 import textwrap
 
+import pydantic
+
+
+class BaseModel(pydantic.BaseModel):
+    @classmethod
+    def model_list_json_schema(
+        cls,
+        title: str,
+        id: str,
+        description: str,
+    ) -> dict:
+        adapter = pydantic.TypeAdapter(list[cls])
+        schema = adapter.json_schema()
+
+        return {
+            "title": title,
+            "$schema": "http://json-schema.org/draft-07/schema",
+            "$id": id,
+            "description": description,
+            **schema,
+        }
+
 
 class EnhancedEnum(str, enum.Enum):
     def __new__(cls, value, label, description):

@@ -60,13 +60,13 @@ class Profil(EnhancedEnum):
         "Personnes en situation d’illettrisme",
         None,
     )
-    BENEFICIAIRE_RSA = (
-        "beneficiaire-rsa",
-        "Bénéficiaire du Revenu de Solidarité Active (RSA)",
+    BENEFICIAIRES_RSA = (
+        "beneficiaires-rsa",
+        "Bénéficiaires du Revenu de Solidarité Active (RSA)",
         None,
     )
-    DEMANDEUR_EMPLOI = (
-        "demandeur-demploi",
-        "Demandeur ou demandeuse d’emploi",
+    DEMANDEURS_EMPLOI = (
+        "demandeurs-demploi",
+        "Demandeurs ou demandeuses d’emploi",
         None,
     )

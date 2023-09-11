@@ -5,8 +5,8 @@
     "description": null
   },
   {
-    "value": "beneficiaire-rsa",
-    "label": "Bénéficiaire du Revenu de Solidarité Active (RSA)",
+    "value": "beneficiaires-rsa",
+    "label": "Bénéficiaires du Revenu de Solidarité Active (RSA)",
     "description": null
   },
   {
@@ -15,8 +15,8 @@
     "description": null
   },
   {
-    "value": "demandeur-demploi",
-    "label": "Demandeur ou demandeuse d’emploi",
+    "value": "demandeurs-demploi",
+    "label": "Demandeurs ou demandeuses d’emploi",
     "description": null
   },
   {

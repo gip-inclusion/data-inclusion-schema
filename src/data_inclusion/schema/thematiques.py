@@ -27,7 +27,7 @@ class Thematique(EnhancedEnum):
     )
     ACCES_AUX_DROITS_ET_CITOYENNETE__CONNAITRE_SES_DROITS = (
         "acces-aux-droits-et-citoyennete--connaitre-ses-droits",
-        "Connaitre ses droits",
+        "Connaître ses droits",
         None,
     )
     ACCES_AUX_DROITS_ET_CITOYENNETE__DEMANDEURS_DASILE_ET_NATURALISATION = (
@@ -153,7 +153,7 @@ class Thematique(EnhancedEnum):
 
     EQUIPEMENT_ET_ALIMENTATION = (
         "equipement-et-alimentation",
-        "Equipement et alimentation",
+        "Équipement et alimentation",
         None,
     )
     EQUIPEMENT_ET_ALIMENTATION__ACCES_A_DU_MATERIEL_INFORMATIQUE = (
@@ -173,7 +173,7 @@ class Thematique(EnhancedEnum):
     )
     EQUIPEMENT_ET_ALIMENTATION__ELECTROMENAGER = (
         "equipement-et-alimentation--electromenager",
-        "Electroménager",
+        "Électroménager",
         None,
     )
     EQUIPEMENT_ET_ALIMENTATION__HABILLEMENT = (
@@ -291,7 +291,7 @@ class Thematique(EnhancedEnum):
     )
     HANDICAP__FAIRE_RECONNAITRE_UN_HANDICAP = (
         "handicap--faire-reconnaitre-un-handicap",
-        "Faire reconnaitre un handicap",
+        "Faire reconnaître un handicap",
         None,
     )
     HANDICAP__FAVORISER_LE_RETOUR_ET_LE_MAINTIEN_DANS_LEMPLOI = (
@@ -376,7 +376,7 @@ class Thematique(EnhancedEnum):
     )
     LOGEMENT_HEBERGEMENT__ETRE_ACCOMPAGNE_POUR_SE_LOGER = (
         "logement-hebergement--etre-accompagne-pour-se-loger",
-        "Etre accompagné(e) pour se loger",
+        "Être accompagné(e) pour se loger",
         None,
     )
     LOGEMENT_HEBERGEMENT__BESOIN_DADAPTER_MON_LOGEMENT = (
@@ -422,7 +422,7 @@ class Thematique(EnhancedEnum):
     )
     MOBILITE__ETRE_ACCOMPAGNE_DANS_SON_PARCOURS_MOBILITE = (
         "mobilite--etre-accompagne-dans-son-parcours-mobilite",
-        "Etre accompagné(e) dans son parcours mobilité",
+        "Être accompagné(e) dans son parcours mobilité",
         None,
     )
     MOBILITE__ENTRETENIR_REPARER_SON_VEHICULE = (
@@ -442,7 +442,7 @@ class Thematique(EnhancedEnum):
     )
     MOBILITE__PREPARER_SON_PERMIS_DE_CONDUIRE_SE_REENTRAINER_A_LA_CONDUITE = (
         "mobilite--preparer-son-permis-de-conduire-se-reentrainer-a-la-conduite",
-        "Préparer son permis de conduire, se réentrainer à la conduite",
+        "Préparer son permis de conduire, se réentraîner à la conduite",
         None,
     )
     MOBILITE__AIDES_A_LA_REPRISE_DEMPLOI_OU_A_LA_FORMATION = (

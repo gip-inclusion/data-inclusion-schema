@@ -59,8 +59,8 @@
         "handicaps-mentaux",
         "femmes",
         "personnes-en-situation-illettrisme",
-        "beneficiaire-rsa",
-        "demandeur-demploi"
+        "beneficiaires-rsa",
+        "demandeurs-demploi"
       ],
       "title": "Profil",
       "type": "string"
@@ -207,7 +207,10 @@
         "pre_requis": {
           "anyOf": [
             {
-              "type": "string"
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
             },
             {
               "type": "null"
@@ -231,7 +234,10 @@
         "justificatifs": {
           "anyOf": [
             {
-              "type": "string"
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
             },
             {
               "type": "null"
@@ -287,6 +293,7 @@
             {
               "maxLength": 5,
               "minLength": 5,
+              "pattern": "^\\w{5}$",
               "type": "string"
             },
             {
@@ -469,7 +476,7 @@
         "zone_diffusion_type": {
           "anyOf": [
             {
-              "$ref": "#/$defs/TypeCOG"
+              "$ref": "#/$defs/ZoneDiffusionType"
             },
             {
               "type": "null"
@@ -480,18 +487,26 @@
         "zone_diffusion_code": {
           "anyOf": [
             {
+              "maxLength": 5,
+              "minLength": 5,
               "pattern": "^\\w{5}$",
               "type": "string"
             },
             {
+              "maxLength": 9,
+              "minLength": 9,
               "pattern": "^\\d{9}$",
               "type": "string"
             },
             {
+              "maxLength": 3,
+              "minLength": 2,
               "pattern": "^\\w{2,3}$",
               "type": "string"
             },
             {
+              "maxLength": 2,
+              "minLength": 2,
               "pattern": "^\\d{2}$",
               "type": "string"
             },
@@ -541,6 +556,18 @@
           "default": null,
           "title": "Modes Orientation Beneficiaire"
         },
+        "modes_orientation_beneficiaire_autres": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Modes Orientation Beneficiaire Autres"
+        },
         "modes_orientation_accompagnateur": {
           "anyOf": [
             {
@@ -555,6 +582,18 @@
           ],
           "default": null,
           "title": "Modes Orientation Accompagnateur"
+        },
+        "modes_orientation_accompagnateur_autres": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Modes Orientation Accompagnateur Autres"
         }
       },
       "required": [
@@ -714,17 +753,6 @@
       "title": "Thematique",
       "type": "string"
     },
-    "TypeCOG": {
-      "enum": [
-        "commune",
-        "epci",
-        "region",
-        "departement",
-        "pays"
-      ],
-      "title": "TypeCOG",
-      "type": "string"
-    },
     "TypologieService": {
       "enum": [
         "accompagnement",
@@ -740,6 +768,17 @@
         "financement"
       ],
       "title": "TypologieService",
+      "type": "string"
+    },
+    "ZoneDiffusionType": {
+      "enum": [
+        "commune",
+        "epci",
+        "region",
+        "departement",
+        "pays"
+      ],
+      "title": "ZoneDiffusionType",
       "type": "string"
     }
   },

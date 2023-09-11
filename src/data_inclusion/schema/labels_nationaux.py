@@ -177,6 +177,11 @@ class LabelNational(EnhancedEnum):
         "Espace Emploi Agirc Arrco",
         None,
     )
+    ETCLD = (
+        "etcld",
+        "Expérimentation territoriale contre le chômage de longue durée",
+        None,
+    )
     FABRIQUE_DE_TERRITOIRE = (
         "fabrique-de-territoire",
         "Fabrique de Territoire",

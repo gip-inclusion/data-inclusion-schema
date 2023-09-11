@@ -1,7 +1,7 @@
 from data_inclusion.schema.base import EnhancedEnum
 
 
-class TypeCOG(EnhancedEnum):
+class ZoneDiffusionType(EnhancedEnum):
     COMMUNE = (
         "commune",
         "Commune",
