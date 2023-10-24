@@ -332,6 +332,11 @@ class LabelNational(EnhancedEnum):
         "Proxité",
         None,
     )
+    RESEAU_APP = (
+        "reseau-app",
+        "Réseau APP",
+        None,
+    )
     RESEAU_ENTREPRENDRE = (
         "reseau-entreprendre",
         "Réseau Entreprendre",
