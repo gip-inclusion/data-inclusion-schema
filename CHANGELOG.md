@@ -4,6 +4,7 @@
 
 * [labels et réseaux](https://www.data.inclusion.beta.gouv.fr/schemas-de-donnees-de-loffre/schema-des-structures-et-services-dinsertion/labels-et-reseaux) :
   * mise à jour du label du réseau `ecoles-de-la-deuxieme-chance`
+  * mise à jour du label du réseau `mobin`
 
 ## Version 0.10.0 - 2023-09-11
 

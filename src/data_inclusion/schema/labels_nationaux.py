@@ -299,7 +299,7 @@ class LabelNational(EnhancedEnum):
     )
     MOBIN = (
         "mobin",
-        "Mobin",
+        "Adhérent au Réseau Mob’In",
         None,
     )
     NQT = (
