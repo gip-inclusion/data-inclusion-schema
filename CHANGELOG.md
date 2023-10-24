@@ -1,5 +1,10 @@
 # Changements
 
+## Version 0.11.0 - 2023-10-24
+
+* [labels et réseaux](https://www.data.inclusion.beta.gouv.fr/schemas-de-donnees-de-loffre/schema-des-structures-et-services-dinsertion/labels-et-reseaux) :
+  * mise à jour du label du réseau `ecoles-de-la-deuxieme-chance`
+
 ## Version 0.10.0 - 2023-09-11
 
 * [schéma service](https://www.data.inclusion.beta.gouv.fr/schemas-de-donnees-de-loffre/schema-des-structures-et-services-dinsertion#schema-service) :
