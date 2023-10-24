@@ -7,6 +7,8 @@
   * mise à jour du label du réseau `mobin`
   * ajout du réseau `wimoov`
   * ajout du réseau `reseau-app`
+* [typologies de structures](https://www.data.inclusion.beta.gouv.fr/schemas-de-donnees-de-loffre/schema-des-structures-et-services-dinsertion/typologie-de-structures) :
+  * mise à jour du label du réseau `E2C`
 
 ## Version 0.10.0 - 2023-09-11
 

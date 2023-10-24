@@ -149,7 +149,7 @@ class LabelNational(EnhancedEnum):
     )
     ECOLES_DE_LA_DEUXIEME_CHANCE = (
         "ecoles-de-la-deuxieme-chance",
-        "E2C - Ecole de la 2ème chance",
+        "E2C - École de la 2e chance",
         None,
     )
     EGEE = (

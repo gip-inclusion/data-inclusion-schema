@@ -160,7 +160,7 @@ class Typologie(EnhancedEnum):
     )
     E2C = (
         "E2C",
-        "E2C - École de la deuxième chance",
+        "E2C - École de la 2e chance",
         None,
     )
     EA = (
