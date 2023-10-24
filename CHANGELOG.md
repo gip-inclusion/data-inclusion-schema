@@ -6,6 +6,7 @@
   * mise à jour du label du réseau `ecoles-de-la-deuxieme-chance`
   * mise à jour du label du réseau `mobin`
   * ajout du réseau `wimoov`
+  * ajout du réseau `reseau-app`
 
 ## Version 0.10.0 - 2023-09-11
 
