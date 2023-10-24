@@ -417,3 +417,8 @@ class LabelNational(EnhancedEnum):
         "Unis-Cité",
         None,
     )
+    WIMOOV = (
+        "wimoov",
+        "Wimoov",
+        None,
+    )
