@@ -55,6 +55,23 @@ class Profil(EnhancedEnum):
         "Femmes",
         "Le lieu propose des accompagnements réservés aux femmes.",
     )
+    PERSONNES_HANDICAPEES = (
+        "personnes-handicapees",
+        "Personnes handicapées",
+        (
+            "Ce terme est privilégié pour désigner une incapacité persistante et "
+            "significative subie par une personne dans son environnement."
+        ),
+    )
+    PERSONNES_EN_SITUATION_DE_HANDICAP = (
+        "personnes-en-situation-de-handicap",
+        "Personnes en situation de handicap",
+        (
+            "Une personne se déplaçant temporairement en béquilles des suites d’une "
+            "intervention médicale est en situation de handicap sans toutefois être "
+            "handicapée."
+        ),
+    )
     PERSONNES_EN_SITUATION_ILLETTRISME = (
         "personnes-en-situation-illettrisme",
         "Personnes en situation d’illettrisme",

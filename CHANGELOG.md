@@ -2,6 +2,9 @@
 
 ## Version 0.12.0 - 2023-11-29
 
+* [profils](https://www.data.inclusion.beta.gouv.fr/schemas-de-donnees-de-loffre/schema-des-structures-et-services-dinsertion/profils) :
+  * ajout des profils `personnes-handicapees` et `personnes-en-situation-de-handicap`
+
 ## Version 0.11.0 - 2023-11-06
 
 * [labels et réseaux](https://www.data.inclusion.beta.gouv.fr/schemas-de-donnees-de-loffre/schema-des-structures-et-services-dinsertion/labels-et-reseaux) :

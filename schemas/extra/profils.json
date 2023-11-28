@@ -45,9 +45,19 @@
     "description": null
   },
   {
+    "value": "personnes-en-situation-de-handicap",
+    "label": "Personnes en situation de handicap",
+    "description": "Une personne se déplaçant temporairement en béquilles des suites d’une intervention médicale est en situation de handicap sans toutefois être handicapée."
+  },
+  {
     "value": "personnes-en-situation-illettrisme",
     "label": "Personnes en situation d’illettrisme",
     "description": null
+  },
+  {
+    "value": "personnes-handicapees",
+    "label": "Personnes handicapées",
+    "description": "Ce terme est privilégié pour désigner une incapacité persistante et significative subie par une personne dans son environnement."
   },
   {
     "value": "public-langues-etrangeres",
