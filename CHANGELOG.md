@@ -1,5 +1,10 @@
 # Changements
 
+## Version 0.13.0 - 2024-01-15
+
+* Ajout du label national `france-travail`
+  * Le label `pole-emploi` reste disponible pour d'éventuelles questions de rétrocompatibilité.
+
 ## Version 0.12.0 - 2023-11-29
 
 * [profils](https://www.data.inclusion.beta.gouv.fr/schemas-de-donnees-de-loffre/schema-des-structures-et-services-dinsertion/profils) :

@@ -222,6 +222,11 @@ class LabelNational(EnhancedEnum):
         "France service",
         None,
     )
+    FRANCE_TRAVAIL = (
+        "france-travail",
+        "France Travail",
+        None,
+    )
     FRENCH_TECH = (
         "french-tech",
         "French Tech",
