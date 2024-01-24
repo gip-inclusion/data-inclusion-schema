@@ -200,6 +200,11 @@
     "description": null
   },
   {
+    "value": "FT",
+    "label": "France Travail",
+    "description": null
+  },
+  {
     "value": "GEIQ",
     "label": "Groupements d’employeurs pour l’insertion et la qualification (GEIQ)",
     "description": null

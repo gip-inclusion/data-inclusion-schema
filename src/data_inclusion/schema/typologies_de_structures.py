@@ -208,6 +208,11 @@ class Typologie(EnhancedEnum):
         "Fédérations d’acteurs de l’insertion et de la solidarité",
         None,
     )
+    FT = (
+        "FT",
+        "France Travail",
+        None,
+    )
     GEIQ = (
         "GEIQ",
         "Groupements d’employeurs pour l’insertion et la qualification (GEIQ)",

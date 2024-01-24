@@ -1,5 +1,10 @@
 # Changements
 
+## Version 0.13.1 - 2024-01-24
+
+* Ajout de la typologie `FT`
+  * La typologie `PE` reste disponible pour d'éventuelles questions de rétrocompatibilité.
+
 ## Version 0.13.0 - 2024-01-15
 
 * Ajout du label national `france-travail`
