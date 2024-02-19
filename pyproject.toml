@@ -22,27 +22,27 @@ Documentation = "https://www.data.inclusion.beta.gouv.fr/schemas-de-donnees-de-l
 Source = "https://github.com/gip-inclusion/data-inclusion-schema"
 
 [project.optional-dependencies]
-dev = ["black==22.10.0", "pre-commit==2.20.0"]
+dev = [
+    "pre-commit==2.20.0",
+    "ruff==0.2.2",
+]
 
 [project.scripts]
 data-inclusion-schema = "data_inclusion.schema.__main__:main"
 
-[tool.isort]
-atomic = true
-combine_star = true
-ensure_newline_before_comments = true
-force_grid_wrap = 0
-include_trailing_comma = true
-indent = 4
-line_length = 88
-multi_line_output = 3
-profile = "black"
-sections = "FUTURE,STDLIB,THIRDPARTY,FIRSTPARTY,LOCALFOLDER"
-skip_gitignore = true
-use_parentheses = true
+[tool.ruff.lint]
+# see prefixes in https://beta.ruff.rs/docs/rules/
+select = [
+    "F",  # pyflakes
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "I",  # isort
+    "S",  # bandit
+]
 
-[tool.black]
-target-version = ["py310"]
+[tool.ruff.lint.isort]
+combine-as-imports = true
+known-first-party = ["data_inclusion"]
 
 [tool.flit.module]
 name = "data_inclusion.schema"
