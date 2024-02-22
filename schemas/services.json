@@ -75,16 +75,8 @@
           "type": "string"
         },
         "structure_id": {
-          "anyOf": [
-            {
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Structure Id"
+          "title": "Structure Id",
+          "type": "string"
         },
         "source": {
           "title": "Source",
@@ -600,6 +592,7 @@
       },
       "required": [
         "id",
+        "structure_id",
         "source",
         "nom"
       ],
