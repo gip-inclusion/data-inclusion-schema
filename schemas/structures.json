@@ -138,15 +138,31 @@
           "type": "string"
         },
         "commune": {
-          "title": "Commune",
-          "type": "string"
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Commune"
         },
         "code_postal": {
-          "maxLength": 5,
-          "minLength": 5,
-          "pattern": "^\\d{5}$",
-          "title": "Code Postal",
-          "type": "string"
+          "anyOf": [
+            {
+              "maxLength": 5,
+              "minLength": 5,
+              "pattern": "^\\d{5}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Code Postal"
         },
         "code_insee": {
           "anyOf": [
@@ -164,8 +180,16 @@
           "title": "Code Insee"
         },
         "adresse": {
-          "title": "Adresse",
-          "type": "string"
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Adresse"
         },
         "complement_adresse": {
           "anyOf": [
@@ -280,16 +304,8 @@
           "title": "Presentation Detail"
         },
         "source": {
-          "anyOf": [
-            {
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Source"
+          "title": "Source",
+          "type": "string"
         },
         "date_maj": {
           "anyOf": [
@@ -305,9 +321,16 @@
           "title": "Date Maj"
         },
         "antenne": {
-          "default": false,
-          "title": "Antenne",
-          "type": "boolean"
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Antenne"
         },
         "lien_source": {
           "anyOf": [
@@ -400,9 +423,7 @@
       "required": [
         "id",
         "nom",
-        "commune",
-        "code_postal",
-        "adresse",
+        "source",
         "date_maj"
       ],
       "title": "Structure",

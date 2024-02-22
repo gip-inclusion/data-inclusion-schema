@@ -19,10 +19,10 @@ class Structure(BaseModel):
     siret: Optional[common.CodeSiret] = None
     rna: Optional[common.CodeRna] = None
     nom: str
-    commune: str
-    code_postal: common.CodePostal
+    commune: Optional[str] = None
+    code_postal: Optional[common.CodePostal] = None
     code_insee: Optional[common.CodeCommune] = None
-    adresse: str
+    adresse: Optional[str] = None
     complement_adresse: Optional[str] = None
     longitude: Optional[float] = None
     latitude: Optional[float] = None
@@ -34,9 +34,9 @@ class Structure(BaseModel):
         Annotated[str, StringConstraints(max_length=280)]
     ] = None
     presentation_detail: Optional[str] = None
-    source: Optional[str] = None
+    source: str
     date_maj: date | datetime
-    antenne: bool = False
+    antenne: Optional[bool] = None
     lien_source: Optional[HttpUrl] = None
     horaires_ouverture: Optional[str] = None
     accessibilite: Optional[HttpUrl] = None

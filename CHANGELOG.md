@@ -1,5 +1,14 @@
 # Changements
 
+## Version 0.14.0 - 2024-02-26
+
+* schéma structure :
+  * `commune`, `adresse` et `code_postal` deviennent optionnels
+  * `source` devient obligatoire
+  * `antenne` n'est plus défini par défaut
+* schéma service :
+  * `structure_id` devient obligatoire
+
 ## Version 0.13.1 - 2024-01-24
 
 * Ajout de la typologie `FT`

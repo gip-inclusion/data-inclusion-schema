@@ -23,7 +23,7 @@ class Service(BaseModel):
 
     # fields
     id: str
-    structure_id: Optional[str] = None
+    structure_id: str
     source: str
     nom: str
     presentation_resume: Optional[
