@@ -97,7 +97,6 @@
       "type": "string"
     },
     "Structure": {
-      "additionalProperties": false,
       "properties": {
         "id": {
           "title": "Id",

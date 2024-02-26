@@ -68,7 +68,6 @@
       "type": "string"
     },
     "Service": {
-      "additionalProperties": false,
       "properties": {
         "id": {
           "title": "Id",

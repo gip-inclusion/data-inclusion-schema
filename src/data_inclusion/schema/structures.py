@@ -1,7 +1,7 @@
 from datetime import date, datetime
 from typing import Optional
 
-from pydantic import ConfigDict, EmailStr, HttpUrl, StringConstraints
+from pydantic import EmailStr, HttpUrl, StringConstraints
 from typing_extensions import Annotated
 
 from data_inclusion.schema import common
@@ -12,8 +12,6 @@ from data_inclusion.schema.typologies_de_structures import Typologie
 
 
 class Structure(BaseModel):
-    model_config = ConfigDict(extra="forbid")
-
     # fields
     id: str
     siret: Optional[common.CodeSiret] = None
