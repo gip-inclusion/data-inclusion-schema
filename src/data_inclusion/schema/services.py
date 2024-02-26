@@ -1,7 +1,7 @@
 from datetime import date, datetime
 from typing import Optional
 
-from pydantic import ConfigDict, EmailStr, HttpUrl, StringConstraints
+from pydantic import EmailStr, HttpUrl, StringConstraints
 from typing_extensions import Annotated
 
 from data_inclusion.schema import common
@@ -19,8 +19,6 @@ from data_inclusion.schema.zones_de_diffusion import ZoneDiffusionType
 
 
 class Service(BaseModel):
-    model_config = ConfigDict(extra="forbid")
-
     # fields
     id: str
     structure_id: str
