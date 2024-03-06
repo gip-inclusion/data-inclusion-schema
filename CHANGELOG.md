@@ -6,6 +6,8 @@
 
 ### Changements
 
+* correction du label pour la typologie de structure `EATT` par @acaldagues
+
 ### Suppressions
 
 ## 0.14.0 - 2024-02-26
