@@ -12,7 +12,7 @@ Le projet utilise `python3.10`.
 
 ```bash
 # Cloner le dépôt
-git clone git@github.com:betagouv/data-inclusion-schema.git
+git clone git@github.com:gip-inclusion/data-inclusion-schema.git
 
 # Initialiser un virtual env à la racine du repo
 python3.10 -m venv .venv && source .venv/bin/activate && pip install -U pip setuptools wheel && pip install -e .[dev]
