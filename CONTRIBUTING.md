@@ -1,36 +1,63 @@
-# Contributing
+# Contribuer
 
-## Local prerequisites
+## Prérequis
 
 ### `python`
 
-Project uses `python3.10`
+Le projet utilise `python3.10`.
 
-[`pyenv`](https://github.com/pyenv/pyenv) is a clean and easy way to manage multiple python versions on your computer. Installation instructions are available [here](https://github.com/pyenv/pyenv-installer).
+[`pyenv`](https://github.com/pyenv/pyenv-installer) est un bon moyen d'installer python localement.
 
-## Setup
+## Installation
 
 ```bash
-# Clone this repository
+# Cloner le dépôt
 git clone git@github.com:betagouv/data-inclusion-schema.git
 
-# Create a new virtualenv in the project's root directory
-python3.10 -m venv .venv --prompt di-schema
+# Initialiser un virtual env à la racine du repo
+python3.10 -m venv .venv && source .venv/bin/activate && pip install -U pip setuptools wheel && pip install -e .[dev]
 
-# Activate the environment
-source .venv/bin/activate
-pip install -U pip setuptools wheel
-
-# Install package in editable mode and dependencies
-pip install -e .[dev]
-
-# Setup code quality tools
+# Installer les outils de qualité de codes
 pre-commit install
 ```
 
-## Generating the json schemas
+## Proposer une modification
+
+Les fichiers du dossier `./schemas/` ne doivent pas être édités directement.
+
+Ces fichiers sont générés à partir des modèles python définis dans le dossier `./src/`.
+
+
+### 1. Éditer les modèles de définition du schéma
+
 
 ```bash
-# this will output the schemas in a `schemas` directory in the working directory
+src/
+└── data_inclusion
+    └── schema
+        ├── __init__.py
+        ├── __main__.py
+        ├── base.py
+        ├── common.py
+        ├── frais.py
+        ├── labels_nationaux.py
+        ├── modes_accueil.py
+        ├── modes_orientation.py
+        ├── profils.py
+        ├── services.py
+        ├── structures.py
+        ├── thematiques.py
+        ├── typologies_de_services.py
+        ├── typologies_de_structures.py
+        └── zones_de_diffusion.py
+```
+
+### 2. Regénérer le json schéma
+
+Lancer la commande suivante à la racine du repo.
+
+```bash
 data-inclusion-schema
 ```
+
+### 3. Ouvrir une PR avec les changements
