@@ -95,6 +95,16 @@
     "description": null
   },
   {
+    "value": "CDAS",
+    "label": "Centre Départementale d'Action Sociale (CDAS)",
+    "description": null
+  },
+  {
+    "value": "CFP",
+    "label": "Centre des Finances Publiques (CFP)",
+    "description": null
+  },
+  {
     "value": "CHRS",
     "label": "Centres d’hébergement et de réinsertion sociale (CHRS)",
     "description": null
@@ -120,6 +130,21 @@
     "description": null
   },
   {
+    "value": "CMP",
+    "label": "Centre Médico-Psychologique (CMP)",
+    "description": null
+  },
+  {
+    "value": "CMS",
+    "label": "Centre Médico-Social (CMS)",
+    "description": null
+  },
+  {
+    "value": "CPAM",
+    "label": "Caisse Primaire d'Assurance Maladie (CPAM)",
+    "description": null
+  },
+  {
     "value": "CPH",
     "label": "Centres provisoires d’hébergement (CPH)",
     "description": null
@@ -132,6 +157,11 @@
   {
     "value": "CSAPA",
     "label": "CSAPA - Centre de soins, d’accompagnement et de prévention en addictologie",
+    "description": null
+  },
+  {
+    "value": "CSC",
+    "label": "Centre Socio-Culturel (CSC)",
     "description": null
   },
   {
@@ -175,13 +205,33 @@
     "description": null
   },
   {
+    "value": "ENM",
+    "label": "Espace Numérique Mobile (ENM)",
+    "description": null
+  },
+  {
     "value": "EPCI",
     "label": "Intercommunalité (EPCI)",
     "description": null
   },
   {
+    "value": "EPI",
+    "label": "Espace Public Internet (EPI)",
+    "description": null
+  },
+  {
     "value": "EPIDE",
     "label": "EPIDE - Établissement pour l’insertion dans l’emploi",
+    "description": null
+  },
+  {
+    "value": "EPN",
+    "label": "Espace Public Numérique (EPN)",
+    "description": null
+  },
+  {
+    "value": "ES",
+    "label": "Épicerie Solidaire",
     "description": null
   },
   {
@@ -192,6 +242,16 @@
   {
     "value": "ETTI",
     "label": "Entreprises de travail temporaire d’insertion (ETTI)",
+    "description": null
+  },
+  {
+    "value": "EVS",
+    "label": "Espace de Vie Sociale (EVS)",
+    "description": null
+  },
+  {
+    "value": "FABLAB",
+    "label": "Fablab / Atelier partagé",
     "description": null
   },
   {
@@ -212,6 +272,11 @@
   {
     "value": "HUDA",
     "label": "HUDA - Hébergement d’urgence pour demandeurs d’asile",
+    "description": null
+  },
+  {
+    "value": "LA_POSTE",
+    "label": "Bureau de poste / Agence postale",
     "description": null
   },
   {
@@ -252,6 +317,11 @@
   {
     "value": "MSA",
     "label": "Mutualité Sociale Agricole",
+    "description": null
+  },
+  {
+    "value": "MSAP",
+    "label": "Maison de Services Au Public (MSAP)",
     "description": null
   },
   {
@@ -300,6 +370,11 @@
     "description": null
   },
   {
+    "value": "PI",
+    "label": "Point Information (PI)",
+    "description": null
+  },
+  {
     "value": "PIJ_BIJ",
     "label": "Points et bureaux information jeunesse (PIJ/BIJ)",
     "description": null
@@ -332,6 +407,11 @@
   {
     "value": "REG",
     "label": "Région",
+    "description": null
+  },
+  {
+    "value": "RESSOURCERIE",
+    "label": "Ressourcerie",
     "description": null
   },
   {

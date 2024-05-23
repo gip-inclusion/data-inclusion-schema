@@ -4,6 +4,8 @@
 
 ### Ajouts
 
+* ajouts de types de structures liées à l'inclusion numérique par @marc-gavanier
+
 ### Changements
 
 * correction du label pour la typologie de structure `EATT` par @acaldagues

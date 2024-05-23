@@ -100,6 +100,16 @@ class Typologie(EnhancedEnum):
         "Conseils Départementaux (CD)",
         None,
     )
+    CDAS = (
+        "CDAS",
+        "Centre Départementale d'Action Sociale (CDAS)",
+        None,
+    )
+    CFP = (
+        "CFP",
+        "Centre des Finances Publiques (CFP)",
+        None,
+    )
     CHRS = (
         "CHRS",
         "Centres d’hébergement et de réinsertion sociale (CHRS)",
@@ -125,6 +135,21 @@ class Typologie(EnhancedEnum):
         "Cité des métiers",
         None,
     )
+    CMP = (
+        "CMP",
+        "Centre Médico-Psychologique (CMP)",
+        None,
+    )
+    CMS = (
+        "CMS",
+        "Centre Médico-Social (CMS)",
+        None,
+    )
+    CPAM = (
+        "CPAM",
+        "Caisse Primaire d'Assurance Maladie (CPAM)",
+        None,
+    )
     CPH = (
         "CPH",
         "Centres provisoires d’hébergement (CPH)",
@@ -138,6 +163,11 @@ class Typologie(EnhancedEnum):
     CSAPA = (
         "CSAPA",
         "CSAPA - Centre de soins, d’accompagnement et de prévention en addictologie",
+        None,
+    )
+    CSC = (
+        "CSC",
+        "Centre Socio-Culturel (CSC)",
         None,
     )
     DEETS = (
@@ -183,14 +213,34 @@ class Typologie(EnhancedEnum):
         "Entreprises d’insertion par le travail indépendant (EITI)",
         None,
     )
+    ENM = (
+        "ENM",
+        "Espace Numérique Mobile (ENM)",
+        None,
+    )
     EPCI = (
         "EPCI",
         "Intercommunalité (EPCI)",
         None,
     )
+    EPI = (
+        "EPI",
+        "Espace Public Internet (EPI)",
+        None,
+    )
     EPIDE = (
         "EPIDE",
         "EPIDE - Établissement pour l’insertion dans l’emploi",
+        None,
+    )
+    EPN = (
+        "EPN",
+        "Espace Public Numérique (EPN)",
+        None,
+    )
+    ES = (
+        "ES",
+        "Épicerie Solidaire",
         None,
     )
     ESS = (
@@ -201,6 +251,16 @@ class Typologie(EnhancedEnum):
     ETTI = (
         "ETTI",
         "Entreprises de travail temporaire d’insertion (ETTI)",
+        None,
+    )
+    EVS = (
+        "EVS",
+        "Espace de Vie Sociale (EVS)",
+        None,
+    )
+    FABLAB = (
+        "FABLAB",
+        "Fablab / Atelier partagé",
         None,
     )
     FAIS = (
@@ -221,6 +281,11 @@ class Typologie(EnhancedEnum):
     HUDA = (
         "HUDA",
         "HUDA - Hébergement d’urgence pour demandeurs d’asile",
+        None,
+    )
+    LA_POSTE = (
+        "LA_POSTE",
+        "Bureau de poste / Agence postale",
         None,
     )
     MDE = (
@@ -261,6 +326,11 @@ class Typologie(EnhancedEnum):
     MSA = (
         "MSA",
         "Mutualité Sociale Agricole",
+        None,
+    )
+    MSAP = (
+        "MSAP",
+        "Maison de Services Au Public (MSAP)",
         None,
     )
     MUNI = (
@@ -311,6 +381,11 @@ class Typologie(EnhancedEnum):
         "Pension de famille / résidence accueil",
         None,
     )
+    PI = (
+        "PI",
+        "Point Information (PI)",
+        None,
+    )
     PIJ_BIJ = (
         "PIJ_BIJ",
         "Points et bureaux information jeunesse (PIJ/BIJ)",
@@ -344,6 +419,11 @@ class Typologie(EnhancedEnum):
     REG = (
         "REG",
         "Région",
+        None,
+    )
+    RESSOURCERIE = (
+        "RESSOURCERIE",
+        "Ressourcerie",
         None,
     )
     RFS = (
