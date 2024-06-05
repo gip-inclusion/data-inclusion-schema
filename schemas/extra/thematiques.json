@@ -351,6 +351,11 @@
   },
   {
     "description": null,
+    "label": "Aides financières pour l’investissement locatif",
+    "value": "logement-hebergement--aides-financieres-investissement-locatif"
+  },
+  {
+    "description": null,
     "label": "Besoin d’adapter mon logement",
     "value": "logement-hebergement--besoin-dadapter-mon-logement"
   },
@@ -366,8 +371,23 @@
   },
   {
     "description": null,
+    "label": "Être accompagné(e) dans son projet d’accession",
+    "value": "logement-hebergement--etre-accompagne-dans-son-projet-accession"
+  },
+  {
+    "description": null,
+    "label": "Être accompagné(e) en cas de difficultés financières",
+    "value": "logement-hebergement--etre-accompagne-en cas-de-difficultes-financieres"
+  },
+  {
+    "description": null,
     "label": "Être accompagné(e) pour se loger",
     "value": "logement-hebergement--etre-accompagne-pour-se-loger"
+  },
+  {
+    "description": null,
+    "label": "Financer son projet de travaux",
+    "value": "logement-hebergement--financer-son-projet-travaux"
   },
   {
     "description": null,
