@@ -374,6 +374,11 @@ class Thematique(EnhancedEnum):
         "Logement et hébergement",
         None,
     )
+    LOGEMENT_HEBERGEMENT__AIDES_FINANCIERES_INVESTISSEMENT_LOCATIF = (
+        "logement-hebergement--aides-financieres-investissement-locatif",
+        "Aides financières pour l’investissement locatif",
+        None,
+    )
     LOGEMENT_HEBERGEMENT__BESOIN_DADAPTER_MON_LOGEMENT = (
         "logement-hebergement--besoin-dadapter-mon-logement",
         "Besoin d’adapter mon logement",
@@ -389,9 +394,24 @@ class Thematique(EnhancedEnum):
         "Déménagement",
         None,
     )
+    LOGEMENT_HEBERGEMENT__ETRE_ACCOMPAGNE_DANS_SON_PROJET_ACCESSION = (
+        "logement-hebergement--etre-accompagne-dans-son-projet-accession",
+        "Être accompagné(e) dans son projet d’accession",
+        None,
+    )
+    LOGEMENT_HEBERGEMENT__ETRE_ACCOMPAGNE_EN_CAS_DE_DIFFICULTES_FINANCIERES = (
+        "logement-hebergement--etre-accompagne-en cas-de-difficultes-financieres",
+        "Être accompagné(e) en cas de difficultés financières",
+        None,
+    )
     LOGEMENT_HEBERGEMENT__ETRE_ACCOMPAGNE_POUR_SE_LOGER = (
         "logement-hebergement--etre-accompagne-pour-se-loger",
         "Être accompagné(e) pour se loger",
+        None,
+    )
+    LOGEMENT_HEBERGEMENT__FINANCER_SON_PROJET_TRAVAUX = (
+        "logement-hebergement--financer-son-projet-travaux",
+        "Financer son projet de travaux",
         None,
     )
     LOGEMENT_HEBERGEMENT__GERER_SON_BUDGET = (
