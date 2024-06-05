@@ -6,6 +6,11 @@
   },
   {
     "description": null,
+    "label": "Alternants",
+    "value": "alternants"
+  },
+  {
+    "description": null,
     "label": "Bénéficiaires du Revenu de Solidarité Active (RSA)",
     "value": "beneficiaires-rsa"
   },
@@ -41,8 +46,18 @@
   },
   {
     "description": null,
+    "label": "Jeunes",
+    "value": "jeunes"
+  },
+  {
+    "description": null,
     "label": "Jeunes (16-26 ans)",
     "value": "jeunes-16-26"
+  },
+  {
+    "description": null,
+    "label": "Locataires",
+    "value": "locataires"
   },
   {
     "description": "Une personne se déplaçant temporairement en béquilles des suites d’une intervention médicale est en situation de handicap sans toutefois être handicapée.",
@@ -61,8 +76,23 @@
   },
   {
     "description": null,
+    "label": "Propriétaires",
+    "value": "proprietaires"
+  },
+  {
+    "description": null,
     "label": "Public langues étrangères",
     "value": "public-langues-etrangeres"
+  },
+  {
+    "description": null,
+    "label": "Retraités",
+    "value": "retraites"
+  },
+  {
+    "description": null,
+    "label": "Salariés",
+    "value": "salaries"
   },
   {
     "description": null,

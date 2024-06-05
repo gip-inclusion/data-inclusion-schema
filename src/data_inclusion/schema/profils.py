@@ -7,6 +7,11 @@ class Profil(EnhancedEnum):
         "Adultes",
         None,
     )
+    ALTERNANTS = (
+        "alternants",
+        "Alternants",
+        None,
+    )
     BENEFICIAIRES_RSA = (
         "beneficiaires-rsa",
         "Bénéficiaires du Revenu de Solidarité Active (RSA)",
@@ -45,9 +50,19 @@ class Profil(EnhancedEnum):
         ),
         None,
     )
+    JEUNES = (
+        "jeunes",
+        "Jeunes",
+        None,
+    )
     JEUNES_16_26 = (
         "jeunes-16-26",
         "Jeunes (16-26 ans)",
+        None,
+    )
+    LOCATAIRES = (
+        "locataires",
+        "Locataires",
         None,
     )
     PERSONNES_EN_SITUATION_DE_HANDICAP = (
@@ -72,9 +87,24 @@ class Profil(EnhancedEnum):
             "significative subie par une personne dans son environnement."
         ),
     )
+    PROPRIETAIRES = (
+        "proprietaires",
+        "Propriétaires",
+        None,
+    )
     PUBLIC_LANGUES_ETRANGERES = (
         "public-langues-etrangeres",
         "Public langues étrangères",
+        None,
+    )
+    RETRAITES = (
+        "retraites",
+        "Retraités",
+        None,
+    )
+    SALARIES = (
+        "salaries",
+        "Salariés",
         None,
     )
     SENIORS_65 = (
