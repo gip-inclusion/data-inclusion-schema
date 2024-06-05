@@ -45,6 +45,7 @@
     "Profil": {
       "enum": [
         "adultes",
+        "alternants",
         "beneficiaires-rsa",
         "deficience-visuelle",
         "demandeurs-demploi",
@@ -52,11 +53,16 @@
         "femmes",
         "handicaps-mentaux",
         "handicaps-psychiques",
+        "jeunes",
         "jeunes-16-26",
+        "locataires",
         "personnes-en-situation-de-handicap",
         "personnes-en-situation-illettrisme",
         "personnes-handicapees",
+        "proprietaires",
         "public-langues-etrangeres",
+        "retraites",
+        "salaries",
         "seniors-65",
         "surdite"
       ],
