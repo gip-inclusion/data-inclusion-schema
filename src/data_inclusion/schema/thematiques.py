@@ -35,14 +35,14 @@ class Thematique(EnhancedEnum):
         "Demandeurs d’asile et naturalisation",
         None,
     )
-    ACCES_AUX_DROITS_ET_CITOYENNETE__FACILITER_LACTION_CITOYENNE = (
-        "acces-aux-droits-et-citoyennete--faciliter-laction-citoyenne",
-        "Faciliter l’action citoyenne",
-        None,
-    )
     ACCES_AUX_DROITS_ET_CITOYENNETE__DEVELOPPEMENT_DURABLE = (
         "acces-aux-droits-et-citoyennete--developpement-durable",
         "Développement durable",
+        None,
+    )
+    ACCES_AUX_DROITS_ET_CITOYENNETE__FACILITER_LACTION_CITOYENNE = (
+        "acces-aux-droits-et-citoyennete--faciliter-laction-citoyenne",
+        "Faciliter l’action citoyenne",
         None,
     )
 
@@ -99,9 +99,9 @@ class Thematique(EnhancedEnum):
         "Choisir un métier",
         None,
     )
-    CHOISIR_UN_METIER__IDENTIFIER_SES_POINTS_FORTS_ET_SES_COMPETENCES = (
-        "choisir-un-metier--identifier-ses-points-forts-et-ses-competences",
-        "Identifier ses points forts et ses compétences",
+    CHOISIR_UN_METIER__CONFIRMER_SON_CHOIX_DE_METIER = (
+        "choisir-un-metier--confirmer-son-choix-de-metier",
+        "Confirmer son choix de métier",
         None,
     )
     CHOISIR_UN_METIER__CONNAITRE_LES_OPPORTUNITES_DEMPLOI = (
@@ -114,9 +114,9 @@ class Thematique(EnhancedEnum):
         "Découvrir un métier ou un secteur d’activité",
         None,
     )
-    CHOISIR_UN_METIER__CONFIRMER_SON_CHOIX_DE_METIER = (
-        "choisir-un-metier--confirmer-son-choix-de-metier",
-        "Confirmer son choix de métier",
+    CHOISIR_UN_METIER__IDENTIFIER_SES_POINTS_FORTS_ET_SES_COMPETENCES = (
+        "choisir-un-metier--identifier-ses-points-forts-et-ses-competences",
+        "Identifier ses points forts et ses compétences",
         None,
     )
 
@@ -135,9 +135,9 @@ class Thematique(EnhancedEnum):
         "Développer son entreprise",
         None,
     )
-    CREATION_ACTIVITE__STRUCTURER_SON_PROJET_DE_CREATION_DENTREPRISE = (
-        "creation-activite--structurer-son-projet-de-creation-dentreprise",
-        "Structurer son projet de création d’entreprise",
+    CREATION_ACTIVITE__FINANCER_SON_PROJET = (
+        "creation-activite--financer-son-projet",
+        "Financer son projet",
         None,
     )
     CREATION_ACTIVITE__RESEAUTAGE_POUR_CREATEURS_DENTREPRISE = (
@@ -145,9 +145,9 @@ class Thematique(EnhancedEnum):
         "Réseautage pour créateurs d’entreprise",
         None,
     )
-    CREATION_ACTIVITE__FINANCER_SON_PROJET = (
-        "creation-activite--financer-son-projet",
-        "Financer son projet",
+    CREATION_ACTIVITE__STRUCTURER_SON_PROJET_DE_CREATION_DENTREPRISE = (
+        "creation-activite--structurer-son-projet-de-creation-dentreprise",
+        "Structurer son projet de création d’entreprise",
         None,
     )
 
@@ -187,9 +187,9 @@ class Thematique(EnhancedEnum):
         "Famille",
         None,
     )
-    FAMILLE__INFORMATION_ET_ACCOMPAGNEMENT_DES_PARENTS = (
-        "famille--information-et-accompagnement-des-parents",
-        "Information et accompagnement des parents",
+    FAMILLE__ACCOMPAGNEMENT_FEMME_ENCEINTE_BEBE_JEUNE_ENFANT = (
+        "famille--accompagnement-femme-enceinte-bebe-jeune-enfant",
+        "Accompagnement femme enceinte, bébé, jeune enfant",
         None,
     )
     FAMILLE__GARDE_DENFANTS = (
@@ -197,9 +197,19 @@ class Thematique(EnhancedEnum):
         "Garde d’enfants",
         None,
     )
+    FAMILLE__INFORMATION_ET_ACCOMPAGNEMENT_DES_PARENTS = (
+        "famille--information-et-accompagnement-des-parents",
+        "Information et accompagnement des parents",
+        None,
+    )
     FAMILLE__JEUNES_SANS_SOUTIEN_FAMILIAL = (
         "famille--jeunes-sans-soutien-familial",
         "Jeunes sans soutien familial",
+        None,
+    )
+    FAMILLE__SOUTIEN_A_LA_PARENTALITE = (
+        "famille--soutien-a-la-parentalite",
+        "Soutien à la parentalité",
         None,
     )
     FAMILLE__SOUTIEN_AUX_FAMILLES = (
@@ -210,16 +220,6 @@ class Thematique(EnhancedEnum):
     FAMILLE__VIOLENCES_INTRAFAMILIALES = (
         "famille--violences-intrafamiliales",
         "Violences intrafamiliales",
-        None,
-    )
-    FAMILLE__ACCOMPAGNEMENT_FEMME_ENCEINTE_BEBE_JEUNE_ENFANT = (
-        "famille--accompagnement-femme-enceinte-bebe-jeune-enfant",
-        "Accompagnement femme enceinte, bébé, jeune enfant",
-        None,
-    )
-    FAMILLE__SOUTIEN_A_LA_PARENTALITE = (
-        "famille--soutien-a-la-parentalite",
-        "Soutien à la parentalité",
         None,
     )
 
@@ -233,14 +233,19 @@ class Thematique(EnhancedEnum):
         "Accompagnement aux personnes en difficultés financières",
         None,
     )
+    GESTION_FINANCIERE__ACCES_AU_MICRO_CREDIT = (
+        "gestion-financiere--acces-au-micro-credit",
+        "Accès au micro-crédit",
+        None,
+    )
     GESTION_FINANCIERE__APPRENDRE_A_GERER_SON_BUDGET = (
         "gestion-financiere--apprendre-a-gerer-son-budget",
         "Apprendre à gérer son budget",
         None,
     )
-    GESTION_FINANCIERE__PREVENTION_ET_GESTION_DU_SURENDETTEMENT = (
-        "gestion-financiere--prevention-et-gestion-du-surendettement",
-        "Prévention et gestion du surendettement",
+    GESTION_FINANCIERE__BENEFICIER_DAIDES_FINANCIERES = (
+        "gestion-financiere--beneficier-daides-financieres",
+        "Bénéficier d’aides financières",
         None,
     )
     GESTION_FINANCIERE__CREATION_ET_UTILISATION_DUN_COMPTE_BANCAIRE = (
@@ -248,19 +253,14 @@ class Thematique(EnhancedEnum):
         "Création et utilisation d’un compte bancaire",
         None,
     )
-    GESTION_FINANCIERE__ACCES_AU_MICRO_CREDIT = (
-        "gestion-financiere--acces-au-micro-credit",
-        "Accès au micro-crédit",
-        None,
-    )
     GESTION_FINANCIERE__OBTENIR_UNE_AIDE_ALIMENTAIRE = (
         "gestion-financiere--obtenir-une-aide-alimentaire",
         "Obtenir une aide alimentaire",
         None,
     )
-    GESTION_FINANCIERE__BENEFICIER_DAIDES_FINANCIERES = (
-        "gestion-financiere--beneficier-daides-financieres",
-        "Bénéficier d’aides financières",
+    GESTION_FINANCIERE__PREVENTION_ET_GESTION_DU_SURENDETTEMENT = (
+        "gestion-financiere--prevention-et-gestion-du-surendettement",
+        "Prévention et gestion du surendettement",
         None,
     )
 
@@ -299,17 +299,17 @@ class Thematique(EnhancedEnum):
         "Favoriser le retour et le maintien dans l’emploi",
         None,
     )
-    HANDICAP__MOBILITE_DES_PERSONNES_EN_SITUATION_DE_HANDICAP = (
-        "handicap--mobilite-des-personnes-en-situation-de-handicap",
-        "Mobilité des personnes en situation de handicap",
-        None,
-    )
     HANDICAP__GERER_LE_DEPART_A_LA_RETRAITE_DES_PERSONNES_EN_SITUATION_DE_HANDICAP = (
         (
             "handicap--"
             "gerer-le-depart-a-la-retraite-des-personnes-en-situation-de-handicap"
         ),
         "Gérer le départ à la retraite des personnes en situation de handicap",
+        None,
+    )
+    HANDICAP__MOBILITE_DES_PERSONNES_EN_SITUATION_DE_HANDICAP = (
+        "handicap--mobilite-des-personnes-en-situation-de-handicap",
+        "Mobilité des personnes en situation de handicap",
         None,
     )
 
@@ -374,19 +374,29 @@ class Thematique(EnhancedEnum):
         "Logement et hébergement",
         None,
     )
-    LOGEMENT_HEBERGEMENT__ETRE_ACCOMPAGNE_POUR_SE_LOGER = (
-        "logement-hebergement--etre-accompagne-pour-se-loger",
-        "Être accompagné(e) pour se loger",
-        None,
-    )
     LOGEMENT_HEBERGEMENT__BESOIN_DADAPTER_MON_LOGEMENT = (
         "logement-hebergement--besoin-dadapter-mon-logement",
         "Besoin d’adapter mon logement",
         None,
     )
+    LOGEMENT_HEBERGEMENT__CONNAISSANCE_DE_SES_DROITS_ET_INTERLOCUTEURS = (
+        "logement-hebergement--connaissance-de-ses-droits-et-interlocuteurs",
+        "Connaissance de ses droits et interlocuteurs",
+        None,
+    )
     LOGEMENT_HEBERGEMENT__DEMENAGEMENT = (
         "logement-hebergement--demenagement",
         "Déménagement",
+        None,
+    )
+    LOGEMENT_HEBERGEMENT__ETRE_ACCOMPAGNE_POUR_SE_LOGER = (
+        "logement-hebergement--etre-accompagne-pour-se-loger",
+        "Être accompagné(e) pour se loger",
+        None,
+    )
+    LOGEMENT_HEBERGEMENT__GERER_SON_BUDGET = (
+        "logement-hebergement--gerer-son-budget",
+        "Gérer son budget",
         None,
     )
     LOGEMENT_HEBERGEMENT__MAL_LOGES_SANS_LOGIS = (
@@ -404,35 +414,10 @@ class Thematique(EnhancedEnum):
         "Reprendre un emploi ou une formation",
         None,
     )
-    LOGEMENT_HEBERGEMENT__CONNAISSANCE_DE_SES_DROITS_ET_INTERLOCUTEURS = (
-        "logement-hebergement--connaissance-de-ses-droits-et-interlocuteurs",
-        "Connaissance de ses droits et interlocuteurs",
-        None,
-    )
-    LOGEMENT_HEBERGEMENT__GERER_SON_BUDGET = (
-        "logement-hebergement--gerer-son-budget",
-        "Gérer son budget",
-        None,
-    )
 
     MOBILITE = (
         "mobilite",
         "Mobilité",
-        None,
-    )
-    MOBILITE__ETRE_ACCOMPAGNE_DANS_SON_PARCOURS_MOBILITE = (
-        "mobilite--etre-accompagne-dans-son-parcours-mobilite",
-        "Être accompagné(e) dans son parcours mobilité",
-        None,
-    )
-    MOBILITE__ENTRETENIR_REPARER_SON_VEHICULE = (
-        "mobilite--entretenir-reparer-son-vehicule",
-        "Entretenir ou réparer son véhicule",
-        None,
-    )
-    MOBILITE__LOUER_UN_VEHICULE = (
-        "mobilite--louer-un-vehicule",
-        "Louer un véhicule (voiture, vélo, scooter..)",
         None,
     )
     MOBILITE__ACHETER_UN_VEHICULE_MOTORISE = (
@@ -440,9 +425,9 @@ class Thematique(EnhancedEnum):
         "Acheter un véhicule motorisé",
         None,
     )
-    MOBILITE__PREPARER_SON_PERMIS_DE_CONDUIRE_SE_REENTRAINER_A_LA_CONDUITE = (
-        "mobilite--preparer-son-permis-de-conduire-se-reentrainer-a-la-conduite",
-        "Préparer son permis de conduire, se réentraîner à la conduite",
+    MOBILITE__ACHETER_UN_VELO = (
+        "mobilite--acheter-un-velo",
+        "Acheter un vélo",
         None,
     )
     MOBILITE__AIDES_A_LA_REPRISE_DEMPLOI_OU_A_LA_FORMATION = (
@@ -450,14 +435,29 @@ class Thematique(EnhancedEnum):
         "Aides à la reprise d’emploi ou à la formation",
         None,
     )
+    MOBILITE__APPRENDRE_A_UTILISER_UN_DEUX_ROUES = (
+        "mobilite--apprendre-a-utiliser-un-deux-roues",
+        "Apprendre à utiliser un deux roues",
+        None,
+    )
     MOBILITE__COMPRENDRE_ET_UTILISER_LES_TRANSPORTS_EN_COMMUN = (
         "mobilite--comprendre-et-utiliser-les-transports-en-commun",
         "Comprendre et utiliser les transports en commun",
         None,
     )
-    MOBILITE__APPRENDRE_A_UTILISER_UN_DEUX_ROUES = (
-        "mobilite--apprendre-a-utiliser-un-deux-roues",
-        "Apprendre à utiliser un deux roues",
+    MOBILITE__ENTRETENIR_REPARER_SON_VEHICULE = (
+        "mobilite--entretenir-reparer-son-vehicule",
+        "Entretenir ou réparer son véhicule",
+        None,
+    )
+    MOBILITE__ETRE_ACCOMPAGNE_DANS_SON_PARCOURS_MOBILITE = (
+        "mobilite--etre-accompagne-dans-son-parcours-mobilite",
+        "Être accompagné(e) dans son parcours mobilité",
+        None,
+    )
+    MOBILITE__LOUER_UN_VEHICULE = (
+        "mobilite--louer-un-vehicule",
+        "Louer un véhicule (voiture, vélo, scooter..)",
         None,
     )
     MOBILITE__FINANCER_MON_PROJET_MOBILITE = (
@@ -465,9 +465,9 @@ class Thematique(EnhancedEnum):
         "Financer mon projet mobilité",
         None,
     )
-    MOBILITE__ACHETER_UN_VELO = (
-        "mobilite--acheter-un-velo",
-        "Acheter un vélo",
+    MOBILITE__PREPARER_SON_PERMIS_DE_CONDUIRE_SE_REENTRAINER_A_LA_CONDUITE = (
+        "mobilite--preparer-son-permis-de-conduire-se-reentrainer-a-la-conduite",
+        "Préparer son permis de conduire, se réentraîner à la conduite",
         None,
     )
 
@@ -476,39 +476,9 @@ class Thematique(EnhancedEnum):
         "Numérique",
         None,
     )
-    NUMERIQUE__DEVENIR_AUTONOME_DANS_LES_DEMARCHES_ADMINISTRATIVES = (
-        "numerique--devenir-autonome-dans-les-demarches-administratives",
-        "Devenir autonome dans les démarches administratives",
-        None,
-    )
-    NUMERIQUE__REALISER_DES_DEMARCHES_ADMINISTRATIVES_AVEC_UN_ACCOMPAGNEMENT = (
-        "numerique--realiser-des-demarches-administratives-avec-un-accompagnement",
-        "Réaliser des démarches administratives avec un accompagnement",
-        None,
-    )
-    NUMERIQUE__PRENDRE_EN_MAIN_UN_SMARTPHONE_OU_UNE_TABLETTE = (
-        "numerique--prendre-en-main-un-smartphone-ou-une-tablette",
-        "Prendre en main un smartphone ou une tablette",
-        None,
-    )
-    NUMERIQUE__PRENDRE_EN_MAIN_UN_ORDINATEUR = (
-        "numerique--prendre-en-main-un-ordinateur",
-        "Prendre en main un ordinateur",
-        None,
-    )
-    NUMERIQUE__UTILISER_LE_NUMERIQUE_AU_QUOTIDIEN = (
-        "numerique--utiliser-le-numerique-au-quotidien",
-        "Utiliser le numérique au quotidien",
-        None,
-    )
-    NUMERIQUE__APPROFONDIR_MA_CULTURE_NUMERIQUE = (
-        "numerique--approfondir-ma-culture-numerique",
-        "Approfondir ma culture numérique",
-        None,
-    )
-    NUMERIQUE__FAVORISER_MON_INSERTION_PROFESSIONNELLE = (
-        "numerique--favoriser-mon-insertion-professionnelle",
-        "Favoriser mon insertion professionnelle",
+    NUMERIQUE__ACCEDER_A_DU_MATERIEL = (
+        "numerique--acceder-a-du-materiel",
+        "Accéder à du matériel",
         None,
     )
     NUMERIQUE__ACCEDER_A_UNE_CONNEXION_INTERNET = (
@@ -516,19 +486,14 @@ class Thematique(EnhancedEnum):
         "Accéder à une connexion internet",
         None,
     )
-    NUMERIQUE__ACCEDER_A_DU_MATERIEL = (
-        "numerique--acceder-a-du-materiel",
-        "Accéder à du matériel",
+    NUMERIQUE__ACCOMPAGNER_LES_DEMARCHES_DE_SANTE = (
+        "numerique--accompagner-les-demarches-de-sante",
+        "Accompagner les démarches de santé",
         None,
     )
-    NUMERIQUE__S_EQUIPER_EN_MATERIEL_INFORMATIQUE = (
-        "numerique--s-equiper-en-materiel-informatique",
-        "S’équiper en matériel informatique",
-        None,
-    )
-    NUMERIQUE__CREER_ET_DEVELOPPER_MON_ENTREPRISE = (
-        "numerique--creer-et-developper-mon-entreprise",
-        "Créer et développer mon entreprise",
+    NUMERIQUE__APPROFONDIR_MA_CULTURE_NUMERIQUE = (
+        "numerique--approfondir-ma-culture-numerique",
+        "Approfondir ma culture numérique",
         None,
     )
     NUMERIQUE__CREER_AVEC_LE_NUMERIQUE = (
@@ -536,9 +501,29 @@ class Thematique(EnhancedEnum):
         "Créer avec le numérique",
         None,
     )
-    NUMERIQUE__ACCOMPAGNER_LES_DEMARCHES_DE_SANTE = (
-        "numerique--accompagner-les-demarches-de-sante",
-        "Accompagner les démarches de santé",
+    NUMERIQUE__CREER_ET_DEVELOPPER_MON_ENTREPRISE = (
+        "numerique--creer-et-developper-mon-entreprise",
+        "Créer et développer mon entreprise",
+        None,
+    )
+    NUMERIQUE__DEVENIR_AUTONOME_DANS_LES_DEMARCHES_ADMINISTRATIVES = (
+        "numerique--devenir-autonome-dans-les-demarches-administratives",
+        "Devenir autonome dans les démarches administratives",
+        None,
+    )
+    NUMERIQUE__FAVORISER_MON_INSERTION_PROFESSIONNELLE = (
+        "numerique--favoriser-mon-insertion-professionnelle",
+        "Favoriser mon insertion professionnelle",
+        None,
+    )
+    NUMERIQUE__PRENDRE_EN_MAIN_UN_ORDINATEUR = (
+        "numerique--prendre-en-main-un-ordinateur",
+        "Prendre en main un ordinateur",
+        None,
+    )
+    NUMERIQUE__PRENDRE_EN_MAIN_UN_SMARTPHONE_OU_UNE_TABLETTE = (
+        "numerique--prendre-en-main-un-smartphone-ou-une-tablette",
+        "Prendre en main un smartphone ou une tablette",
         None,
     )
     NUMERIQUE__PROMOUVOIR_LA_CITOYENNETE_NUMERIQUE = (
@@ -546,25 +531,30 @@ class Thematique(EnhancedEnum):
         "Promouvoir la citoyenneté numérique",
         None,
     )
+    NUMERIQUE__REALISER_DES_DEMARCHES_ADMINISTRATIVES_AVEC_UN_ACCOMPAGNEMENT = (
+        "numerique--realiser-des-demarches-administratives-avec-un-accompagnement",
+        "Réaliser des démarches administratives avec un accompagnement",
+        None,
+    )
+    NUMERIQUE__S_EQUIPER_EN_MATERIEL_INFORMATIQUE = (
+        "numerique--s-equiper-en-materiel-informatique",
+        "S’équiper en matériel informatique",
+        None,
+    )
     NUMERIQUE__SOUTENIR_LA_PARENTALITE_ET_L_EDUCATION_AVEC_LE_NUMERIQUE = (
         "numerique--soutenir-la-parentalite-et-l-education-avec-le-numerique",
         "Soutenir la parentalité et l’éducation avec le numérique",
+        None,
+    )
+    NUMERIQUE__UTILISER_LE_NUMERIQUE_AU_QUOTIDIEN = (
+        "numerique--utiliser-le-numerique-au-quotidien",
+        "Utiliser le numérique au quotidien",
         None,
     )
 
     PREPARER_SA_CANDIDATURE = (
         "preparer-sa-candidature",
         "Préparer sa candidature",
-        None,
-    )
-    PREPARER_SA_CANDIDATURE__VALORISER_SES_COMPETENCES = (
-        "preparer-sa-candidature--valoriser-ses-competences",
-        "Valoriser ses compétences",
-        None,
-    )
-    PREPARER_SA_CANDIDATURE__REALISER_UN_CV_ET_OU_UNE_LETTRE_DE_MOTIVATION = (
-        "preparer-sa-candidature--realiser-un-cv-et-ou-une-lettre-de-motivation",
-        "Réaliser un CV et/ou une lettre de motivation",
         None,
     )
     PREPARER_SA_CANDIDATURE__DEVELOPPER_SON_RESEAU = (
@@ -575,6 +565,16 @@ class Thematique(EnhancedEnum):
     PREPARER_SA_CANDIDATURE__ORGANISER_SES_DEMARCHES_DE_RECHERCHE_DEMPLOI = (
         "preparer-sa-candidature--organiser-ses-demarches-de-recherche-demploi",
         "Organiser ses démarches de recherche d’emploi",
+        None,
+    )
+    PREPARER_SA_CANDIDATURE__REALISER_UN_CV_ET_OU_UNE_LETTRE_DE_MOTIVATION = (
+        "preparer-sa-candidature--realiser-un-cv-et-ou-une-lettre-de-motivation",
+        "Réaliser un CV et/ou une lettre de motivation",
+        None,
+    )
+    PREPARER_SA_CANDIDATURE__VALORISER_SES_COMPETENCES = (
+        "preparer-sa-candidature--valoriser-ses-competences",
+        "Valoriser ses compétences",
         None,
     )
 
@@ -588,6 +588,16 @@ class Thematique(EnhancedEnum):
         "Bien être",
         None,
     )
+    REMOBILISATION__DECOUVRIR_SON_POTENTIEL_VIA_LE_SPORT_ET_LA_CULTURE = (
+        "remobilisation--decouvrir-son-potentiel-via-le-sport-et-la-culture",
+        "Découvrir son potentiel via le sport et la culture",
+        None,
+    )
+    REMOBILISATION__DISCRIMINATION = (
+        "remobilisation--discrimination",
+        "Discrimination",
+        None,
+    )
     REMOBILISATION__IDENTIFIER_SES_COMPETENCES_ET_APTITUDES = (
         "remobilisation--identifier-ses-competences-et-aptitudes",
         "Identifier ses compétences et aptitudes",
@@ -598,9 +608,9 @@ class Thematique(EnhancedEnum):
         "Lien social",
         None,
     )
-    REMOBILISATION__RESTAURER_SA_CONFIANCE_SON_IMAGE_DE_SOI = (
-        "remobilisation--restaurer-sa-confiance-son-image-de-soi",
-        "Restaurer sa confiance, son image de soi",
+    REMOBILISATION__PARTICIPER_A_DES_ACTIONS_SOLIDAIRES_OU_DE_BÉNÉVOLAT = (
+        "remobilisation--participer-a-des-actions-solidaires-ou-de-benevolat",
+        "Participer à des actions solidaires ou de bénévolat",
         None,
     )
     REMOBILISATION__PRESSION_SOCIALE = (
@@ -608,19 +618,9 @@ class Thematique(EnhancedEnum):
         "Pression sociale",
         None,
     )
-    REMOBILISATION__DISCRIMINATION = (
-        "remobilisation--discrimination",
-        "Discrimination",
-        None,
-    )
-    REMOBILISATION__DECOUVRIR_SON_POTENTIEL_VIA_LE_SPORT_ET_LA_CULTURE = (
-        "remobilisation--decouvrir-son-potentiel-via-le-sport-et-la-culture",
-        "Découvrir son potentiel via le sport et la culture",
-        None,
-    )
-    REMOBILISATION__PARTICIPER_A_DES_ACTIONS_SOLIDAIRES_OU_DE_BÉNÉVOLAT = (
-        "remobilisation--participer-a-des-actions-solidaires-ou-de-benevolat",
-        "Participer à des actions solidaires ou de bénévolat",
+    REMOBILISATION__RESTAURER_SA_CONFIANCE_SON_IMAGE_DE_SOI = (
+        "remobilisation--restaurer-sa-confiance-son-image-de-soi",
+        "Restaurer sa confiance, son image de soi",
         None,
     )
 
@@ -629,9 +629,19 @@ class Thematique(EnhancedEnum):
         "Santé",
         None,
     )
-    SANTE__FAIRE_FACE_A_UNE_SITUATION_DADDICTION = (
-        "sante--faire-face-a-une-situation-daddiction",
-        "Faire face à une situation d’addiction",
+    SANTE__ACCES_AUX_SOINS = (
+        "sante--acces-aux-soins",
+        "Accès aux soins",
+        None,
+    )
+    SANTE__ACCOMPAGNEMENT_DE_LA_FEMME_ENCEINTE_DU_BEBE_ET_DU_JEUNE_ENFANT = (
+        "sante--accompagnement-de-la-femme-enceinte-du-bebe-et-du-jeune-enfant",
+        "Accompagnement de la femme enceinte, du bébé et du jeune enfant",
+        None,
+    )
+    SANTE__ACCOMPAGNER_LES_TRAUMATISMES = (
+        "sante--accompagner-les-traumatismes",
+        "Accompagner les traumatismes",
         None,
     )
     SANTE__BIEN_ETRE_PSYCHOLOGIQUE = (
@@ -639,19 +649,19 @@ class Thematique(EnhancedEnum):
         "Bien être psychologique",
         None,
     )
+    SANTE__DIAGNOSTIC_ET_ACCOMPAGNEMENT_A_LEMPLOYABILITE = (
+        "sante--diagnostic-et-accompagnement-a-lemployabilite",
+        "Diagnostic et accompagnement à l’employabilité",
+        None,
+    )
+    SANTE__FAIRE_FACE_A_UNE_SITUATION_DADDICTION = (
+        "sante--faire-face-a-une-situation-daddiction",
+        "Faire face à une situation d’addiction",
+        None,
+    )
     SANTE__OBTENIR_LA_PRISE_EN_CHARGE_DE_FRAIS_MEDICAUX = (
         "sante--obtenir-la-prise-en-charge-de-frais-medicaux",
         "Obtenir la prise en charge de frais médicaux",
-        None,
-    )
-    SANTE__SE_SOIGNER_ET_PRÉVENIR_LA_MALADIE = (
-        "sante--se-soigner-et-prevenir-la-maladie",
-        "Se soigner et prévenir la maladie",
-        None,
-    )
-    SANTE__ACCOMPAGNEMENT_DE_LA_FEMME_ENCEINTE_DU_BEBE_ET_DU_JEUNE_ENFANT = (
-        "sante--accompagnement-de-la-femme-enceinte-du-bebe-et-du-jeune-enfant",
-        "Accompagnement de la femme enceinte, du bébé et du jeune enfant",
         None,
     )
     SANTE__PREVENTION_ET_ACCES_AUX_SOINS = (
@@ -662,24 +672,14 @@ class Thematique(EnhancedEnum):
         ),
         None,
     )
+    SANTE__SE_SOIGNER_ET_PRÉVENIR_LA_MALADIE = (
+        "sante--se-soigner-et-prevenir-la-maladie",
+        "Se soigner et prévenir la maladie",
+        None,
+    )
     SANTE__VIE_RELATIONNELLE_ET_AFFECTIVE = (
         "sante--vie-relationnelle-et-affective",
         "Vie relationnelle et affective, dépistage et prévention des IST/VIH…",
-        None,
-    )
-    SANTE__ACCOMPAGNER_LES_TRAUMATISMES = (
-        "sante--accompagner-les-traumatismes",
-        "Accompagner les traumatismes",
-        None,
-    )
-    SANTE__ACCES_AUX_SOINS = (
-        "sante--acces-aux-soins",
-        "Accès aux soins",
-        None,
-    )
-    SANTE__DIAGNOSTIC_ET_ACCOMPAGNEMENT_A_LEMPLOYABILITE = (
-        "sante--diagnostic-et-accompagnement-a-lemployabilite",
-        "Diagnostic et accompagnement à l’employabilité",
         None,
     )
 
@@ -688,14 +688,14 @@ class Thematique(EnhancedEnum):
         "Se former",
         None,
     )
-    SE_FORMER__TROUVER_SA_FORMATION = (
-        "se-former--trouver-sa-formation",
-        "Trouver sa formation",
-        None,
-    )
     SE_FORMER__MONTER_SON_DOSSIER_DE_FORMATION = (
         "se-former--monter-son-dossier-de-formation",
         "Monter son dossier de formation",
+        None,
+    )
+    SE_FORMER__TROUVER_SA_FORMATION = (
+        "se-former--trouver-sa-formation",
+        "Trouver sa formation",
         None,
     )
     SE_FORMER__UTILISER_LE_NUMÉRIQUE = (
@@ -730,9 +730,9 @@ class Thematique(EnhancedEnum):
         "Trouver un emploi",
         None,
     )
-    TROUVER_UN_EMPLOI__REPONDRE_A_DES_OFFRES_DEMPLOI = (
-        "trouver-un-emploi--repondre-a-des-offres-demploi",
-        "Répondre à des offres d’emploi",
+    TROUVER_UN_EMPLOI__CONVAINCRE_UN_RECRUTEUR_EN_ENTRETIEN = (
+        "trouver-un-emploi--convaincre-un-recruteur-en-entretien",
+        "Convaincre un recruteur en entretien",
         None,
     )
     TROUVER_UN_EMPLOI__FAIRE_DES_CANDIDATURES_SPONTANEES = (
@@ -740,13 +740,13 @@ class Thematique(EnhancedEnum):
         "Faire des candidatures spontanées",
         None,
     )
+    TROUVER_UN_EMPLOI__REPONDRE_A_DES_OFFRES_DEMPLOI = (
+        "trouver-un-emploi--repondre-a-des-offres-demploi",
+        "Répondre à des offres d’emploi",
+        None,
+    )
     TROUVER_UN_EMPLOI__SUIVRE_SES_CANDIDATURES_ET_RELANCER_LES_EMPLOYEURS = (
         "trouver-un-emploi--suivre-ses-candidatures-et-relancer-les-employeurs",
         "Suivre ses candidatures et relancer les employeurs",
-        None,
-    )
-    TROUVER_UN_EMPLOI__CONVAINCRE_UN_RECRUTEUR_EN_ENTRETIEN = (
-        "trouver-un-emploi--convaincre-un-recruteur-en-entretien",
-        "Convaincre un recruteur en entretien",
         None,
     )
