@@ -1,27 +1,27 @@
 [
   {
-    "value": "autre",
+    "description": null,
     "label": "Autre",
-    "description": null
+    "value": "autre"
   },
   {
-    "value": "completer-le-formulaire-dadhesion",
+    "description": null,
     "label": "Compléter le formulaire d’adhésion",
-    "description": null
+    "value": "completer-le-formulaire-dadhesion"
   },
   {
-    "value": "envoyer-un-mail",
+    "description": null,
     "label": "Envoyer un mail",
-    "description": null
+    "value": "envoyer-un-mail"
   },
   {
-    "value": "se-presenter",
+    "description": null,
     "label": "Se présenter",
-    "description": null
+    "value": "se-presenter"
   },
   {
-    "value": "telephoner",
+    "description": null,
     "label": "Téléphoner",
-    "description": null
+    "value": "telephoner"
   }
 ]

@@ -1,447 +1,447 @@
 [
   {
-    "value": "ACI",
+    "description": null,
     "label": "Structures porteuses d’ateliers et chantiers d’insertion (ACI)",
-    "description": null
+    "value": "ACI"
   },
   {
-    "value": "ACIPHC",
+    "description": null,
     "label": "SIAE — Atelier chantier d’insertion premières heures en chantier",
-    "description": null
+    "value": "ACIPHC"
   },
   {
-    "value": "AFPA",
+    "description": null,
     "label": "Agence nationale pour la formation professionnelle des adultes (AFPA)",
-    "description": null
+    "value": "AFPA"
   },
   {
-    "value": "AI",
+    "description": null,
     "label": "Associations intermédiaires (AI)",
-    "description": null
+    "value": "AI"
   },
   {
-    "value": "ASE",
+    "description": null,
     "label": "Aide sociale à l’enfance (ASE)",
-    "description": null
+    "value": "ASE"
   },
   {
-    "value": "ASSO",
+    "description": null,
     "label": "Associations",
-    "description": null
+    "value": "ASSO"
   },
   {
-    "value": "ASSO_CHOMEUR",
+    "description": null,
     "label": "Associations de chômeurs",
-    "description": null
+    "value": "ASSO_CHOMEUR"
   },
   {
-    "value": "AVIP",
+    "description": null,
     "label": "Crèche À Vocation d’Insertion Professionnelle (AVIP)",
-    "description": null
+    "value": "AVIP"
   },
   {
-    "value": "Autre",
+    "description": null,
     "label": "Autre",
-    "description": null
+    "value": "Autre"
   },
   {
-    "value": "BIB",
+    "description": null,
     "label": "Bibliothèque / Médiathèque",
-    "description": null
+    "value": "BIB"
   },
   {
-    "value": "CAARUD",
+    "description": null,
     "label": "CAARUD - Centre d’accueil et d’accompagnement à la réduction de risques pour usagers de drogues",
-    "description": null
+    "value": "CAARUD"
   },
   {
-    "value": "CADA",
+    "description": null,
     "label": "Centres d’accueil de demandeurs d’asile (CADA)",
-    "description": null
+    "value": "CADA"
   },
   {
-    "value": "CAF",
+    "description": null,
     "label": "Caisses d’allocation familiale (CAF)",
-    "description": null
+    "value": "CAF"
   },
   {
-    "value": "CAP_EMPLOI",
+    "description": null,
     "label": "Cap Emploi",
-    "description": null
+    "value": "CAP_EMPLOI"
   },
   {
-    "value": "CAVA",
+    "description": null,
     "label": "Centres d’adaptation à la vie active (CAVA)",
-    "description": null
+    "value": "CAVA"
   },
   {
-    "value": "CC",
+    "description": null,
     "label": "Communautés de Commune",
-    "description": null
+    "value": "CC"
   },
   {
-    "value": "CCAS",
+    "description": null,
     "label": "Centres communaux d’action sociale (CCAS)",
-    "description": null
+    "value": "CCAS"
   },
   {
-    "value": "CCONS",
+    "description": null,
     "label": "Chambres consulaires (CCI, CMA, CA)",
-    "description": null
+    "value": "CCONS"
   },
   {
-    "value": "CD",
+    "description": null,
     "label": "Conseils Départementaux (CD)",
-    "description": null
+    "value": "CD"
   },
   {
-    "value": "CDAS",
+    "description": null,
     "label": "Centre Départementale d'Action Sociale (CDAS)",
-    "description": null
+    "value": "CDAS"
   },
   {
-    "value": "CFP",
+    "description": null,
     "label": "Centre des Finances Publiques (CFP)",
-    "description": null
+    "value": "CFP"
   },
   {
-    "value": "CHRS",
+    "description": null,
     "label": "Centres d’hébergement et de réinsertion sociale (CHRS)",
-    "description": null
+    "value": "CHRS"
   },
   {
-    "value": "CHU",
+    "description": null,
     "label": "Centres d’hébergement d’urgence (CHU)",
-    "description": null
+    "value": "CHU"
   },
   {
-    "value": "CIAS",
+    "description": null,
     "label": "Centres intercommunaux d’action sociale (CIAS)",
-    "description": null
+    "value": "CIAS"
   },
   {
-    "value": "CIDFF",
+    "description": null,
     "label": "Centres d’information sur les droits des femmes et des familles (CIDFF)",
-    "description": null
+    "value": "CIDFF"
   },
   {
-    "value": "CITMET",
+    "description": null,
     "label": "Cité des métiers",
-    "description": null
+    "value": "CITMET"
   },
   {
-    "value": "CMP",
+    "description": null,
     "label": "Centre Médico-Psychologique (CMP)",
-    "description": null
+    "value": "CMP"
   },
   {
-    "value": "CMS",
+    "description": null,
     "label": "Centre Médico-Social (CMS)",
-    "description": null
+    "value": "CMS"
   },
   {
-    "value": "CPAM",
+    "description": null,
     "label": "Caisse Primaire d'Assurance Maladie (CPAM)",
-    "description": null
+    "value": "CPAM"
   },
   {
-    "value": "CPH",
+    "description": null,
     "label": "Centres provisoires d’hébergement (CPH)",
-    "description": null
+    "value": "CPH"
   },
   {
-    "value": "CS",
+    "description": null,
     "label": "Centre social",
-    "description": null
+    "value": "CS"
   },
   {
-    "value": "CSAPA",
+    "description": null,
     "label": "CSAPA - Centre de soins, d’accompagnement et de prévention en addictologie",
-    "description": null
+    "value": "CSAPA"
   },
   {
-    "value": "CSC",
+    "description": null,
     "label": "Centre Socio-Culturel (CSC)",
-    "description": null
+    "value": "CSC"
   },
   {
-    "value": "DEETS",
+    "description": null,
     "label": "Directions de l’Economie, de l’Emploi, du Travail et des Solidarités (DEETS)",
-    "description": null
+    "value": "DEETS"
   },
   {
-    "value": "DEPT",
+    "description": null,
     "label": "Services sociaux du Conseil départemental",
-    "description": null
+    "value": "DEPT"
   },
   {
-    "value": "DIPLP",
+    "description": null,
     "label": "Délégation interministérielles à la prévention et à la lutte contre la pauvreté",
-    "description": null
+    "value": "DIPLP"
   },
   {
-    "value": "E2C",
+    "description": null,
     "label": "E2C - École de la 2e chance",
-    "description": null
+    "value": "E2C"
   },
   {
-    "value": "EA",
+    "description": null,
     "label": "Entreprise adaptée (EA)",
-    "description": null
+    "value": "EA"
   },
   {
-    "value": "EATT",
+    "description": null,
     "label": "Entreprise Adaptée (EATT)",
-    "description": null
+    "value": "EATT"
   },
   {
-    "value": "EI",
+    "description": null,
     "label": "Entreprises d’insertion (EI)",
-    "description": null
+    "value": "EI"
   },
   {
-    "value": "EITI",
+    "description": null,
     "label": "Entreprises d’insertion par le travail indépendant (EITI)",
-    "description": null
+    "value": "EITI"
   },
   {
-    "value": "ENM",
+    "description": null,
     "label": "Espace Numérique Mobile (ENM)",
-    "description": null
+    "value": "ENM"
   },
   {
-    "value": "EPCI",
+    "description": null,
     "label": "Intercommunalité (EPCI)",
-    "description": null
+    "value": "EPCI"
   },
   {
-    "value": "EPI",
+    "description": null,
     "label": "Espace Public Internet (EPI)",
-    "description": null
+    "value": "EPI"
   },
   {
-    "value": "EPIDE",
+    "description": null,
     "label": "EPIDE - Établissement pour l’insertion dans l’emploi",
-    "description": null
+    "value": "EPIDE"
   },
   {
-    "value": "EPN",
+    "description": null,
     "label": "Espace Public Numérique (EPN)",
-    "description": null
+    "value": "EPN"
   },
   {
-    "value": "ES",
+    "description": null,
     "label": "Épicerie Solidaire",
-    "description": null
+    "value": "ES"
   },
   {
-    "value": "ESS",
+    "description": null,
     "label": "Entreprise de l’Économie Sociale et Solidaire",
-    "description": null
+    "value": "ESS"
   },
   {
-    "value": "ETTI",
+    "description": null,
     "label": "Entreprises de travail temporaire d’insertion (ETTI)",
-    "description": null
+    "value": "ETTI"
   },
   {
-    "value": "EVS",
+    "description": null,
     "label": "Espace de Vie Sociale (EVS)",
-    "description": null
+    "value": "EVS"
   },
   {
-    "value": "FABLAB",
+    "description": null,
     "label": "Fablab / Atelier partagé",
-    "description": null
+    "value": "FABLAB"
   },
   {
-    "value": "FAIS",
+    "description": null,
     "label": "Fédérations d’acteurs de l’insertion et de la solidarité",
-    "description": null
+    "value": "FAIS"
   },
   {
-    "value": "FT",
+    "description": null,
     "label": "France Travail",
-    "description": null
+    "value": "FT"
   },
   {
-    "value": "GEIQ",
+    "description": null,
     "label": "Groupements d’employeurs pour l’insertion et la qualification (GEIQ)",
-    "description": null
+    "value": "GEIQ"
   },
   {
-    "value": "HUDA",
+    "description": null,
     "label": "HUDA - Hébergement d’urgence pour demandeurs d’asile",
-    "description": null
+    "value": "HUDA"
   },
   {
-    "value": "LA_POSTE",
+    "description": null,
     "label": "Bureau de poste / Agence postale",
-    "description": null
+    "value": "LA_POSTE"
   },
   {
-    "value": "MDE",
+    "description": null,
     "label": "Maison de l’emploi",
-    "description": null
+    "value": "MDE"
   },
   {
-    "value": "MDEF",
+    "description": null,
     "label": "Maison de l’emploi et de la formation",
-    "description": null
+    "value": "MDEF"
   },
   {
-    "value": "MDPH",
+    "description": null,
     "label": "Maison Départementale des Personnes Handicapées",
-    "description": null
+    "value": "MDPH"
   },
   {
-    "value": "MDS",
+    "description": null,
     "label": "Maison Départementale des Solidarités",
-    "description": null
+    "value": "MDS"
   },
   {
-    "value": "MJC",
+    "description": null,
     "label": "Maison des jeunes et de la culture",
-    "description": null
+    "value": "MJC"
   },
   {
-    "value": "ML",
+    "description": null,
     "label": "Mission Locale",
-    "description": null
+    "value": "ML"
   },
   {
-    "value": "MQ",
+    "description": null,
     "label": "Maison de quartier",
-    "description": null
+    "value": "MQ"
   },
   {
-    "value": "MSA",
+    "description": null,
     "label": "Mutualité Sociale Agricole",
-    "description": null
+    "value": "MSA"
   },
   {
-    "value": "MSAP",
+    "description": null,
     "label": "Maison de Services Au Public (MSAP)",
-    "description": null
+    "value": "MSAP"
   },
   {
-    "value": "MUNI",
+    "description": null,
     "label": "Municipalités",
-    "description": null
+    "value": "MUNI"
   },
   {
-    "value": "OACAS",
+    "description": null,
     "label": "Structures agréées Organisme d’accueil communautaire et d’activité solidaire (OACAS)",
-    "description": null
+    "value": "OACAS"
   },
   {
-    "value": "ODC",
+    "description": null,
     "label": "Organisation délégataire d’un CD",
-    "description": null
+    "value": "ODC"
   },
   {
-    "value": "OF",
+    "description": null,
     "label": "Organisme de formations",
-    "description": null
+    "value": "OF"
   },
   {
-    "value": "OIL",
+    "description": null,
     "label": "Opérateur d’intermédiation locative",
-    "description": null
+    "value": "OIL"
   },
   {
-    "value": "OPCS",
+    "description": null,
     "label": "Organisation porteuse de la clause sociale",
-    "description": null
+    "value": "OPCS"
   },
   {
-    "value": "PAD",
+    "description": null,
     "label": "Point d’Accès au Droit",
-    "description": null
+    "value": "PAD"
   },
   {
-    "value": "PE",
+    "description": null,
     "label": "Pôle emploi",
-    "description": null
+    "value": "PE"
   },
   {
-    "value": "PENSION",
+    "description": null,
     "label": "Pension de famille / résidence accueil",
-    "description": null
+    "value": "PENSION"
   },
   {
-    "value": "PI",
+    "description": null,
     "label": "Point Information (PI)",
-    "description": null
+    "value": "PI"
   },
   {
-    "value": "PIJ_BIJ",
+    "description": null,
     "label": "Points et bureaux information jeunesse (PIJ/BIJ)",
-    "description": null
+    "value": "PIJ_BIJ"
   },
   {
-    "value": "PIMMS",
+    "description": null,
     "label": "Point Information Médiation Multi Services (PIMMS)",
-    "description": null
+    "value": "PIMMS"
   },
   {
-    "value": "PJJ",
+    "description": null,
     "label": "Protection judiciaire de la jeunesse (PJJ)",
-    "description": null
+    "value": "PJJ"
   },
   {
-    "value": "PLIE",
+    "description": null,
     "label": "Plans locaux pour l’insertion et l’emploi (PLIE)",
-    "description": null
+    "value": "PLIE"
   },
   {
-    "value": "PREF",
+    "description": null,
     "label": "Préfecture, Sous-Préfecture",
-    "description": null
+    "value": "PREF"
   },
   {
-    "value": "PREVENTION",
+    "description": null,
     "label": "Service ou club de prévention",
-    "description": null
+    "value": "PREVENTION"
   },
   {
-    "value": "REG",
+    "description": null,
     "label": "Région",
-    "description": null
+    "value": "REG"
   },
   {
-    "value": "RESSOURCERIE",
+    "description": null,
     "label": "Ressourcerie",
-    "description": null
+    "value": "RESSOURCERIE"
   },
   {
-    "value": "RFS",
+    "description": null,
     "label": "Réseau France Services",
-    "description": null
+    "value": "RFS"
   },
   {
-    "value": "RS_FJT",
+    "description": null,
     "label": "Résidence sociale / FJT - Foyer de Jeunes Travailleurs",
-    "description": null
+    "value": "RS_FJT"
   },
   {
-    "value": "SCP",
+    "description": null,
     "label": "Services et clubs de prévention",
-    "description": null
+    "value": "SCP"
   },
   {
-    "value": "SPIP",
+    "description": null,
     "label": "Services pénitentiaires d’insertion et de probation (SPIP)",
-    "description": null
+    "value": "SPIP"
   },
   {
-    "value": "TIERS_LIEUX",
+    "description": null,
     "label": "Tiers lieu & coworking",
-    "description": null
+    "value": "TIERS_LIEUX"
   },
   {
-    "value": "UDAF",
+    "description": null,
     "label": "Union Départementale d’Aide aux Familles (UDAF)",
-    "description": null
+    "value": "UDAF"
   }
 ]

@@ -17,12 +17,22 @@ from data_inclusion.schema import (
 )
 
 
+def json_dump(obj, file):
+    json.dump(
+        obj,
+        file,
+        indent=2,
+        ensure_ascii=False,
+        sort_keys=True,
+    )
+
+
 def main():
     output_dir = pathlib.Path() / "schemas"
     output_dir.mkdir(exist_ok=True)
 
     with (output_dir / "structures.json").open("w") as file:
-        json.dump(
+        json_dump(
             Structure.model_list_json_schema(
                 title="Structures de l'insertion",
                 id=(
@@ -32,11 +42,10 @@ def main():
                 description="",
             ),
             file,
-            indent=2,
         )
 
     with (output_dir / "services.json").open("w") as file:
-        json.dump(
+        json_dump(
             Service.model_list_json_schema(
                 title="Services de l'insertion",
                 id=(
@@ -46,7 +55,6 @@ def main():
                 description="",
             ),
             file,
-            indent=2,
         )
 
     # fichiers supplémentaires documentant les énumérations
@@ -68,12 +76,7 @@ def main():
 
     for filename, enum in enum_x_file_tuples_list:
         with (output_dir / "extra" / filename).open("w") as file:
-            json.dump(
-                enum.as_dict_list(),
-                file,
-                indent=2,
-                ensure_ascii=False,
-            )
+            json_dump(enum.as_dict_list(), file)
 
 
 if __name__ == "__main__":

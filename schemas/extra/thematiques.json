@@ -1,717 +1,717 @@
 [
   {
-    "value": "acces-aux-droits-et-citoyennete",
+    "description": null,
     "label": "Accès aux droits & citoyenneté",
-    "description": null
+    "value": "acces-aux-droits-et-citoyennete"
   },
   {
-    "value": "acces-aux-droits-et-citoyennete--accompagnement-dans-les-demarches-administratives",
+    "description": null,
     "label": "Accompagnement dans les démarches administratives",
-    "description": null
+    "value": "acces-aux-droits-et-citoyennete--accompagnement-dans-les-demarches-administratives"
   },
   {
-    "value": "acces-aux-droits-et-citoyennete--accompagnement-juridique",
+    "description": null,
     "label": "Accompagnement juridique",
-    "description": null
+    "value": "acces-aux-droits-et-citoyennete--accompagnement-juridique"
   },
   {
-    "value": "acces-aux-droits-et-citoyennete--aide-aux-victimes",
+    "description": null,
     "label": "Aide aux victimes",
-    "description": null
+    "value": "acces-aux-droits-et-citoyennete--aide-aux-victimes"
   },
   {
-    "value": "acces-aux-droits-et-citoyennete--connaitre-ses-droits",
+    "description": null,
     "label": "Connaître ses droits",
-    "description": null
+    "value": "acces-aux-droits-et-citoyennete--connaitre-ses-droits"
   },
   {
-    "value": "acces-aux-droits-et-citoyennete--demandeurs-dasile-et-naturalisation",
+    "description": null,
     "label": "Demandeurs d’asile et naturalisation",
-    "description": null
+    "value": "acces-aux-droits-et-citoyennete--demandeurs-dasile-et-naturalisation"
   },
   {
-    "value": "acces-aux-droits-et-citoyennete--developpement-durable",
+    "description": null,
     "label": "Développement durable",
-    "description": null
+    "value": "acces-aux-droits-et-citoyennete--developpement-durable"
   },
   {
-    "value": "acces-aux-droits-et-citoyennete--faciliter-laction-citoyenne",
+    "description": null,
     "label": "Faciliter l’action citoyenne",
-    "description": null
+    "value": "acces-aux-droits-et-citoyennete--faciliter-laction-citoyenne"
   },
   {
-    "value": "accompagnement-social-et-professionnel-personnalise",
+    "description": null,
     "label": "Accompagnement social et professionnel personnalisé",
-    "description": null
+    "value": "accompagnement-social-et-professionnel-personnalise"
   },
   {
-    "value": "accompagnement-social-et-professionnel-personnalise--decrochage-scolaire",
+    "description": null,
     "label": "Décrochage scolaire",
-    "description": null
+    "value": "accompagnement-social-et-professionnel-personnalise--decrochage-scolaire"
   },
   {
-    "value": "accompagnement-social-et-professionnel-personnalise--definition-du-projet-professionnel",
+    "description": null,
     "label": "Définition du projet professionnel",
-    "description": null
+    "value": "accompagnement-social-et-professionnel-personnalise--definition-du-projet-professionnel"
   },
   {
-    "value": "accompagnement-social-et-professionnel-personnalise--parcours-d-insertion-socioprofessionnel",
+    "description": null,
     "label": "Parcours d’insertion socio-professionnel",
-    "description": null
+    "value": "accompagnement-social-et-professionnel-personnalise--parcours-d-insertion-socioprofessionnel"
   },
   {
-    "value": "apprendre-francais",
+    "description": null,
     "label": "Apprendre le Français",
-    "description": null
+    "value": "apprendre-francais"
   },
   {
-    "value": "apprendre-francais--accompagnement-insertion-pro",
+    "description": null,
     "label": "Accompagnement vers l’insertion professionnelle",
-    "description": null
+    "value": "apprendre-francais--accompagnement-insertion-pro"
   },
   {
-    "value": "apprendre-francais--communiquer-vie-tous-les-jours",
+    "description": null,
     "label": "Communiquer dans la vie de tous les jours",
-    "description": null
+    "value": "apprendre-francais--communiquer-vie-tous-les-jours"
   },
   {
-    "value": "apprendre-francais--suivre-formation",
+    "description": null,
     "label": "Suivre une formation",
-    "description": null
+    "value": "apprendre-francais--suivre-formation"
   },
   {
-    "value": "choisir-un-metier",
+    "description": null,
     "label": "Choisir un métier",
-    "description": null
+    "value": "choisir-un-metier"
   },
   {
-    "value": "choisir-un-metier--confirmer-son-choix-de-metier",
+    "description": null,
     "label": "Confirmer son choix de métier",
-    "description": null
+    "value": "choisir-un-metier--confirmer-son-choix-de-metier"
   },
   {
-    "value": "choisir-un-metier--connaitre-les-opportunites-demploi",
+    "description": null,
     "label": "Connaître les opportunités d’emploi",
-    "description": null
+    "value": "choisir-un-metier--connaitre-les-opportunites-demploi"
   },
   {
-    "value": "choisir-un-metier--decouvrir-un-metier-ou-un-secteur-dactivite",
+    "description": null,
     "label": "Découvrir un métier ou un secteur d’activité",
-    "description": null
+    "value": "choisir-un-metier--decouvrir-un-metier-ou-un-secteur-dactivite"
   },
   {
-    "value": "choisir-un-metier--identifier-ses-points-forts-et-ses-competences",
+    "description": null,
     "label": "Identifier ses points forts et ses compétences",
-    "description": null
+    "value": "choisir-un-metier--identifier-ses-points-forts-et-ses-competences"
   },
   {
-    "value": "creation-activite",
+    "description": null,
     "label": "Création d’activité",
-    "description": null
+    "value": "creation-activite"
   },
   {
-    "value": "creation-activite--definir-son-projet-de-creation-dentreprise",
+    "description": null,
     "label": "Définir son projet de création d’entreprise",
-    "description": null
+    "value": "creation-activite--definir-son-projet-de-creation-dentreprise"
   },
   {
-    "value": "creation-activite--developper-son-entreprise",
+    "description": null,
     "label": "Développer son entreprise",
-    "description": null
+    "value": "creation-activite--developper-son-entreprise"
   },
   {
-    "value": "creation-activite--financer-son-projet",
+    "description": null,
     "label": "Financer son projet",
-    "description": null
+    "value": "creation-activite--financer-son-projet"
   },
   {
-    "value": "creation-activite--reseautage-pour-createurs-dentreprise",
+    "description": null,
     "label": "Réseautage pour créateurs d’entreprise",
-    "description": null
+    "value": "creation-activite--reseautage-pour-createurs-dentreprise"
   },
   {
-    "value": "creation-activite--structurer-son-projet-de-creation-dentreprise",
+    "description": null,
     "label": "Structurer son projet de création d’entreprise",
-    "description": null
+    "value": "creation-activite--structurer-son-projet-de-creation-dentreprise"
   },
   {
-    "value": "equipement-et-alimentation",
+    "description": null,
     "label": "Équipement et alimentation",
-    "description": null
+    "value": "equipement-et-alimentation"
   },
   {
-    "value": "equipement-et-alimentation--acces-a-du-materiel-informatique",
+    "description": null,
     "label": "Accès à du matériel informatique",
-    "description": null
+    "value": "equipement-et-alimentation--acces-a-du-materiel-informatique"
   },
   {
-    "value": "equipement-et-alimentation--acces-a-un-telephone-et-un-abonnement",
+    "description": null,
     "label": "Accès à un téléphone et un abonnement",
-    "description": null
+    "value": "equipement-et-alimentation--acces-a-un-telephone-et-un-abonnement"
   },
   {
-    "value": "equipement-et-alimentation--alimentation",
+    "description": null,
     "label": "Alimentation",
-    "description": null
+    "value": "equipement-et-alimentation--alimentation"
   },
   {
-    "value": "equipement-et-alimentation--electromenager",
+    "description": null,
     "label": "Électroménager",
-    "description": null
+    "value": "equipement-et-alimentation--electromenager"
   },
   {
-    "value": "equipement-et-alimentation--habillement",
+    "description": null,
     "label": "Habillement",
-    "description": null
+    "value": "equipement-et-alimentation--habillement"
   },
   {
-    "value": "famille",
+    "description": null,
     "label": "Famille",
-    "description": null
+    "value": "famille"
   },
   {
-    "value": "famille--accompagnement-femme-enceinte-bebe-jeune-enfant",
+    "description": null,
     "label": "Accompagnement femme enceinte, bébé, jeune enfant",
-    "description": null
+    "value": "famille--accompagnement-femme-enceinte-bebe-jeune-enfant"
   },
   {
-    "value": "famille--garde-denfants",
+    "description": null,
     "label": "Garde d’enfants",
-    "description": null
+    "value": "famille--garde-denfants"
   },
   {
-    "value": "famille--information-et-accompagnement-des-parents",
+    "description": null,
     "label": "Information et accompagnement des parents",
-    "description": null
+    "value": "famille--information-et-accompagnement-des-parents"
   },
   {
-    "value": "famille--jeunes-sans-soutien-familial",
+    "description": null,
     "label": "Jeunes sans soutien familial",
-    "description": null
+    "value": "famille--jeunes-sans-soutien-familial"
   },
   {
-    "value": "famille--soutien-a-la-parentalite",
+    "description": null,
     "label": "Soutien à la parentalité",
-    "description": null
+    "value": "famille--soutien-a-la-parentalite"
   },
   {
-    "value": "famille--soutien-aux-familles",
+    "description": null,
     "label": "Soutien aux familles",
-    "description": null
+    "value": "famille--soutien-aux-familles"
   },
   {
-    "value": "famille--violences-intrafamiliales",
+    "description": null,
     "label": "Violences intrafamiliales",
-    "description": null
+    "value": "famille--violences-intrafamiliales"
   },
   {
-    "value": "gestion-financiere",
+    "description": null,
     "label": "Gestion financière",
-    "description": null
+    "value": "gestion-financiere"
   },
   {
-    "value": "gestion-financiere--acces-au-micro-credit",
+    "description": null,
     "label": "Accès au micro-crédit",
-    "description": null
+    "value": "gestion-financiere--acces-au-micro-credit"
   },
   {
-    "value": "gestion-financiere--accompagnement-aux-personnes-en-difficultes-financieres",
+    "description": null,
     "label": "Accompagnement aux personnes en difficultés financières",
-    "description": null
+    "value": "gestion-financiere--accompagnement-aux-personnes-en-difficultes-financieres"
   },
   {
-    "value": "gestion-financiere--apprendre-a-gerer-son-budget",
+    "description": null,
     "label": "Apprendre à gérer son budget",
-    "description": null
+    "value": "gestion-financiere--apprendre-a-gerer-son-budget"
   },
   {
-    "value": "gestion-financiere--beneficier-daides-financieres",
+    "description": null,
     "label": "Bénéficier d’aides financières",
-    "description": null
+    "value": "gestion-financiere--beneficier-daides-financieres"
   },
   {
-    "value": "gestion-financiere--creation-et-utilisation-dun-compte-bancaire",
+    "description": null,
     "label": "Création et utilisation d’un compte bancaire",
-    "description": null
+    "value": "gestion-financiere--creation-et-utilisation-dun-compte-bancaire"
   },
   {
-    "value": "gestion-financiere--obtenir-une-aide-alimentaire",
+    "description": null,
     "label": "Obtenir une aide alimentaire",
-    "description": null
+    "value": "gestion-financiere--obtenir-une-aide-alimentaire"
   },
   {
-    "value": "gestion-financiere--prevention-et-gestion-du-surendettement",
+    "description": null,
     "label": "Prévention et gestion du surendettement",
-    "description": null
+    "value": "gestion-financiere--prevention-et-gestion-du-surendettement"
   },
   {
-    "value": "handicap",
+    "description": null,
     "label": "Handicap",
-    "description": null
+    "value": "handicap"
   },
   {
-    "value": "handicap--accompagnement-par-une-structure-specialisee",
+    "description": null,
     "label": "Accompagnement par une structure spécialisée",
-    "description": null
+    "value": "handicap--accompagnement-par-une-structure-specialisee"
   },
   {
-    "value": "handicap--adaptation-au-poste-de-travail",
+    "description": null,
     "label": "Adaptation au poste de travail",
-    "description": null
+    "value": "handicap--adaptation-au-poste-de-travail"
   },
   {
-    "value": "handicap--adapter-son-logement",
+    "description": null,
     "label": "Adapter son logement",
-    "description": null
+    "value": "handicap--adapter-son-logement"
   },
   {
-    "value": "handicap--connaissance-des-droits-des-travailleurs",
+    "description": null,
     "label": "Connaissance des droits des travailleurs",
-    "description": null
+    "value": "handicap--connaissance-des-droits-des-travailleurs"
   },
   {
-    "value": "handicap--faire-reconnaitre-un-handicap",
+    "description": null,
     "label": "Faire reconnaître un handicap",
-    "description": null
+    "value": "handicap--faire-reconnaitre-un-handicap"
   },
   {
-    "value": "handicap--favoriser-le-retour-et-le-maintien-dans-lemploi",
+    "description": null,
     "label": "Favoriser le retour et le maintien dans l’emploi",
-    "description": null
+    "value": "handicap--favoriser-le-retour-et-le-maintien-dans-lemploi"
   },
   {
-    "value": "handicap--gerer-le-depart-a-la-retraite-des-personnes-en-situation-de-handicap",
+    "description": null,
     "label": "Gérer le départ à la retraite des personnes en situation de handicap",
-    "description": null
+    "value": "handicap--gerer-le-depart-a-la-retraite-des-personnes-en-situation-de-handicap"
   },
   {
-    "value": "handicap--mobilite-des-personnes-en-situation-de-handicap",
+    "description": null,
     "label": "Mobilité des personnes en situation de handicap",
-    "description": null
+    "value": "handicap--mobilite-des-personnes-en-situation-de-handicap"
   },
   {
-    "value": "illettrisme",
+    "description": null,
     "label": "Illettrisme",
-    "description": null
+    "value": "illettrisme"
   },
   {
-    "value": "illettrisme--accompagner-scolarite",
+    "description": null,
     "label": "Accompagner la scolarité d’un enfant",
-    "description": null
+    "value": "illettrisme--accompagner-scolarite"
   },
   {
-    "value": "illettrisme--ameliorer-vocabulaire",
+    "description": null,
     "label": "Améliorer un niveau de vocabulaire",
-    "description": null
+    "value": "illettrisme--ameliorer-vocabulaire"
   },
   {
-    "value": "illettrisme--etre-autonome",
+    "description": null,
     "label": "Être autonome dans la vie de tous les jours",
-    "description": null
+    "value": "illettrisme--etre-autonome"
   },
   {
-    "value": "illettrisme--info-acquisition-connaissances",
+    "description": null,
     "label": "Être informé(e) sur l’acquisition des compétences de base",
-    "description": null
+    "value": "illettrisme--info-acquisition-connaissances"
   },
   {
-    "value": "illettrisme--permis-conduire",
+    "description": null,
     "label": "Passer le permis de conduire",
-    "description": null
+    "value": "illettrisme--permis-conduire"
   },
   {
-    "value": "illettrisme--reperer-situation-illettrisme",
+    "description": null,
     "label": "Repérer des situations d’illettrisme",
-    "description": null
+    "value": "illettrisme--reperer-situation-illettrisme"
   },
   {
-    "value": "illettrisme--surmonter-trouble-apprentissage",
+    "description": null,
     "label": "Surmonter un trouble de l’apprentissage",
-    "description": null
+    "value": "illettrisme--surmonter-trouble-apprentissage"
   },
   {
-    "value": "illettrisme--trouver-emploi-formation",
+    "description": null,
     "label": "Trouver un emploi ou une formation",
-    "description": null
+    "value": "illettrisme--trouver-emploi-formation"
   },
   {
-    "value": "illettrisme--utiliser-numerique",
+    "description": null,
     "label": "Savoir utiliser les outils numériques",
-    "description": null
+    "value": "illettrisme--utiliser-numerique"
   },
   {
-    "value": "illettrisme--valider-certification-clea",
+    "description": null,
     "label": "Valider une certification Cléa",
-    "description": null
+    "value": "illettrisme--valider-certification-clea"
   },
   {
-    "value": "logement-hebergement",
+    "description": null,
     "label": "Logement et hébergement",
-    "description": null
+    "value": "logement-hebergement"
   },
   {
-    "value": "logement-hebergement--besoin-dadapter-mon-logement",
+    "description": null,
     "label": "Besoin d’adapter mon logement",
-    "description": null
+    "value": "logement-hebergement--besoin-dadapter-mon-logement"
   },
   {
-    "value": "logement-hebergement--connaissance-de-ses-droits-et-interlocuteurs",
+    "description": null,
     "label": "Connaissance de ses droits et interlocuteurs",
-    "description": null
+    "value": "logement-hebergement--connaissance-de-ses-droits-et-interlocuteurs"
   },
   {
-    "value": "logement-hebergement--demenagement",
+    "description": null,
     "label": "Déménagement",
-    "description": null
+    "value": "logement-hebergement--demenagement"
   },
   {
-    "value": "logement-hebergement--etre-accompagne-pour-se-loger",
+    "description": null,
     "label": "Être accompagné(e) pour se loger",
-    "description": null
+    "value": "logement-hebergement--etre-accompagne-pour-se-loger"
   },
   {
-    "value": "logement-hebergement--gerer-son-budget",
+    "description": null,
     "label": "Gérer son budget",
-    "description": null
+    "value": "logement-hebergement--gerer-son-budget"
   },
   {
-    "value": "logement-hebergement--mal-loges-sans-logis",
+    "description": null,
     "label": "Mal logé/sans logis",
-    "description": null
+    "value": "logement-hebergement--mal-loges-sans-logis"
   },
   {
-    "value": "logement-hebergement--probleme-avec-son-logement",
+    "description": null,
     "label": "Problème avec son logement",
-    "description": null
+    "value": "logement-hebergement--probleme-avec-son-logement"
   },
   {
-    "value": "logement-hebergement--reprendre-un-emploi-ou-une-formation",
+    "description": null,
     "label": "Reprendre un emploi ou une formation",
-    "description": null
+    "value": "logement-hebergement--reprendre-un-emploi-ou-une-formation"
   },
   {
-    "value": "mobilite",
+    "description": null,
     "label": "Mobilité",
-    "description": null
+    "value": "mobilite"
   },
   {
-    "value": "mobilite--acheter-un-vehicule-motorise",
+    "description": null,
     "label": "Acheter un véhicule motorisé",
-    "description": null
+    "value": "mobilite--acheter-un-vehicule-motorise"
   },
   {
-    "value": "mobilite--acheter-un-velo",
+    "description": null,
     "label": "Acheter un vélo",
-    "description": null
+    "value": "mobilite--acheter-un-velo"
   },
   {
-    "value": "mobilite--aides-a-la-reprise-demploi-ou-a-la-formation",
+    "description": null,
     "label": "Aides à la reprise d’emploi ou à la formation",
-    "description": null
+    "value": "mobilite--aides-a-la-reprise-demploi-ou-a-la-formation"
   },
   {
-    "value": "mobilite--apprendre-a-utiliser-un-deux-roues",
+    "description": null,
     "label": "Apprendre à utiliser un deux roues",
-    "description": null
+    "value": "mobilite--apprendre-a-utiliser-un-deux-roues"
   },
   {
-    "value": "mobilite--comprendre-et-utiliser-les-transports-en-commun",
+    "description": null,
     "label": "Comprendre et utiliser les transports en commun",
-    "description": null
+    "value": "mobilite--comprendre-et-utiliser-les-transports-en-commun"
   },
   {
-    "value": "mobilite--entretenir-reparer-son-vehicule",
+    "description": null,
     "label": "Entretenir ou réparer son véhicule",
-    "description": null
+    "value": "mobilite--entretenir-reparer-son-vehicule"
   },
   {
-    "value": "mobilite--etre-accompagne-dans-son-parcours-mobilite",
+    "description": null,
     "label": "Être accompagné(e) dans son parcours mobilité",
-    "description": null
+    "value": "mobilite--etre-accompagne-dans-son-parcours-mobilite"
   },
   {
-    "value": "mobilite--financer-mon-projet-mobilite",
+    "description": null,
     "label": "Financer mon projet mobilité",
-    "description": null
+    "value": "mobilite--financer-mon-projet-mobilite"
   },
   {
-    "value": "mobilite--louer-un-vehicule",
+    "description": null,
     "label": "Louer un véhicule (voiture, vélo, scooter..)",
-    "description": null
+    "value": "mobilite--louer-un-vehicule"
   },
   {
-    "value": "mobilite--preparer-son-permis-de-conduire-se-reentrainer-a-la-conduite",
+    "description": null,
     "label": "Préparer son permis de conduire, se réentraîner à la conduite",
-    "description": null
+    "value": "mobilite--preparer-son-permis-de-conduire-se-reentrainer-a-la-conduite"
   },
   {
-    "value": "numerique",
+    "description": null,
     "label": "Numérique",
-    "description": null
+    "value": "numerique"
   },
   {
-    "value": "numerique--acceder-a-du-materiel",
+    "description": null,
     "label": "Accéder à du matériel",
-    "description": null
+    "value": "numerique--acceder-a-du-materiel"
   },
   {
-    "value": "numerique--acceder-a-une-connexion-internet",
+    "description": null,
     "label": "Accéder à une connexion internet",
-    "description": null
+    "value": "numerique--acceder-a-une-connexion-internet"
   },
   {
-    "value": "numerique--accompagner-les-demarches-de-sante",
+    "description": null,
     "label": "Accompagner les démarches de santé",
-    "description": null
+    "value": "numerique--accompagner-les-demarches-de-sante"
   },
   {
-    "value": "numerique--approfondir-ma-culture-numerique",
+    "description": null,
     "label": "Approfondir ma culture numérique",
-    "description": null
+    "value": "numerique--approfondir-ma-culture-numerique"
   },
   {
-    "value": "numerique--creer-avec-le-numerique",
+    "description": null,
     "label": "Créer avec le numérique",
-    "description": null
+    "value": "numerique--creer-avec-le-numerique"
   },
   {
-    "value": "numerique--creer-et-developper-mon-entreprise",
+    "description": null,
     "label": "Créer et développer mon entreprise",
-    "description": null
+    "value": "numerique--creer-et-developper-mon-entreprise"
   },
   {
-    "value": "numerique--devenir-autonome-dans-les-demarches-administratives",
+    "description": null,
     "label": "Devenir autonome dans les démarches administratives",
-    "description": null
+    "value": "numerique--devenir-autonome-dans-les-demarches-administratives"
   },
   {
-    "value": "numerique--favoriser-mon-insertion-professionnelle",
+    "description": null,
     "label": "Favoriser mon insertion professionnelle",
-    "description": null
+    "value": "numerique--favoriser-mon-insertion-professionnelle"
   },
   {
-    "value": "numerique--prendre-en-main-un-ordinateur",
+    "description": null,
     "label": "Prendre en main un ordinateur",
-    "description": null
+    "value": "numerique--prendre-en-main-un-ordinateur"
   },
   {
-    "value": "numerique--prendre-en-main-un-smartphone-ou-une-tablette",
+    "description": null,
     "label": "Prendre en main un smartphone ou une tablette",
-    "description": null
+    "value": "numerique--prendre-en-main-un-smartphone-ou-une-tablette"
   },
   {
-    "value": "numerique--promouvoir-la-citoyennete-numerique",
+    "description": null,
     "label": "Promouvoir la citoyenneté numérique",
-    "description": null
+    "value": "numerique--promouvoir-la-citoyennete-numerique"
   },
   {
-    "value": "numerique--realiser-des-demarches-administratives-avec-un-accompagnement",
+    "description": null,
     "label": "Réaliser des démarches administratives avec un accompagnement",
-    "description": null
+    "value": "numerique--realiser-des-demarches-administratives-avec-un-accompagnement"
   },
   {
-    "value": "numerique--s-equiper-en-materiel-informatique",
+    "description": null,
     "label": "S’équiper en matériel informatique",
-    "description": null
+    "value": "numerique--s-equiper-en-materiel-informatique"
   },
   {
-    "value": "numerique--soutenir-la-parentalite-et-l-education-avec-le-numerique",
+    "description": null,
     "label": "Soutenir la parentalité et l’éducation avec le numérique",
-    "description": null
+    "value": "numerique--soutenir-la-parentalite-et-l-education-avec-le-numerique"
   },
   {
-    "value": "numerique--utiliser-le-numerique-au-quotidien",
+    "description": null,
     "label": "Utiliser le numérique au quotidien",
-    "description": null
+    "value": "numerique--utiliser-le-numerique-au-quotidien"
   },
   {
-    "value": "preparer-sa-candidature",
+    "description": null,
     "label": "Préparer sa candidature",
-    "description": null
+    "value": "preparer-sa-candidature"
   },
   {
-    "value": "preparer-sa-candidature--developper-son-reseau",
+    "description": null,
     "label": "Développer son réseau",
-    "description": null
+    "value": "preparer-sa-candidature--developper-son-reseau"
   },
   {
-    "value": "preparer-sa-candidature--organiser-ses-demarches-de-recherche-demploi",
+    "description": null,
     "label": "Organiser ses démarches de recherche d’emploi",
-    "description": null
+    "value": "preparer-sa-candidature--organiser-ses-demarches-de-recherche-demploi"
   },
   {
-    "value": "preparer-sa-candidature--realiser-un-cv-et-ou-une-lettre-de-motivation",
+    "description": null,
     "label": "Réaliser un CV et/ou une lettre de motivation",
-    "description": null
+    "value": "preparer-sa-candidature--realiser-un-cv-et-ou-une-lettre-de-motivation"
   },
   {
-    "value": "preparer-sa-candidature--valoriser-ses-competences",
+    "description": null,
     "label": "Valoriser ses compétences",
-    "description": null
+    "value": "preparer-sa-candidature--valoriser-ses-competences"
   },
   {
-    "value": "remobilisation",
+    "description": null,
     "label": "Remobilisation",
-    "description": null
+    "value": "remobilisation"
   },
   {
-    "value": "remobilisation--bien-etre",
+    "description": null,
     "label": "Bien être",
-    "description": null
+    "value": "remobilisation--bien-etre"
   },
   {
-    "value": "remobilisation--decouvrir-son-potentiel-via-le-sport-et-la-culture",
+    "description": null,
     "label": "Découvrir son potentiel via le sport et la culture",
-    "description": null
+    "value": "remobilisation--decouvrir-son-potentiel-via-le-sport-et-la-culture"
   },
   {
-    "value": "remobilisation--discrimination",
+    "description": null,
     "label": "Discrimination",
-    "description": null
+    "value": "remobilisation--discrimination"
   },
   {
-    "value": "remobilisation--identifier-ses-competences-et-aptitudes",
+    "description": null,
     "label": "Identifier ses compétences et aptitudes",
-    "description": null
+    "value": "remobilisation--identifier-ses-competences-et-aptitudes"
   },
   {
-    "value": "remobilisation--lien-social",
+    "description": null,
     "label": "Lien social",
-    "description": null
+    "value": "remobilisation--lien-social"
   },
   {
-    "value": "remobilisation--participer-a-des-actions-solidaires-ou-de-benevolat",
+    "description": null,
     "label": "Participer à des actions solidaires ou de bénévolat",
-    "description": null
+    "value": "remobilisation--participer-a-des-actions-solidaires-ou-de-benevolat"
   },
   {
-    "value": "remobilisation--pression-sociale",
+    "description": null,
     "label": "Pression sociale",
-    "description": null
+    "value": "remobilisation--pression-sociale"
   },
   {
-    "value": "remobilisation--restaurer-sa-confiance-son-image-de-soi",
+    "description": null,
     "label": "Restaurer sa confiance, son image de soi",
-    "description": null
+    "value": "remobilisation--restaurer-sa-confiance-son-image-de-soi"
   },
   {
-    "value": "sante",
+    "description": null,
     "label": "Santé",
-    "description": null
+    "value": "sante"
   },
   {
-    "value": "sante--acces-aux-soins",
+    "description": null,
     "label": "Accès aux soins",
-    "description": null
+    "value": "sante--acces-aux-soins"
   },
   {
-    "value": "sante--accompagnement-de-la-femme-enceinte-du-bebe-et-du-jeune-enfant",
+    "description": null,
     "label": "Accompagnement de la femme enceinte, du bébé et du jeune enfant",
-    "description": null
+    "value": "sante--accompagnement-de-la-femme-enceinte-du-bebe-et-du-jeune-enfant"
   },
   {
-    "value": "sante--accompagner-les-traumatismes",
+    "description": null,
     "label": "Accompagner les traumatismes",
-    "description": null
+    "value": "sante--accompagner-les-traumatismes"
   },
   {
-    "value": "sante--bien-etre-psychologique",
+    "description": null,
     "label": "Bien être psychologique",
-    "description": null
+    "value": "sante--bien-etre-psychologique"
   },
   {
-    "value": "sante--diagnostic-et-accompagnement-a-lemployabilite",
+    "description": null,
     "label": "Diagnostic et accompagnement à l’employabilité",
-    "description": null
+    "value": "sante--diagnostic-et-accompagnement-a-lemployabilite"
   },
   {
-    "value": "sante--faire-face-a-une-situation-daddiction",
+    "description": null,
     "label": "Faire face à une situation d’addiction",
-    "description": null
+    "value": "sante--faire-face-a-une-situation-daddiction"
   },
   {
-    "value": "sante--obtenir-la-prise-en-charge-de-frais-medicaux",
+    "description": null,
     "label": "Obtenir la prise en charge de frais médicaux",
-    "description": null
+    "value": "sante--obtenir-la-prise-en-charge-de-frais-medicaux"
   },
   {
-    "value": "sante--prevention-et-acces-aux-soins",
+    "description": null,
     "label": "Prévention et accès aux soins (vaccination, éducation à la santé, lutte contre la tuberculose…).",
-    "description": null
+    "value": "sante--prevention-et-acces-aux-soins"
   },
   {
-    "value": "sante--se-soigner-et-prevenir-la-maladie",
+    "description": null,
     "label": "Se soigner et prévenir la maladie",
-    "description": null
+    "value": "sante--se-soigner-et-prevenir-la-maladie"
   },
   {
-    "value": "sante--vie-relationnelle-et-affective",
+    "description": null,
     "label": "Vie relationnelle et affective, dépistage et prévention des IST/VIH…",
-    "description": null
+    "value": "sante--vie-relationnelle-et-affective"
   },
   {
-    "value": "se-former",
+    "description": null,
     "label": "Se former",
-    "description": null
+    "value": "se-former"
   },
   {
-    "value": "se-former--monter-son-dossier-de-formation",
+    "description": null,
     "label": "Monter son dossier de formation",
-    "description": null
+    "value": "se-former--monter-son-dossier-de-formation"
   },
   {
-    "value": "se-former--trouver-sa-formation",
+    "description": null,
     "label": "Trouver sa formation",
-    "description": null
+    "value": "se-former--trouver-sa-formation"
   },
   {
-    "value": "se-former--utiliser-le-numerique",
+    "description": null,
     "label": "Utiliser le numérique",
-    "description": null
+    "value": "se-former--utiliser-le-numerique"
   },
   {
-    "value": "souvrir-a-linternational",
+    "description": null,
     "label": "S’ouvrir à l’international",
-    "description": null
+    "value": "souvrir-a-linternational"
   },
   {
-    "value": "souvrir-a-linternational--connaitre-les-opportunites-demploi-a-letranger",
+    "description": null,
     "label": "Connaître les opportunités d’emploi à l’étranger",
-    "description": null
+    "value": "souvrir-a-linternational--connaitre-les-opportunites-demploi-a-letranger"
   },
   {
-    "value": "souvrir-a-linternational--sinformer-sur-les-aides-pour-travailler-a-letranger",
+    "description": null,
     "label": "S’informer sur les aides pour travailler à l’étranger",
-    "description": null
+    "value": "souvrir-a-linternational--sinformer-sur-les-aides-pour-travailler-a-letranger"
   },
   {
-    "value": "souvrir-a-linternational--sorganiser-suite-a-son-retour-en-france",
+    "description": null,
     "label": "S’organiser suite à son retour en France",
-    "description": null
+    "value": "souvrir-a-linternational--sorganiser-suite-a-son-retour-en-france"
   },
   {
-    "value": "trouver-un-emploi",
+    "description": null,
     "label": "Trouver un emploi",
-    "description": null
+    "value": "trouver-un-emploi"
   },
   {
-    "value": "trouver-un-emploi--convaincre-un-recruteur-en-entretien",
+    "description": null,
     "label": "Convaincre un recruteur en entretien",
-    "description": null
+    "value": "trouver-un-emploi--convaincre-un-recruteur-en-entretien"
   },
   {
-    "value": "trouver-un-emploi--faire-des-candidatures-spontanees",
+    "description": null,
     "label": "Faire des candidatures spontanées",
-    "description": null
+    "value": "trouver-un-emploi--faire-des-candidatures-spontanees"
   },
   {
-    "value": "trouver-un-emploi--repondre-a-des-offres-demploi",
+    "description": null,
     "label": "Répondre à des offres d’emploi",
-    "description": null
+    "value": "trouver-un-emploi--repondre-a-des-offres-demploi"
   },
   {
-    "value": "trouver-un-emploi--suivre-ses-candidatures-et-relancer-les-employeurs",
+    "description": null,
     "label": "Suivre ses candidatures et relancer les employeurs",
-    "description": null
+    "value": "trouver-un-emploi--suivre-ses-candidatures-et-relancer-les-employeurs"
   }
 ]

@@ -1,32 +1,32 @@
 [
   {
-    "value": "autre",
+    "description": null,
     "label": "Autre",
-    "description": null
+    "value": "autre"
   },
   {
-    "value": "completer-le-formulaire-dadhesion",
+    "description": null,
     "label": "Compléter le formulaire d’adhésion",
-    "description": null
+    "value": "completer-le-formulaire-dadhesion"
   },
   {
-    "value": "envoyer-un-mail",
+    "description": null,
     "label": "Envoyer un mail",
-    "description": null
+    "value": "envoyer-un-mail"
   },
   {
-    "value": "envoyer-un-mail-avec-des-documents-a-completer",
+    "description": null,
     "label": "Envoyer un mail avec des documents à compléter",
-    "description": null
+    "value": "envoyer-un-mail-avec-des-documents-a-completer"
   },
   {
-    "value": "envoyer-un-mail-avec-une-fiche-de-prescription",
+    "description": null,
     "label": "Envoyer un mail avec une fiche de prescription",
-    "description": null
+    "value": "envoyer-un-mail-avec-une-fiche-de-prescription"
   },
   {
-    "value": "telephoner",
+    "description": null,
     "label": "Téléphoner",
-    "description": null
+    "value": "telephoner"
   }
 ]
