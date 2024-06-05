@@ -5,6 +5,7 @@
 ### Ajouts
 
 * ajouts de types de structures liées à l'inclusion numérique par @marc-gavanier
+* nouveau champ `page_web` sur le schéma service
 
 ### Changements
 

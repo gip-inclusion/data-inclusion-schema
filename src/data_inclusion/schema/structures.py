@@ -1,8 +1,7 @@
 from datetime import date, datetime
-from typing import Optional
+from typing import Annotated, Optional
 
 from pydantic import EmailStr, HttpUrl, StringConstraints
-from typing_extensions import Annotated
 
 from data_inclusion.schema import common
 from data_inclusion.schema.base import BaseModel

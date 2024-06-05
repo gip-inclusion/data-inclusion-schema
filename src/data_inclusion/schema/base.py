@@ -4,6 +4,16 @@ import textwrap
 import pydantic
 
 
+def Field(*args, **kwargs):
+    if "description" in kwargs:
+        kwargs["description"] = (
+            textwrap.dedent(kwargs["description"].strip("\n"))
+            .replace("\n", " ")
+            .strip()
+        )
+    return pydantic.Field(*args, **kwargs)
+
+
 class BaseModel(pydantic.BaseModel):
     @classmethod
     def model_list_json_schema(

@@ -1,11 +1,10 @@
 from datetime import date, datetime
-from typing import Optional
+from typing import Annotated, Optional
 
 from pydantic import EmailStr, HttpUrl, StringConstraints
-from typing_extensions import Annotated
 
 from data_inclusion.schema import common
-from data_inclusion.schema.base import BaseModel
+from data_inclusion.schema.base import BaseModel, Field
 from data_inclusion.schema.frais import Frais
 from data_inclusion.schema.modes_accueil import ModeAccueil
 from data_inclusion.schema.modes_orientation import (
@@ -63,6 +62,19 @@ class Service(BaseModel):
     ] = None
     zone_diffusion_nom: Optional[str] = None
     contact_nom_prenom: Optional[str] = None
+    page_web: Annotated[
+        Optional[HttpUrl],
+        Field(
+            description="""
+                Lien vers une page web dédiée au service sur le site web de la
+                structure. Ce champ n'est pas destiné à recevoir un lien vers le site
+                d'un producteur de donnée.
+            """,
+            examples=[
+                "https://insersol.fr/biclou-atelier-reparation-participatif-solidaire/"
+            ],
+        ),
+    ] = None
     modes_orientation_beneficiaire: Optional[set[ModeOrientationBeneficiaire]] = None
     modes_orientation_beneficiaire_autres: Optional[str] = None
     modes_orientation_accompagnateur: Optional[
