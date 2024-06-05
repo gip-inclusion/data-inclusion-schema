@@ -5,22 +5,22 @@
     "value": "autre"
   },
   {
-    "description": null,
+    "description": "Compléter le formulaire d’adhésion associé.",
     "label": "Compléter le formulaire d’adhésion",
     "value": "completer-le-formulaire-dadhesion"
   },
   {
-    "description": null,
-    "label": "Envoyer un mail",
+    "description": "Envoyer un courriel à l’adresse indiquée.",
+    "label": "Envoyer un courriel",
     "value": "envoyer-un-mail"
   },
   {
-    "description": null,
+    "description": "Se présenter à l’adresse indiquée.",
     "label": "Se présenter",
     "value": "se-presenter"
   },
   {
-    "description": null,
+    "description": "Téléphoner au numéro indiqué.",
     "label": "Téléphoner",
     "value": "telephoner"
   }

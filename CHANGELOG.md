@@ -8,6 +8,7 @@
 * nouveau champ `page_web` sur le schéma service
 * nouvelles thématiques liées au logement et à l'hébergement pour action logement
 * ajouts de nouveaux profils
+* description des modes d'orientation par @acaldagues
 
 ### Changements
 
