@@ -1,12 +1,12 @@
 [
   {
-    "value": "a-distance",
+    "description": null,
     "label": "À distance",
-    "description": null
+    "value": "a-distance"
   },
   {
-    "value": "en-presentiel",
+    "description": null,
     "label": "En présentiel",
-    "description": null
+    "value": "en-presentiel"
   }
 ]

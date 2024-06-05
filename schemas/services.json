@@ -1,8 +1,4 @@
 {
-  "title": "Services de l'insertion",
-  "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "https://raw.githubusercontent.com/betagouv/data-inclusion-schema/main/services.json",
-  "description": "",
   "$defs": {
     "Frais": {
       "enum": [
@@ -69,36 +65,7 @@
     },
     "Service": {
       "properties": {
-        "id": {
-          "title": "Id",
-          "type": "string"
-        },
-        "structure_id": {
-          "title": "Structure Id",
-          "type": "string"
-        },
-        "source": {
-          "title": "Source",
-          "type": "string"
-        },
-        "nom": {
-          "title": "Nom",
-          "type": "string"
-        },
-        "presentation_resume": {
-          "anyOf": [
-            {
-              "maxLength": 280,
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Presentation Resume"
-        },
-        "presentation_detail": {
+        "adresse": {
           "anyOf": [
             {
               "type": "string"
@@ -108,39 +75,155 @@
             }
           ],
           "default": null,
-          "title": "Presentation Detail"
+          "title": "Adresse"
         },
-        "types": {
+        "code_insee": {
           "anyOf": [
             {
-              "items": {
-                "$ref": "#/$defs/TypologieService"
-              },
-              "type": "array"
+              "maxLength": 5,
+              "minLength": 5,
+              "pattern": "^\\w{5}$",
+              "type": "string"
             },
             {
               "type": "null"
             }
           ],
           "default": null,
-          "title": "Types"
+          "title": "Code Insee"
         },
-        "thematiques": {
+        "code_postal": {
           "anyOf": [
             {
-              "items": {
-                "$ref": "#/$defs/Thematique"
-              },
-              "type": "array"
+              "maxLength": 5,
+              "minLength": 5,
+              "pattern": "^\\d{5}$",
+              "type": "string"
             },
             {
               "type": "null"
             }
           ],
           "default": null,
-          "title": "Thematiques"
+          "title": "Code Postal"
         },
-        "prise_rdv": {
+        "commune": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Commune"
+        },
+        "complement_adresse": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Complement Adresse"
+        },
+        "contact_nom_prenom": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Contact Nom Prenom"
+        },
+        "contact_public": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Contact Public"
+        },
+        "courriel": {
+          "anyOf": [
+            {
+              "format": "email",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Courriel"
+        },
+        "cumulable": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Cumulable"
+        },
+        "date_creation": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Date Creation"
+        },
+        "date_maj": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Date Maj"
+        },
+        "date_suspension": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Date Suspension"
+        },
+        "formulaire_en_ligne": {
           "anyOf": [
             {
               "format": "uri",
@@ -153,7 +236,7 @@
             }
           ],
           "default": null,
-          "title": "Prise Rdv"
+          "title": "Formulaire En Ligne"
         },
         "frais": {
           "anyOf": [
@@ -182,47 +265,9 @@
           "default": null,
           "title": "Frais Autres"
         },
-        "profils": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/Profil"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Profils"
-        },
-        "pre_requis": {
-          "anyOf": [
-            {
-              "items": {
-                "type": "string"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Pre Requis"
-        },
-        "cumulable": {
-          "anyOf": [
-            {
-              "type": "boolean"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Cumulable"
+        "id": {
+          "title": "Id",
+          "type": "string"
         },
         "justificatifs": {
           "anyOf": [
@@ -239,99 +284,6 @@
           "default": null,
           "title": "Justificatifs"
         },
-        "formulaire_en_ligne": {
-          "anyOf": [
-            {
-              "format": "uri",
-              "maxLength": 2083,
-              "minLength": 1,
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Formulaire En Ligne"
-        },
-        "commune": {
-          "anyOf": [
-            {
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Commune"
-        },
-        "code_postal": {
-          "anyOf": [
-            {
-              "maxLength": 5,
-              "minLength": 5,
-              "pattern": "^\\d{5}$",
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Code Postal"
-        },
-        "code_insee": {
-          "anyOf": [
-            {
-              "maxLength": 5,
-              "minLength": 5,
-              "pattern": "^\\w{5}$",
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Code Insee"
-        },
-        "adresse": {
-          "anyOf": [
-            {
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Adresse"
-        },
-        "complement_adresse": {
-          "anyOf": [
-            {
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Complement Adresse"
-        },
-        "longitude": {
-          "anyOf": [
-            {
-              "type": "number"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Longitude"
-        },
         "latitude": {
           "anyOf": [
             {
@@ -343,44 +295,6 @@
           ],
           "default": null,
           "title": "Latitude"
-        },
-        "recurrence": {
-          "anyOf": [
-            {
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Recurrence"
-        },
-        "date_creation": {
-          "anyOf": [
-            {
-              "format": "date",
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Date Creation"
-        },
-        "date_suspension": {
-          "anyOf": [
-            {
-              "format": "date",
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Date Suspension"
         },
         "lien_source": {
           "anyOf": [
@@ -397,59 +311,17 @@
           "default": null,
           "title": "Lien Source"
         },
-        "telephone": {
+        "longitude": {
           "anyOf": [
             {
-              "type": "string"
+              "type": "number"
             },
             {
               "type": "null"
             }
           ],
           "default": null,
-          "title": "Telephone"
-        },
-        "courriel": {
-          "anyOf": [
-            {
-              "format": "email",
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Courriel"
-        },
-        "contact_public": {
-          "anyOf": [
-            {
-              "type": "boolean"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Contact Public"
-        },
-        "date_maj": {
-          "anyOf": [
-            {
-              "format": "date",
-              "type": "string"
-            },
-            {
-              "format": "date-time",
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Date Maj"
+          "title": "Longitude"
         },
         "modes_accueil": {
           "anyOf": [
@@ -466,16 +338,195 @@
           "default": null,
           "title": "Modes Accueil"
         },
-        "zone_diffusion_type": {
+        "modes_orientation_accompagnateur": {
           "anyOf": [
             {
-              "$ref": "#/$defs/ZoneDiffusionType"
+              "items": {
+                "$ref": "#/$defs/ModeOrientationAccompagnateur"
+              },
+              "type": "array"
             },
             {
               "type": "null"
             }
           ],
-          "default": null
+          "default": null,
+          "title": "Modes Orientation Accompagnateur"
+        },
+        "modes_orientation_accompagnateur_autres": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Modes Orientation Accompagnateur Autres"
+        },
+        "modes_orientation_beneficiaire": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/ModeOrientationBeneficiaire"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Modes Orientation Beneficiaire"
+        },
+        "modes_orientation_beneficiaire_autres": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Modes Orientation Beneficiaire Autres"
+        },
+        "nom": {
+          "title": "Nom",
+          "type": "string"
+        },
+        "pre_requis": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Pre Requis"
+        },
+        "presentation_detail": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Presentation Detail"
+        },
+        "presentation_resume": {
+          "anyOf": [
+            {
+              "maxLength": 280,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Presentation Resume"
+        },
+        "prise_rdv": {
+          "anyOf": [
+            {
+              "format": "uri",
+              "maxLength": 2083,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Prise Rdv"
+        },
+        "profils": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/Profil"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Profils"
+        },
+        "recurrence": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Recurrence"
+        },
+        "source": {
+          "title": "Source",
+          "type": "string"
+        },
+        "structure_id": {
+          "title": "Structure Id",
+          "type": "string"
+        },
+        "telephone": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Telephone"
+        },
+        "thematiques": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/Thematique"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Thematiques"
+        },
+        "types": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/TypologieService"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Types"
         },
         "zone_diffusion_code": {
           "anyOf": [
@@ -522,71 +573,16 @@
           "default": null,
           "title": "Zone Diffusion Nom"
         },
-        "contact_nom_prenom": {
+        "zone_diffusion_type": {
           "anyOf": [
             {
-              "type": "string"
+              "$ref": "#/$defs/ZoneDiffusionType"
             },
             {
               "type": "null"
             }
           ],
-          "default": null,
-          "title": "Contact Nom Prenom"
-        },
-        "modes_orientation_beneficiaire": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/ModeOrientationBeneficiaire"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Modes Orientation Beneficiaire"
-        },
-        "modes_orientation_beneficiaire_autres": {
-          "anyOf": [
-            {
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Modes Orientation Beneficiaire Autres"
-        },
-        "modes_orientation_accompagnateur": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/ModeOrientationAccompagnateur"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Modes Orientation Accompagnateur"
-        },
-        "modes_orientation_accompagnateur_autres": {
-          "anyOf": [
-            {
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Modes Orientation Accompagnateur Autres"
+          "default": null
         }
       },
       "required": [
@@ -776,8 +772,12 @@
       "type": "string"
     }
   },
+  "$id": "https://raw.githubusercontent.com/betagouv/data-inclusion-schema/main/services.json",
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "description": "",
   "items": {
     "$ref": "#/$defs/Service"
   },
+  "title": "Services de l'insertion",
   "type": "array"
 }

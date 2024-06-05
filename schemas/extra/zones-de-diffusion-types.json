@@ -1,27 +1,27 @@
 [
   {
-    "value": "commune",
+    "description": null,
     "label": "Commune",
-    "description": null
+    "value": "commune"
   },
   {
-    "value": "departement",
+    "description": null,
     "label": "Département",
-    "description": null
+    "value": "departement"
   },
   {
-    "value": "epci",
+    "description": null,
     "label": "Intercommunalité (EPCI)",
-    "description": null
+    "value": "epci"
   },
   {
-    "value": "pays",
+    "description": null,
     "label": "Pays",
-    "description": null
+    "value": "pays"
   },
   {
-    "value": "region",
+    "description": null,
     "label": "Région",
-    "description": null
+    "value": "region"
   }
 ]

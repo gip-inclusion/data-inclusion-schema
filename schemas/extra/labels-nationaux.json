@@ -1,432 +1,432 @@
 [
   {
-    "value": "60000-rebonds",
+    "description": null,
     "label": "60 000 rebonds",
-    "description": null
+    "value": "60000-rebonds"
   },
   {
-    "value": "action-logement",
+    "description": null,
     "label": "Action logement",
-    "description": null
+    "value": "action-logement"
   },
   {
-    "value": "adie",
+    "description": null,
     "label": "Adie",
-    "description": null
+    "value": "adie"
   },
   {
-    "value": "afpa",
+    "description": null,
     "label": "AFPA",
-    "description": null
+    "value": "afpa"
   },
   {
-    "value": "agefiph",
+    "description": null,
     "label": "AGEFIPH",
-    "description": null
+    "value": "agefiph"
   },
   {
-    "value": "aidants-connect",
+    "description": null,
     "label": "Aidants Connect",
-    "description": null
+    "value": "aidants-connect"
   },
   {
-    "value": "alliance-villes-emploi",
+    "description": null,
     "label": "Alliance villes emploi",
-    "description": null
+    "value": "alliance-villes-emploi"
   },
   {
-    "value": "anlci",
+    "description": null,
     "label": "ANLCI",
-    "description": null
+    "value": "anlci"
   },
   {
-    "value": "apec",
+    "description": null,
     "label": "APEC",
-    "description": null
+    "value": "apec"
   },
   {
-    "value": "apels",
+    "description": null,
     "label": "APELS Agence Pour l’Education par Le Sport",
-    "description": null
+    "value": "apels"
   },
   {
-    "value": "apprentis-dauteuil",
+    "description": null,
     "label": "Apprentis d’Auteuil",
-    "description": null
+    "value": "apprentis-dauteuil"
   },
   {
-    "value": "aptic",
+    "description": null,
     "label": "APTIC",
-    "description": null
+    "value": "aptic"
   },
   {
-    "value": "banques-alimentaires",
+    "description": null,
     "label": "Banques alimentaires",
-    "description": null
+    "value": "banques-alimentaires"
   },
   {
-    "value": "bge",
+    "description": null,
     "label": "BGE",
-    "description": null
+    "value": "bge"
   },
   {
-    "value": "caf",
+    "description": null,
     "label": "CAF",
-    "description": null
+    "value": "caf"
   },
   {
-    "value": "campus-connecte",
+    "description": null,
     "label": "Campus connecté",
-    "description": null
+    "value": "campus-connecte"
   },
   {
-    "value": "cap-emploi-reseau-cheops",
+    "description": null,
     "label": "CAP Emploi - Réseau CHEOPS",
-    "description": null
+    "value": "cap-emploi-reseau-cheops"
   },
   {
-    "value": "cci",
+    "description": null,
     "label": "CCI",
-    "description": null
+    "value": "cci"
   },
   {
-    "value": "chantier-ecole",
+    "description": null,
     "label": "Chantier école",
-    "description": null
+    "value": "chantier-ecole"
   },
   {
-    "value": "cidff",
+    "description": null,
     "label": "CIDFF",
-    "description": null
+    "value": "cidff"
   },
   {
-    "value": "cnam",
+    "description": null,
     "label": "CNAM",
-    "description": null
+    "value": "cnam"
   },
   {
-    "value": "collectif-emploi",
+    "description": null,
     "label": "Collectif emploi",
-    "description": null
+    "value": "collectif-emploi"
   },
   {
-    "value": "conseiller-numerique",
+    "description": null,
     "label": "Conseiller numérique",
-    "description": null
+    "value": "conseiller-numerique"
   },
   {
-    "value": "coorace",
+    "description": null,
     "label": "Coorace",
-    "description": null
+    "value": "coorace"
   },
   {
-    "value": "crepi",
+    "description": null,
     "label": "CREPI",
-    "description": null
+    "value": "crepi"
   },
   {
-    "value": "cresus",
+    "description": null,
     "label": "Crésus",
-    "description": null
+    "value": "cresus"
   },
   {
-    "value": "croix-rouge",
+    "description": null,
     "label": "Croix rouge",
-    "description": null
+    "value": "croix-rouge"
   },
   {
-    "value": "dihal",
+    "description": null,
     "label": "DIHAL",
-    "description": null
+    "value": "dihal"
   },
   {
-    "value": "duo-for-a-job",
+    "description": null,
     "label": "Duo for a job",
-    "description": null
+    "value": "duo-for-a-job"
   },
   {
-    "value": "ecoles-de-la-deuxieme-chance",
+    "description": null,
     "label": "E2C - École de la 2e chance",
-    "description": null
+    "value": "ecoles-de-la-deuxieme-chance"
   },
   {
-    "value": "egee",
+    "description": null,
     "label": "EGEE",
-    "description": null
+    "value": "egee"
   },
   {
-    "value": "emmaus",
+    "description": null,
     "label": "Emmaus",
-    "description": null
+    "value": "emmaus"
   },
   {
-    "value": "envie",
+    "description": null,
     "label": "Envie",
-    "description": null
+    "value": "envie"
   },
   {
-    "value": "epide",
+    "description": null,
     "label": "EPIDE",
-    "description": null
+    "value": "epide"
   },
   {
-    "value": "espace-emploi-agric-arrco",
+    "description": null,
     "label": "Espace Emploi Agirc Arrco",
-    "description": null
+    "value": "espace-emploi-agric-arrco"
   },
   {
-    "value": "etcld",
+    "description": null,
     "label": "Expérimentation territoriale contre le chômage de longue durée",
-    "description": null
+    "value": "etcld"
   },
   {
-    "value": "fabrique-de-territoire",
+    "description": null,
     "label": "Fabrique de Territoire",
-    "description": null
+    "value": "fabrique-de-territoire"
   },
   {
-    "value": "face",
+    "description": null,
     "label": "Fondation FACE",
-    "description": null
+    "value": "face"
   },
   {
-    "value": "fede-pro-fem",
+    "description": null,
     "label": "Federation Professionnelle Pour les Femmes",
-    "description": null
+    "value": "fede-pro-fem"
   },
   {
-    "value": "federation-des-acteurs-de-la-solidarite",
+    "description": null,
     "label": "Fédération des acteurs de la solidarité",
-    "description": null
+    "value": "federation-des-acteurs-de-la-solidarite"
   },
   {
-    "value": "federation-des-entreprises-dinsertion",
+    "description": null,
     "label": "Fédération des entreprises d’insertion",
-    "description": null
+    "value": "federation-des-entreprises-dinsertion"
   },
   {
-    "value": "force-femmes",
+    "description": null,
     "label": "Force Femmes",
-    "description": null
+    "value": "force-femmes"
   },
   {
-    "value": "france-active",
+    "description": null,
     "label": "France Active",
-    "description": null
+    "value": "france-active"
   },
   {
-    "value": "france-service",
+    "description": null,
     "label": "France service",
-    "description": null
+    "value": "france-service"
   },
   {
-    "value": "france-travail",
+    "description": null,
     "label": "France Travail",
-    "description": null
+    "value": "france-travail"
   },
   {
-    "value": "french-tech",
+    "description": null,
     "label": "French Tech",
-    "description": null
+    "value": "french-tech"
   },
   {
-    "value": "geiq",
+    "description": null,
     "label": "GEIQ",
-    "description": null
+    "value": "geiq"
   },
   {
-    "value": "grand-test-couveuse-dentreprise",
+    "description": null,
     "label": "Grandes écoles du numérique",
-    "description": null
+    "value": "grand-test-couveuse-dentreprise"
   },
   {
-    "value": "grandes-ecoles-du-numerique",
+    "description": null,
     "label": "Grand Test Couveuse d’entreprise",
-    "description": null
+    "value": "grandes-ecoles-du-numerique"
   },
   {
-    "value": "hup",
+    "description": null,
     "label": "H’UP",
-    "description": null
+    "value": "hup"
   },
   {
-    "value": "inae",
+    "description": null,
     "label": "INAE",
-    "description": null
+    "value": "inae"
   },
   {
-    "value": "initiative-france",
+    "description": null,
     "label": "Initiative France",
-    "description": null
+    "value": "initiative-france"
   },
   {
-    "value": "konexio",
+    "description": null,
     "label": "Konexio",
-    "description": null
+    "value": "konexio"
   },
   {
-    "value": "la-cravate-solidaire",
+    "description": null,
     "label": "La Cravate Solidaire",
-    "description": null
+    "value": "la-cravate-solidaire"
   },
   {
-    "value": "la-ressourcerie",
+    "description": null,
     "label": "La ressourcerie",
-    "description": null
+    "value": "la-ressourcerie"
   },
   {
-    "value": "les-premieres",
+    "description": null,
     "label": "Les Premières",
-    "description": null
+    "value": "les-premieres"
   },
   {
-    "value": "linklusion",
+    "description": null,
     "label": "Linklusion",
-    "description": null
+    "value": "linklusion"
   },
   {
-    "value": "maisons-de-lemploi",
+    "description": null,
     "label": "Maisons de l’Emploi",
-    "description": null
+    "value": "maisons-de-lemploi"
   },
   {
-    "value": "mdph",
+    "description": null,
     "label": "MDPH",
-    "description": null
+    "value": "mdph"
   },
   {
-    "value": "mission-locale",
+    "description": null,
     "label": "Mission Locale",
-    "description": null
+    "value": "mission-locale"
   },
   {
-    "value": "mobin",
+    "description": null,
     "label": "Adhérent au Réseau Mob’In",
-    "description": null
+    "value": "mobin"
   },
   {
-    "value": "nqt",
+    "description": null,
     "label": "NQT",
-    "description": null
+    "value": "nqt"
   },
   {
-    "value": "point-conseil-budget",
+    "description": null,
     "label": "Point conseil budget",
-    "description": null
+    "value": "point-conseil-budget"
   },
   {
-    "value": "point-justice",
+    "description": null,
     "label": "Points Justice",
-    "description": null
+    "value": "point-justice"
   },
   {
-    "value": "pole-emploi",
+    "description": null,
     "label": "Pôle emploi",
-    "description": null
+    "value": "pole-emploi"
   },
   {
-    "value": "positive-planet",
+    "description": null,
     "label": "Positive Planet",
-    "description": null
+    "value": "positive-planet"
   },
   {
-    "value": "proxite",
+    "description": null,
     "label": "Proxité",
-    "description": null
+    "value": "proxite"
   },
   {
-    "value": "reseau-app",
+    "description": null,
     "label": "Réseau APP",
-    "description": null
+    "value": "reseau-app"
   },
   {
-    "value": "reseau-entreprendre",
+    "description": null,
     "label": "Réseau Entreprendre",
-    "description": null
+    "value": "reseau-entreprendre"
   },
   {
-    "value": "ressourceries",
+    "description": null,
     "label": "Ressourceries",
-    "description": null
+    "value": "ressourceries"
   },
   {
-    "value": "restos-du-coeur",
+    "description": null,
     "label": "Restos du coeur",
-    "description": null
+    "value": "restos-du-coeur"
   },
   {
-    "value": "scconseil",
+    "description": null,
     "label": "SC Conseil",
-    "description": null
+    "value": "scconseil"
   },
   {
-    "value": "secours-populaire",
+    "description": null,
     "label": "Secours populaire",
-    "description": null
+    "value": "secours-populaire"
   },
   {
-    "value": "siao",
+    "description": null,
     "label": "SIAO",
-    "description": null
+    "value": "siao"
   },
   {
-    "value": "simplon",
+    "description": null,
     "label": "Simplon",
-    "description": null
+    "value": "simplon"
   },
   {
-    "value": "sinca",
+    "description": null,
     "label": "SINGA",
-    "description": null
+    "value": "sinca"
   },
   {
-    "value": "snc",
+    "description": null,
     "label": "SNC - Solidarité Nouvelle Face au Chômage",
-    "description": null
+    "value": "snc"
   },
   {
-    "value": "sport-dans-la-ville",
+    "description": null,
     "label": "Sport Dans La Ville",
-    "description": null
+    "value": "sport-dans-la-ville"
   },
   {
-    "value": "tous-tes-possible",
+    "description": null,
     "label": "Tous Tes Possibles",
-    "description": null
+    "value": "tous-tes-possible"
   },
   {
-    "value": "tzcld",
+    "description": null,
     "label": "TZCLD - Territoire Zero Chomeur Longue Durée",
-    "description": null
+    "value": "tzcld"
   },
   {
-    "value": "unaf",
+    "description": null,
     "label": "Union nationale de l’aide aux familles",
-    "description": null
+    "value": "unaf"
   },
   {
-    "value": "unai",
+    "description": null,
     "label": "UNAI",
-    "description": null
+    "value": "unai"
   },
   {
-    "value": "unccas",
+    "description": null,
     "label": "Union nationale des centres communaux d’action sociale",
-    "description": null
+    "value": "unccas"
   },
   {
-    "value": "unea",
+    "description": null,
     "label": "UNEA",
-    "description": null
+    "value": "unea"
   },
   {
-    "value": "unis-cite",
+    "description": null,
     "label": "Unis-Cité",
-    "description": null
+    "value": "unis-cite"
   },
   {
-    "value": "wimoov",
+    "description": null,
     "label": "Wimoov",
-    "description": null
+    "value": "wimoov"
   }
 ]
