@@ -44,21 +44,21 @@
     },
     "Profil": {
       "enum": [
-        "seniors-65",
-        "familles-enfants",
         "adultes",
-        "jeunes-16-26",
-        "public-langues-etrangeres",
+        "beneficiaires-rsa",
         "deficience-visuelle",
-        "surdite",
-        "handicaps-psychiques",
-        "handicaps-mentaux",
+        "demandeurs-demploi",
+        "familles-enfants",
         "femmes",
-        "personnes-handicapees",
+        "handicaps-mentaux",
+        "handicaps-psychiques",
+        "jeunes-16-26",
         "personnes-en-situation-de-handicap",
         "personnes-en-situation-illettrisme",
-        "beneficiaires-rsa",
-        "demandeurs-demploi"
+        "personnes-handicapees",
+        "public-langues-etrangeres",
+        "seniors-65",
+        "surdite"
       ],
       "title": "Profil",
       "type": "string"
