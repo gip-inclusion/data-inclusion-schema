@@ -5,27 +5,27 @@
     "value": "autre"
   },
   {
-    "description": null,
+    "description": "Compléter le formulaire d’adhésion associé.",
     "label": "Compléter le formulaire d’adhésion",
     "value": "completer-le-formulaire-dadhesion"
   },
   {
-    "description": null,
-    "label": "Envoyer un mail",
+    "description": "Envoyer un courriel à l’adresse indiquée.",
+    "label": "Envoyer un courriel",
     "value": "envoyer-un-mail"
   },
   {
-    "description": null,
-    "label": "Envoyer un mail avec des documents à compléter",
+    "description": "Envoyer un courriel à l’adresse indiquée avec des documents à compléter.",
+    "label": "Envoyer un courriel avec des documents à compléter",
     "value": "envoyer-un-mail-avec-des-documents-a-completer"
   },
   {
-    "description": null,
-    "label": "Envoyer un mail avec une fiche de prescription",
+    "description": "Envoyer un courriel à l’adresse indiquée avec une fiche de prescription.",
+    "label": "Envoyer un courriel avec une fiche de prescription",
     "value": "envoyer-un-mail-avec-une-fiche-de-prescription"
   },
   {
-    "description": null,
+    "description": "Téléphoner au numéro indiqué.",
     "label": "Téléphoner",
     "value": "telephoner"
   }
