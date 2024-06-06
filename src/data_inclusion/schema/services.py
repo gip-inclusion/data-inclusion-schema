@@ -28,15 +28,15 @@ class Service(BaseModel):
         Annotated[str, StringConstraints(max_length=280)]
     ] = None
     presentation_detail: Optional[str] = None
-    types: Optional[list[TypologieService]] = None
-    thematiques: Optional[list[Thematique]] = None
+    types: Optional[set[TypologieService]] = None
+    thematiques: Optional[set[Thematique]] = None
     prise_rdv: Optional[HttpUrl] = None
-    frais: Optional[list[Frais]] = None
+    frais: Optional[set[Frais]] = None
     frais_autres: Optional[str] = None
-    profils: Optional[list[Profil]] = None
-    pre_requis: Optional[list[str]] = None
+    profils: Optional[set[Profil]] = None
+    pre_requis: Optional[set[str]] = None
     cumulable: Optional[bool] = None
-    justificatifs: Optional[list[str]] = None
+    justificatifs: Optional[set[str]] = None
     formulaire_en_ligne: Optional[HttpUrl] = None
     commune: Optional[str] = None
     code_postal: Optional[common.CodePostal] = None
@@ -53,7 +53,7 @@ class Service(BaseModel):
     courriel: Optional[EmailStr] = None
     contact_public: Optional[bool] = None
     date_maj: Optional[date | datetime] = None
-    modes_accueil: Optional[list[ModeAccueil]] = None
+    modes_accueil: Optional[set[ModeAccueil]] = None
     zone_diffusion_type: Optional[ZoneDiffusionType] = None
     zone_diffusion_code: Optional[
         common.CodeCommune
@@ -63,9 +63,9 @@ class Service(BaseModel):
     ] = None
     zone_diffusion_nom: Optional[str] = None
     contact_nom_prenom: Optional[str] = None
-    modes_orientation_beneficiaire: Optional[list[ModeOrientationBeneficiaire]] = None
+    modes_orientation_beneficiaire: Optional[set[ModeOrientationBeneficiaire]] = None
     modes_orientation_beneficiaire_autres: Optional[str] = None
     modes_orientation_accompagnateur: Optional[
-        list[ModeOrientationAccompagnateur]
+        set[ModeOrientationAccompagnateur]
     ] = None
     modes_orientation_accompagnateur_autres: Optional[str] = None

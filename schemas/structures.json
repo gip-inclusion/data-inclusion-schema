@@ -235,7 +235,8 @@
               "items": {
                 "type": "string"
               },
-              "type": "array"
+              "type": "array",
+              "uniqueItems": true
             },
             {
               "type": "null"
@@ -250,7 +251,8 @@
               "items": {
                 "$ref": "#/$defs/LabelNational"
               },
-              "type": "array"
+              "type": "array",
+              "uniqueItems": true
             },
             {
               "type": "null"
@@ -394,7 +396,8 @@
               "items": {
                 "$ref": "#/$defs/Thematique"
               },
-              "type": "array"
+              "type": "array",
+              "uniqueItems": true
             },
             {
               "type": "null"
