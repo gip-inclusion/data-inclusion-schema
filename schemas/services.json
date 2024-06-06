@@ -244,7 +244,8 @@
               "items": {
                 "$ref": "#/$defs/Frais"
               },
-              "type": "array"
+              "type": "array",
+              "uniqueItems": true
             },
             {
               "type": "null"
@@ -275,7 +276,8 @@
               "items": {
                 "type": "string"
               },
-              "type": "array"
+              "type": "array",
+              "uniqueItems": true
             },
             {
               "type": "null"
@@ -329,7 +331,8 @@
               "items": {
                 "$ref": "#/$defs/ModeAccueil"
               },
-              "type": "array"
+              "type": "array",
+              "uniqueItems": true
             },
             {
               "type": "null"
@@ -344,7 +347,8 @@
               "items": {
                 "$ref": "#/$defs/ModeOrientationAccompagnateur"
               },
-              "type": "array"
+              "type": "array",
+              "uniqueItems": true
             },
             {
               "type": "null"
@@ -371,7 +375,8 @@
               "items": {
                 "$ref": "#/$defs/ModeOrientationBeneficiaire"
               },
-              "type": "array"
+              "type": "array",
+              "uniqueItems": true
             },
             {
               "type": "null"
@@ -402,7 +407,8 @@
               "items": {
                 "type": "string"
               },
-              "type": "array"
+              "type": "array",
+              "uniqueItems": true
             },
             {
               "type": "null"
@@ -457,7 +463,8 @@
               "items": {
                 "$ref": "#/$defs/Profil"
               },
-              "type": "array"
+              "type": "array",
+              "uniqueItems": true
             },
             {
               "type": "null"
@@ -504,7 +511,8 @@
               "items": {
                 "$ref": "#/$defs/Thematique"
               },
-              "type": "array"
+              "type": "array",
+              "uniqueItems": true
             },
             {
               "type": "null"
@@ -519,7 +527,8 @@
               "items": {
                 "$ref": "#/$defs/TypologieService"
               },
-              "type": "array"
+              "type": "array",
+              "uniqueItems": true
             },
             {
               "type": "null"

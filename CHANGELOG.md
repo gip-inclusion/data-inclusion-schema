@@ -9,6 +9,7 @@
 ### Changements
 
 * correction du label pour la typologie de structure `EATT` par @acaldagues
+* les champs listes (`thematiques`, `profils`, etc.) contiennent des éléments uniques
 
 ### Suppressions
 

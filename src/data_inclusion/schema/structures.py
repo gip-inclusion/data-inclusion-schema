@@ -38,6 +38,6 @@ class Structure(BaseModel):
     lien_source: Optional[HttpUrl] = None
     horaires_ouverture: Optional[str] = None
     accessibilite: Optional[HttpUrl] = None
-    labels_nationaux: Optional[list[LabelNational]] = None
-    labels_autres: Optional[list[str]] = None
-    thematiques: Optional[list[Thematique]] = None
+    labels_nationaux: Optional[set[LabelNational]] = None
+    labels_autres: Optional[set[str]] = None
+    thematiques: Optional[set[Thematique]] = None
