@@ -46,43 +46,43 @@
 
 ### Ajouts
 
-* [profils](https://www.data.inclusion.beta.gouv.fr/schemas-de-donnees-de-loffre/schema-des-structures-et-services-dinsertion/profils) :
+* profils :
   * ajout des profils `personnes-handicapees` et `personnes-en-situation-de-handicap`
 
 ## 0.11.0 - 2023-11-06
 
 ### Ajouts
 
-* [labels et réseaux](https://www.data.inclusion.beta.gouv.fr/schemas-de-donnees-de-loffre/schema-des-structures-et-services-dinsertion/labels-et-reseaux) :
+* labels et réseaux :
   * ajout du réseau `wimoov`
   * ajout du réseau `reseau-app`
 
 ### Changements
 
-* [labels et réseaux](https://www.data.inclusion.beta.gouv.fr/schemas-de-donnees-de-loffre/schema-des-structures-et-services-dinsertion/labels-et-reseaux) :
+* labels et réseaux :
   * mise à jour du label du réseau `ecoles-de-la-deuxieme-chance`
   * mise à jour du label du réseau `mobin`
-* [typologies de structures](https://www.data.inclusion.beta.gouv.fr/schemas-de-donnees-de-loffre/schema-des-structures-et-services-dinsertion/typologie-de-structures) :
+* typologies de structures :
   * mise à jour du label du réseau `E2C`
 
 ## 0.10.0 - 2023-09-11
 
 ### Ajouts
 
-* [schéma service](https://www.data.inclusion.beta.gouv.fr/schemas-de-donnees-de-loffre/schema-des-structures-et-services-dinsertion#schema-service) :
+* schéma service :
   * champs ajoutés :
     * `modes_orientation_beneficiaire_autres`
     * `modes_orientation_accompagnateur_autres`
-* [labels et réseaux](https://www.data.inclusion.beta.gouv.fr/schemas-de-donnees-de-loffre/schema-des-structures-et-services-dinsertion/labels-et-reseaux) :
+* labels et réseaux :
   * ajout du réseau `etcld`
 
 ### Changements
 
-* [schéma service](https://www.data.inclusion.beta.gouv.fr/schemas-de-donnees-de-loffre/schema-des-structures-et-services-dinsertion#schema-service) :
+* schéma service :
   * champs modifiés :
     * `pre_requis` devient une liste de chaîne de caractères
     * `justificatifs` devient une liste de chaîne de caractères
-* [profils](https://www.data.inclusion.beta.gouv.fr/schemas-de-donnees-de-loffre/schema-des-structures-et-services-dinsertion/profils) :
+* profils :
   * `demandeur-demploi` devient `demandeurs-demploi`
   * `beneficiaire-rsa` devient `beneficiaires-rsa`
 
@@ -90,14 +90,14 @@
 
 ### Ajouts
 
-* [schéma service](https://www.data.inclusion.beta.gouv.fr/schemas-de-donnees-de-loffre/schema-des-structures-et-services-dinsertion#schema-service) :
+* schéma service :
   * champs ajoutés :
     * `contact_nom_prenom`
     * `modes_orientation_beneficiaire`
     * `modes_orientation_accompagnateur`
-* [typologies de structures](https://www.data.inclusion.beta.gouv.fr/schemas-de-donnees-de-loffre/schema-des-structures-et-services-dinsertion/typologie-de-structures) :
+* typologies de structures :
   * ajout des [crèches à vocation d'insertion professionnelle (AVIP)](https://www.caf.fr/partenaires/caf-du-val-d-oise/partenaires-locaux/actualites/mieux-connaitre-le-dispositif-des-creches-avip) (`AVIP`)
-* [thématiques](https://www.data.inclusion.beta.gouv.fr/schemas-de-donnees-de-loffre/schema-des-structures-et-services-dinsertion/thematiques) :
+* thématiques :
   * ajout de la thématique "Aide aux victimes" (`acces-aux-droits-et-citoyennete--aide-aux-victimes`)
   * ajout des thématiques liées à l'apprentissage du français (`apprendre-francais--*`)
   * ajout des thématiques liées à l'illettrisme (`illettrisme--*`)
