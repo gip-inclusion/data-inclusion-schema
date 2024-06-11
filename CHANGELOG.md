@@ -4,6 +4,16 @@
 
 ### Ajouts
 
+### Changements
+
+### Dépréciations
+
+### Suppressions
+
+## 0.15.0 - 2024-06-10
+
+### Ajouts
+
 * ajouts de types de structures liées à l'inclusion numérique par @marc-gavanier
 * nouveau champ `page_web` sur le schéma service
 * nouvelles thématiques liées au logement et à l'hébergement pour action logement
@@ -14,8 +24,6 @@
 
 * correction du label pour la typologie de structure `EATT` par @acaldagues
 * les champs listes (`thematiques`, `profils`, etc.) contiennent des éléments uniques
-
-### Suppressions
 
 ## 0.14.0 - 2024-02-26
 
