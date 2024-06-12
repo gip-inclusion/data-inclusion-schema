@@ -2,11 +2,12 @@
 
 ## À venir
 
+### Ajouts
+
 * ajout du mode d'orientation `prendre-rdv` (accompagnateur & beneficiaire)
 * ajout de nouveaux profils
 * ajout de nouvelles thématiques
-
-### Ajouts
+* description des modes d'accueil par @acaldagues
 
 ### Changements
 
