@@ -10,10 +10,8 @@ class Frais(EnhancedEnum):
     GRATUIT_SOUS_CONDITIONS = (
         "gratuit-sous-conditions",
         "Gratuit sous conditions",
-        """
-            La gratuité est conditionnée à des critères (situation familiale,
-            convention avec un organisme social…)
-        """,
+        "La gratuité est conditionnée à des critères (situation familiale,
+            convention avec un organisme social…)",
     )
     PAYANT = (
         "payant",
