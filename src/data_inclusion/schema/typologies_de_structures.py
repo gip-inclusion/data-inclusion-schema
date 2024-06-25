@@ -371,11 +371,6 @@ class Typologie(EnhancedEnum):
         "Point d’Accès au Droit",
         None,
     )
-    PE = (
-        "PE",
-        "Pôle emploi",
-        None,
-    )
     PENSION = (
         "PENSION",
         "Pension de famille / résidence accueil",

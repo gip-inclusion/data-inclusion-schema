@@ -361,11 +361,6 @@
   },
   {
     "description": null,
-    "label": "Pôle emploi",
-    "value": "PE"
-  },
-  {
-    "description": null,
     "label": "Pension de famille / résidence accueil",
     "value": "PENSION"
   },

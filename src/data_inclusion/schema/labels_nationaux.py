@@ -322,11 +322,6 @@ class LabelNational(EnhancedEnum):
         "Points Justice",
         None,
     )
-    POLE_EMPLOI = (
-        "pole-emploi",
-        "Pôle emploi",
-        None,
-    )
     POSITIVE_PLANET = (
         "positive-planet",
         "Positive Planet",

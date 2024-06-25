@@ -10,6 +10,13 @@
 
 ### Suppressions
 
+## 0.16.0 - 2024-06-25
+
+### Suppressions
+
+* Retrait du label `pole-emploi` après 6 mois de dépréciation.
+* Retrait de la typologie `PE` après 6 mois de dépréciation.
+
 ## 0.15.0 - 2024-06-10
 
 ### Ajouts
