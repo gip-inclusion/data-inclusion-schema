@@ -32,6 +32,11 @@ class Profil(EnhancedEnum):
         "Familles/enfants",
         None,
     )
+    ETUDIANTS = (
+        "etudiants",
+        "Étudiants",
+        None,
+    )
     FEMMES = (
         "femmes",
         "Femmes",
@@ -63,6 +68,11 @@ class Profil(EnhancedEnum):
     LOCATAIRES = (
         "locataires",
         "Locataires",
+        None,
+    )
+    PERSONNES_DE_NATIONALITE_ETRANGERE = (
+        "personnes-de-nationalite-etrangere",
+        "Personnes de nationalité étrangère",
         None,
     )
     PERSONNES_EN_SITUATION_DE_HANDICAP = (
@@ -107,13 +117,28 @@ class Profil(EnhancedEnum):
         "Salariés",
         None,
     )
+    SANS_DOMICILE_FIXE = (
+        "sans-domicile-fixe",
+        "Sans domicile fixe",
+        None,
+    )
     SENIORS_65 = (
         "seniors-65",
         "Seniors (+ 65 ans)",
         None,
     )
+    SORTANTS_DE_DETENTION = (
+        "sortants-de-detention",
+        "Sortants de détention",
+        None,
+    )
     SURDITE = (
         "surdite",
         "Surdité",
+        None,
+    )
+    VICTIMES = (
+        "victimes",
+        "Victimes",
         None,
     )

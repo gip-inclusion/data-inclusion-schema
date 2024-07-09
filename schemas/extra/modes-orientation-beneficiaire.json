@@ -15,6 +15,11 @@
     "value": "envoyer-un-mail"
   },
   {
+    "description": "Prendre rendez-vous auprès de la structure",
+    "label": "Prendre rendez-vous",
+    "value": "prendre-rdv"
+  },
+  {
     "description": "Se présenter à l’adresse indiquée.",
     "label": "Se présenter",
     "value": "se-presenter"
