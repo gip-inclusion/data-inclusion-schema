@@ -15,7 +15,7 @@ Le projet utilise `python3.10`.
 git clone git@github.com:gip-inclusion/data-inclusion-schema.git
 
 # Initialiser un virtual env à la racine du repo
-python3.10 -m venv .venv && source .venv/bin/activate && pip install -U pip setuptools wheel && pip install -e .[dev]
+python3.10 -m venv .venv && source .venv/bin/activate && pip install -U pip setuptools wheel && pip install -e '.[dev]'
 
 # Installer les outils de qualité de codes
 pre-commit install

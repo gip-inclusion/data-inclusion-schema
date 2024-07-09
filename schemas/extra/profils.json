@@ -26,6 +26,11 @@
   },
   {
     "description": null,
+    "label": "Étudiants",
+    "value": "etudiants"
+  },
+  {
+    "description": null,
     "label": "Familles/enfants",
     "value": "familles-enfants"
   },
@@ -58,6 +63,11 @@
     "description": null,
     "label": "Locataires",
     "value": "locataires"
+  },
+  {
+    "description": null,
+    "label": "Personnes de nationalité étrangère",
+    "value": "personnes-de-nationalite-etrangere"
   },
   {
     "description": "Une personne se déplaçant temporairement en béquilles des suites d’une intervention médicale est en situation de handicap sans toutefois être handicapée.",
@@ -96,12 +106,27 @@
   },
   {
     "description": null,
+    "label": "Sans domicile fixe",
+    "value": "sans-domicile-fixe"
+  },
+  {
+    "description": null,
     "label": "Seniors (+ 65 ans)",
     "value": "seniors-65"
   },
   {
     "description": null,
+    "label": "Sortants de détention",
+    "value": "sortants-de-detention"
+  },
+  {
+    "description": null,
     "label": "Surdité",
     "value": "surdite"
+  },
+  {
+    "description": null,
+    "label": "Victimes",
+    "value": "victimes"
   }
 ]

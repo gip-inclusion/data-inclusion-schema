@@ -2,6 +2,7 @@
 *.py[cod]
 __pycache__/
 *.egg-info
+.python-version
 
 # Dist
 dist/

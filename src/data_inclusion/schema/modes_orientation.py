@@ -27,6 +27,11 @@ class ModeOrientationAccompagnateur(EnhancedEnum):
         "Téléphoner",
         "Téléphoner au numéro indiqué.",
     )
+    PRENDRE_RDV = (
+        "prendre-rdv",
+        "Prendre rendez-vous",
+        "Prendre rendez-vous auprès de la structure",
+    )
     AUTRE = (
         "autre",
         "Autre",
@@ -54,6 +59,11 @@ class ModeOrientationBeneficiaire(EnhancedEnum):
         "telephoner",
         "Téléphoner",
         "Téléphoner au numéro indiqué.",
+    )
+    PRENDRE_RDV = (
+        "prendre-rdv",
+        "Prendre rendez-vous",
+        "Prendre rendez-vous auprès de la structure",
     )
     AUTRE = (
         "autre",

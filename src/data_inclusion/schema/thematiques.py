@@ -171,6 +171,11 @@ class Thematique(EnhancedEnum):
         "Alimentation",
         None,
     )
+    EQUIPEMENT_ET_ALIMENTATION__AIDE_MENAGERE = (
+        "equipement-et-alimentation--aide-menagere",
+        "Aide ménagère",
+        None,
+    )
     EQUIPEMENT_ET_ALIMENTATION__ELECTROMENAGER = (
         "equipement-et-alimentation--electromenager",
         "Électroménager",
@@ -282,6 +287,11 @@ class Thematique(EnhancedEnum):
     HANDICAP__ADAPTER_SON_LOGEMENT = (
         "handicap--adapter-son-logement",
         "Adapter son logement",
+        None,
+    )
+    HANDICAP__AIDE_A_LA_PERSONNE = (
+        "handicap--aide-a-la-personne",
+        "Aide à la personne en situation de handicap ou malade",
         None,
     )
     HANDICAP__CONNAISSANCE_DES_DROITS_DES_TRAVAILLEURS = (

@@ -151,6 +151,11 @@
   },
   {
     "description": null,
+    "label": "Aide ménagère",
+    "value": "equipement-et-alimentation--aide-menagere"
+  },
+  {
+    "description": null,
     "label": "Alimentation",
     "value": "equipement-et-alimentation--alimentation"
   },
@@ -263,6 +268,11 @@
     "description": null,
     "label": "Adapter son logement",
     "value": "handicap--adapter-son-logement"
+  },
+  {
+    "description": null,
+    "label": "Aide à la personne en situation de handicap ou malade",
+    "value": "handicap--aide-a-la-personne"
   },
   {
     "description": null,
