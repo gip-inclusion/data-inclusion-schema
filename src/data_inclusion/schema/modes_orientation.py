@@ -17,11 +17,6 @@ class ModeOrientationAccompagnateur(EnhancedEnum):
         "Envoyer un courriel avec une fiche de prescription",
         "Envoyer un courriel à l’adresse indiquée avec une fiche de prescription.",
     )
-    ENVOYER_UN_MAIL_AVEC_DES_DOCUMENTS_A_COMPLETER = (
-        "envoyer-un-mail-avec-des-documents-a-completer",
-        "Envoyer un courriel avec des documents à compléter",
-        "Envoyer un courriel à l’adresse indiquée avec des documents à compléter.",
-    )
     TELEPHONER = (
         "telephoner",
         "Téléphoner",

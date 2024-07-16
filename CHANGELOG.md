@@ -15,6 +15,8 @@
 
 ### Suppressions
 
+* suppression du mode d'orientation accompagnateur `envoyer-un-mail-avec-des-documents-a-completer`
+
 ## 0.16.0 - 2024-06-25
 
 ### Suppressions
