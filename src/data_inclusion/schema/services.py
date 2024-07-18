@@ -29,14 +29,56 @@ class Service(BaseModel):
     presentation_detail: Optional[str] = None
     types: Optional[set[TypologieService]] = None
     thematiques: Optional[set[Thematique]] = None
-    prise_rdv: Optional[HttpUrl] = None
+    prise_rdv_accompagnateur: Annoted[ 
+        Optional[HttpUrl],
+        Field(
+            description="""
+                Lien vers une page web permettant à l'accompagnateur de réserver un rendez-vous pour le bénéficiaire et la structure responsable du service. Le mode d'orientation accompagnateur doit avoir la valeur "prendre-rdv".
+            """,
+            examples=[
+                "https://centresocialduroussillonnais.fr/services-aux-habitants/prendre-rendez-vous-avec-un-cnfs/"
+            ],
+        ),
+    ] = None
+    prise_rdv_beneficiaire: Annoted[ 
+        Optional[HttpUrl],
+        Field(
+            description="""
+                Lien vers une page web permettant au bénéficiaire de réserver un rendez-vous avec la structure responsable du service. Le mode d'orientation bénéficiaire doit avoir la valeur "prendre-rdv".
+            """,
+            examples=[
+                "https://centresocialduroussillonnais.fr/services-aux-habitants/prendre-rendez-vous-avec-un-cnfs/"
+            ],
+        ),
+    ] = None
     frais: Optional[set[Frais]] = None
     frais_autres: Optional[str] = None
     profils: Optional[set[Profil]] = None
     pre_requis: Optional[set[str]] = None
     cumulable: Optional[bool] = None
     justificatifs: Optional[set[str]] = None
-    formulaire_en_ligne: Optional[HttpUrl] = None
+    formulaire_en_ligne_accompagnateur: Annoted[
+        Optional[HttpUrl],
+        Field(
+            description="""
+                Lien vers une page web permettant à l'accompagnateur d'orienter le bénéficiaire vers la structure responsable du service. Le mode d'orientation accompagnateur doit avoir la valeur "completer-le-formulaire-dadhesion".
+            """,
+            examples=[
+                "https://www.tarn.fr/au-quotidien/senior/demander-lallocation-personnalisee-dautonomie-apa?tx_solr%5Bq%5D=APA"
+            ],
+        ),
+    ] = None
+    formulaire_en_ligne_beneficiaire: Annoted[
+        Optional[HttpUrl],
+        Field(
+            description="""
+                Lien vers une page web permettant au bénéficiaire de mobiliser le service auprès de la structure responsable. Le mode d'orientation bénéficiaire doit avoir la valeur "completer-le-formulaire-dadhesion".
+            """,
+            examples=[
+                "https://www.tarn.fr/au-quotidien/senior/demander-lallocation-personnalisee-dautonomie-apa?tx_solr%5Bq%5D=APA"
+            ],
+        ),
+    ] = None
     commune: Optional[str] = None
     code_postal: Optional[common.CodePostal] = None
     code_insee: Optional[common.CodeCommune] = None
