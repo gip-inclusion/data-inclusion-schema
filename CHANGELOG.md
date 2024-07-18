@@ -4,25 +4,26 @@
 
 ### Ajouts
 
-* ajout du mode d'orientation `prendre-rdv` (accompagnateur & beneficiaire)
-* ajout de nouveaux profils
-* ajout de nouvelles thématiques
-* description des modes d'accueil par @acaldagues
-
 ### Changements
 
 ### Dépréciations
 
 ### Suppressions
 
-* suppression du mode d'orientation accompagnateur `envoyer-un-mail-avec-des-documents-a-completer`
+## 0.16.0 - 2024-07-18
 
-## 0.16.0 - 2024-06-25
+### Ajouts
+
+* ajout du mode d'orientation `prendre-rdv` (accompagnateur & beneficiaire)
+* ajout de nouveaux profils (`etudiants`, `personnes-de-nationalite-etrangere`, `sans-domicile-fixe`, `sortants-de-detention`, `victimes`)
+* ajout de nouvelles thématiques (`equipement-et-alimentation--aide-menagere`, `handicap--aide-a-la-personne`)
+* description des modes d'accueil par @acaldagues
 
 ### Suppressions
 
-* Retrait du label `pole-emploi` après 6 mois de dépréciation.
-* Retrait de la typologie `PE` après 6 mois de dépréciation.
+* retrait du label `pole-emploi` après 6 mois de dépréciation.
+* retrait de la typologie `PE` après 6 mois de dépréciation.
+* suppression du mode d'orientation accompagnateur `envoyer-un-mail-avec-des-documents-a-completer`
 
 ## 0.15.0 - 2024-06-10
 

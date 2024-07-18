@@ -61,3 +61,14 @@ data-inclusion-schema
 ```
 
 ### 3. Ouvrir une PR avec les changements
+
+Ajouter ses modifications au [CHANGELOG](CHANGELOG.md) dans la partie a venir
+
+
+## Faire une release
+
+1. Sur une PR:
+    - modif du numéro de version du package sur [pyproject.toml](pyproject.toml) et [schemas.yml](schemas.yml)
+    - Passer les changements de ## À venir dans la section de la nouvelle release
+2. `git tag {my-tag} & git tag -f latest & git push --tags`
+3. release sur git hub en pointant sur le tag
