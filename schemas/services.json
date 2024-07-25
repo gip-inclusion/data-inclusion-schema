@@ -220,7 +220,7 @@
             }
           ],
           "default": null,
-          "title": "Date Maj"
+          "title": "Date de mise à jour"
         },
         "date_suspension": {
           "anyOf": [
@@ -471,7 +471,10 @@
             }
           ],
           "default": null,
-          "title": "Presentation Resume"
+          "extra": {
+            "categorie_champ": "Descriptif"
+          },
+          "title": "Présentation résumée"
         },
         "prise_rdv": {
           "anyOf": [

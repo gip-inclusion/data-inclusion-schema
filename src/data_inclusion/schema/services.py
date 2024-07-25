@@ -1,7 +1,8 @@
+import enum
 from datetime import date, datetime
 from typing import Annotated, Optional
 
-from pydantic import EmailStr, HttpUrl, StringConstraints
+from pydantic import EmailStr, HttpUrl
 
 from data_inclusion.schema import common
 from data_inclusion.schema.base import BaseModel, Field
@@ -17,14 +18,27 @@ from data_inclusion.schema.typologies_de_services import TypologieService
 from data_inclusion.schema.zones_de_diffusion import ZoneDiffusionType
 
 
+class CategorieChamp(str, enum.Enum):
+    IDENTIFICATION = "Identification"
+    LOCALISATION = "Localisation"
+    CONTACT = "Contact"
+    DESCRIPTIF = "Descriptif"
+    ORIENTATION = "Orientation"
+
+
 class Service(BaseModel):
     # fields
     id: str
     structure_id: str
     source: str
     nom: str
-    presentation_resume: Optional[
-        Annotated[str, StringConstraints(max_length=280)]
+    presentation_resume: Annotated[
+        str | None,
+        Field(
+            title="Présentation résumée",
+            max_length=280,
+            json_schema_extra={"extra": {"categorie_champ": CategorieChamp.DESCRIPTIF}},
+        ),
     ] = None
     presentation_detail: Optional[str] = None
     types: Optional[set[TypologieService]] = None
@@ -51,7 +65,12 @@ class Service(BaseModel):
     telephone: Optional[str] = None
     courriel: Optional[EmailStr] = None
     contact_public: Optional[bool] = None
-    date_maj: Optional[date | datetime] = None
+    date_maj: Annotated[
+        Optional[date | datetime],
+        Field(
+            title="Date de mise à jour",
+        ),
+    ] = None
     modes_accueil: Optional[set[ModeAccueil]] = None
     zone_diffusion_type: Optional[ZoneDiffusionType] = None
     zone_diffusion_code: Optional[

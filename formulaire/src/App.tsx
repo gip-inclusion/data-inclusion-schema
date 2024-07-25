@@ -19,8 +19,8 @@ const propertiesGroups = {
         "date_creation",
         "date_suspension"
     ],
-    "📝 Descriptif": ["nom", "presentation_resume", "presentation_detail", "thematiques", "types"],
-    "✅ Conditions d'accès": [
+    "📝 Offre": ["nom", "presentation_resume", "presentation_detail", "thematiques", "types"],
+    "ℹ️ Conditions": [
         "frais",
         "frais_autres",
         "cumulable",
@@ -33,6 +33,20 @@ const propertiesGroups = {
         "recurrence",
         "modes_accueil"
     ],
+    "🤝 Orientation": [
+        "modes_orientation_beneficiaire",
+        "modes_orientation_beneficiaire_autres",
+        "modes_orientation_accompagnateur",
+        "modes_orientation_accompagnateur_autres",
+    ],
+    "📞 Contact": [
+        "contact_public",
+        "contact_nom_prenom",
+        "telephone",
+        "courriel",
+        "prise_rdv",
+        "formulaire_en_ligne"
+    ],
     "📍 Localisation": [
         "adresse",
         "complement_adresse",
@@ -42,14 +56,6 @@ const propertiesGroups = {
         "longitude",
         "latitude"
     ],
-    "📞 Contact": [
-        "contact_public",
-        "contact_nom_prenom",
-        "telephone",
-        "courriel",
-        "prise_rdv",
-        "formulaire_en_ligne"
-    ]
 };
 
 const Field = ({ name, path, schema }: any) => {
@@ -118,8 +124,8 @@ const Field = ({ name, path, schema }: any) => {
                         propertyFormat === "date"
                             ? "date"
                             : propertyType === "number"
-                              ? "number"
-                              : "text"
+                                ? "number"
+                                : "text"
                     }
                     step={propertyType === "number" ? "any" : undefined}
                     placeholder={propertyFormat === "uri" ? "https://" : ""}
@@ -137,7 +143,7 @@ const Field = ({ name, path, schema }: any) => {
 function Form() {
     const methods = useForm({
         resolver: async (data, context, options) => {
-            const result = await ajvResolver(serviceSchema as any, { formats: fullFormats })(
+            const result = await ajvResolver(serviceSchema as any, { formats: fullFormats, keywords: ["extra"] })(
                 data.services,
                 context,
                 options
@@ -173,23 +179,23 @@ function Form() {
         <FormProvider {...methods}>
             <form onSubmit={handleSubmit(onSubmit)}>
                 {fields.map((field, index) => (
-                    <>
-                        <div key={field.id}>
-                            <fieldset className="fr-fieldset fr-background-alt--grey">
-                                <legend className="fr-fieldset__legend">
-                                    <h4>Service {index + 1}</h4>
-                                    <button
-                                        className={fr.cx(
-                                            "fr-btn--tertiary-no-outline",
-                                            "fr-icon-delete-line"
-                                        )}
-                                        onClick={() => remove(index)}
-                                    >
-                                        Supprimer
-                                    </button>
-                                </legend>
-                                <div className="fr-fieldset__element">
-                                    {Object.entries(propertiesGroups).map(([groupName, groupFields]) => (
+                    <div key={field.id}>
+                        <fieldset className="fr-fieldset fr-background-alt--grey">
+                            <legend className="fr-fieldset__legend">
+                                <h4>Service {index + 1}</h4>
+                                <button
+                                    className={fr.cx(
+                                        "fr-btn--tertiary-no-outline",
+                                        "fr-icon-delete-line"
+                                    )}
+                                    onClick={() => remove(index)}
+                                >
+                                    Supprimer
+                                </button>
+                            </legend>
+                            <div className="fr-fieldset__element">
+                                {Object.entries(propertiesGroups).map(([groupName, groupFields]) => (
+                                    <div key={groupName}>
                                         <fieldset className="fr-fieldset">
                                             <legend className="fr-fieldset__legend">{groupName}</legend>
                                             <div className="fr-fieldset__element">
@@ -207,33 +213,14 @@ function Form() {
                                                     ))}
                                             </div>
                                         </fieldset>
-                                    ))}
-                                    <fieldset className="fr-fieldset">
-                                        <legend className="fr-fieldset__legend">Autres</legend>
-                                        <div className="fr-fieldset__element">
-                                            {Object.entries(serviceSchema.$defs.Service.properties)
-                                                .filter(
-                                                    ([fieldName,]) =>
-                                                        !Object.values(propertiesGroups).some(g =>
-                                                            g.includes(fieldName)
-                                                        )
-                                                )
-                                                .map(([fieldName, fieldSchema]) => (
-                                                    <Field
-                                                        key={fieldName}
-                                                        name={fieldName}
-                                                        path={`services.${index}.${fieldName}`}
-                                                        schema={fieldSchema}
-                                                    />
-                                                ))}
-                                        </div>
-                                    </fieldset>
-                                </div>
-                            </fieldset>
-                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </fieldset>
                         <p className={fr.cx("fr-hr")} />
-                    </>
-                ))}
+                    </div>
+                ))
+                }
                 <div className="fr-grid-row">
                     <div className="fr-col">
                         <div className="fr-btns-group">
@@ -254,8 +241,8 @@ function Form() {
                         </div>
                     </div>
                 </div>
-            </form>
-        </FormProvider>
+            </form >
+        </FormProvider >
     );
 }
 
