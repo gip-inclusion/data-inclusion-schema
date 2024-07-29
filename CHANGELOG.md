@@ -4,6 +4,8 @@
 
 ### Ajouts
 
+* ajout de 3 labels nationaux ETABL_PRI, ETABL_PUB et ETATq
+
 ### Changements
 
 ### Dépréciations

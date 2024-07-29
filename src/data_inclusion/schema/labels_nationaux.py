@@ -177,6 +177,21 @@ class LabelNational(EnhancedEnum):
         "Espace Emploi Agirc Arrco",
         None,
     )
+    ETABL_PRI = (
+        "etal-pri",
+        "Établissement privé",
+        None,
+    )
+    ETABL_PUB = (
+        "etal-pub",
+        "Établissement public",
+        None,
+    )
+    ETAT = (
+        "etat",
+        "Service de l'État",
+        None,
+    )
     ETCLD = (
         "etcld",
         "Expérimentation territoriale contre le chômage de longue durée",

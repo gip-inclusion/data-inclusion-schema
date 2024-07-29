@@ -176,6 +176,21 @@
   },
   {
     "description": null,
+    "label": "Établissement privé",
+    "value": "etal-pri"
+  },
+  {
+    "description": null,
+    "label": "Établissement public",
+    "value": "etal-pub"
+  },
+  {
+    "description": null,
+    "label": "Service de l'État",
+    "value": "etat"
+  },
+  {
+    "description": null,
     "label": "Expérimentation territoriale contre le chômage de longue durée",
     "value": "etcld"
   },
