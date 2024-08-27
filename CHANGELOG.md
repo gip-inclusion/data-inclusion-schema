@@ -4,6 +4,8 @@
 
 ### Ajouts
 
+* ajout de 3 typologies de structures ETABL_PRI, ETABL_PUB et ETAT
+
 ### Changements
 
 ### Dépréciations
