@@ -248,6 +248,21 @@ class Typologie(EnhancedEnum):
         "Entreprise de l’Économie Sociale et Solidaire",
         None,
     )
+    ETABL_PRI = (
+        "ETABL_PRI",
+        "Établissement privé",
+        None,
+    )
+    ETABL_PUB = (
+        "ETABL_PUB",
+        "Établissement public",
+        None,
+    )
+    ETAT = (
+        "ETAT",
+        "Service de l'État",
+        None,
+    )
     ETTI = (
         "ETTI",
         "Entreprises de travail temporaire d’insertion (ETTI)",

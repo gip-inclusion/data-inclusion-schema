@@ -10,6 +10,17 @@
 
 ### Suppressions
 
+## 0.17.0 - 2024-08-29
+### Ajouts
+
+* ajout de 3 typologies de structures ETABL_PRI, ETABL_PUB et ETAT
+
+### Changements
+
+### Dépréciations
+
+### Suppressions
+
 ## 0.16.0 - 2024-07-18
 
 ### Ajouts

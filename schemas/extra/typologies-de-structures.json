@@ -241,6 +241,21 @@
   },
   {
     "description": null,
+    "label": "Établissement privé",
+    "value": "ETABL_PRI"
+  },
+  {
+    "description": null,
+    "label": "Établissement public",
+    "value": "ETABL_PUB"
+  },
+  {
+    "description": null,
+    "label": "Service de l'État",
+    "value": "ETAT"
+  },
+  {
+    "description": null,
     "label": "Entreprises de travail temporaire d’insertion (ETTI)",
     "value": "ETTI"
   },
