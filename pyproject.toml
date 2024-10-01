@@ -6,7 +6,7 @@ build-backend = "flit_core.buildapi"
 name = "data-inclusion-schema"
 version = "0.17.0"
 description = "Schéma de l'offre d'insertion"
-authors = [{ name = "data.inclusion", email = "data.inclusion@beta.gouv.fr" }]
+authors = [{ name = "data⋅inclusion", email = "data-inclusion@inclusion.gouv.fr" }]
 readme = "README.md"
 dynamic = []
 classifiers = [
@@ -17,8 +17,8 @@ dependencies = ["pydantic[email]>=2.1.1,<3.0.0"]
 
 
 [project.urls]
-Home = "https://www.data.inclusion.beta.gouv.fr"
-Documentation = "https://www.data.inclusion.beta.gouv.fr/schemas-de-donnees-de-loffre/schema-des-structures-et-services-dinsertion"
+Home = "https://data.inclusion.gouv.fr"
+Documentation = "https://data.inclusion.gouv.fr/schemas-de-donnees-de-loffre/schema-des-structures-et-services-dinsertion"
 Source = "https://github.com/gip-inclusion/data-inclusion-schema"
 
 [project.optional-dependencies]
@@ -31,7 +31,7 @@ dev = [
 data-inclusion-schema = "data_inclusion.schema.__main__:main"
 
 [tool.ruff.lint]
-# see prefixes in https://beta.ruff.rs/docs/rules/
+# see prefixes in https://docs.astral.sh/ruff/rules/
 select = [
     "F",  # pyflakes
     "E",  # pycodestyle errors
