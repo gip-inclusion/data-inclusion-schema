@@ -14,6 +14,7 @@
 ### Ajouts
 
 * ajout de 3 typologies de structures ETABL_PRI, ETABL_PUB et ETAT
+* ajout de champs profils_autres
 
 ### Changements
 

@@ -504,6 +504,18 @@
           "default": null,
           "title": "Profils"
         },
+        "profils_autres": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Profils Autres"
+        },
         "recurrence": {
           "anyOf": [
             {
