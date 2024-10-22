@@ -10,7 +10,14 @@
 
 ### Suppressions
 
+## 0.18.0 - 2024-10-22
+
+### Ajouts
+
+* ajout du score de qualité des services
+
 ## 0.17.0 - 2024-08-29
+
 ### Ajouts
 
 * ajout de 3 typologies de structures ETABL_PRI, ETABL_PUB et ETAT
