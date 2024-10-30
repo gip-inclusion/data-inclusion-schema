@@ -164,7 +164,9 @@ CRITERES: list[CritereFn] = [
 def score(service: Service) -> tuple[float, Mapping[str, float | None]]:
     resultats = {critere.__name__: critere(service) for critere in CRITERES}
 
-    resultats_pertinents = {k: v for k, v in resultats.items() if v is not None}
+    resultats_pertinents = {
+        k: round(v, 2) for k, v in resultats.items() if v is not None
+    }
     score = sum([v for v in resultats_pertinents.values()]) / len(resultats_pertinents)
 
-    return score, resultats
+    return round(score, 2), resultats
