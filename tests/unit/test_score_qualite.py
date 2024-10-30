@@ -462,7 +462,7 @@ def test_critere_frais_bien_definis(service: Service, attendu: float):
                 thematiques=[Thematique.FAMILLE],
                 profils=[Profil.ADULTES],
             ),
-            (len(score_qualite.CRITERES) - 1) / len(score_qualite.CRITERES),
+            round((len(score_qualite.CRITERES) - 1) / len(score_qualite.CRITERES), 2),
             id="service_presque_parfait_sans_date_maj",
         ),
         pytest.param(

@@ -6,6 +6,8 @@
 
 ### Changements
 
+* arrondissage à deux décimales du score de qualité.
+
 ### Dépréciations
 
 ### Suppressions
