@@ -31,31 +31,15 @@ def main():
     output_dir = pathlib.Path() / "schemas"
     output_dir.mkdir(exist_ok=True)
 
-    with (output_dir / "structures.json").open("w") as file:
-        json_dump(
-            Structure.model_list_json_schema(
-                title="Structures de l'insertion",
-                id=(
-                    "https://raw.githubusercontent.com/betagouv/data-inclusion-schema"
-                    "/main/structures.json"
-                ),
-                description="",
-            ),
-            file,
-        )
-
-    with (output_dir / "services.json").open("w") as file:
-        json_dump(
-            Service.model_list_json_schema(
-                title="Services de l'insertion",
-                id=(
-                    "https://raw.githubusercontent.com/betagouv/data-inclusion-schema"
-                    "/main/services.json"
-                ),
-                description="",
-            ),
-            file,
-        )
+    for model in [Structure, Service]:
+        with (output_dir / f"{model.__name__.lower()}.json").open("w") as file:
+            json.dump(
+                model.model_json_schema(),
+                file,
+                indent=2,
+                ensure_ascii=False,
+                sort_keys=True,
+            )
 
     # fichiers supplémentaires documentant les énumérations
 
