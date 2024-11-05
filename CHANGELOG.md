@@ -6,11 +6,15 @@
 
 ### Changements
 
-* arrondissage à deux décimales du score de qualité.
-
 ### Dépréciations
 
 ### Suppressions
+
+## 0.19.0 - 2024-11-05
+
+### Changements
+
+* arrondissage à deux décimales du score de qualité.
 
 ## 0.18.0 - 2024-10-22
 

@@ -4,7 +4,7 @@ build-backend = "flit_core.buildapi"
 
 [project]
 name = "data-inclusion-schema"
-version = "0.18.0"
+version = "0.19.0"
 description = "Schéma de l'offre d'insertion"
 authors = [{ name = "data⋅inclusion", email = "data-inclusion@inclusion.gouv.fr" }]
 readme = "README.md"
