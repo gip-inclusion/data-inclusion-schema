@@ -3,6 +3,8 @@
 ## À venir
 
 ### Ajouts
+* ajout de champs profils_precisions
+* ajout profils tout-publics et personnes-en-situation-durgence
 
 ### Changements
 
