@@ -10,6 +10,11 @@
 
 ### Suppressions
 
+## 0.20.0 - 2025-01-08
+### Ajouts
+* ajout de champs profils_precisions
+* ajout profils tout-publics et personnes-en-situation-durgence
+
 ## 0.19.0 - 2024-11-05
 
 ### Changements

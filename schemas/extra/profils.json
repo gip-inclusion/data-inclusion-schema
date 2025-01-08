@@ -76,6 +76,11 @@
   },
   {
     "description": null,
+    "label": "Victimes",
+    "value": "personnes-en-situation-durgence"
+  },
+  {
+    "description": null,
     "label": "Personnes en situation d’illettrisme",
     "value": "personnes-en-situation-illettrisme"
   },
@@ -123,6 +128,11 @@
     "description": null,
     "label": "Surdité",
     "value": "surdite"
+  },
+  {
+    "description": null,
+    "label": "Tout publics",
+    "value": "tous-publics"
   },
   {
     "description": null,

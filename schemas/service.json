@@ -70,7 +70,9 @@
         "seniors-65",
         "sortants-de-detention",
         "surdite",
-        "victimes"
+        "victimes",
+        "tous-publics",
+        "personnes-en-situation-durgence"
       ],
       "title": "Profil",
       "type": "string"
@@ -686,6 +688,18 @@
       ],
       "default": null,
       "title": "Profils"
+    },
+    "profils_precisions": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Profils Precisions"
     },
     "recurrence": {
       "anyOf": [

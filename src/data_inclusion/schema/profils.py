@@ -142,3 +142,13 @@ class Profil(EnhancedEnum):
         "Victimes",
         None,
     )
+    TOUT_PUBLIC = (
+        "tous-publics",
+        "Tout publics",
+        None,
+    )
+    PERSONNE_EN_SITUATION_DURGENCE = (
+        "personnes-en-situation-durgence",
+        "Victimes",
+        None,
+    )
