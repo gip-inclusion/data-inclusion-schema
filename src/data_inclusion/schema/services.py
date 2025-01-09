@@ -33,6 +33,7 @@ class Service(BaseModel):
     frais: Optional[set[Frais]] = None
     frais_autres: Optional[str] = None
     profils: Optional[set[Profil]] = None
+    profils_precisions: Optional[str] = None
     pre_requis: Optional[set[str]] = None
     cumulable: Optional[bool] = None
     justificatifs: Optional[set[str]] = None
