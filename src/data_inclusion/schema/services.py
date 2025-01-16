@@ -18,8 +18,25 @@ from data_inclusion.schema.zones_de_diffusion import ZoneDiffusionType
 
 
 class Service(BaseModel):
-    # fields
-    id: str
+    """Service.
+
+    Attributes:
+        id: Identifiant unique du service
+        structure_id: Identifiant de la structure
+        source: Source de la donnée
+        nom: Nom du service
+        presentation_resume: Présentation résumée du service
+        presentation_detail: Présentation détaillée du service
+        types: Types de service
+        thematiques: Thématiques du
+        prise_rdv: Prise de rendez-vous
+        frais: Frais
+    """
+    id: str = Field(
+        default='9fe85aab-bc7a-49c3-ab10-233b1c92379e',
+        title='Identifiant',
+        description='Identifiant unique du service.',
+    )
     structure_id: str
     source: str
     nom: str
@@ -40,8 +57,28 @@ class Service(BaseModel):
     formulaire_en_ligne: Optional[HttpUrl] = None
     commune: Optional[str] = None
     code_postal: Optional[common.CodePostal] = None
-    code_insee: Optional[common.CodeCommune] = None
-    adresse: Optional[str] = None
+    code_insee: Optional[common.CodeCommune] = Field(
+        description='[Deprecated]',
+    )
+    """code insee docstring."""
+    adresse: Optional[str] = Field(
+        examples=['17 rue du mollard 38160 Saint Marcellin'],
+        title='L\'adresse du service',
+        description='[Deprecated] Adresse du service. Doit être renseignée si le service est diffusé.',
+        json_schema_extra={
+            'deprecated': True,
+        }
+    )
+    """Adresse.
+
+    Long description.
+
+    Warning: Deprecated
+        Stop using this class.
+
+    Attributes:
+        attr: Some attribute.
+    """
     complement_adresse: Optional[str] = None
     longitude: Optional[float] = None
     latitude: Optional[float] = None

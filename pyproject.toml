@@ -16,6 +16,7 @@ classifiers = [
 dependencies = [
     "pydantic[email]>=2.1.1,<3.0.0",
     "pendulum~=3.0",
+    "mkdocs-material==9.*",
 ]
 
 

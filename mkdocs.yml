@@ -1,0 +1,14 @@
+site_name: My Docs
+site_url: https://mydomain.org/mysite
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - Service: service.md
+  - Service2: service2.md
+  - Service3: service3.md
+  - Structure: structure.md
+  - Test: test.md
+plugins:
+- search
+- mkdocstrings

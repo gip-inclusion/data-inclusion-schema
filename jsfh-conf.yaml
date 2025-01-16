@@ -1,0 +1,6 @@
+template_name: md
+examples_as_yaml: true
+with_footer: false
+show_heading_numbers: false
+show_breadcrumbs: false
+deprecated_from_description: true

@@ -271,23 +271,16 @@
           "type": "null"
         }
       ],
-      "default": null,
-      "title": "Adresse"
+      "deprecated": true,
+      "description": "[Deprecated] Adresse du service. Doit être renseignée si le service est diffusé.",
+      "examples": [
+        "17 rue du mollard 38160 Saint Marcellin"
+      ],
+      "title": "L'adresse du service"
     },
     "code_insee": {
-      "anyOf": [
-        {
-          "maxLength": 5,
-          "minLength": 5,
-          "pattern": "^\\w{5}$",
-          "type": "string"
-        },
-        {
-          "type": "null"
-        }
-      ],
       "default": null,
-      "title": "Code Insee"
+      "description": "[Deprecated]"
     },
     "code_postal": {
       "anyOf": [
@@ -464,7 +457,9 @@
       "title": "Frais Autres"
     },
     "id": {
-      "title": "Id",
+      "default": "9fe85aab-bc7a-49c3-ab10-233b1c92379e",
+      "description": "Identifiant unique du service.",
+      "title": "Identifiant",
       "type": "string"
     },
     "justificatifs": {
@@ -823,7 +818,6 @@
     }
   },
   "required": [
-    "id",
     "structure_id",
     "source",
     "nom"
