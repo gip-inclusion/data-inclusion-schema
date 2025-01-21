@@ -13,6 +13,7 @@ from data_inclusion.schema.typologies_de_structures import Typologie
 class Structure(BaseModel):
     # fields
     id: str
+    cluster_id: Optional[str] = None
     siret: Optional[common.CodeSiret] = None
     rna: Optional[common.CodeRna] = None
     nom: str

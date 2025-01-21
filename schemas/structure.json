@@ -384,6 +384,18 @@
       "default": null,
       "title": "Antenne"
     },
+    "cluster_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Cluster Id"
+    },
     "code_insee": {
       "anyOf": [
         {
