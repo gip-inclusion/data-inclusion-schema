@@ -139,11 +139,6 @@ def frais_bien_definis(service: Service) -> float | None:
     return None
 
 
-# Les critères sont implémentés sous forme de fonctions qui prennent un service en
-# entrée et renvoient un score entre 0 et 1.
-# Dans le cas où le critère n'est pas applicable, une fonction peut renvoyer None.
-# Par exemple, le critère "adresse_bien_definie" ne s'applique que si le service propose
-# un mode d'accueil en présentiel ou une orientation bénéficiaire en présentiel.
 CritereFn = Callable[[Service], float | None]
 
 CRITERES: list[CritereFn] = [
@@ -160,8 +155,14 @@ CRITERES: list[CritereFn] = [
     telephone_bien_defini,
 ]
 
+# Les critères sont implémentés sous forme de fonctions qui prennent un service en
+# entrée et renvoient un score entre 0 et 1.
+# Dans le cas où le critère n'est pas applicable, une fonction peut renvoyer None.
+# Par exemple, le critère "adresse_bien_definie" ne s'applique que si le service propose
+# un mode d'accueil en présentiel ou une orientation bénéficiaire en présentiel.
 
-def score(service: Service) -> tuple[float, Mapping[str, float | None]]:
+
+def score_service(service: Service) -> tuple[float, Mapping[str, float | None]]:
     resultats = {critere.__name__: critere(service) for critere in CRITERES}
 
     resultats_pertinents = {

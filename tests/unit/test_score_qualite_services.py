@@ -4,6 +4,7 @@ import pendulum
 import pytest
 from freezegun import freeze_time
 
+import data_inclusion.schema.score_qualite.service as score_qualite
 from data_inclusion.schema import (
     Frais,
     ModeAccueil,
@@ -12,7 +13,6 @@ from data_inclusion.schema import (
     Profil,
     Service,
     Thematique,
-    score_qualite,
 )
 
 
@@ -477,7 +477,7 @@ def test_critere_frais_bien_definis(service: Service, attendu: float):
 def test_score(service: Service, attendu: float):
     # le score est la moyenne des critères applicables
 
-    score, details = score_qualite.score(service)
+    score, details = score_qualite.score_service(service)
 
     assert score == attendu
     assert details == {
