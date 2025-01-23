@@ -13,5 +13,12 @@ repos:
     - id: compile-schema
       name: compile-schema
       language: system
-      entry: uv run data-inclusion-schema
+      entry: uv run ./scripts/compile_schema.py
+      always_run: true
+- repo: local
+  hooks:
+    - id: compile-docs
+      name: compile-docs
+      language: system
+      entry: uv run --extra docs ./scripts/compile_docs.py
       always_run: true

@@ -48,12 +48,18 @@ src/
         └── zones_de_diffusion.py
 ```
 
-### 2. Regénérer le json schéma
+### 2. Compiler le json schéma
 
 Lancer la commande suivante à la racine du repo :
 
 ```bash
-uv run data-inclusion-schema
+uv run scripts/compile_schema.py
+```
+
+### 3. Compiler la documentation
+
+```bash
+uv run --extra docs scripts/compile_docs.py
 ```
 
 ### 3. Ouvrir une PR avec les changements
@@ -64,7 +70,8 @@ Ajouter ses modifications au [CHANGELOG](CHANGELOG.md) dans la section "à venir
 ## Faire une release
 
 1. Sur une PR:
-    - modif du numéro de version du package sur [pyproject.toml](pyproject.toml)
+    - Modif du numéro de version du package sur [pyproject.toml](pyproject.toml)
     - Passer les changements de ## À venir dans la section de la nouvelle release
+2. La doc est mise a jour automatiquement depuis le json schema lors d'un merge sur la branch release. Si ajout d'un referentiel de plus de 5 items, il faut ajouter une ligne referencant la page de doc mkdocs.yml
 2. `git tag {my-tag} & git tag -f latest & git push --tags`
 3. release sur git hub en pointant sur le tag

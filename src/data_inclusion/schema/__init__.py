@@ -20,7 +20,7 @@ from data_inclusion.schema.services import Service
 from data_inclusion.schema.structures import Structure
 from data_inclusion.schema.thematiques import Thematique
 from data_inclusion.schema.typologies_de_services import TypologieService
-from data_inclusion.schema.typologies_de_structures import Typologie
+from data_inclusion.schema.typologies_de_structures import TypologieStructure
 from data_inclusion.schema.zones_de_diffusion import ZoneDiffusionType
 
 __all__ = [
@@ -42,6 +42,6 @@ __all__ = [
     "Structure",
     "Thematique",
     "TypologieService",
-    "Typologie",
+    "TypologieStructure",
     "ZoneDiffusionType",
 ]

@@ -246,7 +246,7 @@
       "title": "Thematique",
       "type": "string"
     },
-    "Typologie": {
+    "TypologieStructure": {
       "enum": [
         "ACI",
         "ACIPHC",
@@ -340,7 +340,7 @@
         "TIERS_LIEUX",
         "UDAF"
       ],
-      "title": "Typologie",
+      "title": "TypologieStructure",
       "type": "string"
     }
   },
@@ -660,7 +660,7 @@
     "typologie": {
       "anyOf": [
         {
-          "$ref": "#/$defs/Typologie"
+          "$ref": "#/$defs/TypologieStructure"
         },
         {
           "type": "null"

@@ -19,7 +19,6 @@ dependencies = [
     "pendulum~=3.0",
 ]
 
-
 [project.urls]
 Home = "https://data.inclusion.gouv.fr"
 Source = "https://github.com/gip-inclusion/data-inclusion-schema"
@@ -33,9 +32,11 @@ test = [
     "pytest>=8.3.4",
     "freezegun>=1.5.1",
 ]
-
-[project.scripts]
-data-inclusion-schema = "data_inclusion.schema.__main__:main"
+docs = [
+    "jinja2~=3.0",
+    "mkdocs~=1.6",
+    "mkdocs-material~=9.6",
+]
 
 [tool.ruff.lint]
 # see prefixes in https://docs.astral.sh/ruff/rules/

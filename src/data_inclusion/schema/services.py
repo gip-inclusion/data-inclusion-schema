@@ -23,9 +23,9 @@ class Service(BaseModel):
     structure_id: str
     source: str
     nom: str
-    presentation_resume: Optional[
-        Annotated[str, StringConstraints(max_length=280)]
-    ] = None
+    presentation_resume: Optional[Annotated[str, StringConstraints(max_length=280)]] = (
+        None
+    )
     presentation_detail: Optional[str] = None
     types: Optional[set[TypologieService]] = None
     thematiques: Optional[set[Thematique]] = None
@@ -78,7 +78,7 @@ class Service(BaseModel):
     ] = None
     modes_orientation_beneficiaire: Optional[set[ModeOrientationBeneficiaire]] = None
     modes_orientation_beneficiaire_autres: Optional[str] = None
-    modes_orientation_accompagnateur: Optional[
-        set[ModeOrientationAccompagnateur]
-    ] = None
+    modes_orientation_accompagnateur: Optional[set[ModeOrientationAccompagnateur]] = (
+        None
+    )
     modes_orientation_accompagnateur_autres: Optional[str] = None

@@ -7,7 +7,7 @@ from data_inclusion.schema import common
 from data_inclusion.schema.base import BaseModel
 from data_inclusion.schema.labels_nationaux import LabelNational
 from data_inclusion.schema.thematiques import Thematique
-from data_inclusion.schema.typologies_de_structures import Typologie
+from data_inclusion.schema.typologies_de_structures import TypologieStructure
 
 
 class Structure(BaseModel):
@@ -23,13 +23,13 @@ class Structure(BaseModel):
     complement_adresse: Optional[str] = None
     longitude: Optional[float] = None
     latitude: Optional[float] = None
-    typologie: Optional[Typologie] = None
+    typologie: Optional[TypologieStructure] = None
     telephone: Optional[str] = None
     courriel: Optional[EmailStr] = None
     site_web: Optional[HttpUrl] = None
-    presentation_resume: Optional[
-        Annotated[str, StringConstraints(max_length=280)]
-    ] = None
+    presentation_resume: Optional[Annotated[str, StringConstraints(max_length=280)]] = (
+        None
+    )
     presentation_detail: Optional[str] = None
     source: str
     date_maj: date | datetime
