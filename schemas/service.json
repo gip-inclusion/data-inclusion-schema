@@ -261,6 +261,7 @@
       "type": "string"
     }
   },
+  "description": "Service.\n\nAttributes:\n    id: Identifiant unique du service\n    structure_id: Identifiant de la structure\n    source: Source de la donnée\n    nom: Nom du service\n    presentation_resume: Présentation résumée du service\n    presentation_detail: Présentation détaillée du service\n    types: Types de service\n    thematiques: Thématiques du\n    prise_rdv: Prise de rendez-vous\n    frais: Frais",
   "properties": {
     "adresse": {
       "anyOf": [
@@ -272,15 +273,27 @@
         }
       ],
       "deprecated": true,
-      "description": "[Deprecated] Adresse du service. Doit être renseignée si le service est diffusé.",
+      "description": "Adresse du service. Doit être renseignée si le service est diffusé.",
       "examples": [
-        "17 rue du mollard 38160 Saint Marcellin"
+        "17 rue du mollard 38160 Saint Marcellin",
+        "56 rue de la république 69002 Lyon"
       ],
       "title": "L'adresse du service"
     },
     "code_insee": {
-      "default": null,
-      "description": "[Deprecated]"
+      "anyOf": [
+        {
+          "maxLength": 5,
+          "minLength": 5,
+          "pattern": "^\\w{5}$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "description": "[Deprecated]",
+      "title": "Code Insee"
     },
     "code_postal": {
       "anyOf": [
@@ -820,7 +833,9 @@
   "required": [
     "structure_id",
     "source",
-    "nom"
+    "nom",
+    "code_insee",
+    "adresse"
   ],
   "title": "Service",
   "type": "object"

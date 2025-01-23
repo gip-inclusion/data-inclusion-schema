@@ -32,10 +32,11 @@ class Service(BaseModel):
         prise_rdv: Prise de rendez-vous
         frais: Frais
     """
+
     id: str = Field(
-        default='9fe85aab-bc7a-49c3-ab10-233b1c92379e',
-        title='Identifiant',
-        description='Identifiant unique du service.',
+        default="9fe85aab-bc7a-49c3-ab10-233b1c92379e",
+        title="Identifiant",
+        description="Identifiant unique du service.",
     )
     structure_id: str
     source: str
@@ -58,27 +59,19 @@ class Service(BaseModel):
     commune: Optional[str] = None
     code_postal: Optional[common.CodePostal] = None
     code_insee: Optional[common.CodeCommune] = Field(
-        description='[Deprecated]',
+        description="[Deprecated]",
     )
-    """code insee docstring."""
     adresse: Optional[str] = Field(
-        examples=['17 rue du mollard 38160 Saint Marcellin'],
-        title='L\'adresse du service',
-        description='[Deprecated] Adresse du service. Doit être renseignée si le service est diffusé.',
+        examples=[
+            "17 rue du mollard 38160 Saint Marcellin",
+            "56 rue de la république 69002 Lyon",
+        ],
+        title="L'adresse du service",
+        description="Adresse du service. Doit être renseignée si le service est diffusé.",
         json_schema_extra={
-            'deprecated': True,
-        }
+            "deprecated": True,
+        },
     )
-    """Adresse.
-
-    Long description.
-
-    Warning: Deprecated
-        Stop using this class.
-
-    Attributes:
-        attr: Some attribute.
-    """
     complement_adresse: Optional[str] = None
     longitude: Optional[float] = None
     latitude: Optional[float] = None

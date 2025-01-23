@@ -1,0 +1,66 @@
+Test {{ model.properties.adresse.title }}
+{% for property_name, property in model.properties.items() %}
+## **:material-hand-pointing-right: {{ property_name }}**
+    {%- if property_name in model.required %}
+:green_circle: {++Requis++}
+    {% endif %}
+    {%- if property.deprecated %}
+???+ warning "Deprecated"
+    Ce champs est deprecie. Cf le change log pour plus d'information.
+    {%- endif %}
+Type:{%- for field_type, fields_info in field_types[property_name].items() %}
+    {%- if "enum" in fields_info %}
+        {%- for value in fields_info['enum'] %}
+            {%- if loop.first %}
+`{{ field_type }}`
+
+| format   | pattern                                                                             |
+| :------: | :---------------------------------------------------------------------------------: |
+| `enum`   | None                                                                                |
+??? abstract "Valeurs possibles"
+                                                                                                {# | Valeurs possibles                                                                              |
+| :--------------------------------------------------------------------------------------------: | #}
+            {%- endif %}
+    `{{ value }}`
+                                                                        {# {% set count_letter = value | length %}{% set spaces = 93 - count_letter %}| `{{ value }}`{{ ' ' * spaces }}| #}
+        {%- endfor %}
+    {%- else %} `{{ field_type }}`
+        {%- if "format" in fields_info or "pattern" in fields_info %}
+
+| format         | pattern                                                                       |
+| :------------: | :---------------------------------------------------------------------------: |
+            {%- if "format" in fields_info %}
+{%- set formats = fields_info["format"]|join("`, `") %}
+{%- set count_letter = formats | length %}
+{%- set spaces = 11 - count_letter %}
+| `{{ formats }}`{{ ' ' * spaces }}|
+            {%- else %}
+| None           |
+            {%- endif %}
+            {%- if "pattern" in fields_info %}
+{%- set patterns = fields_info["pattern"]|join("`, `") %}
+{%- set count_letter = patterns | length %}
+{%- set spaces = 73 - count_letter %} `{{ patterns }}`{{ ' ' * spaces }}|
+            {%- else %}None{{ ' ' * 70 }}|
+            {%- endif %}
+        {%- endif %}
+    {%- endif %}
+{% endfor %}
+{% if property.default %}
+Default: `{{ property.default }}`
+{% endif %}
+{% if property.title %}
+Titre: {{ property.title }}
+{% endif %}
+{% if property.description %}
+Description: {{ property.description }}
+{% endif %}
+{% if property.examples %}
+Examples:
+    {% for example in property.examples %}
+```
+{{ example }}
+```
+    {% endfor %}
+{% endif %}
+{% endfor %}
