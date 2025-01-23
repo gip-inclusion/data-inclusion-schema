@@ -1,7 +1,7 @@
 from data_inclusion.schema.base import EnhancedEnum
 
 
-class Typologie(EnhancedEnum):
+class TypologieStructure(EnhancedEnum):
     ACI = (
         "ACI",
         "Structures porteuses d’ateliers et chantiers d’insertion (ACI)",
