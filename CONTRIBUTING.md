@@ -2,11 +2,7 @@
 
 ## Prérequis
 
-### `python`
-
-Le projet utilise `python3.10`.
-
-[`pyenv`](https://github.com/pyenv/pyenv-installer) est un bon moyen d'installer python localement.
+* `uv` : pour la gestion de l'environnement python, les dépendances, le build. Voir [les instructions d'installation](https://docs.astral.sh/uv/getting-started/installation/#standalone-installer).
 
 ## Installation
 
@@ -14,11 +10,11 @@ Le projet utilise `python3.10`.
 # Cloner le dépôt
 git clone git@github.com:gip-inclusion/data-inclusion-schema.git
 
-# Initialiser un virtual env à la racine du repo
-python3.10 -m venv .venv && source .venv/bin/activate && pip install -U pip setuptools wheel && pip install -e '.[dev]'
+# Initialiser l'environnement
+uv sync
 
 # Installer les outils de qualité de codes
-pre-commit install
+uv run pre-commit install
 ```
 
 ## Proposer une modification
@@ -54,21 +50,21 @@ src/
 
 ### 2. Regénérer le json schéma
 
-Lancer la commande suivante à la racine du repo.
+Lancer la commande suivante à la racine du repo :
 
 ```bash
-data-inclusion-schema
+uv run data-inclusion-schema
 ```
 
 ### 3. Ouvrir une PR avec les changements
 
-Ajouter ses modifications au [CHANGELOG](CHANGELOG.md) dans la partie a venir
+Ajouter ses modifications au [CHANGELOG](CHANGELOG.md) dans la section "à venir".
 
 
 ## Faire une release
 
 1. Sur une PR:
-    - modif du numéro de version du package sur [pyproject.toml](pyproject.toml) et [schemas.yml](schemas.yml)
+    - modif du numéro de version du package sur [pyproject.toml](pyproject.toml)
     - Passer les changements de ## À venir dans la section de la nouvelle release
 2. `git tag {my-tag} & git tag -f latest & git push --tags`
 3. release sur git hub en pointant sur le tag

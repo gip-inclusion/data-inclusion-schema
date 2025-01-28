@@ -1,8 +1,9 @@
 [build-system]
-requires = ["flit_core >=3.2,<4"]
+requires = ["flit_core>=3.2,<4"]
 build-backend = "flit_core.buildapi"
 
 [project]
+requires-python = ">=3.10"
 name = "data-inclusion-schema"
 version = "0.20.0"
 description = "Schéma de l'offre d'insertion"
@@ -24,14 +25,14 @@ Home = "https://data.inclusion.gouv.fr"
 Documentation = "https://data.inclusion.gouv.fr/schemas-de-donnees-de-loffre/schema-des-structures-et-services-dinsertion"
 Source = "https://github.com/gip-inclusion/data-inclusion-schema"
 
-[project.optional-dependencies]
+[dependency-groups]
 dev = [
-    "pre-commit~=2.20",
-    "ruff~=0.2",
+    "pre-commit>=2.21.0",
+    "ruff>=0.9.3",
 ]
 test = [
-    "pytest~=8.3",
-    "freezegun~=1.5",
+    "pytest>=8.3.4",
+    "freezegun>=1.5.1",
 ]
 
 [project.scripts]
@@ -57,4 +58,5 @@ combine-as-imports = true
 known-first-party = ["data_inclusion"]
 
 [tool.flit.module]
+# this is the import name
 name = "data_inclusion.schema"
