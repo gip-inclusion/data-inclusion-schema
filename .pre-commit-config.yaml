@@ -1,13 +1,17 @@
 repos:
 - repo: https://github.com/astral-sh/ruff-pre-commit
-  rev: v0.2.2
+  rev: v0.9.3
   hooks:
     - id: ruff
     - id: ruff-format
+- repo: https://github.com/astral-sh/uv-pre-commit
+  rev: 0.5.24
+  hooks:
+    - id: uv-lock
 - repo: local
   hooks:
     - id: compile-schema
       name: compile-schema
-      language: python
-      entry: data-inclusion-schema
+      language: system
+      entry: uv run data-inclusion-schema
       always_run: true
