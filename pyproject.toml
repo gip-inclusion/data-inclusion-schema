@@ -22,7 +22,6 @@ dependencies = [
 
 [project.urls]
 Home = "https://data.inclusion.gouv.fr"
-Documentation = "https://data.inclusion.gouv.fr/schemas-de-donnees-de-loffre/schema-des-structures-et-services-dinsertion"
 Source = "https://github.com/gip-inclusion/data-inclusion-schema"
 
 [dependency-groups]
