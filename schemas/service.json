@@ -11,6 +11,14 @@
       "title": "Frais",
       "type": "string"
     },
+    "MobilisablePar": {
+      "enum": [
+        "usagers",
+        "professionnels"
+      ],
+      "title": "MobilisablePar",
+      "type": "string"
+    },
     "ModeAccueil": {
       "enum": [
         "a-distance",
@@ -521,6 +529,30 @@
       ],
       "default": null,
       "title": "Longitude"
+    },
+    "mobilisable_par": {
+      "default": [
+        "professionnels"
+      ],
+      "description": "Indique qui peut mobiliser le service: professionnels, usagers ou les deux.",
+      "examples": [
+        [
+          "professionnels"
+        ],
+        [
+          "usagers"
+        ],
+        [
+          "professionnels",
+          "usagers"
+        ]
+      ],
+      "items": {
+        "$ref": "#/$defs/MobilisablePar"
+      },
+      "title": "Mobilisable Par",
+      "type": "array",
+      "uniqueItems": true
     },
     "modes_accueil": {
       "anyOf": [

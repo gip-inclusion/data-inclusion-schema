@@ -5,6 +5,7 @@
 ### Ajouts
 
 ### Changements
+* ajout du champs mobilisable_par
 
 ### Dépréciations
 

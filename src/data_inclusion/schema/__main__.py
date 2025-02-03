@@ -4,6 +4,7 @@ import pathlib
 from data_inclusion.schema import (
     Frais,
     LabelNational,
+    MobilisablePar,
     ModeAccueil,
     ModeOrientationAccompagnateur,
     ModeOrientationBeneficiaire,
@@ -51,6 +52,7 @@ def main():
         ("modes-accueil.json", ModeAccueil),
         ("modes-orientation-accompagnateur.json", ModeOrientationAccompagnateur),
         ("modes-orientation-beneficiaire.json", ModeOrientationBeneficiaire),
+        ("mobilisable-par.json", MobilisablePar),
         ("profils.json", Profil),
         ("thematiques.json", Thematique),
         ("typologies-de-services.json", TypologieService),
