@@ -1,0 +1,12 @@
+[
+  {
+    "description": "Service mobilisable par les professionnels",
+    "label": "Professionnels",
+    "value": "professionnels"
+  },
+  {
+    "description": "Service mobilisable par les usagers",
+    "label": "Usagers",
+    "value": "usagers"
+  }
+]
