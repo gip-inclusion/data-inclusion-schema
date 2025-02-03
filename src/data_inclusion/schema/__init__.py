@@ -10,6 +10,7 @@ from data_inclusion.schema.common import (
 )
 from data_inclusion.schema.frais import Frais
 from data_inclusion.schema.labels_nationaux import LabelNational
+from data_inclusion.schema.mobilisable_par import MobilisablePar
 from data_inclusion.schema.modes_accueil import ModeAccueil
 from data_inclusion.schema.modes_orientation import (
     ModeOrientationAccompagnateur,
@@ -37,6 +38,7 @@ __all__ = [
     "ModeAccueil",
     "ModeOrientationAccompagnateur",
     "ModeOrientationBeneficiaire",
+    "MobilisablePar",
     "Profil",
     "Service",
     "Structure",
