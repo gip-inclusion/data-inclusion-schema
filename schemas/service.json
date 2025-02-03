@@ -11,6 +11,14 @@
       "title": "Frais",
       "type": "string"
     },
+    "MobilisablePar": {
+      "enum": [
+        "usagers",
+        "professionnels"
+      ],
+      "title": "MobilisablePar",
+      "type": "string"
+    },
     "ModeAccueil": {
       "enum": [
         "a-distance",
@@ -521,6 +529,17 @@
       ],
       "default": null,
       "title": "Longitude"
+    },
+    "mobilisable_par": {
+      "default": [
+        "professionnels"
+      ],
+      "items": {
+        "$ref": "#/$defs/MobilisablePar"
+      },
+      "title": "Mobilisable Par",
+      "type": "array",
+      "uniqueItems": true
     },
     "modes_accueil": {
       "anyOf": [

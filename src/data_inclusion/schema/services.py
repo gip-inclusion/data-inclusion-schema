@@ -6,6 +6,7 @@ from pydantic import EmailStr, HttpUrl, StringConstraints
 from data_inclusion.schema import common
 from data_inclusion.schema.base import BaseModel, Field
 from data_inclusion.schema.frais import Frais
+from data_inclusion.schema.mobilisable_par import MobilisablePar
 from data_inclusion.schema.modes_accueil import ModeAccueil
 from data_inclusion.schema.modes_orientation import (
     ModeOrientationAccompagnateur,
@@ -23,9 +24,9 @@ class Service(BaseModel):
     structure_id: str
     source: str
     nom: str
-    presentation_resume: Optional[
-        Annotated[str, StringConstraints(max_length=280)]
-    ] = None
+    presentation_resume: Optional[Annotated[str, StringConstraints(max_length=280)]] = (
+        None
+    )
     presentation_detail: Optional[str] = None
     types: Optional[set[TypologieService]] = None
     thematiques: Optional[set[Thematique]] = None
@@ -78,7 +79,8 @@ class Service(BaseModel):
     ] = None
     modes_orientation_beneficiaire: Optional[set[ModeOrientationBeneficiaire]] = None
     modes_orientation_beneficiaire_autres: Optional[str] = None
-    modes_orientation_accompagnateur: Optional[
-        set[ModeOrientationAccompagnateur]
-    ] = None
+    modes_orientation_accompagnateur: Optional[set[ModeOrientationAccompagnateur]] = (
+        None
+    )
     modes_orientation_accompagnateur_autres: Optional[str] = None
+    mobilisable_par: set[MobilisablePar] = [MobilisablePar.PROFESSIONNELS]
