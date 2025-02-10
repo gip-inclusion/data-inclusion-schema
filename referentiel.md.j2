@@ -1,0 +1,5 @@
+| Nom | Label | Description |
+| :- | :- | :- |
+{%- for referentiel_item in referentiel %}
+| `{{ referentiel_item.value }}` | {{ referentiel_item.label }} | {{ referentiel_item.description|default('-', boolean=True) }} |
+{%- endfor %}
