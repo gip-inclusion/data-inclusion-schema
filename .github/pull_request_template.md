@@ -9,7 +9,7 @@
 * [ ] Je n'utilise pas l'anglais dans le schéma, la documentation, les commentaires, les messages de commits,
 les PRs
   * anglais ok pour le nommage des variables, etc.
-* Je respecte les règles de français dans le schéma et la documentation :
+* Je respecte les règles de français dans le schéma et la documentation (non dans le code):
   * [ ] espace avant les deux-points `:`
   * [ ] apostrophe typographique `’` et non `'`
   * [ ] accentuation
