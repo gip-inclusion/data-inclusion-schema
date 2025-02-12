@@ -5,6 +5,8 @@
 ### Ajouts
 
 ### Changements
+* renommage de certains critères du score de qualité
+* modification du fonctionnement de certains critères du score de qualité
 
 ### Dépréciations
 
