@@ -17,7 +17,9 @@ from data_inclusion.schema import (
 
 
 def service_factory(**kwargs):
-    return Service(id="1", structure_id="2", source="3", nom="foo", **kwargs)
+    if "source" not in kwargs:
+        kwargs["source"] = "3"
+    return Service(id="1", structure_id="2", nom="foo", **kwargs)
 
 
 @pytest.mark.parametrize(
@@ -197,7 +199,17 @@ def test_critere_courriel_bien_defini(service: Service, attendu: float):
 def test_critere_date_maj_recente(age: pendulum.Duration, attendu: float):
     service = service_factory(date_maj=pendulum.today() - age)
 
-    assert abs(score_qualite.date_maj_recente(service) - attendu) < 0.01
+    assert score_qualite.date_maj_recente(service) == pytest.approx(attendu, rel=0.01)
+
+
+@freeze_time("2024-01-01")
+def test_critere_date_maj_recente_sources():
+    service = service_factory(date_maj="2021-01-01", source="agefiph")
+    assert score_qualite.date_maj_recente(service) is None
+    service.source = "france-travail"
+    assert score_qualite.date_maj_recente(service) is None
+    service.source = "foobar"
+    assert score_qualite.date_maj_recente(service) == pytest.approx(0.0)
 
 
 @pytest.mark.parametrize(
@@ -225,7 +237,7 @@ def test_critere_au_moins_une_thematique(thematiques: list[Thematique], attendu:
 def test_critere_au_moins_un_profil(profils: list[Profil], attendu: float):
     service = service_factory(profils=profils)
 
-    assert score_qualite.au_moins_un_profil(service) == attendu
+    assert score_qualite.au_moins_un_public(service) == attendu
 
 
 @pytest.mark.parametrize(
@@ -290,58 +302,74 @@ def test_critere_au_moins_un_mode_orientation(service: Service, attendu: float):
     [
         pytest.param(
             service_factory(
-                telephone=None,
                 courriel=None,
+                formulaire_en_ligne=None,
+                page_web=None,
                 prise_rdv=None,
-                adresse=None,
+                telephone=None,
             ),
             0.0,
             id="aucunes_coordonnees",
         ),
         pytest.param(
             service_factory(
-                telephone="3615",
                 courriel=None,
+                formulaire_en_ligne=None,
+                page_web=None,
                 prise_rdv=None,
-                adresse=None,
+                telephone="3615",
             ),
             1.0,
             id="telephone_defini",
         ),
         pytest.param(
             service_factory(
-                telephone=None,
                 courriel="lorem@ipsum.dolor",
+                formulaire_en_ligne=None,
+                page_web=None,
                 prise_rdv=None,
-                adresse=None,
+                telephone=None,
             ),
             1.0,
             id="courriel_defini",
         ),
         pytest.param(
             service_factory(
-                telephone=None,
                 courriel=None,
+                formulaire_en_ligne=None,
+                page_web=None,
                 prise_rdv="https://foo.bar",
-                adresse=None,
+                telephone=None,
             ),
             1.0,
             id="prise_rdv_defini",
         ),
         pytest.param(
             service_factory(
-                telephone=None,
                 courriel=None,
+                formulaire_en_ligne="https://foo.bar",
+                page_web=None,
                 prise_rdv=None,
-                adresse="1 rue de la paix",
+                telephone=None,
             ),
             1.0,
-            id="adresse_definie",
+            id="formulaire_en_ligne_defini",
+        ),
+        pytest.param(
+            service_factory(
+                courriel=None,
+                formulaire_en_ligne=None,
+                page_web="https://foo.bar",
+                prise_rdv=None,
+                telephone=None,
+            ),
+            1.0,
+            id="page_web_defini",
         ),
     ],
 )
-def test_critere_coordonnees_de_contact_bien_definies(service: Service, attendu: float):
-    assert score_qualite.coordonnees_de_contact_bien_definies(service) == attendu
+def test_critere_au_moins_un_moyen_de_contact(service: Service, attendu: float):
+    assert score_qualite.au_moins_un_moyen_de_contact(service) == attendu
 
 
 @pytest.mark.parametrize(
@@ -361,7 +389,7 @@ def test_critere_coordonnees_de_contact_bien_definies(service: Service, attendu:
                 presentation_detail=None,
             ),
             0.0,
-            id="presentation_bien_trop_courte",
+            id="description_bien_trop_courte",
         ),
         pytest.param(
             service_factory(
@@ -381,8 +409,8 @@ def test_critere_coordonnees_de_contact_bien_definies(service: Service, attendu:
         ),
     ],
 )
-def test_critere_presentation_bien_definie(service: Service, attendu: float):
-    assert score_qualite.presentation_bien_definie(service) == attendu
+def test_critere_description_bien_definie(service: Service, attendu: float):
+    assert score_qualite.description_bien_definie(service) == attendu
 
 
 @pytest.mark.parametrize(
@@ -484,12 +512,12 @@ def test_score(service: Service, attendu: float):
         "adresse_bien_definie": ANY,
         "au_moins_un_frais": ANY,
         "au_moins_un_mode_orientation": ANY,
-        "au_moins_un_profil": ANY,
+        "au_moins_un_moyen_de_contact": ANY,
+        "au_moins_un_public": ANY,
         "au_moins_une_thematique": ANY,
-        "frais_bien_definis": ANY,
-        "presentation_bien_definie": ANY,
-        "coordonnees_de_contact_bien_definies": ANY,
         "courriel_bien_defini": ANY,
         "date_maj_recente": ANY,
+        "description_bien_definie": ANY,
+        "frais_bien_definis": ANY,
         "telephone_bien_defini": ANY,
     }
