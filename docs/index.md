@@ -1,4 +1,4 @@
-Cette documentation dépôt contient le schéma de l'offre d'insertion. Il comprend deux éléments principaux:
+Cette documentation dépôt contient le schéma de l’offre d’insertion. Il comprend deux éléments principaux :
 
 - [Structure](structure.md)
 - [Service](service.md)
