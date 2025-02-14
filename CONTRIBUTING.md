@@ -2,7 +2,7 @@
 
 ## Prérequis
 
-* `uv` : pour la gestion de l'environnement python, les dépendances, le build. Voir [les instructions d'installation](https://docs.astral.sh/uv/getting-started/installation/#standalone-installer).
+* `uv` : pour la gestion de l’environnement python, les dépendances, le build. Voir [les instructions d’installation](https://docs.astral.sh/uv/getting-started/installation/#standalone-installer).
 
 ## Installation
 
@@ -10,7 +10,7 @@
 # Cloner le dépôt
 git clone git@github.com:gip-inclusion/data-inclusion-schema.git
 
-# Initialiser l'environnement
+# Initialiser l’environnement
 uv sync
 
 # Installer les outils de qualité de codes
@@ -72,6 +72,6 @@ Ajouter ses modifications au [CHANGELOG](CHANGELOG.md) dans la section "à venir
 1. Sur une PR:
     - Modif du numéro de version du package sur [pyproject.toml](pyproject.toml)
     - Passer les changements de ## À venir dans la section de la nouvelle release
-2. La doc est mise a jour automatiquement depuis le json schema lors d'un merge sur la branch release. Si ajout d'un referentiel de plus de 5 items, il faut ajouter une ligne referencant la page de doc mkdocs.yml
+2. La doc est mise a jour automatiquement depuis le json schema lors d’un merge sur la branch release. Si ajout d’un referentiel de plus de 5 items, il faut ajouter une ligne referencant la page de doc mkdocs.yml
 2. `git tag {my-tag} & git tag -f latest & git push --tags`
 3. release sur git hub en pointant sur le tag

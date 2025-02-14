@@ -43,7 +43,6 @@ def json_dump(obj, file):
 
 
 def main():
-    # 1. schéma
     SCHEMAS_DIR.mkdir(exist_ok=True)
     (SCHEMAS_DIR / "extra").mkdir(exist_ok=True)
 

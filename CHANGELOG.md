@@ -43,26 +43,26 @@
 
 ### Ajouts
 
-* ajout du mode d'orientation `prendre-rdv` (accompagnateur & beneficiaire)
+* ajout du mode d’orientation `prendre-rdv` (accompagnateur & beneficiaire)
 * ajout de nouveaux profils (`etudiants`, `personnes-de-nationalite-etrangere`, `sans-domicile-fixe`, `sortants-de-detention`, `victimes`)
 * ajout de nouvelles thématiques (`equipement-et-alimentation--aide-menagere`, `handicap--aide-a-la-personne`)
-* description des modes d'accueil par @acaldagues
+* description des modes d’accueil par @acaldagues
 
 ### Suppressions
 
 * retrait du label `pole-emploi` après 6 mois de dépréciation.
 * retrait de la typologie `PE` après 6 mois de dépréciation.
-* suppression du mode d'orientation accompagnateur `envoyer-un-mail-avec-des-documents-a-completer`
+* suppression du mode d’orientation accompagnateur `envoyer-un-mail-avec-des-documents-a-completer`
 
 ## 0.15.0 - 2024-06-10
 
 ### Ajouts
 
-* ajouts de types de structures liées à l'inclusion numérique par @marc-gavanier
+* ajouts de types de structures liées à l’inclusion numérique par @marc-gavanier
 * nouveau champ `page_web` sur le schéma service
-* nouvelles thématiques liées au logement et à l'hébergement pour action logement
+* nouvelles thématiques liées au logement et à l’hébergement pour action logement
 * ajouts de nouveaux profils
-* description des modes d'orientation par @acaldagues
+* description des modes d’orientation par @acaldagues
 
 ### Changements
 
@@ -76,7 +76,7 @@
 * schéma structure :
   * `commune`, `adresse` et `code_postal` deviennent optionnels
   * `source` devient obligatoire
-  * `antenne` n'est plus défini par défaut
+  * `antenne` n’est plus défini par défaut
 * schéma service :
   * `structure_id` devient obligatoire
 
@@ -85,14 +85,14 @@
 ### Ajouts
 
 * Ajout de la typologie `FT`
-  * La typologie `PE` reste disponible pour d'éventuelles questions de rétrocompatibilité.
+  * La typologie `PE` reste disponible pour d’éventuelles questions de rétrocompatibilité.
 
 ## 0.13.0 - 2024-01-15
 
 ### Ajouts
 
 * Ajout du label national `france-travail`
-  * Le label `pole-emploi` reste disponible pour d'éventuelles questions de rétrocompatibilité.
+  * Le label `pole-emploi` reste disponible pour d’éventuelles questions de rétrocompatibilité.
 
 ## 0.12.0 - 2023-11-29
 
@@ -148,11 +148,11 @@
     * `modes_orientation_beneficiaire`
     * `modes_orientation_accompagnateur`
 * typologies de structures :
-  * ajout des [crèches à vocation d'insertion professionnelle (AVIP)](https://www.caf.fr/partenaires/caf-du-val-d-oise/partenaires-locaux/actualites/mieux-connaitre-le-dispositif-des-creches-avip) (`AVIP`)
+  * ajout des [crèches à vocation d’insertion professionnelle (AVIP)](https://www.caf.fr/partenaires/caf-du-val-d-oise/partenaires-locaux/actualites/mieux-connaitre-le-dispositif-des-creches-avip) (`AVIP`)
 * thématiques :
   * ajout de la thématique "Aide aux victimes" (`acces-aux-droits-et-citoyennete--aide-aux-victimes`)
-  * ajout des thématiques liées à l'apprentissage du français (`apprendre-francais--*`)
-  * ajout des thématiques liées à l'illettrisme (`illettrisme--*`)
+  * ajout des thématiques liées à l’apprentissage du français (`apprendre-francais--*`)
+  * ajout des thématiques liées à l’illettrisme (`illettrisme--*`)
 * ajouts des types de zone de diffusion `pays` et `epci`
 
 ## 0.8.0 - 2023-03-08
@@ -173,7 +173,7 @@
 
 ### Changements
 
-* la présence d'au moins une donnée pivot est désormais optionnelle
+* la présence d’au moins une donnée pivot est désormais optionnelle
 
 ## 0.6.0 - 2022-11-28
 

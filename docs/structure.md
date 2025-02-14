@@ -19,10 +19,7 @@ Type : `string`
 
 
 
-
-
 ---
-
 
 ### `siret`
 
@@ -41,10 +38,7 @@ Regex : `^\d{14}$`
 
 
 
-
-
 ---
-
 
 ### `rna`
 
@@ -63,10 +57,7 @@ Regex : `^W\d{9}$`
 
 
 
-
-
 ---
-
 
 ### `nom` *
 
@@ -85,10 +76,7 @@ Type : `string`
 
 
 
-
-
 ---
-
 
 ### `commune`
 
@@ -107,10 +95,7 @@ Type : `string`
 
 
 
-
-
 ---
-
 
 ### `code_postal`
 
@@ -129,10 +114,7 @@ Regex : `^\d{5}$`
 
 
 
-
-
 ---
-
 
 ### `code_insee`
 
@@ -151,10 +133,7 @@ Regex : `^\w{5}$`
 
 
 
-
-
 ---
-
 
 ### `adresse`
 
@@ -173,10 +152,7 @@ Type : `string`
 
 
 
-
-
 ---
-
 
 ### `complement_adresse`
 
@@ -195,10 +171,7 @@ Type : `string`
 
 
 
-
-
 ---
-
 
 ### `longitude`
 
@@ -217,10 +190,7 @@ Type : `number`
 
 
 
-
-
 ---
-
 
 ### `latitude`
 
@@ -239,10 +209,7 @@ Type : `number`
 
 
 
-
-
 ---
-
 
 ### `typologie`
 
@@ -266,10 +233,7 @@ Valeurs acceptées : voir le [référentiel associé](referentiels/typologies_de
 
 
 
-
-
 ---
-
 
 ### `telephone`
 
@@ -288,10 +252,7 @@ Type : `string`
 
 
 
-
-
 ---
-
 
 ### `courriel`
 
@@ -310,10 +271,7 @@ Format : `email`
 
 
 
-
-
 ---
-
 
 ### `site_web`
 
@@ -332,10 +290,7 @@ Format : `uri`
 
 
 
-
-
 ---
-
 
 ### `presentation_resume`
 
@@ -354,10 +309,7 @@ Type : `string`
 
 
 
-
-
 ---
-
 
 ### `presentation_detail`
 
@@ -376,10 +328,7 @@ Type : `string`
 
 
 
-
-
 ---
-
 
 ### `source` *
 
@@ -398,10 +347,7 @@ Type : `string`
 
 
 
-
-
 ---
-
 
 ### `date_maj` *
 
@@ -420,10 +366,7 @@ Format : `date | date-time`
 
 
 
-
-
 ---
-
 
 ### `antenne`
 
@@ -442,10 +385,7 @@ Type : `boolean`
 
 
 
-
-
 ---
-
 
 ### `lien_source`
 
@@ -464,10 +404,7 @@ Format : `uri`
 
 
 
-
-
 ---
-
 
 ### `horaires_ouverture`
 
@@ -486,10 +423,7 @@ Type : `string`
 
 
 
-
-
 ---
-
 
 ### `accessibilite`
 
@@ -508,10 +442,7 @@ Format : `uri`
 
 
 
-
-
 ---
-
 
 ### `labels_nationaux`
 
@@ -535,10 +466,7 @@ Valeurs acceptées : voir le [référentiel associé](referentiels/labels_nation
 
 
 
-
-
 ---
-
 
 ### `labels_autres`
 
@@ -557,10 +485,7 @@ Type : `array`
 
 
 
-
-
 ---
-
 
 ### `thematiques`
 
@@ -580,8 +505,6 @@ Type : `array[string]`
 
 
 Valeurs acceptées : voir le [référentiel associé](referentiels/thematiques.md)
-
-
 
 
 

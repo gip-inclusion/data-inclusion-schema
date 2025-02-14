@@ -25,17 +25,17 @@ Source = "https://github.com/gip-inclusion/data-inclusion-schema"
 
 [dependency-groups]
 dev = [
-    "pre-commit>=2.21.0",
-    "ruff>=0.9.3",
+    "pre-commit",
+    "ruff",
 ]
 test = [
-    "pytest>=8.3.4",
-    "freezegun>=1.5.1",
+    "pytest",
+    "freezegun",
 ]
 docs = [
-    "jinja2~=3.0",
-    "mkdocs~=1.6",
-    "mkdocs-material~=9.6",
+    "jinja2",
+    "mkdocs",
+    "mkdocs-material",
 ]
 
 [tool.ruff.lint]

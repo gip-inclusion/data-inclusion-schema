@@ -111,6 +111,7 @@ def main():
                 jinja2.Template(
                     open(DOCS_DIR / "model.md.j2").read(),
                     autoescape=True,
+                    keep_trailing_newline=True,
                 ).render(
                     schema=model.model_json_schema(),
                     get_property_type_data=get_property_type_data,
@@ -131,6 +132,7 @@ def main():
                 jinja2.Template(
                     referentiel_template,
                     autoescape=True,
+                    keep_trailing_newline=True,
                 ).render(
                     referentiel=enum.as_dict_list(),
                 )
