@@ -69,9 +69,12 @@ def au_moins_un_mode_orientation(service: Service) -> float:
     )
 
 
-def date_maj_recente(service: Service) -> float:
+def date_maj_recente(service: Service) -> float | None:
     SIX_MOIS = pendulum.duration(months=6)
     DEUX_ANS = pendulum.duration(years=2)
+
+    if service.source in ["agefiph", "france-travail"]:
+        return None
 
     if service.date_maj is None:
         return 0.0
@@ -91,7 +94,7 @@ def au_moins_une_thematique(service: Service) -> float:
     return 1.0 if service.thematiques else 0.0
 
 
-def au_moins_un_profil(service: Service) -> float:
+def au_moins_un_public(service: Service) -> float:
     return 1.0 if service.profils else 0.0
 
 
@@ -99,15 +102,23 @@ def au_moins_un_frais(service: Service) -> float:
     return 1.0 if service.frais else 0.0
 
 
-def coordonnees_de_contact_bien_definies(service: Service) -> float:
+def au_moins_un_moyen_de_contact(service: Service) -> float:
     return (
         1.0
-        if service.telephone or service.courriel or service.adresse or service.prise_rdv
+        if any(
+            (
+                service.courriel,
+                service.formulaire_en_ligne,
+                service.page_web,
+                service.prise_rdv,
+                service.telephone,
+            )
+        )
         else 0.0
     )
 
 
-def presentation_bien_definie(service: Service) -> float:
+def description_bien_definie(service: Service) -> float:
     SEUIL_MINIMUM = 200
     SEUIL_BON = 400
 
@@ -150,13 +161,13 @@ CRITERES: list[CritereFn] = [
     adresse_bien_definie,
     au_moins_un_frais,
     au_moins_un_mode_orientation,
-    au_moins_un_profil,
+    au_moins_un_public,
     au_moins_une_thematique,
-    coordonnees_de_contact_bien_definies,
+    au_moins_un_moyen_de_contact,
     courriel_bien_defini,
     date_maj_recente,
     frais_bien_definis,
-    presentation_bien_definie,
+    description_bien_definie,
     telephone_bien_defini,
 ]
 
