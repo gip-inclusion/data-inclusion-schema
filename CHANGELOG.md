@@ -5,14 +5,21 @@
 ### Ajouts
 
 ### Changements
-* renommage de certains critères du score de qualité
-* modification du fonctionnement de certains critères du score de qualité
 
 ### Dépréciations
 
 ### Suppressions
 
+
+## 0.21.0 - 2025-02-27
+
+### Changements
+* renommage de certains critères du score de qualité
+* modification du fonctionnement de certains critères du score de qualité
+
+
 ## 0.20.0 - 2025-01-08
+
 ### Ajouts
 * ajout de champs profils_precisions
 * ajout profils tout-publics et personnes-en-situation-durgence
