@@ -5,6 +5,7 @@
 ### Ajouts
 
 ### Changements
+* documentation des champs courriel (Service & Structures)
 
 ### Dépréciations
 

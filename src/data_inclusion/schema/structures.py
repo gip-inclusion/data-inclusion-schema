@@ -4,7 +4,7 @@ from typing import Annotated, Optional
 from pydantic import EmailStr, HttpUrl, StringConstraints
 
 from data_inclusion.schema import common
-from data_inclusion.schema.base import BaseModel
+from data_inclusion.schema.base import BaseModel, Field
 from data_inclusion.schema.labels_nationaux import LabelNational
 from data_inclusion.schema.thematiques import Thematique
 from data_inclusion.schema.typologies_de_structures import TypologieStructure
@@ -25,7 +25,20 @@ class Structure(BaseModel):
     latitude: Optional[float] = None
     typologie: Optional[TypologieStructure] = None
     telephone: Optional[str] = None
-    courriel: Optional[EmailStr] = None
+    courriel: Annotated[
+        Optional[EmailStr],
+        Field(
+            description=(
+                "Courriel à utiliser pour obtenir des informations complémentaires sur "
+                "la structure."
+            ),
+            examples=["exemple@inclusion.gouv.fr"],
+            validation=(
+                "Doit suivre le format de la RFC 5322.\n"
+                "Si non conforme ou destinataire inexistant, suppression de la valeur."
+            ),
+        ),
+    ] = None
     site_web: Optional[HttpUrl] = None
     presentation_resume: Optional[Annotated[str, StringConstraints(max_length=280)]] = (
         None

@@ -575,7 +575,7 @@ Type : `string`
 
 ### `Courriel`
 
-
+Courriel à utiliser pour obtenir des informations complémentaires sur le service. Si le mode de mobilisation est `envoyer-un-email`, à utiliser pour mobiliser le service.
 
 
 
@@ -589,6 +589,18 @@ Format : `email`
 
 
 
+
+Validation :
+Doit suivre le format de la RFC 5322.
+Vérification de l’existence du destinataire (envoi d’un courrier de notification)
+Si non conforme ou destinataire inexistant, suppression de la valeur.
+
+Exemples :
+
+```json
+"exemple@inclusion.gouv.fr"
+
+```
 
 ---
 

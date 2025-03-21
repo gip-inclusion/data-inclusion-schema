@@ -256,7 +256,7 @@ Type : `string`
 
 ### `Courriel`
 
-
+Courriel à utiliser pour obtenir des informations complémentaires sur la structure.
 
 
 
@@ -270,6 +270,17 @@ Format : `email`
 
 
 
+
+Validation :
+Doit suivre le format de la RFC 5322.
+Si non conforme ou destinataire inexistant, suppression de la valeur.
+
+Exemples :
+
+```json
+"exemple@inclusion.gouv.fr"
+
+```
 
 ---
 

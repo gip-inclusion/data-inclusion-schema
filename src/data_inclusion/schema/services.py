@@ -50,7 +50,23 @@ class Service(BaseModel):
     date_suspension: Optional[date] = None
     lien_source: Optional[HttpUrl] = None
     telephone: Optional[str] = None
-    courriel: Optional[EmailStr] = None
+    courriel: Annotated[
+        Optional[EmailStr],
+        Field(
+            description=(
+                "Courriel à utiliser pour obtenir des informations complémentaires sur "
+                "le service.\nSi le mode de mobilisation est `envoyer-un-email`, à "
+                "utiliser pour mobiliser le service."
+            ),
+            examples=["exemple@inclusion.gouv.fr"],
+            validation=(
+                "Doit suivre le format de la RFC 5322.\n"
+                "Vérification de l’existence du destinataire (envoi d’un courrier "
+                "de notification)\n"
+                "Si non conforme ou destinataire inexistant, suppression de la valeur."
+            ),
+        ),
+    ] = None
     contact_public: Optional[bool] = None
     date_maj: Optional[date | datetime] = None
     modes_accueil: Optional[set[ModeAccueil]] = None
