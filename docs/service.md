@@ -1,4 +1,4 @@
-!!! info "Les champs marqués d'une astérisque (*) sont obligatoires."
+!!! info "Les champs marqués d’une astérisque (*) sont obligatoires."
 
 
 
