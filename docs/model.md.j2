@@ -1,8 +1,8 @@
-!!! info "Les champs marqués d'une astérisque (*) sont obligatoires."
+!!! info "Les champs marqués d’une astérisque (*) sont obligatoires."
 
 {% for property_name, property_schema in schema.properties.items() %}
 
-### `{{ property_name }}`{{ ' *' if property_name in schema.required }}
+### `{{ property_schema.title | default(property_name) }}`{{ ' *' if property_name in schema.required }}
 
 {{ property_schema.description|default('', boolean=True) }}
 
@@ -24,6 +24,11 @@ Valeurs acceptées : `"{{ referentiel.enum|join('", "') }}"`
 Valeurs acceptées : voir le [référentiel associé](referentiels/{{ enum_filenames_by_ref.get(property_type_data.referentiel) }}.md)
 {% endif %}
 {% endif %}
+
+{% if property_schema.validation %}
+Validation :
+{{ property_schema.validation }}
+{% endif -%}
 
 {% if property_schema.examples %}
 Exemples :

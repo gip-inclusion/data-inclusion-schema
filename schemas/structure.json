@@ -449,7 +449,12 @@
         }
       ],
       "default": null,
-      "title": "Courriel"
+      "description": "Courriel à utiliser pour obtenir des informations complémentaires sur la structure.",
+      "examples": [
+        "exemple@inclusion.gouv.fr"
+      ],
+      "title": "Courriel",
+      "validation": "Doit suivre le format de la RFC 5322.\nSi non conforme ou destinataire inexistant, suppression de la valeur."
     },
     "date_maj": {
       "anyOf": [
