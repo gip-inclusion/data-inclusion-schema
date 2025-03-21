@@ -593,7 +593,11 @@ Exemples :
 
 ### `courriel`
 
+Courriel à utiliser pour obtenir des informations complémentaires sur le service. Si le mode de mobilisation est `envoyer-un-email`, peut être utilisé pour mobiliser le service.
 
+Doit suivre le format de la RFC 5322. Vérification de l’existence du destinataire (envoi d’un courrier de notification)
+
+Si non conforme ou destinataire inexistant, suppression de la valeur.
 
 
 
@@ -607,6 +611,13 @@ Format : `email`
 
 
 
+
+Exemples :
+
+```json
+"exemple@inclusion.gouv.fr"
+
+```
 
 ---
 

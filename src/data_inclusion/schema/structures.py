@@ -52,7 +52,19 @@ class Structure(BaseModel):
             title="Téléphone",
         ),
     ]
-    courriel: Optional[EmailStr] = None
+    courriel: Annotated[
+        Optional[EmailStr],
+        Field(
+            description="""
+                Courriel à utiliser pour obtenir des informations complémentaires sur
+                la structure.
+
+                Doit suivre le format de la RFC 5322.
+            """,
+            default=None,
+            examples=["exemple@inclusion.gouv.fr"],
+        ),
+    ]
     site_web: Optional[HttpUrl] = None
     presentation_resume: Annotated[Optional[str], Field(max_length=280)] = None
     presentation_detail: Optional[str] = None
