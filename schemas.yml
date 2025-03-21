@@ -1,8 +1,8 @@
-title: Services de l'inclusion
-description: Services de l'inclusion
+title: Services de l’inclusion
+description: Services de l’inclusion
 homepage: https://github.com/gip-inclusion/data-inclusion-schema
 
 schemas:
   -
     path: "schemas/service.json"
-    title: "Services de l'inclusion"
+    title: "Services de l’inclusion"
