@@ -274,7 +274,9 @@ Exemples :
 
 ### `courriel`
 
+Courriel à utiliser pour obtenir des informations complémentaires sur la structure.
 
+Doit suivre le format de la RFC 5322.
 
 
 
@@ -288,6 +290,13 @@ Format : `email`
 
 
 
+
+Exemples :
+
+```json
+"exemple@inclusion.gouv.fr"
+
+```
 
 ---
 

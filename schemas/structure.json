@@ -449,6 +449,10 @@
         }
       ],
       "default": null,
+      "description": "Courriel à utiliser pour obtenir des informations complémentaires sur la structure.\n\nDoit suivre le format de la RFC 5322.",
+      "examples": [
+        "exemple@inclusion.gouv.fr"
+      ],
       "title": "Courriel"
     },
     "date_maj": {
