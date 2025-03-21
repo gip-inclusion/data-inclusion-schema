@@ -2,7 +2,7 @@
 
 
 
-### `id` *
+### `Id` *
 
 
 
@@ -21,7 +21,7 @@ Type : `string`
 
 ---
 
-### `structure_id` *
+### `Structure Id` *
 
 
 
@@ -40,7 +40,7 @@ Type : `string`
 
 ---
 
-### `source` *
+### `Source` *
 
 
 
@@ -59,7 +59,7 @@ Type : `string`
 
 ---
 
-### `nom` *
+### `Nom` *
 
 
 
@@ -78,7 +78,7 @@ Type : `string`
 
 ---
 
-### `presentation_resume`
+### `Presentation Resume`
 
 
 
@@ -97,7 +97,7 @@ Type : `string`
 
 ---
 
-### `presentation_detail`
+### `Presentation Detail`
 
 
 
@@ -116,7 +116,7 @@ Type : `string`
 
 ---
 
-### `types`
+### `Types`
 
 
 
@@ -140,7 +140,7 @@ Valeurs acceptées : voir le [référentiel associé](referentiels/typologies_de
 
 ---
 
-### `thematiques`
+### `Thematiques`
 
 
 
@@ -164,7 +164,7 @@ Valeurs acceptées : voir le [référentiel associé](referentiels/thematiques.m
 
 ---
 
-### `prise_rdv`
+### `Prise Rdv`
 
 
 
@@ -183,7 +183,7 @@ Format : `uri`
 
 ---
 
-### `frais`
+### `Frais`
 
 
 
@@ -207,7 +207,7 @@ Valeurs acceptées : `"gratuit&#34;, &#34;gratuit-sous-conditions&#34;, &#34;pay
 
 ---
 
-### `frais_autres`
+### `Frais Autres`
 
 
 
@@ -226,7 +226,7 @@ Type : `string`
 
 ---
 
-### `profils`
+### `Profils`
 
 
 
@@ -250,7 +250,7 @@ Valeurs acceptées : voir le [référentiel associé](referentiels/profils.md)
 
 ---
 
-### `profils_precisions`
+### `Profils Precisions`
 
 
 
@@ -269,7 +269,7 @@ Type : `string`
 
 ---
 
-### `pre_requis`
+### `Pre Requis`
 
 
 
@@ -288,7 +288,7 @@ Type : `array`
 
 ---
 
-### `cumulable`
+### `Cumulable`
 
 
 
@@ -307,7 +307,7 @@ Type : `boolean`
 
 ---
 
-### `justificatifs`
+### `Justificatifs`
 
 
 
@@ -326,7 +326,7 @@ Type : `array`
 
 ---
 
-### `formulaire_en_ligne`
+### `Formulaire En Ligne`
 
 
 
@@ -345,7 +345,7 @@ Format : `uri`
 
 ---
 
-### `commune`
+### `Commune`
 
 
 
@@ -364,7 +364,7 @@ Type : `string`
 
 ---
 
-### `code_postal`
+### `Code Postal`
 
 
 
@@ -383,7 +383,7 @@ Regex : `^\d{5}$`
 
 ---
 
-### `code_insee`
+### `Code Insee`
 
 
 
@@ -402,7 +402,7 @@ Regex : `^\w{5}$`
 
 ---
 
-### `adresse`
+### `Adresse`
 
 
 
@@ -421,7 +421,7 @@ Type : `string`
 
 ---
 
-### `complement_adresse`
+### `Complement Adresse`
 
 
 
@@ -440,7 +440,7 @@ Type : `string`
 
 ---
 
-### `longitude`
+### `Longitude`
 
 
 
@@ -459,7 +459,7 @@ Type : `number`
 
 ---
 
-### `latitude`
+### `Latitude`
 
 
 
@@ -478,7 +478,7 @@ Type : `number`
 
 ---
 
-### `recurrence`
+### `Recurrence`
 
 
 
@@ -497,26 +497,7 @@ Type : `string`
 
 ---
 
-### `date_creation`
-
-
-
-
-
-Type : `string`
-
-
-
-Format : `date`
-
-
-
-
-
-
----
-
-### `date_suspension`
+### `Date Creation`
 
 
 
@@ -535,7 +516,26 @@ Format : `date`
 
 ---
 
-### `lien_source`
+### `Date Suspension`
+
+
+
+
+
+Type : `string`
+
+
+
+Format : `date`
+
+
+
+
+
+
+---
+
+### `Lien Source`
 
 
 
@@ -554,7 +554,7 @@ Format : `uri`
 
 ---
 
-### `telephone`
+### `Telephone`
 
 
 
@@ -573,7 +573,7 @@ Type : `string`
 
 ---
 
-### `courriel`
+### `Courriel`
 
 
 
@@ -592,7 +592,7 @@ Format : `email`
 
 ---
 
-### `contact_public`
+### `Contact Public`
 
 
 
@@ -611,7 +611,7 @@ Type : `boolean`
 
 ---
 
-### `date_maj`
+### `Date Maj`
 
 
 
@@ -630,7 +630,7 @@ Format : `date | date-time`
 
 ---
 
-### `modes_accueil`
+### `Modes Accueil`
 
 
 
@@ -678,7 +678,7 @@ Valeurs acceptées : `"commune&#34;, &#34;epci&#34;, &#34;region&#34;, &#34;depa
 
 ---
 
-### `zone_diffusion_code`
+### `Zone Diffusion Code`
 
 
 
@@ -697,7 +697,7 @@ Regex : `^\d{2}$ | ^\d{9}$ | ^\w{2,3}$ | ^\w{5}$`
 
 ---
 
-### `zone_diffusion_nom`
+### `Zone Diffusion Nom`
 
 
 
@@ -716,7 +716,7 @@ Type : `string`
 
 ---
 
-### `contact_nom_prenom`
+### `Contact Nom Prenom`
 
 
 
@@ -735,7 +735,7 @@ Type : `string`
 
 ---
 
-### `page_web`
+### `Page Web`
 
 Lien vers une page web dédiée au service sur le site web de la structure. Ce champ n&#39;est pas destiné à recevoir un lien vers le site d&#39;un producteur de donnée.
 
@@ -761,7 +761,7 @@ Exemples :
 
 ---
 
-### `modes_orientation_beneficiaire`
+### `Modes Orientation Beneficiaire`
 
 
 
@@ -785,7 +785,7 @@ Valeurs acceptées : voir le [référentiel associé](referentiels/modes_orienta
 
 ---
 
-### `modes_orientation_beneficiaire_autres`
+### `Modes Orientation Beneficiaire Autres`
 
 
 
@@ -804,7 +804,7 @@ Type : `string`
 
 ---
 
-### `modes_orientation_accompagnateur`
+### `Modes Orientation Accompagnateur`
 
 
 
@@ -828,7 +828,7 @@ Valeurs acceptées : voir le [référentiel associé](referentiels/modes_orienta
 
 ---
 
-### `modes_orientation_accompagnateur_autres`
+### `Modes Orientation Accompagnateur Autres`
 
 
 
