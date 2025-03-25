@@ -1,4 +1,5 @@
-from datetime import date, datetime
+import textwrap
+from datetime import date
 from typing import Annotated, Optional
 
 from pydantic import EmailStr, HttpUrl, StringConstraints
@@ -52,7 +53,17 @@ class Service(BaseModel):
     telephone: Optional[str] = None
     courriel: Optional[EmailStr] = None
     contact_public: Optional[bool] = None
-    date_maj: Optional[date | datetime] = None
+    date_maj: Annotated[
+        date,
+        Field(
+            description=textwrap.dedent("""\
+                Date de dernière modification du service
+                chez le producteur de données.
+            """),
+            examples=["2025-02-14"],
+            title="Date de dernière modification",
+        ),
+    ]
     modes_accueil: Optional[set[ModeAccueil]] = None
     zone_diffusion_type: Optional[ZoneDiffusionType] = None
     zone_diffusion_code: Optional[

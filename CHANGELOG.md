@@ -5,6 +5,7 @@
 ### Ajouts
 
 ### Changements
+* `date_maj` devient obligatoire
 
 ### Dépréciations
 
