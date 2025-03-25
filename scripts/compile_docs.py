@@ -45,6 +45,11 @@ def snake_case(txt: str) -> str:
 def get_property_type_data(property_schema: dict) -> dict | None:
     match property_schema:
         case {"type": json_type}:
+            if "format" in property_schema:
+                return {
+                    "type": json_type,
+                    "format": property_schema["format"],
+                }
             return {
                 "type": json_type,
             }
