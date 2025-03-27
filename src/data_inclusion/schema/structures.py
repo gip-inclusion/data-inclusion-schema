@@ -16,7 +16,13 @@ class Structure(BaseModel):
     id: str
     siret: Optional[common.CodeSiret] = None
     rna: Optional[common.CodeRna] = None
-    nom: str
+    nom: Annotated[
+        Annotated[str, StringConstraints(min_length=3, max_length=150)],
+        Field(
+            description="Nom de la structure.",
+            examples=["Centre social Le Tournesol"],
+        ),
+    ]
     commune: Optional[str] = None
     code_postal: Optional[common.CodePostal] = None
     code_insee: Optional[common.CodeCommune] = None
