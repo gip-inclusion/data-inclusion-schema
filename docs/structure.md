@@ -61,7 +61,7 @@ Regex : `^W\d{9}$`
 
 ### `nom` *
 
-Nom de la structure.
+Nom de la structure.  Chaîne de caractères entre 3 et 150 caractères, ne se terminant pas par un point.
 
 
 

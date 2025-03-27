@@ -587,6 +587,12 @@
       "title": "Modes Orientation Beneficiaire Autres"
     },
     "nom": {
+      "description": "Nom du service.  Chaîne de caractères entre 3 et 150 caractères, ne se terminant pas par un point.",
+      "examples": [
+        "Atelier insertion et posture professionnelle"
+      ],
+      "maxLength": 150,
+      "minLength": 3,
       "title": "Nom",
       "type": "string"
     },

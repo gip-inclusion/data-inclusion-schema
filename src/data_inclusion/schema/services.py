@@ -23,7 +23,18 @@ class Service(BaseModel):
     id: str
     structure_id: str
     source: str
-    nom: str
+    nom: Annotated[
+        Annotated[str, StringConstraints(min_length=3, max_length=150)],
+        Field(
+            description=textwrap.dedent("""\
+                Nom du service.
+
+                Chaîne de caractères entre 3 et 150 caractères,
+                ne se terminant pas par un point.
+            """),
+            examples=["Atelier insertion et posture professionnelle"],
+        ),
+    ]
     presentation_resume: Optional[Annotated[str, StringConstraints(max_length=280)]] = (
         None
     )
@@ -77,11 +88,11 @@ class Service(BaseModel):
     page_web: Annotated[
         Optional[HttpUrl],
         Field(
-            description="""
+            description=textwrap.dedent("""\
                 Lien vers une page web dédiée au service sur le site web de la
                 structure. Ce champ n'est pas destiné à recevoir un lien vers le site
                 d'un producteur de donnée.
-            """,
+            """),
             examples=[
                 "https://insersol.fr/biclou-atelier-reparation-participatif-solidaire/"
             ],

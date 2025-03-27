@@ -6,6 +6,7 @@
 
 ### Changements
 * `date_maj` devient obligatoire
+* Ajout de validation sur les champs `nom` de structure et service
 
 ### Dépréciations
 
