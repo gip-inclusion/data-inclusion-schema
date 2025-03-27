@@ -61,7 +61,7 @@ Regex : `^W\d{9}$`
 
 ### `nom` *
 
-
+Nom de la structure.
 
 
 
@@ -75,6 +75,13 @@ Type : `string`
 
 
 
+
+Exemples :
+
+```json
+"Centre social Le Tournesol"
+
+```
 
 ---
 
