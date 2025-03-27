@@ -19,7 +19,12 @@ class Structure(BaseModel):
     nom: Annotated[
         Annotated[str, StringConstraints(min_length=3, max_length=150)],
         Field(
-            description="Nom de la structure.",
+            description=textwrap.dedent("""\
+                Nom de la structure.
+
+                Chaîne de caractères entre 3 et 150 caractères,
+                ne se terminant pas par un point.
+            """),
             examples=["Centre social Le Tournesol"],
         ),
     ]

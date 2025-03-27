@@ -61,7 +61,7 @@ Type : `string`
 
 ### `nom` *
 
-
+Nom du service.  Chaîne de caractères entre 3 et 150 caractères, ne se terminant pas par un point.
 
 
 
@@ -75,6 +75,13 @@ Type : `string`
 
 
 
+
+Exemples :
+
+```json
+"Atelier insertion et posture professionnelle"
+
+```
 
 ---
 
