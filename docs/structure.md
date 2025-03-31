@@ -351,20 +351,27 @@ Type : `string`
 
 ### `date_maj` *
 
+Date de dernière modification de la structure chez le producteur de données.
+
+
+
+Type : `string`
+
+
+
+Format : `date`
 
 
 
 
-Type : ``
 
 
+Exemples :
 
-Format : `date | date-time`
+```json
+"2025-02-14"
 
-
-
-
-
+```
 
 ---
 

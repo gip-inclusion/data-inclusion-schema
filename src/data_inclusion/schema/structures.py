@@ -1,10 +1,11 @@
-from datetime import date, datetime
+import textwrap
+from datetime import date
 from typing import Annotated, Optional
 
 from pydantic import EmailStr, HttpUrl, StringConstraints
 
 from data_inclusion.schema import common
-from data_inclusion.schema.base import BaseModel
+from data_inclusion.schema.base import BaseModel, Field
 from data_inclusion.schema.labels_nationaux import LabelNational
 from data_inclusion.schema.thematiques import Thematique
 from data_inclusion.schema.typologies_de_structures import TypologieStructure
@@ -32,7 +33,17 @@ class Structure(BaseModel):
     )
     presentation_detail: Optional[str] = None
     source: str
-    date_maj: date | datetime
+    date_maj: Annotated[
+        date,
+        Field(
+            description=textwrap.dedent("""\
+                Date de dernière modification de la
+                structure chez le producteur de données.
+            """),
+            examples=["2025-02-14"],
+            title="Date de dernière modification",
+        ),
+    ]
     antenne: Optional[bool] = None
     lien_source: Optional[HttpUrl] = None
     horaires_ouverture: Optional[str] = None

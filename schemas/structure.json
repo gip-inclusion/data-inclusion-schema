@@ -452,17 +452,13 @@
       "title": "Courriel"
     },
     "date_maj": {
-      "anyOf": [
-        {
-          "format": "date",
-          "type": "string"
-        },
-        {
-          "format": "date-time",
-          "type": "string"
-        }
+      "description": "Date de dernière modification de la structure chez le producteur de données.",
+      "examples": [
+        "2025-02-14"
       ],
-      "title": "Date Maj"
+      "format": "date",
+      "title": "Date de dernière modification",
+      "type": "string"
     },
     "horaires_ouverture": {
       "anyOf": [

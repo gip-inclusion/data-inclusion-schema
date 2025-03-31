@@ -611,9 +611,9 @@ Type : `boolean`
 
 ---
 
-### `date_maj`
+### `date_maj` *
 
-
+Date de dernière modification du service chez le producteur de données.
 
 
 
@@ -621,12 +621,19 @@ Type : `string`
 
 
 
-Format : `date | date-time`
+Format : `date`
 
 
 
 
 
+
+Exemples :
+
+```json
+"2025-02-14"
+
+```
 
 ---
 

@@ -45,9 +45,7 @@ def snake_case(txt: str) -> str:
 def get_property_type_data(property_schema: dict) -> dict | None:
     match property_schema:
         case {"type": json_type}:
-            return {
-                "type": json_type,
-            }
+            return {"type": json_type, "format": property_schema.get("format")}
         case {"anyOf": [{"type": "array", "items": {"$ref": ref}}, {"type": "null"}]}:
             return {
                 "type": "array[string]",

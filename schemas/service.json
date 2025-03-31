@@ -391,21 +391,13 @@
       "title": "Date Creation"
     },
     "date_maj": {
-      "anyOf": [
-        {
-          "format": "date",
-          "type": "string"
-        },
-        {
-          "format": "date-time",
-          "type": "string"
-        },
-        {
-          "type": "null"
-        }
+      "description": "Date de dernière modification du service chez le producteur de données.",
+      "examples": [
+        "2025-02-14"
       ],
-      "default": null,
-      "title": "Date Maj"
+      "format": "date",
+      "title": "Date de dernière modification",
+      "type": "string"
     },
     "date_suspension": {
       "anyOf": [
@@ -826,7 +818,8 @@
     "id",
     "structure_id",
     "source",
-    "nom"
+    "nom",
+    "date_maj"
   ],
   "title": "Service",
   "type": "object"
