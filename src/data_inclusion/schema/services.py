@@ -1,4 +1,3 @@
-import textwrap
 from datetime import date
 from typing import Annotated, Optional
 
@@ -26,12 +25,12 @@ class Service(BaseModel):
     nom: Annotated[
         Annotated[str, StringConstraints(min_length=3, max_length=150)],
         Field(
-            description=textwrap.dedent("""\
+            description="""
                 Nom du service.
 
                 Chaîne de caractères entre 3 et 150 caractères,
                 ne se terminant pas par un point.
-            """),
+            """,
             examples=["Atelier insertion et posture professionnelle"],
         ),
     ]
@@ -67,10 +66,9 @@ class Service(BaseModel):
     date_maj: Annotated[
         date,
         Field(
-            description=textwrap.dedent("""\
-                Date de dernière modification du service
-                chez le producteur de données.
-            """),
+            description="""
+                Date de dernière modification du service chez le producteur de données.
+            """,
             examples=["2025-02-14"],
             title="Date de dernière modification",
         ),
@@ -88,11 +86,11 @@ class Service(BaseModel):
     page_web: Annotated[
         Optional[HttpUrl],
         Field(
-            description=textwrap.dedent("""\
+            description="""
                 Lien vers une page web dédiée au service sur le site web de la
                 structure. Ce champ n'est pas destiné à recevoir un lien vers le site
                 d'un producteur de donnée.
-            """),
+            """,
             examples=[
                 "https://insersol.fr/biclou-atelier-reparation-participatif-solidaire/"
             ],
