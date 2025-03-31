@@ -1,7 +1,7 @@
 from datetime import date
 from typing import Annotated, Optional
 
-from pydantic import EmailStr, HttpUrl, StringConstraints
+from pydantic import EmailStr, HttpUrl
 
 from data_inclusion.schema import common
 from data_inclusion.schema.base import BaseModel, Field
@@ -16,7 +16,7 @@ class Structure(BaseModel):
     siret: Optional[common.CodeSiret] = None
     rna: Optional[common.CodeRna] = None
     nom: Annotated[
-        Annotated[str, StringConstraints(min_length=3, max_length=150)],
+        str,
         Field(
             description="""
                 Nom de la structure.
@@ -25,6 +25,8 @@ class Structure(BaseModel):
                 ne se terminant pas par un point.
             """,
             examples=["Centre social Le Tournesol"],
+            min_length=3,
+            max_length=150,
         ),
     ]
     commune: Optional[str] = None
@@ -38,9 +40,7 @@ class Structure(BaseModel):
     telephone: Optional[str] = None
     courriel: Optional[EmailStr] = None
     site_web: Optional[HttpUrl] = None
-    presentation_resume: Optional[Annotated[str, StringConstraints(max_length=280)]] = (
-        None
-    )
+    presentation_resume: Annotated[Optional[str], Field(max_length=280)] = None
     presentation_detail: Optional[str] = None
     source: str
     date_maj: Annotated[

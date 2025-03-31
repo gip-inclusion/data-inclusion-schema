@@ -1,7 +1,7 @@
 from datetime import date
 from typing import Annotated, Optional
 
-from pydantic import EmailStr, HttpUrl, StringConstraints
+from pydantic import EmailStr, HttpUrl
 
 from data_inclusion.schema import common
 from data_inclusion.schema.base import BaseModel, Field
@@ -23,7 +23,7 @@ class Service(BaseModel):
     structure_id: str
     source: str
     nom: Annotated[
-        Annotated[str, StringConstraints(min_length=3, max_length=150)],
+        str,
         Field(
             description="""
                 Nom du service.
@@ -32,11 +32,11 @@ class Service(BaseModel):
                 ne se terminant pas par un point.
             """,
             examples=["Atelier insertion et posture professionnelle"],
+            min_length=3,
+            max_length=150,
         ),
     ]
-    presentation_resume: Optional[Annotated[str, StringConstraints(max_length=280)]] = (
-        None
-    )
+    presentation_resume: Annotated[Optional[str], Field(max_length=280)] = None
     presentation_detail: Optional[str] = None
     types: Optional[set[TypologieService]] = None
     thematiques: Optional[set[Thematique]] = None
