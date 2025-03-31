@@ -6,10 +6,13 @@ import pydantic
 
 def Field(*args, **kwargs):
     if "description" in kwargs:
-        kwargs["description"] = (
-            textwrap.dedent(kwargs["description"].strip("\n"))
-            .replace("\n", " ")
-            .strip()
+        kwargs["description"] = "\n\n".join(
+            list(
+                map(
+                    lambda paragraph: paragraph.replace("\n", " "),
+                    textwrap.dedent(kwargs["description"]).strip().split("\n\n"),
+                )
+            )
         )
     return pydantic.Field(*args, **kwargs)
 

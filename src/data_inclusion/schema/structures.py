@@ -1,4 +1,3 @@
-import textwrap
 from datetime import date
 from typing import Annotated, Optional
 
@@ -19,12 +18,12 @@ class Structure(BaseModel):
     nom: Annotated[
         Annotated[str, StringConstraints(min_length=3, max_length=150)],
         Field(
-            description=textwrap.dedent("""\
+            description="""
                 Nom de la structure.
 
                 Chaîne de caractères entre 3 et 150 caractères,
                 ne se terminant pas par un point.
-            """),
+            """,
             examples=["Centre social Le Tournesol"],
         ),
     ]
@@ -47,10 +46,10 @@ class Structure(BaseModel):
     date_maj: Annotated[
         date,
         Field(
-            description=textwrap.dedent("""\
+            description="""
                 Date de dernière modification de la
                 structure chez le producteur de données.
-            """),
+            """,
             examples=["2025-02-14"],
             title="Date de dernière modification",
         ),
