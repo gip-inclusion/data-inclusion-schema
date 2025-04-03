@@ -7,6 +7,7 @@
 ### Changements
 * `date_maj` devient obligatoire
 * Ajout de validation sur les champs `nom` de structure et service
+* Ajout de description sur les champs `telephone` de structure et service
 
 ### Dépréciations
 
