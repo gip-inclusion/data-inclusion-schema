@@ -729,7 +729,11 @@
         }
       ],
       "default": null,
-      "title": "Telephone"
+      "description": "Numéro de téléphone à utiliser pour obtenir des informations complémentaires sur le service. Si le mode de mobilisation est `telephoner`, peut être utilisé pour mobiliser le service.",
+      "examples": [
+        "0623456789"
+      ],
+      "title": "Téléphone"
     },
     "thematiques": {
       "anyOf": [

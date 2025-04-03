@@ -246,7 +246,7 @@ Valeurs acceptées : voir le [référentiel associé](referentiels/typologies_de
 
 ### `telephone`
 
-
+Numéro de téléphone à utiliser pour obtenir des informations complémentaires sur la structure.
 
 
 
@@ -260,6 +260,13 @@ Type : `string`
 
 
 
+
+Exemples :
+
+```json
+"0123456789"
+
+```
 
 ---
 
