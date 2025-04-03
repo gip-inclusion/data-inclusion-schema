@@ -641,7 +641,11 @@
         }
       ],
       "default": null,
-      "title": "Telephone"
+      "description": "Numéro de téléphone à utiliser pour obtenir des informations complémentaires sur la structure.\n\nChaîne de caractères contenant un seul numéro de téléphone, de préfèrence au format E.164.",
+      "examples": [
+        "+33123456789"
+      ],
+      "title": "Téléphone"
     },
     "thematiques": {
       "anyOf": [

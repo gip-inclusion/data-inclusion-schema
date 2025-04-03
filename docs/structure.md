@@ -246,7 +246,9 @@ Valeurs acceptées : voir le [référentiel associé](referentiels/typologies_de
 
 ### `telephone`
 
+Numéro de téléphone à utiliser pour obtenir des informations complémentaires sur la structure.
 
+Chaîne de caractères contenant un seul numéro de téléphone, de préfèrence au format E.164.
 
 
 
@@ -260,6 +262,13 @@ Type : `string`
 
 
 
+
+Exemples :
+
+```json
+"+33123456789"
+
+```
 
 ---
 

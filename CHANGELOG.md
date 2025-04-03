@@ -6,6 +6,8 @@
 
 ### Changements
 
+* ajout de description sur les champs `telephone`
+
 ### Dépréciations
 
 ### Suppressions
