@@ -60,7 +60,22 @@ class Service(BaseModel):
     date_creation: Optional[date] = None
     date_suspension: Optional[date] = None
     lien_source: Optional[HttpUrl] = None
-    telephone: Optional[str] = None
+    telephone: Annotated[
+        Optional[str],
+        Field(
+            description="""
+                Numéro de téléphone à utiliser pour obtenir des informations
+                complémentaires sur le service. Si le mode de mobilisation est
+                `telephoner`, peut être utilisé pour mobiliser le service.
+
+                Chaîne de caractères contenant un seul numéro de téléphone,
+                de préfèrence au format E.164.
+            """,
+            examples=["+33123456789"],
+            default=None,
+            title="Téléphone",
+        ),
+    ]
     courriel: Optional[EmailStr] = None
     contact_public: Optional[bool] = None
     date_maj: Annotated[

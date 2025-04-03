@@ -565,7 +565,9 @@ Format : `uri`
 
 ### `telephone`
 
+Numéro de téléphone à utiliser pour obtenir des informations complémentaires sur le service. Si le mode de mobilisation est `telephoner`, peut être utilisé pour mobiliser le service.
 
+Chaîne de caractères contenant un seul numéro de téléphone, de préfèrence au format E.164.
 
 
 
@@ -579,6 +581,13 @@ Type : `string`
 
 
 
+
+Exemples :
+
+```json
+"+33123456789"
+
+```
 
 ---
 

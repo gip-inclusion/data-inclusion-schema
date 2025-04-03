@@ -37,7 +37,21 @@ class Structure(BaseModel):
     longitude: Optional[float] = None
     latitude: Optional[float] = None
     typologie: Optional[TypologieStructure] = None
-    telephone: Optional[str] = None
+    telephone: Annotated[
+        Optional[str],
+        Field(
+            description="""
+                Numéro de téléphone à utiliser pour obtenir des informations
+                complémentaires sur la structure.
+
+                Chaîne de caractères contenant un seul numéro de téléphone,
+                de préfèrence au format E.164.
+            """,
+            examples=["+33123456789"],
+            default=None,
+            title="Téléphone",
+        ),
+    ]
     courriel: Optional[EmailStr] = None
     site_web: Optional[HttpUrl] = None
     presentation_resume: Annotated[Optional[str], Field(max_length=280)] = None
