@@ -17,9 +17,15 @@ from data_inclusion.schema import (
 
 
 def service_factory(**kwargs):
-    if "source" not in kwargs:
-        kwargs["source"] = "3"
-    return Service(id="1", structure_id="2", nom="foo", **kwargs)
+    defaults = {
+        "id": "1",
+        "structure_id": "2",
+        "nom": "foo",
+        "date_maj": pendulum.today(),
+        "source": "3",
+    }
+    kwargs |= defaults
+    return Service(**kwargs)
 
 
 @pytest.mark.parametrize(
