@@ -5,20 +5,24 @@
 ### Ajouts
 
 ### Changements
-* `date_maj` devient obligatoire
-* Ajout de validation sur les champs `nom` de structure et service
 
 ### Dépréciations
 
 ### Suppressions
 
+## 0.21.0 - 2025-02-27
+
+### Changements
+
+* `date_maj` devient obligatoire
+* ajout de validation sur les champs `nom` de structure et service
 
 ## 0.21.0 - 2025-02-27
 
 ### Changements
+
 * renommage de certains critères du score de qualité
 * modification du fonctionnement de certains critères du score de qualité
-
 
 ## 0.20.0 - 2025-01-08
 
