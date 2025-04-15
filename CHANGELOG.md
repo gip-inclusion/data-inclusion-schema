@@ -6,11 +6,15 @@
 
 ### Changements
 
-* ajout de description sur les champs `telephone`
-
 ### Dépréciations
 
 ### Suppressions
+
+## 0.23.0 - 2025-04-15
+
+### Changements
+
+* ajout de description sur les champs `telephone`
 
 ## 0.22.0 - 2025-04-14
 
