@@ -5,11 +5,17 @@
 ### Ajouts
 
 ### Changements
-* documentation des champs courriel (Service & Structures)
 
 ### Dépréciations
 
 ### Suppressions
+
+## 0.24.0 - 2025-04-17
+
+### Changements
+
+* ajout de description sur les champs `courriel`
+* modifications typographiques
 
 ## 0.23.0 - 2025-04-15
 
