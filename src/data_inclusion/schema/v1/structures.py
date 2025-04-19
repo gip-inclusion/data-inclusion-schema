@@ -6,7 +6,6 @@ from pydantic import EmailStr, HttpUrl
 from data_inclusion.schema.v1 import common
 from data_inclusion.schema.v1.base import BaseModel, Field
 from data_inclusion.schema.v1.labels_nationaux import LabelNational
-from data_inclusion.schema.v1.thematiques import Thematique
 from data_inclusion.schema.v1.typologies_de_structures import TypologieStructure
 
 
@@ -84,4 +83,3 @@ class Structure(BaseModel):
     accessibilite: Optional[HttpUrl] = None
     labels_nationaux: Optional[set[LabelNational]] = None
     labels_autres: Optional[set[str]] = None
-    thematiques: Optional[set[Thematique]] = None
