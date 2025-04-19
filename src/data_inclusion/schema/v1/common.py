@@ -8,11 +8,6 @@ CodePostal: TypeAlias = Annotated[
     StringConstraints(min_length=5, max_length=5, pattern=r"^\d{5}$"),
 ]
 
-CodeRna: TypeAlias = Annotated[
-    str,
-    StringConstraints(min_length=10, max_length=10, pattern=r"^W\d{9}$"),
-]
-
 CodeSiren: TypeAlias = Annotated[
     str,
     StringConstraints(min_length=9, max_length=9, pattern=r"^\d{9}$"),

@@ -4,7 +4,6 @@ from data_inclusion.schema.v1.common import (
     CodeEPCI,
     CodePostal,
     CodeRegion,
-    CodeRna,
     CodeSiren,
     CodeSiret,
 )
@@ -29,7 +28,6 @@ __all__ = [
     "CodeEPCI",
     "CodePostal",
     "CodeRegion",
-    "CodeRna",
     "CodeSiren",
     "CodeSiret",
     "Frais",
