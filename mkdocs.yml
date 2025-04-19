@@ -22,3 +22,7 @@ nav:
 markdown_extensions:
   - pymdownx.superfences
   - admonition
+
+extra:
+  version:
+    provider: mike
