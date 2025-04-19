@@ -4,7 +4,9 @@ build-backend = "flit_core.buildapi"
 
 [project]
 requires-python = ">=3.10"
-name = "data-inclusion-schema"
+# use a different package name to allow applications (like the api)
+# to install both versions in the same virtualenv
+name = "data-inclusion-schema-v0"
 version = "0.24.0"
 description = "Schéma de l'offre d'insertion"
 authors = [{ name = "data⋅inclusion", email = "data-inclusion@inclusion.gouv.fr" }]
@@ -60,4 +62,4 @@ known-first-party = ["data_inclusion"]
 
 [tool.flit.module]
 # this is the import name
-name = "data_inclusion.schema"
+name = "data_inclusion.schema.v0"

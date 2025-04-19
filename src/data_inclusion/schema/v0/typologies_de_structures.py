@@ -1,4 +1,4 @@
-from data_inclusion.schema.base import EnhancedEnum
+from data_inclusion.schema.v0.base import EnhancedEnum
 
 
 class TypologieStructure(EnhancedEnum):

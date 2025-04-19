@@ -121,7 +121,7 @@ wheels = [
 ]
 
 [[package]]
-name = "data-inclusion-schema"
+name = "data-inclusion-schema-v0"
 version = "0.24.0"
 source = { editable = "." }
 dependencies = [

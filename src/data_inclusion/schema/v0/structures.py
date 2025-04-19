@@ -3,11 +3,11 @@ from typing import Annotated, Optional
 
 from pydantic import EmailStr, HttpUrl
 
-from data_inclusion.schema import common
-from data_inclusion.schema.base import BaseModel, Field
-from data_inclusion.schema.labels_nationaux import LabelNational
-from data_inclusion.schema.thematiques import Thematique
-from data_inclusion.schema.typologies_de_structures import TypologieStructure
+from data_inclusion.schema.v0 import common
+from data_inclusion.schema.v0.base import BaseModel, Field
+from data_inclusion.schema.v0.labels_nationaux import LabelNational
+from data_inclusion.schema.v0.thematiques import Thematique
+from data_inclusion.schema.v0.typologies_de_structures import TypologieStructure
 
 
 class Structure(BaseModel):
