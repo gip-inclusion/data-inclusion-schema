@@ -402,25 +402,6 @@ Exemples :
 
 ---
 
-### `antenne`
-
-
-
-
-
-Type : `boolean`
-
-
-
-
-
-
-
-
-
-
----
-
 ### `lien_source`
 
 
