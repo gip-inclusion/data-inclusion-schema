@@ -2,7 +2,7 @@ from typing import Callable, Mapping
 
 import pendulum
 
-from data_inclusion.schema import (
+from data_inclusion.schema.v1 import (
     Frais,
     ModeAccueil,
     ModeOrientationAccompagnateur,

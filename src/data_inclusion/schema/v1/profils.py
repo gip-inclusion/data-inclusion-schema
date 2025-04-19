@@ -1,4 +1,4 @@
-from data_inclusion.schema.base import EnhancedEnum
+from data_inclusion.schema.v1.base import EnhancedEnum
 
 
 class Profil(EnhancedEnum):

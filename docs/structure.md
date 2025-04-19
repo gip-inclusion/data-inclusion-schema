@@ -40,25 +40,6 @@ Regex : `^\d{14}$`
 
 ---
 
-### `rna`
-
-
-
-
-
-Type : `string`
-
-
-
-
-
-Regex : `^W\d{9}$`
-
-
-
-
----
-
 ### `nom` *
 
 Nom de la structure.
@@ -402,25 +383,6 @@ Exemples :
 
 ---
 
-### `antenne`
-
-
-
-
-
-Type : `boolean`
-
-
-
-
-
-
-
-
-
-
----
-
 ### `lien_source`
 
 
@@ -515,30 +477,6 @@ Type : `array`
 
 
 
-
-
-
-
----
-
-### `thematiques`
-
-
-
-
-
-Type : `array[string]`
-
-
-
-
-
-
-
-
-
-
-Valeurs acceptées : voir le [référentiel associé](referentiels/thematiques.md)
 
 
 
