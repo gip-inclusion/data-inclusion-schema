@@ -1,9 +1,14 @@
 site_name: Schéma data·inclusion
 site_url: https://gip-inclusion.github.io/data-inclusion-schema/
+
+repo_name: gip-inclusion/data-inclusion-schema
+repo_url: https://github.com/gip-inclusion/data-inclusion-schema
+
 theme:
   name: material
   logo: assets/DataInclusion-Monogramme-Blanc.png
   favicon: assets/DataInclusion-Monogramme-Couleur.png
+
 nav:
   - Accueil: index.md
   - Structure: structure.md
@@ -19,6 +24,7 @@ nav:
     - Typologies de services: referentiels/typologies_de_services.md
     - Typologies de structures: referentiels/typologies_de_structures.md
     - Zones de diffusion: referentiels/zones_de_diffusion_types.md
+
 markdown_extensions:
   - pymdownx.superfences
   - admonition
