@@ -4,7 +4,7 @@ import pendulum
 import pytest
 from freezegun import freeze_time
 
-from data_inclusion.schema import (
+from data_inclusion.schema.v1 import (
     Frais,
     ModeAccueil,
     ModeOrientationAccompagnateur,

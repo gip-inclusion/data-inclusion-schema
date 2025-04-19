@@ -3,7 +3,7 @@ import re
 
 import jinja2
 
-from data_inclusion.schema import (
+from data_inclusion.schema.v1 import (
     Frais,
     LabelNational,
     ModeAccueil,
