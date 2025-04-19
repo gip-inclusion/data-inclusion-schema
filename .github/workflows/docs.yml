@@ -16,6 +16,10 @@ jobs:
       - uses: astral-sh/setup-uv@v5
       - run: uv sync --frozen --group docs
 
+      - run: |
+          git config --global user.name "${{ github.actor }}"
+          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+
       - if: github.ref == 'refs/heads/main'
         run: uv run mike deploy dev --push
 
