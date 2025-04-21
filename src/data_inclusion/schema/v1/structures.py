@@ -78,7 +78,6 @@ class Structure(BaseModel):
             title="Date de dernière modification",
         ),
     ]
-    antenne: Optional[bool] = None
     lien_source: Optional[HttpUrl] = None
     horaires_ouverture: Optional[str] = None
     accessibilite: Optional[HttpUrl] = None

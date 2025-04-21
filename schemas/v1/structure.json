@@ -372,18 +372,6 @@
       "default": null,
       "title": "Adresse"
     },
-    "antenne": {
-      "anyOf": [
-        {
-          "type": "boolean"
-        },
-        {
-          "type": "null"
-        }
-      ],
-      "default": null,
-      "title": "Antenne"
-    },
     "code_insee": {
       "anyOf": [
         {
