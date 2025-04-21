@@ -482,27 +482,3 @@ Type : `array`
 
 
 ---
-
-### `thematiques`
-
-
-
-
-
-Type : `array[string]`
-
-
-
-
-
-
-
-
-
-
-Valeurs acceptées : voir le [référentiel associé](referentiels/thematiques.md)
-
-
-
-
----

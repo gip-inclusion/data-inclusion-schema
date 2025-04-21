@@ -16,3 +16,4 @@
 
 * suppression du champ `antenne`
 * suppression du champ `rna`
+* suppression du champ structure `thematiques`
