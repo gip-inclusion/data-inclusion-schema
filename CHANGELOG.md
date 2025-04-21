@@ -15,3 +15,4 @@
 ### Suppressions
 
 * suppression du champ `antenne`
+* suppression du champ `rna`
