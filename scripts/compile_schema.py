@@ -1,35 +1,11 @@
+import importlib
 import json
 import pathlib
+import pkgutil
 
-from data_inclusion.schema import (
-    Frais,
-    LabelNational,
-    ModeAccueil,
-    ModeOrientationAccompagnateur,
-    ModeOrientationBeneficiaire,
-    Profil,
-    Service,
-    Structure,
-    Thematique,
-    TypologieService,
-    TypologieStructure,
-    ZoneDiffusionType,
-)
+from data_inclusion import schema
 
 SCHEMAS_DIR = pathlib.Path() / "schemas"
-
-ENUM_FILENAMES = {
-    Frais: "frais",
-    LabelNational: "labels_nationaux",
-    ModeAccueil: "modes_accueil",
-    ModeOrientationAccompagnateur: "modes_orientation_accompagnateur",
-    ModeOrientationBeneficiaire: "modes_orientation_beneficiaire",
-    Profil: "profils",
-    Thematique: "thematiques",
-    TypologieService: "typologies_de_services",
-    TypologieStructure: "typologies_de_structures",
-    ZoneDiffusionType: "zones_de_diffusion_types",
-}
 
 
 def json_dump(obj, file):
@@ -42,20 +18,46 @@ def json_dump(obj, file):
     )
 
 
-def main():
-    SCHEMAS_DIR.mkdir(exist_ok=True)
-    (SCHEMAS_DIR / "extra").mkdir(exist_ok=True)
+def compile_schema(version: str):
+    schema = importlib.import_module(f"data_inclusion.schema.{version}")
 
-    for model in [Structure, Service]:
-        with (SCHEMAS_DIR / f"{model.__name__.lower()}.json").open("w") as file:
+    ENUM_FILENAMES = {
+        schema.Frais: "frais",
+        schema.LabelNational: "labels_nationaux",
+        schema.ModeAccueil: "modes_accueil",
+        schema.ModeOrientationAccompagnateur: "modes_orientation_accompagnateur",
+        schema.ModeOrientationBeneficiaire: "modes_orientation_beneficiaire",
+        schema.Profil: "profils",
+        schema.Thematique: "thematiques",
+        schema.TypologieService: "typologies_de_services",
+        schema.TypologieStructure: "typologies_de_structures",
+        schema.ZoneDiffusionType: "zones_de_diffusion_types",
+    }
+
+    SCHEMAS_DIR.mkdir(exist_ok=True)
+    (SCHEMAS_DIR / version).mkdir(exist_ok=True, parents=True)
+
+    for model in [schema.Structure, schema.Service]:
+        with (SCHEMAS_DIR / version / f"{model.__name__.lower()}.json").open(
+            "w"
+        ) as file:
             json_dump(model.model_json_schema(), file)
 
     for enum, filename in ENUM_FILENAMES.items():
-        with (SCHEMAS_DIR / "extra" / f"{filename.replace('_', '-')}.json").open(
-            "w"
-        ) as file:
+        with (
+            SCHEMAS_DIR / version / "extra" / f"{filename.replace('_', '-')}.json"
+        ).open("w") as file:
             json_dump(enum.as_dict_list(), file)
 
 
+def list_schema_versions() -> list[str]:
+    return [
+        name
+        for _, name, is_pkg in pkgutil.iter_modules(schema.__path__)
+        if is_pkg and name.startswith("v") and name[1:].isdigit()
+    ]
+
+
 if __name__ == "__main__":
-    main()
+    for version in list_schema_versions():
+        compile_schema(version)

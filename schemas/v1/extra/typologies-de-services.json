@@ -1,0 +1,57 @@
+[
+  {
+    "description": "Etre accompagné·e dans ses démarches ou son retour à l’emploi durable",
+    "label": "Accompagnement",
+    "value": "accompagnement"
+  },
+  {
+    "description": "Lieux d’écoute et d’évaluation des besoins de la personne qui se présente afin de la guider vers le ou les organismes les plus susceptibles de répondre à ses besoins",
+    "label": "Accueil",
+    "value": "accueil"
+  },
+  {
+    "description": "Prise en charge financière, aide ou rémunération visant à aider une personne à accéder à un service",
+    "label": "Aide financière",
+    "value": "aide-financiere"
+  },
+  {
+    "description": "Accéder à du matériel, voiture, vélo, ordinateur, alimentation",
+    "label": "Aide materielle",
+    "value": "aide-materielle"
+  },
+  {
+    "description": "Etre accompagné·e dans sa montée en compétence sur un sujet spécifique",
+    "label": "Atelier",
+    "value": "atelier"
+  },
+  {
+    "description": "Réaliser des démarches en toute autonomie",
+    "label": "En autonomie",
+    "value": "autonomie"
+  },
+  {
+    "description": "Une personne fait les démarches à ma place.",
+    "label": "Délégation",
+    "value": "delegation"
+  },
+  {
+    "description": "Crédit solidaire, prêts à taux zéro pour le financement d’un projet",
+    "label": "Financement ",
+    "value": "financement"
+  },
+  {
+    "description": "Formation dispensée par des professionnels pour les bénéficiaires",
+    "label": "Formation",
+    "value": "formation"
+  },
+  {
+    "description": "Premier niveau d’information apporté par des professionnels du secteur",
+    "label": "Information",
+    "value": "information"
+  },
+  {
+    "description": "Service en ligne qui renvoi vers un site dédié",
+    "label": "Service numérique",
+    "value": "numerique"
+  }
+]
