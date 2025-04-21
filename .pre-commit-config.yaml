@@ -17,6 +17,7 @@ repos:
       language: system
       entry: uv run ./scripts/compile_schema.py
       always_run: true
+      pass_filenames: false
 - repo: local
   hooks:
     - id: compile-docs
@@ -24,6 +25,7 @@ repos:
       language: system
       entry: uv run --group docs ./scripts/compile_docs.py
       always_run: true
+      pass_filenames: false
 - repo: https://github.com/pre-commit/pre-commit-hooks
   rev: v5.0.0
   hooks:
