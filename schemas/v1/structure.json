@@ -574,21 +574,6 @@
       "default": null,
       "title": "Presentation Resume"
     },
-    "rna": {
-      "anyOf": [
-        {
-          "maxLength": 10,
-          "minLength": 10,
-          "pattern": "^W\\d{9}$",
-          "type": "string"
-        },
-        {
-          "type": "null"
-        }
-      ],
-      "default": null,
-      "title": "Rna"
-    },
     "siret": {
       "anyOf": [
         {
