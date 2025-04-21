@@ -12,7 +12,6 @@ class Structure(BaseModel):
     # fields
     id: str
     siret: Optional[common.CodeSiret] = None
-    rna: Optional[common.CodeRna] = None
     nom: Annotated[
         str,
         Field(

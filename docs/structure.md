@@ -40,25 +40,6 @@ Regex : `^\d{14}$`
 
 ---
 
-### `rna`
-
-
-
-
-
-Type : `string`
-
-
-
-
-
-Regex : `^W\d{9}$`
-
-
-
-
----
-
 ### `nom` *
 
 Nom de la structure.
