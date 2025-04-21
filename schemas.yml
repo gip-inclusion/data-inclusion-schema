@@ -4,5 +4,5 @@ homepage: https://github.com/gip-inclusion/data-inclusion-schema
 
 schemas:
   -
-    path: "schemas/service.json"
+    path: "schemas/v1/service.json"
     title: "Services de l’inclusion"

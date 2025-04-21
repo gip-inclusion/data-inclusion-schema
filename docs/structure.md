@@ -248,7 +248,7 @@ Valeurs acceptées : voir le [référentiel associé](referentiels/typologies_de
 
 Numéro de téléphone à utiliser pour obtenir des informations complémentaires sur la structure.
 
-Chaîne de caractères contenant un seul numéro de téléphone, de préférence au format E.164.
+Chaîne de caractères contenant un seul numéro de téléphone, de préfèrence au format E.164.
 
 
 
@@ -302,9 +302,7 @@ Exemples :
 
 ### `site_web`
 
-Site internet de la structure.
 
-L’URL est validée par un appel HTTP GET (redirections prises en compte). Doit suivre le format de la RFC 3986.
 
 
 
@@ -318,13 +316,6 @@ Format : `uri`
 
 
 
-
-Exemples :
-
-```json
-"https://www.asso-mon-entraide.net/"
-
-```
 
 ---
 

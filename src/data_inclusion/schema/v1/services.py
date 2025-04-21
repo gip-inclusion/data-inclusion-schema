@@ -5,16 +5,16 @@ from pydantic import EmailStr, HttpUrl
 
 from data_inclusion.schema import common
 from data_inclusion.schema.base import BaseModel, Field
-from data_inclusion.schema.frais import Frais
-from data_inclusion.schema.modes_accueil import ModeAccueil
-from data_inclusion.schema.modes_orientation import (
+from data_inclusion.schema.v0 import (
+    Frais,
+    ModeAccueil,
     ModeOrientationAccompagnateur,
     ModeOrientationBeneficiaire,
+    Profil,
+    Thematique,
+    TypologieService,
+    ZoneDiffusionType,
 )
-from data_inclusion.schema.profils import Profil
-from data_inclusion.schema.thematiques import Thematique
-from data_inclusion.schema.typologies_de_services import TypologieService
-from data_inclusion.schema.zones_de_diffusion import ZoneDiffusionType
 
 
 class Service(BaseModel):
