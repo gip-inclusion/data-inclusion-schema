@@ -1,0 +1,27 @@
+[
+  {
+    "description": null,
+    "label": "Commune",
+    "value": "commune"
+  },
+  {
+    "description": null,
+    "label": "Département",
+    "value": "departement"
+  },
+  {
+    "description": null,
+    "label": "Intercommunalité (EPCI)",
+    "value": "epci"
+  },
+  {
+    "description": null,
+    "label": "Pays",
+    "value": "pays"
+  },
+  {
+    "description": null,
+    "label": "Région",
+    "value": "region"
+  }
+]
