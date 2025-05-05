@@ -45,7 +45,7 @@ class Structure(BaseModel):
                 complémentaires sur la structure.
 
                 Chaîne de caractères contenant un seul numéro de téléphone,
-                de préfèrence au format E.164.
+                de préférence au format E.164.
             """,
             examples=["+33123456789"],
             default=None,
