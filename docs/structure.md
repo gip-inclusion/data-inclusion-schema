@@ -248,7 +248,7 @@ Valeurs acceptées : voir le [référentiel associé](referentiels/typologies_de
 
 Numéro de téléphone à utiliser pour obtenir des informations complémentaires sur la structure.
 
-Chaîne de caractères contenant un seul numéro de téléphone, de préfèrence au format E.164.
+Chaîne de caractères contenant un seul numéro de téléphone, de préférence au format E.164.
 
 
 
