@@ -302,7 +302,9 @@ Exemples :
 
 ### `site_web`
 
+Site internet de la structure.
 
+L’URL est validée par un appel HTTP GET (redirections prises en compte). Doit suivre le format de la RFC 3986.
 
 
 
@@ -316,6 +318,13 @@ Format : `uri`
 
 
 
+
+Exemples :
+
+```json
+"https://www.asso-mon-entraide.net/"
+
+```
 
 ---
 
