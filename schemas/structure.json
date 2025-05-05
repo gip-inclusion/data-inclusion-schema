@@ -629,6 +629,10 @@
         }
       ],
       "default": null,
+      "description": "Site internet de la structure.\n\nL’URL est validée par un appel HTTP GET (redirections prises en compte). Doit suivre le format de la RFC 3986.",
+      "examples": [
+        "https://www.asso-mon-entraide.net/"
+      ],
       "title": "Site Web"
     },
     "source": {
