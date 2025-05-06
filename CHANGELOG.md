@@ -6,6 +6,16 @@
 
 ### Changements
 
+### Dépréciations
+
+### Suppressions
+
+## 0.25.0 - 2025-05-20
+
+### Ajouts
+
+### Changements
+
 * structure: ajout de description sur le champ `site_web`
 
 ### Dépréciations
