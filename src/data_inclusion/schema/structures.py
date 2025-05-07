@@ -45,7 +45,7 @@ class Structure(BaseModel):
                 complémentaires sur la structure.
 
                 Chaîne de caractères contenant un seul numéro de téléphone,
-                de préfèrence au format E.164.
+                de préférence au format E.164.
             """,
             examples=["+33123456789"],
             default=None,
@@ -65,7 +65,19 @@ class Structure(BaseModel):
             examples=["exemple@inclusion.gouv.fr"],
         ),
     ]
-    site_web: Optional[HttpUrl] = None
+    site_web: Annotated[
+        Optional[HttpUrl],
+        Field(
+            description="""
+                Site internet de la structure.
+
+                L’URL est validée par un appel HTTP GET (redirections prises en compte).
+                Doit suivre le format de la RFC 3986.
+            """,
+            default=None,
+            examples=["https://www.asso-mon-entraide.net/"],
+        ),
+    ]
     presentation_resume: Annotated[Optional[str], Field(max_length=280)] = None
     presentation_detail: Optional[str] = None
     source: str

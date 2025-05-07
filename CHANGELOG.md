@@ -6,6 +6,8 @@
 
 ### Changements
 
+* structure: ajout de description sur le champ `site_web`
+
 ### Dépréciations
 
 ### Suppressions

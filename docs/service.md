@@ -567,7 +567,7 @@ Format : `uri`
 
 Numéro de téléphone à utiliser pour obtenir des informations complémentaires sur le service. Si le mode de mobilisation est `telephoner`, peut être utilisé pour mobiliser le service.
 
-Chaîne de caractères contenant un seul numéro de téléphone, de préfèrence au format E.164.
+Chaîne de caractères contenant un seul numéro de téléphone, de préférence au format E.164.
 
 
 
