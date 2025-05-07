@@ -1,41 +1,17 @@
+import importlib
 import pathlib
+import pkgutil
 import re
 
 import jinja2
 
-from data_inclusion.schema import (
-    Frais,
-    LabelNational,
-    ModeAccueil,
-    ModeOrientationAccompagnateur,
-    ModeOrientationBeneficiaire,
-    Profil,
-    Service,
-    Structure,
-    Thematique,
-    TypologieService,
-    TypologieStructure,
-    ZoneDiffusionType,
-)
+from data_inclusion import schema
 
 DOCS_DIR = pathlib.Path() / "docs"
 
 # les référentiels sont affichés en inline dans la documentation
 # si leur taille est inférieure à cette limite
 DOCS_INLINE_REFERENTIAL_SIZE_LIMIT = 5
-
-ENUM_FILENAMES = {
-    Frais: "frais",
-    LabelNational: "labels_nationaux",
-    ModeAccueil: "modes_accueil",
-    ModeOrientationAccompagnateur: "modes_orientation_accompagnateur",
-    ModeOrientationBeneficiaire: "modes_orientation_beneficiaire",
-    Profil: "profils",
-    Thematique: "thematiques",
-    TypologieService: "typologies_de_services",
-    TypologieStructure: "typologies_de_structures",
-    ZoneDiffusionType: "zones_de_diffusion_types",
-}
 
 
 def snake_case(txt: str) -> str:
@@ -99,11 +75,26 @@ def get_property_type_data(property_schema: dict) -> dict | None:
             }
 
 
-def main():
+def main(version: str) -> None:
+    schema = importlib.import_module(f"data_inclusion.schema.{version}")
+
+    ENUM_FILENAMES = {
+        schema.Frais: "frais",
+        schema.LabelNational: "labels_nationaux",
+        schema.ModeAccueil: "modes_accueil",
+        schema.ModeOrientationAccompagnateur: "modes_orientation_accompagnateur",
+        schema.ModeOrientationBeneficiaire: "modes_orientation_beneficiaire",
+        schema.Profil: "profils",
+        schema.Thematique: "thematiques",
+        schema.TypologieService: "typologies_de_services",
+        schema.TypologieStructure: "typologies_de_structures",
+        schema.ZoneDiffusionType: "zones_de_diffusion_types",
+    }
+
     DOCS_DIR.mkdir(exist_ok=True)
     (DOCS_DIR / "referentiels").mkdir(exist_ok=True)
 
-    for model in [Structure, Service]:
+    for model in [schema.Structure, schema.Service]:
         with (DOCS_DIR / f"{model.__name__.lower()}.md").open("w") as file:
             file.write(
                 jinja2.Template(
@@ -137,5 +128,28 @@ def main():
             )
 
 
+def list_schema_versions():
+    return sorted(
+        [
+            name
+            for _, name, is_pkg in pkgutil.iter_modules(schema.__path__)
+            if is_pkg and name.startswith("v") and name[1:].isdigit()
+        ]
+    )
+
+
 if __name__ == "__main__":
-    main()
+    import argparse
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--version",
+        type=str,
+        required=False,
+        choices=list_schema_versions(),
+        default=list_schema_versions()[-1],
+        help="Version cible du schéma à compiler. Par défaut, la dernière version.",
+    )
+    args = parser.parse_args()
+
+    main(args.version)

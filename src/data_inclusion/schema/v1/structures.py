@@ -5,16 +5,13 @@ from pydantic import EmailStr, HttpUrl
 
 from data_inclusion.schema import common
 from data_inclusion.schema.base import BaseModel, Field
-from data_inclusion.schema.labels_nationaux import LabelNational
-from data_inclusion.schema.thematiques import Thematique
-from data_inclusion.schema.typologies_de_structures import TypologieStructure
+from data_inclusion.schema.v0 import LabelNational, TypologieStructure
 
 
 class Structure(BaseModel):
     # fields
     id: str
     siret: Optional[common.CodeSiret] = None
-    rna: Optional[common.CodeRna] = None
     nom: Annotated[
         str,
         Field(
@@ -80,10 +77,8 @@ class Structure(BaseModel):
             title="Date de dernière modification",
         ),
     ]
-    antenne: Optional[bool] = None
     lien_source: Optional[HttpUrl] = None
     horaires_ouverture: Optional[str] = None
     accessibilite: Optional[HttpUrl] = None
     labels_nationaux: Optional[set[LabelNational]] = None
     labels_autres: Optional[set[str]] = None
-    thematiques: Optional[set[Thematique]] = None
