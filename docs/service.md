@@ -882,3 +882,63 @@ Type : `string`
 
 
 ---
+
+### `volume_horaire_hebdomadaire`
+
+Durée du service en heures sur une semaine.
+
+L’absence de valeur signifie que le service n’est pas concerné (exemple aide financière) ou que l’information n’est pas disponible.
+
+Champ utilisé dans le cadre des 15h-20h d’activité hebdomadaire des BRSA.
+
+
+
+Type : `number`
+
+
+
+
+
+
+
+
+
+
+Exemples :
+
+```json
+1
+
+```
+
+---
+
+### `nombre_semaines`
+
+Nombre de semaines sur lequel dure le service.
+
+Ne peut pas être inférieur à 1. L’absence de valeur signifie que le service n’est pas concerné (exemple aide financière) ou que l’information n’est pas disponible.
+
+Champ utilisé dans le cadre des 15h-20h d’activité hebdomadaire des BRSA.
+
+
+
+Type : `integer`
+
+
+
+
+
+
+
+
+
+
+Exemples :
+
+```json
+3
+
+```
+
+---
