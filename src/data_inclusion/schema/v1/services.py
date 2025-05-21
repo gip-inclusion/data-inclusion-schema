@@ -134,3 +134,37 @@ class Service(BaseModel):
         None
     )
     modes_orientation_accompagnateur_autres: Optional[str] = None
+    volume_horaire_hebdomadaire: Annotated[
+        Optional[float],
+        Field(
+            description="""
+                Durée du service en heures sur une semaine.
+
+                L’absence de valeur signifie que le service n’est pas concerné
+                (exemple aide financière) ou que l’information n’est pas
+                disponible.
+
+                Champ utilisé dans le cadre des 15h-20h d’activité
+                hebdomadaire des BRSA.
+            """,
+            examples=[1],
+            ge=0,
+        ),
+    ] = None
+    nombre_semaines: Annotated[
+        Optional[int],
+        Field(
+            description="""
+                Nombre de semaines sur lequel dure le service.
+
+                Ne peut pas être inférieur à 1. L’absence de valeur
+                signifie que le service n’est pas concerné (exemple aide financière)
+                ou que l’information n’est pas disponible.
+
+                Champ utilisé dans le cadre des 15h-20h d’activité hebdomadaire
+                des BRSA.
+            """,
+            examples=[3],
+            ge=1,
+        ),
+    ] = None

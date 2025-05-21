@@ -4,6 +4,8 @@
 
 ### Ajouts
 
+Ajout des champs volume_horaire_hebdomadaire et nombre_semaines
+
 ### Changements
 
 ### Dépréciations
