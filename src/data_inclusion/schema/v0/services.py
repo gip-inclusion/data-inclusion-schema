@@ -135,3 +135,25 @@ class Service(BaseModel):
         None
     )
     modes_orientation_accompagnateur_autres: Optional[str] = None
+    volume_horaire_hebdomadaire: Annotated[
+        Optional[int],
+        Field(
+            description="""
+                Durée du service en heures sur une semaine.
+            """,
+            examples=[0],
+            ge=0,
+        ),
+    ] = None
+    nombre_semaines: Annotated[
+        Optional[int],
+        Field(
+            description="""
+                Nombre de semaines sur lequel dure le service.
+
+                S’il est inférieur à une semaine, il est arrondi à 1.
+            """,
+            examples=[3],
+            ge=0,
+        ),
+    ] = None

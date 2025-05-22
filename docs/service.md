@@ -882,3 +882,55 @@ Type : `string`
 
 
 ---
+
+### `volume_horaire_hebdomadaire`
+
+Durée du service en heures sur une semaine.
+
+
+
+Type : `integer`
+
+
+
+
+
+
+
+
+
+
+Exemples :
+
+```json
+0
+
+```
+
+---
+
+### `nombre_semaines`
+
+Nombre de semaines sur lequel dure le service. S’il est inférieur à une semaine, il est arrondi à 1.
+
+
+
+Type : `integer`
+
+
+
+
+
+
+
+
+
+
+Exemples :
+
+```json
+3
+
+```
+
+---
