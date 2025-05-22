@@ -36,8 +36,24 @@ class Service(BaseModel):
             max_length=150,
         ),
     ]
-    presentation_resume: Annotated[Optional[str], Field(max_length=280)] = None
-    presentation_detail: Optional[str] = None
+    description: Annotated[
+        str,
+        Field(
+            description="""
+                Description du service.
+
+                Chaîne de caractères de plus de 50 caractères.
+            """,
+            examples=[
+                """Cet atelier-conseil vous permet d’identifier les compétences à
+                développer pour atteindre vos objectifs d’évolution professionnelle et à
+                découvrir les différentes modalités de formation.
+
+                Durée d’une journée et inscription via votre espace France Travail."""
+            ],
+            min_length=50,
+        ),
+    ]
     types: Optional[set[TypologieService]] = None
     thematiques: Optional[set[Thematique]] = None
     prise_rdv: Optional[HttpUrl] = None
