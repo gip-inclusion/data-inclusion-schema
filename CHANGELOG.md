@@ -14,6 +14,10 @@ Ajout des champs volume_horaire_hebdomadaire et nombre_semaines
 
 ## 1.0.0 - 2025-XX-XX
 
+### Changements
+
+* remplacement des champs `presentation_***` en faveur d'un champ unique `description` et mise à jour du critère de qualité `description_bien_definie`
+
 ### Suppressions
 
 **Schéma structure**

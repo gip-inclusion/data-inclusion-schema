@@ -63,8 +63,23 @@ class Structure(BaseModel):
         ),
     ]
     site_web: Optional[HttpUrl] = None
-    presentation_resume: Annotated[Optional[str], Field(max_length=280)] = None
-    presentation_detail: Optional[str] = None
+    description: Annotated[
+        str,
+        Field(
+            description="""
+                Description de la structure.
+
+                Entre 50 et 2000 caractères.
+            """,
+            examples=[
+                """L’association 3027 offre un accès gratuit aux arts, à la culture et
+                au sport pour toutes et tous sans distinction et en priorité aux
+                personnes en situation de précarité et d’isolement."""
+            ],
+            min_length=50,
+            max_length=2000,
+        ),
+    ]
     source: str
     date_maj: Annotated[
         date,
