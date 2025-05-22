@@ -15,6 +15,7 @@
 ### Changements
 
 * corrections des apostrophes dans les labels et les descriptions
+* remplacement des champs `presentation_***` en faveur d'un champ unique `description` et mise à jour du critère de qualité `description_bien_definie`
 
 ### Suppressions
 

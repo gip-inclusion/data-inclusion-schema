@@ -2,7 +2,7 @@ from typing import Callable, Mapping
 
 import pendulum
 
-from data_inclusion.schema.v0 import (
+from data_inclusion.schema.v1 import (
     Frais,
     ModeAccueil,
     ModeOrientationAccompagnateur,
@@ -122,19 +122,11 @@ def description_bien_definie(service: Service) -> float:
     SEUIL_MINIMUM = 200
     SEUIL_BON = 400
 
-    longueur_presentation = 0
-
-    if service.presentation_resume:
-        longueur_presentation = len(service.presentation_resume)
-
-    if service.presentation_detail:
-        longueur_presentation += len(service.presentation_detail)
-
-    if longueur_presentation < SEUIL_MINIMUM:
+    if len(service.description) < SEUIL_MINIMUM:
         return 0.0
-    elif longueur_presentation < SEUIL_BON:
+    elif len(service.description) < SEUIL_BON:
         # simple interpolation linéaire entre 0 et 1
-        return (longueur_presentation - SEUIL_MINIMUM) / (SEUIL_BON - SEUIL_MINIMUM)
+        return (len(service.description) - SEUIL_MINIMUM) / (SEUIL_BON - SEUIL_MINIMUM)
     else:
         return 1.0
 

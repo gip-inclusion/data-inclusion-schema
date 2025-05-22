@@ -87,28 +87,11 @@ Exemples :
 
 ---
 
-### `presentation_resume`
+### `description` *
 
+Description du service.
 
-
-
-
-Type : `string`
-
-
-
-
-
-
-
-
-
-
----
-
-### `presentation_detail`
-
-
+Chaîne de caractères de plus de 50 caractères.
 
 
 
@@ -122,6 +105,13 @@ Type : `string`
 
 
 
+
+Exemples :
+
+```json
+"Cet atelier-conseil vous permet d\u2019identifier les comp\u00e9tences \u00e0\n                d\u00e9velopper pour atteindre vos objectifs d\u2019\u00e9volution professionnelle et \u00e0\n                d\u00e9couvrir les diff\u00e9rentes modalit\u00e9s de formation.\n\n                Dur\u00e9e d\u2019une journ\u00e9e et inscription via votre espace France Travail."
+
+```
 
 ---
 
