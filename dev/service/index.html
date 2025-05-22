@@ -348,9 +348,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#description" class="md-nav__link">
+  <a href="#presentation_resume" class="md-nav__link">
     <span class="md-ellipsis">
-      description *
+      presentation_resume
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#presentation_detail" class="md-nav__link">
+    <span class="md-ellipsis">
+      presentation_detail
     </span>
   </a>
   
@@ -675,6 +684,24 @@
   <a href="#modes_orientation_accompagnateur_autres" class="md-nav__link">
     <span class="md-ellipsis">
       modes_orientation_accompagnateur_autres
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#volume_horaire_hebdomadaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      volume_horaire_hebdomadaire
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nombre_semaines" class="md-nav__link">
+    <span class="md-ellipsis">
+      nombre_semaines
     </span>
   </a>
   
@@ -1024,9 +1051,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#description" class="md-nav__link">
+  <a href="#presentation_resume" class="md-nav__link">
     <span class="md-ellipsis">
-      description *
+      presentation_resume
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#presentation_detail" class="md-nav__link">
+    <span class="md-ellipsis">
+      presentation_detail
     </span>
   </a>
   
@@ -1356,6 +1392,24 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#volume_horaire_hebdomadaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      volume_horaire_hebdomadaire
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nombre_semaines" class="md-nav__link">
+    <span class="md-ellipsis">
+      nombre_semaines
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1397,13 +1451,11 @@
 <div class="highlight"><pre><span></span><code><span class="s2">&quot;Atelier insertion et posture professionnelle&quot;</span>
 </code></pre></div>
 <hr />
-<h3 id="description"><code>description</code> *</h3>
-<p>Description du service.</p>
-<p>Chaîne de caractères de plus de 50 caractères.</p>
+<h3 id="presentation_resume"><code>presentation_resume</code></h3>
 <p>Type : <code>string</code></p>
-<p>Exemples :</p>
-<div class="highlight"><pre><span></span><code><span class="s2">&quot;Cet atelier-conseil vous permet d\u2019identifier les comp\u00e9tences \u00e0\n                d\u00e9velopper pour atteindre vos objectifs d\u2019\u00e9volution professionnelle et \u00e0\n                d\u00e9couvrir les diff\u00e9rentes modalit\u00e9s de formation.\n\n                Dur\u00e9e d\u2019une journ\u00e9e et inscription via votre espace France Travail.&quot;</span>
-</code></pre></div>
+<hr />
+<h3 id="presentation_detail"><code>presentation_detail</code></h3>
+<p>Type : <code>string</code></p>
 <hr />
 <h3 id="types"><code>types</code></h3>
 <p>Type : <code>array[string]</code></p>
@@ -1530,7 +1582,7 @@
 <p>Type : <code>string</code></p>
 <hr />
 <h3 id="page_web"><code>page_web</code></h3>
-<p>Lien vers une page web dédiée au service sur le site web de la structure. Ce champ n’est pas destiné à recevoir un lien vers le site d’un producteur de donnée.</p>
+<p>Lien vers une page web dédiée au service sur le site web de la structure. Ce champ n&#39;est pas destiné à recevoir un lien vers le site d&#39;un producteur de donnée.</p>
 <p>Type : <code>string</code></p>
 <p>Format : <code>uri</code></p>
 <p>Exemples :</p>
@@ -1550,6 +1602,20 @@
 <hr />
 <h3 id="modes_orientation_accompagnateur_autres"><code>modes_orientation_accompagnateur_autres</code></h3>
 <p>Type : <code>string</code></p>
+<hr />
+<h3 id="volume_horaire_hebdomadaire"><code>volume_horaire_hebdomadaire</code></h3>
+<p>Durée du service en heures sur une semaine.</p>
+<p>Type : <code>integer</code></p>
+<p>Exemples :</p>
+<div class="highlight"><pre><span></span><code><span class="mi">0</span>
+</code></pre></div>
+<hr />
+<h3 id="nombre_semaines"><code>nombre_semaines</code></h3>
+<p>Nombre de semaines sur lequel dure le service. S’il est inférieur à une semaine, il est arrondi à 1.</p>
+<p>Type : <code>integer</code></p>
+<p>Exemples :</p>
+<div class="highlight"><pre><span></span><code><span class="mi">3</span>
+</code></pre></div>
 <hr />
 
 
