@@ -5,7 +5,7 @@
     "value": "a-distance"
   },
   {
-    "description": "Le service est proposé en présentiel, à l'adresse associée à ce service.",
+    "description": "Le service est proposé en présentiel, à l’adresse associée à ce service.",
     "label": "En présentiel",
     "value": "en-presentiel"
   }

@@ -10,7 +10,11 @@
 
 ### Suppressions
 
-## 1.0.0a1 - 2025-XX-XX
+## 1.0.0 - 2025-XX-XX
+
+### Changements
+
+* corrections des apostrophes dans les labels et les descriptions
 
 ### Suppressions
 

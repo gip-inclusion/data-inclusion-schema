@@ -102,7 +102,7 @@ class TypologieStructure(EnhancedEnum):
     )
     CDAS = (
         "CDAS",
-        "Centre Départementale d'Action Sociale (CDAS)",
+        "Centre Départementale d’Action Sociale (CDAS)",
         None,
     )
     CFP = (
@@ -147,7 +147,7 @@ class TypologieStructure(EnhancedEnum):
     )
     CPAM = (
         "CPAM",
-        "Caisse Primaire d'Assurance Maladie (CPAM)",
+        "Caisse Primaire d’Assurance Maladie (CPAM)",
         None,
     )
     CPH = (
@@ -260,7 +260,7 @@ class TypologieStructure(EnhancedEnum):
     )
     ETAT = (
         "ETAT",
-        "Service de l'État",
+        "Service de l’État",
         None,
     )
     ETTI = (

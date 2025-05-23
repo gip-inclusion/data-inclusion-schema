@@ -773,7 +773,7 @@ Type : `string`
 
 ### `page_web`
 
-Lien vers une page web dédiée au service sur le site web de la structure. Ce champ n&#39;est pas destiné à recevoir un lien vers le site d&#39;un producteur de donnée.
+Lien vers une page web dédiée au service sur le site web de la structure. Ce champ n’est pas destiné à recevoir un lien vers le site d’un producteur de donnée.
 
 
 
