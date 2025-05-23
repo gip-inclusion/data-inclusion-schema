@@ -1,4 +1,4 @@
 | Nom | Label | Description |
 | :- | :- | :- |
 | `a-distance` | À distance | Le service est proposé à distance, par téléphone ou internet. |
-| `en-presentiel` | En présentiel | Le service est proposé en présentiel, à l&#39;adresse associée à ce service. |
+| `en-presentiel` | En présentiel | Le service est proposé en présentiel, à l’adresse associée à ce service. |

@@ -10,5 +10,5 @@ class ModeAccueil(EnhancedEnum):
     EN_PRESENTIEL = (
         "en-presentiel",
         "En présentiel",
-        "Le service est proposé en présentiel, à l'adresse associée à ce service.",
+        "Le service est proposé en présentiel, à l’adresse associée à ce service.",
     )

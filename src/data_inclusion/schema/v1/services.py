@@ -120,8 +120,8 @@ class Service(BaseModel):
         Field(
             description="""
                 Lien vers une page web dédiée au service sur le site web de la
-                structure. Ce champ n'est pas destiné à recevoir un lien vers le site
-                d'un producteur de donnée.
+                structure. Ce champ n’est pas destiné à recevoir un lien vers le site
+                d’un producteur de donnée.
             """,
             examples=[
                 "https://insersol.fr/biclou-atelier-reparation-participatif-solidaire/"
