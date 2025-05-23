@@ -23,6 +23,7 @@ def service_factory(**kwargs):
         "nom": "foo",
         "date_maj": pendulum.today(),
         "source": "3",
+        "description": "." * 500,
     }
     kwargs = defaults | kwargs
     return Service(**kwargs)
@@ -386,36 +387,19 @@ def test_critere_au_moins_un_moyen_de_contact(service: Service, attendu: float):
     ("service", "attendu"),
     [
         pytest.param(
-            service_factory(
-                presentation_resume=None,
-                presentation_detail=None,
-            ),
-            0.0,
-            id="aucune_presentation",
-        ),
-        pytest.param(
-            service_factory(
-                presentation_resume="." * 200,
-                presentation_detail=None,
-            ),
+            service_factory(description="." * 100),
             0.0,
             id="description_bien_trop_courte",
         ),
         pytest.param(
-            service_factory(
-                presentation_resume="." * 100,
-                presentation_detail="." * 200,
-            ),
+            service_factory(description="." * 300),
             0.5,
-            id="presentation_assez_courte",
+            id="description_assez_courte",
         ),
         pytest.param(
-            service_factory(
-                presentation_resume=None,
-                presentation_detail="." * 400,
-            ),
+            service_factory(description="." * 400),
             1.0,
-            id="presentation_longue",
+            id="description_longue",
         ),
     ],
 )
@@ -478,7 +462,7 @@ def test_critere_frais_bien_definis(service: Service, attendu: float):
                 profils=[Profil.ADULTES],
                 telephone="3615",
                 modes_orientation_beneficiaire=[ModeOrientationBeneficiaire.TELEPHONER],
-                presentation_detail="longue présentation" * 100,
+                description="." * 500,
             ),
             1.0,
             id="service_parfait",
@@ -490,7 +474,7 @@ def test_critere_frais_bien_definis(service: Service, attendu: float):
                 courriel="lorem@ipsum.dolor",
                 frais=[Frais.PAYANT],
                 frais_autres="lorem ipsum",
-                presentation_detail="longue présentation" * 100,
+                description="." * 500,
                 modes_accueil=[ModeAccueil.EN_PRESENTIEL],
                 modes_orientation_beneficiaire=[ModeOrientationBeneficiaire.TELEPHONER],
                 modes_orientation_accompagnateur=[
@@ -506,6 +490,7 @@ def test_critere_frais_bien_definis(service: Service, attendu: float):
         pytest.param(
             service_factory(
                 date_maj=pendulum.today() - pendulum.Duration(years=3),
+                description="." * 50,
             ),
             0.0,
             id="service_faisandé",

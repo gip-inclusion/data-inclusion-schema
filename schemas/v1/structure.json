@@ -297,6 +297,15 @@
       "title": "Date de dernière modification",
       "type": "string"
     },
+    "description": {
+      "description": "Description de la structure.\n\nChaîne de caractères de plus de 50 caractères.",
+      "examples": [
+        "L’association 3027 offre un accès gratuit aux arts, à la culture et\n                au sport pour toutes et tous sans distinction et en priorité aux\n                personnes en situation de précarité et d’isolement."
+      ],
+      "minLength": 50,
+      "title": "Description",
+      "type": "string"
+    },
     "horaires_ouverture": {
       "anyOf": [
         {
@@ -394,31 +403,6 @@
       "title": "Nom",
       "type": "string"
     },
-    "presentation_detail": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "null"
-        }
-      ],
-      "default": null,
-      "title": "Presentation Detail"
-    },
-    "presentation_resume": {
-      "anyOf": [
-        {
-          "maxLength": 280,
-          "type": "string"
-        },
-        {
-          "type": "null"
-        }
-      ],
-      "default": null,
-      "title": "Presentation Resume"
-    },
     "siret": {
       "anyOf": [
         {
@@ -484,6 +468,7 @@
   "required": [
     "id",
     "nom",
+    "description",
     "source",
     "date_maj"
   ],
