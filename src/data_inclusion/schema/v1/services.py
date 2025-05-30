@@ -46,7 +46,6 @@ class Service(BaseModel):
     profils: Optional[set[Profil]] = None
     profils_precisions: Optional[str] = None
     pre_requis: Optional[set[str]] = None
-    cumulable: Optional[bool] = None
     justificatifs: Optional[set[str]] = None
     formulaire_en_ligne: Optional[HttpUrl] = None
     commune: Optional[str] = None
@@ -56,10 +55,6 @@ class Service(BaseModel):
     complement_adresse: Optional[str] = None
     longitude: Optional[float] = None
     latitude: Optional[float] = None
-    recurrence: Optional[str] = None
-    date_creation: Optional[date] = None
-    date_suspension: Optional[date] = None
-    lien_source: Optional[HttpUrl] = None
     telephone: Annotated[
         Optional[str],
         Field(
@@ -94,7 +89,6 @@ class Service(BaseModel):
             default=None,
         ),
     ]
-    contact_public: Optional[bool] = None
     date_maj: Annotated[
         date,
         Field(

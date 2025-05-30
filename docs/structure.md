@@ -383,25 +383,6 @@ Exemples :
 
 ---
 
-### `lien_source`
-
-
-
-
-
-Type : `string`
-
-
-
-Format : `uri`
-
-
-
-
-
-
----
-
 ### `horaires_ouverture`
 
 
