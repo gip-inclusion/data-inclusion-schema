@@ -297,25 +297,6 @@ Type : `array`
 
 ---
 
-### `cumulable`
-
-
-
-
-
-Type : `boolean`
-
-
-
-
-
-
-
-
-
-
----
-
 ### `justificatifs`
 
 
@@ -487,82 +468,6 @@ Type : `number`
 
 ---
 
-### `recurrence`
-
-
-
-
-
-Type : `string`
-
-
-
-
-
-
-
-
-
-
----
-
-### `date_creation`
-
-
-
-
-
-Type : `string`
-
-
-
-Format : `date`
-
-
-
-
-
-
----
-
-### `date_suspension`
-
-
-
-
-
-Type : `string`
-
-
-
-Format : `date`
-
-
-
-
-
-
----
-
-### `lien_source`
-
-
-
-
-
-Type : `string`
-
-
-
-Format : `uri`
-
-
-
-
-
-
----
-
 ### `telephone`
 
 Numéro de téléphone à utiliser pour obtenir des informations complémentaires sur le service. Si le mode de mobilisation est `telephoner`, peut être utilisé pour mobiliser le service.
@@ -618,25 +523,6 @@ Exemples :
 "exemple@inclusion.gouv.fr"
 
 ```
-
----
-
-### `contact_public`
-
-
-
-
-
-Type : `boolean`
-
-
-
-
-
-
-
-
-
 
 ---
 
