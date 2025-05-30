@@ -357,21 +357,6 @@
       "default": null,
       "title": "Latitude"
     },
-    "lien_source": {
-      "anyOf": [
-        {
-          "format": "uri",
-          "maxLength": 2083,
-          "minLength": 1,
-          "type": "string"
-        },
-        {
-          "type": "null"
-        }
-      ],
-      "default": null,
-      "title": "Lien Source"
-    },
     "longitude": {
       "anyOf": [
         {

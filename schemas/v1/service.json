@@ -340,18 +340,6 @@
       "default": null,
       "title": "Contact Nom Prenom"
     },
-    "contact_public": {
-      "anyOf": [
-        {
-          "type": "boolean"
-        },
-        {
-          "type": "null"
-        }
-      ],
-      "default": null,
-      "title": "Contact Public"
-    },
     "courriel": {
       "anyOf": [
         {
@@ -369,31 +357,6 @@
       ],
       "title": "Courriel"
     },
-    "cumulable": {
-      "anyOf": [
-        {
-          "type": "boolean"
-        },
-        {
-          "type": "null"
-        }
-      ],
-      "default": null,
-      "title": "Cumulable"
-    },
-    "date_creation": {
-      "anyOf": [
-        {
-          "format": "date",
-          "type": "string"
-        },
-        {
-          "type": "null"
-        }
-      ],
-      "default": null,
-      "title": "Date Creation"
-    },
     "date_maj": {
       "description": "Date de dernière modification du service chez le producteur de données.",
       "examples": [
@@ -402,19 +365,6 @@
       "format": "date",
       "title": "Date de dernière modification",
       "type": "string"
-    },
-    "date_suspension": {
-      "anyOf": [
-        {
-          "format": "date",
-          "type": "string"
-        },
-        {
-          "type": "null"
-        }
-      ],
-      "default": null,
-      "title": "Date Suspension"
     },
     "formulaire_en_ligne": {
       "anyOf": [
@@ -490,21 +440,6 @@
       ],
       "default": null,
       "title": "Latitude"
-    },
-    "lien_source": {
-      "anyOf": [
-        {
-          "format": "uri",
-          "maxLength": 2083,
-          "minLength": 1,
-          "type": "string"
-        },
-        {
-          "type": "null"
-        }
-      ],
-      "default": null,
-      "title": "Lien Source"
     },
     "longitude": {
       "anyOf": [
@@ -719,18 +654,6 @@
       ],
       "default": null,
       "title": "Profils Precisions"
-    },
-    "recurrence": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "null"
-        }
-      ],
-      "default": null,
-      "title": "Recurrence"
     },
     "source": {
       "title": "Source",
