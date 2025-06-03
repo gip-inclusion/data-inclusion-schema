@@ -15,7 +15,7 @@
 | `locataires` | Locataires | - |
 | `personnes-de-nationalite-etrangere` | Personnes de nationalité étrangère | - |
 | `personnes-en-situation-de-handicap` | Personnes en situation de handicap | Une personne se déplaçant temporairement en béquilles des suites d’une intervention médicale est en situation de handicap sans toutefois être handicapée. |
-| `personnes-en-situation-durgence` | Victimes | - |
+| `personnes-en-situation-durgence` | Personnes en situation d’urgence | - |
 | `personnes-en-situation-illettrisme` | Personnes en situation d’illettrisme | - |
 | `personnes-handicapees` | Personnes handicapées | Ce terme est privilégié pour désigner une incapacité persistante et significative subie par une personne dans son environnement. |
 | `proprietaires` | Propriétaires | - |
