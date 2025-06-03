@@ -15,6 +15,7 @@
 ### Changements
 
 * corrections des apostrophes dans les labels et les descriptions
+* correction du label pour les personnes en situation d’urgence
 
 ### Suppressions
 
