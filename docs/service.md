@@ -165,25 +165,6 @@ Valeurs acceptées : voir le [référentiel associé](referentiels/thematiques.m
 
 ---
 
-### `prise_rdv`
-
-
-
-
-
-Type : `string`
-
-
-
-Format : `uri`
-
-
-
-
-
-
----
-
 ### `frais`
 
 
@@ -300,25 +281,6 @@ Type : `array`
 
 
 
-
-
-
-
-
-
----
-
-### `formulaire_en_ligne`
-
-
-
-
-
-Type : `string`
-
-
-
-Format : `uri`
 
 
 
@@ -649,9 +611,9 @@ Type : `string`
 
 ---
 
-### `page_web`
+### `lien_mobilisation`
 
-Lien vers une page web dédiée au service sur le site web de la structure. Ce champ n’est pas destiné à recevoir un lien vers le site d’un producteur de donnée.
+Lien pour accéder ou mobiliser l’offre de service.
 
 
 
@@ -669,58 +631,15 @@ Format : `uri`
 Exemples :
 
 ```json
-"https://insersol.fr/biclou-atelier-reparation-participatif-solidaire/"
+"https://www.actionlogement.fr/demande-cfi"
 
 ```
 
 ---
 
-### `modes_orientation_beneficiaire`
+### `modes_mobilisation`
 
-
-
-
-
-Type : `array[string]`
-
-
-
-
-
-
-
-
-
-
-Valeurs acceptées : voir le [référentiel associé](referentiels/modes_orientation_beneficiaire.md)
-
-
-
-
----
-
-### `modes_orientation_beneficiaire_autres`
-
-
-
-
-
-Type : `string`
-
-
-
-
-
-
-
-
-
-
----
-
-### `modes_orientation_accompagnateur`
-
-
+Modes de mobilisation de l’offre de service. Les valeurs proviennent d’un référentiel disponible sur notre documentation.
 
 
 
@@ -735,16 +654,55 @@ Type : `array[string]`
 
 
 
-Valeurs acceptées : voir le [référentiel associé](referentiels/modes_orientation_accompagnateur.md)
+Valeurs acceptées : `"envoyer-un-courriel&#34;, &#34;se-presenter&#34;, &#34;telephoner&#34;, &#34;utiliser-lien-mobilisation"`
 
 
 
+
+Exemples :
+
+```json
+"envoyer-un-courriel"
+
+```
 
 ---
 
-### `modes_orientation_accompagnateur_autres`
+### `mobilisable_par`
+
+Indique qui peut mobiliser le service : usagers, professionnels ou les deux.
 
 
+
+Type : `array[string]`
+
+
+
+
+
+
+
+
+
+
+Valeurs acceptées : `"usagers&#34;, &#34;professionnels"`
+
+
+
+
+Exemples :
+
+```json
+["professionnels"]
+["usagers"]
+
+```
+
+---
+
+### `mobilisation_precisions`
+
+Précisions sur les modes de mobilisation du service.
 
 
 
@@ -758,6 +716,13 @@ Type : `string`
 
 
 
+
+Exemples :
+
+```json
+"La demande est \u00e0 faire depuis l\u2019espace personnel\n                du demandeur d\u2019emploi, rubrique \u00ab mes aides \u00bb,\n                formulaire sp\u00e9cifique \u00ab Aide \u00e0 la mobilit\u00e9 \u00bb."
+
+```
 
 ---
 

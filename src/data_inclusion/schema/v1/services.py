@@ -5,11 +5,11 @@ from pydantic import EmailStr, HttpUrl
 
 from data_inclusion.schema import common
 from data_inclusion.schema.base import BaseModel, Field
-from data_inclusion.schema.v0 import (
+from data_inclusion.schema.v1 import (
     Frais,
     ModeAccueil,
-    ModeOrientationAccompagnateur,
-    ModeOrientationBeneficiaire,
+    ModeMobilisation,
+    PersonneMobilisatrice,
     Profil,
     Thematique,
     TypologieService,
@@ -59,14 +59,12 @@ class Service(BaseModel):
     ]
     types: Optional[set[TypologieService]] = None
     thematiques: Optional[set[Thematique]] = None
-    prise_rdv: Optional[HttpUrl] = None
     frais: Optional[set[Frais]] = None
     frais_autres: Optional[str] = None
     profils: Optional[set[Profil]] = None
     profils_precisions: Optional[str] = None
     pre_requis: Optional[set[str]] = None
     justificatifs: Optional[set[str]] = None
-    formulaire_en_ligne: Optional[HttpUrl] = None
     commune: Optional[str] = None
     code_postal: Optional[common.CodePostal] = None
     code_insee: Optional[common.CodeCommune] = None
@@ -128,25 +126,56 @@ class Service(BaseModel):
     ] = None
     zone_diffusion_nom: Optional[str] = None
     contact_nom_prenom: Optional[str] = None
-    page_web: Annotated[
+    lien_mobilisation: Annotated[
         Optional[HttpUrl],
         Field(
             description="""
-                Lien vers une page web dédiée au service sur le site web de la
-                structure. Ce champ n’est pas destiné à recevoir un lien vers le site
-                d’un producteur de donnée.
+                Lien pour accéder ou mobiliser l’offre de service.
+            """,
+            examples=["https://www.actionlogement.fr/demande-cfi"],
+        ),
+    ] = None
+    modes_mobilisation: Annotated[
+        Optional[set[ModeMobilisation]],
+        Field(
+            description="""
+                Modes de mobilisation de l’offre de service.
+                Les valeurs proviennent d’un référentiel disponible
+                sur notre documentation.
             """,
             examples=[
-                "https://insersol.fr/biclou-atelier-reparation-participatif-solidaire/"
+                "envoyer-un-courriel",
+            ],
+            min_items=1,
+        ),
+    ] = None
+    mobilisable_par: Annotated[
+        Optional[set[PersonneMobilisatrice]],
+        Field(
+            description="""
+                Indique qui peut mobiliser le service : usagers, professionnels ou les
+                deux.
+            """,
+            examples=[
+                ["professionnels"],
+                ["usagers"],
+            ],
+            min_items=1,
+        ),
+    ] = None
+    mobilisation_precisions: Annotated[
+        Optional[str],
+        Field(
+            description="""
+                Précisions sur les modes de mobilisation du service.
+            """,
+            examples=[
+                """La demande est à faire depuis l’espace personnel
+                du demandeur d’emploi, rubrique « mes aides »,
+                formulaire spécifique « Aide à la mobilité »."""
             ],
         ),
     ] = None
-    modes_orientation_beneficiaire: Optional[set[ModeOrientationBeneficiaire]] = None
-    modes_orientation_beneficiaire_autres: Optional[str] = None
-    modes_orientation_accompagnateur: Optional[set[ModeOrientationAccompagnateur]] = (
-        None
-    )
-    modes_orientation_accompagnateur_autres: Optional[str] = None
     volume_horaire_hebdomadaire: Annotated[
         Optional[float],
         Field(
