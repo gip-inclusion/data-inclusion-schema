@@ -19,28 +19,22 @@
       "title": "ModeAccueil",
       "type": "string"
     },
-    "ModeOrientationAccompagnateur": {
+    "ModeMobilisation": {
       "enum": [
-        "completer-le-formulaire-dadhesion",
-        "envoyer-un-mail",
-        "envoyer-un-mail-avec-une-fiche-de-prescription",
-        "telephoner",
-        "prendre-rdv",
-        "autre"
-      ],
-      "title": "ModeOrientationAccompagnateur",
-      "type": "string"
-    },
-    "ModeOrientationBeneficiaire": {
-      "enum": [
-        "completer-le-formulaire-dadhesion",
-        "envoyer-un-mail",
+        "envoyer-un-courriel",
         "se-presenter",
         "telephoner",
-        "prendre-rdv",
-        "autre"
+        "utiliser-lien-mobilisation"
       ],
-      "title": "ModeOrientationBeneficiaire",
+      "title": "ModeMobilisation",
+      "type": "string"
+    },
+    "PersonneMobilisatrice": {
+      "enum": [
+        "usagers",
+        "professionnels"
+      ],
+      "title": "PersonneMobilisatrice",
       "type": "string"
     },
     "Profil": {
@@ -376,21 +370,6 @@
       "title": "Description",
       "type": "string"
     },
-    "formulaire_en_ligne": {
-      "anyOf": [
-        {
-          "format": "uri",
-          "maxLength": 2083,
-          "minLength": 1,
-          "type": "string"
-        },
-        {
-          "type": "null"
-        }
-      ],
-      "default": null,
-      "title": "Formulaire En Ligne"
-    },
     "frais": {
       "anyOf": [
         {
@@ -451,6 +430,25 @@
       "default": null,
       "title": "Latitude"
     },
+    "lien_mobilisation": {
+      "anyOf": [
+        {
+          "format": "uri",
+          "maxLength": 2083,
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Lien pour accéder ou mobiliser l’offre de service.",
+      "examples": [
+        "https://www.actionlogement.fr/demande-cfi"
+      ],
+      "title": "Lien Mobilisation"
+    },
     "longitude": {
       "anyOf": [
         {
@@ -462,6 +460,48 @@
       ],
       "default": null,
       "title": "Longitude"
+    },
+    "mobilisable_par": {
+      "anyOf": [
+        {
+          "items": {
+            "$ref": "#/$defs/PersonneMobilisatrice"
+          },
+          "minItems": 1,
+          "type": "array",
+          "uniqueItems": true
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Indique qui peut mobiliser le service : usagers, professionnels ou les deux.",
+      "examples": [
+        [
+          "professionnels"
+        ],
+        [
+          "usagers"
+        ]
+      ],
+      "title": "Mobilisable Par"
+    },
+    "mobilisation_precisions": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Précisions sur les modes de mobilisation du service.",
+      "examples": [
+        "La demande est à faire depuis l’espace personnel\n                du demandeur d’emploi, rubrique « mes aides »,\n                formulaire spécifique « Aide à la mobilité »."
+      ],
+      "title": "Mobilisation Precisions"
     },
     "modes_accueil": {
       "anyOf": [
@@ -479,12 +519,13 @@
       "default": null,
       "title": "Modes Accueil"
     },
-    "modes_orientation_accompagnateur": {
+    "modes_mobilisation": {
       "anyOf": [
         {
           "items": {
-            "$ref": "#/$defs/ModeOrientationAccompagnateur"
+            "$ref": "#/$defs/ModeMobilisation"
           },
+          "minItems": 1,
           "type": "array",
           "uniqueItems": true
         },
@@ -493,47 +534,11 @@
         }
       ],
       "default": null,
-      "title": "Modes Orientation Accompagnateur"
-    },
-    "modes_orientation_accompagnateur_autres": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "null"
-        }
+      "description": "Modes de mobilisation de l’offre de service. Les valeurs proviennent d’un référentiel disponible sur notre documentation.",
+      "examples": [
+        "envoyer-un-courriel"
       ],
-      "default": null,
-      "title": "Modes Orientation Accompagnateur Autres"
-    },
-    "modes_orientation_beneficiaire": {
-      "anyOf": [
-        {
-          "items": {
-            "$ref": "#/$defs/ModeOrientationBeneficiaire"
-          },
-          "type": "array",
-          "uniqueItems": true
-        },
-        {
-          "type": "null"
-        }
-      ],
-      "default": null,
-      "title": "Modes Orientation Beneficiaire"
-    },
-    "modes_orientation_beneficiaire_autres": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "null"
-        }
-      ],
-      "default": null,
-      "title": "Modes Orientation Beneficiaire Autres"
+      "title": "Modes Mobilisation"
     },
     "nom": {
       "description": "Nom du service.\n\nChaîne de caractères entre 3 et 150 caractères, ne se terminant pas par un point.",
@@ -562,25 +567,6 @@
       ],
       "title": "Nombre Semaines"
     },
-    "page_web": {
-      "anyOf": [
-        {
-          "format": "uri",
-          "maxLength": 2083,
-          "minLength": 1,
-          "type": "string"
-        },
-        {
-          "type": "null"
-        }
-      ],
-      "default": null,
-      "description": "Lien vers une page web dédiée au service sur le site web de la structure. Ce champ n’est pas destiné à recevoir un lien vers le site d’un producteur de donnée.",
-      "examples": [
-        "https://insersol.fr/biclou-atelier-reparation-participatif-solidaire/"
-      ],
-      "title": "Page Web"
-    },
     "pre_requis": {
       "anyOf": [
         {
@@ -596,21 +582,6 @@
       ],
       "default": null,
       "title": "Pre Requis"
-    },
-    "prise_rdv": {
-      "anyOf": [
-        {
-          "format": "uri",
-          "maxLength": 2083,
-          "minLength": 1,
-          "type": "string"
-        },
-        {
-          "type": "null"
-        }
-      ],
-      "default": null,
-      "title": "Prise Rdv"
     },
     "profils": {
       "anyOf": [

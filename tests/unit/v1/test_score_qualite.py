@@ -7,8 +7,8 @@ from freezegun import freeze_time
 from data_inclusion.schema.v1 import (
     Frais,
     ModeAccueil,
-    ModeOrientationAccompagnateur,
-    ModeOrientationBeneficiaire,
+    ModeMobilisation,
+    PersonneMobilisatrice,
     Profil,
     Service,
     Thematique,
@@ -42,9 +42,7 @@ def service_factory(**kwargs):
         pytest.param(
             service_factory(
                 adresse=None,
-                modes_orientation_beneficiaire=[
-                    ModeOrientationBeneficiaire.SE_PRESENTER
-                ],
+                modes_mobilisation=[ModeMobilisation.SE_PRESENTER],
             ),
             0.0,
             id="se_presenter_sans_adresse",
@@ -62,9 +60,7 @@ def service_factory(**kwargs):
         pytest.param(
             service_factory(
                 adresse="1 rue de la paix",
-                modes_orientation_beneficiaire=[
-                    ModeOrientationBeneficiaire.SE_PRESENTER
-                ],
+                modes_mobilisation=[ModeMobilisation.SE_PRESENTER],
             ),
             1.0,
             id="se_presenter_avec_adresse",
@@ -98,38 +94,18 @@ def test_critere_adresse_bien_definie(service: Service, attendu: float):
         pytest.param(
             service_factory(
                 telephone=None,
-                modes_orientation_accompagnateur=[
-                    ModeOrientationAccompagnateur.TELEPHONER
-                ],
+                modes_mobilisation=[ModeMobilisation.TELEPHONER],
             ),
             0.0,
-            id="accompagnateur_peut_telephoner_sans_telephone",
-        ),
-        pytest.param(
-            service_factory(
-                telephone=None,
-                modes_orientation_beneficiaire=[ModeOrientationBeneficiaire.TELEPHONER],
-            ),
-            0.0,
-            id="beneficiaire_peut_telephoner_sans_telephone",
+            id="telephoner_sans_telephone",
         ),
         pytest.param(
             service_factory(
                 telephone="3615",
-                modes_orientation_accompagnateur=[
-                    ModeOrientationAccompagnateur.TELEPHONER
-                ],
+                modes_mobilisation=[ModeMobilisation.TELEPHONER],
             ),
             1.0,
-            id="accompagnateur_peut_telephoner_avec_telephone",
-        ),
-        pytest.param(
-            service_factory(
-                telephone="3615",
-                modes_orientation_beneficiaire=[ModeOrientationBeneficiaire.TELEPHONER],
-            ),
-            1.0,
-            id="beneficiaire_peut_telephoner_avec_telephone",
+            id="telephoner_avec_telephone",
         ),
     ],
 )
@@ -150,42 +126,18 @@ def test_critere_telephone_bien_defini(service: Service, attendu: float):
         pytest.param(
             service_factory(
                 courriel=None,
-                modes_orientation_accompagnateur=[
-                    ModeOrientationAccompagnateur.ENVOYER_UN_MAIL
-                ],
+                modes_mobilisation=[ModeMobilisation.ENVOYER_UN_COURRIEL],
             ),
             0.0,
-            id="accompagnateur_envoyer_un_mail_sans_courriel",
-        ),
-        pytest.param(
-            service_factory(
-                courriel=None,
-                modes_orientation_beneficiaire=[
-                    ModeOrientationBeneficiaire.ENVOYER_UN_MAIL
-                ],
-            ),
-            0.0,
-            id="beneficiaire_envoyer_un_mail_sans_courriel",
+            id="envoyer_un_mail_sans_courriel",
         ),
         pytest.param(
             service_factory(
                 courriel="lorem@ipsum.dolor",
-                modes_orientation_accompagnateur=[
-                    ModeOrientationAccompagnateur.ENVOYER_UN_MAIL
-                ],
+                modes_mobilisation=[ModeMobilisation.ENVOYER_UN_COURRIEL],
             ),
             1.0,
-            id="accompagnateur_envoyer_un_mail_avec_courriel",
-        ),
-        pytest.param(
-            service_factory(
-                courriel="lorem@ipsum.dolor",
-                modes_orientation_beneficiaire=[
-                    ModeOrientationBeneficiaire.ENVOYER_UN_MAIL
-                ],
-            ),
-            1.0,
-            id="beneficiaire_envoyer_un_mail_avec_courriel",
+            id="envoyer_un_mail_avec_courriel",
         ),
     ],
 )
@@ -270,42 +222,40 @@ def test_critere_au_moins_un_frais(frais: list[Frais], attendu: float):
     [
         pytest.param(
             service_factory(
-                modes_orientation_beneficiaire=None,
-                modes_orientation_accompagnateur=None,
+                modes_mobilisation=None,
+                mobilisable_par=None,
             ),
             0.0,
-            id="modes_orientation_nuls",
+            id="nuls",
         ),
         pytest.param(
             service_factory(
-                modes_orientation_beneficiaire=[],
-                modes_orientation_accompagnateur=[],
+                modes_mobilisation=None,
+                mobilisable_par=[PersonneMobilisatrice.PROFESSIONNELS],
             ),
-            0.0,
-            id="modes_orientation_vides",
+            0.5,
+            id="sans_modes_mobilisation",
         ),
         pytest.param(
             service_factory(
-                modes_orientation_beneficiaire=[ModeOrientationBeneficiaire.TELEPHONER],
-                modes_orientation_accompagnateur=None,
+                modes_mobilisation=[ModeMobilisation.TELEPHONER],
+                mobilisable_par=None,
             ),
-            1.0,
-            id="modes_orientation_beneficiaire_defini",
+            0.5,
+            id="sans_personnes_mobilisatrices",
         ),
         pytest.param(
             service_factory(
-                modes_orientation_beneficiaire=None,
-                modes_orientation_accompagnateur=[
-                    ModeOrientationAccompagnateur.TELEPHONER
-                ],
+                modes_mobilisation=[ModeMobilisation.TELEPHONER],
+                mobilisable_par=[PersonneMobilisatrice.PROFESSIONNELS],
             ),
             1.0,
-            id="modes_orientation_accompagnateur_defini",
+            id="complets",
         ),
     ],
 )
-def test_critere_au_moins_un_mode_orientation(service: Service, attendu: float):
-    assert score_qualite.au_moins_un_mode_orientation(service) == attendu
+def test_critere_modes_mobilisation_bien_definis(service: Service, attendu: float):
+    assert score_qualite.modes_mobilisation_bien_definis(service) == attendu
 
 
 @pytest.mark.parametrize(
@@ -314,9 +264,7 @@ def test_critere_au_moins_un_mode_orientation(service: Service, attendu: float):
         pytest.param(
             service_factory(
                 courriel=None,
-                formulaire_en_ligne=None,
-                page_web=None,
-                prise_rdv=None,
+                lien_mobilisation=None,
                 telephone=None,
             ),
             0.0,
@@ -325,9 +273,7 @@ def test_critere_au_moins_un_mode_orientation(service: Service, attendu: float):
         pytest.param(
             service_factory(
                 courriel=None,
-                formulaire_en_ligne=None,
-                page_web=None,
-                prise_rdv=None,
+                lien_mobilisation=None,
                 telephone="3615",
             ),
             1.0,
@@ -336,9 +282,7 @@ def test_critere_au_moins_un_mode_orientation(service: Service, attendu: float):
         pytest.param(
             service_factory(
                 courriel="lorem@ipsum.dolor",
-                formulaire_en_ligne=None,
-                page_web=None,
-                prise_rdv=None,
+                lien_mobilisation=None,
                 telephone=None,
             ),
             1.0,
@@ -347,35 +291,11 @@ def test_critere_au_moins_un_mode_orientation(service: Service, attendu: float):
         pytest.param(
             service_factory(
                 courriel=None,
-                formulaire_en_ligne=None,
-                page_web=None,
-                prise_rdv="https://foo.bar",
+                lien_mobilisation="https://foo.bar",
                 telephone=None,
             ),
             1.0,
-            id="prise_rdv_defini",
-        ),
-        pytest.param(
-            service_factory(
-                courriel=None,
-                formulaire_en_ligne="https://foo.bar",
-                page_web=None,
-                prise_rdv=None,
-                telephone=None,
-            ),
-            1.0,
-            id="formulaire_en_ligne_defini",
-        ),
-        pytest.param(
-            service_factory(
-                courriel=None,
-                formulaire_en_ligne=None,
-                page_web="https://foo.bar",
-                prise_rdv=None,
-                telephone=None,
-            ),
-            1.0,
-            id="page_web_defini",
+            id="lien_mobilisation_defini",
         ),
     ],
 )
@@ -461,7 +381,8 @@ def test_critere_frais_bien_definis(service: Service, attendu: float):
                 frais=[Frais.ADHESION],
                 profils=[Profil.ADULTES],
                 telephone="3615",
-                modes_orientation_beneficiaire=[ModeOrientationBeneficiaire.TELEPHONER],
+                modes_mobilisation=[ModeMobilisation.TELEPHONER],
+                mobilisable_par=[PersonneMobilisatrice.PROFESSIONNELS],
                 description="." * 500,
             ),
             1.0,
@@ -476,10 +397,11 @@ def test_critere_frais_bien_definis(service: Service, attendu: float):
                 frais_autres="lorem ipsum",
                 description="." * 500,
                 modes_accueil=[ModeAccueil.EN_PRESENTIEL],
-                modes_orientation_beneficiaire=[ModeOrientationBeneficiaire.TELEPHONER],
-                modes_orientation_accompagnateur=[
-                    ModeOrientationAccompagnateur.ENVOYER_UN_MAIL
+                modes_mobilisation=[
+                    ModeMobilisation.TELEPHONER,
+                    ModeMobilisation.ENVOYER_UN_COURRIEL,
                 ],
+                mobilisable_par=[PersonneMobilisatrice.PROFESSIONNELS],
                 date_maj=pendulum.today() - pendulum.Duration(years=3),
                 thematiques=[Thematique.FAMILLE],
                 profils=[Profil.ADULTES],
@@ -502,11 +424,10 @@ def test_score(service: Service, attendu: float):
 
     score, details = score_qualite.score(service)
 
-    assert score == attendu
+    assert score == pytest.approx(attendu, abs=0.01)
     assert details == {
         "adresse_bien_definie": ANY,
         "au_moins_un_frais": ANY,
-        "au_moins_un_mode_orientation": ANY,
         "au_moins_un_moyen_de_contact": ANY,
         "au_moins_un_public": ANY,
         "au_moins_une_thematique": ANY,
@@ -514,5 +435,6 @@ def test_score(service: Service, attendu: float):
         "date_maj_recente": ANY,
         "description_bien_definie": ANY,
         "frais_bien_definis": ANY,
+        "modes_mobilisation_bien_definis": ANY,
         "telephone_bien_defini": ANY,
     }

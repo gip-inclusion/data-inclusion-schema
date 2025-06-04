@@ -5,8 +5,7 @@ import pendulum
 from data_inclusion.schema.v1 import (
     Frais,
     ModeAccueil,
-    ModeOrientationAccompagnateur,
-    ModeOrientationBeneficiaire,
+    ModeMobilisation,
     Service,
 )
 
@@ -15,9 +14,8 @@ def adresse_bien_definie(service: Service) -> float | None:
     critere_applicable = (
         service.modes_accueil and ModeAccueil.EN_PRESENTIEL in service.modes_accueil
     ) or (
-        service.modes_orientation_beneficiaire
-        and ModeOrientationBeneficiaire.SE_PRESENTER
-        in service.modes_orientation_beneficiaire
+        service.modes_mobilisation
+        and ModeMobilisation.SE_PRESENTER in service.modes_mobilisation
     )
 
     if critere_applicable:
@@ -28,15 +26,9 @@ def adresse_bien_definie(service: Service) -> float | None:
 
 def telephone_bien_defini(service: Service) -> float | None:
     critere_applicable = (
-        service.modes_orientation_accompagnateur
-        and ModeOrientationAccompagnateur.TELEPHONER
-        in service.modes_orientation_accompagnateur
-    ) or (
-        service.modes_orientation_beneficiaire
-        and ModeOrientationBeneficiaire.TELEPHONER
-        in service.modes_orientation_beneficiaire
+        service.modes_mobilisation
+        and ModeMobilisation.TELEPHONER in service.modes_mobilisation
     )
-
     if critere_applicable:
         return 1.0 if service.telephone else 0.0
 
@@ -45,13 +37,8 @@ def telephone_bien_defini(service: Service) -> float | None:
 
 def courriel_bien_defini(service: Service) -> float | None:
     critere_applicable = (
-        service.modes_orientation_accompagnateur
-        and ModeOrientationAccompagnateur.ENVOYER_UN_MAIL
-        in service.modes_orientation_accompagnateur
-    ) or (
-        service.modes_orientation_beneficiaire
-        and ModeOrientationBeneficiaire.ENVOYER_UN_MAIL
-        in service.modes_orientation_beneficiaire
+        service.modes_mobilisation
+        and ModeMobilisation.ENVOYER_UN_COURRIEL in service.modes_mobilisation
     )
 
     if critere_applicable:
@@ -60,13 +47,24 @@ def courriel_bien_defini(service: Service) -> float | None:
     return None
 
 
-def au_moins_un_mode_orientation(service: Service) -> float:
-    return (
-        1.0
-        if service.modes_orientation_accompagnateur
-        or service.modes_orientation_beneficiaire
-        else 0.0
-    )
+def modes_mobilisation_bien_definis(service: Service) -> float:
+    match service:
+        case Service(modes_mobilisation=None, mobilisable_par=None):
+            return 0.0
+        case Service(modes_mobilisation=modes_mobilisation, mobilisable_par=None) if (
+            modes_mobilisation is not None
+        ):
+            return 0.5
+        case Service(modes_mobilisation=None, mobilisable_par=mobilisable_par) if (
+            mobilisable_par is not None
+        ):
+            return 0.5
+        case Service(
+            modes_mobilisation=modes_mobilisation, mobilisable_par=mobilisable_par
+        ) if modes_mobilisation is not None and mobilisable_par is not None:
+            return 1.0
+        case _:
+            raise ValueError()
 
 
 def date_maj_recente(service: Service) -> float | None:
@@ -108,9 +106,7 @@ def au_moins_un_moyen_de_contact(service: Service) -> float:
         if any(
             (
                 service.courriel,
-                service.formulaire_en_ligne,
-                service.page_web,
-                service.prise_rdv,
+                service.lien_mobilisation,
                 service.telephone,
             )
         )
@@ -152,7 +148,7 @@ CritereFn = Callable[[Service], float | None]
 CRITERES: list[CritereFn] = [
     adresse_bien_definie,
     au_moins_un_frais,
-    au_moins_un_mode_orientation,
+    modes_mobilisation_bien_definis,
     au_moins_un_public,
     au_moins_une_thematique,
     au_moins_un_moyen_de_contact,

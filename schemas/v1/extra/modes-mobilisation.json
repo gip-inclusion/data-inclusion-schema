@@ -1,0 +1,22 @@
+[
+  {
+    "description": "Envoyer un courriel à l’adresse électronique associée au service, ou à défaut à la structure.",
+    "label": "Envoyer un courriel",
+    "value": "envoyer-un-courriel"
+  },
+  {
+    "description": "Se présenter directement à l’adresse associée au service ou à la structure.",
+    "label": "Se présenter",
+    "value": "se-presenter"
+  },
+  {
+    "description": "Téléphoner au numéro associé au service, ou à défaut à la structure.",
+    "label": "Téléphoner",
+    "value": "telephoner"
+  },
+  {
+    "description": "Utiliser le lien de mobilisation du service.",
+    "label": "Utiliser le lien de mobilisation",
+    "value": "utiliser-lien-mobilisation"
+  }
+]

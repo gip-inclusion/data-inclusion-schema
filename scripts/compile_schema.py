@@ -25,14 +25,26 @@ def compile_schema(version: str):
         schema.Frais: "frais",
         schema.LabelNational: "labels_nationaux",
         schema.ModeAccueil: "modes_accueil",
-        schema.ModeOrientationAccompagnateur: "modes_orientation_accompagnateur",
-        schema.ModeOrientationBeneficiaire: "modes_orientation_beneficiaire",
         schema.Profil: "profils",
         schema.Thematique: "thematiques",
         schema.TypologieService: "typologies_de_services",
         schema.TypologieStructure: "typologies_de_structures",
         schema.ZoneDiffusionType: "zones_de_diffusion_types",
     }
+    if version == "v0":
+        ENUM_FILENAMES.update(
+            {
+                schema.ModeOrientationAccompagnateur: "modes_orientation_accompagnateur",  # noqa: E501
+                schema.ModeOrientationBeneficiaire: "modes_orientation_beneficiaire",
+            }
+        )
+    elif version == "v1":
+        ENUM_FILENAMES.update(
+            {
+                schema.ModeMobilisation: "modes_mobilisation",
+                schema.PersonneMobilisatrice: "mobilisable_par",
+            }
+        )
 
     SCHEMAS_DIR.mkdir(exist_ok=True)
     (SCHEMAS_DIR / version).mkdir(exist_ok=True, parents=True)
