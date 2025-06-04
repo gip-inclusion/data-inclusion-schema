@@ -5,11 +5,11 @@ from pydantic import EmailStr, HttpUrl
 
 from data_inclusion.schema import common
 from data_inclusion.schema.base import BaseModel, Field
-from data_inclusion.schema.v0 import (
+from data_inclusion.schema.v1 import (
     Frais,
+    MobilisablePar,
     ModeAccueil,
-    ModeOrientationAccompagnateur,
-    ModeOrientationBeneficiaire,
+    ModeMobilisation,
     Profil,
     Thematique,
     TypologieService,
@@ -128,9 +128,43 @@ class Service(BaseModel):
             ],
         ),
     ] = None
-    modes_orientation_beneficiaire: Optional[set[ModeOrientationBeneficiaire]] = None
-    modes_orientation_beneficiaire_autres: Optional[str] = None
-    modes_orientation_accompagnateur: Optional[set[ModeOrientationAccompagnateur]] = (
-        None
-    )
-    modes_orientation_accompagnateur_autres: Optional[str] = None
+    modes_mobilisation: Annotated[
+        Optional[set[ModeMobilisation]],
+        Field(
+            description="""
+                Modes de mobilisation de l’offre de service.
+                Les valeurs proviennent d’un référentiel disponible
+                sur notre documentation.
+            """,
+            examples=[
+                "envoyer-un-courriel",
+            ],
+        ),
+    ] = None
+    mobilisable_par: Annotated[
+        Optional[set[MobilisablePar]],
+        Field(
+            description="""
+                Précise par quels types d’utilisateurs le service est mobilisable
+                (usagers et/ou profesionnels).
+                Les valeurs proviennent d’un référentiel disponible sur notre
+                documentation.
+            """,
+            examples=[
+                "professionnels",
+            ],
+        ),
+    ] = None
+    mobilisation_precisions: Annotated[
+        Optional[str],
+        Field(
+            description="""
+                Précisions sur les modes de mobilisation du service.
+            """,
+            examples=[
+                """La demande est à faire depuis l’espace personnel
+                du demandeur d’emploi, rubrique « mes aides »,
+                formulaire spécifique « Aide à la mobilité »."""
+            ],
+        ),
+    ] = None

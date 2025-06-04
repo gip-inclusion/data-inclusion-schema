@@ -797,52 +797,9 @@ Exemples :
 
 ---
 
-### `modes_orientation_beneficiaire`
+### `modes_mobilisation`
 
-
-
-
-
-Type : `array[string]`
-
-
-
-
-
-
-
-
-
-
-Valeurs acceptées : voir le [référentiel associé](referentiels/modes_orientation_beneficiaire.md)
-
-
-
-
----
-
-### `modes_orientation_beneficiaire_autres`
-
-
-
-
-
-Type : `string`
-
-
-
-
-
-
-
-
-
-
----
-
-### `modes_orientation_accompagnateur`
-
-
+Modes de mobilisation de l’offre de service. Les valeurs proviennent d’un référentiel disponible sur notre documentation.
 
 
 
@@ -857,16 +814,54 @@ Type : `array[string]`
 
 
 
-Valeurs acceptées : voir le [référentiel associé](referentiels/modes_orientation_accompagnateur.md)
+Valeurs acceptées : `"envoyer-un-courriel&#34;, &#34;se-presenter&#34;, &#34;telephoner&#34;, &#34;utiliser-lien-mobilisation"`
 
 
 
+
+Exemples :
+
+```json
+"envoyer-un-courriel"
+
+```
 
 ---
 
-### `modes_orientation_accompagnateur_autres`
+### `mobilisable_par`
+
+Précise par quels types d’utilisateurs le service est mobilisable (usagers et/ou profesionnels). Les valeurs proviennent d’un référentiel disponible sur notre documentation.
 
 
+
+Type : `array[string]`
+
+
+
+
+
+
+
+
+
+
+Valeurs acceptées : `"usagers&#34;, &#34;professionnels"`
+
+
+
+
+Exemples :
+
+```json
+"professionnels"
+
+```
+
+---
+
+### `mobilisation_precisions`
+
+Précisions sur les modes de mobilisation du service.
 
 
 
@@ -880,5 +875,12 @@ Type : `string`
 
 
 
+
+Exemples :
+
+```json
+"La demande est \u00e0 faire depuis l\u2019espace personnel\n                du demandeur d\u2019emploi, rubrique \u00ab mes aides \u00bb,\n                formulaire sp\u00e9cifique \u00ab Aide \u00e0 la mobilit\u00e9 \u00bb."
+
+```
 
 ---
