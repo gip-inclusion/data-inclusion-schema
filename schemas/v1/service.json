@@ -11,6 +11,14 @@
       "title": "Frais",
       "type": "string"
     },
+    "MobilisablePar": {
+      "enum": [
+        "usagers",
+        "professionnels"
+      ],
+      "title": "MobilisablePar",
+      "type": "string"
+    },
     "ModeAccueil": {
       "enum": [
         "a-distance",
@@ -19,28 +27,14 @@
       "title": "ModeAccueil",
       "type": "string"
     },
-    "ModeOrientationAccompagnateur": {
+    "ModeMobilisation": {
       "enum": [
-        "completer-le-formulaire-dadhesion",
-        "envoyer-un-mail",
-        "envoyer-un-mail-avec-une-fiche-de-prescription",
-        "telephoner",
-        "prendre-rdv",
-        "autre"
-      ],
-      "title": "ModeOrientationAccompagnateur",
-      "type": "string"
-    },
-    "ModeOrientationBeneficiaire": {
-      "enum": [
-        "completer-le-formulaire-dadhesion",
-        "envoyer-un-mail",
+        "envoyer-un-courriel",
         "se-presenter",
         "telephoner",
-        "prendre-rdv",
-        "autre"
+        "utiliser-lien-mobilisation"
       ],
-      "title": "ModeOrientationBeneficiaire",
+      "title": "ModeMobilisation",
       "type": "string"
     },
     "Profil": {
@@ -518,6 +512,42 @@
       "default": null,
       "title": "Longitude"
     },
+    "mobilisable_par": {
+      "anyOf": [
+        {
+          "items": {
+            "$ref": "#/$defs/MobilisablePar"
+          },
+          "type": "array",
+          "uniqueItems": true
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Précise par quels types d’utilisateurs le service est mobilisable (usagers et/ou profesionnels). Les valeurs proviennent d’un référentiel disponible sur notre documentation.",
+      "examples": [
+        "professionnels"
+      ],
+      "title": "Mobilisable Par"
+    },
+    "mobilisation_precisions": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Précisions sur les modes de mobilisation du service.",
+      "examples": [
+        "La demande est à faire depuis l’espace personnel\n                du demandeur d’emploi, rubrique « mes aides »,\n                formulaire spécifique « Aide à la mobilité »."
+      ],
+      "title": "Mobilisation Precisions"
+    },
     "modes_accueil": {
       "anyOf": [
         {
@@ -534,11 +564,11 @@
       "default": null,
       "title": "Modes Accueil"
     },
-    "modes_orientation_accompagnateur": {
+    "modes_mobilisation": {
       "anyOf": [
         {
           "items": {
-            "$ref": "#/$defs/ModeOrientationAccompagnateur"
+            "$ref": "#/$defs/ModeMobilisation"
           },
           "type": "array",
           "uniqueItems": true
@@ -548,47 +578,11 @@
         }
       ],
       "default": null,
-      "title": "Modes Orientation Accompagnateur"
-    },
-    "modes_orientation_accompagnateur_autres": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "null"
-        }
+      "description": "Modes de mobilisation de l’offre de service. Les valeurs proviennent d’un référentiel disponible sur notre documentation.",
+      "examples": [
+        "envoyer-un-courriel"
       ],
-      "default": null,
-      "title": "Modes Orientation Accompagnateur Autres"
-    },
-    "modes_orientation_beneficiaire": {
-      "anyOf": [
-        {
-          "items": {
-            "$ref": "#/$defs/ModeOrientationBeneficiaire"
-          },
-          "type": "array",
-          "uniqueItems": true
-        },
-        {
-          "type": "null"
-        }
-      ],
-      "default": null,
-      "title": "Modes Orientation Beneficiaire"
-    },
-    "modes_orientation_beneficiaire_autres": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "null"
-        }
-      ],
-      "default": null,
-      "title": "Modes Orientation Beneficiaire Autres"
+      "title": "Modes Mobilisation"
     },
     "nom": {
       "description": "Nom du service.\n\nChaîne de caractères entre 3 et 150 caractères, ne se terminant pas par un point.",
