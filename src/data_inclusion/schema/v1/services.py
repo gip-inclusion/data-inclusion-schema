@@ -40,7 +40,6 @@ class Service(BaseModel):
     presentation_detail: Optional[str] = None
     types: Optional[set[TypologieService]] = None
     thematiques: Optional[set[Thematique]] = None
-    prise_rdv: Optional[HttpUrl] = None
     frais: Optional[set[Frais]] = None
     frais_autres: Optional[str] = None
     profils: Optional[set[Profil]] = None
@@ -48,7 +47,6 @@ class Service(BaseModel):
     pre_requis: Optional[set[str]] = None
     cumulable: Optional[bool] = None
     justificatifs: Optional[set[str]] = None
-    formulaire_en_ligne: Optional[HttpUrl] = None
     commune: Optional[str] = None
     code_postal: Optional[common.CodePostal] = None
     code_insee: Optional[common.CodeCommune] = None
@@ -115,17 +113,13 @@ class Service(BaseModel):
     ] = None
     zone_diffusion_nom: Optional[str] = None
     contact_nom_prenom: Optional[str] = None
-    page_web: Annotated[
+    lien_mobilisation: Annotated[
         Optional[HttpUrl],
         Field(
             description="""
-                Lien vers une page web dédiée au service sur le site web de la
-                structure. Ce champ n’est pas destiné à recevoir un lien vers le site
-                d’un producteur de donnée.
+                Lien internet pour accéder ou mobiliser l’offre de service.
             """,
-            examples=[
-                "https://insersol.fr/biclou-atelier-reparation-participatif-solidaire/"
-            ],
+            examples=["https://www.actionlogement.fr/demande-cfi"],
         ),
     ] = None
     modes_mobilisation: Annotated[

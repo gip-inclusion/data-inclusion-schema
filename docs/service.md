@@ -173,25 +173,6 @@ Valeurs acceptées : voir le [référentiel associé](referentiels/thematiques.m
 
 ---
 
-### `prise_rdv`
-
-
-
-
-
-Type : `string`
-
-
-
-Format : `uri`
-
-
-
-
-
-
----
-
 ### `frais`
 
 
@@ -327,25 +308,6 @@ Type : `array`
 
 
 
-
-
-
-
-
-
----
-
-### `formulaire_en_ligne`
-
-
-
-
-
-Type : `string`
-
-
-
-Format : `uri`
 
 
 
@@ -771,9 +733,9 @@ Type : `string`
 
 ---
 
-### `page_web`
+### `lien_mobilisation`
 
-Lien vers une page web dédiée au service sur le site web de la structure. Ce champ n’est pas destiné à recevoir un lien vers le site d’un producteur de donnée.
+Lien internet pour accéder ou mobiliser l’offre de service.
 
 
 
@@ -791,7 +753,7 @@ Format : `uri`
 Exemples :
 
 ```json
-"https://insersol.fr/biclou-atelier-reparation-participatif-solidaire/"
+"https://www.actionlogement.fr/demande-cfi"
 
 ```
 

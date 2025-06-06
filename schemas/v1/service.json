@@ -410,21 +410,6 @@
       "default": null,
       "title": "Date Suspension"
     },
-    "formulaire_en_ligne": {
-      "anyOf": [
-        {
-          "format": "uri",
-          "maxLength": 2083,
-          "minLength": 1,
-          "type": "string"
-        },
-        {
-          "type": "null"
-        }
-      ],
-      "default": null,
-      "title": "Formulaire En Ligne"
-    },
     "frais": {
       "anyOf": [
         {
@@ -484,6 +469,25 @@
       ],
       "default": null,
       "title": "Latitude"
+    },
+    "lien_mobilisation": {
+      "anyOf": [
+        {
+          "format": "uri",
+          "maxLength": 2083,
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Lien internet pour accéder ou mobiliser l’offre de service.",
+      "examples": [
+        "https://www.actionlogement.fr/demande-cfi"
+      ],
+      "title": "Lien Mobilisation"
     },
     "lien_source": {
       "anyOf": [
@@ -611,25 +615,6 @@
       ],
       "title": "Nombre Semaines"
     },
-    "page_web": {
-      "anyOf": [
-        {
-          "format": "uri",
-          "maxLength": 2083,
-          "minLength": 1,
-          "type": "string"
-        },
-        {
-          "type": "null"
-        }
-      ],
-      "default": null,
-      "description": "Lien vers une page web dédiée au service sur le site web de la structure. Ce champ n’est pas destiné à recevoir un lien vers le site d’un producteur de donnée.",
-      "examples": [
-        "https://insersol.fr/biclou-atelier-reparation-participatif-solidaire/"
-      ],
-      "title": "Page Web"
-    },
     "pre_requis": {
       "anyOf": [
         {
@@ -670,21 +655,6 @@
       ],
       "default": null,
       "title": "Presentation Resume"
-    },
-    "prise_rdv": {
-      "anyOf": [
-        {
-          "format": "uri",
-          "maxLength": 2083,
-          "minLength": 1,
-          "type": "string"
-        },
-        {
-          "type": "null"
-        }
-      ],
-      "default": null,
-      "title": "Prise Rdv"
     },
     "profils": {
       "anyOf": [
