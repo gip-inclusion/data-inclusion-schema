@@ -149,6 +149,6 @@ class Profil(EnhancedEnum):
     )
     PERSONNE_EN_SITUATION_DURGENCE = (
         "personnes-en-situation-durgence",
-        "Victimes",
+        "Personnes en situation d’urgence",
         None,
     )

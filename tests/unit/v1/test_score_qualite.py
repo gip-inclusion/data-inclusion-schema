@@ -24,7 +24,7 @@ def service_factory(**kwargs):
         "date_maj": pendulum.today(),
         "source": "3",
     }
-    kwargs |= defaults
+    kwargs = defaults | kwargs
     return Service(**kwargs)
 
 

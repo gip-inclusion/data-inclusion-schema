@@ -12,6 +12,13 @@
 
 ### Suppressions
 
+## 0.26.0 - 2025-05-20
+
+### Changements
+
+* corrections des apostrophes dans les labels et les descriptions
+* correction du label pour les personnes en situation d’urgence
+
 ## 0.25.0 - 2025-05-20
 
 ### Ajouts
