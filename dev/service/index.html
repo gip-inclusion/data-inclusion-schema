@@ -384,15 +384,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#prise_rdv" class="md-nav__link">
-    <span class="md-ellipsis">
-      prise_rdv
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#frais" class="md-nav__link">
     <span class="md-ellipsis">
       frais
@@ -450,15 +441,6 @@
   <a href="#justificatifs" class="md-nav__link">
     <span class="md-ellipsis">
       justificatifs
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#formulaire_en_ligne" class="md-nav__link">
-    <span class="md-ellipsis">
-      formulaire_en_ligne
     </span>
   </a>
   
@@ -645,9 +627,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#page_web" class="md-nav__link">
+  <a href="#lien_mobilisation" class="md-nav__link">
     <span class="md-ellipsis">
-      page_web
+      lien_mobilisation
     </span>
   </a>
   
@@ -675,6 +657,24 @@
   <a href="#mobilisation_precisions" class="md-nav__link">
     <span class="md-ellipsis">
       mobilisation_precisions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#volume_horaire_hebdomadaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      volume_horaire_hebdomadaire
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nombre_semaines" class="md-nav__link">
+    <span class="md-ellipsis">
+      nombre_semaines
     </span>
   </a>
   
@@ -1060,15 +1060,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#prise_rdv" class="md-nav__link">
-    <span class="md-ellipsis">
-      prise_rdv
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#frais" class="md-nav__link">
     <span class="md-ellipsis">
       frais
@@ -1126,15 +1117,6 @@
   <a href="#justificatifs" class="md-nav__link">
     <span class="md-ellipsis">
       justificatifs
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#formulaire_en_ligne" class="md-nav__link">
-    <span class="md-ellipsis">
-      formulaire_en_ligne
     </span>
   </a>
   
@@ -1321,9 +1303,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#page_web" class="md-nav__link">
+  <a href="#lien_mobilisation" class="md-nav__link">
     <span class="md-ellipsis">
-      page_web
+      lien_mobilisation
     </span>
   </a>
   
@@ -1351,6 +1333,24 @@
   <a href="#mobilisation_precisions" class="md-nav__link">
     <span class="md-ellipsis">
       mobilisation_precisions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#volume_horaire_hebdomadaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      volume_horaire_hebdomadaire
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nombre_semaines" class="md-nav__link">
+    <span class="md-ellipsis">
+      nombre_semaines
     </span>
   </a>
   
@@ -1411,10 +1411,6 @@
 <p>Type : <code>array[string]</code></p>
 <p>Valeurs acceptées : voir le <a href="../referentiels/thematiques/">référentiel associé</a></p>
 <hr />
-<h3 id="prise_rdv"><code>prise_rdv</code></h3>
-<p>Type : <code>string</code></p>
-<p>Format : <code>uri</code></p>
-<hr />
 <h3 id="frais"><code>frais</code></h3>
 <p>Type : <code>array[string]</code></p>
 <p>Valeurs acceptées : <code>"gratuit&amp;#34;, &amp;#34;gratuit-sous-conditions&amp;#34;, &amp;#34;payant&amp;#34;, &amp;#34;adhesion&amp;#34;, &amp;#34;pass-numerique"</code></p>
@@ -1437,10 +1433,6 @@
 <hr />
 <h3 id="justificatifs"><code>justificatifs</code></h3>
 <p>Type : <code>array</code></p>
-<hr />
-<h3 id="formulaire_en_ligne"><code>formulaire_en_ligne</code></h3>
-<p>Type : <code>string</code></p>
-<p>Format : <code>uri</code></p>
 <hr />
 <h3 id="commune"><code>commune</code></h3>
 <p>Type : <code>string</code></p>
@@ -1527,12 +1519,12 @@
 <h3 id="contact_nom_prenom"><code>contact_nom_prenom</code></h3>
 <p>Type : <code>string</code></p>
 <hr />
-<h3 id="page_web"><code>page_web</code></h3>
-<p>Lien vers une page web dédiée au service sur le site web de la structure. Ce champ n’est pas destiné à recevoir un lien vers le site d’un producteur de donnée.</p>
+<h3 id="lien_mobilisation"><code>lien_mobilisation</code></h3>
+<p>Lien internet pour accéder ou mobiliser l’offre de service.</p>
 <p>Type : <code>string</code></p>
 <p>Format : <code>uri</code></p>
 <p>Exemples :</p>
-<div class="highlight"><pre><span></span><code><span class="s2">&quot;https://insersol.fr/biclou-atelier-reparation-participatif-solidaire/&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="s2">&quot;https://www.actionlogement.fr/demande-cfi&quot;</span>
 </code></pre></div>
 <hr />
 <h3 id="modes_mobilisation"><code>modes_mobilisation</code></h3>
@@ -1556,6 +1548,24 @@
 <p>Type : <code>string</code></p>
 <p>Exemples :</p>
 <div class="highlight"><pre><span></span><code><span class="s2">&quot;La demande est \u00e0 faire depuis l\u2019espace personnel\n                du demandeur d\u2019emploi, rubrique \u00ab mes aides \u00bb,\n                formulaire sp\u00e9cifique \u00ab Aide \u00e0 la mobilit\u00e9 \u00bb.&quot;</span>
+</code></pre></div>
+<hr />
+<h3 id="volume_horaire_hebdomadaire"><code>volume_horaire_hebdomadaire</code></h3>
+<p>Durée du service en heures sur une semaine.</p>
+<p>L’absence de valeur signifie que le service n’est pas concerné (exemple aide financière) ou que l’information n’est pas disponible.</p>
+<p>Champ utilisé dans le cadre des 15h-20h d’activité hebdomadaire des BRSA.</p>
+<p>Type : <code>number</code></p>
+<p>Exemples :</p>
+<div class="highlight"><pre><span></span><code><span class="mi">1</span>
+</code></pre></div>
+<hr />
+<h3 id="nombre_semaines"><code>nombre_semaines</code></h3>
+<p>Nombre de semaines sur lequel dure le service.</p>
+<p>Ne peut pas être inférieur à 1. L’absence de valeur signifie que le service n’est pas concerné (exemple aide financière) ou que l’information n’est pas disponible.</p>
+<p>Champ utilisé dans le cadre des 15h-20h d’activité hebdomadaire des BRSA.</p>
+<p>Type : <code>integer</code></p>
+<p>Exemples :</p>
+<div class="highlight"><pre><span></span><code><span class="mi">3</span>
 </code></pre></div>
 <hr />
 
