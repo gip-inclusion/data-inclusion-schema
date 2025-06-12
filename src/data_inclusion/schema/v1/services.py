@@ -46,7 +46,6 @@ class Service(BaseModel):
     profils: Optional[set[Profil]] = None
     profils_precisions: Optional[str] = None
     pre_requis: Optional[set[str]] = None
-    cumulable: Optional[bool] = None
     justificatifs: Optional[set[str]] = None
     formulaire_en_ligne: Optional[HttpUrl] = None
     commune: Optional[str] = None
@@ -56,10 +55,6 @@ class Service(BaseModel):
     complement_adresse: Optional[str] = None
     longitude: Optional[float] = None
     latitude: Optional[float] = None
-    recurrence: Optional[str] = None
-    date_creation: Optional[date] = None
-    date_suspension: Optional[date] = None
-    lien_source: Optional[HttpUrl] = None
     telephone: Annotated[
         Optional[str],
         Field(
@@ -94,7 +89,6 @@ class Service(BaseModel):
             default=None,
         ),
     ]
-    contact_public: Optional[bool] = None
     date_maj: Annotated[
         date,
         Field(
@@ -134,3 +128,37 @@ class Service(BaseModel):
         None
     )
     modes_orientation_accompagnateur_autres: Optional[str] = None
+    volume_horaire_hebdomadaire: Annotated[
+        Optional[float],
+        Field(
+            description="""
+                Durée du service en heures sur une semaine.
+
+                L’absence de valeur signifie que le service n’est pas concerné
+                (exemple aide financière) ou que l’information n’est pas
+                disponible.
+
+                Champ utilisé dans le cadre des 15h-20h d’activité
+                hebdomadaire des BRSA.
+            """,
+            examples=[1],
+            ge=0,
+        ),
+    ] = None
+    nombre_semaines: Annotated[
+        Optional[int],
+        Field(
+            description="""
+                Nombre de semaines sur lequel dure le service.
+
+                Ne peut pas être inférieur à 1. L’absence de valeur
+                signifie que le service n’est pas concerné (exemple aide financière)
+                ou que l’information n’est pas disponible.
+
+                Champ utilisé dans le cadre des 15h-20h d’activité hebdomadaire
+                des BRSA.
+            """,
+            examples=[3],
+            ge=1,
+        ),
+    ] = None

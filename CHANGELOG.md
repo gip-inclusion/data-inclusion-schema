@@ -6,13 +6,17 @@
 
 ### Changements
 
-* corrections des apostrophes dans les labels et les descriptions
-
 ### Dépréciations
 
 ### Suppressions
 
-## 0.26.0 - 2025-05-20
+## 0.27.0 - 2025-06-12
+
+### Ajouts
+
+* ajout des champs volume_horaire_hebdomadaire et nombre_semaines
+
+## 0.26.0 - 2025-06-06
 
 ### Changements
 
@@ -21,15 +25,9 @@
 
 ## 0.25.0 - 2025-05-20
 
-### Ajouts
-
 ### Changements
 
 * structure: ajout de description sur le champ `site_web`
-
-### Dépréciations
-
-### Suppressions
 
 ## 0.24.0 - 2025-04-17
 

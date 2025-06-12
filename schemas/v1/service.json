@@ -340,18 +340,6 @@
       "default": null,
       "title": "Contact Nom Prenom"
     },
-    "contact_public": {
-      "anyOf": [
-        {
-          "type": "boolean"
-        },
-        {
-          "type": "null"
-        }
-      ],
-      "default": null,
-      "title": "Contact Public"
-    },
     "courriel": {
       "anyOf": [
         {
@@ -369,31 +357,6 @@
       ],
       "title": "Courriel"
     },
-    "cumulable": {
-      "anyOf": [
-        {
-          "type": "boolean"
-        },
-        {
-          "type": "null"
-        }
-      ],
-      "default": null,
-      "title": "Cumulable"
-    },
-    "date_creation": {
-      "anyOf": [
-        {
-          "format": "date",
-          "type": "string"
-        },
-        {
-          "type": "null"
-        }
-      ],
-      "default": null,
-      "title": "Date Creation"
-    },
     "date_maj": {
       "description": "Date de dernière modification du service chez le producteur de données.",
       "examples": [
@@ -402,19 +365,6 @@
       "format": "date",
       "title": "Date de dernière modification",
       "type": "string"
-    },
-    "date_suspension": {
-      "anyOf": [
-        {
-          "format": "date",
-          "type": "string"
-        },
-        {
-          "type": "null"
-        }
-      ],
-      "default": null,
-      "title": "Date Suspension"
     },
     "formulaire_en_ligne": {
       "anyOf": [
@@ -490,21 +440,6 @@
       ],
       "default": null,
       "title": "Latitude"
-    },
-    "lien_source": {
-      "anyOf": [
-        {
-          "format": "uri",
-          "maxLength": 2083,
-          "minLength": 1,
-          "type": "string"
-        },
-        {
-          "type": "null"
-        }
-      ],
-      "default": null,
-      "title": "Lien Source"
     },
     "longitude": {
       "anyOf": [
@@ -599,6 +534,23 @@
       "minLength": 3,
       "title": "Nom",
       "type": "string"
+    },
+    "nombre_semaines": {
+      "anyOf": [
+        {
+          "minimum": 1,
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Nombre de semaines sur lequel dure le service.\n\nNe peut pas être inférieur à 1. L’absence de valeur signifie que le service n’est pas concerné (exemple aide financière) ou que l’information n’est pas disponible.\n\nChamp utilisé dans le cadre des 15h-20h d’activité hebdomadaire des BRSA.",
+      "examples": [
+        3
+      ],
+      "title": "Nombre Semaines"
     },
     "page_web": {
       "anyOf": [
@@ -703,18 +655,6 @@
       "default": null,
       "title": "Profils Precisions"
     },
-    "recurrence": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "null"
-        }
-      ],
-      "default": null,
-      "title": "Recurrence"
-    },
     "source": {
       "title": "Source",
       "type": "string"
@@ -770,6 +710,23 @@
       ],
       "default": null,
       "title": "Types"
+    },
+    "volume_horaire_hebdomadaire": {
+      "anyOf": [
+        {
+          "minimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Durée du service en heures sur une semaine.\n\nL’absence de valeur signifie que le service n’est pas concerné (exemple aide financière) ou que l’information n’est pas disponible.\n\nChamp utilisé dans le cadre des 15h-20h d’activité hebdomadaire des BRSA.",
+      "examples": [
+        1
+      ],
+      "title": "Volume Horaire Hebdomadaire"
     },
     "zone_diffusion_code": {
       "anyOf": [

@@ -600,6 +600,23 @@
       "title": "Nom",
       "type": "string"
     },
+    "nombre_semaines": {
+      "anyOf": [
+        {
+          "minimum": 1,
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Nombre de semaines sur lequel dure le service.\n\nNe peut pas être inférieur à 1. L’absence de valeur signifie que le service n’est pas concerné (exemple aide financière) ou que l’information n’est pas disponible.\n\nChamp utilisé dans le cadre des 15h-20h d’activité hebdomadaire des BRSA.",
+      "examples": [
+        3
+      ],
+      "title": "Nombre Semaines"
+    },
     "page_web": {
       "anyOf": [
         {
@@ -770,6 +787,23 @@
       ],
       "default": null,
       "title": "Types"
+    },
+    "volume_horaire_hebdomadaire": {
+      "anyOf": [
+        {
+          "minimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Durée du service en heures sur une semaine.\n\nL’absence de valeur signifie que le service n’est pas concerné (exemple aide financière) ou que l’information n’est pas disponible.\n\nChamp utilisé dans le cadre des 15h-20h d’activité hebdomadaire des BRSA.",
+      "examples": [
+        1
+      ],
+      "title": "Volume Horaire Hebdomadaire"
     },
     "zone_diffusion_code": {
       "anyOf": [
