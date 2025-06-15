@@ -300,28 +300,11 @@ Format : `uri`
 
 ---
 
-### `presentation_resume`
+### `description` *
 
+Description de la structure.
 
-
-
-
-Type : `string`
-
-
-
-
-
-
-
-
-
-
----
-
-### `presentation_detail`
-
-
+Entre 50 et 2000 caractères.
 
 
 
@@ -335,6 +318,13 @@ Type : `string`
 
 
 
+
+Exemples :
+
+```json
+"L\u2019association 3027 offre un acc\u00e8s gratuit aux arts, \u00e0 la culture et\n                au sport pour toutes et tous sans distinction et en priorit\u00e9 aux\n                personnes en situation de pr\u00e9carit\u00e9 et d\u2019isolement."
+
+```
 
 ---
 
