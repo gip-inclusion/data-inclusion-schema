@@ -63,8 +63,18 @@ class Service(BaseModel):
     frais_autres: Optional[str] = None
     profils: Optional[set[Profil]] = None
     profils_precisions: Optional[str] = None
-    pre_requis: Optional[set[str]] = None
-    justificatifs: Optional[set[str]] = None
+    conditions_acces: Annotated[
+        Optional[str],
+        Field(
+            description="""
+            Conditions d’accès au service.
+
+            Il peut s’agir de prérequis ou de justificatifs à présenter.
+        """,
+            examples=["Maîtrise de la langue française à l’oral et à l’écrit"],
+            title="Conditions d’accès",
+        ),
+    ] = None
     commune: Optional[str] = None
     code_postal: Optional[common.CodePostal] = None
     code_insee: Optional[common.CodeCommune] = None
