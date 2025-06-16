@@ -419,6 +419,22 @@
       "default": null,
       "title": "Frais Autres"
     },
+    "horaires_accueil": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Horaires d’accueil du public pour ce service.\n\nSi le champ n’est pas renseigné, les horaires d’accueil de la structure peuvent être utilisés.\n\nDoit être au format OpenStreetMap Opening Hours.\n\n[Spécification du format OSM Opening Hours](https://wiki.openstreetmap.org/wiki/FR:Key:opening_hours).\n\n[Outil d’aide à la saisie](https://projets.pavie.info/yohours/).",
+      "examples": [
+        "Mo-Fr 08:30-12:30; PH off"
+      ],
+      "title": "Horaires d’accueil du public"
+    },
     "id": {
       "title": "Id",
       "type": "string"
