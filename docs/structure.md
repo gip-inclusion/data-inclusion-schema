@@ -371,9 +371,15 @@ Exemples :
 
 ---
 
-### `horaires_ouverture`
+### `horaires_accueil`
 
+Horaires d’accueil du public par la structure.
 
+Un service peut avoir un horaire d’accueil différent. Se référer aux horaires des services.
+
+Doit être au format [OpenStreetMap Opening Hours](https://wiki.openstreetmap.org/wiki/FR:Key:opening_hours).
+
+[Outil d’aide à la saisie](https://projets.pavie.info/yohours/).
 
 
 
@@ -387,6 +393,13 @@ Type : `string`
 
 
 
+
+Exemples :
+
+```json
+"Mo-Fr 08:30-12:30; PH off"
+
+```
 
 ---
 
