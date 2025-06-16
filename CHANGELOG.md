@@ -4,8 +4,6 @@
 
 ### Ajouts
 
-Ajout des champs volume_horaire_hebdomadaire et nombre_semaines
-
 ### Changements
 
 ### Dépréciations
@@ -16,6 +14,7 @@ Ajout des champs volume_horaire_hebdomadaire et nombre_semaines
 
 ### Changements
 
+* renommage du champ structure `horaires_ouverture` en `horaires_accueil`
 * remplacement des champs `presentation_***` en faveur d'un champ unique `description` et mise à jour du critère de qualité `description_bien_definie`
 
 ### Suppressions

@@ -92,7 +92,25 @@ class Structure(BaseModel):
             title="Date de dernière modification",
         ),
     ]
-    horaires_ouverture: Optional[str] = None
+    horaires_accueil: Annotated[
+        Optional[str],
+        Field(
+            description="""
+            Horaires d’accueil du public par la structure.
+
+            Un service peut avoir un horaire d’accueil différent. Se référer aux
+            horaires des services.
+
+            Doit être au format OpenStreetMap Opening Hours.
+
+            [Spécification du format OSM Opening Hours](https://wiki.openstreetmap.org/wiki/FR:Key:opening_hours).
+
+            [Outil d’aide à la saisie](https://projets.pavie.info/yohours/).
+        """,  # noqa: E501
+            title="Horaires d’accueil du public",
+            examples=["Mo-Fr 08:30-12:30; PH off"],
+        ),
+    ] = None
     accessibilite: Optional[HttpUrl] = None
     labels_nationaux: Optional[set[LabelNational]] = None
     labels_autres: Optional[set[str]] = None
