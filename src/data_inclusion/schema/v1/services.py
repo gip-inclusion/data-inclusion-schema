@@ -210,3 +210,20 @@ class Service(BaseModel):
             ge=1,
         ),
     ] = None
+    horaires_accueil: Annotated[
+        Optional[str],
+        Field(
+            description="""
+            Horaires d’accueil du public pour ce service.
+
+            Si le champ n’est pas renseigné, les horaires d’accueil de la structure
+            peuvent être utilisés.
+
+            Doit être au format [OpenStreetMap Opening Hours](https://wiki.openstreetmap.org/wiki/FR:Key:opening_hours).
+
+            [Outil d’aide à la saisie](https://projets.pavie.info/yohours/).
+        """,
+            title="Horaires d’accueil du public",
+            examples=["Mo-Fr 08:30-12:30; PH off"],
+        ),
+    ] = None

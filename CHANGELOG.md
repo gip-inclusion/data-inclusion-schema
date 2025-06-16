@@ -19,6 +19,7 @@
 ### Changements
 
 * renommage du champ structure `horaires_ouverture` en `horaires_accueil`
+* renommage du champ service `recurrence` en `horaires_accueil`
 * remplacement des champs `presentation_***` en faveur d'un champ unique `description` et mise à jour du critère de qualité `description_bien_definie`
 * remplacement des champs `prise_rdv`, `formulaire_en_ligne` et `page_web` en faveur d'un champ unique `lien_mobilisation`
 * remplacement des champs `modes_orientation_***` en faveur d'un champ unique `modes_mobilisation`
@@ -37,7 +38,6 @@
 **Schéma service**
 
 * suppression du champ `cumulable`
-* suppression du champ `recurrence`
 * suppression du champ `date_creation`
 * suppression du champ `date_suspension`
 * suppression du champ `contact_public`
