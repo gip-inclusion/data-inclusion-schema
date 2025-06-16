@@ -204,20 +204,6 @@ def test_critere_au_moins_un_profil(profils: list[Profil], attendu: float):
 
 
 @pytest.mark.parametrize(
-    ("frais", "attendu"),
-    [
-        pytest.param(None, 0.0, id="nul"),
-        pytest.param([], 0.0, id="vide"),
-        pytest.param([Frais.ADHESION], 1.0, id="frais_defini"),
-    ],
-)
-def test_critere_au_moins_un_frais(frais: list[Frais], attendu: float):
-    service = service_factory(frais=frais)
-
-    assert score_qualite.au_moins_un_frais(service) == attendu
-
-
-@pytest.mark.parametrize(
     ("service", "attendu"),
     [
         pytest.param(
@@ -331,40 +317,25 @@ def test_critere_description_bien_definie(service: Service, attendu: float):
     ("service", "attendu"),
     [
         pytest.param(
-            service_factory(
-                frais=None,
-            ),
-            None,
+            service_factory(frais=None),
+            0.0,
             id="frais_non_definis",
         ),
         pytest.param(
-            service_factory(
-                frais=[],
-            ),
-            None,
-            id="frais_vides",
+            service_factory(frais=Frais.PAYANT, frais_precisions=None),
+            0.5,
+            id="avec_frais_sans_precisions",
         ),
-        *[
-            pytest.param(
-                service_factory(
-                    frais=[f],
-                ),
-                0.0,
-                id=f"{f}_sans_precisions",
-            )
-            for f in [Frais.PAYANT, Frais.GRATUIT_SOUS_CONDITIONS]
-        ],
-        *[
-            pytest.param(
-                service_factory(
-                    frais=[f],
-                    frais_autres="lorem ipsum",
-                ),
-                1.0,
-                id=f"{f}_avec_precisions",
-            )
-            for f in [Frais.PAYANT, Frais.GRATUIT_SOUS_CONDITIONS]
-        ],
+        pytest.param(
+            service_factory(frais=Frais.PAYANT, frais_precisions="lorem ipsum"),
+            1.0,
+            id="avec_frais_et_precisions",
+        ),
+        pytest.param(
+            service_factory(frais=Frais.GRATUIT),
+            1.0,
+            id="sans_frais",
+        ),
     ],
 )
 def test_critere_frais_bien_definis(service: Service, attendu: float):
@@ -378,7 +349,7 @@ def test_critere_frais_bien_definis(service: Service, attendu: float):
             service_factory(
                 date_maj=pendulum.today(),
                 thematiques=[Thematique.FAMILLE],
-                frais=[Frais.ADHESION],
+                frais=Frais.GRATUIT,
                 profils=[Profil.ADULTES],
                 telephone="3615",
                 modes_mobilisation=[ModeMobilisation.TELEPHONER],
@@ -393,8 +364,8 @@ def test_critere_frais_bien_definis(service: Service, attendu: float):
                 adresse="1 rue de la paix",
                 telephone="3615",
                 courriel="lorem@ipsum.dolor",
-                frais=[Frais.PAYANT],
-                frais_autres="lorem ipsum",
+                frais=Frais.PAYANT,
+                frais_precisions="lorem ipsum",
                 description="." * 500,
                 modes_accueil=[ModeAccueil.EN_PRESENTIEL],
                 modes_mobilisation=[
@@ -427,7 +398,6 @@ def test_score(service: Service, attendu: float):
     assert score == pytest.approx(attendu, abs=0.01)
     assert details == {
         "adresse_bien_definie": ANY,
-        "au_moins_un_frais": ANY,
         "au_moins_un_moyen_de_contact": ANY,
         "au_moins_un_public": ANY,
         "au_moins_une_thematique": ANY,
