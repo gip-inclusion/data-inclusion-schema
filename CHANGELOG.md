@@ -18,6 +18,8 @@
 * renommage du champ service `recurrence` en `horaires_accueil`
 * remplacement des champs `presentation_***` en faveur d'un champ unique `description` et mise à jour du critère de qualité `description_bien_definie`
 * fusion des champs service `pre_requis` et `justificatifs` dans un nouveau champ `conditions_acces`
+* renommage du champ service `frais_autres` en `frais_precisions`
+* refonte du référentiel des `frais`
 
 ### Suppressions
 

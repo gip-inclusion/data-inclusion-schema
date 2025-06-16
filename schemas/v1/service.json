@@ -3,10 +3,7 @@
     "Frais": {
       "enum": [
         "gratuit",
-        "gratuit-sous-conditions",
-        "payant",
-        "adhesion",
-        "pass-numerique"
+        "payant"
       ],
       "title": "Frais",
       "type": "string"
@@ -410,20 +407,20 @@
     "frais": {
       "anyOf": [
         {
-          "items": {
-            "$ref": "#/$defs/Frais"
-          },
-          "type": "array",
-          "uniqueItems": true
+          "$ref": "#/$defs/Frais"
         },
         {
           "type": "null"
         }
       ],
       "default": null,
-      "title": "Frais"
+      "description": "Indique si l’accès au service est payant ou gratuit.\n\nSi le service comporte des frais, ceux-ci devraient être précisés dans le champ `frais_precisions`.",
+      "examples": [
+        "gratuit",
+        "payant"
+      ]
     },
-    "frais_autres": {
+    "frais_precisions": {
       "anyOf": [
         {
           "type": "string"
@@ -433,7 +430,12 @@
         }
       ],
       "default": null,
-      "title": "Frais Autres"
+      "description": "Précisions sur les éventuels frais pour accéder au service.",
+      "examples": [
+        "10€ pour l’adhésion annuelle",
+        "Tarif réduit pour les bénéficiaires du RSA"
+      ],
+      "title": "Précisions sur les frais"
     },
     "horaires_accueil": {
       "anyOf": [

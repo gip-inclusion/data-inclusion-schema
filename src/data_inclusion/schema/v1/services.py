@@ -5,7 +5,7 @@ from pydantic import EmailStr, HttpUrl
 
 from data_inclusion.schema import common
 from data_inclusion.schema.base import BaseModel, Field
-from data_inclusion.schema.v0 import (
+from data_inclusion.schema.v1 import (
     Frais,
     ModeAccueil,
     ModeOrientationAccompagnateur,
@@ -60,8 +60,31 @@ class Service(BaseModel):
     types: Optional[set[TypologieService]] = None
     thematiques: Optional[set[Thematique]] = None
     prise_rdv: Optional[HttpUrl] = None
-    frais: Optional[set[Frais]] = None
-    frais_autres: Optional[str] = None
+    frais: Annotated[
+        Optional[Frais],
+        Field(
+            description="""
+                Indique si l’accès au service est payant ou gratuit.
+
+                Si le service comporte des frais, ceux-ci devraient être précisés dans
+                le champ `frais_precisions`.
+            """,
+            examples=[Frais.GRATUIT, Frais.PAYANT],
+        ),
+    ] = None
+    frais_precisions: Annotated[
+        Optional[str],
+        Field(
+            title="Précisions sur les frais",
+            description="""
+                Précisions sur les éventuels frais pour accéder au service.
+            """,
+            examples=[
+                "10€ pour l’adhésion annuelle",
+                "Tarif réduit pour les bénéficiaires du RSA",
+            ],
+        ),
+    ] = None
     profils: Optional[set[Profil]] = None
     profils_precisions: Optional[str] = None
     conditions_acces: Annotated[

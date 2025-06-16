@@ -98,10 +98,6 @@ def au_moins_un_public(service: Service) -> float:
     return 1.0 if service.profils else 0.0
 
 
-def au_moins_un_frais(service: Service) -> float:
-    return 1.0 if service.frais else 0.0
-
-
 def au_moins_un_moyen_de_contact(service: Service) -> float:
     return (
         1.0
@@ -131,15 +127,20 @@ def description_bien_definie(service: Service) -> float:
         return 1.0
 
 
-def frais_bien_definis(service: Service) -> float | None:
-    critere_applicable = service.frais and (
-        Frais.PAYANT in service.frais or Frais.GRATUIT_SOUS_CONDITIONS in service.frais
-    )
-
-    if critere_applicable:
-        return 1.0 if service.frais_autres else 0.0
-
-    return None
+def frais_bien_definis(service: Service) -> float:
+    match service:
+        case Service(frais=None):
+            return 0.0
+        case Service(frais=Frais.PAYANT, frais_precisions=None):
+            return 0.5
+        case Service(frais=Frais.PAYANT, frais_precisions=frais_precisions) if (
+            frais_precisions
+        ):
+            return 1.0
+        case Service(frais=Frais.GRATUIT):
+            return 1.0
+        case _:
+            raise ValueError()
 
 
 # Les critères sont implémentés sous forme de fonctions qui prennent un service en
@@ -151,7 +152,6 @@ CritereFn = Callable[[Service], float | None]
 
 CRITERES: list[CritereFn] = [
     adresse_bien_definie,
-    au_moins_un_frais,
     au_moins_un_mode_orientation,
     au_moins_un_public,
     au_moins_une_thematique,

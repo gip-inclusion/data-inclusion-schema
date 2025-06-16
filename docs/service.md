@@ -186,31 +186,9 @@ Format : `uri`
 
 ### `frais`
 
+Indique si l’accès au service est payant ou gratuit.
 
-
-
-
-Type : `array[string]`
-
-
-
-
-
-
-
-
-
-
-Valeurs acceptées : `"gratuit&#34;, &#34;gratuit-sous-conditions&#34;, &#34;payant&#34;, &#34;adhesion&#34;, &#34;pass-numerique"`
-
-
-
-
----
-
-### `frais_autres`
-
-
+Si le service comporte des frais, ceux-ci devraient être précisés dans le champ `frais_precisions`.
 
 
 
@@ -224,6 +202,46 @@ Type : `string`
 
 
 
+
+Valeurs acceptées : `"gratuit&#34;, &#34;payant"`
+
+
+
+
+Exemples :
+
+```json
+"gratuit"
+"payant"
+
+```
+
+---
+
+### `frais_precisions`
+
+Précisions sur les éventuels frais pour accéder au service.
+
+
+
+Type : `string`
+
+
+
+
+
+
+
+
+
+
+Exemples :
+
+```json
+"10\u20ac pour l\u2019adh\u00e9sion annuelle"
+"Tarif r\u00e9duit pour les b\u00e9n\u00e9ficiaires du RSA"
+
+```
 
 ---
 
