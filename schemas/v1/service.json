@@ -328,6 +328,22 @@
       "default": null,
       "title": "Complement Adresse"
     },
+    "conditions_acces": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Conditions d’accès au service.\n\nIl peut s’agir de prérequis ou de justificatifs à présenter.",
+      "examples": [
+        "Maîtrise de la langue française à l’oral et à l’écrit"
+      ],
+      "title": "Conditions d’accès"
+    },
     "contact_nom_prenom": {
       "anyOf": [
         {
@@ -438,22 +454,6 @@
     "id": {
       "title": "Id",
       "type": "string"
-    },
-    "justificatifs": {
-      "anyOf": [
-        {
-          "items": {
-            "type": "string"
-          },
-          "type": "array",
-          "uniqueItems": true
-        },
-        {
-          "type": "null"
-        }
-      ],
-      "default": null,
-      "title": "Justificatifs"
     },
     "latitude": {
       "anyOf": [
@@ -596,22 +596,6 @@
         "https://insersol.fr/biclou-atelier-reparation-participatif-solidaire/"
       ],
       "title": "Page Web"
-    },
-    "pre_requis": {
-      "anyOf": [
-        {
-          "items": {
-            "type": "string"
-          },
-          "type": "array",
-          "uniqueItems": true
-        },
-        {
-          "type": "null"
-        }
-      ],
-      "default": null,
-      "title": "Pre Requis"
     },
     "prise_rdv": {
       "anyOf": [
