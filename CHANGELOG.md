@@ -25,6 +25,7 @@
 * remplacement des champs `modes_orientation_***` en faveur d'un champ unique `modes_mobilisation`
 * remplacement des champs `modes_orientation_***_autres` en faveur d'un champ unique `modes_mobilisation_precisions`
 * remplacement du critère score de qualité `au_moins_un_mode_orientation` par `modes_mobilisation_bien_definis`
+* fusion des champs service `pre_requis` et `justificatifs` dans un nouveau champ `conditions_acces`
 
 ### Suppressions
 
