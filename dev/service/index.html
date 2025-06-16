@@ -348,18 +348,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#presentation_resume" class="md-nav__link">
+  <a href="#description" class="md-nav__link">
     <span class="md-ellipsis">
-      presentation_resume
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#presentation_detail" class="md-nav__link">
-    <span class="md-ellipsis">
-      presentation_detail
+      description *
     </span>
   </a>
   
@@ -402,9 +393,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#frais_autres" class="md-nav__link">
+  <a href="#frais_precisions" class="md-nav__link">
     <span class="md-ellipsis">
-      frais_autres
+      frais_precisions
     </span>
   </a>
   
@@ -429,18 +420,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#pre_requis" class="md-nav__link">
+  <a href="#conditions_acces" class="md-nav__link">
     <span class="md-ellipsis">
-      pre_requis
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#justificatifs" class="md-nav__link">
-    <span class="md-ellipsis">
-      justificatifs
+      conditions_acces
     </span>
   </a>
   
@@ -648,6 +630,15 @@
   <a href="#nombre_semaines" class="md-nav__link">
     <span class="md-ellipsis">
       nombre_semaines
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#horaires_accueil" class="md-nav__link">
+    <span class="md-ellipsis">
+      horaires_accueil
     </span>
   </a>
   
@@ -997,18 +988,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#presentation_resume" class="md-nav__link">
+  <a href="#description" class="md-nav__link">
     <span class="md-ellipsis">
-      presentation_resume
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#presentation_detail" class="md-nav__link">
-    <span class="md-ellipsis">
-      presentation_detail
+      description *
     </span>
   </a>
   
@@ -1051,9 +1033,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#frais_autres" class="md-nav__link">
+  <a href="#frais_precisions" class="md-nav__link">
     <span class="md-ellipsis">
-      frais_autres
+      frais_precisions
     </span>
   </a>
   
@@ -1078,18 +1060,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#pre_requis" class="md-nav__link">
+  <a href="#conditions_acces" class="md-nav__link">
     <span class="md-ellipsis">
-      pre_requis
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#justificatifs" class="md-nav__link">
-    <span class="md-ellipsis">
-      justificatifs
+      conditions_acces
     </span>
   </a>
   
@@ -1302,6 +1275,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#horaires_accueil" class="md-nav__link">
+    <span class="md-ellipsis">
+      horaires_accueil
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1343,11 +1325,14 @@
 <div class="highlight"><pre><span></span><code><span class="s2">&quot;Atelier insertion et posture professionnelle&quot;</span>
 </code></pre></div>
 <hr />
-<h3 id="presentation_resume"><code>presentation_resume</code></h3>
+<h3 id="description"><code>description</code> *</h3>
+<p>Description du service.</p>
+<p>Entre 50 et 2000 caractères.</p>
+<p>Ce champ est pris en compte dans le calcul du score de qualité.</p>
 <p>Type : <code>string</code></p>
-<hr />
-<h3 id="presentation_detail"><code>presentation_detail</code></h3>
-<p>Type : <code>string</code></p>
+<p>Exemples :</p>
+<div class="highlight"><pre><span></span><code><span class="s2">&quot;Cet atelier-conseil vous permet d\u2019identifier les comp\u00e9tences \u00e0\n                d\u00e9velopper pour atteindre vos objectifs d\u2019\u00e9volution professionnelle et \u00e0\n                d\u00e9couvrir les diff\u00e9rentes modalit\u00e9s de formation.\n\n                Dur\u00e9e d\u2019une journ\u00e9e et inscription via votre espace France Travail.&quot;</span>
+</code></pre></div>
 <hr />
 <h3 id="types"><code>types</code></h3>
 <p>Type : <code>array[string]</code></p>
@@ -1362,11 +1347,21 @@
 <p>Format : <code>uri</code></p>
 <hr />
 <h3 id="frais"><code>frais</code></h3>
-<p>Type : <code>array[string]</code></p>
-<p>Valeurs acceptées : <code>"gratuit&amp;#34;, &amp;#34;gratuit-sous-conditions&amp;#34;, &amp;#34;payant&amp;#34;, &amp;#34;adhesion&amp;#34;, &amp;#34;pass-numerique"</code></p>
+<p>Indique si l’accès au service et/ou au lieu comporte des frais.</p>
+<p>Si le service comporte des frais, ceux-ci devraient être précisés dans le champ <code>frais_precisions</code>.</p>
+<p>Type : <code>boolean</code></p>
+<p>Exemples :</p>
+<div class="highlight"><pre><span></span><code><span class="kc">true</span>
+<span class="kc">false</span>
+</code></pre></div>
 <hr />
-<h3 id="frais_autres"><code>frais_autres</code></h3>
+<h3 id="frais_precisions"><code>frais_precisions</code></h3>
+<p>Précisions sur les éventuels frais pour accéder au service.</p>
 <p>Type : <code>string</code></p>
+<p>Exemples :</p>
+<div class="highlight"><pre><span></span><code><span class="s2">&quot;10\u20ac pour l\u2019adh\u00e9sion annuelle&quot;</span>
+<span class="s2">&quot;Tarif r\u00e9duit pour les b\u00e9n\u00e9ficiaires du RSA&quot;</span>
+</code></pre></div>
 <hr />
 <h3 id="profils"><code>profils</code></h3>
 <p>Type : <code>array[string]</code></p>
@@ -1375,11 +1370,13 @@
 <h3 id="profils_precisions"><code>profils_precisions</code></h3>
 <p>Type : <code>string</code></p>
 <hr />
-<h3 id="pre_requis"><code>pre_requis</code></h3>
-<p>Type : <code>array</code></p>
-<hr />
-<h3 id="justificatifs"><code>justificatifs</code></h3>
-<p>Type : <code>array</code></p>
+<h3 id="conditions_acces"><code>conditions_acces</code></h3>
+<p>Conditions d’accès au service.</p>
+<p>Il peut s’agir de prérequis ou de justificatifs à présenter.</p>
+<p>Type : <code>string</code></p>
+<p>Exemples :</p>
+<div class="highlight"><pre><span></span><code><span class="s2">&quot;Ma\u00eetrise de la langue fran\u00e7aise \u00e0 l\u2019oral et \u00e0 l\u2019\u00e9crit&quot;</span>
+</code></pre></div>
 <hr />
 <h3 id="formulaire_en_ligne"><code>formulaire_en_ligne</code></h3>
 <p>Type : <code>string</code></p>
@@ -1490,6 +1487,15 @@
 <p>Type : <code>integer</code></p>
 <p>Exemples :</p>
 <div class="highlight"><pre><span></span><code><span class="mi">3</span>
+</code></pre></div>
+<hr />
+<h3 id="horaires_accueil"><code>horaires_accueil</code></h3>
+<p>Horaires d’accueil du public pour ce service.</p>
+<p>Si le champ n’est pas renseigné, les horaires d’accueil de la structure peuvent être utilisés.</p>
+<p>Doit être au format OpenStreetMap Opening Hours.</p>
+<p>Type : <code>string</code></p>
+<p>Exemples :</p>
+<div class="highlight"><pre><span></span><code><span class="s2">&quot;Mo-Fr 08:30-12:30; PH off&quot;</span>
 </code></pre></div>
 <hr />
 
