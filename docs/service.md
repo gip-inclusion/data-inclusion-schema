@@ -243,32 +243,15 @@ Type : `string`
 
 ---
 
-### `pre_requis`
+### `conditions_acces`
+
+Conditions d’accès au service.
+
+Il peut s’agir de prérequis ou de justificatifs à présenter.
 
 
 
-
-
-Type : `array`
-
-
-
-
-
-
-
-
-
-
----
-
-### `justificatifs`
-
-
-
-
-
-Type : `array`
+Type : `string`
 
 
 
@@ -278,6 +261,13 @@ Type : `array`
 
 
 
+
+Exemples :
+
+```json
+"Ma\u00eetrise de la langue fran\u00e7aise \u00e0 l\u2019oral et \u00e0 l\u2019\u00e9crit"
+
+```
 
 ---
 
