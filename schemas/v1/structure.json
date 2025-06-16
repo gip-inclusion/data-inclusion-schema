@@ -307,7 +307,7 @@
       "title": "Description",
       "type": "string"
     },
-    "horaires_ouverture": {
+    "horaires_accueil": {
       "anyOf": [
         {
           "type": "string"
@@ -317,7 +317,11 @@
         }
       ],
       "default": null,
-      "title": "Horaires Ouverture"
+      "description": "Horaires d’accueil du public par la structure.\n\nUn service peut avoir un horaire d’accueil différent. Se référer aux horaires des services.\n\nDoit être au format [OpenStreetMap Opening Hours](https://wiki.openstreetmap.org/wiki/FR:Key:opening_hours).\n\n[Outil d’aide à la saisie](https://projets.pavie.info/yohours/).",
+      "examples": [
+        "Mo-Fr 08:30-12:30; PH off"
+      ],
+      "title": "Horaires d’accueil du public"
     },
     "id": {
       "title": "Id",
