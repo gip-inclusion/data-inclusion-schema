@@ -1,0 +1,67 @@
+[
+  {
+    "description": "Toute personne ayant un emploi, qu’il soit salarié, libéral ou à son compte",
+    "label": "Actifs",
+    "value": "actifs"
+  },
+  {
+    "description": "Personnes touchant des aides financières telles que RSA, SMIC, allocations familiales, bourses, etc",
+    "label": "Bénéficiaires des minimas sociaux",
+    "value": "beneficiaires-des-minimas-sociaux"
+  },
+  {
+    "description": "Demandeurs d’emploi de tout type",
+    "label": "Demandeurs d’emploi",
+    "value": "demandeurs-emploi"
+  },
+  {
+    "description": "Étudiants",
+    "label": "Étudiants",
+    "value": "etudiants"
+  },
+  {
+    "description": "Familles, parents, enfants, etc",
+    "label": "Familles",
+    "value": "familles"
+  },
+  {
+    "description": "Femmes isolées, victimes de violence, etc",
+    "label": "Femmes",
+    "value": "femmes"
+  },
+  {
+    "description": "Jeunes au sens large, jeunes adultes, adolescents, etc",
+    "label": "Jeunes",
+    "value": "jeunes"
+  },
+  {
+    "description": "Personnes en situation de handicap de tout type",
+    "label": "Personnes en situation de handicap",
+    "value": "personnes-en-situation-de-handicap"
+  },
+  {
+    "description": "SDF, victimes de violence, grande précarité, etc",
+    "label": "Personnes en situation d’urgence",
+    "value": "personnes-en-situation-durgence"
+  },
+  {
+    "description": "Personnes sortant de détention, détenus ou autre statut juridique spécifique",
+    "label": "Personnes en situation juridique spécifique",
+    "value": "personnes-en-situation-juridique-specifique"
+  },
+  {
+    "description": "Réfugiés, demandeurs d’asile, personnes immigrées, etc",
+    "label": "Personnes exilées",
+    "value": "personnes-exilees"
+  },
+  {
+    "description": "Personnes résidentes en zone Quartier Prioritaire de la Ville ou France Ruralités Revitalisation (anciennement ZRR)",
+    "label": "Résidents en QPV ou FRR",
+    "value": "residents-qpv-frr"
+  },
+  {
+    "description": "Personnes âgées, retraités, etc",
+    "label": "Séniors",
+    "value": "seniors"
+  }
+]
