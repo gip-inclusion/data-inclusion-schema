@@ -1,5 +1,5 @@
 from datetime import date
-from typing import Annotated, Optional
+from typing import Annotated, Literal, Optional
 
 from pydantic import EmailStr, HttpUrl
 
@@ -13,7 +13,6 @@ from data_inclusion.schema.v1 import (
     Profil,
     Thematique,
     TypologieService,
-    ZoneDiffusionType,
 )
 
 
@@ -150,14 +149,47 @@ class Service(BaseModel):
         ),
     ]
     modes_accueil: Optional[set[ModeAccueil]] = None
-    zone_diffusion_type: Optional[ZoneDiffusionType] = None
-    zone_diffusion_code: Optional[
-        common.CodeCommune
-        | common.CodeEPCI
-        | common.CodeDepartement
-        | common.CodeRegion
+    zone_eligibilite: Annotated[
+        Optional[
+            list[
+                common.CodeCommune
+                | common.CodeEPCI
+                | common.CodePays
+                | Literal["france"]
+            ]
+        ],
+        Field(
+            title="Zone d’éligibilité",
+            min_length=1,
+            description="""
+            Zone géographique d’éligibilité du service.
+
+            Contient une liste de codes issus du [Code Officiel Géographique](https://www.insee.fr/fr/information/2560452)
+            maintenu par l’INSEE.
+
+            Chaque code dans cette liste peut être un code commune, un code département,
+            un code EPCI ou un code pays.
+
+            Si le service est éligible à l’ensemble d’une région, lister les codes des
+            departements de cette région.
+
+            Si le service est éligible sur l’ensemble du territoire national, utiliser
+            le code `france` (France) ou le code pays `99100`.
+
+            data·inclusion vérifie la validité des codes fournis. Les codes invalides
+            sont supprimés de la liste.
+
+            [Outil de recherche des codes](https://www.insee.fr/fr/recherche/recherche-geographique)
+        """,  # noqa: E501
+            examples=[
+                ["75056"],
+                ["2A", "2B"],
+                ["200093201"],
+                ["2A", "2B", "200093201"],
+                ["france"],
+            ],
+        ),
     ] = None
-    zone_diffusion_nom: Optional[str] = None
     contact_nom_prenom: Optional[str] = None
     lien_mobilisation: Annotated[
         Optional[HttpUrl],
