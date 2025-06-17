@@ -9,25 +9,13 @@ theme:
   logo: assets/DataInclusion-Monogramme-Blanc.png
   favicon: assets/DataInclusion-Monogramme-Couleur.png
 
-nav:
-  - Accueil: index.md
-  - Structure: structure.md
-  - Service: service.md
-  - Référentiels:
-    - Frais: referentiels/frais.md
-    - Labels nationaux: referentiels/labels_nationaux.md
-    - Modes d’accueil: referentiels/modes_accueil.md
-    - Modes d’orientation accompagnateur: referentiels/modes_orientation_accompagnateur.md
-    - Modes d’orientation bénéficiaire: referentiels/modes_orientation_beneficiaire.md
-    - Profils: referentiels/profils.md
-    - Thématiques: referentiels/thematiques.md
-    - Typologies de services: referentiels/typologies_de_services.md
-    - Typologies de structures: referentiels/typologies_de_structures.md
-    - Zones de diffusion: referentiels/zones_de_diffusion_types.md
-
 markdown_extensions:
   - pymdownx.superfences
   - admonition
+
+plugins:
+  - literate-nav:
+      nav_file: summary.md
 
 extra:
   version:

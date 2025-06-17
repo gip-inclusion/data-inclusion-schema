@@ -2,6 +2,8 @@ from data_inclusion.schema.base import EnhancedEnum
 
 
 class TypologieService(EnhancedEnum):
+    """Typologies de services"""
+
     ACCOMPAGNEMENT = (
         "accompagnement",
         "Accompagnement",

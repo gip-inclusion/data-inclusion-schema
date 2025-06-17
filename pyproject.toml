@@ -36,6 +36,7 @@ docs = [
     "jinja2",
     "mkdocs",
     "mkdocs-material",
+    "mkdocs-literate-nav",
     "mike",
 ]
 
