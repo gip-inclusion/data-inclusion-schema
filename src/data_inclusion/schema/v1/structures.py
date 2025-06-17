@@ -111,6 +111,23 @@ class Structure(BaseModel):
             examples=["Mo-Fr 08:30-12:30; PH off"],
         ),
     ] = None
-    accessibilite: Optional[HttpUrl] = None
+    accessibilite_lieu: Annotated[
+        Optional[HttpUrl],
+        Field(
+            description="""
+            Lien pour connaître le niveau d’accessibilité de la structure si elle
+            accueille du public.
+
+            Si la source ne nous fournit pas de lien, nous tentons de récupérer
+            automatiquement les informations sur Acceslibre, la plateforme collaborative
+            de l’accessibilité.
+            """,
+            examples=[
+                "https://acceslibre.beta.gouv.fr/app/17-la-greve-sur-mignon/a/mairie/erp/mairie-la-greve-sur-mignon/"
+            ],
+            default=None,
+            title="Accessibilité du lieu",
+        ),
+    ]
     labels_nationaux: Optional[set[LabelNational]] = None
     labels_autres: Optional[set[str]] = None

@@ -10,5 +10,4 @@
     * [Thématiques](referentiels/thematiques.md)
     * [Typologies de services](referentiels/typologies_de_services.md)
     * [Typologies de structures](referentiels/typologies_de_structures.md)
-    * [Types de zones de diffusion](referentiels/zones_de_diffusion_types.md)
     * [Publics](referentiels/publics.md)

@@ -6,6 +6,8 @@
 
 ### Changements
 
+* renommage du champ `accessibilite` par le champ `accessibilite_lieu`
+
 ### Dépréciations
 
 ### Suppressions
