@@ -2,6 +2,8 @@ from data_inclusion.schema.base import EnhancedEnum
 
 
 class Profil(EnhancedEnum):
+    """Profils"""
+
     ADULTES = (
         "adultes",
         "Adultes",

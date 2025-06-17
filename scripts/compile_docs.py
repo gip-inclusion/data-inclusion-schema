@@ -129,6 +129,17 @@ def main(version: str) -> None:
                 )
             )
 
+    with (DOCS_DIR / "summary.md").open("w") as file:
+        file.write(
+            jinja2.Template(
+                open(DOCS_DIR / "summary.md.j2").read(),
+                autoescape=True,
+                keep_trailing_newline=True,
+            ).render(
+                enums=ENUM_FILENAMES,
+            )
+        )
+
 
 def list_schema_versions():
     return sorted(
