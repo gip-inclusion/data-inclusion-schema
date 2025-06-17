@@ -537,27 +537,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zone_diffusion_type" class="md-nav__link">
+  <a href="#zone_eligibilite" class="md-nav__link">
     <span class="md-ellipsis">
-      zone_diffusion_type
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#zone_diffusion_code" class="md-nav__link">
-    <span class="md-ellipsis">
-      zone_diffusion_code
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#zone_diffusion_nom" class="md-nav__link">
-    <span class="md-ellipsis">
-      zone_diffusion_nom
+      zone_eligibilite
     </span>
   </a>
   
@@ -1177,27 +1159,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zone_diffusion_type" class="md-nav__link">
+  <a href="#zone_eligibilite" class="md-nav__link">
     <span class="md-ellipsis">
-      zone_diffusion_type
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#zone_diffusion_code" class="md-nav__link">
-    <span class="md-ellipsis">
-      zone_diffusion_code
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#zone_diffusion_nom" class="md-nav__link">
-    <span class="md-ellipsis">
-      zone_diffusion_nom
+      zone_eligibilite
     </span>
   </a>
   
@@ -1347,9 +1311,10 @@
 <p>Format : <code>uri</code></p>
 <hr />
 <h3 id="frais"><code>frais</code></h3>
-<p>Indique si l’accès au service et/ou au lieu comporte des frais.</p>
+<p>Indique si l’accès au service est payant ou gratuit.</p>
 <p>Si le service comporte des frais, ceux-ci devraient être précisés dans le champ <code>frais_precisions</code>.</p>
-<p>Type : <code>boolean</code></p>
+<p>Type : <code>string</code></p>
+<p>Valeurs acceptées : <code>"gratuit&amp;#34;, &amp;#34;payant"</code></p>
 <p>Exemples :</p>
 <div class="highlight"><pre><span></span><code><span class="kc">true</span>
 <span class="kc">false</span>
@@ -1435,16 +1400,15 @@
 <p>Type : <code>array[string]</code></p>
 <p>Valeurs acceptées : <code>"a-distance&amp;#34;, &amp;#34;en-presentiel"</code></p>
 <hr />
-<h3 id="zone_diffusion_type"><code>zone_diffusion_type</code></h3>
-<p>Type : <code>string</code></p>
-<p>Valeurs acceptées : <code>"commune&amp;#34;, &amp;#34;epci&amp;#34;, &amp;#34;region&amp;#34;, &amp;#34;departement&amp;#34;, &amp;#34;pays"</code></p>
-<hr />
-<h3 id="zone_diffusion_code"><code>zone_diffusion_code</code></h3>
-<p>Type : <code>string</code></p>
-<p>Regex : <code>^\d{2}$ | ^\d{9}$ | ^\w{2,3}$ | ^\w{5}$</code></p>
-<hr />
-<h3 id="zone_diffusion_nom"><code>zone_diffusion_nom</code></h3>
-<p>Type : <code>string</code></p>
+<h3 id="zone_eligibilite"><code>zone_eligibilite</code></h3>
+<p>Zone géographique d’éligibilité du service.</p>
+<p>Contient une liste de codes issus du Code Officiel Géographique maintenu par l’INSEE : https://www.insee.fr/fr/information/2560452.</p>
+<p>Chaque code dans cette liste peut être un code commune, un code département, un code EPCI ou un code pays.</p>
+<p>Si le service est éligible à l’ensemble d’une région, lister les codes des departements de cette région.</p>
+<p>Si le service est éligible sur l’ensemble du territoire national, utiliser le code <code>france</code> (France) ou le code pays <code>99100</code>.</p>
+<p>Pour rechercher un code : https://www.insee.fr/fr/recherche/recherche-geographique</p>
+<p>data·inclusion vérifie la validité des codes fournis. Les codes invalides sont supprimés de la liste.</p>
+<p>Type : <code>array</code></p>
 <hr />
 <h3 id="contact_nom_prenom"><code>contact_nom_prenom</code></h3>
 <p>Type : <code>string</code></p>
@@ -1492,7 +1456,8 @@
 <h3 id="horaires_accueil"><code>horaires_accueil</code></h3>
 <p>Horaires d’accueil du public pour ce service.</p>
 <p>Si le champ n’est pas renseigné, les horaires d’accueil de la structure peuvent être utilisés.</p>
-<p>Doit être au format OpenStreetMap Opening Hours.</p>
+<p>Doit être au format OpenStreetMap Opening Hours : https://wiki.openstreetmap.org/wiki/FR:Key:opening_hours</p>
+<p>Outil d’aide à la saisie : https://projets.pavie.info/yohours/</p>
 <p>Type : <code>string</code></p>
 <p>Exemples :</p>
 <div class="highlight"><pre><span></span><code><span class="s2">&quot;Mo-Fr 08:30-12:30; PH off&quot;</span>
