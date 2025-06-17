@@ -1,6 +1,7 @@
 {
   "$defs": {
     "LabelNational": {
+      "description": "Labels nationaux",
       "enum": [
         "60000-rebonds",
         "action-logement",
@@ -92,6 +93,7 @@
       "type": "string"
     },
     "TypologieStructure": {
+      "description": "Typologies de structures",
       "enum": [
         "ACI",
         "ACIPHC",

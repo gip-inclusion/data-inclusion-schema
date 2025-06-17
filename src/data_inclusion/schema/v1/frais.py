@@ -2,6 +2,8 @@ from data_inclusion.schema.base import EnhancedEnum
 
 
 class Frais(EnhancedEnum):
+    """Frais"""
+
     GRATUIT = (
         "gratuit",
         "Gratuit",
