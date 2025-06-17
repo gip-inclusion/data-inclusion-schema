@@ -21,6 +21,7 @@
 * renommage du champ service `frais_autres` en `frais_precisions`
 * refonte du référentiel des `frais`
 * remplacement des champs `zone_diffusion_***` par le champ `zone_eligibilite`
+* renommage du champ `accessibilite` par le champ `accessibilite_lieu`
 
 ### Suppressions
 

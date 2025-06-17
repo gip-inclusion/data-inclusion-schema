@@ -407,9 +407,11 @@ Exemples :
 
 ---
 
-### `accessibilite`
+### `accessibilite_lieu`
 
+Lien la page Accesslibre référençant le niveau d’accessibilité du lieu de réalisation du service.
 
+Devrait être un lien vers [Accesslibre](https://acceslibre.beta.gouv.fr/).
 
 
 
@@ -423,6 +425,13 @@ Format : `uri`
 
 
 
+
+Exemples :
+
+```json
+"https://acceslibre.beta.gouv.fr/app/17-la-greve-sur-mignon/a/mairie/erp/mairie-la-greve-sur-mignon/"
+
+```
 
 ---
 
