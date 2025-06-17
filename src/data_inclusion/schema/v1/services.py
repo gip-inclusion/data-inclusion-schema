@@ -10,7 +10,7 @@ from data_inclusion.schema.v1 import (
     ModeAccueil,
     ModeOrientationAccompagnateur,
     ModeOrientationBeneficiaire,
-    Profil,
+    Public,
     Thematique,
     TypologieService,
 )
@@ -84,8 +84,30 @@ class Service(BaseModel):
             ],
         ),
     ] = None
-    profils: Optional[set[Profil]] = None
-    profils_precisions: Optional[str] = None
+    publics: Annotated[
+        Optional[set[Public]],
+        Field(
+            title="Publics",
+            description="""
+            Publics visés par le service.
+
+            Des informations complémentaires peuvent être précisées dans le champ
+            `publics_precisions`.
+        """,
+            examples=[Public.FEMMES, Public.RESIDENTS_QPV_FRR],
+            min_length=1,
+        ),
+    ] = None
+    publics_precisions: Annotated[
+        Optional[str],
+        Field(
+            title="Précisions sur les publics",
+            description="""
+            Précisions sur les publics visés par le service.
+        """,
+            examples=["Le jeune entre 15 et 18 ans."],
+        ),
+    ] = None
     conditions_acces: Annotated[
         Optional[str],
         Field(

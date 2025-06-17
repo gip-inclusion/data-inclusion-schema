@@ -27,7 +27,6 @@ def compile_schema(version: str):
         schema.ModeAccueil: "modes_accueil",
         schema.ModeOrientationAccompagnateur: "modes_orientation_accompagnateur",
         schema.ModeOrientationBeneficiaire: "modes_orientation_beneficiaire",
-        schema.Profil: "profils",
         schema.Thematique: "thematiques",
         schema.TypologieService: "typologies_de_services",
         schema.TypologieStructure: "typologies_de_structures",
@@ -35,6 +34,9 @@ def compile_schema(version: str):
 
     if version == "v0":
         ENUM_FILENAMES[schema.ZoneDiffusionType] = "zones_de_diffusion_types"
+        ENUM_FILENAMES[schema.Profil] = "profils"
+    elif version == "v1":
+        ENUM_FILENAMES[schema.Public] = "publics"
 
     SCHEMAS_DIR.mkdir(exist_ok=True)
     (SCHEMAS_DIR / version).mkdir(exist_ok=True, parents=True)

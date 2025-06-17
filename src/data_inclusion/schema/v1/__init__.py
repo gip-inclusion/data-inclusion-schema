@@ -13,12 +13,12 @@ from data_inclusion.schema.v0.modes_orientation import (
     ModeOrientationAccompagnateur,
     ModeOrientationBeneficiaire,
 )
-from data_inclusion.schema.v0.profils import Profil
 from data_inclusion.schema.v0.thematiques import Thematique
 from data_inclusion.schema.v0.typologies_de_services import TypologieService
 from data_inclusion.schema.v0.typologies_de_structures import TypologieStructure
 from data_inclusion.schema.v0.zones_de_diffusion import ZoneDiffusionType
 from data_inclusion.schema.v1.frais import Frais
+from data_inclusion.schema.v1.publics import Public
 from data_inclusion.schema.v1.services import Service
 from data_inclusion.schema.v1.structures import Structure
 
@@ -35,7 +35,7 @@ __all__ = [
     "ModeAccueil",
     "ModeOrientationAccompagnateur",
     "ModeOrientationBeneficiaire",
-    "Profil",
+    "Public",
     "Service",
     "Structure",
     "Thematique",

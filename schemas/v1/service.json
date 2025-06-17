@@ -44,39 +44,24 @@
       "title": "ModeOrientationBeneficiaire",
       "type": "string"
     },
-    "Profil": {
-      "description": "Profils",
+    "Public": {
+      "description": "Publics",
       "enum": [
-        "adultes",
-        "alternants",
-        "beneficiaires-rsa",
-        "deficience-visuelle",
-        "demandeurs-demploi",
-        "familles-enfants",
+        "actifs",
+        "beneficiaires-des-minimas-sociaux",
+        "demandeurs-emploi",
         "etudiants",
+        "familles",
         "femmes",
-        "handicaps-mentaux",
-        "handicaps-psychiques",
         "jeunes",
-        "jeunes-16-26",
-        "locataires",
-        "personnes-de-nationalite-etrangere",
         "personnes-en-situation-de-handicap",
-        "personnes-en-situation-illettrisme",
-        "personnes-handicapees",
-        "proprietaires",
-        "public-langues-etrangeres",
-        "retraites",
-        "salaries",
-        "sans-domicile-fixe",
-        "seniors-65",
-        "sortants-de-detention",
-        "surdite",
-        "victimes",
-        "tous-publics",
-        "personnes-en-situation-durgence"
+        "personnes-en-situation-d-urgence",
+        "personnes-en-situation-juridique-specifique",
+        "personnes-exilees",
+        "residents-qpv-frr",
+        "seniors"
       ],
-      "title": "Profil",
+      "title": "Public",
       "type": "string"
     },
     "Thematique": {
@@ -610,12 +595,13 @@
       "default": null,
       "title": "Prise Rdv"
     },
-    "profils": {
+    "publics": {
       "anyOf": [
         {
           "items": {
-            "$ref": "#/$defs/Profil"
+            "$ref": "#/$defs/Public"
           },
+          "minItems": 1,
           "type": "array",
           "uniqueItems": true
         },
@@ -624,9 +610,14 @@
         }
       ],
       "default": null,
-      "title": "Profils"
+      "description": "Publics visés par le service.\n\nDes informations complémentaires peuvent être précisées dans le champ `publics_precisions`.",
+      "examples": [
+        "femmes",
+        "residents-qpv-frr"
+      ],
+      "title": "Publics"
     },
-    "profils_precisions": {
+    "publics_precisions": {
       "anyOf": [
         {
           "type": "string"
@@ -636,7 +627,11 @@
         }
       ],
       "default": null,
-      "title": "Profils Precisions"
+      "description": "Précisions sur les publics visés par le service.",
+      "examples": [
+        "Le jeune entre 15 et 18 ans."
+      ],
+      "title": "Précisions sur les publics"
     },
     "source": {
       "title": "Source",
