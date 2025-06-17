@@ -39,3 +39,8 @@ CodeRegion: TypeAlias = Annotated[
     str,
     StringConstraints(min_length=2, max_length=2, pattern=r"^\d{2}$"),
 ]
+
+CodePays: TypeAlias = Annotated[
+    str,
+    StringConstraints(min_length=5, max_length=5, pattern=r"^99[0-5]\d{2}$"),
+]
