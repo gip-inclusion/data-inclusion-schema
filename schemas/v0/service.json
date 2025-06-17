@@ -1,6 +1,7 @@
 {
   "$defs": {
     "Frais": {
+      "description": "Frais",
       "enum": [
         "gratuit",
         "gratuit-sous-conditions",
@@ -12,6 +13,7 @@
       "type": "string"
     },
     "ModeAccueil": {
+      "description": "Modes d’accueil",
       "enum": [
         "a-distance",
         "en-presentiel"
@@ -20,6 +22,7 @@
       "type": "string"
     },
     "ModeOrientationAccompagnateur": {
+      "description": "Modes d’orientation accompagnateur",
       "enum": [
         "completer-le-formulaire-dadhesion",
         "envoyer-un-mail",
@@ -32,6 +35,7 @@
       "type": "string"
     },
     "ModeOrientationBeneficiaire": {
+      "description": "Modes d’orientation bénéficiaire",
       "enum": [
         "completer-le-formulaire-dadhesion",
         "envoyer-un-mail",
@@ -44,6 +48,7 @@
       "type": "string"
     },
     "Profil": {
+      "description": "Profils",
       "enum": [
         "adultes",
         "alternants",
@@ -78,6 +83,7 @@
       "type": "string"
     },
     "Thematique": {
+      "description": "Thématiques",
       "enum": [
         "acces-aux-droits-et-citoyennete",
         "acces-aux-droits-et-citoyennete--accompagnement-dans-les-demarches-administratives",
@@ -233,6 +239,7 @@
       "type": "string"
     },
     "TypologieService": {
+      "description": "Typologies de services",
       "enum": [
         "accompagnement",
         "accueil",
@@ -250,6 +257,7 @@
       "type": "string"
     },
     "ZoneDiffusionType": {
+      "description": "Types de zones de diffusion",
       "enum": [
         "commune",
         "epci",

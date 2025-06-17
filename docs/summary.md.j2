@@ -1,0 +1,7 @@
+* [Accueil](index.md)
+* [Structure](structure.md)
+* [Service](service.md)
+* Référentiels
+{%- for enum, filename in enums.items() %}
+    * [{{ enum.__doc__ }}](referentiels/{{ filename }}.md)
+{%- endfor %}

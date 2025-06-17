@@ -2,6 +2,8 @@ from data_inclusion.schema.base import EnhancedEnum
 
 
 class LabelNational(EnhancedEnum):
+    """Labels nationaux"""
+
     SOIXANTE_MILLE_REBONDS = (
         "60000-rebonds",
         "60 000 rebonds",
