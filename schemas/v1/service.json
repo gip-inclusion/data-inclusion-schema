@@ -1,6 +1,7 @@
 {
   "$defs": {
     "Frais": {
+      "description": "Frais",
       "enum": [
         "gratuit",
         "payant"
@@ -9,6 +10,7 @@
       "type": "string"
     },
     "ModeAccueil": {
+      "description": "Modes d’accueil",
       "enum": [
         "a-distance",
         "en-presentiel"
@@ -17,6 +19,7 @@
       "type": "string"
     },
     "ModeMobilisation": {
+      "description": "Modes de mobilisation",
       "enum": [
         "envoyer-un-courriel",
         "se-presenter",
@@ -27,6 +30,7 @@
       "type": "string"
     },
     "PersonneMobilisatrice": {
+      "description": "Personnes mobilisatrices",
       "enum": [
         "usagers",
         "professionnels"
@@ -35,6 +39,7 @@
       "type": "string"
     },
     "Profil": {
+      "description": "Profils",
       "enum": [
         "adultes",
         "alternants",
@@ -69,6 +74,7 @@
       "type": "string"
     },
     "Thematique": {
+      "description": "Thématiques",
       "enum": [
         "acces-aux-droits-et-citoyennete",
         "acces-aux-droits-et-citoyennete--accompagnement-dans-les-demarches-administratives",
@@ -224,6 +230,7 @@
       "type": "string"
     },
     "TypologieService": {
+      "description": "Typologies de services",
       "enum": [
         "accompagnement",
         "accueil",
