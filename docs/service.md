@@ -226,9 +226,11 @@ Exemples :
 
 ---
 
-### `profils`
+### `publics`
 
+Publics visés par le service.
 
+Des informations complémentaires peuvent être précisées dans le champ `publics_precisions`.
 
 
 
@@ -243,16 +245,24 @@ Type : `array[string]`
 
 
 
-Valeurs acceptées : voir le [référentiel associé](referentiels/profils.md)
+Valeurs acceptées : voir le [référentiel associé](referentiels/publics.md)
 
 
 
+
+Exemples :
+
+```json
+"femmes"
+"residents-qpv-frr"
+
+```
 
 ---
 
-### `profils_precisions`
+### `publics_precisions`
 
-
+Précisions sur les publics visés par le service.
 
 
 
@@ -266,6 +276,13 @@ Type : `string`
 
 
 
+
+Exemples :
+
+```json
+"Le jeune entre 15 et 18 ans."
+
+```
 
 ---
 
