@@ -576,56 +576,27 @@ Valeurs acceptées : `"a-distance&#34;, &#34;en-presentiel"`
 
 ---
 
-### `zone_diffusion_type`
+### `zone_eligibilite`
+
+Zone géographique d’éligibilité du service.
+
+Contient une liste de codes issus du Code Officiel Géographique maintenu par l’INSEE.
+
+Chaque code dans cette liste peut être un code commune, un code département, un code EPCI ou un code pays.
+
+Si le service est éligible à l’ensemble d’une région, lister les codes des departements de cette région.
+
+Si le service est éligible sur l’ensemble du territoire national, utiliser le code `france` (France) ou le code pays `99100`.
+
+data·inclusion vérifie la validité des codes fournis. Les codes invalides sont supprimés de la liste.
+
+[Le Code Officiel Géographique de l’INSEE](https://www.insee.fr/fr/information/2560452).
+
+[Outil de recherche des codes](https://www.insee.fr/fr/recherche/recherche-geographique).
 
 
 
-
-
-Type : `string`
-
-
-
-
-
-
-
-
-
-
-Valeurs acceptées : `"commune&#34;, &#34;epci&#34;, &#34;region&#34;, &#34;departement&#34;, &#34;pays"`
-
-
-
-
----
-
-### `zone_diffusion_code`
-
-
-
-
-
-Type : `string`
-
-
-
-
-
-Regex : `^\d{2}$ | ^\d{9}$ | ^\w{2,3}$ | ^\w{5}$`
-
-
-
-
----
-
-### `zone_diffusion_nom`
-
-
-
-
-
-Type : `string`
+Type : `array`
 
 
 
@@ -635,6 +606,16 @@ Type : `string`
 
 
 
+
+Exemples :
+
+```json
+["france"]
+["2A", "2B"]
+["200093201"]
+["2A", "2B", "200093201"]
+
+```
 
 ---
 

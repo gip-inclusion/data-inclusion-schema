@@ -88,8 +88,10 @@ def main(version: str) -> None:
         schema.Thematique: "thematiques",
         schema.TypologieService: "typologies_de_services",
         schema.TypologieStructure: "typologies_de_structures",
-        schema.ZoneDiffusionType: "zones_de_diffusion_types",
     }
+
+    if version == "v0":
+        ENUM_FILENAMES[schema.ZoneDiffusionType] = "zones_de_diffusion_types"
 
     DOCS_DIR.mkdir(exist_ok=True)
     (DOCS_DIR / "referentiels").mkdir(exist_ok=True)

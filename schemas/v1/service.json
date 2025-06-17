@@ -245,17 +245,6 @@
       ],
       "title": "TypologieService",
       "type": "string"
-    },
-    "ZoneDiffusionType": {
-      "enum": [
-        "commune",
-        "epci",
-        "region",
-        "departement",
-        "pays"
-      ],
-      "title": "ZoneDiffusionType",
-      "type": "string"
     }
   },
   "properties": {
@@ -715,61 +704,68 @@
       ],
       "title": "Volume Horaire Hebdomadaire"
     },
-    "zone_diffusion_code": {
+    "zone_eligibilite": {
       "anyOf": [
         {
-          "maxLength": 5,
-          "minLength": 5,
-          "pattern": "^\\w{5}$",
-          "type": "string"
-        },
-        {
-          "maxLength": 9,
-          "minLength": 9,
-          "pattern": "^\\d{9}$",
-          "type": "string"
-        },
-        {
-          "maxLength": 3,
-          "minLength": 2,
-          "pattern": "^\\w{2,3}$",
-          "type": "string"
-        },
-        {
-          "maxLength": 2,
-          "minLength": 2,
-          "pattern": "^\\d{2}$",
-          "type": "string"
+          "items": {
+            "anyOf": [
+              {
+                "maxLength": 5,
+                "minLength": 5,
+                "pattern": "^\\w{5}$",
+                "type": "string"
+              },
+              {
+                "maxLength": 9,
+                "minLength": 9,
+                "pattern": "^\\d{9}$",
+                "type": "string"
+              },
+              {
+                "maxLength": 2,
+                "minLength": 2,
+                "pattern": "^\\d{2}$",
+                "type": "string"
+              },
+              {
+                "maxLength": 5,
+                "minLength": 5,
+                "pattern": "^99[0-5]\\d{2}$",
+                "type": "string"
+              },
+              {
+                "const": "france",
+                "type": "string"
+              }
+            ]
+          },
+          "minItems": 1,
+          "type": "array"
         },
         {
           "type": "null"
         }
       ],
       "default": null,
-      "title": "Zone Diffusion Code"
-    },
-    "zone_diffusion_nom": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "null"
-        }
+      "description": "Zone géographique d’éligibilité du service.\n\nContient une liste de codes issus du Code Officiel Géographique maintenu par l’INSEE.\n\nChaque code dans cette liste peut être un code commune, un code département, un code EPCI ou un code pays.\n\nSi le service est éligible à l’ensemble d’une région, lister les codes des departements de cette région.\n\nSi le service est éligible sur l’ensemble du territoire national, utiliser le code `france` (France) ou le code pays `99100`.\n\ndata·inclusion vérifie la validité des codes fournis. Les codes invalides sont supprimés de la liste.\n\n[Le Code Officiel Géographique de l’INSEE](https://www.insee.fr/fr/information/2560452).\n\n[Outil de recherche des codes](https://www.insee.fr/fr/recherche/recherche-geographique).",
+      "examples": [
+        [
+          "france"
+        ],
+        [
+          "2A",
+          "2B"
+        ],
+        [
+          "200093201"
+        ],
+        [
+          "2A",
+          "2B",
+          "200093201"
+        ]
       ],
-      "default": null,
-      "title": "Zone Diffusion Nom"
-    },
-    "zone_diffusion_type": {
-      "anyOf": [
-        {
-          "$ref": "#/$defs/ZoneDiffusionType"
-        },
-        {
-          "type": "null"
-        }
-      ],
-      "default": null
+      "title": "Zone d’éligibilité"
     }
   },
   "required": [
