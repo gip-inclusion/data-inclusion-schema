@@ -93,7 +93,7 @@ def au_moins_une_thematique(service: Service) -> float:
 
 
 def au_moins_un_public(service: Service) -> float:
-    return 1.0 if service.profils else 0.0
+    return 1.0 if service.publics else 0.0
 
 
 def au_moins_un_moyen_de_contact(service: Service) -> float:

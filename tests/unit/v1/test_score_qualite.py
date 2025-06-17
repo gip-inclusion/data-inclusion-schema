@@ -9,7 +9,7 @@ from data_inclusion.schema.v1 import (
     ModeAccueil,
     ModeMobilisation,
     PersonneMobilisatrice,
-    Profil,
+    Public,
     Service,
     Thematique,
     score_qualite,
@@ -190,15 +190,14 @@ def test_critere_au_moins_une_thematique(thematiques: list[Thematique], attendu:
 
 
 @pytest.mark.parametrize(
-    ("profils", "attendu"),
+    ("publics", "attendu"),
     [
         pytest.param(None, 0.0, id="nul"),
-        pytest.param([], 0.0, id="vide"),
-        pytest.param([Profil.ADULTES], 1.0, id="profil_defini"),
+        pytest.param([Public.FEMMES], 1.0, id="public_defini"),
     ],
 )
-def test_critere_au_moins_un_profil(profils: list[Profil], attendu: float):
-    service = service_factory(profils=profils)
+def test_critere_au_moins_un_public(publics: list[Public], attendu: float):
+    service = service_factory(publics=publics)
 
     assert score_qualite.au_moins_un_public(service) == attendu
 
@@ -350,7 +349,7 @@ def test_critere_frais_bien_definis(service: Service, attendu: float):
                 date_maj=pendulum.today(),
                 thematiques=[Thematique.FAMILLE],
                 frais=Frais.GRATUIT,
-                profils=[Profil.ADULTES],
+                publics=[Public.FEMMES],
                 telephone="3615",
                 modes_mobilisation=[ModeMobilisation.TELEPHONER],
                 mobilisable_par=[PersonneMobilisatrice.PROFESSIONNELS],
@@ -375,7 +374,7 @@ def test_critere_frais_bien_definis(service: Service, attendu: float):
                 mobilisable_par=[PersonneMobilisatrice.PROFESSIONNELS],
                 date_maj=pendulum.today() - pendulum.Duration(years=3),
                 thematiques=[Thematique.FAMILLE],
-                profils=[Profil.ADULTES],
+                publics=[Public.FEMMES],
             ),
             round((len(score_qualite.CRITERES) - 1) / len(score_qualite.CRITERES), 2),
             id="service_presque_parfait_sans_date_maj",
