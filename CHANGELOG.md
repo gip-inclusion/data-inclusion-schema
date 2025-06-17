@@ -28,6 +28,7 @@
 * fusion des champs service `pre_requis` et `justificatifs` dans un nouveau champ `conditions_acces`
 * renommage du champ service `frais_autres` en `frais_precisions`
 * refonte du référentiel des `frais`
+* remplacement des champs `zone_diffusion_***` par le champ `zone_eligibilite`
 
 ### Suppressions
 

@@ -29,7 +29,6 @@ def compile_schema(version: str):
         schema.Thematique: "thematiques",
         schema.TypologieService: "typologies_de_services",
         schema.TypologieStructure: "typologies_de_structures",
-        schema.ZoneDiffusionType: "zones_de_diffusion_types",
     }
     if version == "v0":
         ENUM_FILENAMES.update(
@@ -45,6 +44,9 @@ def compile_schema(version: str):
                 schema.PersonneMobilisatrice: "personnes_mobilisatrices",
             }
         )
+
+    if version == "v0":
+        ENUM_FILENAMES[schema.ZoneDiffusionType] = "zones_de_diffusion_types"
 
     SCHEMAS_DIR.mkdir(exist_ok=True)
     (SCHEMAS_DIR / version).mkdir(exist_ok=True, parents=True)
