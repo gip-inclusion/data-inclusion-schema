@@ -48,11 +48,13 @@ class Service(BaseModel):
                 Ce champ est pris en compte dans le calcul du score de qualité.
             """,
             examples=[
-                """Cet atelier-conseil vous permet d’identifier les compétences à
-                développer pour atteindre vos objectifs d’évolution professionnelle et à
-                découvrir les différentes modalités de formation.
+                """
+                    Cet atelier-conseil vous permet d’identifier les compétences à
+                    développer pour atteindre vos objectifs d’évolution professionnelle
+                    et à découvrir les différentes modalités de formation.
 
-                Durée d’une journée et inscription via votre espace France Travail."""
+                    Durée d’une journée et inscription via votre espace France Travail.
+                """
             ],
             min_length=50,
             max_length=2000,
@@ -263,9 +265,11 @@ class Service(BaseModel):
                 Précisions sur les modes de mobilisation du service.
             """,
             examples=[
-                """La demande est à faire depuis l’espace personnel
-                du demandeur d’emploi, rubrique « mes aides »,
-                formulaire spécifique « Aide à la mobilité »."""
+                """
+                    La demande est à faire depuis l’espace personnel
+                    du demandeur d’emploi, rubrique « mes aides »,
+                    formulaire spécifique « Aide à la mobilité ».
+                """
             ],
         ),
     ] = None
