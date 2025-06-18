@@ -2,7 +2,7 @@
 
 
 
-### `id` *
+### `source` *
 
 
 
@@ -40,7 +40,7 @@ Type : `string`
 
 ---
 
-### `source` *
+### `id` *
 
 
 
@@ -112,6 +112,32 @@ Exemples :
 
 ```json
 "Cet atelier-conseil vous permet d\u2019identifier les comp\u00e9tences \u00e0\n                d\u00e9velopper pour atteindre vos objectifs d\u2019\u00e9volution professionnelle et \u00e0\n                d\u00e9couvrir les diff\u00e9rentes modalit\u00e9s de formation.\n\n                Dur\u00e9e d\u2019une journ\u00e9e et inscription via votre espace France Travail."
+
+```
+
+---
+
+### `date_maj` *
+
+Date de dernière modification du service chez le producteur de données.
+
+
+
+Type : `string`
+
+
+
+Format : `date`
+
+
+
+
+
+
+Exemples :
+
+```json
+"2025-02-14"
 
 ```
 
@@ -538,32 +564,6 @@ Exemples :
 
 ```json
 "exemple@inclusion.gouv.fr"
-
-```
-
----
-
-### `date_maj` *
-
-Date de dernière modification du service chez le producteur de données.
-
-
-
-Type : `string`
-
-
-
-Format : `date`
-
-
-
-
-
-
-Exemples :
-
-```json
-"2025-02-14"
 
 ```
 

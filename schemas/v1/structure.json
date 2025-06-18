@@ -462,10 +462,10 @@
     }
   },
   "required": [
+    "source",
     "id",
     "nom",
     "description",
-    "source",
     "date_maj"
   ],
   "title": "Structure",
