@@ -37,10 +37,6 @@
          <lastmod>2025-06-18</lastmod>
     </url>
     <url>
-         <loc>https://gip-inclusion.github.io/data-inclusion-schema/dev/referentiels/profils/</loc>
-         <lastmod>2025-06-18</lastmod>
-    </url>
-    <url>
          <loc>https://gip-inclusion.github.io/data-inclusion-schema/dev/referentiels/publics/</loc>
          <lastmod>2025-06-18</lastmod>
     </url>
@@ -54,10 +50,6 @@
     </url>
     <url>
          <loc>https://gip-inclusion.github.io/data-inclusion-schema/dev/referentiels/typologies_de_structures/</loc>
-         <lastmod>2025-06-18</lastmod>
-    </url>
-    <url>
-         <loc>https://gip-inclusion.github.io/data-inclusion-schema/dev/referentiels/zones_de_diffusion_types/</loc>
          <lastmod>2025-06-18</lastmod>
     </url>
 </urlset>
