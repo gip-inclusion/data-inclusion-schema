@@ -9,9 +9,11 @@ from data_inclusion.schema.v0 import LabelNational, TypologieStructure
 
 
 class Structure(BaseModel):
-    # fields
+    #####################
+    ### Champs requis ###
+    #####################
+    source: str
     id: str
-    siret: Optional[common.CodeSiret] = None
     nom: Annotated[
         str,
         Field(
@@ -26,6 +28,39 @@ class Structure(BaseModel):
             max_length=150,
         ),
     ]
+    description: Annotated[
+        str,
+        Field(
+            description="""
+                Description de la structure.
+
+                Entre 50 et 2000 caractères.
+            """,
+            examples=[
+                """L’association 3027 offre un accès gratuit aux arts, à la culture et
+                au sport pour toutes et tous sans distinction et en priorité aux
+                personnes en situation de précarité et d’isolement."""
+            ],
+            min_length=50,
+            max_length=2000,
+        ),
+    ]
+    date_maj: Annotated[
+        date,
+        Field(
+            description="""
+                Date de dernière modification de la
+                structure chez le producteur de données.
+            """,
+            examples=["2025-02-14"],
+            title="Date de dernière modification",
+        ),
+    ]
+
+    #########################
+    ### Champs optionnels ###
+    #########################
+    siret: Optional[common.CodeSiret] = None
     commune: Optional[str] = None
     code_postal: Optional[common.CodePostal] = None
     code_insee: Optional[common.CodeCommune] = None
@@ -63,35 +98,6 @@ class Structure(BaseModel):
         ),
     ]
     site_web: Optional[HttpUrl] = None
-    description: Annotated[
-        str,
-        Field(
-            description="""
-                Description de la structure.
-
-                Entre 50 et 2000 caractères.
-            """,
-            examples=[
-                """L’association 3027 offre un accès gratuit aux arts, à la culture et
-                au sport pour toutes et tous sans distinction et en priorité aux
-                personnes en situation de précarité et d’isolement."""
-            ],
-            min_length=50,
-            max_length=2000,
-        ),
-    ]
-    source: str
-    date_maj: Annotated[
-        date,
-        Field(
-            description="""
-                Date de dernière modification de la
-                structure chez le producteur de données.
-            """,
-            examples=["2025-02-14"],
-            title="Date de dernière modification",
-        ),
-    ]
     horaires_accueil: Annotated[
         Optional[str],
         Field(

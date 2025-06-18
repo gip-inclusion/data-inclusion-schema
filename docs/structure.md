@@ -2,7 +2,7 @@
 
 
 
-### `id` *
+### `source` *
 
 
 
@@ -21,7 +21,7 @@ Type : `string`
 
 ---
 
-### `siret`
+### `id` *
 
 
 
@@ -33,7 +33,7 @@ Type : `string`
 
 
 
-Regex : `^\d{14}$`
+
 
 
 
@@ -65,6 +65,79 @@ Exemples :
 "Centre social Le Tournesol"
 
 ```
+
+---
+
+### `description` *
+
+Description de la structure.
+
+Entre 50 et 2000 caractères.
+
+
+
+Type : `string`
+
+
+
+
+
+
+
+
+
+
+Exemples :
+
+```json
+"L\u2019association 3027 offre un acc\u00e8s gratuit aux arts, \u00e0 la culture et\n                au sport pour toutes et tous sans distinction et en priorit\u00e9 aux\n                personnes en situation de pr\u00e9carit\u00e9 et d\u2019isolement."
+
+```
+
+---
+
+### `date_maj` *
+
+Date de dernière modification de la structure chez le producteur de données.
+
+
+
+Type : `string`
+
+
+
+Format : `date`
+
+
+
+
+
+
+Exemples :
+
+```json
+"2025-02-14"
+
+```
+
+---
+
+### `siret`
+
+
+
+
+
+Type : `string`
+
+
+
+
+
+Regex : `^\d{14}$`
+
+
+
 
 ---
 
@@ -295,79 +368,6 @@ Format : `uri`
 
 
 
-
----
-
-### `description` *
-
-Description de la structure.
-
-Entre 50 et 2000 caractères.
-
-
-
-Type : `string`
-
-
-
-
-
-
-
-
-
-
-Exemples :
-
-```json
-"L\u2019association 3027 offre un acc\u00e8s gratuit aux arts, \u00e0 la culture et\n                au sport pour toutes et tous sans distinction et en priorit\u00e9 aux\n                personnes en situation de pr\u00e9carit\u00e9 et d\u2019isolement."
-
-```
-
----
-
-### `source` *
-
-
-
-
-
-Type : `string`
-
-
-
-
-
-
-
-
-
-
----
-
-### `date_maj` *
-
-Date de dernière modification de la structure chez le producteur de données.
-
-
-
-Type : `string`
-
-
-
-Format : `date`
-
-
-
-
-
-
-Exemples :
-
-```json
-"2025-02-14"
-
-```
 
 ---
 
