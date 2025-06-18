@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#id" class="md-skip">
+        <a href="#source" class="md-skip">
           Skip to content
         </a>
       
@@ -114,46 +114,6 @@
       <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
-    
-      
-      
-        <label class="md-header__button md-icon" for="__search">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-        </label>
-        <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
-        </button>
-      </nav>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list" role="presentation"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-      
     
     
       <div class="md-header__source">
@@ -312,9 +272,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#id" class="md-nav__link">
+  <a href="#source" class="md-nav__link">
     <span class="md-ellipsis">
-      id *
+      source *
     </span>
   </a>
   
@@ -330,9 +290,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#source" class="md-nav__link">
+  <a href="#id" class="md-nav__link">
     <span class="md-ellipsis">
-      source *
+      id *
     </span>
   </a>
   
@@ -357,6 +317,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#date_maj" class="md-nav__link">
+    <span class="md-ellipsis">
+      date_maj *
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#types" class="md-nav__link">
     <span class="md-ellipsis">
       types
@@ -375,6 +344,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#prise_rdv" class="md-nav__link">
+    <span class="md-ellipsis">
+      prise_rdv
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#frais" class="md-nav__link">
     <span class="md-ellipsis">
       frais
@@ -384,45 +362,45 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#frais_autres" class="md-nav__link">
+  <a href="#frais_precisions" class="md-nav__link">
     <span class="md-ellipsis">
-      frais_autres
+      frais_precisions
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#profils" class="md-nav__link">
+  <a href="#publics" class="md-nav__link">
     <span class="md-ellipsis">
-      profils
+      publics
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#profils_precisions" class="md-nav__link">
+  <a href="#publics_precisions" class="md-nav__link">
     <span class="md-ellipsis">
-      profils_precisions
+      publics_precisions
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#pre_requis" class="md-nav__link">
+  <a href="#conditions_acces" class="md-nav__link">
     <span class="md-ellipsis">
-      pre_requis
+      conditions_acces
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#justificatifs" class="md-nav__link">
+  <a href="#formulaire_en_ligne" class="md-nav__link">
     <span class="md-ellipsis">
-      justificatifs
+      formulaire_en_ligne
     </span>
   </a>
   
@@ -510,15 +488,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#date_maj" class="md-nav__link">
-    <span class="md-ellipsis">
-      date_maj *
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#modes_accueil" class="md-nav__link">
     <span class="md-ellipsis">
       modes_accueil
@@ -528,27 +497,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zone_diffusion_type" class="md-nav__link">
+  <a href="#zone_eligibilite" class="md-nav__link">
     <span class="md-ellipsis">
-      zone_diffusion_type
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#zone_diffusion_code" class="md-nav__link">
-    <span class="md-ellipsis">
-      zone_diffusion_code
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#zone_diffusion_nom" class="md-nav__link">
-    <span class="md-ellipsis">
-      zone_diffusion_nom
+      zone_eligibilite
     </span>
   </a>
   
@@ -564,36 +515,45 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#lien_mobilisation" class="md-nav__link">
+  <a href="#page_web" class="md-nav__link">
     <span class="md-ellipsis">
-      lien_mobilisation
+      page_web
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#modes_mobilisation" class="md-nav__link">
+  <a href="#modes_orientation_beneficiaire" class="md-nav__link">
     <span class="md-ellipsis">
-      modes_mobilisation
+      modes_orientation_beneficiaire
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#mobilisable_par" class="md-nav__link">
+  <a href="#modes_orientation_beneficiaire_autres" class="md-nav__link">
     <span class="md-ellipsis">
-      mobilisable_par
+      modes_orientation_beneficiaire_autres
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#mobilisation_precisions" class="md-nav__link">
+  <a href="#modes_orientation_accompagnateur" class="md-nav__link">
     <span class="md-ellipsis">
-      mobilisation_precisions
+      modes_orientation_accompagnateur
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modes_orientation_accompagnateur_autres" class="md-nav__link">
+    <span class="md-ellipsis">
+      modes_orientation_accompagnateur_autres
     </span>
   </a>
   
@@ -612,6 +572,15 @@
   <a href="#nombre_semaines" class="md-nav__link">
     <span class="md-ellipsis">
       nombre_semaines
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#horaires_accueil" class="md-nav__link">
+    <span class="md-ellipsis">
+      horaires_accueil
     </span>
   </a>
   
@@ -785,29 +754,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../referentiels/profils/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Profils
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../referentiels/thematiques/" class="md-nav__link">
         
   
@@ -877,12 +823,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../referentiels/zones_de_diffusion_types/" class="md-nav__link">
+      <a href="../referentiels/publics/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Zones de diffusion
+    Publics
     
   </span>
   
@@ -925,9 +871,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#id" class="md-nav__link">
+  <a href="#source" class="md-nav__link">
     <span class="md-ellipsis">
-      id *
+      source *
     </span>
   </a>
   
@@ -943,9 +889,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#source" class="md-nav__link">
+  <a href="#id" class="md-nav__link">
     <span class="md-ellipsis">
-      source *
+      id *
     </span>
   </a>
   
@@ -970,6 +916,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#date_maj" class="md-nav__link">
+    <span class="md-ellipsis">
+      date_maj *
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#types" class="md-nav__link">
     <span class="md-ellipsis">
       types
@@ -988,6 +943,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#prise_rdv" class="md-nav__link">
+    <span class="md-ellipsis">
+      prise_rdv
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#frais" class="md-nav__link">
     <span class="md-ellipsis">
       frais
@@ -997,45 +961,45 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#frais_autres" class="md-nav__link">
+  <a href="#frais_precisions" class="md-nav__link">
     <span class="md-ellipsis">
-      frais_autres
+      frais_precisions
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#profils" class="md-nav__link">
+  <a href="#publics" class="md-nav__link">
     <span class="md-ellipsis">
-      profils
+      publics
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#profils_precisions" class="md-nav__link">
+  <a href="#publics_precisions" class="md-nav__link">
     <span class="md-ellipsis">
-      profils_precisions
+      publics_precisions
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#pre_requis" class="md-nav__link">
+  <a href="#conditions_acces" class="md-nav__link">
     <span class="md-ellipsis">
-      pre_requis
+      conditions_acces
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#justificatifs" class="md-nav__link">
+  <a href="#formulaire_en_ligne" class="md-nav__link">
     <span class="md-ellipsis">
-      justificatifs
+      formulaire_en_ligne
     </span>
   </a>
   
@@ -1123,15 +1087,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#date_maj" class="md-nav__link">
-    <span class="md-ellipsis">
-      date_maj *
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#modes_accueil" class="md-nav__link">
     <span class="md-ellipsis">
       modes_accueil
@@ -1141,27 +1096,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zone_diffusion_type" class="md-nav__link">
+  <a href="#zone_eligibilite" class="md-nav__link">
     <span class="md-ellipsis">
-      zone_diffusion_type
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#zone_diffusion_code" class="md-nav__link">
-    <span class="md-ellipsis">
-      zone_diffusion_code
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#zone_diffusion_nom" class="md-nav__link">
-    <span class="md-ellipsis">
-      zone_diffusion_nom
+      zone_eligibilite
     </span>
   </a>
   
@@ -1177,36 +1114,45 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#lien_mobilisation" class="md-nav__link">
+  <a href="#page_web" class="md-nav__link">
     <span class="md-ellipsis">
-      lien_mobilisation
+      page_web
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#modes_mobilisation" class="md-nav__link">
+  <a href="#modes_orientation_beneficiaire" class="md-nav__link">
     <span class="md-ellipsis">
-      modes_mobilisation
+      modes_orientation_beneficiaire
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#mobilisable_par" class="md-nav__link">
+  <a href="#modes_orientation_beneficiaire_autres" class="md-nav__link">
     <span class="md-ellipsis">
-      mobilisable_par
+      modes_orientation_beneficiaire_autres
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#mobilisation_precisions" class="md-nav__link">
+  <a href="#modes_orientation_accompagnateur" class="md-nav__link">
     <span class="md-ellipsis">
-      mobilisation_precisions
+      modes_orientation_accompagnateur
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modes_orientation_accompagnateur_autres" class="md-nav__link">
+    <span class="md-ellipsis">
+      modes_orientation_accompagnateur_autres
     </span>
   </a>
   
@@ -1225,6 +1171,15 @@
   <a href="#nombre_semaines" class="md-nav__link">
     <span class="md-ellipsis">
       nombre_semaines
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#horaires_accueil" class="md-nav__link">
+    <span class="md-ellipsis">
+      horaires_accueil
     </span>
   </a>
   
@@ -1254,13 +1209,13 @@
 <div class="admonition info">
 <p class="admonition-title">Les champs marqués d’une astérisque (*) sont obligatoires.</p>
 </div>
-<h3 id="id"><code>id</code> *</h3>
+<h3 id="source"><code>source</code> *</h3>
 <p>Type : <code>string</code></p>
 <hr />
 <h3 id="structure_id"><code>structure_id</code> *</h3>
 <p>Type : <code>string</code></p>
 <hr />
-<h3 id="source"><code>source</code> *</h3>
+<h3 id="id"><code>id</code> *</h3>
 <p>Type : <code>string</code></p>
 <hr />
 <h3 id="nom"><code>nom</code> *</h3>
@@ -1277,7 +1232,15 @@
 <p>Ce champ est pris en compte dans le calcul du score de qualité.</p>
 <p>Type : <code>string</code></p>
 <p>Exemples :</p>
-<div class="highlight"><pre><span></span><code><span class="s2">&quot;Cet atelier-conseil vous permet d\u2019identifier les comp\u00e9tences \u00e0\n                d\u00e9velopper pour atteindre vos objectifs d\u2019\u00e9volution professionnelle et \u00e0\n                d\u00e9couvrir les diff\u00e9rentes modalit\u00e9s de formation.\n\n                Dur\u00e9e d\u2019une journ\u00e9e et inscription via votre espace France Travail.&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="s2">&quot;Cet atelier-conseil vous permet d’identifier les compétences à\n                développer pour atteindre vos objectifs d’évolution professionnelle et à\n                découvrir les différentes modalités de formation.\n\n                Durée d’une journée et inscription via votre espace France Travail.&quot;</span>
+</code></pre></div>
+<hr />
+<h3 id="date_maj"><code>date_maj</code> *</h3>
+<p>Date de dernière modification du service chez le producteur de données.</p>
+<p>Type : <code>string</code></p>
+<p>Format : <code>date</code></p>
+<p>Exemples :</p>
+<div class="highlight"><pre><span></span><code><span class="s2">&quot;2025-02-14&quot;</span>
 </code></pre></div>
 <hr />
 <h3 id="types"><code>types</code></h3>
@@ -1288,25 +1251,56 @@
 <p>Type : <code>array[string]</code></p>
 <p>Valeurs acceptées : voir le <a href="../referentiels/thematiques/">référentiel associé</a></p>
 <hr />
+<h3 id="prise_rdv"><code>prise_rdv</code></h3>
+<p>Type : <code>string</code></p>
+<p>Format : <code>uri</code></p>
+<hr />
 <h3 id="frais"><code>frais</code></h3>
-<p>Type : <code>array[string]</code></p>
-<p>Valeurs acceptées : <code>"gratuit&amp;#34;, &amp;#34;gratuit-sous-conditions&amp;#34;, &amp;#34;payant&amp;#34;, &amp;#34;adhesion&amp;#34;, &amp;#34;pass-numerique"</code></p>
-<hr />
-<h3 id="frais_autres"><code>frais_autres</code></h3>
+<p>Indique si l’accès au service est payant ou gratuit.</p>
+<p>Si le service comporte des frais, ceux-ci devraient être précisés dans le champ <code>frais_precisions</code>.</p>
 <p>Type : <code>string</code></p>
+<p>Valeurs acceptées : <code>gratuit</code>, <code>payant</code></p>
+<p>Exemples :</p>
+<div class="highlight"><pre><span></span><code><span class="s2">&quot;gratuit&quot;</span>
+<span class="s2">&quot;payant&quot;</span>
+</code></pre></div>
 <hr />
-<h3 id="profils"><code>profils</code></h3>
-<p>Type : <code>array[string]</code></p>
-<p>Valeurs acceptées : voir le <a href="../referentiels/profils/">référentiel associé</a></p>
-<hr />
-<h3 id="profils_precisions"><code>profils_precisions</code></h3>
+<h3 id="frais_precisions"><code>frais_precisions</code></h3>
+<p>Précisions sur les éventuels frais pour accéder au service.</p>
 <p>Type : <code>string</code></p>
+<p>Exemples :</p>
+<div class="highlight"><pre><span></span><code><span class="s2">&quot;10€ pour l’adhésion annuelle&quot;</span>
+<span class="s2">&quot;Tarif réduit pour les bénéficiaires du RSA&quot;</span>
+</code></pre></div>
 <hr />
-<h3 id="pre_requis"><code>pre_requis</code></h3>
-<p>Type : <code>array</code></p>
+<h3 id="publics"><code>publics</code></h3>
+<p>Publics visés par le service.</p>
+<p>Des informations complémentaires peuvent être précisées dans le champ <code>publics_precisions</code>.</p>
+<p>Type : <code>array[string]</code></p>
+<p>Valeurs acceptées : voir le <a href="../referentiels/publics/">référentiel associé</a></p>
+<p>Exemples :</p>
+<div class="highlight"><pre><span></span><code><span class="s2">&quot;femmes&quot;</span>
+<span class="s2">&quot;residents-qpv-frr&quot;</span>
+</code></pre></div>
 <hr />
-<h3 id="justificatifs"><code>justificatifs</code></h3>
-<p>Type : <code>array</code></p>
+<h3 id="publics_precisions"><code>publics_precisions</code></h3>
+<p>Précisions sur les publics visés par le service.</p>
+<p>Type : <code>string</code></p>
+<p>Exemples :</p>
+<div class="highlight"><pre><span></span><code><span class="s2">&quot;Le jeune entre 15 et 18 ans.&quot;</span>
+</code></pre></div>
+<hr />
+<h3 id="conditions_acces"><code>conditions_acces</code></h3>
+<p>Conditions d’accès au service.</p>
+<p>Il peut s’agir de prérequis ou de justificatifs à présenter.</p>
+<p>Type : <code>string</code></p>
+<p>Exemples :</p>
+<div class="highlight"><pre><span></span><code><span class="s2">&quot;Maîtrise de la langue française à l’oral et à l’écrit&quot;</span>
+</code></pre></div>
+<hr />
+<h3 id="formulaire_en_ligne"><code>formulaire_en_ligne</code></h3>
+<p>Type : <code>string</code></p>
+<p>Format : <code>uri</code></p>
 <hr />
 <h3 id="commune"><code>commune</code></h3>
 <p>Type : <code>string</code></p>
@@ -1349,63 +1343,51 @@
 <div class="highlight"><pre><span></span><code><span class="s2">&quot;exemple@inclusion.gouv.fr&quot;</span>
 </code></pre></div>
 <hr />
-<h3 id="date_maj"><code>date_maj</code> *</h3>
-<p>Date de dernière modification du service chez le producteur de données.</p>
-<p>Type : <code>string</code></p>
-<p>Format : <code>date</code></p>
-<p>Exemples :</p>
-<div class="highlight"><pre><span></span><code><span class="s2">&quot;2025-02-14&quot;</span>
-</code></pre></div>
-<hr />
 <h3 id="modes_accueil"><code>modes_accueil</code></h3>
 <p>Type : <code>array[string]</code></p>
-<p>Valeurs acceptées : <code>"a-distance&amp;#34;, &amp;#34;en-presentiel"</code></p>
+<p>Valeurs acceptées : <code>a-distance</code>, <code>en-presentiel</code></p>
 <hr />
-<h3 id="zone_diffusion_type"><code>zone_diffusion_type</code></h3>
-<p>Type : <code>string</code></p>
-<p>Valeurs acceptées : <code>"commune&amp;#34;, &amp;#34;epci&amp;#34;, &amp;#34;region&amp;#34;, &amp;#34;departement&amp;#34;, &amp;#34;pays"</code></p>
-<hr />
-<h3 id="zone_diffusion_code"><code>zone_diffusion_code</code></h3>
-<p>Type : <code>string</code></p>
-<p>Regex : <code>^\d{2}$ | ^\d{9}$ | ^\w{2,3}$ | ^\w{5}$</code></p>
-<hr />
-<h3 id="zone_diffusion_nom"><code>zone_diffusion_nom</code></h3>
-<p>Type : <code>string</code></p>
+<h3 id="zone_eligibilite"><code>zone_eligibilite</code></h3>
+<p>Zone géographique d’éligibilité du service.</p>
+<p>Contient une liste de codes issus du Code Officiel Géographique maintenu par l’INSEE.</p>
+<p>Chaque code dans cette liste peut être un code commune, un code département, un code EPCI ou un code pays.</p>
+<p>Si le service est éligible à l’ensemble d’une région, lister les codes des departements de cette région.</p>
+<p>Si le service est éligible sur l’ensemble du territoire national, utiliser le code <code>france</code> (France) ou le code pays <code>99100</code>.</p>
+<p>data·inclusion vérifie la validité des codes fournis. Les codes invalides sont supprimés de la liste.</p>
+<p><a href="https://www.insee.fr/fr/information/2560452">Le Code Officiel Géographique de l’INSEE</a>.</p>
+<p><a href="https://www.insee.fr/fr/recherche/recherche-geographique">Outil de recherche des codes</a>.</p>
+<p>Type : <code>array</code></p>
+<p>Exemples :</p>
+<div class="highlight"><pre><span></span><code><span class="p">[</span><span class="s2">&quot;france&quot;</span><span class="p">]</span>
+<span class="p">[</span><span class="s2">&quot;2A&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;2B&quot;</span><span class="p">]</span>
+<span class="p">[</span><span class="s2">&quot;200093201&quot;</span><span class="p">]</span>
+<span class="p">[</span><span class="s2">&quot;2A&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;2B&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;200093201&quot;</span><span class="p">]</span>
+</code></pre></div>
 <hr />
 <h3 id="contact_nom_prenom"><code>contact_nom_prenom</code></h3>
 <p>Type : <code>string</code></p>
 <hr />
-<h3 id="lien_mobilisation"><code>lien_mobilisation</code></h3>
-<p>Lien pour accéder ou mobiliser l’offre de service.</p>
+<h3 id="page_web"><code>page_web</code></h3>
+<p>Lien vers une page web dédiée au service sur le site web de la structure. Ce champ n’est pas destiné à recevoir un lien vers le site d’un producteur de donnée.</p>
 <p>Type : <code>string</code></p>
 <p>Format : <code>uri</code></p>
 <p>Exemples :</p>
-<div class="highlight"><pre><span></span><code><span class="s2">&quot;https://www.actionlogement.fr/demande-cfi&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="s2">&quot;https://insersol.fr/biclou-atelier-reparation-participatif-solidaire/&quot;</span>
 </code></pre></div>
 <hr />
-<h3 id="modes_mobilisation"><code>modes_mobilisation</code></h3>
-<p>Modes de mobilisation de l’offre de service. Les valeurs proviennent d’un référentiel disponible sur notre documentation.</p>
+<h3 id="modes_orientation_beneficiaire"><code>modes_orientation_beneficiaire</code></h3>
 <p>Type : <code>array[string]</code></p>
-<p>Valeurs acceptées : <code>"envoyer-un-courriel&amp;#34;, &amp;#34;se-presenter&amp;#34;, &amp;#34;telephoner&amp;#34;, &amp;#34;utiliser-lien-mobilisation"</code></p>
-<p>Exemples :</p>
-<div class="highlight"><pre><span></span><code><span class="s2">&quot;envoyer-un-courriel&quot;</span>
-</code></pre></div>
+<p>Valeurs acceptées : voir le <a href="../referentiels/modes_orientation_beneficiaire/">référentiel associé</a></p>
 <hr />
-<h3 id="mobilisable_par"><code>mobilisable_par</code></h3>
-<p>Indique qui peut mobiliser le service : usagers, professionnels ou les deux.</p>
-<p>Type : <code>array[string]</code></p>
-<p>Valeurs acceptées : <code>"usagers&amp;#34;, &amp;#34;professionnels"</code></p>
-<p>Exemples :</p>
-<div class="highlight"><pre><span></span><code><span class="p">[</span><span class="s2">&quot;professionnels&quot;</span><span class="p">]</span>
-<span class="p">[</span><span class="s2">&quot;usagers&quot;</span><span class="p">]</span>
-</code></pre></div>
-<hr />
-<h3 id="mobilisation_precisions"><code>mobilisation_precisions</code></h3>
-<p>Précisions sur les modes de mobilisation du service.</p>
+<h3 id="modes_orientation_beneficiaire_autres"><code>modes_orientation_beneficiaire_autres</code></h3>
 <p>Type : <code>string</code></p>
-<p>Exemples :</p>
-<div class="highlight"><pre><span></span><code><span class="s2">&quot;La demande est \u00e0 faire depuis l\u2019espace personnel\n                du demandeur d\u2019emploi, rubrique \u00ab mes aides \u00bb,\n                formulaire sp\u00e9cifique \u00ab Aide \u00e0 la mobilit\u00e9 \u00bb.&quot;</span>
-</code></pre></div>
+<hr />
+<h3 id="modes_orientation_accompagnateur"><code>modes_orientation_accompagnateur</code></h3>
+<p>Type : <code>array[string]</code></p>
+<p>Valeurs acceptées : voir le <a href="../referentiels/modes_orientation_accompagnateur/">référentiel associé</a></p>
+<hr />
+<h3 id="modes_orientation_accompagnateur_autres"><code>modes_orientation_accompagnateur_autres</code></h3>
+<p>Type : <code>string</code></p>
 <hr />
 <h3 id="volume_horaire_hebdomadaire"><code>volume_horaire_hebdomadaire</code></h3>
 <p>Durée du service en heures sur une semaine.</p>
@@ -1423,6 +1405,17 @@
 <p>Type : <code>integer</code></p>
 <p>Exemples :</p>
 <div class="highlight"><pre><span></span><code><span class="mi">3</span>
+</code></pre></div>
+<hr />
+<h3 id="horaires_accueil"><code>horaires_accueil</code></h3>
+<p>Horaires d’accueil du public pour ce service.</p>
+<p>Si le champ n’est pas renseigné, les horaires d’accueil de la structure peuvent être utilisés.</p>
+<p>Doit être au format OpenStreetMap Opening Hours.</p>
+<p><a href="https://wiki.openstreetmap.org/wiki/FR:Key:opening_hours">Spécification du format OSM Opening Hours</a>.</p>
+<p><a href="https://projets.pavie.info/yohours/">Outil d’aide à la saisie</a>.</p>
+<p>Type : <code>string</code></p>
+<p>Exemples :</p>
+<div class="highlight"><pre><span></span><code><span class="s2">&quot;Mo-Fr 08:30-12:30; PH off&quot;</span>
 </code></pre></div>
 <hr />
 

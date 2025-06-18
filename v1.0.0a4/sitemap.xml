@@ -13,6 +13,10 @@
          <lastmod>2025-06-18</lastmod>
     </url>
     <url>
+         <loc>https://gip-inclusion.github.io/data-inclusion-schema/v1.0.0a4/summary/</loc>
+         <lastmod>2025-06-18</lastmod>
+    </url>
+    <url>
          <loc>https://gip-inclusion.github.io/data-inclusion-schema/v1.0.0a4/referentiels/frais/</loc>
          <lastmod>2025-06-18</lastmod>
     </url>
@@ -25,10 +29,6 @@
          <lastmod>2025-06-18</lastmod>
     </url>
     <url>
-         <loc>https://gip-inclusion.github.io/data-inclusion-schema/v1.0.0a4/referentiels/modes_mobilisation/</loc>
-         <lastmod>2025-06-18</lastmod>
-    </url>
-    <url>
          <loc>https://gip-inclusion.github.io/data-inclusion-schema/v1.0.0a4/referentiels/modes_orientation_accompagnateur/</loc>
          <lastmod>2025-06-18</lastmod>
     </url>
@@ -37,11 +37,7 @@
          <lastmod>2025-06-18</lastmod>
     </url>
     <url>
-         <loc>https://gip-inclusion.github.io/data-inclusion-schema/v1.0.0a4/referentiels/personnes_mobilisatrices/</loc>
-         <lastmod>2025-06-18</lastmod>
-    </url>
-    <url>
-         <loc>https://gip-inclusion.github.io/data-inclusion-schema/v1.0.0a4/referentiels/profils/</loc>
+         <loc>https://gip-inclusion.github.io/data-inclusion-schema/v1.0.0a4/referentiels/publics/</loc>
          <lastmod>2025-06-18</lastmod>
     </url>
     <url>
@@ -54,10 +50,6 @@
     </url>
     <url>
          <loc>https://gip-inclusion.github.io/data-inclusion-schema/v1.0.0a4/referentiels/typologies_de_structures/</loc>
-         <lastmod>2025-06-18</lastmod>
-    </url>
-    <url>
-         <loc>https://gip-inclusion.github.io/data-inclusion-schema/v1.0.0a4/referentiels/zones_de_diffusion_types/</loc>
          <lastmod>2025-06-18</lastmod>
     </url>
 </urlset>
