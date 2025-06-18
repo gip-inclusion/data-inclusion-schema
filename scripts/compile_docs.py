@@ -2,6 +2,7 @@ import importlib
 import pathlib
 import pkgutil
 import re
+import shutil
 
 import jinja2
 
@@ -106,7 +107,8 @@ def main(version: str) -> None:
         ENUM_FILENAMES[schema.Public] = "publics"
 
     DOCS_DIR.mkdir(exist_ok=True)
-    (DOCS_DIR / "referentiels").mkdir(exist_ok=True)
+    shutil.rmtree(DOCS_DIR / "referentiels", ignore_errors=True)
+    (DOCS_DIR / "referentiels").mkdir()
 
     for model in [schema.Structure, schema.Service]:
         with (DOCS_DIR / f"{model.__name__.lower()}.md").open("w") as file:
