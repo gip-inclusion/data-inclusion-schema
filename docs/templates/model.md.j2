@@ -19,7 +19,7 @@ Type : `{{ get_property_type_data(property_schema).type }}`
 {% if property_type_data.referentiel %}
 {% set referentiel = schema.get("$defs").get(property_type_data.referentiel) %}
 {% if referentiel.enum|length <= inline_referentiel_size_limit %}
-Valeurs acceptées : `"{{ referentiel.enum|join('", "') }}"`
+Valeurs acceptées : `{{ referentiel.enum|join('`, `') }}`
 {% else %}
 Valeurs acceptées : voir le [référentiel associé](referentiels/{{ enum_filenames_by_ref.get(property_type_data.referentiel) }}.md)
 {% endif %}

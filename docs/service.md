@@ -111,7 +111,7 @@ Type : `string`
 Exemples :
 
 ```json
-"Cet atelier-conseil vous permet d\u2019identifier les comp\u00e9tences \u00e0\n                d\u00e9velopper pour atteindre vos objectifs d\u2019\u00e9volution professionnelle et \u00e0\n                d\u00e9couvrir les diff\u00e9rentes modalit\u00e9s de formation.\n\n                Dur\u00e9e d\u2019une journ\u00e9e et inscription via votre espace France Travail."
+"Cet atelier-conseil vous permet d’identifier les compétences à\n                développer pour atteindre vos objectifs d’évolution professionnelle et à\n                découvrir les différentes modalités de formation.\n\n                Durée d’une journée et inscription via votre espace France Travail."
 
 ```
 
@@ -229,7 +229,7 @@ Type : `string`
 
 
 
-Valeurs acceptées : `"gratuit&#34;, &#34;payant"`
+Valeurs acceptées : `gratuit`, `payant`
 
 
 
@@ -264,8 +264,8 @@ Type : `string`
 Exemples :
 
 ```json
-"10\u20ac pour l\u2019adh\u00e9sion annuelle"
-"Tarif r\u00e9duit pour les b\u00e9n\u00e9ficiaires du RSA"
+"10€ pour l’adhésion annuelle"
+"Tarif réduit pour les bénéficiaires du RSA"
 
 ```
 
@@ -353,7 +353,7 @@ Type : `string`
 Exemples :
 
 ```json
-"Ma\u00eetrise de la langue fran\u00e7aise \u00e0 l\u2019oral et \u00e0 l\u2019\u00e9crit"
+"Maîtrise de la langue française à l’oral et à l’écrit"
 
 ```
 
@@ -586,7 +586,7 @@ Type : `array[string]`
 
 
 
-Valeurs acceptées : `"a-distance&#34;, &#34;en-presentiel"`
+Valeurs acceptées : `a-distance`, `en-presentiel`
 
 
 

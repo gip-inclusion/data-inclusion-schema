@@ -75,6 +75,16 @@ def get_property_type_data(property_schema: dict) -> dict | None:
             }
 
 
+def template_factory(template_name: str) -> jinja2.Template:
+    env = jinja2.Environment(
+        autoescape=True,
+        keep_trailing_newline=True,
+        loader=jinja2.FileSystemLoader(searchpath=DOCS_DIR / "templates"),
+    )
+    env.policies["json.dumps_kwargs"]["ensure_ascii"] = False
+    return env.get_template(template_name)
+
+
 def main(version: str) -> None:
     schema = importlib.import_module(f"data_inclusion.schema.{version}")
 
@@ -101,11 +111,7 @@ def main(version: str) -> None:
     for model in [schema.Structure, schema.Service]:
         with (DOCS_DIR / f"{model.__name__.lower()}.md").open("w") as file:
             file.write(
-                jinja2.Template(
-                    open(DOCS_DIR / "model.md.j2").read(),
-                    autoescape=True,
-                    keep_trailing_newline=True,
-                ).render(
+                template_factory("model.md.j2").render(
                     schema=model.model_json_schema(),
                     get_property_type_data=get_property_type_data,
                     snake_case=snake_case,
@@ -117,27 +123,17 @@ def main(version: str) -> None:
                 )
             )
 
-    referentiel_template = open(DOCS_DIR / "referentiel.md.j2").read()
-
     for enum, filename in ENUM_FILENAMES.items():
         with (DOCS_DIR / "referentiels" / f"{filename}.md").open("w") as file:
             file.write(
-                jinja2.Template(
-                    referentiel_template,
-                    autoescape=True,
-                    keep_trailing_newline=True,
-                ).render(
+                template_factory("referentiel.md.j2").render(
                     referentiel=enum.as_dict_list(),
                 )
             )
 
     with (DOCS_DIR / "summary.md").open("w") as file:
         file.write(
-            jinja2.Template(
-                open(DOCS_DIR / "summary.md.j2").read(),
-                autoescape=True,
-                keep_trailing_newline=True,
-            ).render(
+            template_factory("summary.md.j2").render(
                 enums=ENUM_FILENAMES,
             )
         )
