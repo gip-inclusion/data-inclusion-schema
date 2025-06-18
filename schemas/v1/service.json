@@ -745,9 +745,9 @@
     }
   },
   "required": [
-    "id",
-    "structure_id",
     "source",
+    "structure_id",
+    "id",
     "nom",
     "description",
     "date_maj"
