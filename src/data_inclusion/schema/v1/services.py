@@ -17,10 +17,12 @@ from data_inclusion.schema.v1 import (
 
 
 class Service(BaseModel):
-    # fields
-    id: str
-    structure_id: str
+    #####################
+    ### Champs requis ###
+    #####################
     source: str
+    structure_id: str
+    id: str
     nom: Annotated[
         str,
         Field(
@@ -56,6 +58,20 @@ class Service(BaseModel):
             max_length=2000,
         ),
     ]
+    date_maj: Annotated[
+        date,
+        Field(
+            description="""
+                Date de dernière modification du service chez le producteur de données.
+            """,
+            examples=["2025-02-14"],
+            title="Date de dernière modification",
+        ),
+    ]
+
+    #########################
+    ### Champs optionnels ###
+    #########################
     types: Optional[set[TypologieService]] = None
     thematiques: Optional[set[Thematique]] = None
     frais: Annotated[
@@ -158,16 +174,6 @@ class Service(BaseModel):
             """,
             examples=["exemple@inclusion.gouv.fr"],
             default=None,
-        ),
-    ]
-    date_maj: Annotated[
-        date,
-        Field(
-            description="""
-                Date de dernière modification du service chez le producteur de données.
-            """,
-            examples=["2025-02-14"],
-            title="Date de dernière modification",
         ),
     ]
     modes_accueil: Optional[set[ModeAccueil]] = None
