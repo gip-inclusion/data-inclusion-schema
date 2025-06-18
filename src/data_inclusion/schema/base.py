@@ -3,6 +3,8 @@ import textwrap
 
 import pydantic
 
+from data_inclusion.schema import helpers
+
 
 def Field(*args, **kwargs):
     if "description" in kwargs:
@@ -14,6 +16,11 @@ def Field(*args, **kwargs):
                 )
             )
         )
+    if "examples" in kwargs:
+        kwargs["examples"] = [
+            helpers.dedent(example) if isinstance(example, str) else example
+            for example in kwargs["examples"]
+        ]
     return pydantic.Field(*args, **kwargs)
 
 
@@ -42,11 +49,7 @@ class EnhancedEnum(str, enum.Enum):
         obj = str.__new__(cls, value)
         obj._value_ = value
         obj._label = label
-        obj._description = (
-            textwrap.dedent(description).strip("\n").replace("\n", " ")
-            if description
-            else None
-        )
+        obj._description = helpers.dedent(description) if description else None
 
         try:
             if obj._description is not None:

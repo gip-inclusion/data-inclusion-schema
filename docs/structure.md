@@ -90,7 +90,9 @@ Type : `string`
 Exemples :
 
 ```json
-"L’association 3027 offre un accès gratuit aux arts, à la culture et\n                au sport pour toutes et tous sans distinction et en priorité aux\n                personnes en situation de précarité et d’isolement."
+"L’association 3027 offre un accès gratuit aux arts, à la culture et au sport
+pour toutes et tous sans distinction et en priorité aux personnes en situation
+de précarité et d’isolement."
 
 ```
 
@@ -429,7 +431,8 @@ Format : `uri`
 Exemples :
 
 ```json
-"https://acceslibre.beta.gouv.fr/app/17-la-greve-sur-mignon/a/mairie/erp/mairie-la-greve-sur-mignon/"
+"https://acceslibre.beta.gouv.fr/app/17-la-greve-sur-mignon/a/mairie/erp/mairie
+-la-greve-sur-mignon/"
 
 ```
 

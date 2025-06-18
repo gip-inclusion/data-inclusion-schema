@@ -29,9 +29,11 @@ Valeurs acceptées : voir le [référentiel associé](referentiels/{{ enum_filen
 Exemples :
 
 ```json
+{%- filter wordwrap(break_on_hyphens=False) %}
 {% for example in property_schema.examples -%}
 {{ example|tojson }}
 {% endfor %}
+{% endfilter %}
 ```
 {% endif %}
 ---
