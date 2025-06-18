@@ -2,7 +2,7 @@
 
 
 
-### `id` *
+### `source` *
 
 
 
@@ -40,7 +40,7 @@ Type : `string`
 
 ---
 
-### `source` *
+### `id` *
 
 
 
@@ -111,7 +111,36 @@ Type : `string`
 Exemples :
 
 ```json
-"Cet atelier-conseil vous permet d\u2019identifier les comp\u00e9tences \u00e0\n                d\u00e9velopper pour atteindre vos objectifs d\u2019\u00e9volution professionnelle et \u00e0\n                d\u00e9couvrir les diff\u00e9rentes modalit\u00e9s de formation.\n\n                Dur\u00e9e d\u2019une journ\u00e9e et inscription via votre espace France Travail."
+"Cet atelier-conseil vous permet d’identifier les compétences à développer pour
+atteindre vos objectifs d’évolution professionnelle et à découvrir les
+différentes modalités de formation.  Durée d’une journée et inscription via
+votre espace France Travail."
+
+```
+
+---
+
+### `date_maj` *
+
+Date de dernière modification du service chez le producteur de données.
+
+
+
+Type : `string`
+
+
+
+Format : `date`
+
+
+
+
+
+
+Exemples :
+
+```json
+"2025-02-14"
 
 ```
 
@@ -167,31 +196,9 @@ Valeurs acceptées : voir le [référentiel associé](referentiels/thematiques.m
 
 ### `frais`
 
+Indique si l’accès au service est payant ou gratuit.
 
-
-
-
-Type : `array[string]`
-
-
-
-
-
-
-
-
-
-
-Valeurs acceptées : `"gratuit&#34;, &#34;gratuit-sous-conditions&#34;, &#34;payant&#34;, &#34;adhesion&#34;, &#34;pass-numerique"`
-
-
-
-
----
-
-### `frais_autres`
-
-
+Si le service comporte des frais, ceux-ci devraient être précisés dans le champ `frais_precisions`.
 
 
 
@@ -206,35 +213,24 @@ Type : `string`
 
 
 
----
-
-### `profils`
+Valeurs acceptées : `gratuit`, `payant`
 
 
 
 
+Exemples :
 
-Type : `array[string]`
+```json
+"gratuit"
+"payant"
 
-
-
-
-
-
-
-
-
-
-Valeurs acceptées : voir le [référentiel associé](referentiels/profils.md)
-
-
-
+```
 
 ---
 
-### `profils_precisions`
+### `frais_precisions`
 
-
+Précisions sur les éventuels frais pour accéder au service.
 
 
 
@@ -249,34 +245,57 @@ Type : `string`
 
 
 
----
+Exemples :
 
-### `pre_requis`
+```json
+"10€ pour l’adhésion annuelle"
+"Tarif réduit pour les bénéficiaires du RSA"
 
-
-
-
-
-Type : `array`
-
-
-
-
-
-
-
-
-
+```
 
 ---
 
-### `justificatifs`
+### `publics`
+
+Publics visés par le service.
+
+Des informations complémentaires peuvent être précisées dans le champ `publics_precisions`.
+
+
+
+Type : `array[string]`
 
 
 
 
 
-Type : `array`
+
+
+
+
+
+Valeurs acceptées : voir le [référentiel associé](referentiels/publics.md)
+
+
+
+
+Exemples :
+
+```json
+"femmes"
+"residents-qpv-frr"
+
+```
+
+---
+
+### `publics_precisions`
+
+Précisions sur les publics visés par le service.
+
+
+
+Type : `string`
 
 
 
@@ -286,6 +305,41 @@ Type : `array`
 
 
 
+
+Exemples :
+
+```json
+"Le jeune entre 15 et 18 ans."
+
+```
+
+---
+
+### `conditions_acces`
+
+Conditions d’accès au service.
+
+Il peut s’agir de prérequis ou de justificatifs à présenter.
+
+
+
+Type : `string`
+
+
+
+
+
+
+
+
+
+
+Exemples :
+
+```json
+"Maîtrise de la langue française à l’oral et à l’écrit"
+
+```
 
 ---
 
@@ -480,32 +534,6 @@ Exemples :
 
 ---
 
-### `date_maj` *
-
-Date de dernière modification du service chez le producteur de données.
-
-
-
-Type : `string`
-
-
-
-Format : `date`
-
-
-
-
-
-
-Exemples :
-
-```json
-"2025-02-14"
-
-```
-
----
-
 ### `modes_accueil`
 
 
@@ -523,63 +551,34 @@ Type : `array[string]`
 
 
 
-Valeurs acceptées : `"a-distance&#34;, &#34;en-presentiel"`
+Valeurs acceptées : `a-distance`, `en-presentiel`
 
 
 
 
 ---
 
-### `zone_diffusion_type`
+### `zone_eligibilite`
+
+Zone géographique d’éligibilité du service.
+
+Contient une liste de codes issus du Code Officiel Géographique maintenu par l’INSEE.
+
+Chaque code dans cette liste peut être un code commune, un code département, un code EPCI ou un code pays.
+
+Si le service est éligible à l’ensemble d’une région, lister les codes des departements de cette région.
+
+Si le service est éligible sur l’ensemble du territoire national, utiliser le code `france` (France) ou le code pays `99100`.
+
+data·inclusion vérifie la validité des codes fournis. Les codes invalides sont supprimés de la liste.
+
+[Le Code Officiel Géographique de l’INSEE](https://www.insee.fr/fr/information/2560452).
+
+[Outil de recherche des codes](https://www.insee.fr/fr/recherche/recherche-geographique).
 
 
 
-
-
-Type : `string`
-
-
-
-
-
-
-
-
-
-
-Valeurs acceptées : `"commune&#34;, &#34;epci&#34;, &#34;region&#34;, &#34;departement&#34;, &#34;pays"`
-
-
-
-
----
-
-### `zone_diffusion_code`
-
-
-
-
-
-Type : `string`
-
-
-
-
-
-Regex : `^\d{2}$ | ^\d{9}$ | ^\w{2,3}$ | ^\w{5}$`
-
-
-
-
----
-
-### `zone_diffusion_nom`
-
-
-
-
-
-Type : `string`
+Type : `array`
 
 
 
@@ -589,6 +588,16 @@ Type : `string`
 
 
 
+
+Exemples :
+
+```json
+["france"]
+["2A", "2B"]
+["200093201"]
+["2A", "2B", "200093201"]
+
+```
 
 ---
 
@@ -654,7 +663,7 @@ Type : `array[string]`
 
 
 
-Valeurs acceptées : `"envoyer-un-courriel&#34;, &#34;se-presenter&#34;, &#34;telephoner&#34;, &#34;utiliser-lien-mobilisation"`
+Valeurs acceptées : `envoyer-un-courriel`, `se-presenter`, `telephoner`, `utiliser-lien-mobilisation`
 
 
 
@@ -685,7 +694,7 @@ Type : `array[string]`
 
 
 
-Valeurs acceptées : `"usagers&#34;, &#34;professionnels"`
+Valeurs acceptées : `usagers`, `professionnels`
 
 
 
@@ -720,7 +729,8 @@ Type : `string`
 Exemples :
 
 ```json
-"La demande est \u00e0 faire depuis l\u2019espace personnel\n                du demandeur d\u2019emploi, rubrique \u00ab mes aides \u00bb,\n                formulaire sp\u00e9cifique \u00ab Aide \u00e0 la mobilit\u00e9 \u00bb."
+"La demande est à faire depuis l’espace personnel du demandeur d’emploi,
+rubrique « mes aides », formulaire spécifique « Aide à la mobilité »."
 
 ```
 
@@ -781,6 +791,40 @@ Exemples :
 
 ```json
 3
+
+```
+
+---
+
+### `horaires_accueil`
+
+Horaires d’accueil du public pour ce service.
+
+Si le champ n’est pas renseigné, les horaires d’accueil de la structure peuvent être utilisés.
+
+Doit être au format OpenStreetMap Opening Hours.
+
+[Spécification du format OSM Opening Hours](https://wiki.openstreetmap.org/wiki/FR:Key:opening_hours).
+
+[Outil d’aide à la saisie](https://projets.pavie.info/yohours/).
+
+
+
+Type : `string`
+
+
+
+
+
+
+
+
+
+
+Exemples :
+
+```json
+"Mo-Fr 08:30-12:30; PH off"
 
 ```
 

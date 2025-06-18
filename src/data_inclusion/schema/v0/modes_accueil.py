@@ -2,6 +2,8 @@ from data_inclusion.schema.base import EnhancedEnum
 
 
 class ModeAccueil(EnhancedEnum):
+    """Modes d’accueil"""
+
     A_DISTANCE = (
         "a-distance",
         "À distance",

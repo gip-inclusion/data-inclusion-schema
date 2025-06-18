@@ -2,6 +2,8 @@ from data_inclusion.schema.base import EnhancedEnum
 
 
 class Thematique(EnhancedEnum):
+    """Thématiques"""
+
     ACCES_AUX_DROITS_ET_CITOYENNETE = (
         "acces-aux-droits-et-citoyennete",
         "Accès aux droits & citoyenneté",

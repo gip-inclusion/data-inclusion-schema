@@ -9,9 +9,11 @@ from data_inclusion.schema.v0 import LabelNational, TypologieStructure
 
 
 class Structure(BaseModel):
-    # fields
+    #####################
+    ### Champs requis ###
+    #####################
+    source: str
     id: str
-    siret: Optional[common.CodeSiret] = None
     nom: Annotated[
         str,
         Field(
@@ -26,6 +28,41 @@ class Structure(BaseModel):
             max_length=150,
         ),
     ]
+    description: Annotated[
+        str,
+        Field(
+            description="""
+                Description de la structure.
+
+                Entre 50 et 2000 caractères.
+            """,
+            examples=[
+                """
+                    L’association 3027 offre un accès gratuit aux arts, à la culture et
+                    au sport pour toutes et tous sans distinction et en priorité aux
+                    personnes en situation de précarité et d’isolement.
+                """
+            ],
+            min_length=50,
+            max_length=2000,
+        ),
+    ]
+    date_maj: Annotated[
+        date,
+        Field(
+            description="""
+                Date de dernière modification de la
+                structure chez le producteur de données.
+            """,
+            examples=["2025-02-14"],
+            title="Date de dernière modification",
+        ),
+    ]
+
+    #########################
+    ### Champs optionnels ###
+    #########################
+    siret: Optional[common.CodeSiret] = None
     commune: Optional[str] = None
     code_postal: Optional[common.CodePostal] = None
     code_insee: Optional[common.CodeCommune] = None
@@ -63,36 +100,39 @@ class Structure(BaseModel):
         ),
     ]
     site_web: Optional[HttpUrl] = None
-    description: Annotated[
-        str,
+    horaires_accueil: Annotated[
+        Optional[str],
         Field(
             description="""
-                Description de la structure.
+            Horaires d’accueil du public par la structure.
 
-                Entre 50 et 2000 caractères.
+            Un service peut avoir un horaire d’accueil différent. Se référer aux
+            horaires des services.
+
+            Doit être au format OpenStreetMap Opening Hours.
+
+            [Spécification du format OSM Opening Hours](https://wiki.openstreetmap.org/wiki/FR:Key:opening_hours).
+
+            [Outil d’aide à la saisie](https://projets.pavie.info/yohours/).
+        """,  # noqa: E501
+            title="Horaires d’accueil du public",
+            examples=["Mo-Fr 08:30-12:30; PH off"],
+        ),
+    ] = None
+    accessibilite_lieu: Annotated[
+        Optional[HttpUrl],
+        Field(
+            title="Accessibilité du lieu",
+            description="""
+            Lien la page Accesslibre référençant le niveau d’accessibilité du lieu de
+            réalisation du service.
+
+            Devrait être un lien vers [Accesslibre](https://acceslibre.beta.gouv.fr/).
             """,
             examples=[
-                """L’association 3027 offre un accès gratuit aux arts, à la culture et
-                au sport pour toutes et tous sans distinction et en priorité aux
-                personnes en situation de précarité et d’isolement."""
+                "https://acceslibre.beta.gouv.fr/app/17-la-greve-sur-mignon/a/mairie/erp/mairie-la-greve-sur-mignon/",  # noqa: E501
             ],
-            min_length=50,
-            max_length=2000,
         ),
-    ]
-    source: str
-    date_maj: Annotated[
-        date,
-        Field(
-            description="""
-                Date de dernière modification de la
-                structure chez le producteur de données.
-            """,
-            examples=["2025-02-14"],
-            title="Date de dernière modification",
-        ),
-    ]
-    horaires_ouverture: Optional[str] = None
-    accessibilite: Optional[HttpUrl] = None
+    ] = None
     labels_nationaux: Optional[set[LabelNational]] = None
     labels_autres: Optional[set[str]] = None

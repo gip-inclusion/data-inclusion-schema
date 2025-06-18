@@ -1,5 +1,5 @@
 from datetime import date
-from typing import Annotated, Optional
+from typing import Annotated, Literal, Optional
 
 from pydantic import EmailStr, HttpUrl
 
@@ -10,18 +10,19 @@ from data_inclusion.schema.v1 import (
     ModeAccueil,
     ModeMobilisation,
     PersonneMobilisatrice,
-    Profil,
+    Public,
     Thematique,
     TypologieService,
-    ZoneDiffusionType,
 )
 
 
 class Service(BaseModel):
-    # fields
-    id: str
-    structure_id: str
+    #####################
+    ### Champs requis ###
+    #####################
     source: str
+    structure_id: str
+    id: str
     nom: Annotated[
         str,
         Field(
@@ -47,24 +48,95 @@ class Service(BaseModel):
                 Ce champ est pris en compte dans le calcul du score de qualité.
             """,
             examples=[
-                """Cet atelier-conseil vous permet d’identifier les compétences à
-                développer pour atteindre vos objectifs d’évolution professionnelle et à
-                découvrir les différentes modalités de formation.
+                """
+                    Cet atelier-conseil vous permet d’identifier les compétences à
+                    développer pour atteindre vos objectifs d’évolution professionnelle
+                    et à découvrir les différentes modalités de formation.
 
-                Durée d’une journée et inscription via votre espace France Travail."""
+                    Durée d’une journée et inscription via votre espace France Travail.
+                """
             ],
             min_length=50,
             max_length=2000,
         ),
     ]
+    date_maj: Annotated[
+        date,
+        Field(
+            description="""
+                Date de dernière modification du service chez le producteur de données.
+            """,
+            examples=["2025-02-14"],
+            title="Date de dernière modification",
+        ),
+    ]
+
+    #########################
+    ### Champs optionnels ###
+    #########################
     types: Optional[set[TypologieService]] = None
     thematiques: Optional[set[Thematique]] = None
-    frais: Optional[set[Frais]] = None
-    frais_autres: Optional[str] = None
-    profils: Optional[set[Profil]] = None
-    profils_precisions: Optional[str] = None
-    pre_requis: Optional[set[str]] = None
-    justificatifs: Optional[set[str]] = None
+    frais: Annotated[
+        Optional[Frais],
+        Field(
+            description="""
+                Indique si l’accès au service est payant ou gratuit.
+
+                Si le service comporte des frais, ceux-ci devraient être précisés dans
+                le champ `frais_precisions`.
+            """,
+            examples=[Frais.GRATUIT, Frais.PAYANT],
+        ),
+    ] = None
+    frais_precisions: Annotated[
+        Optional[str],
+        Field(
+            title="Précisions sur les frais",
+            description="""
+                Précisions sur les éventuels frais pour accéder au service.
+            """,
+            examples=[
+                "10€ pour l’adhésion annuelle",
+                "Tarif réduit pour les bénéficiaires du RSA",
+            ],
+        ),
+    ] = None
+    publics: Annotated[
+        Optional[set[Public]],
+        Field(
+            title="Publics",
+            description="""
+            Publics visés par le service.
+
+            Des informations complémentaires peuvent être précisées dans le champ
+            `publics_precisions`.
+        """,
+            examples=[Public.FEMMES, Public.RESIDENTS_QPV_FRR],
+            min_length=1,
+        ),
+    ] = None
+    publics_precisions: Annotated[
+        Optional[str],
+        Field(
+            title="Précisions sur les publics",
+            description="""
+            Précisions sur les publics visés par le service.
+        """,
+            examples=["Le jeune entre 15 et 18 ans."],
+        ),
+    ] = None
+    conditions_acces: Annotated[
+        Optional[str],
+        Field(
+            description="""
+            Conditions d’accès au service.
+
+            Il peut s’agir de prérequis ou de justificatifs à présenter.
+        """,
+            examples=["Maîtrise de la langue française à l’oral et à l’écrit"],
+            title="Conditions d’accès",
+        ),
+    ] = None
     commune: Optional[str] = None
     code_postal: Optional[common.CodePostal] = None
     code_insee: Optional[common.CodeCommune] = None
@@ -106,25 +178,50 @@ class Service(BaseModel):
             default=None,
         ),
     ]
-    date_maj: Annotated[
-        date,
-        Field(
-            description="""
-                Date de dernière modification du service chez le producteur de données.
-            """,
-            examples=["2025-02-14"],
-            title="Date de dernière modification",
-        ),
-    ]
     modes_accueil: Optional[set[ModeAccueil]] = None
-    zone_diffusion_type: Optional[ZoneDiffusionType] = None
-    zone_diffusion_code: Optional[
-        common.CodeCommune
-        | common.CodeEPCI
-        | common.CodeDepartement
-        | common.CodeRegion
+    zone_eligibilite: Annotated[
+        Optional[
+            list[
+                common.CodeCommune
+                | common.CodeEPCI
+                | common.CodeRegion
+                | common.CodePays
+                | Literal["france"]
+            ]
+        ],
+        Field(
+            title="Zone d’éligibilité",
+            min_length=1,
+            description="""
+            Zone géographique d’éligibilité du service.
+
+            Contient une liste de codes issus du Code Officiel Géographique maintenu par
+            l’INSEE.
+
+            Chaque code dans cette liste peut être un code commune, un code département,
+            un code EPCI ou un code pays.
+
+            Si le service est éligible à l’ensemble d’une région, lister les codes des
+            departements de cette région.
+
+            Si le service est éligible sur l’ensemble du territoire national, utiliser
+            le code `france` (France) ou le code pays `99100`.
+
+            data·inclusion vérifie la validité des codes fournis. Les codes invalides
+            sont supprimés de la liste.
+
+            [Le Code Officiel Géographique de l’INSEE](https://www.insee.fr/fr/information/2560452).
+
+            [Outil de recherche des codes](https://www.insee.fr/fr/recherche/recherche-geographique).
+        """,  # noqa: E501
+            examples=[
+                ["france"],
+                ["2A", "2B"],
+                ["200093201"],
+                ["2A", "2B", "200093201"],
+            ],
+        ),
     ] = None
-    zone_diffusion_nom: Optional[str] = None
     contact_nom_prenom: Optional[str] = None
     lien_mobilisation: Annotated[
         Optional[HttpUrl],
@@ -170,9 +267,11 @@ class Service(BaseModel):
                 Précisions sur les modes de mobilisation du service.
             """,
             examples=[
-                """La demande est à faire depuis l’espace personnel
-                du demandeur d’emploi, rubrique « mes aides »,
-                formulaire spécifique « Aide à la mobilité »."""
+                """
+                    La demande est à faire depuis l’espace personnel
+                    du demandeur d’emploi, rubrique « mes aides »,
+                    formulaire spécifique « Aide à la mobilité ».
+                """
             ],
         ),
     ] = None
@@ -208,5 +307,24 @@ class Service(BaseModel):
             """,
             examples=[3],
             ge=1,
+        ),
+    ] = None
+    horaires_accueil: Annotated[
+        Optional[str],
+        Field(
+            description="""
+            Horaires d’accueil du public pour ce service.
+
+            Si le champ n’est pas renseigné, les horaires d’accueil de la structure
+            peuvent être utilisés.
+
+            Doit être au format OpenStreetMap Opening Hours.
+
+            [Spécification du format OSM Opening Hours](https://wiki.openstreetmap.org/wiki/FR:Key:opening_hours).
+
+            [Outil d’aide à la saisie](https://projets.pavie.info/yohours/).
+        """,
+            title="Horaires d’accueil du public",
+            examples=["Mo-Fr 08:30-12:30; PH off"],
         ),
     ] = None

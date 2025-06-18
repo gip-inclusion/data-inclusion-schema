@@ -2,7 +2,7 @@
 
 
 
-### `id` *
+### `source` *
 
 
 
@@ -21,7 +21,7 @@ Type : `string`
 
 ---
 
-### `siret`
+### `id` *
 
 
 
@@ -33,7 +33,7 @@ Type : `string`
 
 
 
-Regex : `^\d{14}$`
+
 
 
 
@@ -65,6 +65,81 @@ Exemples :
 "Centre social Le Tournesol"
 
 ```
+
+---
+
+### `description` *
+
+Description de la structure.
+
+Entre 50 et 2000 caractères.
+
+
+
+Type : `string`
+
+
+
+
+
+
+
+
+
+
+Exemples :
+
+```json
+"L’association 3027 offre un accès gratuit aux arts, à la culture et au sport
+pour toutes et tous sans distinction et en priorité aux personnes en situation
+de précarité et d’isolement."
+
+```
+
+---
+
+### `date_maj` *
+
+Date de dernière modification de la structure chez le producteur de données.
+
+
+
+Type : `string`
+
+
+
+Format : `date`
+
+
+
+
+
+
+Exemples :
+
+```json
+"2025-02-14"
+
+```
+
+---
+
+### `siret`
+
+
+
+
+
+Type : `string`
+
+
+
+
+
+Regex : `^\d{14}$`
+
+
+
 
 ---
 
@@ -300,11 +375,17 @@ Format : `uri`
 
 ---
 
-### `description` *
+### `horaires_accueil`
 
-Description de la structure.
+Horaires d’accueil du public par la structure.
 
-Entre 50 et 2000 caractères.
+Un service peut avoir un horaire d’accueil différent. Se référer aux horaires des services.
+
+Doit être au format OpenStreetMap Opening Hours.
+
+[Spécification du format OSM Opening Hours](https://wiki.openstreetmap.org/wiki/FR:Key:opening_hours).
+
+[Outil d’aide à la saisie](https://projets.pavie.info/yohours/).
 
 
 
@@ -322,79 +403,17 @@ Type : `string`
 Exemples :
 
 ```json
-"L\u2019association 3027 offre un acc\u00e8s gratuit aux arts, \u00e0 la culture et\n                au sport pour toutes et tous sans distinction et en priorit\u00e9 aux\n                personnes en situation de pr\u00e9carit\u00e9 et d\u2019isolement."
+"Mo-Fr 08:30-12:30; PH off"
 
 ```
 
 ---
 
-### `source` *
+### `accessibilite_lieu`
 
+Lien la page Accesslibre référençant le niveau d’accessibilité du lieu de réalisation du service.
 
-
-
-
-Type : `string`
-
-
-
-
-
-
-
-
-
-
----
-
-### `date_maj` *
-
-Date de dernière modification de la structure chez le producteur de données.
-
-
-
-Type : `string`
-
-
-
-Format : `date`
-
-
-
-
-
-
-Exemples :
-
-```json
-"2025-02-14"
-
-```
-
----
-
-### `horaires_ouverture`
-
-
-
-
-
-Type : `string`
-
-
-
-
-
-
-
-
-
-
----
-
-### `accessibilite`
-
-
+Devrait être un lien vers [Accesslibre](https://acceslibre.beta.gouv.fr/).
 
 
 
@@ -408,6 +427,14 @@ Format : `uri`
 
 
 
+
+Exemples :
+
+```json
+"https://acceslibre.beta.gouv.fr/app/17-la-greve-sur-mignon/a/mairie/erp/mairie
+-la-greve-sur-mignon/"
+
+```
 
 ---
 

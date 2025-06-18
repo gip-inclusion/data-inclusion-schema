@@ -1,6 +1,6 @@
 !!! info "Les champs marqués d’une astérisque (*) sont obligatoires."
 
-{% for property_name, property_schema in schema.properties.items() %}
+{% for property_name, property_schema in schema.properties|items %}
 
 ### `{{ property_name }}`{{ ' *' if property_name in schema.required }}
 
@@ -19,7 +19,7 @@ Type : `{{ get_property_type_data(property_schema).type }}`
 {% if property_type_data.referentiel %}
 {% set referentiel = schema.get("$defs").get(property_type_data.referentiel) %}
 {% if referentiel.enum|length <= inline_referentiel_size_limit %}
-Valeurs acceptées : `"{{ referentiel.enum|join('", "') }}"`
+Valeurs acceptées : `{{ referentiel.enum|join('`, `') }}`
 {% else %}
 Valeurs acceptées : voir le [référentiel associé](referentiels/{{ enum_filenames_by_ref.get(property_type_data.referentiel) }}.md)
 {% endif %}
@@ -29,9 +29,11 @@ Valeurs acceptées : voir le [référentiel associé](referentiels/{{ enum_filen
 Exemples :
 
 ```json
+{%- filter wordwrap(break_on_hyphens=False) %}
 {% for example in property_schema.examples -%}
 {{ example|tojson }}
 {% endfor %}
+{% endfilter %}
 ```
 {% endif %}
 ---
