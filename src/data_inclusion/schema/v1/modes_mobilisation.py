@@ -7,18 +7,21 @@ class ModeMobilisation(EnhancedEnum):
         "Envoyer un courriel",
         (
             "Envoyer un courriel à l’adresse électronique associée au service, ou à"
-            " défaut à la structure."
+            " défaut, à la structure."
         ),
     )
     SE_PRESENTER = (
         "se-presenter",
         "Se présenter",
-        "Se présenter directement à l’adresse associée au service ou à la structure.",
+        (
+            "Se présenter directement à l’adresse associée au service ou, à défaut, à"
+            " la structure."
+        ),
     )
     TELEPHONER = (
         "telephoner",
         "Téléphoner",
-        "Téléphoner au numéro associé au service, ou à défaut à la structure.",
+        "Téléphoner au numéro associé au service, ou à défaut, à la structure.",
     )
     UTILISER_LIEN_MOBILISATION = (
         "utiliser-lien-mobilisation",
@@ -31,10 +34,10 @@ class PersonneMobilisatrice(EnhancedEnum):
     USAGERS = (
         "usagers",
         "Usagers",
-        "Mobilisable par les usagers.",
+        "Service mobilisable par les usagers.",
     )
     PROFESSIONNELS = (
         "professionnels",
         "Professionnels",
-        "Mobilisable par les professionnels.",
+        "Service mobilisable par les professionnels de l’insertion.",
     )
