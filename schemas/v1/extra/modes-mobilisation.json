@@ -1,16 +1,16 @@
 [
   {
-    "description": "Envoyer un courriel à l’adresse électronique associée au service, ou à défaut à la structure.",
+    "description": "Envoyer un courriel à l’adresse électronique associée au service, ou à défaut, à la structure.",
     "label": "Envoyer un courriel",
     "value": "envoyer-un-courriel"
   },
   {
-    "description": "Se présenter directement à l’adresse associée au service ou à la structure.",
+    "description": "Se présenter directement à l’adresse associée au service ou, à défaut, à la structure.",
     "label": "Se présenter",
     "value": "se-presenter"
   },
   {
-    "description": "Téléphoner au numéro associé au service, ou à défaut à la structure.",
+    "description": "Téléphoner au numéro associé au service, ou à défaut, à la structure.",
     "label": "Téléphoner",
     "value": "telephoner"
   },

@@ -1,4 +1,4 @@
 | Nom | Label | Description |
 | :- | :- | :- |
-| `professionnels` | Professionnels | Mobilisable par les professionnels. |
-| `usagers` | Usagers | Mobilisable par les usagers. |
+| `professionnels` | Professionnels | Service mobilisable par les professionnels de l’insertion. |
+| `usagers` | Usagers | Service mobilisable par les usagers. |

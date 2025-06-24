@@ -1,11 +1,11 @@
 [
   {
-    "description": "Mobilisable par les professionnels.",
+    "description": "Service mobilisable par les professionnels de l’insertion.",
     "label": "Professionnels",
     "value": "professionnels"
   },
   {
-    "description": "Mobilisable par les usagers.",
+    "description": "Service mobilisable par les usagers.",
     "label": "Usagers",
     "value": "usagers"
   }
