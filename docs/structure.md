@@ -217,9 +217,7 @@ Type : `string`
 
 
 
-
 Valeurs acceptées : voir le [référentiel associé](referentiels/typologies_de_structures.md)
-
 
 
 
@@ -427,9 +425,7 @@ Type : `array[string]`
 
 
 
-
 Valeurs acceptées : voir le [référentiel associé](referentiels/labels_nationaux.md)
-
 
 
 

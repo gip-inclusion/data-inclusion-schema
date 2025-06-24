@@ -133,9 +133,7 @@ Type : `array[string]`
 
 
 
-
 Valeurs acceptées : voir le [référentiel associé](referentiels/typologies_de_services.md)
-
 
 
 
@@ -157,9 +155,7 @@ Type : `array[string]`
 
 
 
-
 Valeurs acceptées : voir le [référentiel associé](referentiels/thematiques.md)
-
 
 
 
@@ -181,9 +177,7 @@ Type : `array[string]`
 
 
 
-
-Valeurs acceptées : `"gratuit&#34;, &#34;gratuit-sous-conditions&#34;, &#34;payant&#34;, &#34;adhesion&#34;, &#34;pass-numerique"`
-
+Valeurs acceptées : voir le [référentiel associé](referentiels/frais.md)
 
 
 
@@ -224,9 +218,7 @@ Type : `array[string]`
 
 
 
-
 Valeurs acceptées : voir le [référentiel associé](referentiels/profils.md)
-
 
 
 
@@ -522,9 +514,7 @@ Type : `array[string]`
 
 
 
-
-Valeurs acceptées : `"a-distance&#34;, &#34;en-presentiel"`
-
+Valeurs acceptées : voir le [référentiel associé](referentiels/modes_accueil.md)
 
 
 
@@ -546,9 +536,7 @@ Type : `string`
 
 
 
-
-Valeurs acceptées : `"commune&#34;, &#34;epci&#34;, &#34;region&#34;, &#34;departement&#34;, &#34;pays"`
-
+Valeurs acceptées : voir le [référentiel associé](referentiels/zones_de_diffusion_types.md)
 
 
 
@@ -653,9 +641,7 @@ Type : `array[string]`
 
 
 
-
-Valeurs acceptées : `"envoyer-un-courriel&#34;, &#34;se-presenter&#34;, &#34;telephoner&#34;, &#34;utiliser-lien-mobilisation"`
-
+Valeurs acceptées : voir le [référentiel associé](referentiels/modes_mobilisation.md)
 
 
 
@@ -684,9 +670,7 @@ Type : `array[string]`
 
 
 
-
-Valeurs acceptées : `"usagers&#34;, &#34;professionnels"`
-
+Valeurs acceptées : voir le [référentiel associé](referentiels/personnes_mobilisatrices.md)
 
 
 
