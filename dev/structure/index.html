@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#source" class="md-skip">
+        <a href="#id" class="md-skip">
           Skip to content
         </a>
       
@@ -114,6 +114,46 @@
       <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
     
     
       <div class="md-header__source">
@@ -250,15 +290,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#source" class="md-nav__link">
-    <span class="md-ellipsis">
-      source *
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#id" class="md-nav__link">
     <span class="md-ellipsis">
       id *
@@ -268,36 +299,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#nom" class="md-nav__link">
-    <span class="md-ellipsis">
-      nom *
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#description" class="md-nav__link">
-    <span class="md-ellipsis">
-      description *
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#date_maj" class="md-nav__link">
-    <span class="md-ellipsis">
-      date_maj *
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#siret" class="md-nav__link">
     <span class="md-ellipsis">
       siret
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nom" class="md-nav__link">
+    <span class="md-ellipsis">
+      nom *
     </span>
   </a>
   
@@ -403,18 +416,45 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#horaires_accueil" class="md-nav__link">
+  <a href="#description" class="md-nav__link">
     <span class="md-ellipsis">
-      horaires_accueil
+      description *
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#accessibilite_lieu" class="md-nav__link">
+  <a href="#source" class="md-nav__link">
     <span class="md-ellipsis">
-      accessibilite_lieu
+      source *
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#date_maj" class="md-nav__link">
+    <span class="md-ellipsis">
+      date_maj *
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#horaires_ouverture" class="md-nav__link">
+    <span class="md-ellipsis">
+      horaires_ouverture
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accessibilite" class="md-nav__link">
+    <span class="md-ellipsis">
+      accessibilite
     </span>
   </a>
   
@@ -582,6 +622,75 @@
   
   
     <li class="md-nav__item">
+      <a href="../referentiels/modes_orientation_accompagnateur/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Modes d’orientation accompagnateur
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../referentiels/modes_orientation_beneficiaire/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Modes d’orientation bénéficiaire
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../referentiels/profils/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Profils
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../referentiels/thematiques/" class="md-nav__link">
         
   
@@ -651,58 +760,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../referentiels/modes_mobilisation/" class="md-nav__link">
+      <a href="../referentiels/zones_de_diffusion_types/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Modes de mobilisation
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../referentiels/personnes_mobilisatrices/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Personnes mobilisatrices
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../referentiels/publics/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Publics
+    Zones de diffusion
     
   </span>
   
@@ -745,15 +808,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#source" class="md-nav__link">
-    <span class="md-ellipsis">
-      source *
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#id" class="md-nav__link">
     <span class="md-ellipsis">
       id *
@@ -763,36 +817,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#nom" class="md-nav__link">
-    <span class="md-ellipsis">
-      nom *
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#description" class="md-nav__link">
-    <span class="md-ellipsis">
-      description *
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#date_maj" class="md-nav__link">
-    <span class="md-ellipsis">
-      date_maj *
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#siret" class="md-nav__link">
     <span class="md-ellipsis">
       siret
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nom" class="md-nav__link">
+    <span class="md-ellipsis">
+      nom *
     </span>
   </a>
   
@@ -898,18 +934,45 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#horaires_accueil" class="md-nav__link">
+  <a href="#description" class="md-nav__link">
     <span class="md-ellipsis">
-      horaires_accueil
+      description *
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#accessibilite_lieu" class="md-nav__link">
+  <a href="#source" class="md-nav__link">
     <span class="md-ellipsis">
-      accessibilite_lieu
+      source *
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#date_maj" class="md-nav__link">
+    <span class="md-ellipsis">
+      date_maj *
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#horaires_ouverture" class="md-nav__link">
+    <span class="md-ellipsis">
+      horaires_ouverture
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accessibilite" class="md-nav__link">
+    <span class="md-ellipsis">
+      accessibilite
     </span>
   </a>
   
@@ -957,11 +1020,12 @@
 <div class="admonition info">
 <p class="admonition-title">Les champs marqués d’une astérisque (*) sont obligatoires.</p>
 </div>
-<h3 id="source"><code>source</code> *</h3>
-<p>Type : <code>string</code></p>
-<hr />
 <h3 id="id"><code>id</code> *</h3>
 <p>Type : <code>string</code></p>
+<hr />
+<h3 id="siret"><code>siret</code></h3>
+<p>Type : <code>string</code></p>
+<p>Regex : <code>^\d{14}$</code></p>
 <hr />
 <h3 id="nom"><code>nom</code> *</h3>
 <p>Nom de la structure.</p>
@@ -970,28 +1034,6 @@
 <p>Exemples :</p>
 <div class="highlight"><pre><span></span><code><span class="s2">&quot;Centre social Le Tournesol&quot;</span>
 </code></pre></div>
-<hr />
-<h3 id="description"><code>description</code> *</h3>
-<p>Description de la structure.</p>
-<p>Entre 50 et 2000 caractères.</p>
-<p>Type : <code>string</code></p>
-<p>Exemples :</p>
-<div class="highlight"><pre><span></span><code><span class="s2">&quot;L’association 3027 offre un accès gratuit aux arts, à la culture et au sport</span>
-<span class="s2">pour toutes et tous sans distinction et en priorité aux personnes en situation</span>
-<span class="s2">de précarité et d’isolement.&quot;</span>
-</code></pre></div>
-<hr />
-<h3 id="date_maj"><code>date_maj</code> *</h3>
-<p>Date de dernière modification de la structure chez le producteur de données.</p>
-<p>Type : <code>string</code></p>
-<p>Format : <code>date</code></p>
-<p>Exemples :</p>
-<div class="highlight"><pre><span></span><code><span class="s2">&quot;2025-02-14&quot;</span>
-</code></pre></div>
-<hr />
-<h3 id="siret"><code>siret</code></h3>
-<p>Type : <code>string</code></p>
-<p>Regex : <code>^\d{14}$</code></p>
 <hr />
 <h3 id="commune"><code>commune</code></h3>
 <p>Type : <code>string</code></p>
@@ -1041,26 +1083,31 @@
 <p>Type : <code>string</code></p>
 <p>Format : <code>uri</code></p>
 <hr />
-<h3 id="horaires_accueil"><code>horaires_accueil</code></h3>
-<p>Horaires d’accueil du public par la structure.</p>
-<p>Un service peut avoir un horaire d’accueil différent. Se référer aux horaires des services.</p>
-<p>Doit être au format OpenStreetMap Opening Hours.</p>
-<p><a href="https://wiki.openstreetmap.org/wiki/FR:Key:opening_hours">Spécification du format OSM Opening Hours</a>.</p>
-<p><a href="https://projets.pavie.info/yohours/">Outil d’aide à la saisie</a>.</p>
+<h3 id="description"><code>description</code> *</h3>
+<p>Description de la structure.</p>
+<p>Entre 50 et 2000 caractères.</p>
 <p>Type : <code>string</code></p>
 <p>Exemples :</p>
-<div class="highlight"><pre><span></span><code><span class="s2">&quot;Mo-Fr 08:30-12:30; PH off&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="s2">&quot;L\u2019association 3027 offre un acc\u00e8s gratuit aux arts, \u00e0 la culture et\n                au sport pour toutes et tous sans distinction et en priorit\u00e9 aux\n                personnes en situation de pr\u00e9carit\u00e9 et d\u2019isolement.&quot;</span>
 </code></pre></div>
 <hr />
-<h3 id="accessibilite_lieu"><code>accessibilite_lieu</code></h3>
-<p>Lien la page Accesslibre référençant le niveau d’accessibilité du lieu de réalisation du service.</p>
-<p>Devrait être un lien vers <a href="https://acceslibre.beta.gouv.fr/">Accesslibre</a>.</p>
+<h3 id="source"><code>source</code> *</h3>
+<p>Type : <code>string</code></p>
+<hr />
+<h3 id="date_maj"><code>date_maj</code> *</h3>
+<p>Date de dernière modification de la structure chez le producteur de données.</p>
+<p>Type : <code>string</code></p>
+<p>Format : <code>date</code></p>
+<p>Exemples :</p>
+<div class="highlight"><pre><span></span><code><span class="s2">&quot;2025-02-14&quot;</span>
+</code></pre></div>
+<hr />
+<h3 id="horaires_ouverture"><code>horaires_ouverture</code></h3>
+<p>Type : <code>string</code></p>
+<hr />
+<h3 id="accessibilite"><code>accessibilite</code></h3>
 <p>Type : <code>string</code></p>
 <p>Format : <code>uri</code></p>
-<p>Exemples :</p>
-<div class="highlight"><pre><span></span><code><span class="s2">&quot;https://acceslibre.beta.gouv.fr/app/17-la-greve-sur-mignon/a/mairie/erp/mairie</span>
-<span class="s2">-la-greve-sur-mignon/&quot;</span>
-</code></pre></div>
 <hr />
 <h3 id="labels_nationaux"><code>labels_nationaux</code></h3>
 <p>Type : <code>array[string]</code></p>
