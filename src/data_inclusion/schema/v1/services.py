@@ -235,8 +235,6 @@ class Service(BaseModel):
         Field(
             description="""
                 Modes de mobilisation de l’offre de service.
-                Les valeurs proviennent d’un référentiel disponible
-                sur notre documentation.
             """,
             examples=[
                 "envoyer-un-courriel",
