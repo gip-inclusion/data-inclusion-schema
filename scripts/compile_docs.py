@@ -9,10 +9,6 @@ from data_inclusion import schema
 
 DOCS_DIR = pathlib.Path() / "docs"
 
-# les référentiels sont affichés en inline dans la documentation
-# si leur taille est inférieure à cette limite
-DOCS_INLINE_REFERENTIAL_SIZE_LIMIT = 5
-
 
 def snake_case(txt: str) -> str:
     return re.sub(r"(?<!^)(?=[A-Z])", "_", txt).lower()
@@ -114,7 +110,6 @@ def main(version: str) -> None:
                     schema=model.model_json_schema(),
                     get_property_type_data=get_property_type_data,
                     snake_case=snake_case,
-                    inline_referentiel_size_limit=DOCS_INLINE_REFERENTIAL_SIZE_LIMIT,
                     enum_filenames_by_ref={
                         enum.__name__: filename
                         for enum, filename in ENUM_FILENAMES.items()
