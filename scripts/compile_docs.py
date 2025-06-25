@@ -89,7 +89,6 @@ def main(version: str) -> None:
         schema.LabelNational: "labels_nationaux",
         schema.ModeAccueil: "modes_accueil",
         schema.Thematique: "thematiques",
-        schema.TypologieService: "typologies_de_services",
         schema.TypologieStructure: "typologies_de_structures",
     }
     if version == "v0":
@@ -100,11 +99,13 @@ def main(version: str) -> None:
             "modes_orientation_beneficiaire"
         )
         ENUM_FILENAMES[schema.Profil] = "profils"
+        ENUM_FILENAMES[schema.TypologieService] = "typologies_de_services"
         ENUM_FILENAMES[schema.ZoneDiffusionType] = "zones_de_diffusion_types"
     elif version == "v1":
         ENUM_FILENAMES[schema.ModeMobilisation] = "modes_mobilisation"
         ENUM_FILENAMES[schema.PersonneMobilisatrice] = "personnes_mobilisatrices"
         ENUM_FILENAMES[schema.Public] = "publics"
+        ENUM_FILENAMES[schema.TypeService] = "types_de_services"
 
     DOCS_DIR.mkdir(exist_ok=True)
     (DOCS_DIR / "referentiels").mkdir(exist_ok=True)
