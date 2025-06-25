@@ -634,7 +634,7 @@ Exemples :
 
 ### `modes_mobilisation`
 
-Modes de mobilisation de l’offre de service. Les valeurs proviennent d’un référentiel disponible sur notre documentation.
+Modes de mobilisation de l’offre de service.
 
 
 
