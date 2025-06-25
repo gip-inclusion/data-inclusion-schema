@@ -143,25 +143,32 @@ Exemples :
 
 ---
 
-### `types`
+### `type`
+
+Type de service.
+
+
+
+Type : `string`
 
 
 
 
 
-Type : `array[string]`
 
 
 
 
+Valeurs acceptées : voir le [référentiel associé](referentiels/types_de_services.md)
 
 
 
+Exemples :
 
+```json
+"accompagnement"
 
-Valeurs acceptées : voir le [référentiel associé](referentiels/typologies_de_services.md)
-
-
+```
 
 ---
 

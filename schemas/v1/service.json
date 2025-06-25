@@ -214,22 +214,17 @@
       "title": "Thematique",
       "type": "string"
     },
-    "TypologieService": {
-      "description": "Typologies de services",
+    "TypeService": {
+      "description": "Types de services",
       "enum": [
         "accompagnement",
-        "accueil",
         "aide-financiere",
         "aide-materielle",
         "atelier",
         "formation",
-        "information",
-        "numerique",
-        "autonomie",
-        "delegation",
-        "financement"
+        "information"
       ],
-      "title": "TypologieService",
+      "title": "TypeService",
       "type": "string"
     }
   },
@@ -644,21 +639,20 @@
       "default": null,
       "title": "Thematiques"
     },
-    "types": {
+    "type": {
       "anyOf": [
         {
-          "items": {
-            "$ref": "#/$defs/TypologieService"
-          },
-          "type": "array",
-          "uniqueItems": true
+          "$ref": "#/$defs/TypeService"
         },
         {
           "type": "null"
         }
       ],
       "default": null,
-      "title": "Types"
+      "description": "Type de service.",
+      "examples": [
+        "accompagnement"
+      ]
     },
     "volume_horaire_hebdomadaire": {
       "anyOf": [
