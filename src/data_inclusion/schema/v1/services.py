@@ -12,7 +12,7 @@ from data_inclusion.schema.v1 import (
     PersonneMobilisatrice,
     Public,
     Thematique,
-    TypologieService,
+    TypeService,
 )
 
 
@@ -74,7 +74,7 @@ class Service(BaseModel):
     #########################
     ### Champs optionnels ###
     #########################
-    types: Optional[set[TypologieService]] = None
+    type: Optional[TypeService] = None
     thematiques: Optional[set[Thematique]] = None
     frais: Annotated[
         Optional[Frais],

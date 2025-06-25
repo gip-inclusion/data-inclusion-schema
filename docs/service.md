@@ -143,13 +143,13 @@ Exemples :
 
 ---
 
-### `types`
+### `type`
 
 
 
 
 
-Type : `array[string]`
+Type : `string`
 
 
 
@@ -159,7 +159,7 @@ Type : `array[string]`
 
 
 
-Valeurs acceptées : voir le [référentiel associé](referentiels/typologies_de_services.md)
+Valeurs acceptées : voir le [référentiel associé](referentiels/types_de_services.md)
 
 
 
