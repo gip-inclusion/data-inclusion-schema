@@ -183,10 +183,12 @@ class Service(BaseModel):
         Optional[
             list[
                 common.CodeCommune
+                | common.CodeDepartement
                 | common.CodeEPCI
                 | common.CodeRegion
                 | common.CodePays
                 | Literal["france"]
+                | Literal["99100"]  # Code pays INSEE pour la France métropolitaine
             ]
         ],
         Field(

@@ -686,6 +686,12 @@
                 "type": "string"
               },
               {
+                "maxLength": 3,
+                "minLength": 2,
+                "pattern": "^\\w{2,3}$",
+                "type": "string"
+              },
+              {
                 "maxLength": 2,
                 "minLength": 2,
                 "pattern": "^\\d{2}$",
@@ -699,6 +705,10 @@
               },
               {
                 "const": "france",
+                "type": "string"
+              },
+              {
+                "const": "99100",
                 "type": "string"
               }
             ]
