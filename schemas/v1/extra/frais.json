@@ -1,23 +1,8 @@
 [
   {
-    "description": "L’accès au lieu et/ou à ses services nécessite d’y adhérer",
-    "label": "Adhésion",
-    "value": "adhesion"
-  },
-  {
     "description": "Je peux accéder gratuitement au lieu et à ses services",
     "label": "Gratuit",
     "value": "gratuit"
-  },
-  {
-    "description": "La gratuité est conditionnée à des critères (situation familiale, convention avec un organisme social…)",
-    "label": "Gratuit sous conditions",
-    "value": "gratuit-sous-conditions"
-  },
-  {
-    "description": "Il est possible d’utiliser un Pass numérique pour accéder au lieu",
-    "label": "Accepte le pass numérique",
-    "value": "pass-numerique"
   },
   {
     "description": "L’accès au lieu et/ou à ses services est payant",

@@ -1,6 +1,7 @@
 {
   "$defs": {
     "LabelNational": {
+      "description": "Labels nationaux",
       "enum": [
         "60000-rebonds",
         "action-logement",
@@ -92,6 +93,7 @@
       "type": "string"
     },
     "TypologieStructure": {
+      "description": "Typologies de structures",
       "enum": [
         "ACI",
         "ACIPHC",
@@ -190,7 +192,7 @@
     }
   },
   "properties": {
-    "accessibilite": {
+    "accessibilite_lieu": {
       "anyOf": [
         {
           "format": "uri",
@@ -203,7 +205,11 @@
         }
       ],
       "default": null,
-      "title": "Accessibilite"
+      "description": "Lien la page Accesslibre référençant le niveau d’accessibilité du lieu de réalisation du service.\n\nDevrait être un lien vers [Accesslibre](https://acceslibre.beta.gouv.fr/).",
+      "examples": [
+        "https://acceslibre.beta.gouv.fr/app/17-la-greve-sur-mignon/a/mairie/erp/mairie-la-greve-sur-mignon/"
+      ],
+      "title": "Accessibilité du lieu"
     },
     "adresse": {
       "anyOf": [
@@ -300,14 +306,14 @@
     "description": {
       "description": "Description de la structure.\n\nEntre 50 et 2000 caractères.",
       "examples": [
-        "L’association 3027 offre un accès gratuit aux arts, à la culture et\n                au sport pour toutes et tous sans distinction et en priorité aux\n                personnes en situation de précarité et d’isolement."
+        "L’association 3027 offre un accès gratuit aux arts, à la culture et au sport pour toutes et tous sans distinction et en priorité aux personnes en situation de précarité et d’isolement."
       ],
       "maxLength": 2000,
       "minLength": 50,
       "title": "Description",
       "type": "string"
     },
-    "horaires_ouverture": {
+    "horaires_accueil": {
       "anyOf": [
         {
           "type": "string"
@@ -317,7 +323,11 @@
         }
       ],
       "default": null,
-      "title": "Horaires Ouverture"
+      "description": "Horaires d’accueil du public par la structure.\n\nUn service peut avoir un horaire d’accueil différent. Se référer aux horaires des services.\n\nDoit être au format OpenStreetMap Opening Hours.\n\n[Spécification du format OSM Opening Hours](https://wiki.openstreetmap.org/wiki/FR:Key:opening_hours).\n\n[Outil d’aide à la saisie](https://projets.pavie.info/yohours/).",
+      "examples": [
+        "Mo-Fr 08:30-12:30; PH off"
+      ],
+      "title": "Horaires d’accueil du public"
     },
     "id": {
       "title": "Id",
@@ -452,10 +462,10 @@
     }
   },
   "required": [
+    "source",
     "id",
     "nom",
     "description",
-    "source",
     "date_maj"
   ],
   "title": "Structure",

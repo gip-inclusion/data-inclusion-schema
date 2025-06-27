@@ -1,0 +1,37 @@
+[
+  {
+    "description": "Accompagnement global pour le retour à l’emploi",
+    "label": "Accompagnement",
+    "value": "accompagnement"
+  },
+  {
+    "description": "Prise en charge financière, aide ou rémunération soutenant le retour à l’emploi",
+    "label": "Aide financière",
+    "value": "aide-financiere"
+  },
+  {
+    "description": "Accéder à du matériel soutenant le retour à l’emploi (voiture, vélo, ordinateur, alimentation, etc)",
+    "label": "Aide materielle",
+    "value": "aide-materielle"
+  },
+  {
+    "description": "Groupe de travail constitué autour d’une activité, d’un thème soutenant le retour à l’emploi",
+    "label": "Atelier",
+    "value": "atelier"
+  },
+  {
+    "description": "Crédit solidaire, prêts à taux zéro pour le financement d’un projet",
+    "label": "Financement ",
+    "value": "financement"
+  },
+  {
+    "description": "Formation dispensée par des professionnels pour les bénéficiaires",
+    "label": "Formation",
+    "value": "formation"
+  },
+  {
+    "description": "Premier niveau d’information apporté par des professionnels du secteur",
+    "label": "Information",
+    "value": "information"
+  }
+]

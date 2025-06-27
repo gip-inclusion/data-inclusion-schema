@@ -1,17 +1,16 @@
 {
   "$defs": {
     "Frais": {
+      "description": "Frais",
       "enum": [
         "gratuit",
-        "gratuit-sous-conditions",
-        "payant",
-        "adhesion",
-        "pass-numerique"
+        "payant"
       ],
       "title": "Frais",
       "type": "string"
     },
     "ModeAccueil": {
+      "description": "Modes d’accueil",
       "enum": [
         "a-distance",
         "en-presentiel"
@@ -20,6 +19,7 @@
       "type": "string"
     },
     "ModeMobilisation": {
+      "description": "Modes de mobilisation",
       "enum": [
         "envoyer-un-courriel",
         "se-presenter",
@@ -30,6 +30,7 @@
       "type": "string"
     },
     "PersonneMobilisatrice": {
+      "description": "Personnes mobilisatrices",
       "enum": [
         "usagers",
         "professionnels"
@@ -37,41 +38,28 @@
       "title": "PersonneMobilisatrice",
       "type": "string"
     },
-    "Profil": {
+    "Public": {
+      "description": "Publics",
       "enum": [
-        "adultes",
-        "alternants",
-        "beneficiaires-rsa",
-        "deficience-visuelle",
-        "demandeurs-demploi",
-        "familles-enfants",
+        "actifs",
+        "beneficiaires-des-minimas-sociaux",
+        "demandeurs-emploi",
         "etudiants",
+        "familles",
         "femmes",
-        "handicaps-mentaux",
-        "handicaps-psychiques",
         "jeunes",
-        "jeunes-16-26",
-        "locataires",
-        "personnes-de-nationalite-etrangere",
         "personnes-en-situation-de-handicap",
-        "personnes-en-situation-illettrisme",
-        "personnes-handicapees",
-        "proprietaires",
-        "public-langues-etrangeres",
-        "retraites",
-        "salaries",
-        "sans-domicile-fixe",
-        "seniors-65",
-        "sortants-de-detention",
-        "surdite",
-        "victimes",
-        "tous-publics",
-        "personnes-en-situation-durgence"
+        "personnes-en-situation-durgence",
+        "personnes-en-situation-juridique-specifique",
+        "personnes-exilees",
+        "residents-qpv-frr",
+        "seniors"
       ],
-      "title": "Profil",
+      "title": "Public",
       "type": "string"
     },
     "Thematique": {
+      "description": "Thématiques",
       "enum": [
         "acces-aux-droits-et-citoyennete",
         "acces-aux-droits-et-citoyennete--accompagnement-dans-les-demarches-administratives",
@@ -226,32 +214,18 @@
       "title": "Thematique",
       "type": "string"
     },
-    "TypologieService": {
+    "TypeService": {
+      "description": "Types de services",
       "enum": [
         "accompagnement",
-        "accueil",
         "aide-financiere",
         "aide-materielle",
         "atelier",
+        "financement",
         "formation",
-        "information",
-        "numerique",
-        "autonomie",
-        "delegation",
-        "financement"
+        "information"
       ],
-      "title": "TypologieService",
-      "type": "string"
-    },
-    "ZoneDiffusionType": {
-      "enum": [
-        "commune",
-        "epci",
-        "region",
-        "departement",
-        "pays"
-      ],
-      "title": "ZoneDiffusionType",
+      "title": "TypeService",
       "type": "string"
     }
   },
@@ -322,6 +296,22 @@
       "default": null,
       "title": "Complement Adresse"
     },
+    "conditions_acces": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Conditions d’accès au service.\n\nIl peut s’agir de prérequis ou de justificatifs à présenter.",
+      "examples": [
+        "Maîtrise de la langue française à l’oral et à l’écrit"
+      ],
+      "title": "Conditions d’accès"
+    },
     "contact_nom_prenom": {
       "anyOf": [
         {
@@ -363,7 +353,7 @@
     "description": {
       "description": "Description du service.\n\nEntre 50 et 2000 caractères.\n\nCe champ est pris en compte dans le calcul du score de qualité.",
       "examples": [
-        "Cet atelier-conseil vous permet d’identifier les compétences à\n                développer pour atteindre vos objectifs d’évolution professionnelle et à\n                découvrir les différentes modalités de formation.\n\n                Durée d’une journée et inscription via votre espace France Travail."
+        "Cet atelier-conseil vous permet d’identifier les compétences à développer pour atteindre vos objectifs d’évolution professionnelle et à découvrir les différentes modalités de formation.  Durée d’une journée et inscription via votre espace France Travail."
       ],
       "maxLength": 2000,
       "minLength": 50,
@@ -373,20 +363,20 @@
     "frais": {
       "anyOf": [
         {
-          "items": {
-            "$ref": "#/$defs/Frais"
-          },
-          "type": "array",
-          "uniqueItems": true
+          "$ref": "#/$defs/Frais"
         },
         {
           "type": "null"
         }
       ],
       "default": null,
-      "title": "Frais"
+      "description": "Indique si l’accès au service est payant ou gratuit.\n\nSi le service comporte des frais, ceux-ci devraient être précisés dans le champ `frais_precisions`.",
+      "examples": [
+        "gratuit",
+        "payant"
+      ]
     },
-    "frais_autres": {
+    "frais_precisions": {
       "anyOf": [
         {
           "type": "string"
@@ -396,27 +386,32 @@
         }
       ],
       "default": null,
-      "title": "Frais Autres"
+      "description": "Précisions sur les éventuels frais pour accéder au service.",
+      "examples": [
+        "10€ pour l’adhésion annuelle",
+        "Tarif réduit pour les bénéficiaires du RSA"
+      ],
+      "title": "Précisions sur les frais"
     },
-    "id": {
-      "title": "Id",
-      "type": "string"
-    },
-    "justificatifs": {
+    "horaires_accueil": {
       "anyOf": [
         {
-          "items": {
-            "type": "string"
-          },
-          "type": "array",
-          "uniqueItems": true
+          "type": "string"
         },
         {
           "type": "null"
         }
       ],
       "default": null,
-      "title": "Justificatifs"
+      "description": "Horaires d’accueil du public pour ce service.\n\nSi le champ n’est pas renseigné, les horaires d’accueil de la structure peuvent être utilisés.\n\nDoit être au format OpenStreetMap Opening Hours.\n\n[Spécification du format OSM Opening Hours](https://wiki.openstreetmap.org/wiki/FR:Key:opening_hours).\n\n[Outil d’aide à la saisie](https://projets.pavie.info/yohours/).",
+      "examples": [
+        "Mo-Fr 08:30-12:30; PH off"
+      ],
+      "title": "Horaires d’accueil du public"
+    },
+    "id": {
+      "title": "Id",
+      "type": "string"
     },
     "latitude": {
       "anyOf": [
@@ -499,7 +494,7 @@
       "default": null,
       "description": "Précisions sur les modes de mobilisation du service.",
       "examples": [
-        "La demande est à faire depuis l’espace personnel\n                du demandeur d’emploi, rubrique « mes aides »,\n                formulaire spécifique « Aide à la mobilité »."
+        "La demande est à faire depuis l’espace personnel du demandeur d’emploi, rubrique « mes aides », formulaire spécifique « Aide à la mobilité »."
       ],
       "title": "Mobilisation Precisions"
     },
@@ -534,7 +529,7 @@
         }
       ],
       "default": null,
-      "description": "Modes de mobilisation de l’offre de service. Les valeurs proviennent d’un référentiel disponible sur notre documentation.",
+      "description": "Modes de mobilisation de l’offre de service.",
       "examples": [
         "envoyer-un-courriel"
       ],
@@ -567,12 +562,13 @@
       ],
       "title": "Nombre Semaines"
     },
-    "pre_requis": {
+    "publics": {
       "anyOf": [
         {
           "items": {
-            "type": "string"
+            "$ref": "#/$defs/Public"
           },
+          "minItems": 1,
           "type": "array",
           "uniqueItems": true
         },
@@ -581,25 +577,14 @@
         }
       ],
       "default": null,
-      "title": "Pre Requis"
-    },
-    "profils": {
-      "anyOf": [
-        {
-          "items": {
-            "$ref": "#/$defs/Profil"
-          },
-          "type": "array",
-          "uniqueItems": true
-        },
-        {
-          "type": "null"
-        }
+      "description": "Publics visés par le service.\n\nDes informations complémentaires peuvent être précisées dans le champ `publics_precisions`.",
+      "examples": [
+        "femmes",
+        "residents-qpv-frr"
       ],
-      "default": null,
-      "title": "Profils"
+      "title": "Publics"
     },
-    "profils_precisions": {
+    "publics_precisions": {
       "anyOf": [
         {
           "type": "string"
@@ -609,7 +594,11 @@
         }
       ],
       "default": null,
-      "title": "Profils Precisions"
+      "description": "Précisions sur les publics visés par le service.",
+      "examples": [
+        "Le jeune entre 15 et 18 ans."
+      ],
+      "title": "Précisions sur les publics"
     },
     "source": {
       "title": "Source",
@@ -651,21 +640,16 @@
       "default": null,
       "title": "Thematiques"
     },
-    "types": {
+    "type": {
       "anyOf": [
         {
-          "items": {
-            "$ref": "#/$defs/TypologieService"
-          },
-          "type": "array",
-          "uniqueItems": true
+          "$ref": "#/$defs/TypeService"
         },
         {
           "type": "null"
         }
       ],
-      "default": null,
-      "title": "Types"
+      "default": null
     },
     "volume_horaire_hebdomadaire": {
       "anyOf": [
@@ -684,67 +668,84 @@
       ],
       "title": "Volume Horaire Hebdomadaire"
     },
-    "zone_diffusion_code": {
+    "zone_eligibilite": {
       "anyOf": [
         {
-          "maxLength": 5,
-          "minLength": 5,
-          "pattern": "^\\w{5}$",
-          "type": "string"
-        },
-        {
-          "maxLength": 9,
-          "minLength": 9,
-          "pattern": "^\\d{9}$",
-          "type": "string"
-        },
-        {
-          "maxLength": 3,
-          "minLength": 2,
-          "pattern": "^\\w{2,3}$",
-          "type": "string"
-        },
-        {
-          "maxLength": 2,
-          "minLength": 2,
-          "pattern": "^\\d{2}$",
-          "type": "string"
+          "items": {
+            "anyOf": [
+              {
+                "maxLength": 5,
+                "minLength": 5,
+                "pattern": "^\\w{5}$",
+                "type": "string"
+              },
+              {
+                "maxLength": 9,
+                "minLength": 9,
+                "pattern": "^\\d{9}$",
+                "type": "string"
+              },
+              {
+                "maxLength": 3,
+                "minLength": 2,
+                "pattern": "^\\w{2,3}$",
+                "type": "string"
+              },
+              {
+                "maxLength": 2,
+                "minLength": 2,
+                "pattern": "^\\d{2}$",
+                "type": "string"
+              },
+              {
+                "maxLength": 5,
+                "minLength": 5,
+                "pattern": "^99[0-5]\\d{2}$",
+                "type": "string"
+              },
+              {
+                "const": "france",
+                "type": "string"
+              },
+              {
+                "const": "99100",
+                "type": "string"
+              }
+            ]
+          },
+          "minItems": 1,
+          "type": "array"
         },
         {
           "type": "null"
         }
       ],
       "default": null,
-      "title": "Zone Diffusion Code"
-    },
-    "zone_diffusion_nom": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "null"
-        }
+      "description": "Zone géographique d’éligibilité du service.\n\nContient une liste de codes issus du Code Officiel Géographique maintenu par l’INSEE.\n\nChaque code dans cette liste peut être un code commune, un code département, un code EPCI ou un code pays.\n\nSi le service est éligible à l’ensemble d’une région, lister les codes des departements de cette région.\n\nSi le service est éligible sur l’ensemble du territoire national, utiliser le code `france` (France) ou le code pays `99100`.\n\ndata·inclusion vérifie la validité des codes fournis. Les codes invalides sont supprimés de la liste.\n\n[Le Code Officiel Géographique de l’INSEE](https://www.insee.fr/fr/information/2560452).\n\n[Outil de recherche des codes](https://www.insee.fr/fr/recherche/recherche-geographique).",
+      "examples": [
+        [
+          "france"
+        ],
+        [
+          "2A",
+          "2B"
+        ],
+        [
+          "200093201"
+        ],
+        [
+          "2A",
+          "2B",
+          "200093201"
+        ]
       ],
-      "default": null,
-      "title": "Zone Diffusion Nom"
-    },
-    "zone_diffusion_type": {
-      "anyOf": [
-        {
-          "$ref": "#/$defs/ZoneDiffusionType"
-        },
-        {
-          "type": "null"
-        }
-      ],
-      "default": null
+      "title": "Zone d’éligibilité"
     }
   },
   "required": [
-    "id",
-    "structure_id",
     "source",
+    "structure_id",
+    "id",
     "nom",
     "description",
     "date_maj"

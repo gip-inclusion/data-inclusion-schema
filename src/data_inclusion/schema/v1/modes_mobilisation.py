@@ -2,6 +2,8 @@ from data_inclusion.schema.base import EnhancedEnum
 
 
 class ModeMobilisation(EnhancedEnum):
+    """Modes de mobilisation"""
+
     ENVOYER_UN_COURRIEL = (
         "envoyer-un-courriel",
         "Envoyer un courriel",
@@ -31,6 +33,8 @@ class ModeMobilisation(EnhancedEnum):
 
 
 class PersonneMobilisatrice(EnhancedEnum):
+    """Personnes mobilisatrices"""
+
     USAGERS = (
         "usagers",
         "Usagers",
