@@ -1190,8 +1190,13 @@
 </code></pre></div>
 <hr />
 <h3 id="type"><code>type</code></h3>
+<p>Type de service.</p>
+<p>Les valeurs proviennent d’un référentiel disponible sur notre documentation.</p>
 <p>Type : <code>string</code></p>
 <p>Valeurs acceptées : voir le <a href="../referentiels/types_de_services/">référentiel associé</a></p>
+<p>Exemples :</p>
+<div class="highlight"><pre><span></span><code><span class="s2">&quot;accompagnement&quot;</span>
+</code></pre></div>
 <hr />
 <h3 id="thematiques"><code>thematiques</code></h3>
 <p>Type : <code>array[string]</code></p>
@@ -1287,19 +1292,19 @@
 <hr />
 <h3 id="zone_eligibilite"><code>zone_eligibilite</code></h3>
 <p>Zone géographique d’éligibilité du service.</p>
-<p>Contient une liste de codes issus du Code Officiel Géographique maintenu par l’INSEE.</p>
+<p>Contient une liste de codes issus du <a href="https://www.insee.fr/fr/information/2560452">Code Officiel Géographique</a> maintenu par l’INSEE.</p>
 <p>Chaque code dans cette liste peut être un code commune, un code département, un code EPCI ou un code pays.</p>
 <p>Si le service est éligible à l’ensemble d’une région, lister les codes des departements de cette région.</p>
 <p>Si le service est éligible sur l’ensemble du territoire national, utiliser le code <code>france</code> (France) ou le code pays <code>99100</code>.</p>
 <p>data·inclusion vérifie la validité des codes fournis. Les codes invalides sont supprimés de la liste.</p>
-<p><a href="https://www.insee.fr/fr/information/2560452">Le Code Officiel Géographique de l’INSEE</a>.</p>
-<p><a href="https://www.insee.fr/fr/recherche/recherche-geographique">Outil de recherche des codes</a>.</p>
+<p><a href="">Le Code Officiel Géographique de l’INSEE</a>.</p>
 <p>Type : <code>array</code></p>
 <p>Exemples :</p>
-<div class="highlight"><pre><span></span><code><span class="p">[</span><span class="s2">&quot;france&quot;</span><span class="p">]</span>
+<div class="highlight"><pre><span></span><code><span class="p">[</span><span class="s2">&quot;75056&quot;</span><span class="p">]</span>
 <span class="p">[</span><span class="s2">&quot;2A&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;2B&quot;</span><span class="p">]</span>
 <span class="p">[</span><span class="s2">&quot;200093201&quot;</span><span class="p">]</span>
 <span class="p">[</span><span class="s2">&quot;2A&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;2B&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;200093201&quot;</span><span class="p">]</span>
+<span class="p">[</span><span class="s2">&quot;france&quot;</span><span class="p">]</span>
 </code></pre></div>
 <hr />
 <h3 id="contact_nom_prenom"><code>contact_nom_prenom</code></h3>
@@ -1358,8 +1363,7 @@
 <h3 id="horaires_accueil"><code>horaires_accueil</code></h3>
 <p>Horaires d’accueil du public pour ce service.</p>
 <p>Si le champ n’est pas renseigné, les horaires d’accueil de la structure peuvent être utilisés.</p>
-<p>Doit être au format OpenStreetMap Opening Hours.</p>
-<p><a href="https://wiki.openstreetmap.org/wiki/FR:Key:opening_hours">Spécification du format OSM Opening Hours</a>.</p>
+<p>Doit être au format <a href="https://wiki.openstreetmap.org/wiki/FR:Key:opening_hours">OpenStreetMap Opening Hours</a>.</p>
 <p><a href="https://projets.pavie.info/yohours/">Outil d’aide à la saisie</a>.</p>
 <p>Type : <code>string</code></p>
 <p>Exemples :</p>
