@@ -5,7 +5,7 @@ from pydantic import EmailStr, HttpUrl
 
 from data_inclusion.schema import common
 from data_inclusion.schema.base import BaseModel, Field
-from data_inclusion.schema.v0 import LabelNational, TypologieStructure
+from data_inclusion.schema.v1 import ReseauPorteur
 
 
 class Structure(BaseModel):
@@ -70,7 +70,6 @@ class Structure(BaseModel):
     complement_adresse: Optional[str] = None
     longitude: Optional[float] = None
     latitude: Optional[float] = None
-    typologie: Optional[TypologieStructure] = None
     telephone: Annotated[
         Optional[str],
         Field(
@@ -132,5 +131,13 @@ class Structure(BaseModel):
             ],
         ),
     ] = None
-    labels_nationaux: Optional[set[LabelNational]] = None
-    labels_autres: Optional[set[str]] = None
+    reseaux_porteurs: Annotated[
+        Optional[set[ReseauPorteur]],
+        Field(
+            title="Réseaux porteurs",
+            description="""
+                Réseaux, organisations ou administrations portant la structure.
+            """,
+            examples=[[ReseauPorteur.MISSION_LOCALE]],
+        ),
+    ] = None

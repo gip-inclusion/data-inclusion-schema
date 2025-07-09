@@ -7,17 +7,15 @@ from data_inclusion.schema.common import (
     CodeSiren,
     CodeSiret,
 )
-from data_inclusion.schema.v0.labels_nationaux import LabelNational
 from data_inclusion.schema.v0.modes_accueil import ModeAccueil
 from data_inclusion.schema.v0.thematiques import Thematique
-from data_inclusion.schema.v0.typologies_de_structures import TypologieStructure
-from data_inclusion.schema.v0.zones_de_diffusion import ZoneDiffusionType
 from data_inclusion.schema.v1.frais import Frais
 from data_inclusion.schema.v1.modes_mobilisation import (
     ModeMobilisation,
     PersonneMobilisatrice,
 )
 from data_inclusion.schema.v1.publics import Public
+from data_inclusion.schema.v1.reseaux_porteurs import ReseauPorteur
 from data_inclusion.schema.v1.types_de_services import TypeService
 
 # Keep those import last to avoid circular imports
@@ -33,15 +31,13 @@ __all__ = [
     "CodeSiren",
     "CodeSiret",
     "Frais",
-    "LabelNational",
     "ModeAccueil",
     "ModeMobilisation",
     "PersonneMobilisatrice",
     "Public",
+    "ReseauPorteur",
     "Service",
     "Structure",
     "Thematique",
     "TypeService",
-    "TypologieStructure",
-    "ZoneDiffusionType",
 ]
