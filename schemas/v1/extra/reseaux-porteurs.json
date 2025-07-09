@@ -1,0 +1,492 @@
+[
+  {
+    "description": null,
+    "label": "60 000 Rebonds",
+    "value": "60000-rebonds"
+  },
+  {
+    "description": null,
+    "label": "Action Logement",
+    "value": "action-logement"
+  },
+  {
+    "description": null,
+    "label": "Association pour le Droit à l’Initiative Économique",
+    "value": "adie"
+  },
+  {
+    "description": null,
+    "label": "Agence Nationale pour la Formation Professionnelle des Adultes",
+    "value": "afpa"
+  },
+  {
+    "description": null,
+    "label": "Agefiph",
+    "value": "agefiph"
+  },
+  {
+    "description": null,
+    "label": "Aidants Connect",
+    "value": "aidants-connect"
+  },
+  {
+    "description": null,
+    "label": "Alliance Villes Emploi",
+    "value": "alliance-villes-emploi"
+  },
+  {
+    "description": null,
+    "label": "Agence Nationale de Lutte Contre l’Illettrisme",
+    "value": "anlci"
+  },
+  {
+    "description": null,
+    "label": "Apprentis d’Auteuil",
+    "value": "apprentis-dauteuil"
+  },
+  {
+    "description": null,
+    "label": "Aide Sociale à l’Enfance",
+    "value": "ase"
+  },
+  {
+    "description": null,
+    "label": "Banques Alimentaires",
+    "value": "banques-alimentaires"
+  },
+  {
+    "description": null,
+    "label": "Centres d’Accueil et d’Accompagnement à la Réduction de Risques pour Usagers de Drogues",
+    "value": "caarud"
+  },
+  {
+    "description": null,
+    "label": "Centres d’Accueil de Demandeurs d’Asile",
+    "value": "cada"
+  },
+  {
+    "description": null,
+    "label": "Caisse d’Allocations Familiales",
+    "value": "caf"
+  },
+  {
+    "description": null,
+    "label": "Campus Connecté",
+    "value": "campus-connecte"
+  },
+  {
+    "description": null,
+    "label": "CAP Emploi - Réseau CHEOPS",
+    "value": "cap-emploi-reseau-cheops"
+  },
+  {
+    "description": null,
+    "label": "Centres d’Adaptation à la Vie Active",
+    "value": "cava"
+  },
+  {
+    "description": "Les Chambres de Commerce et d’Industrie (CCI), les Chambres des Métiers et de l’Artisanat (CMA) et les Chambres d’Agriculture (CA).",
+    "label": "Chambres Consulaires",
+    "value": "chambres-consulaires"
+  },
+  {
+    "description": null,
+    "label": "Réseau Chantier École",
+    "value": "chantier-ecole"
+  },
+  {
+    "description": null,
+    "label": "Centres d’Hébergement et de Réinsertion Sociale",
+    "value": "chrs"
+  },
+  {
+    "description": null,
+    "label": "Centres d’Hébergement d’Urgence",
+    "value": "chu"
+  },
+  {
+    "description": null,
+    "label": "Centres d’Information sur les Droits des Femmes et des Familles",
+    "value": "cidff"
+  },
+  {
+    "description": null,
+    "label": "Centres Médico-Psychologiques",
+    "value": "cmp"
+  },
+  {
+    "description": null,
+    "label": "Centres Médico-Sociaux",
+    "value": "cms"
+  },
+  {
+    "description": null,
+    "label": "Conservatoire National des Arts et Métiers",
+    "value": "cnam"
+  },
+  {
+    "description": null,
+    "label": "Collectif Emploi",
+    "value": "collectif-emploi"
+  },
+  {
+    "description": null,
+    "label": "Communes, mairies, communautés de communes, etc.",
+    "value": "communes"
+  },
+  {
+    "description": null,
+    "label": "Conseillers Numériques",
+    "value": "conseillers-numeriques"
+  },
+  {
+    "description": null,
+    "label": "Fédération COORACE",
+    "value": "coorace"
+  },
+  {
+    "description": null,
+    "label": "Caisses Primaires d’Assurance Maladie",
+    "value": "cpam"
+  },
+  {
+    "description": null,
+    "label": "Centres Provisoires d’Hébergement",
+    "value": "cph"
+  },
+  {
+    "description": null,
+    "label": "Crèches à Vocation d’Insertion Professionnelle",
+    "value": "creches-avip"
+  },
+  {
+    "description": null,
+    "label": "CREPI",
+    "value": "crepi"
+  },
+  {
+    "description": null,
+    "label": "Fédération Française des Associations CRÉSUS",
+    "value": "cresus"
+  },
+  {
+    "description": null,
+    "label": "Croix-Rouge",
+    "value": "croix-rouge"
+  },
+  {
+    "description": null,
+    "label": "Centres de Soins, d’Accompagnement et de Prévention en Addictologie",
+    "value": "csapa"
+  },
+  {
+    "description": "Les Conseils Départementaux (CD), les Maisons Départementales pour les Personnes Handicapées (MDPH), les Unions Départementales des Associations Familiales (UDAF), les Centres Départementaux d’Action Sociale (CDAS), etc.",
+    "label": "Départements et Services Départementaux",
+    "value": "departements"
+  },
+  {
+    "description": null,
+    "label": "DUO for a JOB",
+    "value": "duo-for-a-job"
+  },
+  {
+    "description": null,
+    "label": "Écoles de la 2ᵉ Chance",
+    "value": "ecoles-de-la-deuxieme-chance"
+  },
+  {
+    "description": null,
+    "label": "Association EGEE",
+    "value": "egee"
+  },
+  {
+    "description": null,
+    "label": "Emmaüs",
+    "value": "emmaus"
+  },
+  {
+    "description": null,
+    "label": "EPIDE",
+    "value": "epide"
+  },
+  {
+    "description": null,
+    "label": "Espaces Publics Numériques",
+    "value": "espaces-publics-numeriques"
+  },
+  {
+    "description": null,
+    "label": "Expérimentation Territoriale contre le Chômage de Longue Durée",
+    "value": "etcld"
+  },
+  {
+    "description": null,
+    "label": "Fabrique de Territoire",
+    "value": "fabrique-de-territoire"
+  },
+  {
+    "description": null,
+    "label": "Fondation FACE",
+    "value": "face"
+  },
+  {
+    "description": null,
+    "label": "Fédération des Centres Sociaux et Socioculturels de France",
+    "value": "fcsf"
+  },
+  {
+    "description": null,
+    "label": "Fédération des Acteurs de la Solidarité",
+    "value": "federation-des-acteurs-de-la-solidarite"
+  },
+  {
+    "description": null,
+    "label": "Fédération Professionnelle pour les Femmes",
+    "value": "federation-professionnelle-femmes"
+  },
+  {
+    "description": null,
+    "label": "France Active",
+    "value": "france-active"
+  },
+  {
+    "description": null,
+    "label": "France Service",
+    "value": "france-service"
+  },
+  {
+    "description": null,
+    "label": "France Travail",
+    "value": "france-travail"
+  },
+  {
+    "description": null,
+    "label": "French Tech",
+    "value": "french-tech"
+  },
+  {
+    "description": null,
+    "label": "GEIQ",
+    "value": "geiq"
+  },
+  {
+    "description": null,
+    "label": "Grandes Écoles du Numérique",
+    "value": "grandes-ecoles-du-numerique"
+  },
+  {
+    "description": null,
+    "label": "Hébergement d’Urgence pour Demandeurs d’Asile",
+    "value": "huda"
+  },
+  {
+    "description": null,
+    "label": "Association H’UP",
+    "value": "hup"
+  },
+  {
+    "description": null,
+    "label": "INAÉ Nouvelle Aquitaine",
+    "value": "inae"
+  },
+  {
+    "description": null,
+    "label": "Initiative France",
+    "value": "initiative-france"
+  },
+  {
+    "description": null,
+    "label": "Association Konexio",
+    "value": "konexio"
+  },
+  {
+    "description": null,
+    "label": "La Cravate Solidaire",
+    "value": "la-cravate-solidaire"
+  },
+  {
+    "description": null,
+    "label": "La Poste",
+    "value": "la-poste"
+  },
+  {
+    "description": null,
+    "label": "Les Premières",
+    "value": "les-premieres"
+  },
+  {
+    "description": null,
+    "label": "Maisons de l’Emploi",
+    "value": "maisons-de-l-emploi"
+  },
+  {
+    "description": "Les Maisons Départementales des Solidarités sont des services départementaux. Par conséquent, le réseau `departements` devrait être également défini pour ces structures.",
+    "label": "Maisons Départementales des Solidarités (MDS)",
+    "value": "maisons-des-solidarites"
+  },
+  {
+    "description": null,
+    "label": "Mission Locale",
+    "value": "mission-locale"
+  },
+  {
+    "description": null,
+    "label": "Maisons des Jeunes et de la Culture",
+    "value": "mjc"
+  },
+  {
+    "description": null,
+    "label": "Mob’In",
+    "value": "mobin"
+  },
+  {
+    "description": null,
+    "label": "Maisons de Services Au Public",
+    "value": "msap"
+  },
+  {
+    "description": null,
+    "label": "Mutualité Sociale Agricole",
+    "value": "mutualite-sociale-agricole"
+  },
+  {
+    "description": null,
+    "label": "Association NQT",
+    "value": "nqt"
+  },
+  {
+    "description": null,
+    "label": "Point Information Médiation Multi Services",
+    "value": "pimms-mediation"
+  },
+  {
+    "description": null,
+    "label": "Protection Judiciaire de la Jeunesse",
+    "value": "pjj"
+  },
+  {
+    "description": null,
+    "label": "Plans Locaux pour l’Insertion et l’Emploi",
+    "value": "plie"
+  },
+  {
+    "description": null,
+    "label": "Points Conseil Budget",
+    "value": "points-conseil-budget"
+  },
+  {
+    "description": null,
+    "label": "Points Justice",
+    "value": "points-justice"
+  },
+  {
+    "description": null,
+    "label": "Positive Planet",
+    "value": "positive-planet"
+  },
+  {
+    "description": "Les Conseils Régionaux (CR), les préfectures, les Directions Régionales de l’Économie, de l’Emploi, du Travail et desSolidarités (DREETS), etc.",
+    "label": "Régions, Préfectures et services régionaux",
+    "value": "regions"
+  },
+  {
+    "description": null,
+    "label": "Réseau APP",
+    "value": "reseau-app"
+  },
+  {
+    "description": null,
+    "label": "Réseau BGE",
+    "value": "reseau-bge"
+  },
+  {
+    "description": null,
+    "label": "Réseau Entreprendre",
+    "value": "reseau-entreprendre"
+  },
+  {
+    "description": null,
+    "label": "Réseau Information Jeunesse",
+    "value": "reseau-information-jeunesse"
+  },
+  {
+    "description": null,
+    "label": "Résidences - Foyers Jeunes Travailleurs",
+    "value": "residences-fjt"
+  },
+  {
+    "description": null,
+    "label": "Ressourceries",
+    "value": "ressourceries"
+  },
+  {
+    "description": null,
+    "label": "Restos du Coeur",
+    "value": "restos-du-coeur"
+  },
+  {
+    "description": null,
+    "label": "Secours Populaire",
+    "value": "secours-populaire"
+  },
+  {
+    "description": null,
+    "label": "Structures d’Insertion par l’Activité Économique",
+    "value": "siae"
+  },
+  {
+    "description": null,
+    "label": "Services Intégrés d’Accueil et d’Orientation",
+    "value": "siao"
+  },
+  {
+    "description": null,
+    "label": "Simplon",
+    "value": "simplon"
+  },
+  {
+    "description": null,
+    "label": "Association SINGA",
+    "value": "singa"
+  },
+  {
+    "description": null,
+    "label": "Solidarité Nouvelle Face au Chômage",
+    "value": "snc"
+  },
+  {
+    "description": null,
+    "label": "Services Pénitentiaires d’Insertion et de Probation",
+    "value": "spip"
+  },
+  {
+    "description": null,
+    "label": "Tous Tes Possibles",
+    "value": "tous-tes-possibles"
+  },
+  {
+    "description": null,
+    "label": "Union Nationale de l’Aide aux Familles",
+    "value": "unaf"
+  },
+  {
+    "description": "Les Centres Communaux d’Action Sociale (CCAS) et les Centres Intercommunaux d’Action Sociale (CIAS).",
+    "label": "Union Nationale des Centres Communaux d’Action Sociale",
+    "value": "unccas"
+  },
+  {
+    "description": null,
+    "label": "Union Nationale des Entreprises Adaptées",
+    "value": "unea"
+  },
+  {
+    "description": null,
+    "label": "UnisCité",
+    "value": "unis-cite"
+  },
+  {
+    "description": null,
+    "label": "Wimoov",
+    "value": "wimoov"
+  }
+]
