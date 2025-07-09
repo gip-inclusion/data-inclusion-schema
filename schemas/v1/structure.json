@@ -1,7 +1,7 @@
 {
   "$defs": {
-    "LabelNational": {
-      "description": "Labels nationaux",
+    "ReseauPorteur": {
+      "description": "Réseaux porteurs",
       "enum": [
         "60000-rebonds",
         "action-logement",
@@ -11,183 +11,98 @@
         "aidants-connect",
         "alliance-villes-emploi",
         "anlci",
-        "apec",
-        "apels",
         "apprentis-dauteuil",
-        "aptic",
+        "ase",
         "banques-alimentaires",
-        "bge",
+        "caarud",
+        "cada",
         "caf",
         "campus-connecte",
-        "cci",
-        "chantier-ecole",
         "cap-emploi-reseau-cheops",
+        "cava",
+        "chambres-consulaires",
+        "chantier-ecole",
+        "chrs",
+        "chu",
         "cidff",
+        "cmp",
+        "cms",
         "cnam",
         "collectif-emploi",
-        "conseiller-numerique",
+        "communes",
         "coorace",
+        "conseillers-numeriques",
+        "cpam",
+        "cph",
+        "creches-avip",
         "crepi",
         "cresus",
         "croix-rouge",
-        "dihal",
+        "csapa",
+        "departements",
         "duo-for-a-job",
         "ecoles-de-la-deuxieme-chance",
         "egee",
         "emmaus",
-        "envie",
         "epide",
-        "espace-emploi-agric-arrco",
+        "espaces-publics-numeriques",
         "etcld",
         "fabrique-de-territoire",
         "face",
-        "fede-pro-fem",
+        "fcsf",
+        "federation-professionnelle-femmes",
         "federation-des-acteurs-de-la-solidarite",
-        "federation-des-entreprises-dinsertion",
-        "force-femmes",
         "france-active",
         "france-service",
         "france-travail",
         "french-tech",
         "geiq",
         "grandes-ecoles-du-numerique",
-        "grand-test-couveuse-dentreprise",
+        "huda",
         "hup",
         "inae",
         "initiative-france",
         "konexio",
         "la-cravate-solidaire",
-        "la-ressourcerie",
+        "la-poste",
         "les-premieres",
-        "linklusion",
-        "maisons-de-lemploi",
-        "mdph",
+        "maisons-de-l-emploi",
+        "maisons-des-solidarites",
         "mission-locale",
+        "mjc",
         "mobin",
+        "msap",
+        "mutualite-sociale-agricole",
         "nqt",
-        "point-conseil-budget",
-        "point-justice",
+        "pimms-mediation",
+        "pjj",
+        "plie",
+        "points-conseil-budget",
+        "points-justice",
         "positive-planet",
-        "proxite",
+        "regions",
         "reseau-app",
+        "reseau-bge",
         "reseau-entreprendre",
+        "reseau-information-jeunesse",
+        "residences-fjt",
         "ressourceries",
         "restos-du-coeur",
-        "scconseil",
         "secours-populaire",
+        "siae",
         "siao",
         "simplon",
-        "sinca",
+        "singa",
         "snc",
-        "sport-dans-la-ville",
-        "tous-tes-possible",
-        "tzcld",
+        "spip",
+        "tous-tes-possibles",
         "unaf",
-        "unai",
         "unccas",
         "unea",
         "unis-cite",
         "wimoov"
       ],
-      "title": "LabelNational",
-      "type": "string"
-    },
-    "TypologieStructure": {
-      "description": "Typologies de structures",
-      "enum": [
-        "ACI",
-        "ACIPHC",
-        "AFPA",
-        "AI",
-        "ASE",
-        "ASSO",
-        "ASSO_CHOMEUR",
-        "Autre",
-        "AVIP",
-        "BIB",
-        "CAARUD",
-        "CADA",
-        "CAF",
-        "CAP_EMPLOI",
-        "CAVA",
-        "CC",
-        "CCAS",
-        "CCONS",
-        "CD",
-        "CDAS",
-        "CFP",
-        "CHRS",
-        "CHU",
-        "CIAS",
-        "CIDFF",
-        "CITMET",
-        "CMP",
-        "CMS",
-        "CPAM",
-        "CPH",
-        "CS",
-        "CSAPA",
-        "CSC",
-        "DEETS",
-        "DEPT",
-        "DIPLP",
-        "E2C",
-        "EA",
-        "EATT",
-        "EI",
-        "EITI",
-        "ENM",
-        "EPCI",
-        "EPI",
-        "EPIDE",
-        "EPN",
-        "ES",
-        "ESS",
-        "ETABL_PRI",
-        "ETABL_PUB",
-        "ETAT",
-        "ETTI",
-        "EVS",
-        "FABLAB",
-        "FAIS",
-        "FT",
-        "GEIQ",
-        "HUDA",
-        "LA_POSTE",
-        "MDE",
-        "MDEF",
-        "MDPH",
-        "MDS",
-        "MJC",
-        "ML",
-        "MQ",
-        "MSA",
-        "MSAP",
-        "MUNI",
-        "OACAS",
-        "ODC",
-        "OF",
-        "OIL",
-        "OPCS",
-        "PAD",
-        "PENSION",
-        "PI",
-        "PIJ_BIJ",
-        "PIMMS",
-        "PJJ",
-        "PLIE",
-        "PREF",
-        "PREVENTION",
-        "REG",
-        "RESSOURCERIE",
-        "RFS",
-        "RS_FJT",
-        "SCP",
-        "SPIP",
-        "TIERS_LIEUX",
-        "UDAF"
-      ],
-      "title": "TypologieStructure",
+      "title": "ReseauPorteur",
       "type": "string"
     }
   },
@@ -333,38 +248,6 @@
       "title": "Id",
       "type": "string"
     },
-    "labels_autres": {
-      "anyOf": [
-        {
-          "items": {
-            "type": "string"
-          },
-          "type": "array",
-          "uniqueItems": true
-        },
-        {
-          "type": "null"
-        }
-      ],
-      "default": null,
-      "title": "Labels Autres"
-    },
-    "labels_nationaux": {
-      "anyOf": [
-        {
-          "items": {
-            "$ref": "#/$defs/LabelNational"
-          },
-          "type": "array",
-          "uniqueItems": true
-        },
-        {
-          "type": "null"
-        }
-      ],
-      "default": null,
-      "title": "Labels Nationaux"
-    },
     "latitude": {
       "anyOf": [
         {
@@ -398,6 +281,28 @@
       "minLength": 3,
       "title": "Nom",
       "type": "string"
+    },
+    "reseaux_porteurs": {
+      "anyOf": [
+        {
+          "items": {
+            "$ref": "#/$defs/ReseauPorteur"
+          },
+          "type": "array",
+          "uniqueItems": true
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Réseaux, organisations ou administrations portant la structure.",
+      "examples": [
+        [
+          "mission-locale"
+        ]
+      ],
+      "title": "Réseaux porteurs"
     },
     "siret": {
       "anyOf": [
@@ -448,17 +353,6 @@
         "+33123456789"
       ],
       "title": "Téléphone"
-    },
-    "typologie": {
-      "anyOf": [
-        {
-          "$ref": "#/$defs/TypologieStructure"
-        },
-        {
-          "type": "null"
-        }
-      ],
-      "default": null
     }
   },
   "required": [

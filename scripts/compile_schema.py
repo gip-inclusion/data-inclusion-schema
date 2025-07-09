@@ -23,12 +23,11 @@ def compile_schema(version: str):
 
     ENUM_FILENAMES = {
         schema.Frais: "frais",
-        schema.LabelNational: "labels_nationaux",
         schema.ModeAccueil: "modes_accueil",
         schema.Thematique: "thematiques",
-        schema.TypologieStructure: "typologies_de_structures",
     }
     if version == "v0":
+        ENUM_FILENAMES[schema.LabelNational] = "labels_nationaux"
         ENUM_FILENAMES[schema.ModeOrientationAccompagnateur] = (
             "modes_orientation_accompagnateur"
         )
@@ -37,11 +36,13 @@ def compile_schema(version: str):
         )
         ENUM_FILENAMES[schema.Profil] = "profils"
         ENUM_FILENAMES[schema.TypologieService] = "typologies_de_services"
+        ENUM_FILENAMES[schema.TypologieStructure] = "typologies_de_structures"
         ENUM_FILENAMES[schema.ZoneDiffusionType] = "zones_de_diffusion_types"
     elif version == "v1":
         ENUM_FILENAMES[schema.ModeMobilisation] = "modes_mobilisation"
         ENUM_FILENAMES[schema.PersonneMobilisatrice] = "personnes_mobilisatrices"
         ENUM_FILENAMES[schema.Public] = "publics"
+        ENUM_FILENAMES[schema.ReseauPorteur] = "reseaux_porteurs"
         ENUM_FILENAMES[schema.TypeService] = "types_de_services"
 
     SCHEMAS_DIR.mkdir(exist_ok=True)
