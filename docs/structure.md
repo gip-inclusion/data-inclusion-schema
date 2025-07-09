@@ -274,28 +274,6 @@ Type : `number`
 
 ---
 
-### `typologie`
-
-
-
-
-
-Type : `string`
-
-
-
-
-
-
-
-
-
-Valeurs acceptées : voir le [référentiel associé](referentiels/typologies_de_structures.md)
-
-
-
----
-
 ### `telephone`
 
 Numéro de téléphone à utiliser pour obtenir des informations complémentaires sur la structure.
@@ -431,35 +409,13 @@ Exemples :
 
 ---
 
-### `labels_nationaux`
+### `reseau_porteur`
+
+Réseau, organisation ou administration portant la structure.
 
 
 
-
-
-Type : `array[string]`
-
-
-
-
-
-
-
-
-
-Valeurs acceptées : voir le [référentiel associé](referentiels/labels_nationaux.md)
-
-
-
----
-
-### `labels_autres`
-
-
-
-
-
-Type : `array`
+Type : `string`
 
 
 
@@ -469,5 +425,15 @@ Type : `array`
 
 
 
+Valeurs acceptées : voir le [référentiel associé](referentiels/reseaux_porteurs.md)
+
+
+
+Exemples :
+
+```json
+"mission-locale"
+
+```
 
 ---
