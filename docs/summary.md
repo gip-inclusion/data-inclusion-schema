@@ -3,11 +3,10 @@
 * [Service](service.md)
 * Référentiels
     * [Frais](referentiels/frais.md)
-    * [Labels nationaux](referentiels/labels_nationaux.md)
     * [Modes d’accueil](referentiels/modes_accueil.md)
     * [Thématiques](referentiels/thematiques.md)
-    * [Typologies de structures](referentiels/typologies_de_structures.md)
     * [Modes de mobilisation](referentiels/modes_mobilisation.md)
     * [Personnes mobilisatrices](referentiels/personnes_mobilisatrices.md)
     * [Publics](referentiels/publics.md)
+    * [Réseaux porteurs](referentiels/reseaux_porteurs.md)
     * [Types de services](referentiels/types_de_services.md)
