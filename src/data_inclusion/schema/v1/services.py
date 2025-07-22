@@ -20,9 +20,39 @@ class Service(BaseModel):
     #####################
     ### Champs requis ###
     #####################
-    source: str
-    structure_id: str
-    id: str
+    source: Annotated[
+        str,
+        Field(
+            description="""
+            Identifiant du producteur original de la donnée.
+            """,
+            examples=["emplois-de-linclusion", "france-travail", "dora"],
+        ),
+    ]
+    structure_id: Annotated[
+        str,
+        Field(
+            description="""
+            Identifiant unique de la structure rattachée au service.
+            """,
+            title="ID structure",
+            examples=["dora--42", "cd35--mjc-13-grandjour"],
+        ),
+    ]
+    id: Annotated[
+        str,
+        Field(
+            description="""
+            Identifiant unique du service, obtenu par une combinaison de l’identifiant
+            du producteur et de l’identifiant du service (fourni par le producteur).
+            """,
+            examples=[
+                "emplois-de-linclusion--17",
+                "france-travail--ccas-provence-alpes-cote-dazur-2024-01-01",
+                "dora--AidantsConnect:2024-47BXY",
+            ],
+        ),
+    ]
     nom: Annotated[
         str,
         Field(
