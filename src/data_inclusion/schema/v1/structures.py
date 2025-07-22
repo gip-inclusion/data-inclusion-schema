@@ -12,8 +12,44 @@ class Structure(BaseModel):
     #####################
     ### Champs requis ###
     #####################
-    source: str
-    id: str
+    source: Annotated[
+        str,
+        Field(
+            description="""
+            Identifiant du producteur original de la donnée.
+            """,
+            examples=["emplois-de-linclusion", "france-travail", "dora"],
+        ),
+    ]
+    original_id: Annotated[
+        str,
+        Field(
+            description="""
+            Identifiant de la structure, fourni par le producteur.
+            """,
+            title="ID original du service",
+            examples=[
+                "17",
+                "ccas-provence-alpes-cote-dazur-2024-01-01",
+                "AidantsConnect:2024-47BXY",
+            ],
+        ),
+    ]
+    id: Annotated[
+        str,
+        Field(
+            description="""
+            Identifiant unique de la structure, obtenu par une combinaison de
+            l’identifiant producteur et de l’identifiant de la structure
+            (fourni par le producteur).
+            """,
+            examples=[
+                "emplois-de-linclusion--17",
+                "france-travail--ccas-provence-alpes-cote-dazur-2024-01-01",
+                "dora--AidantsConnect:2024-47BXY",
+            ],
+        ),
+    ]
     nom: Annotated[
         str,
         Field(
