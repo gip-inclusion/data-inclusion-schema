@@ -4,7 +4,7 @@
 
 ### `source` *
 
-
+Identifiant du producteur original de la donnée.
 
 
 
@@ -18,12 +18,21 @@ Type : `string`
 
 
 
+
+Exemples :
+
+```json
+"emplois-de-linclusion"
+"france-travail"
+"dora"
+
+```
 
 ---
 
 ### `structure_id` *
 
-
+Identifiant unique de la structure rattachée au service.
 
 
 
@@ -37,12 +46,20 @@ Type : `string`
 
 
 
+
+Exemples :
+
+```json
+"dora--42"
+"cd35--mjc-13-grandjour"
+
+```
 
 ---
 
 ### `id` *
 
-
+Identifiant unique du service, obtenu par une combinaison de l’identifiant du producteur et de l’identifiant du service (fourni par le producteur).
 
 
 
@@ -56,6 +73,15 @@ Type : `string`
 
 
 
+
+Exemples :
+
+```json
+"emplois-de-linclusion--17"
+"france-travail--ccas-provence-alpes-cote-dazur-2024-01-01"
+"dora--AidantsConnect:2024-47BXY"
+
+```
 
 ---
 

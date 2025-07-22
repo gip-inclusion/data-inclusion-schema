@@ -35,6 +35,7 @@
 * renommage du champ service `frais_autres` en `frais_precisions`
 * renommage du champ service `recurrence` en `horaires_accueil`
 * renommage du champ structure `horaires_ouverture` en `horaires_accueil`
+* transformation du champ "id" pour en faire la clé primaire unique de chaque service & structure
 
 ### Suppressions
 
