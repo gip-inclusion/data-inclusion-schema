@@ -20,6 +20,7 @@ def service_factory(**kwargs):
     defaults = {
         "id": "1",
         "structure_id": "2",
+        "original_id": "3",
         "nom": "foo",
         "date_maj": pendulum.today(),
         "source": "3",

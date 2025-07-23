@@ -4,7 +4,7 @@
 
 ### `source` *
 
-
+Identifiant du producteur original de la donnée.
 
 
 
@@ -18,12 +18,49 @@ Type : `string`
 
 
 
+
+Exemples :
+
+```json
+"emplois-de-linclusion"
+"france-travail"
+"dora"
+
+```
+
+---
+
+### `original_id` *
+
+Identifiant de la structure, fourni par le producteur.
+
+
+
+Type : `string`
+
+
+
+
+
+
+
+
+
+
+Exemples :
+
+```json
+"17"
+"ccas-provence-alpes-cote-dazur-2024-01-01"
+"AidantsConnect:2024-47BXY"
+
+```
 
 ---
 
 ### `id` *
 
-
+Identifiant unique de la structure, obtenu par une combinaison de l’identifiant producteur et de l’identifiant de la structure (fourni par le producteur).
 
 
 
@@ -37,6 +74,15 @@ Type : `string`
 
 
 
+
+Exemples :
+
+```json
+"emplois-de-linclusion--17"
+"france-travail--ccas-provence-alpes-cote-dazur-2024-01-01"
+"dora--AidantsConnect:2024-47BXY"
+
+```
 
 ---
 
@@ -274,28 +320,6 @@ Type : `number`
 
 ---
 
-### `typologie`
-
-
-
-
-
-Type : `string`
-
-
-
-
-
-
-
-
-
-Valeurs acceptées : voir le [référentiel associé](referentiels/typologies_de_structures.md)
-
-
-
----
-
 ### `telephone`
 
 Numéro de téléphone à utiliser pour obtenir des informations complémentaires sur la structure.
@@ -431,9 +455,9 @@ Exemples :
 
 ---
 
-### `labels_nationaux`
+### `reseaux_porteurs`
 
-
+Réseaux, organisations ou administrations portant la structure.
 
 
 
@@ -447,27 +471,15 @@ Type : `array[string]`
 
 
 
-Valeurs acceptées : voir le [référentiel associé](referentiels/labels_nationaux.md)
+Valeurs acceptées : voir le [référentiel associé](referentiels/reseaux_porteurs.md)
 
 
 
----
+Exemples :
 
-### `labels_autres`
+```json
+["mission-locale"]
 
-
-
-
-
-Type : `array`
-
-
-
-
-
-
-
-
-
+```
 
 ---
