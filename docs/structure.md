@@ -124,7 +124,13 @@ Exemples :
 
 ### `siret`
 
+Un numéro SIRET associé à la structure.
 
+Lorsque la structure correspond à un établissement dans la base sirene, le numéro SIRET doit être celui de cet établissement.
+
+Si la structure ne correspond pas strictement à un établissement de la base sirene, le numéro SIRET du siège social peut être utilisé.
+
+data·inclusion vérifie régulièrement la validité des numéros SIRET fournis. Les SIRETs inconnus sont retirés. Lorsque l’établissement associé à un SIRET a fait l’objet d’une succession (d’après la base sirene), data·inclusion remplace ce SIRET par celui de l’établissement successeur. Lorsque l’établissement associé est déclaré fermé et sans successeur, data·inclusion retire la structure.
 
 
 
@@ -138,6 +144,13 @@ Regex : `^\d{14}$`
 
 
 
+
+Exemples :
+
+```json
+"13003013300016"
+
+```
 
 ---
 
