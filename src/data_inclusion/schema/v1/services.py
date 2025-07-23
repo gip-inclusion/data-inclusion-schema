@@ -164,10 +164,9 @@ class Service(BaseModel):
                 de préférence au format E.164.
             """,
             examples=["+33123456789"],
-            default=None,
             title="Téléphone",
         ),
-    ]
+    ] = None
     courriel: Annotated[
         Optional[EmailStr],
         Field(
@@ -183,9 +182,8 @@ class Service(BaseModel):
                 Si non conforme ou destinataire inexistant, suppression de la valeur.
             """,
             examples=["exemple@inclusion.gouv.fr"],
-            default=None,
         ),
-    ]
+    ] = None
     modes_accueil: Optional[set[ModeAccueil]] = None
     zone_eligibilite: Annotated[
         Optional[
@@ -195,7 +193,6 @@ class Service(BaseModel):
                 | common.CodeEPCI
                 | common.CodePays
                 | Literal["france"]
-                | Literal["99100"]  # Code pays INSEE pour la France métropolitaine
             ]
         ],
         Field(
@@ -249,7 +246,7 @@ class Service(BaseModel):
             examples=[
                 "envoyer-un-courriel",
             ],
-            min_items=1,
+            min_length=1,
         ),
     ] = None
     mobilisable_par: Annotated[
@@ -263,7 +260,7 @@ class Service(BaseModel):
                 ["professionnels"],
                 ["usagers"],
             ],
-            min_items=1,
+            min_length=1,
         ),
     ] = None
     mobilisation_precisions: Annotated[
