@@ -62,7 +62,25 @@ class Structure(BaseModel):
     #########################
     ### Champs optionnels ###
     #########################
-    siret: Optional[common.CodeSiret] = None
+    siret: Annotated[
+        Optional[common.CodeSiret],
+        Field(
+            title="Numéro SIRET",
+            description="""
+                Un numéro SIRET associé à la structure.
+
+                Lorsque la structure correspond à un établissement dans la base sirene,
+                le numéro SIRET doit être celui de cet établissement.
+
+                Si la structure ne correspond pas strictement à un établissement de la
+                base sirene, le numéro SIRET du siège social peut être utilisé.
+
+                data·inclusion vérifie régulièrement la validité des numéros SIRET
+                fournis.
+            """,
+            examples=["13003013300016"],
+        ),
+    ] = None
     commune: Optional[str] = None
     code_postal: Optional[common.CodePostal] = None
     code_insee: Optional[common.CodeCommune] = None
@@ -81,10 +99,9 @@ class Structure(BaseModel):
                 de préfèrence au format E.164.
             """,
             examples=["+33123456789"],
-            default=None,
             title="Téléphone",
         ),
-    ]
+    ] = None
     courriel: Annotated[
         Optional[EmailStr],
         Field(
@@ -94,10 +111,9 @@ class Structure(BaseModel):
 
                 Doit suivre le format de la RFC 5322.
             """,
-            default=None,
             examples=["exemple@inclusion.gouv.fr"],
         ),
-    ]
+    ] = None
     site_web: Optional[HttpUrl] = None
     horaires_accueil: Annotated[
         Optional[str],
