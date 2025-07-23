@@ -81,10 +81,9 @@ class Structure(BaseModel):
                 de préfèrence au format E.164.
             """,
             examples=["+33123456789"],
-            default=None,
             title="Téléphone",
         ),
-    ]
+    ] = None
     courriel: Annotated[
         Optional[EmailStr],
         Field(
@@ -94,10 +93,9 @@ class Structure(BaseModel):
 
                 Doit suivre le format de la RFC 5322.
             """,
-            default=None,
             examples=["exemple@inclusion.gouv.fr"],
         ),
-    ]
+    ] = None
     site_web: Optional[HttpUrl] = None
     horaires_accueil: Annotated[
         Optional[str],
