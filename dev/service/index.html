@@ -281,6 +281,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#original_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      original_id *
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#structure_id" class="md-nav__link">
     <span class="md-ellipsis">
       structure_id *
@@ -830,6 +839,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#original_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      original_id *
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#structure_id" class="md-nav__link">
     <span class="md-ellipsis">
       structure_id *
@@ -1133,13 +1151,39 @@
 <p class="admonition-title">Les champs marqués d’une astérisque (*) sont obligatoires.</p>
 </div>
 <h3 id="source"><code>source</code> *</h3>
+<p>Identifiant du producteur original de la donnée.</p>
 <p>Type : <code>string</code></p>
+<p>Exemples :</p>
+<div class="highlight"><pre><span></span><code><span class="s2">&quot;emplois-de-linclusion&quot;</span>
+<span class="s2">&quot;france-travail&quot;</span>
+<span class="s2">&quot;dora&quot;</span>
+</code></pre></div>
+<hr />
+<h3 id="original_id"><code>original_id</code> *</h3>
+<p>Identifiant du service, fourni par le producteur.</p>
+<p>Type : <code>string</code></p>
+<p>Exemples :</p>
+<div class="highlight"><pre><span></span><code><span class="s2">&quot;17&quot;</span>
+<span class="s2">&quot;ccas-provence-alpes-cote-dazur-2024-01-01&quot;</span>
+<span class="s2">&quot;AidantsConnect:2024-47BXY&quot;</span>
+</code></pre></div>
 <hr />
 <h3 id="structure_id"><code>structure_id</code> *</h3>
+<p>Identifiant unique de la structure rattachée au service.</p>
 <p>Type : <code>string</code></p>
+<p>Exemples :</p>
+<div class="highlight"><pre><span></span><code><span class="s2">&quot;dora--42&quot;</span>
+<span class="s2">&quot;cd35--mjc-13-grandjour&quot;</span>
+</code></pre></div>
 <hr />
 <h3 id="id"><code>id</code> *</h3>
+<p>Identifiant unique du service, obtenu par une combinaison de l’identifiant du producteur et de l’identifiant du service (fourni par le producteur).</p>
 <p>Type : <code>string</code></p>
+<p>Exemples :</p>
+<div class="highlight"><pre><span></span><code><span class="s2">&quot;emplois-de-linclusion--17&quot;</span>
+<span class="s2">&quot;france-travail--ccas-provence-alpes-cote-dazur-2024-01-01&quot;</span>
+<span class="s2">&quot;dora--AidantsConnect:2024-47BXY&quot;</span>
+</code></pre></div>
 <hr />
 <h3 id="nom"><code>nom</code> *</h3>
 <p>Nom du service.</p>
