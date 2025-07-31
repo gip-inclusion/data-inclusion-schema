@@ -21,7 +21,7 @@
 
 * améliorations de la documentation de chaque champ existant en v0 et v1
 * fusion des champs service `pre_requis` et `justificatifs` dans un nouveau champ `conditions_acces`
-* fusion des champs structure `typologie` et `labels_nationaux` dans un nouveau champ `reseau_porteur`
+* fusion des champs structure `typologie` et `labels_nationaux` dans un nouveau champ `reseaux_porteurs`
 * refonte du référentiel des `frais`
 * remplacement des champs `modes_orientation_***_autres` en faveur d'un champ unique `modes_mobilisation_precisions`
 * remplacement des champs `modes_orientation_***` en faveur d'un champ unique `modes_mobilisation`
