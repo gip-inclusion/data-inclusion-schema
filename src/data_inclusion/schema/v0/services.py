@@ -1,5 +1,5 @@
 from datetime import date
-from typing import Annotated, Optional
+from typing import Annotated
 
 from pydantic import EmailStr, HttpUrl
 
@@ -37,32 +37,32 @@ class Service(BaseModel):
             max_length=150,
         ),
     ]
-    presentation_resume: Annotated[Optional[str], Field(max_length=280)] = None
-    presentation_detail: Optional[str] = None
-    types: Optional[set[TypologieService]] = None
-    thematiques: Optional[set[Thematique]] = None
-    prise_rdv: Optional[HttpUrl] = None
-    frais: Optional[set[Frais]] = None
-    frais_autres: Optional[str] = None
-    profils: Optional[set[Profil]] = None
-    profils_precisions: Optional[str] = None
-    pre_requis: Optional[set[str]] = None
-    cumulable: Optional[bool] = None
-    justificatifs: Optional[set[str]] = None
-    formulaire_en_ligne: Optional[HttpUrl] = None
-    commune: Optional[str] = None
-    code_postal: Optional[common.CodePostal] = None
-    code_insee: Optional[common.CodeCommune] = None
-    adresse: Optional[str] = None
-    complement_adresse: Optional[str] = None
-    longitude: Optional[float] = None
-    latitude: Optional[float] = None
-    recurrence: Optional[str] = None
-    date_creation: Optional[date] = None
-    date_suspension: Optional[date] = None
-    lien_source: Optional[HttpUrl] = None
+    presentation_resume: Annotated[str | None, Field(max_length=280)] = None
+    presentation_detail: str | None = None
+    types: set[TypologieService] | None = None
+    thematiques: set[Thematique] | None = None
+    prise_rdv: HttpUrl | None = None
+    frais: set[Frais] | None = None
+    frais_autres: str | None = None
+    profils: set[Profil] | None = None
+    profils_precisions: str | None = None
+    pre_requis: set[str] | None = None
+    cumulable: bool | None = None
+    justificatifs: set[str] | None = None
+    formulaire_en_ligne: HttpUrl | None = None
+    commune: str | None = None
+    code_postal: common.CodePostal | None = None
+    code_insee: common.CodeCommune | None = None
+    adresse: str | None = None
+    complement_adresse: str | None = None
+    longitude: float | None = None
+    latitude: float | None = None
+    recurrence: str | None = None
+    date_creation: date | None = None
+    date_suspension: date | None = None
+    lien_source: HttpUrl | None = None
     telephone: Annotated[
-        Optional[str],
+        str | None,
         Field(
             description="""
                 Numéro de téléphone à utiliser pour obtenir des informations
@@ -78,7 +78,7 @@ class Service(BaseModel):
         ),
     ]
     courriel: Annotated[
-        Optional[EmailStr],
+        EmailStr | None,
         Field(
             description="""
                 Courriel à utiliser pour obtenir des informations complémentaires sur
@@ -95,7 +95,7 @@ class Service(BaseModel):
             default=None,
         ),
     ]
-    contact_public: Optional[bool] = None
+    contact_public: bool | None = None
     date_maj: Annotated[
         date,
         Field(
@@ -106,18 +106,18 @@ class Service(BaseModel):
             title="Date de dernière modification",
         ),
     ]
-    modes_accueil: Optional[set[ModeAccueil]] = None
-    zone_diffusion_type: Optional[ZoneDiffusionType] = None
-    zone_diffusion_code: Optional[
+    modes_accueil: set[ModeAccueil] | None = None
+    zone_diffusion_type: ZoneDiffusionType | None = None
+    zone_diffusion_code: None | (
         common.CodeCommune
         | common.CodeEPCI
         | common.CodeDepartement
         | common.CodeRegion
-    ] = None
-    zone_diffusion_nom: Optional[str] = None
-    contact_nom_prenom: Optional[str] = None
+    ) = None
+    zone_diffusion_nom: str | None = None
+    contact_nom_prenom: str | None = None
     page_web: Annotated[
-        Optional[HttpUrl],
+        HttpUrl | None,
         Field(
             description="""
                 Lien vers une page web dédiée au service sur le site web de la
@@ -129,14 +129,12 @@ class Service(BaseModel):
             ],
         ),
     ] = None
-    modes_orientation_beneficiaire: Optional[set[ModeOrientationBeneficiaire]] = None
-    modes_orientation_beneficiaire_autres: Optional[str] = None
-    modes_orientation_accompagnateur: Optional[set[ModeOrientationAccompagnateur]] = (
-        None
-    )
-    modes_orientation_accompagnateur_autres: Optional[str] = None
+    modes_orientation_beneficiaire: set[ModeOrientationBeneficiaire] | None = None
+    modes_orientation_beneficiaire_autres: str | None = None
+    modes_orientation_accompagnateur: set[ModeOrientationAccompagnateur] | None = None
+    modes_orientation_accompagnateur_autres: str | None = None
     volume_horaire_hebdomadaire: Annotated[
-        Optional[float],
+        float | None,
         Field(
             description="""
                 Durée du service en heures sur une semaine.
@@ -153,7 +151,7 @@ class Service(BaseModel):
         ),
     ] = None
     nombre_semaines: Annotated[
-        Optional[int],
+        int | None,
         Field(
             description="""
                 Nombre de semaines sur lequel dure le service.
