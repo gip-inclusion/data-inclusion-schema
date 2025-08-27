@@ -1,5 +1,5 @@
 from datetime import date
-from typing import Annotated, Optional
+from typing import Annotated
 
 from pydantic import EmailStr, HttpUrl
 
@@ -14,8 +14,8 @@ from .typologies_de_structures import TypologieStructure
 class Structure(BaseModel):
     # fields
     id: str
-    siret: Optional[common.CodeSiret] = None
-    rna: Optional[common.CodeRna] = None
+    siret: common.CodeSiret | None = None
+    rna: common.CodeRna | None = None
     nom: Annotated[
         str,
         Field(
@@ -30,16 +30,16 @@ class Structure(BaseModel):
             max_length=150,
         ),
     ]
-    commune: Optional[str] = None
-    code_postal: Optional[common.CodePostal] = None
-    code_insee: Optional[common.CodeCommune] = None
-    adresse: Optional[str] = None
-    complement_adresse: Optional[str] = None
-    longitude: Optional[float] = None
-    latitude: Optional[float] = None
-    typologie: Optional[TypologieStructure] = None
+    commune: str | None = None
+    code_postal: common.CodePostal | None = None
+    code_insee: common.CodeCommune | None = None
+    adresse: str | None = None
+    complement_adresse: str | None = None
+    longitude: float | None = None
+    latitude: float | None = None
+    typologie: TypologieStructure | None = None
     telephone: Annotated[
-        Optional[str],
+        str | None,
         Field(
             description="""
                 Numéro de téléphone à utiliser pour obtenir des informations
@@ -54,7 +54,7 @@ class Structure(BaseModel):
         ),
     ]
     courriel: Annotated[
-        Optional[EmailStr],
+        EmailStr | None,
         Field(
             description="""
                 Courriel à utiliser pour obtenir des informations complémentaires sur
@@ -67,7 +67,7 @@ class Structure(BaseModel):
         ),
     ]
     site_web: Annotated[
-        Optional[HttpUrl],
+        HttpUrl | None,
         Field(
             description="""
                 Site internet de la structure.
@@ -79,8 +79,8 @@ class Structure(BaseModel):
             examples=["https://www.asso-mon-entraide.net/"],
         ),
     ]
-    presentation_resume: Annotated[Optional[str], Field(max_length=280)] = None
-    presentation_detail: Optional[str] = None
+    presentation_resume: Annotated[str | None, Field(max_length=280)] = None
+    presentation_detail: str | None = None
     source: str
     date_maj: Annotated[
         date,
@@ -93,10 +93,10 @@ class Structure(BaseModel):
             title="Date de dernière modification",
         ),
     ]
-    antenne: Optional[bool] = None
-    lien_source: Optional[HttpUrl] = None
-    horaires_ouverture: Optional[str] = None
-    accessibilite: Optional[HttpUrl] = None
-    labels_nationaux: Optional[set[LabelNational]] = None
-    labels_autres: Optional[set[str]] = None
-    thematiques: Optional[set[Thematique]] = None
+    antenne: bool | None = None
+    lien_source: HttpUrl | None = None
+    horaires_ouverture: str | None = None
+    accessibilite: HttpUrl | None = None
+    labels_nationaux: set[LabelNational] | None = None
+    labels_autres: set[str] | None = None
+    thematiques: set[Thematique] | None = None
