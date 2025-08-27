@@ -1185,20 +1185,20 @@
 <hr />
 <h3 id="type"><code>type</code></h3>
 <p>Type de service.</p>
-<p>Type : <code>string</code></p>
+<p>Type : <code>string | null</code></p>
 <p>Valeurs acceptées : voir le <a href="../referentiels/types_de_services/">référentiel associé</a></p>
 <p>Exemples :</p>
 <div class="highlight"><pre><span></span><code><span class="s2">&quot;accompagnement&quot;</span>
 </code></pre></div>
 <hr />
 <h3 id="thematiques"><code>thematiques</code></h3>
-<p>Type : <code>array[string]</code></p>
+<p>Type : <code>array[string] | null</code></p>
 <p>Valeurs acceptées : voir le <a href="../referentiels/thematiques/">référentiel associé</a></p>
 <hr />
 <h3 id="frais"><code>frais</code></h3>
 <p>Indique si l’accès au service est payant ou gratuit.</p>
 <p>Si le service comporte des frais, ceux-ci devraient être précisés dans le champ <code>frais_precisions</code>.</p>
-<p>Type : <code>string</code></p>
+<p>Type : <code>string | null</code></p>
 <p>Valeurs acceptées : voir le <a href="../referentiels/frais/">référentiel associé</a></p>
 <p>Exemples :</p>
 <div class="highlight"><pre><span></span><code><span class="s2">&quot;gratuit&quot;</span>
@@ -1207,7 +1207,7 @@
 <hr />
 <h3 id="frais_precisions"><code>frais_precisions</code></h3>
 <p>Précisions sur les éventuels frais pour accéder au service.</p>
-<p>Type : <code>string</code></p>
+<p>Type : <code>string | null</code></p>
 <p>Exemples :</p>
 <div class="highlight"><pre><span></span><code><span class="s2">&quot;10€ pour l’adhésion annuelle&quot;</span>
 <span class="s2">&quot;Tarif réduit pour les bénéficiaires du RSA&quot;</span>
@@ -1216,16 +1216,17 @@
 <h3 id="publics"><code>publics</code></h3>
 <p>Publics visés par le service.</p>
 <p>Des informations complémentaires peuvent être précisées dans le champ <code>publics_precisions</code>.</p>
-<p>Type : <code>array[string]</code></p>
+<p>Type : <code>array[string] | "tous" | null</code></p>
 <p>Valeurs acceptées : voir le <a href="../referentiels/publics/">référentiel associé</a></p>
 <p>Exemples :</p>
-<div class="highlight"><pre><span></span><code><span class="s2">&quot;femmes&quot;</span>
-<span class="s2">&quot;residents-qpv-frr&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="p">[</span><span class="s2">&quot;femmes&quot;</span><span class="p">]</span>
+<span class="p">[</span><span class="s2">&quot;residents-qpv-frr&quot;</span><span class="p">]</span>
+<span class="s2">&quot;tous&quot;</span>
 </code></pre></div>
 <hr />
 <h3 id="publics_precisions"><code>publics_precisions</code></h3>
 <p>Précisions sur les publics visés par le service.</p>
-<p>Type : <code>string</code></p>
+<p>Type : <code>string | null</code></p>
 <p>Exemples :</p>
 <div class="highlight"><pre><span></span><code><span class="s2">&quot;Le jeune entre 15 et 18 ans.&quot;</span>
 </code></pre></div>
@@ -1233,38 +1234,38 @@
 <h3 id="conditions_acces"><code>conditions_acces</code></h3>
 <p>Conditions d’accès au service.</p>
 <p>Il peut s’agir de prérequis ou de justificatifs à présenter.</p>
-<p>Type : <code>string</code></p>
+<p>Type : <code>string | null</code></p>
 <p>Exemples :</p>
 <div class="highlight"><pre><span></span><code><span class="s2">&quot;Maîtrise de la langue française à l’oral et à l’écrit&quot;</span>
 </code></pre></div>
 <hr />
 <h3 id="commune"><code>commune</code></h3>
-<p>Type : <code>string</code></p>
+<p>Type : <code>string | null</code></p>
 <hr />
 <h3 id="code_postal"><code>code_postal</code></h3>
-<p>Type : <code>string</code></p>
+<p>Type : <code>string | null</code></p>
 <p>Regex : <code>^\d{5}$</code></p>
 <hr />
 <h3 id="code_insee"><code>code_insee</code></h3>
-<p>Type : <code>string</code></p>
+<p>Type : <code>string | null</code></p>
 <p>Regex : <code>^\w{5}$</code></p>
 <hr />
 <h3 id="adresse"><code>adresse</code></h3>
-<p>Type : <code>string</code></p>
+<p>Type : <code>string | null</code></p>
 <hr />
 <h3 id="complement_adresse"><code>complement_adresse</code></h3>
-<p>Type : <code>string</code></p>
+<p>Type : <code>string | null</code></p>
 <hr />
 <h3 id="longitude"><code>longitude</code></h3>
-<p>Type : <code>number</code></p>
+<p>Type : <code>number | null</code></p>
 <hr />
 <h3 id="latitude"><code>latitude</code></h3>
-<p>Type : <code>number</code></p>
+<p>Type : <code>number | null</code></p>
 <hr />
 <h3 id="telephone"><code>telephone</code></h3>
 <p>Numéro de téléphone à utiliser pour obtenir des informations complémentaires sur le service. Si le mode de mobilisation est <code>telephoner</code>, peut être utilisé pour mobiliser le service.</p>
 <p>Chaîne de caractères contenant un seul numéro de téléphone, de préférence au format E.164.</p>
-<p>Type : <code>string</code></p>
+<p>Type : <code>string | null</code></p>
 <p>Exemples :</p>
 <div class="highlight"><pre><span></span><code><span class="s2">&quot;+33123456789&quot;</span>
 </code></pre></div>
@@ -1273,14 +1274,14 @@
 <p>Courriel à utiliser pour obtenir des informations complémentaires sur le service. Si le mode de mobilisation est <code>envoyer-un-email</code>, peut être utilisé pour mobiliser le service.</p>
 <p>Doit suivre le format de la RFC 5322. Vérification de l’existence du destinataire (envoi d’un courrier de notification)</p>
 <p>Si non conforme ou destinataire inexistant, suppression de la valeur.</p>
-<p>Type : <code>string</code></p>
+<p>Type : <code>string | null</code></p>
 <p>Format : <code>email</code></p>
 <p>Exemples :</p>
 <div class="highlight"><pre><span></span><code><span class="s2">&quot;exemple@inclusion.gouv.fr&quot;</span>
 </code></pre></div>
 <hr />
 <h3 id="modes_accueil"><code>modes_accueil</code></h3>
-<p>Type : <code>array[string]</code></p>
+<p>Type : <code>array[string] | null</code></p>
 <p>Valeurs acceptées : voir le <a href="../referentiels/modes_accueil/">référentiel associé</a></p>
 <hr />
 <h3 id="zone_eligibilite"><code>zone_eligibilite</code></h3>
@@ -1291,7 +1292,7 @@
 <p>Si le service est éligible sur l’ensemble du territoire national, utiliser le code <code>france</code> (France) ou le code pays <code>99100</code>.</p>
 <p>data·inclusion vérifie la validité des codes fournis. Les codes invalides sont supprimés de la liste.</p>
 <p><a href="https://www.insee.fr/fr/recherche/recherche-geographique">Outil de recherche des codes</a></p>
-<p>Type : <code>array</code></p>
+<p>Type : <code>array[string] | null</code></p>
 <p>Exemples :</p>
 <div class="highlight"><pre><span></span><code><span class="p">[</span><span class="s2">&quot;75056&quot;</span><span class="p">]</span>
 <span class="p">[</span><span class="s2">&quot;2A&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;2B&quot;</span><span class="p">]</span>
@@ -1301,11 +1302,11 @@
 </code></pre></div>
 <hr />
 <h3 id="contact_nom_prenom"><code>contact_nom_prenom</code></h3>
-<p>Type : <code>string</code></p>
+<p>Type : <code>string | null</code></p>
 <hr />
 <h3 id="lien_mobilisation"><code>lien_mobilisation</code></h3>
 <p>Lien pour accéder ou mobiliser l’offre de service.</p>
-<p>Type : <code>string</code></p>
+<p>Type : <code>string | null</code></p>
 <p>Format : <code>uri</code></p>
 <p>Exemples :</p>
 <div class="highlight"><pre><span></span><code><span class="s2">&quot;https://www.actionlogement.fr/demande-cfi&quot;</span>
@@ -1313,15 +1314,15 @@
 <hr />
 <h3 id="modes_mobilisation"><code>modes_mobilisation</code></h3>
 <p>Modes de mobilisation de l’offre de service.</p>
-<p>Type : <code>array[string]</code></p>
+<p>Type : <code>array[string] | null</code></p>
 <p>Valeurs acceptées : voir le <a href="../referentiels/modes_mobilisation/">référentiel associé</a></p>
 <p>Exemples :</p>
-<div class="highlight"><pre><span></span><code><span class="s2">&quot;envoyer-un-courriel&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="p">[</span><span class="s2">&quot;envoyer-un-courriel&quot;</span><span class="p">]</span>
 </code></pre></div>
 <hr />
 <h3 id="mobilisable_par"><code>mobilisable_par</code></h3>
 <p>Indique qui peut mobiliser le service : usagers, professionnels ou les deux.</p>
-<p>Type : <code>array[string]</code></p>
+<p>Type : <code>array[string] | null</code></p>
 <p>Valeurs acceptées : voir le <a href="../referentiels/personnes_mobilisatrices/">référentiel associé</a></p>
 <p>Exemples :</p>
 <div class="highlight"><pre><span></span><code><span class="p">[</span><span class="s2">&quot;professionnels&quot;</span><span class="p">]</span>
@@ -1330,7 +1331,7 @@
 <hr />
 <h3 id="mobilisation_precisions"><code>mobilisation_precisions</code></h3>
 <p>Précisions sur les modes de mobilisation du service.</p>
-<p>Type : <code>string</code></p>
+<p>Type : <code>string | null</code></p>
 <p>Exemples :</p>
 <div class="highlight"><pre><span></span><code><span class="s2">&quot;La demande est à faire depuis l’espace personnel du demandeur d’emploi, rubrique « mes aides », formulaire spécifique « Aide à la mobilité ».&quot;</span>
 </code></pre></div>
@@ -1339,7 +1340,7 @@
 <p>Durée du service en heures sur une semaine.</p>
 <p>L’absence de valeur signifie que le service n’est pas concerné (exemple aide financière) ou que l’information n’est pas disponible.</p>
 <p>Champ utilisé dans le cadre des 15h-20h d’activité hebdomadaire des BRSA.</p>
-<p>Type : <code>number</code></p>
+<p>Type : <code>number | null</code></p>
 <p>Exemples :</p>
 <div class="highlight"><pre><span></span><code><span class="mi">1</span>
 </code></pre></div>
@@ -1348,7 +1349,7 @@
 <p>Nombre de semaines sur lequel dure le service.</p>
 <p>Ne peut pas être inférieur à 1. L’absence de valeur signifie que le service n’est pas concerné (exemple aide financière) ou que l’information n’est pas disponible.</p>
 <p>Champ utilisé dans le cadre des 15h-20h d’activité hebdomadaire des BRSA.</p>
-<p>Type : <code>integer</code></p>
+<p>Type : <code>integer | null</code></p>
 <p>Exemples :</p>
 <div class="highlight"><pre><span></span><code><span class="mi">3</span>
 </code></pre></div>
@@ -1358,7 +1359,7 @@
 <p>Si le champ n’est pas renseigné, les horaires d’accueil de la structure peuvent être utilisés.</p>
 <p>Doit être au format <a href="https://wiki.openstreetmap.org/wiki/FR:Key:opening_hours">OpenStreetMap Opening Hours</a>.</p>
 <p><a href="https://projets.pavie.info/yohours/">Outil d’aide à la saisie</a>.</p>
-<p>Type : <code>string</code></p>
+<p>Type : <code>string | null</code></p>
 <p>Exemples :</p>
 <div class="highlight"><pre><span></span><code><span class="s2">&quot;Mo-Fr 08:30-12:30; PH off&quot;</span>
 </code></pre></div>
