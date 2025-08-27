@@ -2,6 +2,7 @@ import importlib
 import pathlib
 import pkgutil
 import re
+from dataclasses import dataclass
 
 import jinja2
 
@@ -14,61 +15,52 @@ def snake_case(txt: str) -> str:
     return re.sub(r"(?<!^)(?=[A-Z])", "_", txt).lower()
 
 
-def get_property_type_data(property_schema: dict) -> dict | None:
-    match property_schema:
-        case {"type": json_type}:
-            return {"type": json_type, "format": property_schema.get("format")}
-        case {"anyOf": [{"type": "array", "items": {"$ref": ref}}, {"type": "null"}]}:
-            return {
-                "type": "array[string]",
-                "referentiel": ref.split("/")[-1],
-            }
-        case {"anyOf": [{"$ref": ref}, {"type": "null"}]}:
-            return {
-                "type": "string",
-                "referentiel": ref.split("/")[-1],
-            }
-        case {"anyOf": [*json_type_dict_list, {"type": "null"}]}:
-            return {
-                "type": " | ".join(
-                    sorted(
-                        {
-                            json_type_dict["type"]
-                            for json_type_dict in json_type_dict_list
-                        }
-                    )
+@dataclass
+class PropertyTypeData:
+    type: str
+    referentiel: str | None = None
+    format: str | None = None
+    regex: str | None = None
+
+
+def get_property_type_data(property_schema: dict):
+    def get(d) -> PropertyTypeData:
+        if "anyOf" in d:
+            any_of_schemas = [get(schema) for schema in d["anyOf"]]
+
+            return PropertyTypeData(
+                type=" | ".join(item.type for item in any_of_schemas),
+                referentiel=next(
+                    (item.referentiel for item in any_of_schemas if item.referentiel),
+                    None,
                 ),
-                "format": " | ".join(
-                    sorted(
-                        {
-                            json_type_dict["format"]
-                            for json_type_dict in json_type_dict_list
-                            if "format" in json_type_dict
-                        }
-                    )
+                format=next(
+                    (item.format for item in any_of_schemas if item.format), None
                 ),
-                "regex": " | ".join(
-                    sorted(
-                        {
-                            json_type_dict["pattern"]
-                            for json_type_dict in json_type_dict_list
-                            if "pattern" in json_type_dict
-                        }
-                    )
-                ),
-            }
-        case {"anyOf": [*json_type_dict_list]}:
-            return {
-                "format": " | ".join(
-                    sorted(
-                        {
-                            json_type_dict["format"]
-                            for json_type_dict in json_type_dict_list
-                            if "format" in json_type_dict
-                        }
-                    )
-                )
-            }
+                regex=next((item.regex for item in any_of_schemas if item.regex), None),
+            )
+        if "$ref" in d:
+            return PropertyTypeData(
+                type="string",
+                referentiel=d["$ref"].split("/")[-1],
+            )
+        if "items" in d:
+            return PropertyTypeData(
+                type="array[string]",
+                referentiel=d["items"]["$ref"].split("/")[-1]
+                if "$ref" in d["items"]
+                else None,
+            )
+        if "type" in d:
+            return PropertyTypeData(
+                type=d["type"],
+                format=d.get("format"),
+                regex=d.get("pattern"),
+            )
+
+        raise ValueError(f"Cannot parse property schema: {d}")
+
+    return get(property_schema)
 
 
 def template_factory(template_name: str) -> jinja2.Template:
