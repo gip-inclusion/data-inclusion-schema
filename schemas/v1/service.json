@@ -536,7 +536,9 @@
       "default": null,
       "description": "Modes de mobilisation de l’offre de service.",
       "examples": [
-        "envoyer-un-courriel"
+        [
+          "envoyer-un-courriel"
+        ]
       ],
       "title": "Modes Mobilisation"
     },
@@ -584,8 +586,12 @@
       "default": null,
       "description": "Publics visés par le service.\n\nDes informations complémentaires peuvent être précisées dans le champ `publics_precisions`.",
       "examples": [
-        "femmes",
-        "residents-qpv-frr"
+        [
+          "femmes"
+        ],
+        [
+          "residents-qpv-frr"
+        ]
       ],
       "title": "Publics"
     },
