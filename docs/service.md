@@ -278,8 +278,8 @@ Valeurs acceptées : voir le [référentiel associé](referentiels/publics.md)
 Exemples :
 
 ```json
-"femmes"
-"residents-qpv-frr"
+["femmes"]
+["residents-qpv-frr"]
 
 ```
 
@@ -662,7 +662,7 @@ Valeurs acceptées : voir le [référentiel associé](referentiels/modes_mobilis
 Exemples :
 
 ```json
-"envoyer-un-courriel"
+["envoyer-un-courriel"]
 
 ```
 
