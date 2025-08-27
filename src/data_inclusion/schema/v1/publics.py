@@ -4,6 +4,12 @@ from data_inclusion.schema.base import EnhancedEnum
 class Public(EnhancedEnum):
     """Publics"""
 
+    TOUS_PUBLICS = (
+        "tous-publics",
+        "Tous publics",
+        "Tous publics",
+    )
+
     ACTIFS = (
         "actifs",
         "Actifs",

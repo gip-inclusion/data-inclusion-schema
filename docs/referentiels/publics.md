@@ -13,3 +13,4 @@
 | `personnes-exilees` | Personnes exilées | Réfugiés, demandeurs d’asile, personnes immigrées, etc |
 | `residents-qpv-frr` | Résidents en QPV ou FRR | Personnes résidentes en zone Quartier Prioritaire de la Ville ou France Ruralités Revitalisation (anciennement ZRR) |
 | `seniors` | Séniors | Personnes âgées, retraités, etc |
+| `tous-publics` | Tous publics | Tous publics |

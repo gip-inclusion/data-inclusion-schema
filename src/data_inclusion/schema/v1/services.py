@@ -1,7 +1,7 @@
 from datetime import date
 from typing import Annotated, Literal
 
-from pydantic import EmailStr, HttpUrl
+from pydantic import EmailStr, HttpUrl, field_validator
 
 from data_inclusion.schema import common
 from data_inclusion.schema.base import BaseModel, Field
@@ -146,13 +146,32 @@ class Service(BaseModel):
             description="""
             Publics visés par le service.
 
+            Un bénéficiaire est éligible s’il appartient à (au moins) un des publics
+            spécifiés.
+
+            Les services sans publics spécifiques doivent contenir uniquement la valeur
+            `tous-publics`. Celle-ci ne peut pas être utilisée avec d’autres valeurs.
+
             Des informations complémentaires peuvent être précisées dans le champ
             `publics_precisions`.
         """,
-            examples=[[Public.FEMMES], [Public.RESIDENTS_QPV_FRR]],
             min_length=1,
+            examples=[
+                [Public.FEMMES],
+                [Public.RESIDENTS_QPV_FRR],
+                [Public.TOUS_PUBLICS],
+            ],
         ),
     ] = None
+
+    @field_validator("publics")
+    def tous_publics(cls, value: list[Public] | None) -> list[Public] | None:
+        if value is not None and Public.TOUS_PUBLICS in value and len(value) > 1:
+            raise ValueError(
+                "`tous-publics` ne peut pas être utilisé avec d’autres valeurs."
+            )
+        return value
+
     publics_precisions: Annotated[
         str | None,
         Field(

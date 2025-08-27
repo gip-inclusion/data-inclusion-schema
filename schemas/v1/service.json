@@ -41,6 +41,7 @@
     "Public": {
       "description": "Publics",
       "enum": [
+        "tous-publics",
         "actifs",
         "beneficiaires-des-minimas-sociaux",
         "demandeurs-emploi",
@@ -584,13 +585,16 @@
         }
       ],
       "default": null,
-      "description": "Publics visés par le service.\n\nDes informations complémentaires peuvent être précisées dans le champ `publics_precisions`.",
+      "description": "Publics visés par le service.\n\nUn bénéficiaire est éligible s’il appartient à (au moins) un des publics spécifiés.\n\nLes services sans publics spécifiques doivent contenir uniquement la valeur `tous-publics`. Celle-ci ne peut pas être utilisée avec d’autres valeurs.\n\nDes informations complémentaires peuvent être précisées dans le champ `publics_precisions`.",
       "examples": [
         [
           "femmes"
         ],
         [
           "residents-qpv-frr"
+        ],
+        [
+          "tous-publics"
         ]
       ],
       "title": "Publics"
