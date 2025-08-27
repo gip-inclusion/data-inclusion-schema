@@ -1,5 +1,5 @@
 from datetime import date
-from typing import Annotated, Optional
+from typing import Annotated
 
 from pydantic import EmailStr, HttpUrl
 
@@ -63,7 +63,7 @@ class Structure(BaseModel):
     ### Champs optionnels ###
     #########################
     siret: Annotated[
-        Optional[common.CodeSiret],
+        common.CodeSiret | None,
         Field(
             title="Numéro SIRET",
             description="""
@@ -85,15 +85,15 @@ class Structure(BaseModel):
             examples=["13003013300016"],
         ),
     ] = None
-    commune: Optional[str] = None
-    code_postal: Optional[common.CodePostal] = None
-    code_insee: Optional[common.CodeCommune] = None
-    adresse: Optional[str] = None
-    complement_adresse: Optional[str] = None
-    longitude: Optional[float] = None
-    latitude: Optional[float] = None
+    commune: str | None = None
+    code_postal: common.CodePostal | None = None
+    code_insee: common.CodeCommune | None = None
+    adresse: str | None = None
+    complement_adresse: str | None = None
+    longitude: float | None = None
+    latitude: float | None = None
     telephone: Annotated[
-        Optional[str],
+        str | None,
         Field(
             description="""
                 Numéro de téléphone à utiliser pour obtenir des informations
@@ -107,7 +107,7 @@ class Structure(BaseModel):
         ),
     ] = None
     courriel: Annotated[
-        Optional[EmailStr],
+        EmailStr | None,
         Field(
             description="""
                 Courriel à utiliser pour obtenir des informations complémentaires sur
@@ -118,9 +118,9 @@ class Structure(BaseModel):
             examples=["exemple@inclusion.gouv.fr"],
         ),
     ] = None
-    site_web: Optional[HttpUrl] = None
+    site_web: HttpUrl | None = None
     horaires_accueil: Annotated[
-        Optional[str],
+        str | None,
         Field(
             description="""
             Horaires d’accueil du public par la structure.
@@ -137,7 +137,7 @@ class Structure(BaseModel):
         ),
     ] = None
     accessibilite_lieu: Annotated[
-        Optional[HttpUrl],
+        HttpUrl | None,
         Field(
             title="Accessibilité du lieu",
             description="""
@@ -152,7 +152,7 @@ class Structure(BaseModel):
         ),
     ] = None
     reseaux_porteurs: Annotated[
-        Optional[set[ReseauPorteur]],
+        set[ReseauPorteur] | None,
         Field(
             title="Réseaux porteurs",
             description="""
