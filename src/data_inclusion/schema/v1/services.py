@@ -149,7 +149,7 @@ class Service(BaseModel):
             Des informations complémentaires peuvent être précisées dans le champ
             `publics_precisions`.
         """,
-            examples=[Public.FEMMES, Public.RESIDENTS_QPV_FRR],
+            examples=[[Public.FEMMES], [Public.RESIDENTS_QPV_FRR]],
             min_length=1,
         ),
     ] = None
@@ -273,7 +273,7 @@ class Service(BaseModel):
                 Modes de mobilisation de l’offre de service.
             """,
             examples=[
-                "envoyer-un-courriel",
+                ["envoyer-un-courriel"],
             ],
             min_length=1,
         ),
