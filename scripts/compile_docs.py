@@ -61,7 +61,7 @@ def get_property_type_data(property_schema: dict) -> PropertyTypeData:
             )
         if "type" in d:
             return PropertyTypeData(
-                type=d["type"],
+                type=f'"{d["const"]}"' if "const" in d else d["type"],
                 format=d.get("format"),
                 regex=d.get("pattern"),
             )

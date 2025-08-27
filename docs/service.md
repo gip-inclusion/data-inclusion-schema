@@ -283,6 +283,10 @@ Exemples :
 
 Publics visés par le service.
 
+Un bénéficiaire est éligible s’il appartient à (au moins) un des publics spécifiés.
+
+Les services sans publics spécifiques doivent contenir uniquement la valeur `tous-publics`. Celle-ci ne peut pas être utilisée avec d’autres valeurs.
+
 Des informations complémentaires peuvent être précisées dans le champ `publics_precisions`.
 
 
@@ -306,6 +310,7 @@ Exemples :
 ```json
 ["femmes"]
 ["residents-qpv-frr"]
+["tous-publics"]
 
 ```
 

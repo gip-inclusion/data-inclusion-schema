@@ -63,5 +63,10 @@
     "description": "Personnes âgées, retraités, etc",
     "label": "Séniors",
     "value": "seniors"
+  },
+  {
+    "description": "Tous publics",
+    "label": "Tous publics",
+    "value": "tous-publics"
   }
 ]

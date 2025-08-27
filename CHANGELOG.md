@@ -36,6 +36,8 @@
 * renommage du champ service `recurrence` en `horaires_accueil`
 * renommage du champ structure `horaires_ouverture` en `horaires_accueil`
 * transformation du champ "id" pour en faire la clé primaire unique de chaque service & structure
+* renommage `profils` en `publics` et refonte du référentiel associé
+* validation du bon usage de la valeur `tous-publics`
 
 ### Suppressions
 
