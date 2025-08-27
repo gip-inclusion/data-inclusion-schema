@@ -8,7 +8,7 @@
 
 {{ '!!! warning "Ce champ est déprécié."' if property_schema.deprecated }}
 
-Type : `{{ get_property_type_data(property_schema).type }}`
+Type : `{{ get_property_type_data(property_schema).type|safe }}`
 
 {% set property_type_data = get_property_type_data(property_schema) %}
 

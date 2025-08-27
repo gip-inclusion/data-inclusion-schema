@@ -574,18 +574,23 @@
           "uniqueItems": true
         },
         {
+          "const": "tous-publics",
+          "type": "string"
+        },
+        {
           "type": "null"
         }
       ],
       "default": null,
-      "description": "Publics visés par le service.\n\nDes informations complémentaires peuvent être précisées dans le champ `publics_precisions`.",
+      "description": "Publics visés par le service.\n\nDes informations complémentaires peuvent être précisées dans le champ `publics_precisions`.\n\nLes services destinés à tous les publics sans restrictions doivent contenir la valeur `tous-publics`.",
       "examples": [
         [
           "femmes"
         ],
         [
           "residents-qpv-frr"
-        ]
+        ],
+        "tous-publics"
       ],
       "title": "Publics"
     },

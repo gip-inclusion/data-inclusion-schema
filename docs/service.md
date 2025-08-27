@@ -259,9 +259,11 @@ Publics visés par le service.
 
 Des informations complémentaires peuvent être précisées dans le champ `publics_precisions`.
 
+Les services destinés à tous les publics sans restrictions doivent contenir la valeur `tous-publics`.
 
 
-Type : `array[string] | null`
+
+Type : `array[string] | "tous-publics" | null`
 
 
 
@@ -280,6 +282,7 @@ Exemples :
 ```json
 ["femmes"]
 ["residents-qpv-frr"]
+"tous-publics"
 
 ```
 

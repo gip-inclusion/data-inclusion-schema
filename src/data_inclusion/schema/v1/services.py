@@ -1,6 +1,7 @@
 from datetime import date
 from typing import Annotated, Literal
 
+from annotated_types import MinLen
 from pydantic import EmailStr, HttpUrl
 
 from data_inclusion.schema import common
@@ -110,7 +111,7 @@ class Service(BaseModel):
         ),
     ] = None
     publics: Annotated[
-        set[Public] | None,
+        Annotated[set[Public], MinLen(1)] | Literal["tous-publics"] | None,
         Field(
             title="Publics",
             description="""
@@ -118,9 +119,11 @@ class Service(BaseModel):
 
             Des informations complémentaires peuvent être précisées dans le champ
             `publics_precisions`.
+
+            Les services destinés à tous les publics sans restrictions doivent contenir
+            la valeur `tous-publics`.
         """,
-            examples=[[Public.FEMMES], [Public.RESIDENTS_QPV_FRR]],
-            min_length=1,
+            examples=[[Public.FEMMES], [Public.RESIDENTS_QPV_FRR], "tous-publics"],
         ),
     ] = None
     publics_precisions: Annotated[
