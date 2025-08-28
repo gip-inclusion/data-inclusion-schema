@@ -152,7 +152,7 @@ data·inclusion vérifie régulièrement la validité des numéros SIRET fournis
 
 
 
-Type : `string`
+Type : `string | null`
 
 
 
@@ -178,7 +178,7 @@ Exemples :
 
 
 
-Type : `string`
+Type : `string | null`
 
 
 
@@ -197,7 +197,7 @@ Type : `string`
 
 
 
-Type : `string`
+Type : `string | null`
 
 
 
@@ -216,7 +216,7 @@ Regex : `^\d{5}$`
 
 
 
-Type : `string`
+Type : `string | null`
 
 
 
@@ -235,7 +235,7 @@ Regex : `^\w{5}$`
 
 
 
-Type : `string`
+Type : `string | null`
 
 
 
@@ -254,7 +254,7 @@ Type : `string`
 
 
 
-Type : `string`
+Type : `string | null`
 
 
 
@@ -273,7 +273,7 @@ Type : `string`
 
 
 
-Type : `number`
+Type : `number | null`
 
 
 
@@ -292,7 +292,7 @@ Type : `number`
 
 
 
-Type : `number`
+Type : `number | null`
 
 
 
@@ -313,7 +313,7 @@ Chaîne de caractères contenant un seul numéro de téléphone, de préfèrence
 
 
 
-Type : `string`
+Type : `string | null`
 
 
 
@@ -341,7 +341,7 @@ Doit suivre le format de la RFC 5322.
 
 
 
-Type : `string`
+Type : `string | null`
 
 
 
@@ -367,7 +367,7 @@ Exemples :
 
 
 
-Type : `string`
+Type : `string | null`
 
 
 
@@ -392,7 +392,7 @@ Doit être au format [OpenStreetMap Opening Hours](https://wiki.openstreetmap.or
 
 
 
-Type : `string`
+Type : `string | null`
 
 
 
@@ -420,7 +420,7 @@ Le format attendu est donc un lien vers [Accesslibre](https://acceslibre.beta.go
 
 
 
-Type : `string`
+Type : `string | null`
 
 
 
@@ -446,7 +446,7 @@ Réseaux, organisations ou administrations portant la structure.
 
 
 
-Type : `array[string]`
+Type : `array[string] | null`
 
 
 

@@ -1,6 +1,7 @@
 from datetime import date
-from typing import Annotated, Literal, Optional
+from typing import Annotated, Literal
 
+from annotated_types import MinLen
 from pydantic import EmailStr, HttpUrl
 
 from data_inclusion.schema import common
@@ -105,7 +106,7 @@ class Service(BaseModel):
     ### Champs optionnels ###
     #########################
     type: Annotated[
-        Optional[TypeService],
+        TypeService | None,
         Field(
             description="""
             Type de service.
@@ -113,9 +114,9 @@ class Service(BaseModel):
             examples=[TypeService.ACCOMPAGNEMENT],
         ),
     ] = None
-    thematiques: Optional[set[Thematique]] = None
+    thematiques: set[Thematique] | None = None
     frais: Annotated[
-        Optional[Frais],
+        Frais | None,
         Field(
             description="""
                 Indique si l’accès au service est payant ou gratuit.
@@ -127,7 +128,7 @@ class Service(BaseModel):
         ),
     ] = None
     frais_precisions: Annotated[
-        Optional[str],
+        str | None,
         Field(
             title="Précisions sur les frais",
             description="""
@@ -140,7 +141,7 @@ class Service(BaseModel):
         ),
     ] = None
     publics: Annotated[
-        Optional[set[Public]],
+        Annotated[set[Public], MinLen(1)] | Literal["tous-publics"] | None,
         Field(
             title="Publics",
             description="""
@@ -148,13 +149,15 @@ class Service(BaseModel):
 
             Des informations complémentaires peuvent être précisées dans le champ
             `publics_precisions`.
+
+            Les services destinés à tous les publics sans restrictions doivent contenir
+            la valeur `tous-publics`.
         """,
-            examples=[Public.FEMMES, Public.RESIDENTS_QPV_FRR],
-            min_length=1,
+            examples=[[Public.FEMMES], [Public.RESIDENTS_QPV_FRR], "tous-publics"],
         ),
     ] = None
     publics_precisions: Annotated[
-        Optional[str],
+        str | None,
         Field(
             title="Précisions sur les publics",
             description="""
@@ -164,7 +167,7 @@ class Service(BaseModel):
         ),
     ] = None
     conditions_acces: Annotated[
-        Optional[str],
+        str | None,
         Field(
             description="""
             Conditions d’accès au service.
@@ -175,15 +178,15 @@ class Service(BaseModel):
             title="Conditions d’accès",
         ),
     ] = None
-    commune: Optional[str] = None
-    code_postal: Optional[common.CodePostal] = None
-    code_insee: Optional[common.CodeCommune] = None
-    adresse: Optional[str] = None
-    complement_adresse: Optional[str] = None
-    longitude: Optional[float] = None
-    latitude: Optional[float] = None
+    commune: str | None = None
+    code_postal: common.CodePostal | None = None
+    code_insee: common.CodeCommune | None = None
+    adresse: str | None = None
+    complement_adresse: str | None = None
+    longitude: float | None = None
+    latitude: float | None = None
     telephone: Annotated[
-        Optional[str],
+        str | None,
         Field(
             description="""
                 Numéro de téléphone à utiliser pour obtenir des informations
@@ -198,7 +201,7 @@ class Service(BaseModel):
         ),
     ] = None
     courriel: Annotated[
-        Optional[EmailStr],
+        EmailStr | None,
         Field(
             description="""
                 Courriel à utiliser pour obtenir des informations complémentaires sur
@@ -214,17 +217,16 @@ class Service(BaseModel):
             examples=["exemple@inclusion.gouv.fr"],
         ),
     ] = None
-    modes_accueil: Optional[set[ModeAccueil]] = None
+    modes_accueil: set[ModeAccueil] | None = None
     zone_eligibilite: Annotated[
-        Optional[
-            list[
-                common.CodeCommune
-                | common.CodeDepartement
-                | common.CodeEPCI
-                | common.CodePays
-                | Literal["france"]
-            ]
-        ],
+        list[
+            common.CodeCommune
+            | common.CodeDepartement
+            | common.CodeEPCI
+            | common.CodePays
+            | Literal["france"]
+        ]
+        | None,
         Field(
             title="Zone d’éligibilité",
             min_length=1,
@@ -257,9 +259,9 @@ class Service(BaseModel):
             ],
         ),
     ] = None
-    contact_nom_prenom: Optional[str] = None
+    contact_nom_prenom: str | None = None
     lien_mobilisation: Annotated[
-        Optional[HttpUrl],
+        HttpUrl | None,
         Field(
             description="""
                 Lien pour accéder ou mobiliser l’offre de service.
@@ -268,19 +270,19 @@ class Service(BaseModel):
         ),
     ] = None
     modes_mobilisation: Annotated[
-        Optional[set[ModeMobilisation]],
+        set[ModeMobilisation] | None,
         Field(
             description="""
                 Modes de mobilisation de l’offre de service.
             """,
             examples=[
-                "envoyer-un-courriel",
+                ["envoyer-un-courriel"],
             ],
             min_length=1,
         ),
     ] = None
     mobilisable_par: Annotated[
-        Optional[set[PersonneMobilisatrice]],
+        set[PersonneMobilisatrice] | None,
         Field(
             description="""
                 Indique qui peut mobiliser le service : usagers, professionnels ou les
@@ -294,7 +296,7 @@ class Service(BaseModel):
         ),
     ] = None
     mobilisation_precisions: Annotated[
-        Optional[str],
+        str | None,
         Field(
             description="""
                 Précisions sur les modes de mobilisation du service.
@@ -309,7 +311,7 @@ class Service(BaseModel):
         ),
     ] = None
     volume_horaire_hebdomadaire: Annotated[
-        Optional[float],
+        float | None,
         Field(
             description="""
                 Durée du service en heures sur une semaine.
@@ -326,7 +328,7 @@ class Service(BaseModel):
         ),
     ] = None
     nombre_semaines: Annotated[
-        Optional[int],
+        int | None,
         Field(
             description="""
                 Nombre de semaines sur lequel dure le service.
@@ -343,7 +345,7 @@ class Service(BaseModel):
         ),
     ] = None
     horaires_accueil: Annotated[
-        Optional[str],
+        str | None,
         Field(
             description="""
             Horaires d’accueil du public pour ce service.

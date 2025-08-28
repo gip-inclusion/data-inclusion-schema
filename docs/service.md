@@ -175,7 +175,7 @@ Type de service.
 
 
 
-Type : `string`
+Type : `string | null`
 
 
 
@@ -204,7 +204,7 @@ Exemples :
 
 
 
-Type : `array[string]`
+Type : `array[string] | null`
 
 
 
@@ -228,7 +228,7 @@ Si le service comporte des frais, ceux-ci devraient être précisés dans le cha
 
 
 
-Type : `string`
+Type : `string | null`
 
 
 
@@ -258,7 +258,7 @@ Précisions sur les éventuels frais pour accéder au service.
 
 
 
-Type : `string`
+Type : `string | null`
 
 
 
@@ -285,9 +285,11 @@ Publics visés par le service.
 
 Des informations complémentaires peuvent être précisées dans le champ `publics_precisions`.
 
+Les services destinés à tous les publics sans restrictions doivent contenir la valeur `tous-publics`.
 
 
-Type : `array[string]`
+
+Type : `array[string] | "tous-publics" | null`
 
 
 
@@ -304,8 +306,9 @@ Valeurs acceptées : voir le [référentiel associé](referentiels/publics.md)
 Exemples :
 
 ```json
-"femmes"
-"residents-qpv-frr"
+["femmes"]
+["residents-qpv-frr"]
+"tous-publics"
 
 ```
 
@@ -317,7 +320,7 @@ Précisions sur les publics visés par le service.
 
 
 
-Type : `string`
+Type : `string | null`
 
 
 
@@ -345,7 +348,7 @@ Il peut s’agir de prérequis ou de justificatifs à présenter.
 
 
 
-Type : `string`
+Type : `string | null`
 
 
 
@@ -371,7 +374,7 @@ Exemples :
 
 
 
-Type : `string`
+Type : `string | null`
 
 
 
@@ -390,7 +393,7 @@ Type : `string`
 
 
 
-Type : `string`
+Type : `string | null`
 
 
 
@@ -409,7 +412,7 @@ Regex : `^\d{5}$`
 
 
 
-Type : `string`
+Type : `string | null`
 
 
 
@@ -428,7 +431,7 @@ Regex : `^\w{5}$`
 
 
 
-Type : `string`
+Type : `string | null`
 
 
 
@@ -447,7 +450,7 @@ Type : `string`
 
 
 
-Type : `string`
+Type : `string | null`
 
 
 
@@ -466,7 +469,7 @@ Type : `string`
 
 
 
-Type : `number`
+Type : `number | null`
 
 
 
@@ -485,7 +488,7 @@ Type : `number`
 
 
 
-Type : `number`
+Type : `number | null`
 
 
 
@@ -506,7 +509,7 @@ Chaîne de caractères contenant un seul numéro de téléphone, de préférence
 
 
 
-Type : `string`
+Type : `string | null`
 
 
 
@@ -536,7 +539,7 @@ Si non conforme ou destinataire inexistant, suppression de la valeur.
 
 
 
-Type : `string`
+Type : `string | null`
 
 
 
@@ -562,7 +565,7 @@ Exemples :
 
 
 
-Type : `array[string]`
+Type : `array[string] | null`
 
 
 
@@ -596,7 +599,7 @@ data·inclusion vérifie la validité des codes fournis. Les codes invalides son
 
 
 
-Type : `array`
+Type : `array[string] | null`
 
 
 
@@ -626,7 +629,7 @@ Exemples :
 
 
 
-Type : `string`
+Type : `string | null`
 
 
 
@@ -645,7 +648,7 @@ Lien pour accéder ou mobiliser l’offre de service.
 
 
 
-Type : `string`
+Type : `string | null`
 
 
 
@@ -671,7 +674,7 @@ Modes de mobilisation de l’offre de service.
 
 
 
-Type : `array[string]`
+Type : `array[string] | null`
 
 
 
@@ -688,7 +691,7 @@ Valeurs acceptées : voir le [référentiel associé](referentiels/modes_mobilis
 Exemples :
 
 ```json
-"envoyer-un-courriel"
+["envoyer-un-courriel"]
 
 ```
 
@@ -700,7 +703,7 @@ Indique qui peut mobiliser le service : usagers, professionnels ou les deux.
 
 
 
-Type : `array[string]`
+Type : `array[string] | null`
 
 
 
@@ -730,7 +733,7 @@ Précisions sur les modes de mobilisation du service.
 
 
 
-Type : `string`
+Type : `string | null`
 
 
 
@@ -760,7 +763,7 @@ Champ utilisé dans le cadre des 15h-20h d’activité hebdomadaire des BRSA.
 
 
 
-Type : `number`
+Type : `number | null`
 
 
 
@@ -790,7 +793,7 @@ Champ utilisé dans le cadre des 15h-20h d’activité hebdomadaire des BRSA.
 
 
 
-Type : `integer`
+Type : `integer | null`
 
 
 
@@ -822,7 +825,7 @@ Doit être au format [OpenStreetMap Opening Hours](https://wiki.openstreetmap.or
 
 
 
-Type : `string`
+Type : `string | null`
 
 
 
