@@ -1215,14 +1215,15 @@
 <hr />
 <h3 id="publics"><code>publics</code></h3>
 <p>Publics visés par le service.</p>
+<p>Un bénéficiaire est éligible s’il appartient à (au moins) un des publics spécifiés.</p>
+<p>Les services sans publics spécifiques doivent contenir uniquement la valeur <code>tous-publics</code>. Celle-ci ne peut pas être utilisée avec d’autres valeurs.</p>
 <p>Des informations complémentaires peuvent être précisées dans le champ <code>publics_precisions</code>.</p>
-<p>Les services destinés à tous les publics sans restrictions doivent contenir la valeur <code>tous-publics</code>.</p>
-<p>Type : <code>array[string] | "tous-publics" | null</code></p>
+<p>Type : <code>array[string] | null</code></p>
 <p>Valeurs acceptées : voir le <a href="../referentiels/publics/">référentiel associé</a></p>
 <p>Exemples :</p>
 <div class="highlight"><pre><span></span><code><span class="p">[</span><span class="s2">&quot;femmes&quot;</span><span class="p">]</span>
 <span class="p">[</span><span class="s2">&quot;residents-qpv-frr&quot;</span><span class="p">]</span>
-<span class="s2">&quot;tous-publics&quot;</span>
+<span class="p">[</span><span class="s2">&quot;tous-publics&quot;</span><span class="p">]</span>
 </code></pre></div>
 <hr />
 <h3 id="publics_precisions"><code>publics_precisions</code></h3>
