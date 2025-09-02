@@ -361,6 +361,11 @@ class ReseauPorteur(EnhancedEnum):
         "Maisons de l’Emploi",
         None,
     )
+    MAISON_DEPARTEMENTALE_DE_L_AUTONOMIE = (
+        "maison-departementale-de-lautonomie",
+        "Maisons Départementales de l’Autonomie",
+        None,
+    )
     MAISONS_DES_SOLIDARITES = (
         "maisons-des-solidarites",
         "Maisons Départementales des Solidarités (MDS)",

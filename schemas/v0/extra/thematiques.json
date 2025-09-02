@@ -136,6 +136,31 @@
   },
   {
     "description": null,
+    "label": "Accompagnement aux démarches administratives",
+    "value": "difficultes-administratives-ou-juridiques--accompagnement-aux-demarches-administratives"
+  },
+  {
+    "description": null,
+    "label": "Accompagnement pour l’accès aux droits",
+    "value": "difficultes-administratives-ou-juridiques--accompagnement-pour-lacces-aux-droits"
+  },
+  {
+    "description": null,
+    "label": "Prendre en compte une problématique judiciaire",
+    "value": "difficultes-administratives-ou-juridiques--prendre-en-compte-une-problematique-judiciaire"
+  },
+  {
+    "description": null,
+    "label": "Acquérir une autonomie budgétaire",
+    "value": "difficultes-financieres--acquerir-une-autonomie-budgetaire"
+  },
+  {
+    "description": null,
+    "label": "Mettre en place une mesure de protection financière",
+    "value": "difficultes-financieres--mettre-en-place-une-mesure-de-protection-financiere"
+  },
+  {
+    "description": null,
     "label": "Équipement et alimentation",
     "value": "equipement-et-alimentation"
   },
@@ -198,6 +223,11 @@
     "description": null,
     "label": "Soutien à la parentalité",
     "value": "famille--soutien-a-la-parentalite"
+  },
+  {
+    "description": null,
+    "label": "Soutien aux aidants",
+    "value": "famille--soutien-aidants"
   },
   {
     "description": null,
@@ -361,6 +391,11 @@
   },
   {
     "description": null,
+    "label": "Acheter un logement",
+    "value": "logement-hebergement--acheter-un-logement"
+  },
+  {
+    "description": null,
     "label": "Aides financières pour l’investissement locatif",
     "value": "logement-hebergement--aides-financieres-investissement-locatif"
   },
@@ -406,6 +441,11 @@
   },
   {
     "description": null,
+    "label": "Louer un logement",
+    "value": "logement-hebergement--louer-un-logement"
+  },
+  {
+    "description": null,
     "label": "Mal logé/sans logis",
     "value": "logement-hebergement--mal-loges-sans-logis"
   },
@@ -416,13 +456,28 @@
   },
   {
     "description": null,
+    "label": "Rechercher une solution d’hébergement temporaire",
+    "value": "logement-hebergement--rechercher-une-solution-dhebergement-temporaire"
+  },
+  {
+    "description": null,
     "label": "Reprendre un emploi ou une formation",
     "value": "logement-hebergement--reprendre-un-emploi-ou-une-formation"
   },
   {
     "description": null,
+    "label": "S’informer sur les démarches liées à l’accès au logement",
+    "value": "logement-hebergement--sinformer-sur-les-demarches-liees-a-lacces-au-logement"
+  },
+  {
+    "description": null,
     "label": "Mobilité",
     "value": "mobilite"
+  },
+  {
+    "description": null,
+    "label": "Accéder à un véhicule",
+    "value": "mobilite--acceder-a-un-vehicule"
   },
   {
     "description": null,
@@ -461,6 +516,11 @@
   },
   {
     "description": null,
+    "label": "Financer ma mobilité",
+    "value": "mobilite--financer-ma-mobilite"
+  },
+  {
+    "description": null,
     "label": "Financer mon projet mobilité",
     "value": "mobilite--financer-mon-projet-mobilite"
   },
@@ -473,6 +533,11 @@
     "description": null,
     "label": "Préparer son permis de conduire, se réentraîner à la conduite",
     "value": "mobilite--preparer-son-permis-de-conduire-se-reentrainer-a-la-conduite"
+  },
+  {
+    "description": null,
+    "label": "Préparer un permis de conduire",
+    "value": "mobilite--preparer-un-permis-de-conduire"
   },
   {
     "description": null,
@@ -493,6 +558,11 @@
     "description": null,
     "label": "Accompagner les démarches de santé",
     "value": "numerique--accompagner-les-demarches-de-sante"
+  },
+  {
+    "description": null,
+    "label": "Acquérir un équipement numérique",
+    "value": "numerique--acquerir-un-equipement"
   },
   {
     "description": null,
@@ -586,8 +656,18 @@
   },
   {
     "description": null,
+    "label": "Activités sportives et culturelles",
+    "value": "remobilisation--activites-sportives-et-culturelles"
+  },
+  {
+    "description": null,
     "label": "Bien être",
     "value": "remobilisation--bien-etre"
+  },
+  {
+    "description": null,
+    "label": "Bien-être, confiance en soi",
+    "value": "remobilisation--bien-etre-confiance-en-soi"
   },
   {
     "description": null,
@@ -651,6 +731,11 @@
   },
   {
     "description": null,
+    "label": "Constituer un dossier MDPH (invalidité)",
+    "value": "sante--constituer-un-dossier-mdph-invalidite"
+  },
+  {
+    "description": null,
     "label": "Diagnostic et accompagnement à l’employabilité",
     "value": "sante--diagnostic-et-accompagnement-a-lemployabilite"
   },
@@ -668,6 +753,11 @@
     "description": null,
     "label": "Prévention et accès aux soins (vaccination, éducation à la santé, lutte contre la tuberculose…).",
     "value": "sante--prevention-et-acces-aux-soins"
+  },
+  {
+    "description": null,
+    "label": "Santé mentale",
+    "value": "sante--sante-mentale"
   },
   {
     "description": null,
@@ -733,6 +823,11 @@
     "description": null,
     "label": "Faire des candidatures spontanées",
     "value": "trouver-un-emploi--faire-des-candidatures-spontanees"
+  },
+  {
+    "description": null,
+    "label": "Trouver un emploi - Maintien dans l’emploi",
+    "value": "trouver-un-emploi--maintien-dans-lemploi"
   },
   {
     "description": null,

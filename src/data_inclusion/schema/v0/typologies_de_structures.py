@@ -305,6 +305,11 @@ class TypologieStructure(EnhancedEnum):
         "Bureau de poste / Agence postale",
         None,
     )
+    MDA = (
+        "MDA",
+        "Maison Départementale de l’Autonomie",
+        None,
+    )
     MDE = (
         "MDE",
         "Maison de l’emploi",

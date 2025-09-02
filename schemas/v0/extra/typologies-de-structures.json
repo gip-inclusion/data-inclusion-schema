@@ -296,6 +296,11 @@
   },
   {
     "description": null,
+    "label": "Maison Départementale de l’Autonomie",
+    "value": "MDA"
+  },
+  {
+    "description": null,
     "label": "Maison de l’emploi",
     "value": "MDE"
   },

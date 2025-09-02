@@ -153,6 +153,33 @@ class Thematique(EnhancedEnum):
         None,
     )
 
+    DIFFICULTES_ADMINISTRATIVES_OU_JURIDIQUES__ACCOMPAGNEMENT_POUR_L_ACCES_AUX_DROITS = (  # noqa: E501
+        "difficultes-administratives-ou-juridiques--accompagnement-pour-lacces-aux-droits",
+        "Accompagnement pour l’accès aux droits",
+        None,
+    )
+    DIFFICULTES_ADMINISTRATIVES_OU_JURIDIQUES__PRENDRE_EN_COMPTE_UNE_PROBLEMATIQUE_JUDICIAIRE = (  # noqa: E501
+        "difficultes-administratives-ou-juridiques--prendre-en-compte-une-problematique-judiciaire",
+        "Prendre en compte une problématique judiciaire",
+        None,
+    )
+    DIFFICULTES_ADMINISTRATIVES_OU_JURIDIQUES__ACCOMPAGNEMENT_AUX_DEMARCHES_ADMINISTRATIVES = (  # noqa: E501
+        "difficultes-administratives-ou-juridiques--accompagnement-aux-demarches-administratives",
+        "Accompagnement aux démarches administratives",
+        None,
+    )
+
+    DIFFICULTES_FINANCIERES__ACQUERIR_UNE_AUTONOMIE_BUDGETAIRE = (
+        "difficultes-financieres--acquerir-une-autonomie-budgetaire",
+        "Acquérir une autonomie budgétaire",
+        None,
+    )
+    DIFFICULTES_FINANCIERES__METTRE_EN_PLACE_UNE_MESURE_DE_PROTECTION_FINANCIERE = (
+        "difficultes-financieres--mettre-en-place-une-mesure-de-protection-financiere",
+        "Mettre en place une mesure de protection financière",
+        None,
+    )
+
     EQUIPEMENT_ET_ALIMENTATION = (
         "equipement-et-alimentation",
         "Équipement et alimentation",
@@ -212,6 +239,11 @@ class Thematique(EnhancedEnum):
     FAMILLE__JEUNES_SANS_SOUTIEN_FAMILIAL = (
         "famille--jeunes-sans-soutien-familial",
         "Jeunes sans soutien familial",
+        None,
+    )
+    FAMILLE__SOUTIEN_AIDANTS = (
+        "famille--soutien-aidants",
+        "Soutien aux aidants",
         None,
     )
     FAMILLE__SOUTIEN_A_LA_PARENTALITE = (
@@ -386,6 +418,11 @@ class Thematique(EnhancedEnum):
         "Logement et hébergement",
         None,
     )
+    LOGEMENT_HEBERGEMENT__ACHETER_UN_LOGEMENT = (
+        "logement-hebergement--acheter-un-logement",
+        "Acheter un logement",
+        None,
+    )
     LOGEMENT_HEBERGEMENT__AIDES_FINANCIERES_INVESTISSEMENT_LOCATIF = (
         "logement-hebergement--aides-financieres-investissement-locatif",
         "Aides financières pour l’investissement locatif",
@@ -431,6 +468,11 @@ class Thematique(EnhancedEnum):
         "Gérer son budget",
         None,
     )
+    LOGEMENT_HEBERGEMENT__LOUER_UN_LOGEMENT = (
+        "logement-hebergement--louer-un-logement",
+        "Louer un logement",
+        None,
+    )
     LOGEMENT_HEBERGEMENT__MAL_LOGES_SANS_LOGIS = (
         "logement-hebergement--mal-loges-sans-logis",
         "Mal logé/sans logis",
@@ -441,15 +483,30 @@ class Thematique(EnhancedEnum):
         "Problème avec son logement",
         None,
     )
+    LOGEMENT_HEBERGEMENT__RECHERCHER_UNE_SOLUTION_DHEBERGEMENT_TEMPORAIRE = (
+        "logement-hebergement--rechercher-une-solution-dhebergement-temporaire",
+        "Rechercher une solution d’hébergement temporaire",
+        None,
+    )
     LOGEMENT_HEBERGEMENT__REPRENDRE_UN_EMPLOI_OU_UNE_FORMATION = (
         "logement-hebergement--reprendre-un-emploi-ou-une-formation",
         "Reprendre un emploi ou une formation",
+        None,
+    )
+    LOGEMENT_HEBERGEMENT__SINFORMER_SUR_LES_DEMARCHES_LIEES_A_L_ACCES_AU_LOGEMENT = (
+        "logement-hebergement--sinformer-sur-les-demarches-liees-a-lacces-au-logement",
+        "S’informer sur les démarches liées à l’accès au logement",
         None,
     )
 
     MOBILITE = (
         "mobilite",
         "Mobilité",
+        None,
+    )
+    MOBILITE__ACCEDER_A_UN_VEHICULE = (
+        "mobilite--acceder-a-un-vehicule",
+        "Accéder à un véhicule",
         None,
     )
     MOBILITE__ACHETER_UN_VEHICULE_MOTORISE = (
@@ -487,9 +544,9 @@ class Thematique(EnhancedEnum):
         "Être accompagné(e) dans son parcours mobilité",
         None,
     )
-    MOBILITE__LOUER_UN_VEHICULE = (
-        "mobilite--louer-un-vehicule",
-        "Louer un véhicule (voiture, vélo, scooter..)",
+    MOBILITE__FINANCER_MA_MOBILITE = (
+        "mobilite--financer-ma-mobilite",
+        "Financer ma mobilité",
         None,
     )
     MOBILITE__FINANCER_MON_PROJET_MOBILITE = (
@@ -497,15 +554,30 @@ class Thematique(EnhancedEnum):
         "Financer mon projet mobilité",
         None,
     )
+    MOBILITE__LOUER_UN_VEHICULE = (
+        "mobilite--louer-un-vehicule",
+        "Louer un véhicule (voiture, vélo, scooter..)",
+        None,
+    )
     MOBILITE__PREPARER_SON_PERMIS_DE_CONDUIRE_SE_REENTRAINER_A_LA_CONDUITE = (
         "mobilite--preparer-son-permis-de-conduire-se-reentrainer-a-la-conduite",
         "Préparer son permis de conduire, se réentraîner à la conduite",
+        None,
+    )
+    MOBILITE__PREPARER_UN_PERMIS_DE_CONDUIRE = (
+        "mobilite--preparer-un-permis-de-conduire",
+        "Préparer un permis de conduire",
         None,
     )
 
     NUMERIQUE = (
         "numerique",
         "Numérique",
+        None,
+    )
+    NUMERIQUE__ACQUERIR_UN_EQUIPEMENT_NUMERIQUE = (
+        "numerique--acquerir-un-equipement",
+        "Acquérir un équipement numérique",
         None,
     )
     NUMERIQUE__ACCEDER_A_DU_MATERIEL = (
@@ -615,9 +687,19 @@ class Thematique(EnhancedEnum):
         "Remobilisation",
         None,
     )
+    REMOBILISATION__ACTIVITES_SPORTIVES_ET_CULTURELLES = (
+        "remobilisation--activites-sportives-et-culturelles",
+        "Activités sportives et culturelles",
+        None,
+    )
     REMOBILISATION__BIEN_ETRE = (
         "remobilisation--bien-etre",
         "Bien être",
+        None,
+    )
+    REMOBILISATION__BIEN_ETRE_CONFIANCE_EN_SOI = (
+        "remobilisation--bien-etre-confiance-en-soi",
+        "Bien-être, confiance en soi",
         None,
     )
     REMOBILISATION__DECOUVRIR_SON_POTENTIEL_VIA_LE_SPORT_ET_LA_CULTURE = (
@@ -681,6 +763,11 @@ class Thematique(EnhancedEnum):
         "Bien être psychologique",
         None,
     )
+    SANTE__CONSTITUER_UN_DOSSIER_MDPH_INVALIDITE = (
+        "sante--constituer-un-dossier-mdph-invalidite",
+        "Constituer un dossier MDPH (invalidité)",
+        None,
+    )
     SANTE__DIAGNOSTIC_ET_ACCOMPAGNEMENT_A_LEMPLOYABILITE = (
         "sante--diagnostic-et-accompagnement-a-lemployabilite",
         "Diagnostic et accompagnement à l’employabilité",
@@ -702,6 +789,11 @@ class Thematique(EnhancedEnum):
             "Prévention et accès aux soins "
             "(vaccination, éducation à la santé, lutte contre la tuberculose…)."
         ),
+        None,
+    )
+    SANTE__SANTE_MENTALE = (
+        "sante--sante-mentale",
+        "Santé mentale",
         None,
     )
     SANTE__SE_SOIGNER_ET_PRÉVENIR_LA_MALADIE = (
@@ -770,6 +862,11 @@ class Thematique(EnhancedEnum):
     TROUVER_UN_EMPLOI__FAIRE_DES_CANDIDATURES_SPONTANEES = (
         "trouver-un-emploi--faire-des-candidatures-spontanees",
         "Faire des candidatures spontanées",
+        None,
+    )
+    TROUVER_UN_EMPLOI__MAINTIEN_DANS_LEMPLOI = (
+        "trouver-un-emploi--maintien-dans-lemploi",
+        "Trouver un emploi - Maintien dans l’emploi",
         None,
     )
     TROUVER_UN_EMPLOI__REPONDRE_A_DES_OFFRES_DEMPLOI = (

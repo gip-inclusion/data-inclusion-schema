@@ -27,6 +27,11 @@
 | `creation-activite--financer-son-projet` | Financer son projet | - |
 | `creation-activite--reseautage-pour-createurs-dentreprise` | Réseautage pour créateurs d’entreprise | - |
 | `creation-activite--structurer-son-projet-de-creation-dentreprise` | Structurer son projet de création d’entreprise | - |
+| `difficultes-administratives-ou-juridiques--accompagnement-aux-demarches-administratives` | Accompagnement aux démarches administratives | - |
+| `difficultes-administratives-ou-juridiques--accompagnement-pour-lacces-aux-droits` | Accompagnement pour l’accès aux droits | - |
+| `difficultes-administratives-ou-juridiques--prendre-en-compte-une-problematique-judiciaire` | Prendre en compte une problématique judiciaire | - |
+| `difficultes-financieres--acquerir-une-autonomie-budgetaire` | Acquérir une autonomie budgétaire | - |
+| `difficultes-financieres--mettre-en-place-une-mesure-de-protection-financiere` | Mettre en place une mesure de protection financière | - |
 | `equipement-et-alimentation` | Équipement et alimentation | - |
 | `equipement-et-alimentation--acces-a-du-materiel-informatique` | Accès à du matériel informatique | - |
 | `equipement-et-alimentation--acces-a-un-telephone-et-un-abonnement` | Accès à un téléphone et un abonnement | - |
@@ -40,6 +45,7 @@
 | `famille--information-et-accompagnement-des-parents` | Information et accompagnement des parents | - |
 | `famille--jeunes-sans-soutien-familial` | Jeunes sans soutien familial | - |
 | `famille--soutien-a-la-parentalite` | Soutien à la parentalité | - |
+| `famille--soutien-aidants` | Soutien aux aidants | - |
 | `famille--soutien-aux-familles` | Soutien aux familles | - |
 | `famille--violences-intrafamiliales` | Violences intrafamiliales | - |
 | `gestion-financiere` | Gestion financière | - |
@@ -72,6 +78,7 @@
 | `illettrisme--utiliser-numerique` | Savoir utiliser les outils numériques | - |
 | `illettrisme--valider-certification-clea` | Valider une certification Cléa | - |
 | `logement-hebergement` | Logement et hébergement | - |
+| `logement-hebergement--acheter-un-logement` | Acheter un logement | - |
 | `logement-hebergement--aides-financieres-investissement-locatif` | Aides financières pour l’investissement locatif | - |
 | `logement-hebergement--besoin-dadapter-mon-logement` | Besoin d’adapter mon logement | - |
 | `logement-hebergement--connaissance-de-ses-droits-et-interlocuteurs` | Connaissance de ses droits et interlocuteurs | - |
@@ -81,10 +88,14 @@
 | `logement-hebergement--etre-accompagne-pour-se-loger` | Être accompagné(e) pour se loger | - |
 | `logement-hebergement--financer-son-projet-travaux` | Financer son projet de travaux | - |
 | `logement-hebergement--gerer-son-budget` | Gérer son budget | - |
+| `logement-hebergement--louer-un-logement` | Louer un logement | - |
 | `logement-hebergement--mal-loges-sans-logis` | Mal logé/sans logis | - |
 | `logement-hebergement--probleme-avec-son-logement` | Problème avec son logement | - |
+| `logement-hebergement--rechercher-une-solution-dhebergement-temporaire` | Rechercher une solution d’hébergement temporaire | - |
 | `logement-hebergement--reprendre-un-emploi-ou-une-formation` | Reprendre un emploi ou une formation | - |
+| `logement-hebergement--sinformer-sur-les-demarches-liees-a-lacces-au-logement` | S’informer sur les démarches liées à l’accès au logement | - |
 | `mobilite` | Mobilité | - |
+| `mobilite--acceder-a-un-vehicule` | Accéder à un véhicule | - |
 | `mobilite--acheter-un-vehicule-motorise` | Acheter un véhicule motorisé | - |
 | `mobilite--acheter-un-velo` | Acheter un vélo | - |
 | `mobilite--aides-a-la-reprise-demploi-ou-a-la-formation` | Aides à la reprise d’emploi ou à la formation | - |
@@ -92,13 +103,16 @@
 | `mobilite--comprendre-et-utiliser-les-transports-en-commun` | Comprendre et utiliser les transports en commun | - |
 | `mobilite--entretenir-reparer-son-vehicule` | Entretenir ou réparer son véhicule | - |
 | `mobilite--etre-accompagne-dans-son-parcours-mobilite` | Être accompagné(e) dans son parcours mobilité | - |
+| `mobilite--financer-ma-mobilite` | Financer ma mobilité | - |
 | `mobilite--financer-mon-projet-mobilite` | Financer mon projet mobilité | - |
 | `mobilite--louer-un-vehicule` | Louer un véhicule (voiture, vélo, scooter..) | - |
 | `mobilite--preparer-son-permis-de-conduire-se-reentrainer-a-la-conduite` | Préparer son permis de conduire, se réentraîner à la conduite | - |
+| `mobilite--preparer-un-permis-de-conduire` | Préparer un permis de conduire | - |
 | `numerique` | Numérique | - |
 | `numerique--acceder-a-du-materiel` | Accéder à du matériel | - |
 | `numerique--acceder-a-une-connexion-internet` | Accéder à une connexion internet | - |
 | `numerique--accompagner-les-demarches-de-sante` | Accompagner les démarches de santé | - |
+| `numerique--acquerir-un-equipement` | Acquérir un équipement numérique | - |
 | `numerique--approfondir-ma-culture-numerique` | Approfondir ma culture numérique | - |
 | `numerique--creer-avec-le-numerique` | Créer avec le numérique | - |
 | `numerique--creer-et-developper-mon-entreprise` | Créer et développer mon entreprise | - |
@@ -117,7 +131,9 @@
 | `preparer-sa-candidature--realiser-un-cv-et-ou-une-lettre-de-motivation` | Réaliser un CV et/ou une lettre de motivation | - |
 | `preparer-sa-candidature--valoriser-ses-competences` | Valoriser ses compétences | - |
 | `remobilisation` | Remobilisation | - |
+| `remobilisation--activites-sportives-et-culturelles` | Activités sportives et culturelles | - |
 | `remobilisation--bien-etre` | Bien être | - |
+| `remobilisation--bien-etre-confiance-en-soi` | Bien-être, confiance en soi | - |
 | `remobilisation--decouvrir-son-potentiel-via-le-sport-et-la-culture` | Découvrir son potentiel via le sport et la culture | - |
 | `remobilisation--discrimination` | Discrimination | - |
 | `remobilisation--identifier-ses-competences-et-aptitudes` | Identifier ses compétences et aptitudes | - |
@@ -130,10 +146,12 @@
 | `sante--accompagnement-de-la-femme-enceinte-du-bebe-et-du-jeune-enfant` | Accompagnement de la femme enceinte, du bébé et du jeune enfant | - |
 | `sante--accompagner-les-traumatismes` | Accompagner les traumatismes | - |
 | `sante--bien-etre-psychologique` | Bien être psychologique | - |
+| `sante--constituer-un-dossier-mdph-invalidite` | Constituer un dossier MDPH (invalidité) | - |
 | `sante--diagnostic-et-accompagnement-a-lemployabilite` | Diagnostic et accompagnement à l’employabilité | - |
 | `sante--faire-face-a-une-situation-daddiction` | Faire face à une situation d’addiction | - |
 | `sante--obtenir-la-prise-en-charge-de-frais-medicaux` | Obtenir la prise en charge de frais médicaux | - |
 | `sante--prevention-et-acces-aux-soins` | Prévention et accès aux soins (vaccination, éducation à la santé, lutte contre la tuberculose…). | - |
+| `sante--sante-mentale` | Santé mentale | - |
 | `sante--se-soigner-et-prevenir-la-maladie` | Se soigner et prévenir la maladie | - |
 | `sante--vie-relationnelle-et-affective` | Vie relationnelle et affective, dépistage et prévention des IST/VIH… | - |
 | `se-former` | Se former | - |
@@ -147,5 +165,6 @@
 | `trouver-un-emploi` | Trouver un emploi | - |
 | `trouver-un-emploi--convaincre-un-recruteur-en-entretien` | Convaincre un recruteur en entretien | - |
 | `trouver-un-emploi--faire-des-candidatures-spontanees` | Faire des candidatures spontanées | - |
+| `trouver-un-emploi--maintien-dans-lemploi` | Trouver un emploi - Maintien dans l’emploi | - |
 | `trouver-un-emploi--repondre-a-des-offres-demploi` | Répondre à des offres d’emploi | - |
 | `trouver-un-emploi--suivre-ses-candidatures-et-relancer-les-employeurs` | Suivre ses candidatures et relancer les employeurs | - |
