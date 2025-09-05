@@ -50,25 +50,6 @@ class Structure(BaseModel):
             max_length=150,
         ),
     ]
-    description: Annotated[
-        str,
-        Field(
-            description="""
-                Description de la structure.
-
-                Entre 50 et 2000 caractères.
-            """,
-            examples=[
-                """
-                    L’association 3027 offre un accès gratuit aux arts, à la culture et
-                    au sport pour toutes et tous sans distinction et en priorité aux
-                    personnes en situation de précarité et d’isolement.
-                """
-            ],
-            min_length=50,
-            max_length=2000,
-        ),
-    ]
     date_maj: Annotated[
         date,
         Field(
@@ -84,6 +65,23 @@ class Structure(BaseModel):
     #########################
     ### Champs optionnels ###
     #########################
+    description: Annotated[
+        str | None,
+        Field(
+            description="""
+                Description de la structure.
+            """,
+            examples=[
+                """
+                    L’association 3027 offre un accès gratuit aux arts, à la culture et
+                    au sport pour toutes et tous sans distinction et en priorité aux
+                    personnes en situation de précarité et d’isolement.
+                """
+            ],
+            min_length=50,
+            max_length=2000,
+        ),
+    ] = None
     siret: Annotated[
         common.CodeSiret | None,
         Field(
