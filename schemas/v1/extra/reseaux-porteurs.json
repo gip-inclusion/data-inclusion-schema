@@ -316,6 +316,11 @@
   },
   {
     "description": null,
+    "label": "Maisons Départementales de l’Autonomie",
+    "value": "maison-departementale-de-lautonomie"
+  },
+  {
+    "description": null,
     "label": "Maisons de l’Emploi",
     "value": "maisons-de-l-emploi"
   },

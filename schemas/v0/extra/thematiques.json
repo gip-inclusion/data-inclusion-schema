@@ -136,6 +136,16 @@
   },
   {
     "description": null,
+    "label": "Accompagnement aux démarches administratives",
+    "value": "difficultes-administratives-ou-juridiques--accompagnement-aux-demarches-administratives"
+  },
+  {
+    "description": null,
+    "label": "Accompagnement pour l’accès aux droits",
+    "value": "difficultes-administratives-ou-juridiques--accompagnement-pour-lacces-aux-droits"
+  },
+  {
+    "description": null,
     "label": "Équipement et alimentation",
     "value": "equipement-et-alimentation"
   },
@@ -198,6 +208,11 @@
     "description": null,
     "label": "Soutien à la parentalité",
     "value": "famille--soutien-a-la-parentalite"
+  },
+  {
+    "description": null,
+    "label": "Soutien aux aidants",
+    "value": "famille--soutien-aidants"
   },
   {
     "description": null,
@@ -361,6 +376,11 @@
   },
   {
     "description": null,
+    "label": "Accéder à un logement",
+    "value": "logement-hebergement--acceder-a-un-logement"
+  },
+  {
+    "description": null,
     "label": "Aides financières pour l’investissement locatif",
     "value": "logement-hebergement--aides-financieres-investissement-locatif"
   },
@@ -418,6 +438,11 @@
     "description": null,
     "label": "Reprendre un emploi ou une formation",
     "value": "logement-hebergement--reprendre-un-emploi-ou-une-formation"
+  },
+  {
+    "description": null,
+    "label": "S’informer sur les démarches liées à l’accès au logement",
+    "value": "logement-hebergement--sinformer-sur-les-demarches-liees-a-lacces-au-logement"
   },
   {
     "description": null,
@@ -493,6 +518,11 @@
     "description": null,
     "label": "Accompagner les démarches de santé",
     "value": "numerique--accompagner-les-demarches-de-sante"
+  },
+  {
+    "description": null,
+    "label": "Acquérir un équipement numérique",
+    "value": "numerique--acquerir-un-equipement"
   },
   {
     "description": null,
@@ -586,6 +616,11 @@
   },
   {
     "description": null,
+    "label": "Activités sportives et culturelles",
+    "value": "remobilisation--activites-sportives-et-culturelles"
+  },
+  {
+    "description": null,
     "label": "Bien être",
     "value": "remobilisation--bien-etre"
   },
@@ -651,6 +686,11 @@
   },
   {
     "description": null,
+    "label": "Constituer un dossier MDPH (invalidité)",
+    "value": "sante--constituer-un-dossier-mdph-invalidite"
+  },
+  {
+    "description": null,
     "label": "Diagnostic et accompagnement à l’employabilité",
     "value": "sante--diagnostic-et-accompagnement-a-lemployabilite"
   },
@@ -668,6 +708,11 @@
     "description": null,
     "label": "Prévention et accès aux soins (vaccination, éducation à la santé, lutte contre la tuberculose…).",
     "value": "sante--prevention-et-acces-aux-soins"
+  },
+  {
+    "description": null,
+    "label": "Santé mentale",
+    "value": "sante--sante-mentale"
   },
   {
     "description": null,
@@ -733,6 +778,11 @@
     "description": null,
     "label": "Faire des candidatures spontanées",
     "value": "trouver-un-emploi--faire-des-candidatures-spontanees"
+  },
+  {
+    "description": null,
+    "label": "Trouver un emploi - Maintien dans l’emploi",
+    "value": "trouver-un-emploi--maintien-dans-lemploi"
   },
   {
     "description": null,
