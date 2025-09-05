@@ -31,21 +31,8 @@ Ces fichiers sont générés à partir des modèles python définis dans le doss
 src/
 └── data_inclusion
     └── schema
-        ├── __init__.py
-        ├── __main__.py
-        ├── base.py
-        ├── common.py
-        ├── frais.py
-        ├── labels_nationaux.py
-        ├── modes_accueil.py
-        ├── modes_orientation.py
-        ├── profils.py
-        ├── services.py
-        ├── structures.py
-        ├── thematiques.py
-        ├── typologies_de_services.py
-        ├── typologies_de_structures.py
-        └── zones_de_diffusion.py
+        ├── v0/  # version dépréciée
+        └── v1/  # version actuelle
 ```
 
 ### 2. Compiler le json schéma
@@ -66,21 +53,18 @@ uv run --extra docs scripts/compile_docs.py
 
 Ajouter ses modifications au [CHANGELOG](CHANGELOG.md) dans la section "à venir".
 
-
 ## Faire une release
 
-> [!NOTE]
-> Vous devez avoir finalisé au maximum votre proposition avant de lancer une release.
-> PyPI ne permet pas de ré-uploader (ou "forcer") une version déjà uploadée, par sécurité.
-> Chaque nouvelle version demandera un nouveau numéro de package.
-> Voir [la documentation](https://pypi.org/help/#file-name-reuse)
+💡 Les tags (git) utilisent le format `vX.Y.Z`. Le package (python, `pyproject.toml`) utilise le format `X.Y.Z`.
 
-1. Sur une PR:
-    - Modifier le numéro de version du package dans [pyproject.toml](pyproject.toml) (pour la release sur PyPI)
-    - Dans le [CHANGELOG](CHANGELOG.md), passer les changements de la section `## À venir` à la section de la nouvelle release
+Marche à suivre :
 
-2. La doc est mise à jour automatiquement depuis le json schema lors d’un merge sur la branche release.
-   Si ajout d’un referentiel de plus de 5 items, il faut ajouter une ligne referencant la page de doc mkdocs.yml
-
-3. Mettre à jour le tag Github (pour `schema.data.gouv.fr`) : `git tag {my-tag} & git tag -f latest & git push --tags`
-4. Créer une release sur Github en pointant sur le tag
+1. Uniquement sur les branches `v0` et `main`
+    * `v0` pour toutes les versions `v0`
+    * `main` pour toutes les versions `v1`
+2. Créer un commit spécifique sur la branche :
+    * actualiser la version du package avec `uv version X.Y.Z` (⚠️ pas de `v` ici)
+    * actualiser le `CHANGELOG.md`, avec une nouvelle section dédiée pour cette version (⚠️ pas pour les prereleases)
+    * `git commit -m "chore: version v$(uv version --short)"`
+4. Taguer ce commit : `git tag v$(uv version --short) && git tag -f latest`
+5. Envoyer commit et tag : `git push && git push --tags`
