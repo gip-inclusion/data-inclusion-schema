@@ -6,6 +6,7 @@ repo_url: https://github.com/gip-inclusion/data-inclusion-schema
 
 theme:
   name: material
+  language: fr
   logo: assets/DataInclusion-Monogramme-Blanc.png
   favicon: assets/DataInclusion-Monogramme-Couleur.png
 
@@ -16,6 +17,7 @@ markdown_extensions:
 plugins:
   - literate-nav:
       nav_file: summary.md
+  - search
 
 extra:
   version:
