@@ -15,18 +15,7 @@ from data_inclusion.schema.v1 import (
     score_qualite,
 )
 
-
-def service_factory(**kwargs):
-    defaults = {
-        "id": "1",
-        "structure_id": "2",
-        "nom": "foo",
-        "date_maj": pendulum.today(),
-        "source": "3",
-        "description": "." * 500,
-    }
-    kwargs = defaults | kwargs
-    return Service(**kwargs)
+from .factories import service_factory
 
 
 @pytest.mark.parametrize(
