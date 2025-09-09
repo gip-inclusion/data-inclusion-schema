@@ -27,3 +27,26 @@ def test_date_maj_valide(factory, date_maj, est_valide):
         assert "date_maj" in str(exc)
     else:
         assert est_valide
+
+
+@pytest.mark.parametrize("model", [Structure, Service])
+@pytest.mark.parametrize(
+    ("nom", "est_valide"),
+    [
+        ("*" * 2, False),
+        ("*" * 3, True),
+        ("*" * 150, True),
+        ("*" * 151, False),
+        ("Centre social Le Tournesol.", False),
+        ("Centre social Le Tournesol", True),
+        ("Centre social Le Tournesol etc.", True),
+    ],
+)
+def test_nom_valide(factory, nom, est_valide):
+    try:
+        factory(nom=nom)
+    except pydantic.ValidationError as exc:
+        assert not est_valide
+        assert "nom" in str(exc)
+    else:
+        assert est_valide

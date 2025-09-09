@@ -50,6 +50,15 @@ class Structure(BaseModel):
             max_length=150,
         ),
     ]
+
+    @field_validator("nom")
+    def nom_valide(cls, value: str) -> str:
+        if value.endswith(".") and not value.endswith("etc."):
+            raise ValueError(
+                "Le nom de la structure ne doit pas se terminer par un point."
+            )
+        return value
+
     date_maj: Annotated[
         date,
         Field(
