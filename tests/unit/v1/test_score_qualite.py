@@ -180,7 +180,7 @@ def test_critere_date_maj_recente_sources(source, attendu):
     [
         pytest.param(None, 0.0, id="nul"),
         pytest.param([], 0.0, id="vide"),
-        pytest.param([Thematique.FAMILLE], 1.0, id="thematique_definie"),
+        pytest.param([Thematique.SANTE__ADDICTIONS], 1.0, id="thematique_definie"),
     ],
 )
 def test_critere_au_moins_une_thematique(thematiques: list[Thematique], attendu: float):
@@ -347,7 +347,7 @@ def test_critere_frais_bien_definis(service: Service, attendu: float):
         pytest.param(
             service_factory(
                 date_maj=pendulum.today(),
-                thematiques=[Thematique.FAMILLE],
+                thematiques=[Thematique.SANTE__ADDICTIONS],
                 frais=Frais.GRATUIT,
                 publics=[Public.FEMMES],
                 telephone="3615",
@@ -373,7 +373,7 @@ def test_critere_frais_bien_definis(service: Service, attendu: float):
                 ],
                 mobilisable_par=[PersonneMobilisatrice.PROFESSIONNELS],
                 date_maj=pendulum.today() - pendulum.Duration(years=3),
-                thematiques=[Thematique.FAMILLE],
+                thematiques=[Thematique.SANTE__ADDICTIONS],
                 publics=[Public.FEMMES],
             ),
             round((len(score_qualite.CRITERES) - 1) / len(score_qualite.CRITERES), 2),

@@ -113,7 +113,21 @@ class Service(BaseModel):
             examples=[TypeService.ACCOMPAGNEMENT],
         ),
     ] = None
-    thematiques: set[Thematique] | None = None
+    thematiques: Annotated[
+        set[Thematique] | None,
+        Field(
+            description="""
+                Thématiques adressées par le service.
+            """,
+            examples=[
+                [Thematique.NUMERIQUE__ACQUERIR_UN_EQUIPEMENT],
+                [
+                    Thematique.SANTE__CONSTITUER_UN_DOSSIER_MDPH_INVALIDITE,
+                    Thematique.LOGEMENT_HEBERGEMENT__SE_MAINTENIR_DANS_LE_LOGEMENT,
+                ],
+            ],
+        ),
+    ] = None
     frais: Annotated[
         Frais | None,
         Field(
