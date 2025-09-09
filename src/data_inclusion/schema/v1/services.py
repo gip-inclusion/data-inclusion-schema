@@ -101,6 +101,18 @@ class Service(BaseModel):
         ),
     ]
 
+    @field_validator("date_maj")
+    def date_maj_valide(cls, value: date) -> date:
+        if value < date(2000, 1, 1):
+            raise ValueError(
+                "La date de dernière modification doit être au 21e siècle."
+            )
+        if value > date.today():
+            raise ValueError(
+                "La date de dernière modification ne peut pas être dans le futur."
+            )
+        return value
+
     #########################
     ### Champs optionnels ###
     #########################

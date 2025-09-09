@@ -1,7 +1,7 @@
 from datetime import date
 from typing import Annotated
 
-from pydantic import EmailStr, HttpUrl
+from pydantic import EmailStr, HttpUrl, field_validator
 
 from data_inclusion.schema import common
 from data_inclusion.schema.base import BaseModel, Field
@@ -61,6 +61,18 @@ class Structure(BaseModel):
             title="Date de dernière modification",
         ),
     ]
+
+    @field_validator("date_maj")
+    def date_maj_valide(cls, value: date) -> date:
+        if value < date(2000, 1, 1):
+            raise ValueError(
+                "La date de dernière modification doit être au 21e siècle."
+            )
+        if value > date.today():
+            raise ValueError(
+                "La date de dernière modification ne peut pas être dans le futur."
+            )
+        return value
 
     #########################
     ### Champs optionnels ###
