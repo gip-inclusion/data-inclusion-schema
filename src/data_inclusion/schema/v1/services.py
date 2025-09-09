@@ -67,6 +67,13 @@ class Service(BaseModel):
             max_length=150,
         ),
     ]
+
+    @field_validator("nom")
+    def nom_valide(cls, value: str) -> str:
+        if value.endswith(".") and not value.endswith("etc."):
+            raise ValueError("Le nom du service ne doit pas se terminer par un point.")
+        return value
+
     description: Annotated[
         str,
         Field(
