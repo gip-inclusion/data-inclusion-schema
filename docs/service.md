@@ -200,7 +200,7 @@ Exemples :
 
 ### `thematiques`
 
-
+Thématiques adressées par le service.
 
 
 
@@ -217,6 +217,14 @@ Type : `array[string] | null`
 Valeurs acceptées : voir le [référentiel associé](referentiels/thematiques.md)
 
 
+
+Exemples :
+
+```json
+["numerique--acquerir-un-equipement"]
+["sante--constituer-un-dossier-mdph-invalidite", "logement-hebergement--se-maintenir-dans-le-logement"]
+
+```
 
 ---
 
