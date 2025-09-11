@@ -16,6 +16,7 @@
 
 * ajout des champs `volume_horaire_hebdomadaire` et `nombre_semaines`
 * ajout du champ `mobilisable_par` et du référentiel associé
+* ajout de valeurs manquantes dans les thématiques, typologies et réseaux porteurs pour l'ajout de Ma Boussole Aidants
 
 ### Changements
 
