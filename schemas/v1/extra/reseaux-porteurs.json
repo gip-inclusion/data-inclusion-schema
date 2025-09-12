@@ -85,6 +85,11 @@
     "value": "cava"
   },
   {
+    "description": null,
+    "label": "Les Centres Communaux d’Action Sociale et les Centres Intercommunaux d’Action Sociale",
+    "value": "ccas-cias"
+  },
+  {
     "description": "Les Chambres de Commerce et d’Industrie (CCI), les Chambres des Métiers et de l’Artisanat (CMA) et les Chambres d’Agriculture (CA).",
     "label": "Chambres Consulaires",
     "value": "chambres-consulaires"
@@ -473,11 +478,6 @@
     "description": null,
     "label": "Union Nationale de l’Aide aux Familles",
     "value": "unaf"
-  },
-  {
-    "description": "Les Centres Communaux d’Action Sociale (CCAS) et les Centres Intercommunaux d’Action Sociale (CIAS).",
-    "label": "Union Nationale des Centres Communaux d’Action Sociale",
-    "value": "unccas"
   },
   {
     "description": null,

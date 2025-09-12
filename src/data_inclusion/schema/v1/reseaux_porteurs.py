@@ -116,6 +116,14 @@ class ReseauPorteur(EnhancedEnum):
         "Centres d’Adaptation à la Vie Active",
         None,
     )
+    CCAS_CIAS = (
+        "ccas-cias",
+        (
+            "Les Centres Communaux d’Action Sociale "
+            "et les Centres Intercommunaux d’Action Sociale"
+        ),
+        None,
+    )
     CHAMBRES_CONSULAIRES = (
         "chambres-consulaires",
         "Chambres Consulaires",
@@ -525,14 +533,6 @@ class ReseauPorteur(EnhancedEnum):
         "unaf",
         "Union Nationale de l’Aide aux Familles",
         None,
-    )
-    UNCCAS = (
-        "unccas",
-        "Union Nationale des Centres Communaux d’Action Sociale",
-        (
-            "Les Centres Communaux d’Action Sociale (CCAS) "
-            "et les Centres Intercommunaux d’Action Sociale (CIAS)."
-        ),
     )
     UNEA = (
         "unea",
