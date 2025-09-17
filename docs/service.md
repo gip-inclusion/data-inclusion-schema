@@ -143,6 +143,32 @@ Exemples :
 
 ---
 
+### `lien_source`
+
+Lien pour accéder au service sur le site web du producteur.
+
+
+
+Type : `string | null`
+
+
+
+Format : `uri`
+
+
+
+
+
+
+Exemples :
+
+```json
+"https://dora.inclusion.beta.gouv.fr/services/ass-pour-droit-a-l-i-nhes"
+
+```
+
+---
+
 ### `date_maj` *
 
 Date de dernière modification du service chez le producteur de données.

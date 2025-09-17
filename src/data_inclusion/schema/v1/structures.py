@@ -103,6 +103,17 @@ class Structure(BaseModel):
             max_length=2000,
         ),
     ] = None
+    lien_source: Annotated[
+        HttpUrl | None,
+        Field(
+            description="""
+                Lien pour accéder à la structure sur le site web du producteur.
+            """,
+            examples=[
+                "https://dora.inclusion.beta.gouv.fr/structures/ass-pour-droit-a-l-i-nhes"
+            ],
+        ),
+    ] = None
     siret: Annotated[
         common.CodeSiret | None,
         Field(

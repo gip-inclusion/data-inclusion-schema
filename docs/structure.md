@@ -138,6 +138,32 @@ Exemples :
 
 ---
 
+### `lien_source`
+
+Lien pour accéder à la structure sur le site web du producteur.
+
+
+
+Type : `string | null`
+
+
+
+Format : `uri`
+
+
+
+
+
+
+Exemples :
+
+```json
+"https://dora.inclusion.beta.gouv.fr/structures/ass-pour-droit-a-l-i-nhes"
+
+```
+
+---
+
 ### `siret`
 
 Un numéro SIRET associé à la structure.
