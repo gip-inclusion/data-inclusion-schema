@@ -97,6 +97,17 @@ class Service(BaseModel):
             max_length=2000,
         ),
     ]
+    lien_source: Annotated[
+        HttpUrl | None,
+        Field(
+            description="""
+                Lien pour accéder au service sur le site web du producteur.
+            """,
+            examples=[
+                "https://dora.inclusion.beta.gouv.fr/services/ass-pour-droit-a-l-i-nhes"
+            ],
+        ),
+    ] = None
     date_maj: Annotated[
         date,
         Field(

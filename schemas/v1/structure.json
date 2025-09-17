@@ -275,6 +275,25 @@
       "default": null,
       "title": "Latitude"
     },
+    "lien_source": {
+      "anyOf": [
+        {
+          "format": "uri",
+          "maxLength": 2083,
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Lien pour accéder à la structure sur le site web du producteur.",
+      "examples": [
+        "https://dora.inclusion.beta.gouv.fr/structures/ass-pour-droit-a-l-i-nhes"
+      ],
+      "title": "Lien Source"
+    },
     "longitude": {
       "anyOf": [
         {
