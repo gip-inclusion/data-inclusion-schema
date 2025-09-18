@@ -135,7 +135,7 @@ wheels = [
 
 [[package]]
 name = "data-inclusion-schema"
-version = "1.0.0b7"
+version = "1.0.0b8"
 source = { editable = "." }
 dependencies = [
     { name = "pendulum" },

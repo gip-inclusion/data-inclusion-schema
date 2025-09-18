@@ -16,10 +16,12 @@
 
 * ajout des champs `volume_horaire_hebdomadaire` et `nombre_semaines`
 * ajout du champ `mobilisable_par` et du référentiel associé
-* ajout de valeurs manquantes dans les thématiques, typologies et réseaux porteurs pour l'ajout de Ma Boussole Aidants
+* ajout des champs `typologie` & `reseaux_porteurs`
 
 ### Changements
 
+* validation des champs `nom` et `date_maj`
+* modifications importantes du référentiel des `thematiques`
 * améliorations de la documentation de chaque champ existant en v0 et v1
 * fusion des champs service `pre_requis` et `justificatifs` dans un nouveau champ `conditions_acces`
 * fusion des champs structure `typologie` et `labels_nationaux` dans un nouveau champ `reseaux_porteurs`
@@ -45,7 +47,6 @@
 **Schéma structure**
 
 * suppression du champ `antenne`
-* suppression du champ `lien_source`
 * suppression du champ `rna`
 * suppression du champ `thematiques`
 * suppression du champ `labels_autres`
@@ -56,4 +57,3 @@
 * suppression du champ `cumulable`
 * suppression du champ `date_creation`
 * suppression du champ `date_suspension`
-* suppression du champ `lien_source`
