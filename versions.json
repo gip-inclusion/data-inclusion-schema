@@ -2,7 +2,10 @@
   {
     "version": "main",
     "title": "main",
-    "aliases": []
+    "aliases": [],
+    "properties": {
+      "hidden": true
+    }
   },
   {
     "version": "dev",
