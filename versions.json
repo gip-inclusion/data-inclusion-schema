@@ -62,7 +62,10 @@
   {
     "version": "v1.0.0a2",
     "title": "v1.0.0a2",
-    "aliases": []
+    "aliases": [],
+    "properties": {
+      "hidden": true
+    }
   },
   {
     "version": "v1.0.0a1",
