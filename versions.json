@@ -7,7 +7,10 @@
   {
     "version": "dev",
     "title": "dev",
-    "aliases": []
+    "aliases": [],
+    "properties": {
+      "hidden": true
+    }
   },
   {
     "version": "v1.0.0b8",
