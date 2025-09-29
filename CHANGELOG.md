@@ -10,7 +10,7 @@
 
 ### Suppressions
 
-## 1.0.0 - 2025-07-01
+## 1.0.0 - 2025-09-29
 
 ### Ajouts
 
@@ -21,7 +21,7 @@
 ### Changements
 
 * validation des champs `nom` et `date_maj`
-* modifications importantes du référentiel des `thematiques`
+* refonte du référentiel des `thematiques`
 * améliorations de la documentation de chaque champ existant en v0 et v1
 * fusion des champs service `pre_requis` et `justificatifs` dans un nouveau champ `conditions_acces`
 * fusion des champs structure `typologie` et `labels_nationaux` dans un nouveau champ `reseaux_porteurs`
@@ -41,6 +41,8 @@
 * transformation du champ "id" pour en faire la clé primaire unique de chaque service & structure
 * renommage `profils` en `publics` et refonte du référentiel associé
 * validation du bon usage de la valeur `tous-publics`
+* validation des dates de mise à jour `date_maj`
+* validation des `nom`s de structures et de services
 
 ### Suppressions
 
