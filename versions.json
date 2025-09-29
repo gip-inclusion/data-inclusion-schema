@@ -63,14 +63,6 @@
     "aliases": []
   },
   {
-    "version": "v1.0.0a2",
-    "title": "v1.0.0a2",
-    "aliases": [],
-    "properties": {
-      "hidden": true
-    }
-  },
-  {
     "version": "v0.27.0",
     "title": "v0.27.0",
     "aliases": [
