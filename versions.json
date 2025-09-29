@@ -71,14 +71,6 @@
     }
   },
   {
-    "version": "v1.0.0a1",
-    "title": "v1.0.0a1",
-    "aliases": [],
-    "properties": {
-      "hidden": true
-    }
-  },
-  {
     "version": "v0.27.0",
     "title": "v0.27.0",
     "aliases": [
