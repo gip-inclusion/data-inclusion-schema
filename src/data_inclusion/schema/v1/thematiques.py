@@ -235,14 +235,14 @@ class Thematique(EnhancedEnum):
         "Financer ma mobilité",
         None,
     )
-    MOBILITE__PREPARER_UN_PERMIS_DE_CONDUIRE = (
-        "mobilite--preparer-un-permis-de-conduire",
-        "Préparer un permis de conduire",
+    MOBILITE__PREPARER_UN_PERMIS = (
+        "mobilite--preparer-un-permis",
+        "Préparer un permis",
         None,
     )
-    MOBILITE__UTILISER_DES_SERVICES_DE_MOBILITE_PARTAGEE = (
-        "mobilite--utiliser-des-services-de-mobilite-partagee",
-        "Utiliser des services de mobilité partagée",
+    MOBILITE__UTILISER_DES_SERVICES_DE_MOBILITE_DOUCE_PARTAGEE_COLLECTIVE = (
+        "mobilite--mobilite-douce-partagee-collective",
+        "Utiliser des services de mobilité douce, partagée ou collective",
         None,
     )
 

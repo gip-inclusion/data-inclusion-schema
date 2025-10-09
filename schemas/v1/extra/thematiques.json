@@ -201,13 +201,13 @@
   },
   {
     "description": null,
-    "label": "Préparer un permis de conduire",
-    "value": "mobilite--preparer-un-permis-de-conduire"
+    "label": "Utiliser des services de mobilité douce, partagée ou collective",
+    "value": "mobilite--mobilite-douce-partagee-collective"
   },
   {
     "description": null,
-    "label": "Utiliser des services de mobilité partagée",
-    "value": "mobilite--utiliser-des-services-de-mobilite-partagee"
+    "label": "Préparer un permis",
+    "value": "mobilite--preparer-un-permis"
   },
   {
     "description": null,
