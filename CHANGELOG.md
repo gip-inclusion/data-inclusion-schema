@@ -1,14 +1,4 @@
-# Changements
-
-## À venir
-
-### Ajouts
-
-### Changements
-
-### Dépréciations
-
-### Suppressions
+# Journal des changements
 
 ## 1.0.0 - 2025-09-29
 

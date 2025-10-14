@@ -10,3 +10,4 @@
     * [Publics](referentiels/publics.md)
     * [Réseaux porteurs](referentiels/reseaux_porteurs.md)
     * [Types de services](referentiels/types_de_services.md)
+* [Changelog](changelog.md)
