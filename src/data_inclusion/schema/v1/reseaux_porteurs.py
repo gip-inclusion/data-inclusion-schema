@@ -223,6 +223,11 @@ class ReseauPorteur(EnhancedEnum):
         "Centres de Soins, d’Accompagnement et de Prévention en Addictologie",
         None,
     )
+    DELEGATAIRE_CONSEIL_DEPARTEMENTAL = (
+        "delegataire-conseil-departemental",
+        "Organisation délégataire d’un Conseil Départemental",
+        None,
+    )
     DEPARTEMENTS = (
         "departements",
         "Départements et Services Départementaux",
@@ -242,6 +247,16 @@ class ReseauPorteur(EnhancedEnum):
     ECOLES_DE_LA_DEUXIEME_CHANCE = (
         "ecoles-de-la-deuxieme-chance",
         "Écoles de la 2ᵉ Chance",
+        None,
+    )
+    EA = (
+        "ea",
+        "Entreprises Adaptées",
+        None,
+    )
+    EATT = (
+        "eatt",
+        "Entreprises Adaptées de Travail Temporaire",
         None,
     )
     EGEE = (
@@ -494,9 +509,27 @@ class ReseauPorteur(EnhancedEnum):
         "Secours Populaire",
         None,
     )
-    SIAE = (
-        "siae",
-        "Structures d’Insertion par l’Activité Économique",
+    EI = (
+        "ei",
+        "Structures d’Insertion par l’Activité Économique - Entreprises d’Insertion",
+        None,
+    )
+    ACI = (
+        "aci",
+        "Structures d’Insertion par l’Activité Économique - "
+        "Ateliers et Chantiers d’Insertion",
+        None,
+    )
+    ETTI = (
+        "etti",
+        "Structures d’Insertion par l’Activité Économique - "
+        "Entreprises de Travail Temporaire d’Insertion",
+        None,
+    )
+    EITI = (
+        "eiti",
+        "Structures d’Insertion par l’Activité Économique - "
+        "Entreprises d’Insertion par le Travail Indépendant",
         None,
     )
     SIAO = (

@@ -1,5 +1,11 @@
 # Journal des changements
 
+## 1.0.2 - 2025-10-23
+
+### Ajouts
+
+* ajout de nouvelles valeurs de `reseaux_porteurs`
+
 ## 1.0.1 - 2025-10-14
 
 ### Ajouts

@@ -6,6 +6,11 @@
   },
   {
     "description": null,
+    "label": "Structures d’Insertion par l’Activité Économique - Ateliers et Chantiers d’Insertion",
+    "value": "aci"
+  },
+  {
+    "description": null,
     "label": "Action Logement",
     "value": "action-logement"
   },
@@ -185,6 +190,11 @@
     "value": "csapa"
   },
   {
+    "description": null,
+    "label": "Organisation délégataire d’un Conseil Départemental",
+    "value": "delegataire-conseil-departemental"
+  },
+  {
     "description": "Les Conseils Départementaux (CD), les Maisons Départementales pour les Personnes Handicapées (MDPH), les Unions Départementales des Associations Familiales (UDAF), les Centres Départementaux d’Action Sociale (CDAS), etc.",
     "label": "Départements et Services Départementaux",
     "value": "departements"
@@ -196,6 +206,16 @@
   },
   {
     "description": null,
+    "label": "Entreprises Adaptées",
+    "value": "ea"
+  },
+  {
+    "description": null,
+    "label": "Entreprises Adaptées de Travail Temporaire",
+    "value": "eatt"
+  },
+  {
+    "description": null,
     "label": "Écoles de la 2ᵉ Chance",
     "value": "ecoles-de-la-deuxieme-chance"
   },
@@ -203,6 +223,16 @@
     "description": null,
     "label": "Association EGEE",
     "value": "egee"
+  },
+  {
+    "description": null,
+    "label": "Structures d’Insertion par l’Activité Économique - Entreprises d’Insertion",
+    "value": "ei"
+  },
+  {
+    "description": null,
+    "label": "Structures d’Insertion par l’Activité Économique - Entreprises d’Insertion par le Travail Indépendant",
+    "value": "eiti"
   },
   {
     "description": null,
@@ -223,6 +253,11 @@
     "description": null,
     "label": "Expérimentation Territoriale contre le Chômage de Longue Durée",
     "value": "etcld"
+  },
+  {
+    "description": null,
+    "label": "Structures d’Insertion par l’Activité Économique - Entreprises de Travail Temporaire d’Insertion",
+    "value": "etti"
   },
   {
     "description": null,
@@ -438,11 +473,6 @@
     "description": null,
     "label": "Secours Populaire",
     "value": "secours-populaire"
-  },
-  {
-    "description": null,
-    "label": "Structures d’Insertion par l’Activité Économique",
-    "value": "siae"
   },
   {
     "description": null,
