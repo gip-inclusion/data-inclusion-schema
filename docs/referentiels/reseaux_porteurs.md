@@ -1,6 +1,7 @@
 | Nom | Label | Description |
 | :- | :- | :- |
 | `60000-rebonds` | 60 000 Rebonds | - |
+| `aci` | Structures d’Insertion par l’Activité Économique - Ateliers et Chantiers d’Insertion | - |
 | `action-logement` | Action Logement | - |
 | `adie` | Association pour le Droit à l’Initiative Économique | - |
 | `afpa` | Agence Nationale pour la Formation Professionnelle des Adultes | - |
@@ -37,14 +38,20 @@
 | `cresus` | Fédération Française des Associations CRÉSUS | - |
 | `croix-rouge` | Croix-Rouge | - |
 | `csapa` | Centres de Soins, d’Accompagnement et de Prévention en Addictologie | - |
+| `delegataire-conseil-departemental` | Organisation délégataire d’un Conseil Départemental | - |
 | `departements` | Départements et Services Départementaux | Les Conseils Départementaux (CD), les Maisons Départementales pour les Personnes Handicapées (MDPH), les Unions Départementales des Associations Familiales (UDAF), les Centres Départementaux d’Action Sociale (CDAS), etc. |
 | `duo-for-a-job` | DUO for a JOB | - |
+| `ea` | Entreprises Adaptées | - |
+| `eatt` | Entreprises Adaptées de Travail Temporaire | - |
 | `ecoles-de-la-deuxieme-chance` | Écoles de la 2ᵉ Chance | - |
 | `egee` | Association EGEE | - |
+| `ei` | Structures d’Insertion par l’Activité Économique - Entreprises d’Insertion | - |
+| `eiti` | Structures d’Insertion par l’Activité Économique - Entreprises d’Insertion par le Travail Indépendant | - |
 | `emmaus` | Emmaüs | - |
 | `epide` | EPIDE | - |
 | `espaces-publics-numeriques` | Espaces Publics Numériques | - |
 | `etcld` | Expérimentation Territoriale contre le Chômage de Longue Durée | - |
+| `etti` | Structures d’Insertion par l’Activité Économique - Entreprises de Travail Temporaire d’Insertion | - |
 | `fabrique-de-territoire` | Fabrique de Territoire | - |
 | `face` | Fondation FACE | - |
 | `fcsf` | Fédération des Centres Sociaux et Socioculturels de France | - |
@@ -88,7 +95,6 @@
 | `ressourceries` | Ressourceries | - |
 | `restos-du-coeur` | Restos du Coeur | - |
 | `secours-populaire` | Secours Populaire | - |
-| `siae` | Structures d’Insertion par l’Activité Économique | - |
 | `siao` | Services Intégrés d’Accueil et d’Orientation | - |
 | `simplon` | Simplon | - |
 | `singa` | Association SINGA | - |
