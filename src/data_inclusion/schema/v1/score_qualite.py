@@ -136,7 +136,7 @@ def frais_bien_definis(service: Service) -> float:
         case Service(frais=Frais.GRATUIT):
             return 1.0
         case _:
-            raise ValueError()
+            raise ValueError(service)
 
 
 # Les critères sont implémentés sous forme de fonctions qui prennent un service en
