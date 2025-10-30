@@ -52,7 +52,7 @@ class Structure(BaseModel):
             default=None,
             title="Téléphone",
         ),
-    ]
+    ] = None
     courriel: Annotated[
         EmailStr | None,
         Field(
@@ -65,7 +65,7 @@ class Structure(BaseModel):
             default=None,
             examples=["exemple@inclusion.gouv.fr"],
         ),
-    ]
+    ] = None
     site_web: Annotated[
         HttpUrl | None,
         Field(
@@ -78,7 +78,7 @@ class Structure(BaseModel):
             default=None,
             examples=["https://www.asso-mon-entraide.net/"],
         ),
-    ]
+    ] = None
     presentation_resume: Annotated[str | None, Field(max_length=280)] = None
     presentation_detail: str | None = None
     source: str
