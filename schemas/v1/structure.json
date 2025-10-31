@@ -228,8 +228,8 @@
     "description": {
       "anyOf": [
         {
-          "maxLength": 2000,
-          "minLength": 50,
+          "maxLength": 10000,
+          "minLength": 5,
           "type": "string"
         },
         {

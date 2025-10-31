@@ -111,16 +111,21 @@ def au_moins_un_moyen_de_contact(service: Service) -> float:
 
 
 def description_bien_definie(service: Service) -> float:
-    SEUIL_MINIMUM = 200
-    SEUIL_BON = 400
+    TRES_COURTE = range(1, 50)
+    COURTE = range(50, 200)
+    IDEALE = range(200, 2000)
+    LONGUE = range(2000, 10000)
 
-    if len(service.description) < SEUIL_MINIMUM:
+    if len(service.description) in TRES_COURTE:
         return 0.0
-    elif len(service.description) < SEUIL_BON:
-        # simple interpolation linéaire entre 0 et 1
-        return (len(service.description) - SEUIL_MINIMUM) / (SEUIL_BON - SEUIL_MINIMUM)
-    else:
+    elif len(service.description) in COURTE:
+        return 0.5
+    elif len(service.description) in IDEALE:
         return 1.0
+    elif len(service.description) in LONGUE:
+        return 0.5
+    else:
+        raise ValueError(service)
 
 
 def frais_bien_definis(service: Service) -> float:

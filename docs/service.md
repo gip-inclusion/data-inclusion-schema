@@ -89,7 +89,7 @@ Exemples :
 
 Nom du service.
 
-Chaîne de caractères entre 3 et 150 caractères, ne se terminant pas par un point.
+Chaîne de caractères entre 3 et 150 caractères. Idéalement ne se termine pas par un point (sauf &#34;etc.&#34;).
 
 
 
@@ -117,9 +117,7 @@ Exemples :
 
 Description du service.
 
-Entre 50 et 2000 caractères.
-
-Ce champ est pris en compte dans le calcul du score de qualité.
+Idéalement entre 200 et 2000 caractères. Privilégier des phrases courtes et un langage simple.
 
 
 
