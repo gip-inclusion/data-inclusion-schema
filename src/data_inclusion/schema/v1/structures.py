@@ -3,7 +3,7 @@ from typing import Annotated
 
 from pydantic import EmailStr, HttpUrl, field_validator
 
-from data_inclusion.schema import common
+from data_inclusion.schema import common, validation
 from data_inclusion.schema.base import BaseModel, Field
 from data_inclusion.schema.v1 import ReseauPorteur
 
@@ -52,6 +52,7 @@ class Structure(BaseModel):
     ]
 
     @field_validator("nom")
+    @validation.avertissement
     def nom_valide(cls, value: str) -> str:
         if value.endswith(".") and not value.endswith("etc."):
             raise ValueError(
@@ -99,8 +100,8 @@ class Structure(BaseModel):
                     personnes en situation de précarité et d’isolement.
                 """
             ],
-            min_length=50,
-            max_length=2000,
+            min_length=5,
+            max_length=10000,
         ),
     ] = None
     lien_source: Annotated[

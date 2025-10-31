@@ -1,10 +1,17 @@
 # Journal des changements
 
-## 1.0.2 - 2025-10-23
+## À venir
 
 ### Ajouts
 
 * ajout de nouvelles valeurs de `reseaux_porteurs`
+
+### Changements
+
+* assouplissements des règles de validation des `nom`s et `description`s :
+    * les `nom`s terminant par un point font l'objet d'un avertissement
+    * les `description`s de moins de 10000 caractères sont valides, mais le score
+    de qualité est impacté si elles sont trop courtes ou trop longues.
 
 ## 1.0.1 - 2025-10-14
 

@@ -3,7 +3,7 @@ from typing import Annotated, Literal
 
 from pydantic import EmailStr, HttpUrl, field_validator
 
-from data_inclusion.schema import common
+from data_inclusion.schema import common, validation
 from data_inclusion.schema.base import BaseModel, Field
 from data_inclusion.schema.v1 import (
     Frais,
@@ -59,8 +59,8 @@ class Service(BaseModel):
             description="""
                 Nom du service.
 
-                Chaîne de caractères entre 3 et 150 caractères,
-                ne se terminant pas par un point.
+                Chaîne de caractères entre 3 et 150 caractères. Idéalement ne se termine
+                pas par un point (sauf "etc.").
             """,
             examples=["Atelier insertion et posture professionnelle"],
             min_length=3,
@@ -69,7 +69,8 @@ class Service(BaseModel):
     ]
 
     @field_validator("nom")
-    def nom_valide(cls, value: str) -> str:
+    @validation.avertissement
+    def nom_ne_se_termine_pas_par_un_point(cls, value: str) -> str:
         if value.endswith(".") and not value.endswith("etc."):
             raise ValueError("Le nom du service ne doit pas se terminer par un point.")
         return value
@@ -80,9 +81,8 @@ class Service(BaseModel):
             description="""
                 Description du service.
 
-                Entre 50 et 2000 caractères.
-
-                Ce champ est pris en compte dans le calcul du score de qualité.
+                Idéalement entre 200 et 2000 caractères. Privilégier des phrases courtes
+                et un langage simple.
             """,
             examples=[
                 """
@@ -93,8 +93,8 @@ class Service(BaseModel):
                     Durée d’une journée et inscription via votre espace France Travail.
                 """
             ],
-            min_length=50,
-            max_length=2000,
+            min_length=5,
+            max_length=10000,
         ),
     ]
     lien_source: Annotated[

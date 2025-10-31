@@ -278,26 +278,19 @@ def test_critere_au_moins_un_moyen_de_contact(service: Service, attendu: float):
 
 
 @pytest.mark.parametrize(
-    ("service", "attendu"),
+    ("longueur_description", "attendu"),
     [
-        pytest.param(
-            service_factory(description="." * 100),
-            0.0,
-            id="description_bien_trop_courte",
-        ),
-        pytest.param(
-            service_factory(description="." * 300),
-            0.5,
-            id="description_assez_courte",
-        ),
-        pytest.param(
-            service_factory(description="." * 400),
-            1.0,
-            id="description_longue",
-        ),
+        (49, 0.0),
+        (50, 0.5),
+        (199, 0.5),
+        (200, 1.0),
+        (1999, 1.0),
+        (2000, 0.5),
+        (9999, 0.5),
     ],
 )
-def test_critere_description_bien_definie(service: Service, attendu: float):
+def test_critere_description_bien_definie(longueur_description: int, attendu: float):
+    service = service_factory(description="." * longueur_description)
     assert score_qualite.description_bien_definie(service) == attendu
 
 
@@ -371,7 +364,7 @@ def test_critere_frais_bien_definis(service: Service, attendu: float):
         pytest.param(
             service_factory(
                 date_maj=pendulum.today() - pendulum.Duration(years=3),
-                description="." * 50,
+                description="." * 10,
             ),
             0.0,
             id="service_faisandé",
