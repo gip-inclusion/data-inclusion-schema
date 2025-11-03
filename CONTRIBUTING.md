@@ -66,5 +66,5 @@ Marche à suivre :
     * actualiser la version du package avec `uv version X.Y.Z` (⚠️ pas de `v` ici)
     * actualiser le `CHANGELOG.md`, avec une nouvelle section dédiée pour cette version (⚠️ pas pour les prereleases)
     * `git commit -m "chore: version v$(uv version --short)"`
-4. Taguer ce commit : `git tag v$(uv version --short) && git tag -f latest`
+4. Taguer ce commit : `git tag v$(uv version --short)`
 5. Envoyer commit et tag : `git push && git push --tags`
