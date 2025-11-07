@@ -29,7 +29,7 @@
 * fusion des champs service `pre_requis` et `justificatifs` dans un nouveau champ `conditions_acces`
 * fusion des champs structure `typologie` et `labels_nationaux` dans un nouveau champ `reseaux_porteurs`
 * refonte du référentiel des `frais`
-* remplacement des champs `modes_orientation_***_autres` en faveur d'un champ unique `modes_mobilisation_precisions`
+* remplacement des champs `modes_orientation_***_autres` en faveur d'un champ unique `mobilisation_precisions`
 * remplacement des champs `modes_orientation_***` en faveur d'un champ unique `modes_mobilisation`
 * remplacement des champs `presentation_***` en faveur d'un champ unique `description` et mise à jour du critère de qualité `description_bien_definie`
 * remplacement des champs `prise_rdv`, `formulaire_en_ligne` et `page_web` en faveur d'un champ unique `lien_mobilisation`
