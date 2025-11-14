@@ -162,6 +162,10 @@ class Thematique(EnhancedEnum):
         "Surmonter les conflits liés à la séparation ou à la violence",
         None,
     )
+
+    ###################################
+    ### Lecture, écriture et calcul ###
+    ###################################
     LECTURE_ECRITURE_CALCUL__MAITRISER_LE_CALCUL = (
         "lecture-ecriture-calcul--maitriser-le-calcul",
         "Maîtriser le calcul",
