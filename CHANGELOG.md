@@ -1,6 +1,6 @@
 # Journal des changements
 
-## À venir
+## 1.0.3 - 2025-11-19
 
 ### Ajouts
 
