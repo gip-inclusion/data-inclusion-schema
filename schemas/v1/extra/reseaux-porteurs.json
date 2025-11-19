@@ -31,6 +31,11 @@
   },
   {
     "description": null,
+    "label": "Associations Intermédiaires",
+    "value": "ai"
+  },
+  {
+    "description": null,
     "label": "Aidants Connect",
     "value": "aidants-connect"
   },
@@ -243,6 +248,11 @@
     "description": null,
     "label": "EPIDE",
     "value": "epide"
+  },
+  {
+    "description": null,
+    "label": "Établissement et Service d’Accompagnement par le Travail",
+    "value": "esat"
   },
   {
     "description": null,

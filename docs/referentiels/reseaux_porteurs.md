@@ -6,6 +6,7 @@
 | `adie` | Association pour le Droit à l’Initiative Économique | - |
 | `afpa` | Agence Nationale pour la Formation Professionnelle des Adultes | - |
 | `agefiph` | Agefiph | - |
+| `ai` | Associations Intermédiaires | - |
 | `aidants-connect` | Aidants Connect | - |
 | `alliance-villes-emploi` | Alliance Villes Emploi | - |
 | `anlci` | Agence Nationale de Lutte Contre l’Illettrisme | - |
@@ -49,6 +50,7 @@
 | `eiti` | Structures d’Insertion par l’Activité Économique - Entreprises d’Insertion par le Travail Indépendant | - |
 | `emmaus` | Emmaüs | - |
 | `epide` | EPIDE | - |
+| `esat` | Établissement et Service d’Accompagnement par le Travail | - |
 | `espaces-publics-numeriques` | Espaces Publics Numériques | - |
 | `etcld` | Expérimentation Territoriale contre le Chômage de Longue Durée | - |
 | `etti` | Structures d’Insertion par l’Activité Économique - Entreprises de Travail Temporaire d’Insertion | - |

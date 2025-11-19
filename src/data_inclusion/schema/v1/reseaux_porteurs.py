@@ -53,6 +53,11 @@ class ReseauPorteur(EnhancedEnum):
         "Agefiph",
         None,
     )
+    AI = (
+        "ai",
+        "Associations Intermédiaires",
+        None,
+    )
     AIDANTS_CONNECT = (
         "aidants-connect",
         "Aidants Connect",
@@ -272,6 +277,11 @@ class ReseauPorteur(EnhancedEnum):
     EPIDE = (
         "epide",
         "EPIDE",
+        None,
+    )
+    ESAT = (
+        "esat",
+        "Établissement et Service d’Accompagnement par le Travail",
         None,
     )
     ESPACES_PUBLICS_NUMERIQUES = (
