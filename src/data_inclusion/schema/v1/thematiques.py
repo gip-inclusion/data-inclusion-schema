@@ -1,6 +1,91 @@
 from data_inclusion.schema.base import EnhancedEnum
 
 
+class Categorie(EnhancedEnum):
+    """Catégories de thématiques"""
+
+    CHOISIR_UN_METIER = (
+        "choisir-un-metier",
+        "Choisir un métier",
+        None,
+    )
+    CREER_UNE_ENTREPRISE = (
+        "creer-une-entreprise",
+        "Créer une entreprise",
+        None,
+    )
+    DIFFICULTES_ADMINISTRATIVES_OU_JURIDIQUES = (
+        "difficultes-administratives-ou-juridiques",
+        "Difficultés administratives ou juridiques",
+        None,
+    )
+    DIFFICULTES_FINANCIERES = (
+        "difficultes-financieres",
+        "Difficultés financières",
+        None,
+    )
+    EQUIPEMENT_ET_ALIMENTATION = (
+        "equipement-et-alimentation",
+        "Équipement et alimentation",
+        None,
+    )
+    FAMILLE = (
+        "famille",
+        "Famille",
+        None,
+    )
+    LECTURE_ECRITURE_CALCUL = (
+        "lecture-ecriture-calcul",
+        "Lecture, écriture et calcul",
+        None,
+    )
+    LOGEMENT_HEBERGEMENT = (
+        "logement-hebergement",
+        "Logement et hébergement",
+        None,
+    )
+    MOBILITE = (
+        "mobilite",
+        "Mobilité",
+        None,
+    )
+    NUMERIQUE = (
+        "numerique",
+        "Numérique",
+        None,
+    )
+    PREPARER_SA_CANDIDATURE = (
+        "preparer-sa-candidature",
+        "Préparer sa candidature",
+        None,
+    )
+    REMOBILISATION = (
+        "remobilisation",
+        "Remobilisation",
+        None,
+    )
+    SANTE = (
+        "sante",
+        "Santé",
+        None,
+    )
+    SE_FORMER = (
+        "se-former",
+        "Se former",
+        None,
+    )
+    SOUVRIR_A_LINTERNATIONAL = (
+        "souvrir-a-linternational",
+        "S’ouvrir à l’international",
+        None,
+    )
+    TROUVER_UN_EMPLOI = (
+        "trouver-un-emploi",
+        "Trouver un emploi",
+        None,
+    )
+
+
 class Thematique(EnhancedEnum):
     """Thématiques"""
 

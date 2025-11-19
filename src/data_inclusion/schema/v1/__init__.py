@@ -15,7 +15,10 @@ from data_inclusion.schema.v1.modes_mobilisation import (
 )
 from data_inclusion.schema.v1.publics import Public
 from data_inclusion.schema.v1.reseaux_porteurs import ReseauPorteur
-from data_inclusion.schema.v1.thematiques import Thematique
+from data_inclusion.schema.v1.thematiques import (
+    Categorie,
+    Thematique,
+)
 from data_inclusion.schema.v1.types_de_services import TypeService
 
 # Keep those import last to avoid circular imports
@@ -23,6 +26,7 @@ from data_inclusion.schema.v1.services import Service  # isort: skip
 from data_inclusion.schema.v1.structures import Structure  # isort: skip
 
 __all__ = [
+    "Categorie",
     "CodeCommune",
     "CodeDepartement",
     "CodeEPCI",
