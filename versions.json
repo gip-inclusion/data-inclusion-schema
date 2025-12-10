@@ -1,5 +1,10 @@
 [
   {
+    "version": "vperron-chore-doc",
+    "title": "vperron-chore-doc",
+    "aliases": []
+  },
+  {
     "version": "main",
     "title": "main",
     "aliases": [],
