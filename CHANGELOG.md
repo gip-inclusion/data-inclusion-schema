@@ -1,5 +1,11 @@
 # Journal des changements
 
+## 1.0.4 - 2025-12-16
+
+### Changements
+
+* corrige le calcul du score de qualité pour les descriptions de longueur égale à 10k
+
 ## 1.0.3 - 2025-11-19
 
 ### Ajouts
