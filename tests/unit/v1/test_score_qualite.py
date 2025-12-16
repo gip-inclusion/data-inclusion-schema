@@ -286,7 +286,7 @@ def test_critere_au_moins_un_moyen_de_contact(service: Service, attendu: float):
         (200, 1.0),
         (1999, 1.0),
         (2000, 0.5),
-        (9999, 0.5),
+        (10000, 0.5),
     ],
 )
 def test_critere_description_bien_definie(longueur_description: int, attendu: float):

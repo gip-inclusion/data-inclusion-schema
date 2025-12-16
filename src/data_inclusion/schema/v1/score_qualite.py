@@ -114,7 +114,7 @@ def description_bien_definie(service: Service) -> float:
     TRES_COURTE = range(1, 50)
     COURTE = range(50, 200)
     IDEALE = range(200, 2000)
-    LONGUE = range(2000, 10000)
+    LONGUE = range(2000, 10001)
 
     if len(service.description) in TRES_COURTE:
         return 0.0
