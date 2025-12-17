@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#consolidation" class="md-skip">
+        <a href="#le-commun-numerique-de-loffre-dinsertion" class="md-skip">
           Aller au contenu
         </a>
       
@@ -226,6 +226,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -258,6 +260,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -266,9 +270,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#consolidation" class="md-nav__link">
+  <a href="#api" class="md-nav__link">
     <span class="md-ellipsis">
-      Consolidation
+      API
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#widget" class="md-nav__link">
+    <span class="md-ellipsis">
+      Widget
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jeux-de-donnees" class="md-nav__link">
+    <span class="md-ellipsis">
+      Jeux de données
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schema-datainclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Schéma data⋅inclusion
     </span>
   </a>
   
@@ -603,6 +634,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -611,9 +644,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#consolidation" class="md-nav__link">
+  <a href="#api" class="md-nav__link">
     <span class="md-ellipsis">
-      Consolidation
+      API
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#widget" class="md-nav__link">
+    <span class="md-ellipsis">
+      Widget
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jeux-de-donnees" class="md-nav__link">
+    <span class="md-ellipsis">
+      Jeux de données
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schema-datainclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Schéma data⋅inclusion
     </span>
   </a>
   
@@ -647,17 +707,36 @@
   
 
 
-  <h1>Accueil</h1>
-
-<p>Cette documentation dépôt contient le schéma de l’offre d’insertion. Il comprend deux éléments principaux :</p>
+<h1 id="le-commun-numerique-de-loffre-dinsertion">Le commun numérique de l’offre d’insertion</h1>
+<p><strong>data·inclusion recense les services d'insertion sociale et professionnelle en France.</strong></p>
+<p>Cette page vous permettra de vous familiariser avec les différents aspects de data⋅inclusion.</p>
+<h2 id="api">API</h2>
+<p>L’API permet d’accéder aux contacts associés aux structures et services, à la <a href="https://data.inclusion.gouv.fr/outils-et-documentation/blog-datainclusion/">déduplication</a>, au <a href="https://data.inclusion.gouv.fr/outils-et-documentation/blog-datainclusion/">score de qualité</a>, à des filtres avancés, et à des mise à jour quotidiennes.</p>
+<p>C'est le moyen privilégié pour des intégrations avancées du jeu de données data⋅inclusion.</p>
+<p>Pour accéder à la documentation de l’API :</p>
 <ul>
-<li><a href="structure/">Structure</a></li>
-<li><a href="service/">Service</a></li>
+<li>En <a href="https://api-staging.data.inclusion.beta.gouv.fr/api/docs">environnement de pré-prod</a></li>
+<li>En <a href="https://api.data.inclusion.beta.gouv.fr/api/docs">environnement de production</a> - un jeton sera nécessaire</li>
+<li>Le <a href="https://tally.so/r/mYjJ85">formulaire de demande de jeton API</a></li>
 </ul>
-<h2 id="consolidation">Consolidation</h2>
-<p>data.inclusion réalise une consolidation et publie la base consolidée, aux formats json et csv, sur <a href="https://www.data.gouv.fr/en/datasets/referentiel-de-loffre-dinsertion-liste-des-structures-et-services-dinsertion/">data.gouv.fr</a>.</p>
+<h2 id="widget">Widget</h2>
+<p>data⋅inclusion propose un <a href="https://data.inclusion.gouv.fr/acc%C3%A9der-aux-donn%C3%A9es/widget/">widget</a> personnalisable permettant l'exploration du jeu de données sur votre site avec un effort d'intégration minimal; une seule ligne de code suffit.</p>
+<h2 id="jeux-de-donnees">Jeux de données</h2>
+<ul>
+<li>Un <a href="https://data.inclusion.gouv.fr/outils-et-documentation/aper%C3%A7u-de-nos-donn%C3%A9es/">tableau de bord</a> est disponible pour avoir un aperçu avec graphiques récapitulatifs des données disponibles</li>
+<li>Un <a href="https://data.inclusion.gouv.fr/acc%C3%A9der-aux-donn%C3%A9es/telechargement-de-nos-donnees/">export de données brutes</a> permet de télécharger nos données directement</li>
+<li>La base consolidée est aussi publiée, aux formats json et csv, sur <a href="https://www.data.gouv.fr/en/datasets/referentiel-de-loffre-dinsertion-liste-des-structures-et-services-dinsertion/">data.gouv.fr</a>.</li>
+</ul>
+<h2 id="schema-datainclusion">Schéma data⋅inclusion</h2>
+<p>data⋅inclusion a établi une structure de données précise pour les objets suivants:</p>
+<ul>
+<li><a href="structure/">Structure</a> : une structure proposant des services d'insertion</li>
+<li><a href="service/">Service</a> : un service d'insertion</li>
+</ul>
 <h2 id="contribuer">Contribuer</h2>
-<p>Vous pouvez créer un <a href="https://github.com/gip-inclusion/data-inclusion-schema/issues/new">nouveau ticket</a> sur le dépôt ouvert du schéma pour proposer une modification ou une amélioration ou poser une question.</p>
+<ul>
+<li>Pour pour proposer une modification ou une amélioration ou poser une question, il est possible de contacter directement <a href="mailto:data-inclusion@inclusion.gouv.fr">data-inclusion@inclusion.gouv.fr</a>  ou de créer un <a href="https://github.com/gip-inclusion/data-inclusion-schema/issues/new">nouveau ticket</a> sur le dépôt ouvert du schéma</li>
+</ul>
 
 
 
