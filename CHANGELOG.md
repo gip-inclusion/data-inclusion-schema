@@ -1,5 +1,11 @@
 # Journal des changements
 
+## 1.0.5 - 2026-01-08
+
+### Changements
+
+* enrichissement de la page d'accueil
+
 ## 1.0.4 - 2025-12-16
 
 ### Changements
