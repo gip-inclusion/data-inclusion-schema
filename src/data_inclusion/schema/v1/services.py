@@ -1,7 +1,7 @@
 from datetime import date
 from typing import Annotated, Literal
 
-from pydantic import EmailStr, HttpUrl, field_validator
+from pydantic import EmailStr, HttpUrl, ValidationInfo, field_validator
 
 from data_inclusion.schema import common, validation
 from data_inclusion.schema.base import BaseModel, Field
@@ -69,10 +69,14 @@ class Service(BaseModel):
     ]
 
     @field_validator("nom")
-    @validation.avertissement
-    def nom_ne_se_termine_pas_par_un_point(cls, value: str) -> str:
+    def nom_ne_se_termine_pas_par_un_point(
+        cls, value: str, info: ValidationInfo
+    ) -> str:
         if value.endswith(".") and not value.endswith("etc."):
-            raise ValueError("Le nom du service ne doit pas se terminer par un point.")
+            with validation.avertissement(info=info):
+                raise ValueError(
+                    "Le nom du service ne doit pas se terminer par un point."
+                )
         return value
 
     description: Annotated[

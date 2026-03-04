@@ -1,26 +1,16 @@
-import enum
-from typing import Any
+from contextlib import contextmanager
 
-from pydantic import ValidationInfo
-
-
-class Mode(str, enum.Enum):
-    NORMAL = "normal"
-    STRICT = "strict"
+import pydantic
+import pydantic_core
 
 
-def avertissement(func):
-    def wrapper(cls, value: Any, info: ValidationInfo) -> Any:
-        is_strict = (
-            isinstance(info.context, dict) and info.context.get("mode") == Mode.STRICT
-        )
+@contextmanager
+def avertissement(info: pydantic.ValidationInfo):
+    ignore_warnings = info.context is None or info.context.get("ignore_warnings", True)
 
-        try:
-            return func(cls, value)
-        except ValueError as exc:
-            if is_strict:
-                raise exc from exc
-            else:
-                return value
-
-    return wrapper
+    try:
+        yield
+    except ValueError as exc:
+        if ignore_warnings:
+            return
+        raise pydantic_core.PydanticCustomError("avertissement", str(exc))

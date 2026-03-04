@@ -1,7 +1,7 @@
 from datetime import date
 from typing import Annotated
 
-from pydantic import EmailStr, HttpUrl, field_validator
+from pydantic import EmailStr, HttpUrl, ValidationInfo, field_validator
 
 from data_inclusion.schema import common, validation
 from data_inclusion.schema.base import BaseModel, Field
@@ -52,12 +52,12 @@ class Structure(BaseModel):
     ]
 
     @field_validator("nom")
-    @validation.avertissement
-    def nom_valide(cls, value: str) -> str:
+    def nom_valide(cls, value: str, info: ValidationInfo) -> str:
         if value.endswith(".") and not value.endswith("etc."):
-            raise ValueError(
-                "Le nom de la structure ne doit pas se terminer par un point."
-            )
+            with validation.avertissement(info=info):
+                raise ValueError(
+                    "Le nom de la structure ne doit pas se terminer par un point."
+                )
         return value
 
     date_maj: Annotated[

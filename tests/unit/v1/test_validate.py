@@ -1,14 +1,14 @@
 import pendulum
 import pydantic
+import pydantic_core
 import pytest
 from freezegun import freeze_time
 
-from data_inclusion.schema import validation
 from data_inclusion.schema.v1 import Service, Structure
 
 
-def has_error(loc: str, exc: pydantic.ValidationError) -> bool:
-    return any(error["loc"] == (loc,) for error in exc.errors())
+def has_error(loc: str, errors_details: list[pydantic_core.ErrorDetails]) -> bool:
+    return any(error["loc"] == (loc,) for error in errors_details)
 
 
 @freeze_time("2024-01-01")
@@ -48,25 +48,29 @@ def test_longueur_nom(model, nom, est_valide):
     try:
         model.model_validate({"nom": nom})
     except pydantic.ValidationError as exc:
-        assert est_valide != has_error("nom", exc)
+        assert est_valide != has_error("nom", exc.errors())
     else:
         assert est_valide
 
 
 @pytest.mark.parametrize("model", [Structure, Service])
 @pytest.mark.parametrize(
-    ("nom", "mode", "est_valide"),
+    ("nom", "is_error"),
     [
-        ("Centre social Le Tournesol.", validation.Mode.NORMAL, True),
-        ("Centre social Le Tournesol.", validation.Mode.STRICT, False),
-        ("Centre social Le Tournesol", validation.Mode.NORMAL, True),
-        ("Centre social Le Tournesol etc.", validation.Mode.NORMAL, True),
+        ("Centre social Le Tournesol.", True),
+        ("Centre social Le Tournesol", False),
+        ("Centre social Le Tournesol etc.", False),
     ],
 )
-def test_nom_ne_se_termine_pas_par_un_point(model, mode, nom, est_valide):
+def test_nom_ne_se_termine_pas_par_un_point(model, nom, is_error):
     try:
-        model.model_validate({"nom": nom}, context={"mode": mode})
+        model.model_validate({"nom": nom})
     except pydantic.ValidationError as exc:
-        assert est_valide != has_error("nom", exc)
+        assert not has_error("nom", exc.errors())
+
+    try:
+        model.model_validate({"nom": nom}, context={"ignore_warnings": False})
+    except pydantic.ValidationError as exc:
+        assert is_error == has_error("nom", exc.errors())
     else:
-        assert est_valide
+        pytest.fail()
