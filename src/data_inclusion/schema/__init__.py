@@ -1,6 +1,5 @@
-from data_inclusion.schema import v0, v1
+from data_inclusion.schema import v1
 
 __all__ = [
-    "v0",
     "v1",
 ]

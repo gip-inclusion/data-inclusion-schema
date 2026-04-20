@@ -1,14 +1,13 @@
-import importlib
 import pathlib
-import pkgutil
 import re
 from dataclasses import dataclass
 
 import jinja2
 
-from data_inclusion import schema
+from data_inclusion.schema import v1
 
 DOCS_DIR = pathlib.Path() / "docs"
+VERSION = "v1"
 
 
 def snake_case(txt: str) -> str:
@@ -81,37 +80,22 @@ def template_factory(template_name: str) -> jinja2.Template:
     return env.get_template(template_name)
 
 
-def main(version: str) -> None:
-    schema = importlib.import_module(f"data_inclusion.schema.{version}")
-
+def main() -> None:
     ENUM_FILENAMES = {
-        schema.Frais: "frais",
-        schema.ModeAccueil: "modes_accueil",
-        schema.Thematique: "thematiques",
+        v1.Frais: "frais",
+        v1.ModeAccueil: "modes_accueil",
+        v1.Thematique: "thematiques",
+        v1.ModeMobilisation: "modes_mobilisation",
+        v1.PersonneMobilisatrice: "personnes_mobilisatrices",
+        v1.Public: "publics",
+        v1.ReseauPorteur: "reseaux_porteurs",
+        v1.TypeService: "types_de_services",
     }
-    if version == "v0":
-        ENUM_FILENAMES[schema.LabelNational] = "labels_nationaux"
-        ENUM_FILENAMES[schema.ModeOrientationAccompagnateur] = (
-            "modes_orientation_accompagnateur"
-        )
-        ENUM_FILENAMES[schema.ModeOrientationBeneficiaire] = (
-            "modes_orientation_beneficiaire"
-        )
-        ENUM_FILENAMES[schema.Profil] = "profils"
-        ENUM_FILENAMES[schema.TypologieService] = "typologies_de_services"
-        ENUM_FILENAMES[schema.TypologieStructure] = "typologies_de_structures"
-        ENUM_FILENAMES[schema.ZoneDiffusionType] = "zones_de_diffusion_types"
-    elif version == "v1":
-        ENUM_FILENAMES[schema.ModeMobilisation] = "modes_mobilisation"
-        ENUM_FILENAMES[schema.PersonneMobilisatrice] = "personnes_mobilisatrices"
-        ENUM_FILENAMES[schema.Public] = "publics"
-        ENUM_FILENAMES[schema.ReseauPorteur] = "reseaux_porteurs"
-        ENUM_FILENAMES[schema.TypeService] = "types_de_services"
 
     DOCS_DIR.mkdir(exist_ok=True)
     (DOCS_DIR / "referentiels").mkdir(exist_ok=True)
 
-    for model in [schema.Structure, schema.Service]:
+    for model in [v1.Structure, v1.Service]:
         with (DOCS_DIR / f"{model.__name__.lower()}.md").open("w") as file:
             file.write(
                 template_factory("model.md.j2").render(
@@ -141,28 +125,5 @@ def main(version: str) -> None:
         )
 
 
-def list_schema_versions():
-    return sorted(
-        [
-            name
-            for _, name, is_pkg in pkgutil.iter_modules(schema.__path__)
-            if is_pkg and name.startswith("v") and name[1:].isdigit()
-        ]
-    )
-
-
 if __name__ == "__main__":
-    import argparse
-
-    parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "--version",
-        type=str,
-        required=False,
-        choices=list_schema_versions(),
-        default=list_schema_versions()[-1],
-        help="Version cible du schéma à compiler. Par défaut, la dernière version.",
-    )
-    args = parser.parse_args()
-
-    main(args.version)
+    main()

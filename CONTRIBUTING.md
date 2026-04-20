@@ -31,7 +31,6 @@ Ces fichiers sont générés à partir des modèles python définis dans le doss
 src/
 └── data_inclusion
     └── schema
-        ├── v0/  # version dépréciée
         └── v1/  # version actuelle
 ```
 
@@ -59,9 +58,7 @@ Ajouter ses modifications au [CHANGELOG](CHANGELOG.md) dans la section "à venir
 
 Marche à suivre :
 
-1. Uniquement sur les branches `v0` et `main`
-    * `v0` pour toutes les versions `v0`
-    * `main` pour toutes les versions `v1`
+1. Uniquement sur la branche `main`
 2. Créer un commit spécifique sur la branche :
     * actualiser la version du package avec `uv version X.Y.Z` (⚠️ pas de `v` ici)
     * actualiser le `CHANGELOG.md`, avec une nouvelle section dédiée pour cette version (⚠️ pas pour les prereleases)
