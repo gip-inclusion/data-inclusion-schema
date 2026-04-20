@@ -1,11 +1,20 @@
-import importlib
 import json
 import pathlib
-import pkgutil
 
-from data_inclusion import schema
+from data_inclusion.schema import v1
 
-SCHEMAS_DIR = pathlib.Path() / "schemas"
+VERSION = "v1"
+SCHEMAS_DIR = pathlib.Path() / "schemas" / VERSION
+ENUM_FILENAMES = {
+    v1.Frais: "frais",
+    v1.ModeAccueil: "modes_accueil",
+    v1.Thematique: "thematiques",
+    v1.ModeMobilisation: "modes_mobilisation",
+    v1.PersonneMobilisatrice: "personnes_mobilisatrices",
+    v1.Public: "publics",
+    v1.ReseauPorteur: "reseaux_porteurs",
+    v1.TypeService: "types_de_services",
+}
 
 
 def json_dump(obj, file):
@@ -18,57 +27,20 @@ def json_dump(obj, file):
     )
 
 
-def compile_schema(version: str):
-    schema = importlib.import_module(f"data_inclusion.schema.{version}")
-
-    ENUM_FILENAMES = {
-        schema.Frais: "frais",
-        schema.ModeAccueil: "modes_accueil",
-        schema.Thematique: "thematiques",
-    }
-    if version == "v0":
-        ENUM_FILENAMES[schema.LabelNational] = "labels_nationaux"
-        ENUM_FILENAMES[schema.ModeOrientationAccompagnateur] = (
-            "modes_orientation_accompagnateur"
-        )
-        ENUM_FILENAMES[schema.ModeOrientationBeneficiaire] = (
-            "modes_orientation_beneficiaire"
-        )
-        ENUM_FILENAMES[schema.Profil] = "profils"
-        ENUM_FILENAMES[schema.TypologieService] = "typologies_de_services"
-        ENUM_FILENAMES[schema.TypologieStructure] = "typologies_de_structures"
-        ENUM_FILENAMES[schema.ZoneDiffusionType] = "zones_de_diffusion_types"
-    elif version == "v1":
-        ENUM_FILENAMES[schema.ModeMobilisation] = "modes_mobilisation"
-        ENUM_FILENAMES[schema.PersonneMobilisatrice] = "personnes_mobilisatrices"
-        ENUM_FILENAMES[schema.Public] = "publics"
-        ENUM_FILENAMES[schema.ReseauPorteur] = "reseaux_porteurs"
-        ENUM_FILENAMES[schema.TypeService] = "types_de_services"
-
+def compile_schema():
     SCHEMAS_DIR.mkdir(exist_ok=True)
-    (SCHEMAS_DIR / version).mkdir(exist_ok=True, parents=True)
+    (SCHEMAS_DIR).mkdir(exist_ok=True, parents=True)
 
-    for model in [schema.Structure, schema.Service]:
-        with (SCHEMAS_DIR / version / f"{model.__name__.lower()}.json").open(
-            "w"
-        ) as file:
+    for model in [v1.Structure, v1.Service]:
+        with (SCHEMAS_DIR / f"{model.__name__.lower()}.json").open("w") as file:
             json_dump(model.model_json_schema(), file)
 
     for enum, filename in ENUM_FILENAMES.items():
-        with (
-            SCHEMAS_DIR / version / "extra" / f"{filename.replace('_', '-')}.json"
-        ).open("w") as file:
+        with (SCHEMAS_DIR / "extra" / f"{filename.replace('_', '-')}.json").open(
+            "w"
+        ) as file:
             json_dump(enum.as_dict_list(), file)
 
 
-def list_schema_versions() -> list[str]:
-    return [
-        name
-        for _, name, is_pkg in pkgutil.iter_modules(schema.__path__)
-        if is_pkg and name.startswith("v") and name[1:].isdigit()
-    ]
-
-
 if __name__ == "__main__":
-    for version in list_schema_versions():
-        compile_schema(version)
+    compile_schema()

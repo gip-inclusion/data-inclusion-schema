@@ -1,5 +1,9 @@
 # Journal des changements
 
+## 1.0.7 - 2026-04-21
+
+* abandon v0
+
 ## 1.0.6 - 2026-03-04
 
 * refonte de la gestion des avertissements
