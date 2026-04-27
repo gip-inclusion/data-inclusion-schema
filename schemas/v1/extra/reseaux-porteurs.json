@@ -200,7 +200,7 @@
     "value": "delegataire-conseil-departemental"
   },
   {
-    "description": "Les Conseils Départementaux (CD), les Maisons Départementales pour les Personnes Handicapées (MDPH), les Unions Départementales des Associations Familiales (UDAF), les Centres Départementaux d’Action Sociale (CDAS), etc.",
+    "description": "Les Conseils Départementaux (CD), les Unions Départementales des Associations Familiales (UDAF), les Centres Départementaux d’Action Sociale (CDAS), etc.",
     "label": "Départements et Services Départementaux",
     "value": "departements"
   },
@@ -378,6 +378,11 @@
     "description": "Les Maisons Départementales des Solidarités sont des services départementaux. Par conséquent, le réseau `departements` devrait être également défini pour ces structures.",
     "label": "Maisons Départementales des Solidarités (MDS)",
     "value": "maisons-des-solidarites"
+  },
+  {
+    "description": null,
+    "label": "Maisons Départementales pour les Personnes Handicapées (MDPH)",
+    "value": "mdph"
   },
   {
     "description": null,

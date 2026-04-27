@@ -238,7 +238,6 @@ class ReseauPorteur(EnhancedEnum):
         "Départements et Services Départementaux",
         (
             "Les Conseils Départementaux (CD), "
-            "les Maisons Départementales pour les Personnes Handicapées (MDPH), "
             "les Unions Départementales des Associations Familiales (UDAF), "
             "les Centres Départementaux d’Action Sociale (CDAS), "
             "etc."
@@ -407,6 +406,11 @@ class ReseauPorteur(EnhancedEnum):
             "départementaux. Par conséquent, le réseau `departements` devrait être "
             "également défini pour ces structures."
         ),
+    )
+    MDPH = (
+        "mdph",
+        "Maisons Départementales pour les Personnes Handicapées (MDPH)",
+        None,
     )
     MISSION_LOCALE = (
         "mission-locale",

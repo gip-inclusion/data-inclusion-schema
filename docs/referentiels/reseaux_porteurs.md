@@ -40,7 +40,7 @@
 | `croix-rouge` | Croix-Rouge | - |
 | `csapa` | Centres de Soins, d’Accompagnement et de Prévention en Addictologie | - |
 | `delegataire-conseil-departemental` | Organisation délégataire d’un Conseil Départemental | - |
-| `departements` | Départements et Services Départementaux | Les Conseils Départementaux (CD), les Maisons Départementales pour les Personnes Handicapées (MDPH), les Unions Départementales des Associations Familiales (UDAF), les Centres Départementaux d’Action Sociale (CDAS), etc. |
+| `departements` | Départements et Services Départementaux | Les Conseils Départementaux (CD), les Unions Départementales des Associations Familiales (UDAF), les Centres Départementaux d’Action Sociale (CDAS), etc. |
 | `duo-for-a-job` | DUO for a JOB | - |
 | `ea` | Entreprises Adaptées | - |
 | `eatt` | Entreprises Adaptées de Travail Temporaire | - |
@@ -76,6 +76,7 @@
 | `maison-departementale-de-lautonomie` | Maisons Départementales de l’Autonomie | - |
 | `maisons-de-l-emploi` | Maisons de l’Emploi | - |
 | `maisons-des-solidarites` | Maisons Départementales des Solidarités (MDS) | Les Maisons Départementales des Solidarités sont des services départementaux. Par conséquent, le réseau `departements` devrait être également défini pour ces structures. |
+| `mdph` | Maisons Départementales pour les Personnes Handicapées (MDPH) | - |
 | `mission-locale` | Mission Locale | - |
 | `mjc` | Maisons des Jeunes et de la Culture | - |
 | `mobin` | Mob’In | - |
