@@ -44,7 +44,7 @@ class BaseModel(pydantic.BaseModel):
         }
 
 
-class EnhancedEnum(str, enum.Enum):
+class EnhancedEnum(str, enum.ReprEnum):
     def __new__(cls, value, label, description):
         obj = str.__new__(cls, value)
         obj._value_ = value

@@ -1,5 +1,9 @@
 # Journal des changements
 
+## 1.0.9 - 2026-06-29
+
+* les valeurs des [enums](https://docs.python.org/3/library/enum.html) sont désormais accessibles via `MonEnum.NOM`
+
 ## 1.0.8 - 2026-04-27
 
 * ajout de la valeur `mdph` aux réseaux porteurs
