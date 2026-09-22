@@ -17,7 +17,7 @@ class TypeService(EnhancedEnum):
     )
     AIDE_MATERIELLE = (
         "aide-materielle",
-        "Aide materielle",
+        "Aide matérielle",
         "Accéder à du matériel soutenant le retour à l’emploi (voiture, vélo, "
         "ordinateur, alimentation, etc)",
     )

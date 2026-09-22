@@ -45,7 +45,7 @@ uv run scripts/compile_schema.py
 ### 3. Compiler la documentation
 
 ```bash
-uv run --extra docs scripts/compile_docs.py
+uv run --group docs scripts/compile_docs.py
 ```
 
 ### 3. Ouvrir une PR avec les changements
