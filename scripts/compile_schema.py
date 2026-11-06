@@ -1,20 +1,11 @@
 import json
 import pathlib
 
+from referentiels import ENUM_FILENAMES, VERSION
+
 from data_inclusion.schema import v1
 
-VERSION = "v1"
 SCHEMAS_DIR = pathlib.Path() / "schemas" / VERSION
-ENUM_FILENAMES = {
-    v1.Frais: "frais",
-    v1.ModeAccueil: "modes_accueil",
-    v1.Thematique: "thematiques",
-    v1.ModeMobilisation: "modes_mobilisation",
-    v1.PersonneMobilisatrice: "personnes_mobilisatrices",
-    v1.Public: "publics",
-    v1.ReseauPorteur: "reseaux_porteurs",
-    v1.TypeService: "types_de_services",
-}
 
 
 def json_dump(obj, file):
@@ -28,8 +19,7 @@ def json_dump(obj, file):
 
 
 def compile_schema():
-    SCHEMAS_DIR.mkdir(exist_ok=True)
-    (SCHEMAS_DIR).mkdir(exist_ok=True, parents=True)
+    (SCHEMAS_DIR / "extra").mkdir(exist_ok=True, parents=True)
 
     for model in [v1.Structure, v1.Service]:
         with (SCHEMAS_DIR / f"{model.__name__.lower()}.json").open("w") as file:

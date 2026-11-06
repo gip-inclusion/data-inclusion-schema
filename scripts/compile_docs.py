@@ -3,11 +3,11 @@ import re
 from dataclasses import dataclass
 
 import jinja2
+from referentiels import ENUM_FILENAMES
 
 from data_inclusion.schema import v1
 
 DOCS_DIR = pathlib.Path() / "docs"
-VERSION = "v1"
 
 
 def snake_case(txt: str) -> str:
@@ -81,17 +81,6 @@ def template_factory(template_name: str) -> jinja2.Template:
 
 
 def main() -> None:
-    ENUM_FILENAMES = {
-        v1.Frais: "frais",
-        v1.ModeAccueil: "modes_accueil",
-        v1.Thematique: "thematiques",
-        v1.ModeMobilisation: "modes_mobilisation",
-        v1.PersonneMobilisatrice: "personnes_mobilisatrices",
-        v1.Public: "publics",
-        v1.ReseauPorteur: "reseaux_porteurs",
-        v1.TypeService: "types_de_services",
-    }
-
     DOCS_DIR.mkdir(exist_ok=True)
     (DOCS_DIR / "referentiels").mkdir(exist_ok=True)
 
