@@ -1,5 +1,12 @@
 # Journal des changements
 
+## 1.0.11 - 2026-11-10
+
+### Internes
+
+* passage à python 3.13 et mise à jour des dépendances
+* ruff exécuté en hook pre-commit local, versionné via `uv.lock`
+
 ## 1.0.10 - 2026-09-22
 
 ### Changements
