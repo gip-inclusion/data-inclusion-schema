@@ -24,7 +24,7 @@ repos:
       entry: uv run ruff format
       types_or: [python, pyi]
 - repo: https://github.com/astral-sh/uv-pre-commit
-  rev: 0.13.7
+  rev: 0.13.10
   hooks:
     - id: uv-lock
 - repo: local
