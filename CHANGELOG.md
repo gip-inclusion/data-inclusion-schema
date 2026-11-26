@@ -1,5 +1,11 @@
 # Journal des changements
 
+## 1.0.12 - 2026-11-26
+
+### Internes
+
+* mise à jour des dépendances et des hooks pre-commit
+
 ## 1.0.11 - 2026-11-10
 
 ### Internes
